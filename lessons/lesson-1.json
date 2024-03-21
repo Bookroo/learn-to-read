@@ -1,0 +1,524 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": ["Hello {name}", " and {name}'s reading helper!"]
+      },
+      "This Learn to Read course is designed for a kid and a reading helper to do together.",
+      "Words in blue are instructions for the reading helper to read aloud.",
+      "Words in brown are instructions just for the reading helper. Sometimes during a lesson, the reading helper may be quiet for a few seconds while they read their instructions. Just be patient when this happens.",
+      {
+        "type": "instruction",
+        "value": "To advance in a lesson, tap on the blue ‘Next step’ button or the right arrow key"
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "instruction",
+        "value": "Children learn to talk by copying others, but learning to read is a skill that must be taught."
+      },
+      "Reading follows four steps",
+      {
+        "type": "verbal",
+        "value": {
+          "type": "text",
+          "value": "Identify letters\nIdentify sounds\nBlend sounds\nUnderstand word",
+          "css": { "textAlign": "left" }
+        }
+      },
+      {
+        "type": "instruction",
+        "value": "Educators often use the words “phoneme” and “decoding”.\nPhoneme is the smallest unit of sound in a word.\nDecoding is the process of translating written text into spoken words."
+      },
+      "In this lesson, we’ll learn 3 letters, . . . 3 sounds, . . . a strategy for combining sounds, . . . and read a book together."
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "After completing each lesson, you’ll earn a gem to use in the Rewards Shop where you can unlock coloring pages, avatars, and other reading rewards.",
+      { "type": "gem" },
+      "Ready? Let’s get started!"
+    ]
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "M",
+    "pre": {
+      "prepend": [
+        {
+          "type": "instruction",
+          "value": "Point to the large letter M."
+        },
+        {
+          "type": "instruction",
+          "value": [
+            "Note that this is the letter M, not the ",
+            { "type": "sound", "phoneme": "/m/" },
+            " sound."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "M",
+    "pre": {
+      "append": [
+        {
+          "type": "instruction",
+          "value": "Currently, we'll only use uppercase letters."
+        },
+        {
+          "type": "instruction",
+          "value": "Starting in Lesson 30, we'll also include lowercase letters."
+        }
+      ]
+    }
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "M",
+    "graphemes": ["L", "R"],
+    "pre": {
+      "append": {
+        "type": "instruction",
+        "value": "If you want, you can tap on these cards to show the correct answer"
+      }
+    }
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "M",
+    "phoneme": "/m/",
+    "pre": {
+      "insert_after": [
+        {
+          "index": 0,
+          "value": [
+            {
+              "type": "verbal",
+              "value": [
+                "The ",
+                { "type": "sound", "phoneme": "/m/" },
+                " sound is a ‘held’ sound, which means you can hold it continuously when saying it."
+              ]
+            },
+            {
+              "type": "instruction",
+              "value": "If a sound can be “held”, it will be marked with an underline."
+            }
+          ]
+        }
+      ],
+      "replace": [
+        {
+          "index": 1,
+          "value": {
+            "type": "instruction",
+            "value": [
+              "Touch your left shoulder with your right hand and say ",
+              { "type": "sound", "phoneme": "/m/" },
+              " for two seconds. The purpose of this hand action will make sense soon."
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "sound-in-word",
+    "grapheme": "M",
+    "phoneme": "/m/",
+    "words": [
+      "mat",
+      "ram",
+      { "text": "cat", "correct": false },
+      "miss",
+      { "text": "dog", "correct": false },
+      "yum"
+    ]
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "T",
+    "pre": {
+      "prepend": ["Good work! Now it’s time for another letter."]
+    }
+  },
+  { "type": "grapheme-trace-palm", "grapheme": "T" },
+  { "type": "grapheme-hand-shape", "grapheme": "T" },
+  { "type": "find-grapheme", "grapheme": "T", "graphemes": ["M", "B"] },
+  {
+    "type": "introduce-sound",
+    "grapheme": "T",
+    "phoneme": "/t/",
+    "pre": {
+      "prepend": [
+        {
+          "type": "instruction",
+          "value": [
+            "Note that the ",
+            { "type": "sound", "phoneme": "/t/" },
+            " sound is NOT underlined. This is because it is a quick sound."
+          ]
+        }
+      ]
+    },
+    "post": {
+      "insert_after": [
+        {
+          "index": 0,
+          "value": {
+            "type": "instruction",
+            "value": [
+              "If {name} says “",
+              {
+                "type": "text",
+                "value": "TUH",
+                "css": { "fontWeight": "bold" }
+              },
+              "” or “",
+              {
+                "type": "text",
+                "value": "TIH",
+                "css": { "fontWeight": "bold" }
+              },
+              "”, help them make a quick ",
+              { "type": "sound", "phoneme": "/t/" },
+              " sound."
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "sound-in-word",
+    "grapheme": "T",
+    "phoneme": "/t/",
+    "words": [
+      "tip",
+      "top",
+      { "text": "can", "correct": false },
+      "pot",
+      "tape",
+      { "text": "cake", "correct": false },
+      "kite"
+    ]
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "A",
+    "pre": {
+      "prepend": ["Great job! Let’s try one more letter."]
+    }
+  },
+  { "type": "grapheme-trace-palm", "grapheme": "A" },
+  { "type": "find-grapheme", "grapheme": "A", "graphemes": ["T", "D"] },
+  {
+    "type": "introduce-sound",
+    "grapheme": "A",
+    "phoneme": "/a/",
+    "pre": {
+      "prepend": [
+        {
+          "type": "instruction",
+          "value": [
+            "Vowel sounds are displayed with extra letters—for example, ",
+            { "type": "sound", "phoneme": "/a/" },
+            "—to help you know how to pronounce them. Don't say the extra letters, only the vowel sound. The B and G are only there to help you know that this is the short A sound like you hear in the word ",
+            {
+              "type": "text",
+              "value": "“bag.”",
+              "css": { "fontWeight": "bold", "fontStyle": "normal" }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "sound-in-word",
+    "grapheme": "A",
+    "phoneme": "/a/",
+    "words": [
+      "cap",
+      "apple",
+      { "text": "fix", "correct": false },
+      "map",
+      { "text": "pig", "correct": false },
+      "bat"
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "image",
+        "src": "/l2r/gifs/touch-and-slide.gif",
+        "width": 200,
+        "height": 200
+      },
+      {
+        "type": "verbal",
+        "value": [
+          "We’re going to learn a game called ",
+          {
+            "type": "text",
+            "value": "Touch & Slide",
+            "css": { "fontWeight": "bold" }
+          },
+          "."
+        ]
+      },
+      {
+        "type": "instruction",
+        "value": "This game helps {name} practice a skill called “blending”."
+      },
+      {
+        "type": "verbal",
+        "value": [
+          {
+            "type": "text",
+            "value": "Touch & Slide",
+            "css": { "fontWeight": "bold" }
+          },
+          " helps us combine sounds to make a word. You’ve already learned part of this game when you touched your shoulder and said ",
+          { "type": "sound", "phoneme": "/a/" },
+          " for the letter A."
+        ]
+      },
+      "But now, instead of saying a single sound by itself, we’re going to combine sounds to make a word. And we’ll use different parts of our arm for each sound.",
+      "On the next slide are two letters that spell a word. We're going to identify the letters and the sounds they make and use our arm to help us combine their sounds."
+    ]
+  },
+  {
+    "type": "touch-slide",
+    "word": "AT",
+    "phonemes": ["/a/", "/t/"],
+    "pre": {
+      "value": [
+        {
+          "type": "instruction",
+          "value": "Point to the letter A"
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "The first letter is the letter A. It makes the ",
+            { "type": "sound", "phoneme": "/a/" },
+            " sound."
+          ]
+        },
+        {
+          "type": "instruction",
+          "value": [
+            "Touch your shoulder and say ",
+            { "type": "sound", "phoneme": "/a/" },
+            " for 2 seconds."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": { "type": "sound", "phoneme": "/a/", "showQuotes": false }
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "instruction",
+          "value": "Point to the letter T"
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Next, is the letter T. It makes the ",
+            { "type": "sound", "phoneme": "/t/" },
+            " sound."
+          ]
+        },
+        {
+          "type": "instruction",
+          "value": [
+            "Touch your elbow and say ",
+            { "type": "sound", "phoneme": "/t/" },
+            "."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": { "type": "sound", "phoneme": "/t/", "showQuotes": false }
+        }
+      ]
+    }
+  },
+  {
+    "type": "touch-slide",
+    "word": "AT",
+    "phonemes": ["/a/", "/t/"],
+    "pre": {
+      "value": [
+        "Now I'm going to blend the sounds to read the word. I'll slide my hand from my shoulder to my elbow while blending the sounds.",
+        {
+          "type": "instruction",
+          "value": [
+            "Touch your shoulder and slowly, but continuously, say ‘",
+            { "type": "text", "value": "AT", "css": { "fontWeight": "bold" } },
+            "’ as you slide from shoulder to elbow. Then, repeat the sliding motion again at a faster speed. You can repeat the slide as many times as you need at increasing speeds until the word is understood."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            { "type": "sound", "phoneme": "/a/", "showQuotes": false },
+            " — ",
+            { "type": "sound", "phoneme": "/t/", "showQuotes": false },
+            "  . . .   ",
+            { "type": "text", "value": "AT", "css": { "fontWeight": "bold" } }
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Can you hear how I'm blending the sound ",
+            { "type": "sound", "phoneme": "/a/" },
+            " and ",
+            { "type": "sound", "phoneme": "/t/" },
+            " together?"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "touch-slide",
+    "word": "AT",
+    "phonemes": ["/a/", "/t/"],
+    "pre": {
+      "prepend": ["Let's try it again. Listen for what word you hear."]
+    },
+    "post": { "prepend": ["Did you hear the word ‘at’?"] }
+  },
+  {
+    "type": "touch-slide",
+    "word": "MAT",
+    "phonemes": ["/m/", "/a/", "/t/"],
+    "pre": {
+      "prepend": [
+        {
+          "type": "verbal",
+          "value": [
+            "Let's try another word. This word has 3 letters and 3 sounds which means we're going to use our shoulder, elbow, ",
+            {
+              "type": "text",
+              "value": "and",
+              "css": { "fontStyle": "italic" }
+            },
+            " wrist."
+          ]
+        }
+      ]
+    },
+    "post": {
+      "prepend": ["What word did you hear? . . . Did you hear the word ‘mat’?"]
+    }
+  },
+  {
+    "type": "meet-character",
+    "pronoun": "his",
+    "image": {
+      "src": "/l2r/characters/tam.png?v=3",
+      "width": 256,
+      "height": 256
+    },
+    "color": "#DDF2E4",
+    "pre": {
+      "replace": [
+        { "index": 0, "value": "It's time to meet our first reading friend!" }
+      ]
+    }
+  },
+  {
+    "type": "touch-slide",
+    "word": "TAM",
+    "phonemes": ["/t/", "/a/", "/m/"],
+    "pre": {
+      "prepend": ["Let's sound it out together."]
+    },
+    "post": {
+      "value": ["Did you hear his name? That's right, it's Tam!"]
+    }
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "image",
+        "src": "/l2r/characters/tam.png?v=3",
+        "width": 250,
+        "height": 250
+      },
+      "Tam is a yak.",
+      "A yak is a large animal with hooves, long hair, and horns.",
+      "We'll see more of Tam in our first book."
+    ]
+  },
+  {
+    "confetti": true,
+    "type": "custom",
+    "value": [
+      "Great job! You’ve learned 3 letters, 3 sounds, read 3 words, and met Tam. You’re on your way to becoming a super reader!",
+      {
+        "type": "instruction",
+        "value": [
+          "{name} is not expected to master concepts during the first lesson they're introduced. These concepts will continue to be taught and reinforced in future lessons. ",
+          "If you find {name} is too frustrated, you can always return and repeat a lesson."
+        ]
+      },
+      "Next, we're going to read our first story together. It’s my job to read blue words, and it’s your job to read the black words. I’ll point to each word with my finger to help you keep track of where we are."
+    ]
+  },
+  {
+    "type": "books",
+    "books": [50030],
+    "pre": {
+      "append": [
+        "Remember, when you read the black words, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together.",
+        {
+          "type": "instruction",
+          "value": "Help {name} read each word using Touch & Slide. This is not a quiz, so give them answers when they get stuck. This is just practice and it should be fun."
+        },
+        {
+          "type": "instruction",
+          "value": "Also, you may find it natural to talk about the illustrations and the story as you read."
+        }
+      ]
+    }
+  },
+  {
+    "type": "conclusion",
+    "confetti": true,
+    "post": {
+      "append": [
+        {
+          "type": "image",
+          "src": "/l2r/gifs/self-clap.gif",
+          "width": 200,
+          "height": 200
+        }
+      ]
+    }
+  }
+]
