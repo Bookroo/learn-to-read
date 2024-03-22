@@ -4,7 +4,7 @@
     "value": [
       {
         "type": "verbal",
-        "value": "In this lesson, we're going to learn a new sound that the letter S can make at the end of a word. "
+        "value": "In this lesson, we're going to learn some new fun things about the letter S."
       },
       {
         "type": "verbal",
@@ -53,35 +53,81 @@
   {
     "type": "custom",
     "value": [
+      "Great job with that review! Now, let's talk about the letter S.",
       {
         "type": "verbal",
-        "value": "Sometimes there are two (or more!) sounds that a letter can make. In this lesson, we'sre going to talk about another sound that the letter S can make."
+        "value": [
+          "In a previous lesson, we learned that the letter S makes the ",
+          {
+            "type": "sound",
+            "phoneme": "/s/"
+          },
+          " sound."
+        ]
+      },
+      {
+        "type": "image",
+        "src": "/l2r/words/snake.png",
+        "width": 160,
+        "height": 160
       },
       {
         "type": "verbal",
-        "value": "Let'ss review what we already know about the letter S."
+        "value": [
+          {
+            "type": "sound",
+            "phoneme": "/s/"
+          },
+          " like ‘snake’."
+        ]
       }
     ]
-  },
-  {
-    "type": "introduce-sound",
-    "grapheme": "S",
-    "phoneme": "/s/"
   },
   {
     "type": "custom",
     "value": [
       {
         "type": "verbal",
-        "value": "Most of the time the letter S makes the S sound, but sometimes at the end of the word, the letter S can say zzz instead of sss."
+        "value": [
+          "But sometimes, when the letter S is at the end of a word, it can make the ",
+          {
+            "type": "sound",
+            "phoneme": "/z/"
+          },
+          " sound instead."
+        ]
+      },
+      {
+        "type": "image",
+        "src": "/l2r/words/zebra.png",
+        "width": 160,
+        "height": 160
       },
       {
         "type": "verbal",
-        "value": "How do you know if the letter S at the end of the word will say sss or zzz? There are some fancy rules, but often the best strategy is to sound it out with the sss sound, see if you recognize the word, and if you don't, try sounding it out again with the zzz sound. Let's try one now."
+        "value": [
+          {
+            "type": "sound",
+            "phoneme": "/z/"
+          },
+          " like ‘zebra’."
+        ]
       },
       {
-        "type": "instruction",
-        "value": "TIP for Parents: To help kids recognize whether some of these more complex patterns in reading, the best thing you can do for the is read aloud to them a lot, so that they're vocabulary will grow, and they'll be comfortable recognizing words!"
+        "type": "verbal",
+        "value": [
+          "Let’s look at a word where the letter S\nmakes the ",
+          {
+            "type": "sound",
+            "phoneme": "/z/"
+          },
+          " sound instead of the ",
+          {
+            "type": "sound",
+            "phoneme": "/s/"
+          },
+          " sound."
+        ]
       }
     ]
   },
@@ -90,23 +136,49 @@
     "word": "IS",
     "phonemes": ["/i/", "/s/"],
     "pre": {
-      "prepend": [
-        "Let’s read this word using Tap-Tap-Slide, exactly like we would have done BEFORE we learned that S can sometimes make a different sound."
+      "value": [
+        "This is the word ‘is’.",
+        "But if we sounded it out using Touch & Slide, it would sound like this",
+        {
+          "type": "instruction",
+          "value": "Intentionally mispronounce the word."
+        },
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/i/"
+            },
+            "—",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            "  . . .   ",
+            {
+              "type": "text",
+              "value": "IS",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        }
       ]
     },
     "post": {
-      "insert_after": [
+      "value": [
         {
-          "index": 1,
-          "value": "I don't recognize the word iiisss. Do you? Nope! So now, we're going to try to sound it out again, but this time we'll have S make the zzz sound instead of the sss sound."
-        },
-        {
-          "index": 1,
-          "value": "iii...zzzz... IS"
-        },
-        {
-          "index": 1,
-          "value": "Yes! That's the word IS! We recognize that one. As in the “Sam IS big.“"
+          "type": "verbal",
+          "value": [
+            "Do you recognize that word? No, that's because this letter S makes the ",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            " sound at the end of this word."
+          ]
         }
       ]
     }
@@ -115,55 +187,227 @@
     "type": "custom",
     "value": [
       {
-        "type": "verbal",
-        "value": "Up until now, we have sounded out words that have 2 and 3 letters, but now some of the words we sound out will have 4 letters. This means that we'sre going to use some different places on our arms to make everything fit. When doing Tap-Tap-Slide with words with four letters touch your shoulder, then above your elbow, then below your elbow, then your wrist. Let's touch our arm in these four places together."
+        "type": "image",
+        "src": "/l2r/gifs/question-marks.gif",
+        "width": 160,
+        "height": 160
       },
-      {
-        "type": "instruction",
-        "value": "Touch your shoulder as you say 'Shoulder', then touch above your elbow as you say 'Above Elbow, then touch below your elbow as you say 'Below Elbow', and finally touch your wrist as you say 'Wrist'. Help your child do it with you."
-      },
+      "So how do you know which sound the letter S will make at the end of a word?",
+      "There are lots of fancy rules you could memorize, but the simple answer is that you learn by practicing.",
       {
         "type": "verbal",
-        "value": "Shoulder . . . Above Elbow . . . Below Elbow . . . Wrist"
-      }
+        "value": [
+          "One good strategy, though, is when you're reading a word with the letter S at the end, first try sounding it out with the ",
+          {
+            "type": "sound",
+            "phoneme": "/s/"
+          },
+          " sound and see if you recognize the word. If you don't, try sounding it out again with the ",
+          {
+            "type": "sound",
+            "phoneme": "/z/"
+          },
+          " sound."
+        ]
+      },
+      "Let's try another word."
     ]
   },
   {
     "type": "touch-slide",
-    "word": "MATS",
-    "phonemes": ["/m/", "/a/", "/t/", "/s/"],
+    "word": "GAS",
+    "phonemes": ["/g/", "/a/", "/s/"],
     "pre": {
-      "prepend": ["Let’s try this one! Try is with the ssss sound first."]
+      "prepend": [
+        {
+          "type": "verbal",
+          "value": [
+            "This word also has a letter S at the end. Let's try sounding it out with an ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound first."
+          ]
+        }
+      ]
     },
     "post": {
-      "replace": [
+      "value": [
+        "Did you hear the word? That's right, the word is ‘gas’ like ‘gas station’.",
         {
-          "index": 2,
-          "value": "Is that a word you recognize? . . . Yes! One mat, two mats! So for this one, we keep the sss sound."
+          "type": "verbal",
+          "value": [
+            "For practice, let's try sounding it out again, but this time with the ",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            " sound."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/g/"
+            },
+            "—",
+            {
+              "type": "sound",
+              "phoneme": "/a/"
+            },
+            "—",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            "  . . .   ",
+            {
+              "type": "text",
+              "value": "GAZ",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Did you recognize the word this time? No, ‘gaz’ is not a word. So the letter S in this word makes the ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound."
+          ]
         }
       ]
     }
   },
   {
+    "type": "custom",
+    "value": [
+      "This strategy will not work 100% of the time, but it's a great example of how you can use the words you know to help you understand what sound a letter makes.",
+      "We're going to try another word. But first, this next word has 4 letters in it.",
+      "This means that when we do Touch & Slide, we're going to touch our shoulder, just above our elbow, just below our elbow, and our wrist as we sound out each letter.",
+      "Ready?"
+    ]
+  },
+  {
     "type": "touch-slide",
-    "word": "HAS",
-    "phonemes": ["/h/", "/a/", "/s/"],
+    "word": "DIGS",
+    "phonemes": ["/d/", "/i/", "/g/", "/s/"],
     "pre": {
-      "prepend": ["Let’s try this one! Try is with the ssss sound first."]
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "This word has a letter S at the end. Let's try sounding it out with the ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound first."
+          ]
+        },
+        {
+          "type": "instruction",
+          "value": [
+            "Emphasize the incorrect ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound. (It's very subtle.)"
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/d/"
+            },
+            "—",
+            {
+              "type": "sound",
+              "phoneme": "/i/"
+            },
+            "—",
+            {
+              "type": "sound",
+              "phoneme": "/g/"
+            },
+            "—",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            "  . . .   ",
+            {
+              "type": "text",
+              "value": "DIG-S",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        }
+      ]
     },
     "post": {
-      "insert_after": [
+      "value": [
         {
-          "index": 1,
-          "value": "I don't recognize the word hhhaaasss. Do you? Nope! So now, we're going to try to sound it out again, but this time we'll have S make the zzz sound instead of the sss sound."
+          "type": "verbal",
+          "value": [
+            "This almost sounds like a word we know, but not quite. Let's try it again with the ",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            " sound."
+          ]
         },
         {
-          "index": 1,
-          "value": "hhh...aaa...zzzz... HAS"
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/d/"
+            },
+            "—",
+            {
+              "type": "sound",
+              "phoneme": "/i/"
+            },
+            "—",
+            {
+              "type": "sound",
+              "phoneme": "/g/"
+            },
+            "—",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            "  . . .   ",
+            {
+              "type": "text",
+              "value": "DIGS",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
         },
         {
-          "index": 1,
-          "value": "Yes! That's the word HAS! We recognize that one. As in the “Sam HAS a bag.“"
+          "type": "verbal",
+          "value": [
+            "Much better this time. This is the word ‘digs’ as in ‘Sam digs a hole.’"
+          ]
         }
       ]
     }
@@ -173,97 +417,85 @@
     "word": "POTS",
     "phonemes": ["/p/", "/o/", "/t/", "/s/"],
     "pre": {
-      "prepend": ["Let’s try this one! Try is with the ssss sound first."]
+      "prepend": [
+        {
+          "type": "verbal",
+          "value": ["Let’s try this word together."]
+        }
+      ]
     },
     "post": {
-      "replace": [
+      "value": [
         {
-          "index": 2,
-          "value": "Is that a word you recognize? . . . Yes! One pot, two pots! So for this one, we keep the sss sound."
+          "type": "verbal",
+          "value": [
+            "Is that a word you recognize? . . . Yes! \nOne pot, two pots! This letter S makes the ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound."
+          ]
         }
       ]
     }
   },
   {
     "type": "touch-slide",
-    "word": "DIGS",
-    "phonemes": ["/d/", "/i/", "/g/", "/s/"],
+    "word": "IS",
+    "phonemes": ["/i/", "/z/"],
     "pre": {
-      "prepend": ["Let’s try this one! Try is with the ssss sound first."]
-    },
-    "post": {
-      "insert_after": [
+      "value": [
+        "You get to try this word on your own. Use Touch & Slide and the strategy we've been practicing.",
         {
-          "index": 1,
-          "value": "Now this one ALMOST sounds right with the ssss sound. But if you don't quite recognize it, you can try it again with having S make the zzz sound instead of the sss sound."
-        },
-        {
-          "index": 1,
-          "value": "ddd..iii...ggg...zzzz... DIGS"
-        },
-        {
-          "index": 1,
-          "value": "Yes! That's the word DIGS! We recognize that one. As in the “Sam DIGS a hole.“"
+          "type": "instruction",
+          "value": [
+            "{name} should try Touch & Slide first with the ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound and second with the ",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            " sound."
+          ]
         }
       ]
-    }
-  },
-  {
-    "type": "touch-slide",
-    "word": "AS",
-    "phonemes": ["/a/", "/s/"],
-    "pre": {
-      "prepend": ["Let’s try this one! Try is with the ssss sound first."]
     },
     "post": {
-      "insert_after": [
-        {
-          "index": 1,
-          "value": "I don't recognize the word hhhaaasss. Do you? Nope! So now, we're going to try to sound it out again, but this time we'll have S make the zzz sound instead of the sss sound."
-        },
-        {
-          "index": 1,
-          "value": "aaa...zzzz... AS"
-        },
-        {
-          "index": 1,
-          "value": "Yes! That's the word AS! We recognize that one. As in the “AS big AS a whale.“"
-        }
-      ]
+      "value": "Great job! (Or let's try it together)"
     }
   },
   {
     "type": "word-to-picture",
-    "word": "bats",
-    "words": ["bats", "bat", "cat"]
+    "word": "BATS",
+    "words": ["bat", "cat"]
   },
   {
     "type": "word-to-picture",
-    "word": "dots",
-    "words": ["dots", "dot", "pan"]
+    "word": "DOTS",
+    "words": ["dot", "pan"]
   },
   {
-    "type": "custom",
-    "value": [
-      {
-        "type": "verbal",
-        "value": "You're doing amazing!"
-      },
-      {
-        "type": "verbal",
-        "value": "Let's read another story together. It's my job to read the blue words, and it's your job to read the black words."
-      },
-      {
-        "type": "verbal",
-        "value": "We're not going to touch the screen, but I'm going to point to where weÃÂ¢ÃÂÃÂre reading with my finger for now, to help you keep track of where we are."
-      },
-      {
-        "type": "verbal",
-        "value": "Now, let's read a book!"
-      }
-    ]
+    "type": "books",
+    "books": [52225],
+    "pre": {
+      "value": [
+        "Great work reading all of these new words!",
+        {
+          "type": "instruction",
+          "value": [
+            "Remember, {name} is not expected to master concepts during the first lesson they're introduced. These concepts will continue to be taught and reinforced in future lessons. ",
+            "If you find {name} is too frustrated, you can always return and repeat a lesson."
+          ]
+        },
+        "Let's read a book together to practice what you've learned."
+      ]
+    }
   },
-  { "type": "books", "books": [52225] },
   {
     "type": "conclusion",
     "confetti": true

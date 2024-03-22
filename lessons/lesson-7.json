@@ -28,8 +28,16 @@
     "unique": 3,
     "correct": 1
   },
-  { "type": "sound-to-grapheme", "phoneme": "/o/", "grapheme": "O" },
-  { "type": "sound-to-grapheme", "grapheme": "D", "phoneme": "/d/" },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/o/",
+    "grapheme": "O"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "D",
+    "phoneme": "/d/"
+  },
   {
     "type": "grapheme-trace-air",
     "grapheme": "G",
@@ -37,7 +45,10 @@
       "prepend": ["Now it's time to learn a new letter. This is the letter G."]
     }
   },
-  { "type": "grapheme-trace-palm", "grapheme": "G" },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "G"
+  },
   {
     "type": "find-grapheme",
     "grapheme": "G",
@@ -46,16 +57,38 @@
     "unique": 3,
     "correct": 1
   },
-  { "type": "introduce-sound", "grapheme": "G", "phoneme": "/g/" },
+  {
+    "type": "introduce-sound",
+    "grapheme": "G",
+    "phoneme": "/g/"
+  },
   {
     "type": "sound-in-word",
     "grapheme": "G",
     "phoneme": "/g/",
     "words": [
-      { "text": "great", "correct": true },
-      { "text": "food", "correct": true },
-      { "text": "hog", "correct": true },
-      { "text": "goat", "correct": true }
+      {
+        "text": "goat"
+      },
+      {
+        "text": "grapes"
+      },
+      {
+        "text": "food",
+        "correct": false
+      },
+      {
+        "text": "hog"
+      },
+      {
+        "text": "pickle"
+      },
+      {
+        "text": "gas"
+      },
+      {
+        "text": "wiggle"
+      }
     ]
   },
   {
@@ -65,7 +98,10 @@
       "prepend": ["Now it's time to learn a new letter. This is the letter B."]
     }
   },
-  { "type": "grapheme-trace-palm", "grapheme": "B" },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "B"
+  },
   {
     "type": "find-grapheme",
     "grapheme": "B",
@@ -74,54 +110,89 @@
     "unique": 3,
     "correct": 1
   },
-  { "type": "introduce-sound", "grapheme": "B", "phoneme": "/b/" },
+  {
+    "type": "introduce-sound",
+    "grapheme": "B",
+    "phoneme": "/b/"
+  },
   {
     "type": "sound-in-word",
     "grapheme": "B",
     "phoneme": "/b/",
     "words": [
-      { "text": "boom", "correct": true },
-      { "text": "about", "correct": true },
-      { "text": "sob", "correct": true },
-      { "text": "pumpkin", "correct": false }
+      {
+        "text": "big"
+      },
+      {
+        "text": "baby"
+      },
+      {
+        "text": "sad",
+        "correct": false
+      },
+      {
+        "text": "sob"
+      },
+      {
+        "text": "map",
+        "correct": false
+      },
+      {
+        "text": "rabbit"
+      },
+      {
+        "text": "bad"
+      }
     ]
   },
   {
     "type": "custom",
     "value": [
-      { "type": "verbal", "value": "Amazing! You know 11 letters now!" },
       {
-        "type": "instruction",
-        "value": "Alright, now it's time for some Tap-Tap-Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether. I'll go first, and then you."
+        "type": "verbal",
+        "value": "Amazing! You know 11 letters now!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/gifs/touch-and-slide.gif",
+        "width": 200,
+        "height": 200
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time for some Touch & Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether."
       }
     ]
   },
-  { "type": "touch-slide", "word": "BIg", "phonemes": ["/b/", "/i/", "/g/"] },
-  { "type": "touch-slide", "word": "BAD", "phonemes": ["/b/", "/a/", "/d/"] },
-  { "type": "touch-slide", "word": "DIG", "phonemes": ["/d/", "/i/", "/g/"] },
   {
-    "type": "find-picture",
-    "words": [
-      { "word": "bag", "correct": true },
-      { "word": "pig", "correct": false },
-      { "word": "dog", "correct": false }
-    ]
+    "type": "touch-slide",
+    "word": "BIG",
+    "phonemes": ["/b/", "/i/", "/g/"]
   },
   {
-    "type": "find-picture",
-    "words": [
-      { "word": "pig", "correct": true },
-      { "word": "pan", "correct": false },
-      { "word": "pumpkin", "correct": false }
-    ]
+    "type": "touch-slide",
+    "word": "BAD",
+    "phonemes": ["/b/", "/a/", "/d/"]
   },
   {
-    "type": "find-picture",
-    "words": [
-      { "word": "dog", "correct": true },
-      { "word": "cat", "correct": false },
-      { "word": "pig", "correct": false }
-    ]
+    "type": "touch-slide",
+    "word": "DIG",
+    "phonemes": ["/d/", "/i/", "/g/"]
+  },
+  {
+    "type": "word-to-picture",
+    "word": "BAG",
+    "words": ["pig", "dog"]
+  },
+  {
+    "type": "word-to-picture",
+    "word": "PIG",
+    "words": ["pan", "pumpkin"]
+  },
+  {
+    "type": "word-to-picture",
+    "word": "DOG",
+    "words": ["cat", "pig"]
   },
   {
     "type": "books",
