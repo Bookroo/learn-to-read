@@ -124,19 +124,21 @@
     ]
   },
   {
-    "type": "custom",
-    "value": [
-      { "type": "verbal", "value": "You're doing amazing!" },
-      {
-        "type": "verbal",
-        "value": "Let's read another story together. It's my job to read the blue words, and it's your job to read the black words."
-      },
-      {
-        "type": "verbal",
-        "value": "We're not going to touch the screen, but I'm going to point to where weâre reading with my finger for now, to help you keep track of where we are."
-      },
-      { "type": "verbal", "value": "Now, let's read a book!" }
-    ]
+    "type": "books",
+    "books": [52224],
+    "pre": {
+      "value": [
+        "Great work! Now, it's time to read a book.",
+        "Remember, when you read the black words, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together.",
+        {
+          "type": "instruction",
+          "value": "Help {name} read each word using Touch & Slide. This is not a quiz, so guide them when they get stuck. This is just practice and should be fun."
+        }
+      ]
+    }
   },
-  { "type": "books", "books": [52224] }
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
 ]

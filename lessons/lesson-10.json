@@ -91,7 +91,7 @@
     "phonemes": ["/i/", "/s/"],
     "pre": {
       "prepend": [
-        "Letâs read this word using Tap-Tap-Slide, exactly like we would have done BEFORE we learned that S can sometimes make a different sound."
+        "Let'ss read this word using Tap-Tap-Slide, exactly like we would have done BEFORE we learned that S can sometimes make a different sound."
       ]
     },
     "post": {
@@ -133,7 +133,7 @@
     "word": "MATS",
     "phonemes": ["/m/", "/a/", "/t/", "/s/"],
     "pre": {
-      "prepend": ["Letâs try this one! Try is with the ssss sound first."]
+      "prepend": ["Let'ss try this one! Try is with the ssss sound first."]
     },
     "post": {
       "replace": [
@@ -149,7 +149,7 @@
     "word": "HAS",
     "phonemes": ["/h/", "/a/", "/s/"],
     "pre": {
-      "prepend": ["Letâs try this one! Try is with the ssss sound first."]
+      "prepend": ["Let'ss try this one! Try is with the ssss sound first."]
     },
     "post": {
       "insert_after": [
@@ -173,7 +173,7 @@
     "word": "POTS",
     "phonemes": ["/p/", "/o/", "/t/", "/s/"],
     "pre": {
-      "prepend": ["Letâs try this one! Try is with the ssss sound first."]
+      "prepend": ["Let'ss try this one! Try is with the ssss sound first."]
     },
     "post": {
       "replace": [
@@ -189,7 +189,7 @@
     "word": "DIGS",
     "phonemes": ["/d/", "/i/", "/g/", "/s/"],
     "pre": {
-      "prepend": ["Letâs try this one! Try is with the ssss sound first."]
+      "prepend": ["Let'ss try this one! Try is with the ssss sound first."]
     },
     "post": {
       "insert_after": [
@@ -213,7 +213,7 @@
     "word": "AS",
     "phonemes": ["/a/", "/s/"],
     "pre": {
-      "prepend": ["Letâs try this one! Try is with the ssss sound first."]
+      "prepend": ["Let'ss try this one! Try is with the ssss sound first."]
     },
     "post": {
       "insert_after": [
@@ -263,8 +263,9 @@
       }
     ]
   },
+  { "type": "books", "books": [52227] },
   {
-    "type": "books",
-    "books": [52227]
+    "type": "conclusion",
+    "confetti": true
   }
 ]

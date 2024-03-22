@@ -265,8 +265,8 @@
     "type": "custom",
     "value": [
       "You’re doing amazing!",
-      "Let’s read another story together. It’s my job to read the blue words, and it’s your job to read the black words.",
-      "I’m going to point to where we’re reading with my finger for now, to help you keep track of where we are."
+      "On the next slide, we're going to read a story together. It’s my job to read the blue words, and it’s your job to read the black words.",
+      "I’ll point to each word with my finger to help you keep track of where we are."
     ]
   },
   {
@@ -274,7 +274,11 @@
     "books": [50077],
     "pre": {
       "append": [
-        "Remember, when you read the black words, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together."
+        "Remember, when you read the black words, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together.",
+        {
+          "type": "instruction",
+          "value": "Help {name} read each word using Touch & Slide. This is not a quiz, so guide them when they get stuck. This is just practice and should be fun."
+        }
       ]
     }
   },

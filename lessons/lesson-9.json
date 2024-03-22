@@ -150,10 +150,14 @@
       },
       {
         "type": "verbal",
-        "value": "We're not going to touch the screen, but I'm going to point to where weâre reading with my finger for now, to help you keep track of where we are."
+        "value": "We're not going to touch the screen, but I'm going to point to where we'sre reading with my finger for now, to help you keep track of where we are."
       },
       { "type": "verbal", "value": "Now, let's read a book!" }
     ]
   },
-  { "type": "books", "books": [52226] }
+  { "type": "books", "books": [52226] },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
 ]

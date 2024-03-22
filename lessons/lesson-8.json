@@ -55,11 +55,11 @@
     "value": [
       {
         "type": "verbal",
-        "value": "Sometimes there are two (or more!) sounds that a letter can make. In this lesson, weâre going to talk about another sound that the letter S can make."
+        "value": "Sometimes there are two (or more!) sounds that a letter can make. In this lesson, we'sre going to talk about another sound that the letter S can make."
       },
       {
         "type": "verbal",
-        "value": "Letâs review what we already know about the letter S."
+        "value": "Let'ss review what we already know about the letter S."
       }
     ]
   },
@@ -116,7 +116,7 @@
     "value": [
       {
         "type": "verbal",
-        "value": "Up until now, we have sounded out words that have 2 and 3 letters, but now some of the words we sound out will have 4 letters. This means that weâre going to use some different places on our arms to make everything fit. When doing Tap-Tap-Slide with words with four letters touch your shoulder, then above your elbow, then below your elbow, then your wrist. Let's touch our arm in these four places together."
+        "value": "Up until now, we have sounded out words that have 2 and 3 letters, but now some of the words we sound out will have 4 letters. This means that we'sre going to use some different places on our arms to make everything fit. When doing Tap-Tap-Slide with words with four letters touch your shoulder, then above your elbow, then below your elbow, then your wrist. Let's touch our arm in these four places together."
       },
       {
         "type": "instruction",
@@ -263,8 +263,9 @@
       }
     ]
   },
+  { "type": "books", "books": [52225] },
   {
-    "type": "books",
-    "books": [52225]
+    "type": "conclusion",
+    "confetti": true
   }
 ]

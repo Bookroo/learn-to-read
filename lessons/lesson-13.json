@@ -147,5 +147,9 @@
       { "type": "verbal", "value": "Now, let's read a book!" }
     ]
   },
-  { "type": "books", "books": [52232] }
+  { "type": "books", "books": [52232] },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
 ]

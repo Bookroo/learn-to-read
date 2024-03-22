@@ -4,7 +4,7 @@
     "value": [
       {
         "type": "verbal",
-        "value": "In this lesson, weâre going to learn a few new words that weâll call heart words."
+        "value": "In this lesson, we'sre going to learn a few new words that we'sll call heart words."
       },
       {
         "type": "verbal",
@@ -235,5 +235,9 @@
       { "type": "verbal", "value": "Now, let's read a book!" }
     ]
   },
-  { "type": "books", "books": [52229, 52231] }
+  { "type": "books", "books": [52229, 52231] },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
 ]
