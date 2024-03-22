@@ -144,5 +144,5 @@
       { "type": "verbal", "value": "Now, let's read a book!" }
     ]
   },
-  { "type": "books", "books": [1, 2] }
+  { "type": "books", "books": [52234] }
 ]
