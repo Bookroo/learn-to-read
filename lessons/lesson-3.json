@@ -1,0 +1,189 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we’re going to learn a new letter and a new sound.",
+      "But first... we’re going to start with a game called Noisy Letters."
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": ["M", "T", "A", "S"],
+    "pre": {
+      "value": [
+        "Shh . . . can you hear that?",
+        {
+          "type": "instruction",
+          "value": [
+            "Hopefully, {name} says no ",
+            {
+              "type": "text",
+              "value": "😉",
+              "css": {
+                "fontStyle": "normal"
+              }
+            }
+          ]
+        },
+        "All the letters have lost their sounds! It’s our job to help them.",
+        "What letter is this? . . . What sound does it make?",
+        {
+          "type": "instruction",
+          "value": "Tap or swipe to advance to the next card."
+        }
+      ]
+    }
+  },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "S",
+    "phoneme": "/s/",
+    "pre": {
+      "prepend": "Good job helping those letters find their sounds! Let's play another game."
+    }
+  },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "A",
+    "phoneme": "/a/"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "M",
+    "phoneme": "/m/"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "T",
+    "phoneme": "/t/"
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "P",
+    "pre": {
+      "prepend": "Now it’s time to learn a new letter."
+    }
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "P"
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "P",
+    "graphemes": ["S", "M", "T", "A"]
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "P",
+    "phoneme": "/p/"
+  },
+  {
+    "type": "sound-in-word",
+    "grapheme": "P",
+    "phoneme": "/p/",
+    "words": ["pan", "pear", "top", "map", "puddle"]
+  },
+  {
+    "confetti": true,
+    "type": "custom",
+    "value": [
+      "Amazing, you've learned 5 letters and 5 sounds!",
+      {
+        "type": "verbal",
+        "value": [
+          "Now it’s time to do ",
+          {
+            "type": "text",
+            "value": "Touch & Slide",
+            "css": {
+              "fontWeight": "bold"
+            }
+          },
+          " again! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether. I’ll go first, and then you."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "touch-slide",
+    "word": "PAT",
+    "phonemes": ["/p/", "/a/", "/t/"]
+  },
+  {
+    "type": "touch-slide",
+    "word": "TAP",
+    "phonemes": ["/t/", "/a/", "/p/"]
+  },
+  {
+    "type": "touch-slide",
+    "word": "MAP",
+    "phonemes": ["/m/", "/a/", "/p/"]
+  },
+  {
+    "type": "touch-slide",
+    "word": "MAT",
+    "phonemes": ["/m/", "/a/", "/t/"]
+  },
+  {
+    "type": "touch-slide",
+    "word": "SAT",
+    "phonemes": ["/s/", "/a/", "/t/"]
+  },
+  {
+    "type": "touch-slide",
+    "word": "SAP",
+    "phonemes": ["/s/", "/a/", "/p/"]
+  },
+  {
+    "type": "meet-character",
+    "pronoun": "her",
+    "color": "#EDD9FD",
+    "image": {
+      "src": "/l2r/characters/pam.png?v=2",
+      "width": 250,
+      "height": 250
+    }
+  },
+  {
+    "type": "touch-slide",
+    "word": "PAM",
+    "phonemes": ["/p/", "/a/", "/m/"],
+    "post": {
+      "value": [
+        "Did you hear her name? That's right, it's Pam!",
+        "We'll see more of Pam in our next book."
+      ]
+    }
+  },
+  {
+    "confetti": true,
+    "type": "custom",
+    "value": [
+      "You’re doing amazing!",
+      "Let’s read another story together. It’s my job to read the blue words, and it’s your job to read the black words.",
+      "I’m going to point to where we’re reading with my finger for now, to help you keep track of where we are."
+    ]
+  },
+  {
+    "type": "books",
+    "books": [50078],
+    "pre": {
+      "append": [
+        "Remember, when you read the black words, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together."
+      ]
+    }
+  },
+  {
+    "type": "conclusion",
+    "confetti": true,
+    "post": {
+      "append": {
+        "type": "image",
+        "src": "/l2r/gifs/dance-1.gif",
+        "width": 270,
+        "height": 480
+      }
+    }
+  }
+]
