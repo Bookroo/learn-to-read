@@ -1,0 +1,142 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "In this lesson, we're going to learn two new letters and two new sounds."
+      },
+      {
+        "type": "verbal",
+        "value": "But first, let's review some of the letters and sounds we learned in the previous lesson."
+      }
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "O",
+    "graphemes": ["D", "A"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "S",
+    "graphemes": ["I", "T"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  { "type": "sound-to-grapheme", "phoneme": "/o/", "grapheme": "O" },
+  { "type": "sound-to-grapheme", "grapheme": "D", "phoneme": "/d/" },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "G",
+    "pre": {
+      "prepend": ["Now it's time to learn a new letter. This is the letter G."]
+    }
+  },
+  { "type": "grapheme-trace-palm", "grapheme": "G" },
+  {
+    "type": "find-grapheme",
+    "grapheme": "G",
+    "graphemes": ["P", "O"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  { "type": "introduce-sound", "grapheme": "G", "phoneme": "/g/" },
+  {
+    "type": "sound-in-word",
+    "grapheme": "G",
+    "phoneme": "/g/",
+    "words": [
+      { "text": "great", "correct": true },
+      { "text": "food", "correct": true },
+      { "text": "hog", "correct": true },
+      { "text": "goat", "correct": true }
+    ]
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "B",
+    "pre": {
+      "prepend": ["Now it's time to learn a new letter. This is the letter B."]
+    }
+  },
+  { "type": "grapheme-trace-palm", "grapheme": "B" },
+  {
+    "type": "find-grapheme",
+    "grapheme": "B",
+    "graphemes": ["I", "T"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  { "type": "introduce-sound", "grapheme": "B", "phoneme": "/b/" },
+  {
+    "type": "sound-in-word",
+    "grapheme": "B",
+    "phoneme": "/b/",
+    "words": [
+      { "text": "boom", "correct": true },
+      { "text": "about", "correct": true },
+      { "text": "sob", "correct": true },
+      { "text": "pumpkin", "correct": false }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      { "type": "verbal", "value": "Amazing! You know 11 letters now!" },
+      {
+        "type": "instruction",
+        "value": "Alright, now it's time for some Tap-Tap-Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether. I'll go first, and then you."
+      }
+    ]
+  },
+  { "type": "touch-slide", "word": "BIg", "phonemes": ["/b/", "/i/", "/g/"] },
+  { "type": "touch-slide", "word": "BAD", "phonemes": ["/b/", "/a/", "/d/"] },
+  { "type": "touch-slide", "word": "DIG", "phonemes": ["/d/", "/i/", "/g/"] },
+  {
+    "type": "find-picture",
+    "words": [
+      { "word": "bag", "correct": true },
+      { "word": "pig", "correct": false },
+      { "word": "dog", "correct": false }
+    ]
+  },
+  {
+    "type": "find-picture",
+    "words": [
+      { "word": "pig", "correct": true },
+      { "word": "pan", "correct": false },
+      { "word": "pumpkin", "correct": false }
+    ]
+  },
+  {
+    "type": "find-picture",
+    "words": [
+      { "word": "dog", "correct": true },
+      { "word": "cat", "correct": false },
+      { "word": "pig", "correct": false }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      { "type": "verbal", "value": "You're doing amazing!" },
+      {
+        "type": "verbal",
+        "value": "Let's read another story together. It's my job to read the blue words, and it's your job to read the black words."
+      },
+      {
+        "type": "verbal",
+        "value": "We're not going to touch the screen, but I'm going to point to where weâre reading with my finger for now, to help you keep track of where we are."
+      },
+      { "type": "verbal", "value": "Now, let's read a book!" }
+    ]
+  },
+  { "type": "books", "books": [1, 2] }
+]

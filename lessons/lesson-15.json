@@ -1,0 +1,148 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "In this lesson, we're going to learn one new letter and one new sound."
+      },
+      {
+        "type": "verbal",
+        "value": "But like usual, let's review some of the letters, sounds, and words we learned in the previous lessons."
+      }
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "C",
+    "graphemes": ["D", "G"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "U",
+    "graphemes": ["S", "H"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  { "type": "sound-to-grapheme", "phoneme": "/l/", "grapheme": "L" },
+  { "type": "sound-to-grapheme", "grapheme": "C", "phoneme": "/c/" },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/h/",
+    "grapheme": "H",
+    "graphemes": ["R", "Y"]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/u/",
+    "grapheme": "U",
+    "graphemes": ["O", "A"]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Let’s practice some words that make a funny S sound. Read the words on the cards one at a time."
+      },
+      { "type": "card-stack", "values": ["is", "his", "has", "as"] }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Let’s practice the three heart words we learned. Read the words on the cards one at a time."
+      },
+      { "type": "card-stack", "values": ["a", "the", "I"] }
+    ]
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "R",
+    "pre": {
+      "prepend": ["Now it's time to learn a new letter. This is the letter R."]
+    }
+  },
+  { "type": "grapheme-trace-palm", "grapheme": "R" },
+  {
+    "type": "find-grapheme",
+    "grapheme": "R",
+    "graphemes": ["P", "S"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  { "type": "introduce-sound", "grapheme": "R", "phoneme": "/r/" },
+  {
+    "type": "sound-in-word",
+    "grapheme": "R",
+    "phoneme": "/r/",
+    "words": [
+      { "text": "drum", "correct": true },
+      { "text": "boat", "correct": false },
+      { "text": "romp", "correct": true },
+      { "text": "purr", "correct": true }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      { "type": "verbal", "value": "Amazing! You know 17 letters now!" },
+      {
+        "type": "verbal",
+        "value": "Alright, now it's time for some Tap-Tap-Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether. I'll go first, and then you."
+      }
+    ]
+  },
+  { "type": "touch-slide", "word": "RAN", "phonemes": ["/r/", "/a/", "/n/"] },
+  {
+    "type": "touch-slide",
+    "word": "RAMP",
+    "phonemes": ["/r/", "/a/", "/m/", "/p/"]
+  },
+  {
+    "type": "touch-slide",
+    "word": "PAST",
+    "phonemes": ["/p/", "/a/", "/s/", "/t/"]
+  },
+  { "type": "touch-slide", "word": "RUB", "phonemes": ["/r/", "/u/", "/b/"] },
+  { "type": "picture-to-word", "word": "rat", "words": ["rat", "bat", "cat"] },
+  {
+    "type": "find-picture",
+    "words": [
+      { "word": "red", "correct": true },
+      { "word": "blue", "correct": false },
+      { "word": "green", "correct": false }
+    ]
+  },
+  {
+    "type": "find-picture",
+    "words": [
+      { "word": "sled", "correct": true },
+      { "word": "car", "correct": false },
+      { "word": "helicopter", "correct": false }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      { "type": "verbal", "value": "You're doing amazing!" },
+      {
+        "type": "verbal",
+        "value": "Let's read another story together. It's my job to read the blue words, and it's your job to read the black words."
+      },
+      {
+        "type": "verbal",
+        "value": "We're not going to touch the screen, but I'm going to point to where we're reading with my finger for now, to help you keep track of where we are."
+      },
+      { "type": "verbal", "value": "Now, let's read a book!" }
+    ]
+  },
+  { "type": "books", "books": [1, 2] }
+]

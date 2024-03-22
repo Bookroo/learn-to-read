@@ -1,0 +1,270 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "In this lesson, we're going to learn a new sound that the letter S can make at the end of a word. "
+      },
+      {
+        "type": "verbal",
+        "value": "But first, let's review some of the letters and sounds we learned in the previous lesson."
+      }
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "B",
+    "graphemes": ["A", "N"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "G",
+    "graphemes": ["P", "N"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/g/",
+    "grapheme": "G"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "B",
+    "phoneme": "/b/"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/o/",
+    "grapheme": "O",
+    "graphemes": ["M", "T"]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/d/",
+    "grapheme": "D",
+    "graphemes": ["A", "I"]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Sometimes there are two (or more!) sounds that a letter can make. In this lesson, weÃ¢ÂÂre going to talk about another sound that the letter S can make."
+      },
+      {
+        "type": "verbal",
+        "value": "LetÃ¢ÂÂs review what we already know about the letter S."
+      }
+    ]
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "S",
+    "phoneme": "/s/"
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Most of the time the letter S makes the S sound, but sometimes at the end of the word, the letter S can say zzz instead of sss."
+      },
+      {
+        "type": "verbal",
+        "value": "How do you know if the letter S at the end of the word will say sss or zzz? There are some fancy rules, but often the best strategy is to sound it out with the sss sound, see if you recognize the word, and if you don't, try sounding it out again with the zzz sound. Let's try one now."
+      },
+      {
+        "type": "instruction",
+        "value": "TIP for Parents: To help kids recognize whether some of these more complex patterns in reading, the best thing you can do for the is read aloud to them a lot, so that they're vocabulary will grow, and they'll be comfortable recognizing words!"
+      }
+    ]
+  },
+  {
+    "type": "touch-slide",
+    "word": "IS",
+    "phonemes": ["/i/", "/s/"],
+    "pre": {
+      "prepend": [
+        "Letâs read this word using Tap-Tap-Slide, exactly like we would have done BEFORE we learned that S can sometimes make a different sound."
+      ]
+    },
+    "post": {
+      "insert_after": [
+        {
+          "index": 1,
+          "value": "I don't recognize the word iiisss. Do you? Nope! So now, we're going to try to sound it out again, but this time we'll have S make the zzz sound instead of the sss sound."
+        },
+        {
+          "index": 1,
+          "value": "iii...zzzz... IS"
+        },
+        {
+          "index": 1,
+          "value": "Yes! That's the word IS! We recognize that one. As in the âSam IS big.â"
+        }
+      ]
+    }
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Up until now, we have sounded out words that have 2 and 3 letters, but now some of the words we sound out will have 4 letters. This means that weÃ¢ÂÂre going to use some different places on our arms to make everything fit. When doing Tap-Tap-Slide with words with four letters touch your shoulder, then above your elbow, then below your elbow, then your wrist. Let's touch our arm in these four places together."
+      },
+      {
+        "type": "instruction",
+        "value": "Touch your shoulder as you say 'Shoulder', then touch above your elbow as you say 'Above Elbow, then touch below your elbow as you say 'Below Elbow', and finally touch your wrist as you say 'Wrist'. Help your child do it with you."
+      },
+      {
+        "type": "verbal",
+        "value": "Shoulder . . . Above Elbow . . . Below Elbow . . . Wrist"
+      }
+    ]
+  },
+  {
+    "type": "touch-slide",
+    "word": "MATS",
+    "phonemes": ["/m/", "/a/", "/t/", "/s/"],
+    "pre": {
+      "prepend": ["Letâs try this one! Try is with the ssss sound first."]
+    },
+    "post": {
+      "replace": [
+        {
+          "index": 2,
+          "value": "Is that a word you recognize? . . . Yes! One mat, two mats! So for this one, we keep the sss sound."
+        }
+      ]
+    }
+  },
+  {
+    "type": "touch-slide",
+    "word": "HAS",
+    "phonemes": ["/h/", "/a/", "/s/"],
+    "pre": {
+      "prepend": ["Letâs try this one! Try is with the ssss sound first."]
+    },
+    "post": {
+      "insert_after": [
+        {
+          "index": 1,
+          "value": "I don't recognize the word hhhaaasss. Do you? Nope! So now, we're going to try to sound it out again, but this time we'll have S make the zzz sound instead of the sss sound."
+        },
+        {
+          "index": 1,
+          "value": "hhh...aaa...zzzz... HAS"
+        },
+        {
+          "index": 1,
+          "value": "Yes! That's the word HAS! We recognize that one. As in the âSam HAS a bag.â"
+        }
+      ]
+    }
+  },
+  {
+    "type": "touch-slide",
+    "word": "POTS",
+    "phonemes": ["/p/", "/o/", "/t/", "/s/"],
+    "pre": {
+      "prepend": ["Letâs try this one! Try is with the ssss sound first."]
+    },
+    "post": {
+      "replace": [
+        {
+          "index": 2,
+          "value": "Is that a word you recognize? . . . Yes! One pot, two pots! So for this one, we keep the sss sound."
+        }
+      ]
+    }
+  },
+  {
+    "type": "touch-slide",
+    "word": "DIGS",
+    "phonemes": ["/d/", "/i/", "/g/", "/s/"],
+    "pre": {
+      "prepend": ["Letâs try this one! Try is with the ssss sound first."]
+    },
+    "post": {
+      "insert_after": [
+        {
+          "index": 1,
+          "value": "Now this one ALMOST sounds right with the ssss sound. But if you don't quite recognize it, you can try it again with having S make the zzz sound instead of the sss sound."
+        },
+        {
+          "index": 1,
+          "value": "ddd..iii...ggg...zzzz... DIGS"
+        },
+        {
+          "index": 1,
+          "value": "Yes! That's the word DIGS! We recognize that one. As in the âSam DIGS a hole.â"
+        }
+      ]
+    }
+  },
+  {
+    "type": "touch-slide",
+    "word": "AS",
+    "phonemes": ["/a/", "/s/"],
+    "pre": {
+      "prepend": ["Letâs try this one! Try is with the ssss sound first."]
+    },
+    "post": {
+      "insert_after": [
+        {
+          "index": 1,
+          "value": "I don't recognize the word hhhaaasss. Do you? Nope! So now, we're going to try to sound it out again, but this time we'll have S make the zzz sound instead of the sss sound."
+        },
+        {
+          "index": 1,
+          "value": "aaa...zzzz... AS"
+        },
+        {
+          "index": 1,
+          "value": "Yes! That's the word AS! We recognize that one. As in the âAS big AS a whale.â"
+        }
+      ]
+    }
+  },
+  {
+    "type": "word-to-picture",
+    "word": "bats",
+    "words": ["bats", "bat", "cat"]
+  },
+  {
+    "type": "word-to-picture",
+    "word": "dots",
+    "words": ["dots", "dot", "pan"]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "You're doing amazing!"
+      },
+      {
+        "type": "verbal",
+        "value": "Let's read another story together. It's my job to read the blue words, and it's your job to read the black words."
+      },
+      {
+        "type": "verbal",
+        "value": "We're not going to touch the screen, but I'm going to point to where weÃÂÃÂ¢ÃÂÃÂÃÂÃÂre reading with my finger for now, to help you keep track of where we are."
+      },
+      {
+        "type": "verbal",
+        "value": "Now, let's read a book!"
+      }
+    ]
+  },
+  {
+    "type": "books",
+    "books": [1, 2]
+  }
+]

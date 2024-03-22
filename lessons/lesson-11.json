@@ -1,0 +1,239 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "In this lesson, weâre going to learn a few new words that weâll call heart words."
+      },
+      {
+        "type": "verbal",
+        "value": "But like usual, let's review some of the letters, sounds, and words we learned in the previous lessons."
+      }
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "H",
+    "graphemes": ["M", "T"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "E",
+    "graphemes": ["S", "A"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  { "type": "sound-to-grapheme", "phoneme": "/o/", "grapheme": "O" },
+  { "type": "sound-to-grapheme", "grapheme": "E", "phoneme": "/e/" },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/d/",
+    "grapheme": "D",
+    "graphemes": ["S", "N"]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/b/",
+    "grapheme": "B",
+    "graphemes": ["E", "T"]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/h/",
+    "grapheme": "H",
+    "graphemes": ["B", "P"]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "The last few lessons, we learned a new sound that S sometimes makes at the end of words. Let's read a few words to practice this."
+      },
+      { "type": "card-stack", "values": ["is", "pots", "has", "digs", "mats"] }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "You're doing amazing! Those can be tricky. Not we're going to learn three “heart words“."
+      },
+      {
+        "type": "verbal",
+        "value": "Can you make a heart with your hands? <Insert heart hand GIF>"
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "These “heart words“ are words you're going to see a LOT when you're reading books, and they don't follow the sounding out rules we've been learning so far.  We call them heart words, because we're going to learn them by heart."
+      },
+      {
+        "type": "verbal",
+        "value": "Let's make our hand heart again. <Insert other heart hand GIF.>"
+      }
+    ]
+  },
+  {
+    "type": "touch-slide",
+    "word": "I",
+    "phonemes": ["/i/"],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Let's see how we would sound out this word together, as if it WEREN'T a heart word. This one is only one letter!"
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Touch your shoulder and say ",
+            { "type": "sound", "phoneme": "/i/" }
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Let's do it together: ",
+            { "type": "sound", "phoneme": "/i/" }
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Sounding out this single letter as a word, it sounds like ",
+            { "type": "sound", "phoneme": "/i/" },
+            "But this is actually the word I, just like it's name! As in “I like bananas“. When we read this word, we don't sound it out, we just remember that a single I is the word I."
+          ]
+        }
+      ]
+    }
+  },
+  { "type": "story-words", "story": "I like you. I like me.", "words": ["I"] },
+  { "type": "story-words", "story": "I am hot.", "words": ["I"] },
+  {
+    "type": "touch-slide",
+    "word": "A",
+    "phonemes": ["/a/"],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Let's see how we would sound out this word together, as if it WEREN'T a heart word. This one is only one letter!"
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Touch your shoulder and say ",
+            { "type": "sound", "phoneme": "/a/" }
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Let's do it together: ",
+            { "type": "sound", "phoneme": "/a/" }
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Sounding out this single letter as a word, it sounds like ",
+            { "type": "sound", "phoneme": "/a/" },
+            " ,but it’s actually the word A.  As in “Would you like A banana?“  When we read this word, we don’t sound it out, we just remember that a single A is the word A."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "story-words",
+    "story": "A peach, a pear, and a plum all go in my tum.",
+    "words": ["A"]
+  },
+  { "type": "story-words", "story": "Tam has a hen", "words": ["A"] },
+  {
+    "type": "touch-slide",
+    "word": "THE",
+    "phonemes": ["/i/"],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Here’s our last heart word. This word is another one that you don’t read by sounding out each letter."
+          ]
+        },
+        { "type": "verbal", "value": "This is the word thuh." }
+      ]
+    },
+    "post": {
+      "value": [
+        { "type": "verbal", "value": ["As in, “The banana is yellow.”"] }
+      ]
+    }
+  },
+  {
+    "type": "story-words",
+    "story": "The cat sat on the mat.",
+    "words": ["THE"]
+  },
+  { "type": "story-words", "story": "The dog is sad.", "words": ["THE"] },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Let’s practice the three heart words we learned. Read the words on the cards one at a time."
+      },
+      { "type": "card-stack", "values": ["the", "a", "i"] }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Don’t worry if it feels hard to remember these heart words. You’ll get lots of practice in future lessons, and overtime it will be easy to recognize these words when you’re reading. <Insert heart gif>"
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      { "type": "verbal", "value": "You're doing amazing!" },
+      {
+        "type": "verbal",
+        "value": "Let's read another story together. It's my job to read the blue words, and it's your job to read the black words."
+      },
+      {
+        "type": "verbal",
+        "value": "We're not going to touch the screen, but I'm going to point to where we're reading with my finger for now, to help you keep track of where we are."
+      },
+      { "type": "verbal", "value": "Now, let's read a book!" }
+    ]
+  },
+  { "type": "books", "books": [1, 2] }
+]
