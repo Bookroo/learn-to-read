@@ -90,6 +90,12 @@
     "value": [
       "Amazing, you've learned 5 letters and 5 sounds!",
       {
+        "type": "image",
+        "src": "/l2r/gifs/touch-and-slide.gif",
+        "width": 200,
+        "height": 200
+      },
+      {
         "type": "verbal",
         "value": [
           "Now it’s time to do ",

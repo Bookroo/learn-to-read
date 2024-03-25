@@ -28,12 +28,20 @@
     "unique": 3,
     "correct": 1
   },
-  { "type": "sound-to-grapheme", "phoneme": "/l/", "grapheme": "L" },
-  { "type": "sound-to-grapheme", "grapheme": "C", "phoneme": "/c/" },
   {
     "type": "sound-to-grapheme",
-    "phoneme": "/h/",
+    "phoneme": "/l/",
+    "grapheme": "L"
+  },
+  {
+    "type": "sound-to-grapheme",
     "grapheme": "H",
+    "phoneme": "/h/"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/c/",
+    "grapheme": "C",
     "graphemes": ["R", "Y"]
   },
   {
@@ -43,24 +51,18 @@
     "graphemes": ["O", "A"]
   },
   {
-    "type": "custom",
-    "value": [
-      {
-        "type": "verbal",
-        "value": "Let’s practice some words that make a funny S sound. Read the words on the cards one at a time."
-      },
-      { "type": "card-stack", "values": ["is", "his", "has", "as"] }
-    ]
+    "type": "card-stack",
+    "values": ["I", "A", "THE"],
+    "pre": {
+      "value": "Let’s practice three heart words. Read the words on the cards one at a time."
+    }
   },
   {
-    "type": "custom",
-    "value": [
-      {
-        "type": "verbal",
-        "value": "Let’s practice the three heart words we learned. Read the words on the cards one at a time."
-      },
-      { "type": "card-stack", "values": ["a", "the", "I"] }
-    ]
+    "type": "card-stack",
+    "values": ["HAS", "HIS", "IS"],
+    "pre": {
+      "value": "Let’s practice three words that end in the letter S. Read the words on the cards one at a time."
+    }
   },
   {
     "type": "grapheme-trace-air",
@@ -69,7 +71,10 @@
       "prepend": ["Now it's time to learn a new letter. This is the letter R."]
     }
   },
-  { "type": "grapheme-trace-palm", "grapheme": "R" },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "R"
+  },
   {
     "type": "find-grapheme",
     "grapheme": "R",
@@ -78,29 +83,71 @@
     "unique": 3,
     "correct": 1
   },
-  { "type": "introduce-sound", "grapheme": "R", "phoneme": "/r/" },
+  {
+    "type": "introduce-sound",
+    "grapheme": "R",
+    "phoneme": "/r/"
+  },
   {
     "type": "sound-in-word",
     "grapheme": "R",
     "phoneme": "/r/",
     "words": [
-      { "text": "drum", "correct": true },
-      { "text": "boat", "correct": false },
-      { "text": "romp", "correct": true },
-      { "text": "purr", "correct": true }
+      {
+        "text": "red"
+      },
+      {
+        "text": "drum"
+      },
+      {
+        "text": "robot"
+      },
+      {
+        "text": "boat",
+        "correct": false
+      },
+      {
+        "text": "carrot"
+      },
+      {
+        "text": "rat"
+      }
     ]
   },
   {
     "type": "custom",
     "value": [
-      { "type": "verbal", "value": "Amazing! You know 17 letters now!" },
       {
         "type": "verbal",
-        "value": "Alright, now it's time for some Tap-Tap-Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether. I'll go first, and then you."
+        "value": "Amazing! You know 17 letters now!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/gifs/touch-and-slide.gif",
+        "width": 200,
+        "height": 200
+      },
+      {
+        "type": "verbal",
+        "value": [
+          "Now it’s time to do ",
+          {
+            "type": "text",
+            "value": "Touch & Slide",
+            "css": {
+              "fontWeight": "bold"
+            }
+          },
+          " again! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether. I’ll go first, and then you."
+        ]
       }
     ]
   },
-  { "type": "touch-slide", "word": "RAN", "phonemes": ["/r/", "/a/", "/n/"] },
+  {
+    "type": "touch-slide",
+    "word": "RAN",
+    "phonemes": ["/r/", "/a/", "/n/"]
+  },
   {
     "type": "touch-slide",
     "word": "RAMP",
@@ -111,40 +158,30 @@
     "word": "PAST",
     "phonemes": ["/p/", "/a/", "/s/", "/t/"]
   },
-  { "type": "touch-slide", "word": "RUB", "phonemes": ["/r/", "/u/", "/b/"] },
-  { "type": "picture-to-word", "word": "rat", "words": ["rat", "bat", "cat"] },
   {
-    "type": "find-picture",
-    "words": [
-      { "word": "red", "correct": true },
-      { "word": "blue", "correct": false },
-      { "word": "green", "correct": false }
-    ]
+    "type": "touch-slide",
+    "word": "RUB",
+    "phonemes": ["/r/", "/u/", "/b/"]
   },
   {
-    "type": "find-picture",
-    "words": [
-      { "word": "sled", "correct": true },
-      { "word": "car", "correct": false },
-      { "word": "helicopter", "correct": false }
-    ]
+    "type": "picture-to-word",
+    "word": "rat",
+    "words": ["bat", "cat"]
   },
   {
-    "type": "custom",
-    "value": [
-      { "type": "verbal", "value": "You're doing amazing!" },
-      {
-        "type": "verbal",
-        "value": "Let's read another story together. It's my job to read the blue words, and it's your job to read the black words."
-      },
-      {
-        "type": "verbal",
-        "value": "We're not going to touch the screen, but I'm going to point to where we're reading with my finger for now, to help you keep track of where we are."
-      },
-      { "type": "verbal", "value": "Now, let's read a book!" }
-    ]
+    "type": "word-to-picture",
+    "word": "RED",
+    "words": ["blue", "yellow"]
   },
-  { "type": "books", "books": [52234] },
+  {
+    "type": "word-to-picture",
+    "word": "SLED",
+    "words": ["car", "helicopter"]
+  },
+  {
+    "type": "books",
+    "books": [52234]
+  },
   {
     "type": "conclusion",
     "confetti": true

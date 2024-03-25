@@ -28,12 +28,20 @@
     "unique": 3,
     "correct": 1
   },
-  { "type": "sound-to-grapheme", "phoneme": "/t/", "grapheme": "T" },
-  { "type": "sound-to-grapheme", "grapheme": "C", "phoneme": "/c/" },
   {
     "type": "sound-to-grapheme",
-    "phoneme": "/m/",
+    "phoneme": "/t/",
+    "grapheme": "T"
+  },
+  {
+    "type": "sound-to-grapheme",
     "grapheme": "M",
+    "phoneme": "/m/"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/c/",
+    "grapheme": "C",
     "graphemes": ["P", "N"]
   },
   {
@@ -43,33 +51,30 @@
     "graphemes": ["B", "E"]
   },
   {
-    "type": "custom",
-    "value": [
-      {
-        "type": "verbal",
-        "value": "Let’s practice some words that make a funny S sound. Read the words on the cards one at a time."
-      },
-      { "type": "card-stack", "values": ["as", "has", "his", "is"] }
-    ]
+    "type": "card-stack",
+    "values": ["HAS", "HIS", "IS"],
+    "pre": {
+      "value": "Let’s practice three words that end in the letter S. Read the words on the cards one at a time."
+    }
   },
   {
-    "type": "custom",
-    "value": [
-      {
-        "type": "verbal",
-        "value": "Let’s practice the three heart words we learned. Read the words on the cards one at a time."
-      },
-      { "type": "card-stack", "values": ["I", "a", "the"] }
-    ]
+    "type": "card-stack",
+    "values": ["I", "A", "THE"],
+    "pre": {
+      "value": "Let’s practice three heart words. Read the words on the cards one at a time."
+    }
   },
   {
     "type": "grapheme-trace-air",
     "grapheme": "U",
     "pre": {
-      "prepend": ["Now it's time to learn a new letter. This is the letter U."]
+      "prepend": ["Now it's time to learn a new letter."]
     }
   },
-  { "type": "grapheme-trace-palm", "grapheme": "U" },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "U"
+  },
   {
     "type": "find-grapheme",
     "grapheme": "U",
@@ -78,25 +83,66 @@
     "unique": 3,
     "correct": 1
   },
-  { "type": "introduce-sound", "grapheme": "U", "phoneme": "/u/" },
+  {
+    "type": "introduce-sound",
+    "grapheme": "U",
+    "phoneme": "/u/"
+  },
   {
     "type": "sound-in-word",
     "grapheme": "U",
     "phoneme": "/u/",
     "words": [
-      { "text": "upper", "correct": true },
-      { "text": "cub", "correct": true },
-      { "text": "butter", "correct": true },
-      { "text": "baby", "correct": false }
+      {
+        "text": "up"
+      },
+      {
+        "text": "under"
+      },
+      {
+        "text": "cub"
+      },
+      {
+        "text": "baby",
+        "correct": false
+      },
+      {
+        "text": "butter"
+      },
+      {
+        "text": "stop"
+      },
+      {
+        "text": "sun"
+      }
     ]
   },
   {
     "type": "custom",
     "value": [
-      { "type": "verbal", "value": "Amazing! You know 16 letters now!" },
       {
         "type": "verbal",
-        "value": "Alright, now it's time for some Tap-Tap-Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether. I'll go first, and then you."
+        "value": "Amazing! You know 16 letters now!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/gifs/touch-and-slide.gif",
+        "width": 200,
+        "height": 200
+      },
+      {
+        "type": "verbal",
+        "value": [
+          "Now it’s time to do ",
+          {
+            "type": "text",
+            "value": "Touch & Slide",
+            "css": {
+              "fontWeight": "bold"
+            }
+          },
+          " again! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether. I’ll go first, and then you."
+        ]
       }
     ]
   },
@@ -126,7 +172,7 @@
       "append": [
         {
           "type": "verbal",
-          "value": "Have you ever heard this word before. It might sound a little silly, but it can mean two different things. One is for example, if you’re “on the cusp of a new school year”, it means the school year is about to start, or if you are “at the cusp of the mountain”, it means you’re almost at the top or point."
+          "value": "Have you ever heard this word before? It might sound a little silly, but it can mean two different things. One is for example, if you’re ‘on the cusp of a new school year’, it means the school year is about to start, or if you are ‘at the cusp of the mountain’, it means you’re almost at the top or point."
         }
       ]
     }
@@ -136,39 +182,25 @@
     "word": "MUST",
     "phonemes": ["/m/", "/u/", "/s/", "/t/"]
   },
-  { "type": "picture-to-word", "word": "sun", "words": ["sun", "cap", "bus"] },
   {
-    "type": "find-picture",
-    "words": [
-      { "word": "bus", "correct": true },
-      { "word": "airplane", "correct": false },
-      { "word": "car", "correct": false }
-    ]
+    "type": "picture-to-word",
+    "word": "sun",
+    "words": ["cap", "bus"]
   },
   {
-    "type": "find-picture",
-    "words": [
-      { "word": "step", "correct": true },
-      { "word": "slide", "correct": false },
-      { "word": "swing", "correct": false }
-    ]
+    "type": "word-to-picture",
+    "word": "BUS",
+    "words": ["airplane", "car"]
   },
   {
-    "type": "custom",
-    "value": [
-      { "type": "verbal", "value": "You're doing amazing!" },
-      {
-        "type": "verbal",
-        "value": "Let's read another story together. It's my job to read the blue words, and it's your job to read the black words."
-      },
-      {
-        "type": "verbal",
-        "value": "We're not going to touch the screen, but I'm going to point to where we're reading with my finger for now, to help you keep track of where we are."
-      },
-      { "type": "verbal", "value": "Now, let's read a book!" }
-    ]
+    "type": "word-to-picture",
+    "word": "STEP",
+    "words": ["slide", "swing"]
   },
-  { "type": "books", "books": [52233] },
+  {
+    "type": "books",
+    "books": [52233]
+  },
   {
     "type": "conclusion",
     "confetti": true
