@@ -63,7 +63,19 @@
       { "text": "pin", "correct": false },
       { "text": "otter" },
       { "text": "nod" }
-    ]
+    ],
+    "post": {
+      "append": [
+        {
+          "type": "verbal",
+          "value": [
+            "Can you think of a word that has the ",
+            { "type": "phoneme", "value": "/o/" },
+            " sound?"
+          ]
+        }
+      ]
+    }
   },
   {
     "type": "custom",

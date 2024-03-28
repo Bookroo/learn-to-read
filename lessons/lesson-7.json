@@ -90,7 +90,19 @@
       {
         "text": "wiggle"
       }
-    ]
+    ],
+    "post": {
+      "append": [
+        {
+          "type": "verbal",
+          "value": [
+            "Can you think of a word that has the ",
+            { "type": "phoneme", "value": "/g/" },
+            " sound?"
+          ]
+        }
+      ]
+    }
   },
   {
     "type": "grapheme-trace-air",
@@ -144,7 +156,19 @@
       {
         "text": "bad"
       }
-    ]
+    ],
+    "post": {
+      "append": [
+        {
+          "type": "verbal",
+          "value": [
+            "Can you think of a word that has the ",
+            { "type": "phoneme", "value": "/b/" },
+            " sound?"
+          ]
+        }
+      ]
+    }
   },
   {
     "type": "custom",
