@@ -42,7 +42,7 @@
     "type": "grapheme-trace-air",
     "grapheme": "G",
     "pre": {
-      "prepend": ["Now it's time to learn a new letter. This is the letter G."]
+      "prepend": ["Now it's time to learn a new letter."]
     }
   },
   {
@@ -81,7 +81,8 @@
         "text": "hog"
       },
       {
-        "text": "pickle"
+        "text": "pickle",
+        "correct": false
       },
       {
         "text": "gas"
@@ -95,7 +96,7 @@
     "type": "grapheme-trace-air",
     "grapheme": "B",
     "pre": {
-      "prepend": ["Now it's time to learn a new letter. This is the letter B."]
+      "prepend": ["Now it's time to learn a new letter."]
     }
   },
   {

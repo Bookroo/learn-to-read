@@ -8,7 +8,7 @@
       },
       {
         "type": "verbal",
-        "value": "But like usual, let's review some of the letters, sounds, and words we learned in the previous lessons."
+        "value": "But first, let's review some of the letters and sounds we learned in previous lessons."
       }
     ]
   },
@@ -90,7 +90,7 @@
     "type": "grapheme-trace-air",
     "grapheme": "H",
     "pre": {
-      "prepend": ["Now it's time to learn a new letter. This is the letter H."]
+      "prepend": ["Now it's time to learn a new letter."]
     }
   },
   {

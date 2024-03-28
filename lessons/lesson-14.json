@@ -2,14 +2,8 @@
   {
     "type": "custom",
     "value": [
-      {
-        "type": "verbal",
-        "value": "In this lesson, we're going to learn one new letter and one new sound."
-      },
-      {
-        "type": "verbal",
-        "value": "But like usual, let's review some of the letters, sounds, and words we learned in the previous lessons."
-      }
+      "In this lesson, we're going to learn one new letter and one new sound.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
     ]
   },
   {
