@@ -70,7 +70,7 @@
           "type": "verbal",
           "value": [
             "Can you think of a word that has the ",
-            { "type": "phoneme", "value": "/o/" },
+            { "type": "sound", "phoneme": "/o/" },
             " sound?"
           ]
         }

@@ -113,7 +113,7 @@
           "type": "verbal",
           "value": [
             "Can you think of a word that has the ",
-            { "type": "phoneme", "value": "/r/" },
+            { "type": "sound", "phoneme": "/r/" },
             " sound?"
           ]
         }

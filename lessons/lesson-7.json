@@ -97,7 +97,7 @@
           "type": "verbal",
           "value": [
             "Can you think of a word that has the ",
-            { "type": "phoneme", "value": "/g/" },
+            { "type": "sound", "phoneme": "/g/" },
             " sound?"
           ]
         }
@@ -163,7 +163,7 @@
           "type": "verbal",
           "value": [
             "Can you think of a word that has the ",
-            { "type": "phoneme", "value": "/b/" },
+            { "type": "sound", "phoneme": "/b/" },
             " sound?"
           ]
         }
