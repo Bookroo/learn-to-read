@@ -168,8 +168,8 @@
     "books": [52226],
     "pre": {
       "value": [
-        "Great work! Now, it's time to read a book.",
-        "Remember, when you read the black words, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together.",
+        "Great work! Now, let's read a book together. I will read the blue words and you will read the black words.",
+        "Remember, when it's your turn to read, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together.",
         {
           "type": "instruction",
           "value": "Help {name} read each word using Touch & Slide. This is not a quiz, so guide them when they get stuck. This is just practice and should be fun."
