@@ -28,19 +28,51 @@
     "unique": 3,
     "correct": 1
   },
-  { "type": "sound-to-grapheme", "grapheme": "I", "phoneme": "/i/" },
-  { "type": "sound-to-grapheme", "phoneme": "/d/", "grapheme": "D" },
-  { "type": "sound-to-grapheme", "phoneme": "/p/", "grapheme": "P" },
-  { "type": "sound-to-grapheme", "phoneme": "/a/", "grapheme": "A" },
-  { "type": "sound-to-grapheme", "phoneme": "/p/", "grapheme": "P" },
-  { "type": "sound-to-grapheme", "phoneme": "/t/", "grapheme": "T" },
-  { "type": "sound-to-grapheme", "grapheme": "S", "phoneme": "/s/" },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "I",
+    "phoneme": "/i/"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/d/",
+    "grapheme": "D"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/p/",
+    "grapheme": "P"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/a/",
+    "grapheme": "A"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/p/",
+    "grapheme": "P"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/t/",
+    "grapheme": "T"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "S",
+    "phoneme": "/s/"
+  },
   {
     "type": "grapheme-trace-air",
     "grapheme": "O",
     "pre": {
       "prepend": ["Now it's time to learn a new letter."]
     }
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "O"
   },
   {
     "type": "find-grapheme",
@@ -50,19 +82,35 @@
     "unique": 3,
     "correct": 1
   },
-  { "type": "grapheme-trace-palm", "grapheme": "O" },
-  { "type": "introduce-sound", "grapheme": "O", "phoneme": "/o/" },
+  {
+    "type": "introduce-sound",
+    "grapheme": "O",
+    "phoneme": "/o/"
+  },
   {
     "type": "sound-in-word",
     "grapheme": "O",
     "phoneme": "/o/",
     "words": [
-      { "text": "odd" },
-      { "text": "octave" },
-      { "text": "dot" },
-      { "text": "pin", "correct": false },
-      { "text": "otter" },
-      { "text": "nod" }
+      {
+        "text": "odd"
+      },
+      {
+        "text": "octave"
+      },
+      {
+        "text": "dot"
+      },
+      {
+        "text": "pin",
+        "correct": false
+      },
+      {
+        "text": "otter"
+      },
+      {
+        "text": "nod"
+      }
     ],
     "post": {
       "append": [
@@ -70,7 +118,10 @@
           "type": "verbal",
           "value": [
             "Can you think of a word that has the ",
-            { "type": "sound", "phoneme": "/o/" },
+            {
+              "type": "sound",
+              "phoneme": "/o/"
+            },
             " sound?"
           ]
         }
@@ -96,11 +147,31 @@
       }
     ]
   },
-  { "type": "touch-slide", "word": "NOT", "phonemes": ["/n/", "/o/", "/t/"] },
-  { "type": "touch-slide", "word": "TOP", "phonemes": ["/t/", "/o/", "/p/"] },
-  { "type": "touch-slide", "word": "POT", "phonemes": ["/p/", "/o/", "/t/"] },
-  { "type": "word-to-picture", "word": "MOP", "words": ["dog", "bucket"] },
-  { "type": "word-to-picture", "word": "DOT", "words": ["hat", "cat"] },
+  {
+    "type": "touch-slide",
+    "word": "NOT",
+    "phonemes": ["/n/", "/o/", "/t/"]
+  },
+  {
+    "type": "touch-slide",
+    "word": "TOP",
+    "phonemes": ["/t/", "/o/", "/p/"]
+  },
+  {
+    "type": "touch-slide",
+    "word": "POT",
+    "phonemes": ["/p/", "/o/", "/t/"]
+  },
+  {
+    "type": "word-to-picture",
+    "word": "MOP",
+    "words": ["dog", "bucket"]
+  },
+  {
+    "type": "word-to-picture",
+    "word": "DOT",
+    "words": ["hat", "cat"]
+  },
   {
     "type": "books",
     "books": [52223],
@@ -115,5 +186,8 @@
       ]
     }
   },
-  { "type": "conclusion", "confetti": true }
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
 ]

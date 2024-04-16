@@ -57,6 +57,35 @@
     "graphemes": ["C", "Q"]
   },
   {
+    "type": "grapheme-trace-air",
+    "grapheme": "S",
+    "pre": {
+      "value": [
+        "In the previous lesson, we learned that the letter S can make two different sounds when it is at the end of a word. What are those two sounds?"
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "That's right! The letter S when it's at the end of a word can make the ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound or the ",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            " sound."
+          ]
+        }
+      ]
+    }
+  },
+  {
     "type": "card-stack",
     "values": ["is", "mats", "digs"],
     "pre": {
@@ -87,7 +116,25 @@
   {
     "type": "introduce-sound",
     "grapheme": "E",
-    "phoneme": "/e/"
+    "phoneme": "/e/",
+    "post": {
+      "insert_after": [
+        {
+          "index": 0,
+          "value": {
+            "type": "instruction",
+            "value": [
+              "The ",
+              {
+                "type": "sound",
+                "phoneme": "/e/"
+              },
+              " sound can often be a difficult sound for new readers, so spend time to make sure {name} is saying it correctly."
+            ]
+          }
+        }
+      ]
+    }
   },
   {
     "type": "sound-in-word",
@@ -105,10 +152,10 @@
         "correct": false
       },
       {
-        "text": "egg"
+        "text": "empty"
       },
       {
-        "text": "excellent"
+        "text": "send"
       },
       {
         "text": "bug",

@@ -104,7 +104,8 @@
         "text": "butter"
       },
       {
-        "text": "stop"
+        "text": "stop",
+        "correct": false
       },
       {
         "text": "sun"
@@ -178,8 +179,8 @@
   },
   {
     "type": "picture-to-word",
-    "word": "sun",
-    "words": ["cap", "bus"]
+    "word": "SUN",
+    "words": ["CAP", "BUS"]
   },
   {
     "type": "word-to-picture",

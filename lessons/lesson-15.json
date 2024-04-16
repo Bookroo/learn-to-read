@@ -171,8 +171,8 @@
   },
   {
     "type": "picture-to-word",
-    "word": "rat",
-    "words": ["bat", "cat"]
+    "word": "RAT",
+    "words": ["BAT", "CAT"]
   },
   {
     "type": "word-to-picture",

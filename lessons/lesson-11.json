@@ -85,7 +85,7 @@
   {
     "type": "custom",
     "value": [
-      "Heart words are words that don't follow the letter sound rules we've been learning.",
+      "Heart words are words that don't follow the letter sound rules we've learned so far.",
       "Because they don't follow the rules, we have to learn these words by heart (or sight). Another name for ‘heart words’ is ‘sight words’.",
       "Let's look at our first heart word."
     ]
@@ -112,8 +112,11 @@
     "story": "I like you. I like me.",
     "words": ["I"],
     "pre": {
-      "value": [
-        "Let's practice finding our new heart word ‘I’ in this story. First, I'll read the story to you. Then, I'll ask you to find the word ‘I’ in the story text."
+      "replace": [
+        {
+          "index": 0,
+          "value": "Let's practice finding our new heart word ‘I’ in these sentences. First, I'll read the sentences to you. Then, I'll ask you to find the word ‘I’ in the sentences."
+        }
       ]
     }
   },
@@ -123,8 +126,11 @@
     "words": ["I"],
     "pre": {
       "value": [
-        "Let's try another example. This time, you find the word `I` first, and then read me the whole story."
+        "Let's try another example. This time, you find the word `I` first, and then read me the sentence."
       ]
+    },
+    "post": {
+      "value": ["Good job! Now can you read the sentence to me?"]
     }
   },
   {
@@ -133,35 +139,57 @@
     "phonemes": ["/A/"],
     "pre": {
       "value": [
-        "We're ready for another heart word! Our next heart word is the word ‘A’.",
-        "Can you say the word ‘A’?",
-        "The word ‘A’ is spelled with just one letter, the letter A."
+        {
+          "type": "instruction",
+          "value": [
+            "The word ‘a’ can be pronounced as ",
+            {
+              "type": "sound",
+              "phoneme": "/A/"
+            },
+            " or ",
+            {
+              "type": "sound",
+              "phoneme": "/u/"
+            },
+            ". Either is fine."
+          ]
+        },
+        "We're ready for another heart word! Our next heart word is the word ‘a’. Like in the sentence ‘I see a cat’.",
+        "Can you say the word ‘a’?",
+        "The word ‘a’ is spelled with just one letter, the letter A."
       ]
     },
     "post": {
       "value": [
-        "When you see the letter A all alone,\nyou know it's the word ‘A’ because ‘A’ is a heart word."
+        "When you see the letter A all alone,\nyou know it's the word ‘a’ because ‘a’ is a heart word."
       ]
     }
   },
   {
     "type": "story-words",
     "story": "A peach, a pear, and a plum all go in my tum.",
-    "words": ["A"],
+    "words": ["a"],
     "pre": {
-      "value": [
-        "Let's practice finding our new heart word ‘A’ in this story. First, I'll read the story to you. Then, I'll ask you to find the word ‘A’ in the story text."
+      "replace": [
+        {
+          "index": 0,
+          "value": "Let's practice finding our new heart word ‘a’ in this sentence. First, I'll read the sentence to you. Then, I'll ask you to find the word ‘a’ in the sentence."
+        }
       ]
     }
   },
   {
     "type": "story-words",
     "story": "Tam has a hen.",
-    "words": ["A"],
+    "words": ["a"],
     "pre": {
       "value": [
-        "Let's try another example. This time, you find the word `I` first, and then read me the whole story."
+        "Let's try another example. This time, you find the word `a` first, and then read me the sentence."
       ]
+    },
+    "post": {
+      "value": ["Good job! Now can you read the sentence to me?"]
     }
   },
   {
@@ -170,30 +198,33 @@
     "phonemes": ["/i/"],
     "pre": {
       "value": [
-        "It's time for our last heart word! Our last heart word is the word ‘THE’.",
-        "Can you say the word ‘THE’?",
-        "The word ‘THE’ is spelled with the letters T, H, and E."
+        "It's time for one final heart word! Our last heart word is the word ‘the’.",
+        "Can you say the word ‘the’?",
+        "The word ‘the’ is spelled with the letters T, H, and E."
       ]
     },
     "post": {
       "value": [
-        "When you see the letters T, H, and E together, you know it's the word ‘THE’ because ‘THE’ is a heart word."
+        "When you see the letters T, H, and E together, you know it's the word ‘the’ because ‘the’ is a heart word."
       ]
     }
   },
   {
     "type": "story-words",
     "story": "THE CAT SAT ON THE MAT.",
-    "words": ["THE"]
+    "words": ["the"]
   },
   {
     "type": "story-words",
     "story": "THE DOG IS SAD.",
-    "words": ["THE"],
+    "words": ["the"],
     "pre": {
       "value": [
-        "Let's try another example. This time, you find the word `THE` first, and then read me the whole story."
+        "Let's try another example. This time, you find the word `the` first, and then read me the sentence."
       ]
+    },
+    "post": {
+      "value": ["Good job! Now can you read the sentence to me?"]
     }
   },
   {
@@ -222,7 +253,10 @@
   },
   {
     "type": "books",
-    "books": [52229, 52231]
+    "books": [52229, 52231],
+    "pre": {
+      "value": "Let’s read a book together. You can choose either book, or you can read both of them."
+    }
   },
   {
     "type": "conclusion",

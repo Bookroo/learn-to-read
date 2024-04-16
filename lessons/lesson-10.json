@@ -40,8 +40,8 @@
   },
   {
     "type": "sound-to-grapheme",
-    "phoneme": "/h/",
-    "grapheme": "H",
+    "phoneme": "/t/",
+    "grapheme": "T",
     "graphemes": ["S", "N"]
   },
   {
@@ -119,17 +119,17 @@
         "text": "home"
       },
       {
-        "text": "healthy"
+        "text": "hat"
       },
       {
-        "text": "car",
+        "text": "tent",
         "correct": false
       },
       {
         "text": "happy"
       },
       {
-        "text": "mitten",
+        "text": "pig",
         "correct": false
       },
       {
@@ -266,7 +266,7 @@
   {
     "type": "word-to-picture",
     "word": "HAT",
-    "words": ["jellyfish", "barn"]
+    "words": ["jellyfish", "cat"]
   },
   {
     "type": "books",
