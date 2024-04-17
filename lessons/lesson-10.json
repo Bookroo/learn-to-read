@@ -142,7 +142,10 @@
           "type": "verbal",
           "value": [
             "Can you think of a word that has the ",
-            { "type": "sound", "phoneme": "/h/" },
+            {
+              "type": "sound",
+              "phoneme": "/h/"
+            },
             " sound?"
           ]
         }
@@ -193,16 +196,11 @@
     "word": "HAS",
     "phonemes": ["/h/", "/a/", "/z/"],
     "pre": {
-      "prepend": [
-        "Notice that this word ends in the letter S. Listen as I read the word."
-      ]
-    },
-    "post": {
-      "prepend": [
+      "value": [
         {
           "type": "verbal",
           "value": [
-            "Does this letter S make the ",
+            "This word ends in the letter S. That means we'll need to figure out if the S makes the ",
             {
               "type": "sound",
               "phoneme": "/s/"
@@ -212,12 +210,271 @@
               "type": "sound",
               "phoneme": "/z/"
             },
-            " . . . That's right, it makes the ",
+            " sound. Let's try sounding it out with the ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound first."
+          ]
+        },
+        {
+          "type": "instruction",
+          "value": [
+            "Emphasize the incorrect ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/h/"
+            },
+            "—",
+            {
+              "type": "sound",
+              "phoneme": "/a/"
+            },
+            "—",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            "  . . .   ",
+            {
+              "type": "text",
+              "value": "HA-S",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Do you recognize that word? No, ",
+            {
+              "type": "sound",
+              "phoneme": "/h/"
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/"
+            },
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " is not a word.\nLet's try it with the ",
             {
               "type": "sound",
               "phoneme": "/z/"
             },
-            " sound!"
+            " sound."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/h/"
+            },
+            "—",
+            {
+              "type": "sound",
+              "phoneme": "/a/"
+            },
+            "—",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            "  . . .   ",
+            {
+              "type": "text",
+              "value": "HAS",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        },
+        "Do you recognize that word? Yes, it is the word ‘has’, as in ‘He has a hat’.",
+        "Let's try it together."
+      ]
+    }
+  },
+  {
+    "type": "touch-slide",
+    "word": "HIS",
+    "phonemes": ["/h/", "/i/", "/z/"],
+    "pre": {
+      "value": [
+        "This word also ends in the letter S. Let's use our same strategy.",
+        {
+          "type": "instruction",
+          "value": [
+            "Emphasize the incorrect ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound, as if it were ‘hiss’."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/h/"
+            },
+            "—",
+            {
+              "type": "sound",
+              "phoneme": "/i/"
+            },
+            "—",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            "  . . .   ",
+            {
+              "type": "text",
+              "value": "HIS",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        "Do you hear the word? This sounds like the word ‘hiss’, like a hissing snake.",
+        "But the letters H, I, and S do not spell the word ‘hiss’. They spell the word ‘his’, as in ‘His hat is red’.",
+        "This is a word where our vocabulary strategy does not work."
+      ]
+    }
+  },
+  {
+    "type": "touch-slide",
+    "word": "HIS",
+    "phonemes": ["/h/", "/i/", "/z/"],
+    "pre": {
+      "value": [
+        "So, what strategy should we use to read this word?",
+        "There are two strategies you can use. The first is that even though you can sound out this word, you can also just remember that the letters H, I, and S spell the word ‘his’ and not the word ‘hiss’."
+      ]
+    },
+    "post": {
+      "value": [
+        "Words that you read by remembering them are called ‘heart words’. We'll learn more about heart words in our next lesson."
+      ]
+    }
+  },
+  {
+    "type": "story",
+    "story": "It is his hat.",
+    "pre": {
+      "value": [
+        "The second strategy we can try is to use the words in the rest of the sentence as clues to help us figure out the tricky word.",
+        "For example, watch as I read this sentence.",
+        {
+          "type": "instruction",
+          "value": [
+            "Point to “It” and say “It”. Point to “is” and say “is”.",
+            " Point to “his” and say ",
+            {
+              "type": "sound",
+              "phoneme": "/h/"
+            },
+            "-",
+            {
+              "type": "sound",
+              "phoneme": "/i/"
+            },
+            "-",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            ". . . ",
+            {
+              "type": "text",
+              "value": "HISS",
+              "css": {
+                "fontWeight": "bold",
+                "fontStyle": "normal"
+              }
+            },
+            ". Point to “hat” and say “hat”."
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Does that sound right? No, ‘It is hiss hat’ doesn't make sense. That is a good clue that the tricky word is not ‘hiss’. Let's try it again with the ",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            " sound."
+          ]
+        },
+        {
+          "type": "instruction",
+          "value": [
+            "Point to “It” and say “It”. Point to “is” and say “is”.",
+            " Point to “his” and say ",
+            {
+              "type": "sound",
+              "phoneme": "/h/"
+            },
+            "-",
+            {
+              "type": "sound",
+              "phoneme": "/i/"
+            },
+            "-",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            ". . . ",
+            {
+              "type": "text",
+              "value": "HIS",
+              "css": {
+                "fontWeight": "bold",
+                "fontStyle": "normal"
+              }
+            },
+            ". Point to “hat” and say “hat”."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "That makes a lot more sense. See how we used the words around the tricky word to help us figure it out?"
           ]
         }
       ]
@@ -228,40 +485,66 @@
     "word": "HIS",
     "phonemes": ["/h/", "/i/", "/z/"],
     "pre": {
-      "prepend": [
-        "This word also ends in the letter S. Listen as I read the word."
-      ]
-    },
-    "post": {
-      "prepend": [
+      "value": [
+        "Don't worry if that is a little confusing. We'll practice these strategies more in the future. For now, it's enough just to know about them.",
         {
           "type": "verbal",
           "value": [
-            "Does this letter S make the ",
-            {
-              "type": "sound",
-              "phoneme": "/s/"
-            },
-            " sound or the ",
+            "Can you read the word ‘his’ with me? Remember that when the letters H, I, and S are together, they spell the word ‘his’ and the S makes the ",
             {
               "type": "sound",
               "phoneme": "/z/"
             },
-            " . . . That's right, it also makes the ",
-            {
-              "type": "sound",
-              "phoneme": "/z/"
-            },
-            " sound!"
+            " sound."
           ]
         }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "instruction",
+          "value": "Do Touch & Slide together."
+        },
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/h/"
+            },
+            "-",
+            {
+              "type": "sound",
+              "phoneme": "/i/"
+            },
+            "-",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            ". . . ",
+            {
+              "type": "text",
+              "value": "HIS",
+              "css": {
+                "fontWeight": "bold",
+                "fontStyle": "normal"
+              }
+            }
+          ]
+        },
+        "Great job! Now try it on your own."
       ]
     }
   },
   {
     "type": "word-to-picture",
     "word": "HOG",
-    "words": ["car", "dog"]
+    "words": ["car", "dog"],
+    "pre": {
+      "prepend": "Good work! Let’s move on to the next word."
+    }
   },
   {
     "type": "word-to-picture",

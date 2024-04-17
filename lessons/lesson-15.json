@@ -170,6 +170,10 @@
     "phonemes": ["/r/", "/u/", "/b/"]
   },
   {
+    "type": "word-chain",
+    "words": ["RAN", "RAM", "RAMP", "CAMP"]
+  },
+  {
     "type": "picture-to-word",
     "word": "RAT",
     "words": ["BAT", "CAT"]
@@ -186,7 +190,13 @@
   },
   {
     "type": "books",
-    "books": [52234]
+    "books": [52234],
+    "pre": {
+      "value": [
+        "Great work! Now, let's read a book together. I will read the blue words and you will read the black words.",
+        "Remember, when it's your turn to read, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together."
+      ]
+    }
   },
   {
     "type": "conclusion",

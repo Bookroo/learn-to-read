@@ -178,6 +178,10 @@
     "phonemes": ["/m/", "/u/", "/s/", "/t/"]
   },
   {
+    "type": "word-chain",
+    "words": ["DUG", "BUG", "SLUG", "MUG"]
+  },
+  {
     "type": "picture-to-word",
     "word": "SUN",
     "words": ["CAP", "BUS"]
@@ -194,7 +198,13 @@
   },
   {
     "type": "books",
-    "books": [52233]
+    "books": [52233],
+    "pre": {
+      "value": [
+        "Great work! Now, let's read a book together.",
+        "This book only has two blue words. That means you get to read almost all of the words in this book!"
+      ]
+    }
   },
   {
     "type": "conclusion",
