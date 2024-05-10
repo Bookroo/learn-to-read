@@ -28,7 +28,9 @@
         "value": {
           "type": "text",
           "value": "Identify letters\nIdentify sounds\nBlend sounds\nUnderstand word",
-          "css": { "textAlign": "left" }
+          "css": {
+            "textAlign": "left"
+          }
         }
       },
       {
@@ -59,7 +61,10 @@
           "type": "instruction",
           "value": [
             "Note that this is the letter M, not the ",
-            { "type": "sound", "phoneme": "/m/" },
+            {
+              "type": "sound",
+              "phoneme": "/m/"
+            },
             " sound."
           ]
         }
@@ -106,7 +111,10 @@
               "type": "verbal",
               "value": [
                 "The ",
-                { "type": "sound", "phoneme": "/m/" },
+                {
+                  "type": "sound",
+                  "phoneme": "/m/"
+                },
                 " sound is a ‘held’ sound, which means you can hold it continuously when saying it."
               ]
             },
@@ -124,7 +132,10 @@
             "type": "instruction",
             "value": [
               "Touch your left shoulder with your right hand and say ",
-              { "type": "sound", "phoneme": "/m/" },
+              {
+                "type": "sound",
+                "phoneme": "/m/"
+              },
               " for two seconds. The purpose of this hand action will make sense soon."
             ]
           }
@@ -133,17 +144,9 @@
     }
   },
   {
-    "type": "sound-in-word",
-    "grapheme": "M",
+    "type": "phoneme-blending",
     "phoneme": "/m/",
-    "words": [
-      "mat",
-      "ram",
-      { "text": "cat", "correct": false },
-      "miss",
-      { "text": "dog", "correct": false },
-      "yum"
-    ]
+    "words": ["mat", "swim", "camp"]
   },
   {
     "type": "grapheme-trace-air",
@@ -152,9 +155,19 @@
       "prepend": ["Good work! Now it’s time for another letter."]
     }
   },
-  { "type": "grapheme-trace-palm", "grapheme": "T" },
-  { "type": "grapheme-hand-shape", "grapheme": "T" },
-  { "type": "find-grapheme", "grapheme": "T", "graphemes": ["M", "B"] },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "T"
+  },
+  {
+    "type": "grapheme-hand-shape",
+    "grapheme": "T"
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "T",
+    "graphemes": ["M", "B"]
+  },
   {
     "type": "introduce-sound",
     "grapheme": "T",
@@ -165,7 +178,10 @@
           "type": "instruction",
           "value": [
             "Note that the ",
-            { "type": "sound", "phoneme": "/t/" },
+            {
+              "type": "sound",
+              "phoneme": "/t/"
+            },
             " sound is NOT underlined. This is because it is a quick sound."
           ]
         }
@@ -200,18 +216,9 @@
     }
   },
   {
-    "type": "sound-in-word",
-    "grapheme": "T",
+    "type": "phoneme-blending",
     "phoneme": "/t/",
-    "words": [
-      "tip",
-      "top",
-      { "text": "can", "correct": false },
-      "pot",
-      "tape",
-      { "text": "cake", "correct": false },
-      "kite"
-    ]
+    "words": ["mat", "tap", "hat"]
   },
   {
     "type": "grapheme-trace-air",
@@ -220,8 +227,15 @@
       "prepend": ["Great job! Let’s try one more letter."]
     }
   },
-  { "type": "grapheme-trace-palm", "grapheme": "A" },
-  { "type": "find-grapheme", "grapheme": "A", "graphemes": ["T", "D"] },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "A"
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "A",
+    "graphemes": ["T", "D"]
+  },
   {
     "type": "introduce-sound",
     "grapheme": "A",
@@ -245,17 +259,9 @@
     }
   },
   {
-    "type": "sound-in-word",
-    "grapheme": "A",
+    "type": "phoneme-blending",
     "phoneme": "/a/",
-    "words": [
-      "cap",
-      "apple",
-      { "text": "fix", "correct": false },
-      "map",
-      { "text": "pig", "correct": false },
-      "bat"
-    ]
+    "words": ["mat", "ask", "pan"]
   },
   {
     "type": "custom",
@@ -273,14 +279,16 @@
           {
             "type": "text",
             "value": "Touch & Slide",
-            "css": { "fontWeight": "bold" }
+            "css": {
+              "fontWeight": "bold"
+            }
           },
           "."
         ]
       },
       {
         "type": "instruction",
-        "value": "This game helps {name} practice a skill called “blending”."
+        "value": "This game helps {name} practice a skill called \"blending\"."
       },
       {
         "type": "verbal",
@@ -288,10 +296,15 @@
           {
             "type": "text",
             "value": "Touch & Slide",
-            "css": { "fontWeight": "bold" }
+            "css": {
+              "fontWeight": "bold"
+            }
           },
           " helps us combine sounds to make a word. You’ve already learned part of this game when you touched your shoulder and said ",
-          { "type": "sound", "phoneme": "/a/" },
+          {
+            "type": "sound",
+            "phoneme": "/a/"
+          },
           " for the letter A."
         ]
       },
@@ -313,7 +326,10 @@
           "type": "verbal",
           "value": [
             "The first letter is the letter A. It makes the ",
-            { "type": "sound", "phoneme": "/a/" },
+            {
+              "type": "sound",
+              "phoneme": "/a/"
+            },
             " sound."
           ]
         },
@@ -321,13 +337,20 @@
           "type": "instruction",
           "value": [
             "Touch your shoulder and say ",
-            { "type": "sound", "phoneme": "/a/" },
+            {
+              "type": "sound",
+              "phoneme": "/a/"
+            },
             " for 2 seconds."
           ]
         },
         {
           "type": "verbal",
-          "value": { "type": "sound", "phoneme": "/a/", "showQuotes": false }
+          "value": {
+            "type": "sound",
+            "phoneme": "/a/",
+            "showQuotes": false
+          }
         }
       ]
     },
@@ -341,7 +364,10 @@
           "type": "verbal",
           "value": [
             "Next, is the letter T. It makes the ",
-            { "type": "sound", "phoneme": "/t/" },
+            {
+              "type": "sound",
+              "phoneme": "/t/"
+            },
             " sound."
           ]
         },
@@ -349,13 +375,20 @@
           "type": "instruction",
           "value": [
             "Touch your elbow and say ",
-            { "type": "sound", "phoneme": "/t/" },
+            {
+              "type": "sound",
+              "phoneme": "/t/"
+            },
             "."
           ]
         },
         {
           "type": "verbal",
-          "value": { "type": "sound", "phoneme": "/t/", "showQuotes": false }
+          "value": {
+            "type": "sound",
+            "phoneme": "/t/",
+            "showQuotes": false
+          }
         }
       ]
     }
@@ -371,7 +404,13 @@
           "type": "instruction",
           "value": [
             "Touch your shoulder and slowly, but continuously, say ‘",
-            { "type": "text", "value": "AT", "css": { "fontWeight": "bold" } },
+            {
+              "type": "text",
+              "value": "AT",
+              "css": {
+                "fontWeight": "bold"
+              }
+            },
             "’ as you slide from shoulder to elbow. Then, repeat the sliding motion again at a faster speed. You can repeat the slide as many times as you need at increasing speeds until the word is understood."
           ]
         },
@@ -506,6 +545,10 @@
         }
       ]
     }
+  },
+  {
+    "type": "teach-tam",
+    "value": "TAM"
   },
   {
     "type": "conclusion",
