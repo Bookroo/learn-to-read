@@ -154,10 +154,9 @@
     }
   },
   {
-    "type": "sound-in-word",
-    "grapheme": "S",
+    "type": "phoneme-blending",
     "phoneme": "/s/",
-    "words": ["sat", "snake", "mast", "silly", "carrots"]
+    "words": ["sun", "ask", "sit"]
   },
   {
     "confetti": true,
@@ -281,6 +280,10 @@
         }
       ]
     }
+  },
+  {
+    "type": "teach-tam",
+    "value": "SAT"
   },
   {
     "type": "conclusion",
