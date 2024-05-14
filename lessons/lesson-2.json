@@ -36,17 +36,7 @@
   },
   {
     "type": "grapheme-trace-air",
-    "grapheme": "A",
-    "pre": {
-      "value": [
-        "What letter this is?",
-        {
-          "type": "instruction",
-          "value": "Wait—then provide feedback"
-        },
-        "This is the letter A"
-      ]
-    }
+    "grapheme": "A"
   },
   {
     "type": "introduce-sound",

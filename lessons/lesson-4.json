@@ -91,30 +91,9 @@
     "phoneme": "/i/"
   },
   {
-    "type": "sound-in-word",
-    "grapheme": "I",
+    "type": "phoneme-blending",
     "phoneme": "/i/",
-    "words": [
-      {
-        "text": "itch"
-      },
-      {
-        "text": "big"
-      },
-      {
-        "text": "if"
-      },
-      {
-        "text": "sit"
-      },
-      {
-        "text": "mat",
-        "correct": false
-      },
-      {
-        "text": "iguana"
-      }
-    ]
+    "words": ["sit", "lip", "rip"]
   },
   {
     "type": "custom",
@@ -200,6 +179,10 @@
         }
       ]
     }
+  },
+  {
+    "type": "teach-tam",
+    "value": "PIT"
   },
   {
     "type": "conclusion",

@@ -4,7 +4,7 @@
     "value": [
       {
         "type": "verbal",
-        "value": "In this lesson, we’re going to learn two new letters and two new sounds."
+        "value": "In this lesson, we're going to learn one new letter and one new sound."
       },
       {
         "type": "verbal",
@@ -57,10 +57,40 @@
     "graphemes": ["I", "K"]
   },
   {
+    "type": "identify-sound",
+    "grapheme": "A",
+    "phoneme": "/a/"
+  },
+  {
+    "type": "identify-sound",
+    "grapheme": "M",
+    "phoneme": "/m/"
+  },
+  {
+    "type": "identify-sound",
+    "grapheme": "T",
+    "phoneme": "/t/"
+  },
+  {
+    "type": "identify-sound",
+    "grapheme": "S",
+    "phoneme": "/s/"
+  },
+  {
+    "type": "identify-sound",
+    "grapheme": "I",
+    "phoneme": "/i/"
+  },
+  {
+    "type": "identify-sound",
+    "grapheme": "P",
+    "phoneme": "/p/"
+  },
+  {
     "type": "grapheme-trace-air",
     "grapheme": "N",
     "pre": {
-      "prepend": "Now it’s time to learn a new letter."
+      "prepend": "Now it's time to learn a new letter."
     }
   },
   {
@@ -89,10 +119,10 @@
               "type": "sound",
               "phoneme": "/n/"
             },
-            " sound is underlined, meaning it is a ‘held’ sound. This means you can hold it continuously when saying it. Don't say ",
+            " sound is underlined, meaning it is a âheldâ sound. This means you can hold it continuously when saying it. Don't say ",
             {
               "type": "text",
-              "value": "“NUH.”",
+              "value": "âNUH.â",
               "css": {
                 "fontWeight": "bold",
                 "fontStyle": "normal"
@@ -104,34 +134,16 @@
     }
   },
   {
-    "type": "sound-in-word",
-    "grapheme": "N",
+    "type": "phoneme-blending",
     "phoneme": "/n/",
-    "words": [
-      {
-        "text": "noodle"
-      },
-      {
-        "text": "pin"
-      },
-      {
-        "text": "mat",
-        "correct": false
-      },
-      {
-        "text": "nest"
-      },
-      {
-        "text": "and"
-      }
-    ]
+    "words": ["sun", "nap", "fin"]
   },
   {
     "type": "custom",
     "value": [
       {
         "type": "verbal",
-        "value": "Amazing! You know 7 letters now!"
+        "value": "Amazing! You know 6 letters now!"
       },
       {
         "type": "image",
@@ -141,7 +153,7 @@
       },
       {
         "type": "verbal",
-        "value": "Now it’s time for some Touch & Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether."
+        "value": "Now itâs time for some Touch & Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether."
       }
     ]
   },
@@ -166,62 +178,8 @@
     "words": ["hat", "dog"]
   },
   {
-    "type": "grapheme-trace-air",
-    "grapheme": "D",
-    "pre": {
-      "prepend": ["Now it’s time to learn another letter."]
-    }
-  },
-  {
-    "type": "grapheme-trace-palm",
-    "grapheme": "D"
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "D",
-    "graphemes": ["A", "S"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "introduce-sound",
-    "grapheme": "D",
-    "phoneme": "/d/"
-  },
-  {
-    "type": "touch-slide",
-    "word": "SAD",
-    "phonemes": ["/s/", "/a/", "/d/"]
-  },
-  {
-    "type": "touch-slide",
-    "word": "DIP",
-    "phonemes": ["/d/", "/i/", "/p/"]
-  },
-  {
-    "type": "touch-slide",
-    "word": "AND",
-    "phonemes": ["/a/", "/n/", "/d/"]
-  },
-  {
-    "type": "word-to-picture",
-    "word": "MAD",
-    "words": ["sad", "happy"]
-  },
-  {
-    "type": "books",
-    "books": [52222],
-    "pre": {
-      "value": [
-        "Great work! Now, let's read a book together. I will read the blue words and you will read the black words.",
-        "Remember, when it's your turn to read, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together.",
-        {
-          "type": "instruction",
-          "value": "Help {name} read each word using Touch & Slide. This is not a quiz, so guide them when they get stuck. This is just practice and should be fun."
-        }
-      ]
-    }
+    "type": "teach-tam",
+    "value": "PAN"
   },
   {
     "type": "conclusion",

@@ -14,19 +14,24 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "N",
-    "graphemes": ["M", "T"],
+    "grapheme": "S",
+    "graphemes": ["M", "A"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
   {
     "type": "find-grapheme",
-    "grapheme": "D",
-    "graphemes": ["P", "I"],
+    "grapheme": "I",
+    "graphemes": ["P", "T"],
     "total": 3,
     "unique": 3,
     "correct": 1
+  },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "A",
+    "phoneme": "/a/"
   },
   {
     "type": "sound-to-grapheme",
@@ -35,105 +40,112 @@
   },
   {
     "type": "sound-to-grapheme",
-    "phoneme": "/d/",
-    "grapheme": "D"
+    "grapheme": "M",
+    "phoneme": "/m/",
+    "graphemes": ["T", "P"]
   },
   {
     "type": "sound-to-grapheme",
-    "phoneme": "/p/",
-    "grapheme": "P"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/a/",
-    "grapheme": "A"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/p/",
-    "grapheme": "P"
-  },
-  {
-    "type": "sound-to-grapheme",
+    "grapheme": "T",
     "phoneme": "/t/",
-    "grapheme": "T"
+    "graphemes": ["A", "C"]
   },
   {
     "type": "sound-to-grapheme",
+    "grapheme": "P",
+    "phoneme": "/p/",
+    "graphemes": ["I", "K"]
+  },
+  {
+    "type": "identify-sound",
+    "grapheme": "A",
+    "phoneme": "/a/"
+  },
+  {
+    "type": "identify-sound",
+    "grapheme": "M",
+    "phoneme": "/m/"
+  },
+  {
+    "type": "identify-sound",
     "grapheme": "S",
     "phoneme": "/s/"
   },
   {
+    "type": "identify-sound",
+    "grapheme": "T",
+    "phoneme": "/t/"
+  },
+  {
+    "type": "identify-sound",
+    "grapheme": "N",
+    "phoneme": "/n/"
+  },
+  {
+    "type": "identify-sound",
+    "grapheme": "I",
+    "phoneme": "/i/"
+  },
+  {
+    "type": "identify-sound",
+    "grapheme": "P",
+    "phoneme": "/p/"
+  },
+  {
     "type": "grapheme-trace-air",
-    "grapheme": "O",
+    "grapheme": "D",
     "pre": {
-      "prepend": ["Now it's time to learn a new letter."]
+      "prepend": ["Now it's time to learn another letter."]
     }
   },
   {
     "type": "grapheme-trace-palm",
-    "grapheme": "O"
+    "grapheme": "D"
   },
   {
     "type": "find-grapheme",
-    "grapheme": "O",
-    "graphemes": ["M", "A"],
+    "grapheme": "D",
+    "graphemes": ["A", "S"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
   {
     "type": "introduce-sound",
-    "grapheme": "O",
-    "phoneme": "/o/"
+    "grapheme": "D",
+    "phoneme": "/d/"
   },
   {
-    "type": "sound-in-word",
-    "grapheme": "O",
-    "phoneme": "/o/",
-    "words": [
-      {
-        "text": "odd"
-      },
-      {
-        "text": "octave"
-      },
-      {
-        "text": "dot"
-      },
-      {
-        "text": "pin",
-        "correct": false
-      },
-      {
-        "text": "otter"
-      },
-      {
-        "text": "nod"
-      }
-    ],
-    "post": {
-      "append": [
-        {
-          "type": "verbal",
-          "value": [
-            "Can you think of a word that has the ",
-            {
-              "type": "sound",
-              "phoneme": "/o/"
-            },
-            " sound?"
-          ]
-        }
-      ]
-    }
+    "type": "phoneme-blending",
+    "phoneme": "/d/",
+    "words": ["mud", "dog", "and"]
+  },
+  {
+    "type": "touch-slide",
+    "word": "SAD",
+    "phonemes": ["/s/", "/a/", "/d/"]
+  },
+  {
+    "type": "touch-slide",
+    "word": "DIP",
+    "phonemes": ["/d/", "/i/", "/p/"]
+  },
+  {
+    "type": "touch-slide",
+    "word": "AND",
+    "phonemes": ["/a/", "/n/", "/d/"]
+  },
+  {
+    "type": "word-to-picture",
+    "word": "MAD",
+    "words": ["sad", "happy"]
   },
   {
     "type": "custom",
     "value": [
       {
         "type": "verbal",
-        "value": "Amazing! You know 9 letters now!"
+        "value": "Amazing! You know 8 letters now!"
       },
       {
         "type": "image",
@@ -143,38 +155,13 @@
       },
       {
         "type": "verbal",
-        "value": "Now it’s time for some Touch & Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether."
+        "value": "Now itâs time for some Touch & Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether."
       }
     ]
   },
   {
-    "type": "touch-slide",
-    "word": "NOT",
-    "phonemes": ["/n/", "/o/", "/t/"]
-  },
-  {
-    "type": "touch-slide",
-    "word": "TOP",
-    "phonemes": ["/t/", "/o/", "/p/"]
-  },
-  {
-    "type": "touch-slide",
-    "word": "POT",
-    "phonemes": ["/p/", "/o/", "/t/"]
-  },
-  {
-    "type": "word-to-picture",
-    "word": "MOP",
-    "words": ["dog", "bucket"]
-  },
-  {
-    "type": "word-to-picture",
-    "word": "DOT",
-    "words": ["hat", "cat"]
-  },
-  {
     "type": "books",
-    "books": [52223],
+    "books": [52222],
     "pre": {
       "value": [
         "Great work! Now, let's read a book together. I will read the blue words and you will read the black words.",
@@ -185,6 +172,10 @@
         }
       ]
     }
+  },
+  {
+    "type": "teach-tam",
+    "value": "DIP"
   },
   {
     "type": "conclusion",
