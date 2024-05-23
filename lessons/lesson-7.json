@@ -4,179 +4,61 @@
     "value": [
       {
         "type": "verbal",
-        "value": "In this lesson, we're going to learn two new letters and two new sounds."
+        "value": "In this lesson, we're going to learn one new letter and one new sound."
       },
       {
         "type": "verbal",
-        "value": "But first, let's review some of the letters and sounds we learned in the previous lesson."
+        "value": "But first, let's review some of the letters and sounds we learned in previous lessons."
       }
     ]
   },
   {
     "type": "find-grapheme",
-    "grapheme": "O",
-    "graphemes": ["D", "A"],
+    "grapheme": "N",
+    "graphemes": ["M", "T"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
   {
     "type": "find-grapheme",
-    "grapheme": "S",
-    "graphemes": ["I", "T"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/o/",
-    "grapheme": "O"
-  },
-  {
-    "type": "sound-to-grapheme",
     "grapheme": "D",
-    "phoneme": "/d/"
-  },
-  {
-    "type": "grapheme-trace-air",
-    "grapheme": "G",
-    "pre": {
-      "prepend": ["Now it's time to learn a new letter."]
-    }
-  },
-  {
-    "type": "grapheme-trace-palm",
-    "grapheme": "G"
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "G",
-    "graphemes": ["P", "O"],
+    "graphemes": ["P", "I"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
-  {
-    "type": "introduce-sound",
-    "grapheme": "G",
-    "phoneme": "/g/"
-  },
-  {
-    "type": "sound-in-word",
-    "grapheme": "G",
-    "phoneme": "/g/",
-    "words": [
-      {
-        "text": "goat"
-      },
-      {
-        "text": "grapes"
-      },
-      {
-        "text": "food",
-        "correct": false
-      },
-      {
-        "text": "hog"
-      },
-      {
-        "text": "pickle",
-        "correct": false
-      },
-      {
-        "text": "gas"
-      },
-      {
-        "text": "wiggle"
-      }
-    ],
-    "post": {
-      "append": [
-        {
-          "type": "verbal",
-          "value": [
-            "Can you think of a word that has the ",
-            { "type": "sound", "phoneme": "/g/" },
-            " sound?"
-          ]
-        }
-      ]
-    }
-  },
+  { "type": "sound-to-grapheme", "grapheme": "I", "phoneme": "/i/" },
+  { "type": "sound-to-grapheme", "phoneme": "/d/", "grapheme": "D" },
+  { "type": "sound-to-grapheme", "phoneme": "/p/", "grapheme": "P" },
+  { "type": "sound-to-grapheme", "phoneme": "/a/", "grapheme": "A" },
+  { "type": "sound-to-grapheme", "phoneme": "/p/", "grapheme": "P" },
+  { "type": "sound-to-grapheme", "phoneme": "/t/", "grapheme": "T" },
+  { "type": "sound-to-grapheme", "grapheme": "S", "phoneme": "/s/" },
   {
     "type": "grapheme-trace-air",
-    "grapheme": "B",
-    "pre": {
-      "prepend": ["Now it's time to learn a new letter."]
-    }
+    "grapheme": "O",
+    "pre": { "prepend": ["Now it's time to learn a new letter."] }
   },
-  {
-    "type": "grapheme-trace-palm",
-    "grapheme": "B"
-  },
+  { "type": "grapheme-trace-palm", "grapheme": "O" },
   {
     "type": "find-grapheme",
-    "grapheme": "B",
-    "graphemes": ["I", "T"],
+    "grapheme": "O",
+    "graphemes": ["M", "A"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
+  { "type": "introduce-sound", "grapheme": "O", "phoneme": "/o/" },
   {
-    "type": "introduce-sound",
-    "grapheme": "B",
-    "phoneme": "/b/"
-  },
-  {
-    "type": "sound-in-word",
-    "grapheme": "B",
-    "phoneme": "/b/",
-    "words": [
-      {
-        "text": "big"
-      },
-      {
-        "text": "baby"
-      },
-      {
-        "text": "sad",
-        "correct": false
-      },
-      {
-        "text": "sob"
-      },
-      {
-        "text": "map",
-        "correct": false
-      },
-      {
-        "text": "rabbit"
-      },
-      {
-        "text": "bad"
-      }
-    ],
-    "post": {
-      "append": [
-        {
-          "type": "verbal",
-          "value": [
-            "Can you think of a word that has the ",
-            { "type": "sound", "phoneme": "/b/" },
-            " sound?"
-          ]
-        }
-      ]
-    }
+    "type": "phoneme-blending",
+    "phoneme": "/o/",
+    "words": ["log", "fox", "sob"]
   },
   {
     "type": "custom",
     "value": [
-      {
-        "type": "verbal",
-        "value": "Amazing! You know 11 letters now!"
-      },
+      { "type": "verbal", "value": "Amazing! You know 9 letters now!" },
       {
         "type": "image",
         "src": "/l2r/gifs/touch-and-slide.gif",
@@ -185,43 +67,18 @@
       },
       {
         "type": "verbal",
-        "value": "Now it’s time for some Touch & Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether."
+        "value": "Now itâs time for some Touch & Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether."
       }
     ]
   },
-  {
-    "type": "touch-slide",
-    "word": "BIG",
-    "phonemes": ["/b/", "/i/", "/g/"]
-  },
-  {
-    "type": "touch-slide",
-    "word": "BAD",
-    "phonemes": ["/b/", "/a/", "/d/"]
-  },
-  {
-    "type": "touch-slide",
-    "word": "DIG",
-    "phonemes": ["/d/", "/i/", "/g/"]
-  },
-  {
-    "type": "word-to-picture",
-    "word": "BAG",
-    "words": ["pig", "dog"]
-  },
-  {
-    "type": "word-to-picture",
-    "word": "PIG",
-    "words": ["pan", "pumpkin"]
-  },
-  {
-    "type": "word-to-picture",
-    "word": "DOG",
-    "words": ["cat", "pig"]
-  },
+  { "type": "touch-slide", "word": "NOT", "phonemes": ["/n/", "/o/", "/t/"] },
+  { "type": "touch-slide", "word": "TOP", "phonemes": ["/t/", "/o/", "/p/"] },
+  { "type": "touch-slide", "word": "POT", "phonemes": ["/p/", "/o/", "/t/"] },
+  { "type": "word-to-picture", "word": "MOP", "words": ["dog", "bucket"] },
+  { "type": "word-to-picture", "word": "DOT", "words": ["hat", "cat"] },
   {
     "type": "books",
-    "books": [52224],
+    "books": [52223],
     "pre": {
       "value": [
         "Great work! Now, let's read a book together. I will read the blue words and you will read the black words.",
@@ -233,8 +90,6 @@
       ]
     }
   },
-  {
-    "type": "conclusion",
-    "confetti": true
-  }
+  { "type": "teach-tam", "value": "TOP" },
+  { "type": "conclusion", "confetti": true }
 ]
