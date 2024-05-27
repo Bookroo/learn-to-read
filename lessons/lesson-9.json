@@ -8,171 +8,82 @@
       },
       {
         "type": "verbal",
-        "value": "But first, let's review some of the letters and sounds we learned in previous lessons."
+        "value": "But first, let's review some of the letters and sounds we learned in the previous lesson."
       }
     ]
   },
   {
     "type": "find-grapheme",
-    "grapheme": "O",
-    "graphemes": ["D", "G"],
+    "grapheme": "G",
+    "graphemes": ["S", "P"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
   {
     "type": "find-grapheme",
-    "grapheme": "P",
-    "graphemes": ["R", "S"],
+    "grapheme": "D",
+    "graphemes": ["B", "O"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/i/",
-    "grapheme": "I"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "grapheme": "A",
-    "phoneme": "/a/"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/o/",
-    "grapheme": "O",
-    "graphemes": ["M", "T"]
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/b/",
-    "grapheme": "B",
-    "graphemes": ["R", "S"]
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/g/",
-    "grapheme": "G",
-    "graphemes": ["C", "Q"]
-  },
+  { "type": "identify-sound", "grapheme": "M", "phoneme": "/m/" },
+  { "type": "identify-sound", "grapheme": "A", "phoneme": "/a/" },
+  { "type": "identify-sound", "grapheme": "T", "phoneme": "/t/" },
+  { "type": "identify-sound", "grapheme": "P", "phoneme": "/p/" },
+  { "type": "sound-to-grapheme", "phoneme": "/o/", "grapheme": "O" },
+  { "type": "sound-to-grapheme", "grapheme": "D", "phoneme": "/d/" },
   {
     "type": "grapheme-trace-air",
-    "grapheme": "S",
-    "pre": {
-      "value": [
-        "In the previous lesson, we learned that the letter S can make two different sounds when it is at the end of a word. What are those two sounds?"
-      ]
-    },
+    "grapheme": "B",
+    "pre": { "prepend": ["Now it's time to learn a new letter."] }
+  },
+  { "type": "grapheme-trace-palm", "grapheme": "B" },
+  {
+    "type": "find-grapheme",
+    "grapheme": "B",
+    "graphemes": ["I", "T"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  { "type": "introduce-sound", "grapheme": "B", "phoneme": "/b/" },
+  {
+    "type": "phoneme-blending",
+    "phoneme": "/b/",
+    "words": ["bed", "lab", "bus"]
+  },
+  {
+    "type": "sound-in-word",
+    "grapheme": "B",
+    "phoneme": "/b/",
+    "words": [
+      { "text": "big" },
+      { "text": "baby" },
+      { "text": "sad", "correct": false },
+      { "text": "sob" },
+      { "text": "map", "correct": false },
+      { "text": "rabbit" },
+      { "text": "bad" }
+    ],
     "post": {
-      "value": [
+      "append": [
         {
           "type": "verbal",
           "value": [
-            "That's right! The letter S when it's at the end of a word can make the ",
-            {
-              "type": "sound",
-              "phoneme": "/s/"
-            },
-            " sound or the ",
-            {
-              "type": "sound",
-              "phoneme": "/z/"
-            },
-            " sound."
+            "Can you think of a word that has the ",
+            { "type": "sound", "phoneme": "/b/" },
+            " sound?"
           ]
         }
       ]
     }
   },
   {
-    "type": "card-stack",
-    "values": ["is", "mats", "digs"],
-    "pre": {
-      "value": [
-        "Let’s practice some words that end in the letter S. Read the words one at a time."
-      ]
-    }
-  },
-  {
-    "type": "grapheme-trace-air",
-    "grapheme": "E",
-    "pre": {
-      "prepend": ["Now it's time to learn a new letter."]
-    }
-  },
-  {
-    "type": "grapheme-trace-palm",
-    "grapheme": "E"
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "E",
-    "graphemes": ["B", "A"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "introduce-sound",
-    "grapheme": "E",
-    "phoneme": "/e/",
-    "post": {
-      "insert_after": [
-        {
-          "index": 0,
-          "value": {
-            "type": "instruction",
-            "value": [
-              "The ",
-              {
-                "type": "sound",
-                "phoneme": "/e/"
-              },
-              " sound can often be a difficult sound for new readers, so spend time to make sure {name} is saying it correctly."
-            ]
-          }
-        }
-      ]
-    }
-  },
-  {
-    "type": "sound-in-word",
-    "grapheme": "E",
-    "phoneme": "/e/",
-    "words": [
-      {
-        "text": "end"
-      },
-      {
-        "text": "beg"
-      },
-      {
-        "text": "cat",
-        "correct": false
-      },
-      {
-        "text": "empty"
-      },
-      {
-        "text": "send"
-      },
-      {
-        "text": "bug",
-        "correct": false
-      },
-      {
-        "text": "bed"
-      }
-    ]
-  },
-  {
     "type": "custom",
     "value": [
-      {
-        "type": "verbal",
-        "value": "Amazing! You know 12 letters now!"
-      },
+      { "type": "verbal", "value": "Amazing! You know 11 letters now!" },
       {
         "type": "image",
         "src": "/l2r/gifs/touch-and-slide.gif",
@@ -181,38 +92,19 @@
       },
       {
         "type": "verbal",
-        "value": "Now it’s time for some Touch & Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether."
+        "value": "Now it's time for some Touch & Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether."
       }
     ]
   },
-  {
-    "type": "touch-slide",
-    "word": "PET",
-    "phonemes": ["/p/", "/e/", "/t/"]
-  },
-  {
-    "type": "touch-slide",
-    "word": "BEST",
-    "phonemes": ["/b/", "/e/", "/s/", "/t/"]
-  },
-  {
-    "type": "touch-slide",
-    "word": "TENT",
-    "phonemes": ["/t/", "/e/", "/n/", "/t/"]
-  },
-  {
-    "type": "word-to-picture",
-    "word": "BED",
-    "words": ["hat", "car"]
-  },
-  {
-    "type": "word-to-picture",
-    "word": "NEST",
-    "words": ["barn", "bed"]
-  },
+  { "type": "touch-slide", "word": "BIG", "phonemes": ["/b/", "/i/", "/g/"] },
+  { "type": "touch-slide", "word": "TAG", "phonemes": ["/t/", "/a/", "/g/"] },
+  { "type": "touch-slide", "word": "DIG", "phonemes": ["/d/", "/i/", "/g/"] },
+  { "type": "word-to-picture", "word": "BAG", "words": ["pig", "dog"] },
+  { "type": "word-to-picture", "word": "PIG", "words": ["pan", "pumpkin"] },
+  { "type": "word-to-picture", "word": "DOG", "words": ["cat", "pig"] },
   {
     "type": "books",
-    "books": [52226],
+    "books": [52224],
     "pre": {
       "value": [
         "Great work! Now, let's read a book together. I will read the blue words and you will read the black words.",
@@ -224,8 +116,6 @@
       ]
     }
   },
-  {
-    "type": "conclusion",
-    "confetti": true
-  }
+  { "type": "teach-tam", "value": "BIG" },
+  { "type": "conclusion", "confetti": true }
 ]
