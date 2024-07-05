@@ -146,29 +146,39 @@
         "value": "Amazing! You know 6 letters now!"
       },
       {
-        "type": "image",
-        "src": "/l2r/gifs/touch-and-slide.gif",
+        "type": "gif-video",
+        "src": "/l2r/vods/letter-words-3-letters.mov",
         "width": 200,
         "height": 200
       },
       {
         "type": "verbal",
-        "value": "Now itâs time for some Touch & Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether."
+        "value": [
+          "Now it’s time to practice ",
+          {
+            "type": "text",
+            "value": "Finger Words",
+            "css": {
+              "fontWeight": "bold"
+            }
+          },
+          " again!"
+        ]
       }
     ]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "IN",
     "phonemes": ["/i/", "/n/"]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "PIN",
     "phonemes": ["/p/", "/i/", "/n/"]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "NAP",
     "phonemes": ["/n/", "/a/", "/p/"]
   },

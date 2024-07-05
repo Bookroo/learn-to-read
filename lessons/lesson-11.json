@@ -91,7 +91,7 @@
     ]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "I",
     "phonemes": ["/I/"],
     "pre": {
@@ -134,7 +134,7 @@
     }
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "A",
     "phonemes": ["/A/"],
     "pre": {
@@ -193,7 +193,7 @@
     }
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "THE",
     "phonemes": ["/i/"],
     "pre": {

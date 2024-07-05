@@ -85,20 +85,30 @@
     "value": [
       { "type": "verbal", "value": "Amazing! You know 11 letters now!" },
       {
-        "type": "image",
-        "src": "/l2r/gifs/touch-and-slide.gif",
+        "type": "gif-video",
+        "src": "/l2r/vods/letter-words-3-letters.mov",
         "width": 200,
         "height": 200
       },
       {
         "type": "verbal",
-        "value": "Now it's time for some Touch & Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether."
+        "value": [
+          "Now it’s time to practice ",
+          {
+            "type": "text",
+            "value": "Finger Words",
+            "css": {
+              "fontWeight": "bold"
+            }
+          },
+          " again!"
+        ]
       }
     ]
   },
-  { "type": "touch-slide", "word": "BIG", "phonemes": ["/b/", "/i/", "/g/"] },
-  { "type": "touch-slide", "word": "TAG", "phonemes": ["/t/", "/a/", "/g/"] },
-  { "type": "touch-slide", "word": "DIG", "phonemes": ["/d/", "/i/", "/g/"] },
+  { "type": "finger-word", "word": "BIG", "phonemes": ["/b/", "/i/", "/g/"] },
+  { "type": "finger-word", "word": "TAG", "phonemes": ["/t/", "/a/", "/g/"] },
+  { "type": "finger-word", "word": "DIG", "phonemes": ["/d/", "/i/", "/g/"] },
   { "type": "word-to-picture", "word": "BAG", "words": ["pig", "dog"] },
   { "type": "word-to-picture", "word": "PIG", "words": ["pan", "pumpkin"] },
   { "type": "word-to-picture", "word": "DOG", "words": ["cat", "pig"] },
@@ -111,7 +121,7 @@
         "Remember, when it's your turn to read, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together.",
         {
           "type": "instruction",
-          "value": "Help {name} read each word using Touch & Slide. This is not a quiz, so guide them when they get stuck. This is just practice and should be fun."
+          "value": "Help {name} read each word using Finger Words. This is not a quiz, so guide them when they get stuck. This is just practice and should be fun."
         }
       ]
     }

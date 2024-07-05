@@ -120,29 +120,29 @@
         "value": "Amazing! You know 16 letters now!"
       },
       {
-        "type": "image",
-        "src": "/l2r/gifs/touch-and-slide.gif",
+        "type": "gif-video",
+        "src": "/l2r/vods/letter-words-3-letters.mov",
         "width": 200,
         "height": 200
       },
       {
         "type": "verbal",
         "value": [
-          "Now it’s time to do ",
+          "Now it’s time to practice ",
           {
             "type": "text",
-            "value": "Touch & Slide",
+            "value": "Finger Words",
             "css": {
               "fontWeight": "bold"
             }
           },
-          " again! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether. I’ll go first, and then you."
+          " again!"
         ]
       }
     ]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "LUG",
     "phonemes": ["/l/", "/u/", "/g/"],
     "post": {
@@ -155,12 +155,12 @@
     }
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "DUST",
     "phonemes": ["/d/", "/u/", "/s/", "/t/"]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "CUSP",
     "phonemes": ["/c/", "/u/", "/s/", "/p/"],
     "post": {
@@ -173,7 +173,7 @@
     }
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "MUST",
     "phonemes": ["/m/", "/u/", "/s/", "/t/"]
   },

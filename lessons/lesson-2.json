@@ -112,10 +112,6 @@
     }
   },
   {
-    "type": "grapheme-hand-shape",
-    "grapheme": "S"
-  },
-  {
     "type": "find-grapheme",
     "grapheme": "S",
     "graphemes": ["M", "T"]
@@ -154,36 +150,234 @@
     "value": [
       "Amazing, you know 4 letters now!",
       {
-        "type": "image",
-        "src": "/l2r/gifs/touch-and-slide.gif",
+        "type": "gif-video",
+        "src": "/l2r/vods/letter-words-3-letters.mov",
         "width": 200,
         "height": 200
       },
       {
         "type": "verbal",
         "value": [
-          "Now it’s time to do ",
+          "Now it’s time to practice ",
           {
             "type": "text",
-            "value": "Touch & Slide",
+            "value": "Finger Words",
             "css": {
               "fontWeight": "bold"
             }
           },
-          " again! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether. I’ll go first, and then you."
+          " again!"
         ]
       }
     ]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
+    "phonemes": ["/a/", "/t/"],
     "word": "AT",
-    "phonemes": ["/a/", "/t/"]
+    "pre": {
+      "value": [
+        "Hold up your left hand with your fingers spread apart.",
+        "Do you see the two letters A and T?",
+        "Assign each letter to a finger."
+      ]
+    },
+    "post": {
+      "value": [
+        "With your right hand, touch each finger\nand say the sound each makes.",
+        {
+          "type": "instruction",
+          "value": [
+            "The ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound should be crisp and short, as in the word ",
+            {
+              "type": "text",
+              "value": "“at.”",
+              "css": {
+                "fontWeight": "bold",
+                "fontStyle": "normal"
+              }
+            },
+            " Don’t say ",
+            {
+              "type": "text",
+              "value": "“TUH”",
+              "css": {
+                "fontWeight": "bold",
+                "fontStyle": "normal"
+              }
+            },
+            " or ",
+            {
+              "type": "text",
+              "value": "“TIH”.",
+              "css": {
+                "fontWeight": "bold",
+                "fontStyle": "normal"
+              }
+            }
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            " — ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            }
+          ]
+        }
+      ]
+    }
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
+    "phonemes": ["/a/", "/t/"],
+    "word": "AT",
+    "pre": {
+      "value": [
+        "Now check for any sticky sounds. Are there any sticky sounds?",
+        {
+          "type": "verbal",
+          "value": [
+            "Yes! The ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound is a sticky sound. ",
+            "Is there a sound after the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound for the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound to stick to?"
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "No, there's no sound after the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound for the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound to stick to."
+          ]
+        },
+        "That means we don't need to do anything special and we can move on to blending the sounds together."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "phonemes": ["/a/", "/t/"],
+    "word": "AT",
+    "pre": {
+      "value": [
+        "Slide your pointer finger down to your knuckles.",
+        "Notice how there's no gap between your knuckles?",
+        "We want to blend the sounds together, so there's no gap between the sounds."
+      ]
+    },
+    "post": {
+      "value": [
+        "Slide your finger along your knuckles, saying the sound that each letter makes slowly and continuously, blending the sounds together without any gaps.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            }
+          ]
+        },
+        "Do it again and again, slightly faster each time, until you hear the word.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "text",
+              "value": "AT",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        },
+        "Did you hear the word? That's right, the letters A and T spell the word ‘at’."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
     "word": "SAT",
-    "phonemes": ["/s/", "/a/", "/t/"]
+    "phonemes": ["/s/", "/a/", "/t/"],
+    "post": {
+      "append": "Did you hear the word? That's right, the word is ‘sat’."
+    }
   },
   {
     "type": "meet-character",
@@ -196,11 +390,11 @@
     }
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "SAM",
     "phonemes": ["/s/", "/a/", "/m/"],
     "post": {
-      "value": ["Did you hear his name? That's right, it's Sam!"]
+      "append": ["Did you hear his name? That's right, it's Sam!"]
     }
   },
   {
@@ -217,24 +411,277 @@
     ]
   },
   {
-    "type": "touch-slide",
-    "word": "MAT",
-    "phonemes": ["/m/", "/a/", "/t/"],
+    "type": "finger-word",
+    "word": "TAM",
+    "phonemes": ["/t/", "/a/", "/m/"],
+    "post": {
+      "value": [
+        "Are there any sticky sounds?",
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound is a sticky sound. That means it wants to stick to the sound after it."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Is there a sound after the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound for the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound to stick to?"
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            " sound is after the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "phonemes": ["/t/", "/a/", "/m/"],
+    "word": "TAM",
     "pre": {
-      "prepend": "Let's do another word"
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "To show that the sticky ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound is sticking to the ",
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            " sound, move those two fingers together so they are touching."
+          ]
+        },
+        {
+          "type": "instruction",
+          "value": "You may need to hold {name}'s fingers together."
+        },
+        "When fingers are stuck together, they make their sounds together.",
+        {
+          "type": "verbal",
+          "value": [
+            "Together, the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound and the ",
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            " sound make the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " sound."
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Can you make the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " sound?"
+          ]
+        },
+        "Great job! Now, with your right hand, touch each finger (or finger pair) and say the sound each makes.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/m/",
+              "showQuotes": false
+            }
+          ]
+        },
+        "Notice how there's a gap between your fingers and a gap between the sounds you made."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "phonemes": ["/t/", "/a/", "/m/"],
+    "word": "TAM",
+    "pre": {
+      "value": [
+        "Now, slide your pointer finger down to your knuckles.",
+        "Notice how there's no gap between your knuckles?",
+        "We want to blend the sounds together, so there's no gap between the sounds."
+      ]
+    },
+    "post": {
+      "value": [
+        "Slide your pointer finger along your knuckles, saying the sound that each finger or finger pair makes slowly and continuously, blending the sounds together without any gaps.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/m/",
+              "showQuotes": false
+            }
+          ]
+        },
+        "Do it again and again, slightly faster each time, until you hear the word.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/m/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/m/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "text",
+              "value": "TAM",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        },
+        "Did you hear the word? That's right, ‘Tam’ is the name of our yak friend."
+      ]
     }
   },
   {
     "type": "word-to-picture",
-    "word": "TAM",
-    "words": ["Sam", "mat"],
+    "word": "MAT",
+    "words": ["cat", "bat"],
     "pre": {
       "replace": [
         {
           "index": 1,
           "value": {
             "type": "instruction",
-            "value": "Have {name} read the word before revealing the pictures. If needed, help them use Touch & Slide."
+            "value": "Have {name} read the word before revealing the pictures. If needed, help them use Finger Words."
           }
         }
       ],
@@ -244,9 +691,6 @@
           "value": "To read the word, look at the word and say the sound each part makes. Then blend the sounds together to make the word."
         }
       ]
-    },
-    "post": {
-      "value": "That's right, Tam is the name of our yak friend."
     }
   },
   {
@@ -266,25 +710,28 @@
         "Remember, when you read the black words, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together.",
         {
           "type": "instruction",
-          "value": "Help {name} read each word using Touch & Slide. This is not a quiz, so guide them when they get stuck. This is just practice and should be fun."
+          "value": "When needed, help {name} read each word using Finger Words. This is not a quiz, so guide them when they get stuck. This is just practice and should be fun."
         }
       ]
     }
   },
   {
     "type": "teach-tam",
-    "value": "SAT"
+    "value": "SAM",
+    "post": {
+      "value": [
+        {
+          "type": "instruction",
+          "value": "This should be a quick experience (1-2 minutes). The following are suggestions you can use to guide {name}."
+        },
+        "Can you teach Tam the name for the new letter you learned?",
+        "Can you teach Tam the sound the letter S makes?",
+        "Can you show Tam how to read this word using Finger Words?"
+      ]
+    }
   },
   {
     "type": "conclusion",
-    "confetti": true,
-    "post": {
-      "append": {
-        "type": "image",
-        "src": "/l2r/gifs/nod-1.gif",
-        "width": 198,
-        "height": 200
-      }
-    }
+    "confetti": true
   }
 ]

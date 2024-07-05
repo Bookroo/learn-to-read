@@ -121,17 +121,17 @@
     "words": ["mud", "dog", "and"]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "SAD",
     "phonemes": ["/s/", "/a/", "/d/"]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "DIP",
     "phonemes": ["/d/", "/i/", "/p/"]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "AND",
     "phonemes": ["/a/", "/n/", "/d/"]
   },
@@ -148,14 +148,24 @@
         "value": "Amazing! You know 8 letters now!"
       },
       {
-        "type": "image",
-        "src": "/l2r/gifs/touch-and-slide.gif",
+        "type": "gif-video",
+        "src": "/l2r/vods/letter-words-3-letters.mov",
         "width": 200,
         "height": 200
       },
       {
         "type": "verbal",
-        "value": "Now itâs time for some Touch & Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether."
+        "value": [
+          "Now it’s time to practice ",
+          {
+            "type": "text",
+            "value": "Finger Words",
+            "css": {
+              "fontWeight": "bold"
+            }
+          },
+          " again!"
+        ]
       }
     ]
   },
@@ -168,7 +178,7 @@
         "Remember, when it's your turn to read, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together.",
         {
           "type": "instruction",
-          "value": "Help {name} read each word using Touch & Slide. This is not a quiz, so guide them when they get stuck. This is just practice and should be fun."
+          "value": "Help {name} read each word using Finger Words. This is not a quiz, so guide them when they get stuck. This is just practice and should be fun."
         }
       ]
     }

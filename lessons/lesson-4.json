@@ -93,55 +93,334 @@
   {
     "type": "phoneme-blending",
     "phoneme": "/i/",
-    "words": ["sit", "lip", "rip"]
+    "words": ["sit", "in", "pig"]
   },
   {
     "type": "custom",
     "value": [
       {
         "type": "verbal",
-        "value": "Amazing, you know 4 letters now!"
+        "value": "Amazing, you know 6 letters now!"
       },
       {
-        "type": "image",
-        "src": "/l2r/gifs/touch-and-slide.gif",
+        "type": "gif-video",
+        "src": "/l2r/vods/letter-words-3-letters.mov",
         "width": 200,
         "height": 200
       },
       {
         "type": "verbal",
-        "value": "Alright, now it’s time for some Touch & Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether. I’ll go first, and then you."
+        "value": [
+          "Now it’s time to practice ",
+          {
+            "type": "text",
+            "value": "Finger Words",
+            "css": {
+              "fontWeight": "bold"
+            }
+          },
+          " again!"
+        ]
       }
     ]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "IT",
-    "phonemes": ["/i/", "/t/"]
+    "phonemes": ["/i/", "/t/"],
+    "post": {
+      "append": ["Did you hear the word? That's right, the word is ‘it’."]
+    }
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "TIP",
-    "phonemes": ["/t/", "/i/", "/p/"]
+    "phonemes": ["/t/", "/i/", "/p/"],
+    "post": {
+      "value": [
+        "Are there any sticky sounds?",
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound and the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " sound are both sticky sounds."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Does the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound have a sound after it to stick to?"
+          ]
+        }
+      ]
+    }
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
+    "word": "TIP",
+    "phonemes": ["/t/", "/i/", "/p/"],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false
+            },
+            " sound is after the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound."
+          ]
+        },
+        "That means these sounds will stick together",
+        "Move these fingers together to show these sounds are stuck together",
+        {
+          "type": "instruction",
+          "value": "You may need to hold {name}'s fingers together."
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        "Remember, when fingers are stuck together, they make their sounds together.",
+        {
+          "type": "verbal",
+          "value": [
+            "Together, the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound and the ",
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false
+            },
+            " sound make the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " sound."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Can you make the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " sound?"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "TIP",
+    "phonemes": ["/t/", "/i/", "/p/"],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Great job! Does the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " sound have a sound after it to stick to?"
+          ]
+        },
+        "No, so we don't need to do anything special with this sound."
+      ]
+    },
+    "post": {
+      "value": [
+        "With your right hand, touch each finger (or finger pair) and say the sound each makes.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            }
+          ]
+        },
+        "Notice how there's a gap between your fingers and a gap between the sounds you made."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "phonemes": ["/t/", "/i/", "/p/"],
+    "word": "TIP",
+    "pre": {
+      "value": [
+        "Now, slide your pointer finger down to your knuckles.",
+        "Notice how there's no gap between your knuckles?",
+        "We want to blend the sounds together, so there's no gap between the sounds."
+      ]
+    },
+    "post": {
+      "value": [
+        "Slide your pointer finger along your knuckles, saying the sound that each finger or finger pair makes slowly and continuously, blending the sounds together without any gaps.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            }
+          ]
+        },
+        "Do it again and again, slightly faster each time, until you hear the word.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "text",
+              "value": "TIP",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        },
+        "Did you hear the word? That's right, the word is ‘tip’ like the ‘tip of a pencil’."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
     "word": "SIT",
     "phonemes": ["/s/", "/i/", "/t/"]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "SAT",
     "phonemes": ["/s/", "/a/", "/t/"]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "PIT",
     "phonemes": ["/p/", "/i/", "/t/"]
   },
   {
     "type": "word-to-picture",
-    "word": "MAT",
+    "word": "MAP",
     "words": ["hat", "dog"]
   },
   {
@@ -175,7 +454,7 @@
         "Remember, when it's your turn to read, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together.",
         {
           "type": "instruction",
-          "value": "Help {name} read each word using Touch & Slide. This is not a quiz, so guide them when they get stuck. This is just practice and should be fun."
+          "value": "This is not a quiz, so coach {name} when they get stuck. This is just practice and should be fun."
         }
       ]
     }

@@ -81,7 +81,7 @@
   {
     "type": "phoneme-blending",
     "phoneme": "/p/",
-    "words": ["nap", "lip", "rip"]
+    "words": ["nap", "pet", "cap"]
   },
   {
     "confetti": true,
@@ -89,54 +89,305 @@
     "value": [
       "Amazing, you've learned 5 letters and 5 sounds!",
       {
-        "type": "image",
-        "src": "/l2r/gifs/touch-and-slide.gif",
+        "type": "gif-video",
+        "src": "/l2r/vods/letter-words-3-letters.mov",
         "width": 200,
         "height": 200
       },
       {
         "type": "verbal",
         "value": [
-          "Now it’s time to do ",
+          "Now it’s time to practice ",
           {
             "type": "text",
-            "value": "Touch & Slide",
+            "value": "Finger Words",
             "css": {
               "fontWeight": "bold"
             }
           },
-          " again! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether. I’ll go first, and then you."
+          " again!"
         ]
       }
     ]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "PAT",
-    "phonemes": ["/p/", "/a/", "/t/"]
+    "phonemes": ["/p/", "/a/", "/t/"],
+    "post": {
+      "value": [
+        "Are there any sticky sounds?",
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " sound and the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound are both sticky sounds."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Does the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " sound have a sound after it to stick to?"
+          ]
+        }
+      ]
+    }
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
+    "word": "PAT",
+    "phonemes": ["/p/", "/a/", "/t/"],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            " sound is after the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " sound."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "That means that the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " sound can stick to the ",
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            " sound. Move those two fingers so they are stuck together."
+          ]
+        },
+        {
+          "type": "instruction",
+          "value": "You may need to hold {name}'s fingers together."
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Does the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound have a sound after it to stick to?"
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "No, the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound doesn't have a sound after it to stick to, so we don't need to do anything special."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "PAT",
+    "phonemes": ["/p/", "/a/", "/t/"],
+    "pre": {
+      "value": [
+        "Now, with your right hand, touch each finger (or finger pair) and say the sound each makes.",
+        "Remember, when fingers are stuck together, they make their sounds together.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            }
+          ]
+        },
+        "Notice how there's a gap between your fingers and a gap between the sounds you made."
+      ]
+    },
+    "post": {
+      "value": [
+        "Now, slide your pointer finger down to your knuckles.",
+        "Notice how there's no gap between your knuckles?",
+        "We want to blend the sounds together, so there's no gap between the sounds."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "PAT",
+    "phonemes": ["/p/", "/a/", "/t/"],
+    "pre": {
+      "value": [
+        "Slide your pointer finger along your knuckles, saying the sound that each finger or finger pair makes slowly and continuously, blending the sounds together without any gaps.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            }
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        "Do it again and again, slightly faster each time, until you hear the word.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "text",
+              "value": "PAT",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        },
+        "Did you hear the word? That's right, the word is ‘pat’."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
     "word": "TAP",
-    "phonemes": ["/t/", "/a/", "/p/"]
+    "phonemes": ["/t/", "/a/", "/p/"],
+    "pre": {
+      "replace": [
+        {
+          "index": 1,
+          "value": "Let's try another word. Follow the same steps as you did on the previous word."
+        }
+      ]
+    }
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "MAP",
     "phonemes": ["/m/", "/a/", "/p/"]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "MAT",
     "phonemes": ["/m/", "/a/", "/t/"]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "SAT",
     "phonemes": ["/s/", "/a/", "/t/"]
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "SAP",
     "phonemes": ["/s/", "/a/", "/p/"]
   },
@@ -151,19 +402,15 @@
     }
   },
   {
-    "type": "touch-slide",
+    "type": "finger-word",
     "word": "PAM",
     "phonemes": ["/p/", "/a/", "/m/"],
     "post": {
-      "value": [
+      "append": [
         "Did you hear her name? That's right, it's Pam!",
         "We'll see more of Pam in our next book."
       ]
     }
-  },
-  {
-    "type": "teach-tam",
-    "value": "SAP"
   },
   {
     "type": "books",
@@ -175,15 +422,11 @@
     }
   },
   {
+    "type": "teach-tam",
+    "value": "PAT"
+  },
+  {
     "type": "conclusion",
-    "confetti": true,
-    "post": {
-      "append": {
-        "type": "image",
-        "src": "/l2r/gifs/dance-1.gif",
-        "width": 270,
-        "height": 480
-      }
-    }
+    "confetti": true
   }
 ]

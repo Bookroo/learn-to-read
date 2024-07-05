@@ -60,20 +60,30 @@
     "value": [
       { "type": "verbal", "value": "Amazing! You know 10 letters now!" },
       {
-        "type": "image",
-        "src": "/l2r/gifs/touch-and-slide.gif",
+        "type": "gif-video",
+        "src": "/l2r/vods/letter-words-3-letters.mov",
         "width": 200,
         "height": 200
       },
       {
         "type": "verbal",
-        "value": "Now it's time for some Touch & Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether."
+        "value": [
+          "Now it’s time to practice ",
+          {
+            "type": "text",
+            "value": "Finger Words",
+            "css": {
+              "fontWeight": "bold"
+            }
+          },
+          " again!"
+        ]
       }
     ]
   },
-  { "type": "touch-slide", "word": "SOB", "phonemes": ["/s/", "/o/", "/b/"] },
-  { "type": "touch-slide", "word": "BAD", "phonemes": ["/b/", "/a/", "/d/"] },
-  { "type": "touch-slide", "word": "BIN", "phonemes": ["/b/", "/i/", "/n/"] },
+  { "type": "finger-word", "word": "SOB", "phonemes": ["/s/", "/o/", "/b/"] },
+  { "type": "finger-word", "word": "BAD", "phonemes": ["/b/", "/a/", "/d/"] },
+  { "type": "finger-word", "word": "BIN", "phonemes": ["/b/", "/i/", "/n/"] },
   { "type": "word-to-picture", "word": "BAT", "words": ["pan", "pumpkin"] },
   { "type": "word-to-picture", "word": "BIN", "words": ["cat", "pig"] },
   {
