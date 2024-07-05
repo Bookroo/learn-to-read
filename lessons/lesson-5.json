@@ -57,34 +57,8 @@
     "graphemes": ["I", "K"]
   },
   {
-    "type": "identify-sound",
-    "grapheme": "A",
-    "phoneme": "/a/"
-  },
-  {
-    "type": "identify-sound",
-    "grapheme": "M",
-    "phoneme": "/m/"
-  },
-  {
-    "type": "identify-sound",
-    "grapheme": "T",
-    "phoneme": "/t/"
-  },
-  {
-    "type": "identify-sound",
-    "grapheme": "S",
-    "phoneme": "/s/"
-  },
-  {
-    "type": "identify-sound",
-    "grapheme": "I",
-    "phoneme": "/i/"
-  },
-  {
-    "type": "identify-sound",
-    "grapheme": "P",
-    "phoneme": "/p/"
+    "type": "lost-sounds",
+    "graphemes": ["P", "I", "T", "M", "A", "S"]
   },
   {
     "type": "grapheme-trace-air",
@@ -108,35 +82,12 @@
   {
     "type": "introduce-sound",
     "grapheme": "N",
-    "phoneme": "/n/",
-    "pre": {
-      "prepend": [
-        {
-          "type": "instruction",
-          "value": [
-            "Notice that the ",
-            {
-              "type": "sound",
-              "phoneme": "/n/"
-            },
-            " sound is underlined, meaning it is a âheldâ sound. This means you can hold it continuously when saying it. Don't say ",
-            {
-              "type": "text",
-              "value": "âNUH.â",
-              "css": {
-                "fontWeight": "bold",
-                "fontStyle": "normal"
-              }
-            }
-          ]
-        }
-      ]
-    }
+    "phoneme": "/n/"
   },
   {
     "type": "phoneme-blending",
     "phoneme": "/n/",
-    "words": ["sun", "nap", "fin"]
+    "words": ["sun", "nap", "and"]
   },
   {
     "type": "custom",
@@ -175,12 +126,396 @@
   {
     "type": "finger-word",
     "word": "PIN",
-    "phonemes": ["/p/", "/i/", "/n/"]
+    "phonemes": ["/p/", "/i/", "/n/"],
+    "post": {
+      "value": [
+        "Are there any sticky sounds?",
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " sound is a sticky sound."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Does the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " sound have a sound after it to stick to?"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "PIN",
+    "phonemes": ["/p/", "/i/", "/n/"],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false
+            },
+            " sound is after the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " sound."
+          ]
+        },
+        "That means these sounds will stick together",
+        "Move these fingers together to show these sounds are stuck together",
+        {
+          "type": "instruction",
+          "value": "You may need to hold {name}'s fingers together."
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        "Remember, when fingers are stuck together, they make their sounds together.",
+        {
+          "type": "verbal",
+          "value": [
+            "Together, the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " sound and the ",
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false
+            },
+            " sound make the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " sound."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Can you make the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " sound?"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "PIN",
+    "phonemes": ["/p/", "/i/", "/n/"],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": ["Great job!"]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        "With your right hand, touch each finger (or finger pair) and say the sound each makes.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            }
+          ]
+        },
+        "Notice how there's a gap between your fingers and a gap between the sounds you made."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "phonemes": ["/p/", "/i/", "/n/"],
+    "word": "PIN",
+    "pre": {
+      "value": [
+        "Now, slide your pointer finger down to your knuckles.",
+        "Notice how there's no gap between your knuckles?",
+        "We want to blend the sounds together, so there's no gap between the sounds."
+      ]
+    },
+    "post": {
+      "value": [
+        "Slide your pointer finger along your knuckles, saying the sound that each finger or finger pair makes slowly and continuously, blending the sounds together without any gaps.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            }
+          ]
+        },
+        "Do it again and again, slightly faster each time, until you hear the word.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "text",
+              "value": "PIN",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        },
+        "Did you hear the word? That's right, the word is ‘pin’."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "ANT",
+    "phonemes": ["/a/", "/n/", "/t/"]
   },
   {
     "type": "finger-word",
     "word": "NAP",
-    "phonemes": ["/n/", "/a/", "/p/"]
+    "phonemes": ["/n/", "/a/", "/p/"],
+    "pre": {
+      "replace": [
+        {
+          "index": 1,
+          "value": "We're going to learn a new variation of Finger Words, called Imaginary Finger Words.  Instead of using your fingers and hands physically, you'll perform all the movements entirely in your imagination."
+        },
+        {
+          "index": 2,
+          "value": "In your mind, assign each letter to an imaginary finger."
+        },
+        {
+          "index": 3,
+          "value": "Say the sound each letter makes."
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        "Are there any sticky sounds?",
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " sound is a sticky sound."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Does the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " sound have a sound after it to stick to?"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "phonemes": ["/n/", "/a/", "/p/"],
+    "word": "NAP",
+    "pre": {
+      "value": [
+        "No, so we don't need to do anything special with this sound.",
+        "We have a gap between the sounds currently, just like there is a gap between our imaginary fingers.",
+        "We want to blend the sounds together, so there's no gap between the sounds, just like we do on our knuckles in Finger Words."
+      ]
+    },
+    "post": {
+      "value": [
+        "Say the sound that each finger or finger pair makes slowly and continuously, blending the sounds together without any gaps.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            }
+          ]
+        },
+        "Do it again and again, slightly faster each time, until you hear the word.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "text",
+              "value": "NAP",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        },
+        "Did you hear the word? That's right, the word is ‘nap’."
+      ]
+    }
   },
   {
     "type": "word-to-picture",
