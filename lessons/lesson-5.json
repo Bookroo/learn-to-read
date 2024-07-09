@@ -181,8 +181,8 @@
             " sound."
           ]
         },
-        "That means these sounds will stick together",
-        "Move these fingers together to show these sounds are stuck together",
+        "That means these sounds will stick together.",
+        "Move these fingers together to show these sounds are stuck together.",
         {
           "type": "instruction",
           "value": "You may need to hold {name}'s fingers together."
@@ -254,12 +254,17 @@
         {
           "type": "verbal",
           "value": ["Great job!"]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "With your right hand, touch each finger (or finger pair) and say the sound each makes."
+          ]
         }
       ]
     },
     "post": {
       "value": [
-        "With your right hand, touch each finger (or finger pair) and say the sound each makes.",
         {
           "type": "verbal",
           "value": [
@@ -456,11 +461,13 @@
               "phoneme": "/n/",
               "showQuotes": false
             },
+            " ",
             {
               "type": "sound",
               "phoneme": "/a/",
               "showQuotes": false
             },
+            " ",
             {
               "type": "sound",
               "phoneme": "/p/",
@@ -477,11 +484,13 @@
               "phoneme": "/n/",
               "showQuotes": false
             },
+            " ",
             {
               "type": "sound",
               "phoneme": "/a/",
               "showQuotes": false
             },
+            " ",
             {
               "type": "sound",
               "phoneme": "/p/",
@@ -493,11 +502,13 @@
               "phoneme": "/n/",
               "showQuotes": false
             },
+            " ",
             {
               "type": "sound",
               "phoneme": "/a/",
               "showQuotes": false
             },
+            " ",
             {
               "type": "sound",
               "phoneme": "/p/",
