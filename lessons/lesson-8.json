@@ -12,11 +12,10 @@
       }
     ]
   },
-  { "type": "identify-sound", "grapheme": "O", "phoneme": "/o/" },
-  { "type": "identify-sound", "grapheme": "D", "phoneme": "/d/" },
-  { "type": "identify-sound", "grapheme": "N", "phoneme": "/n/" },
-  { "type": "identify-sound", "grapheme": "I", "phoneme": "/i/" },
-  { "type": "identify-sound", "grapheme": "P", "phoneme": "/p/" },
+  {
+    "type": "lost-sounds",
+    "graphemes": ["A", "S", "P", "D", "O", "N", "M", "T"]
+  },
   {
     "type": "find-grapheme",
     "grapheme": "O",
@@ -33,32 +32,52 @@
     "unique": 3,
     "correct": 1
   },
-  { "type": "sound-to-grapheme", "phoneme": "/o/", "grapheme": "O" },
-  { "type": "sound-to-grapheme", "grapheme": "D", "phoneme": "/d/" },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/o/",
+    "grapheme": "O"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "D",
+    "phoneme": "/d/"
+  },
   {
     "type": "grapheme-trace-air",
-    "grapheme": "G",
-    "pre": { "prepend": ["Now it's time to learn a new letter."] }
+    "grapheme": "B",
+    "pre": {
+      "prepend": ["Now it's time to learn a new letter."]
+    }
   },
-  { "type": "grapheme-trace-palm", "grapheme": "G" },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "B"
+  },
   {
     "type": "find-grapheme",
-    "grapheme": "G",
+    "grapheme": "B",
     "graphemes": ["P", "O"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
-  { "type": "introduce-sound", "grapheme": "G", "phoneme": "/g/" },
+  {
+    "type": "introduce-sound",
+    "grapheme": "B",
+    "phoneme": "/b/"
+  },
   {
     "type": "phoneme-blending",
-    "phoneme": "/g/",
-    "words": ["mug", "gas", "rag"]
+    "phoneme": "/b/",
+    "words": ["bat", "sob", "bed"]
   },
   {
     "type": "custom",
     "value": [
-      { "type": "verbal", "value": "Amazing! You know 10 letters now!" },
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 10 letters now!"
+      },
       {
         "type": "gif-video",
         "src": "/l2r/vods/letter-words-3-letters.mov",
@@ -81,14 +100,193 @@
       }
     ]
   },
-  { "type": "finger-word", "word": "SOB", "phonemes": ["/s/", "/o/", "/b/"] },
-  { "type": "finger-word", "word": "BAD", "phonemes": ["/b/", "/a/", "/d/"] },
-  { "type": "finger-word", "word": "BIN", "phonemes": ["/b/", "/i/", "/n/"] },
-  { "type": "word-to-picture", "word": "BAT", "words": ["pan", "pumpkin"] },
-  { "type": "word-to-picture", "word": "BIN", "words": ["cat", "pig"] },
+  {
+    "type": "finger-word",
+    "word": "BAD",
+    "phonemes": ["/b/", "/a/", "/d/"]
+  },
+  {
+    "type": "finger-word",
+    "word": "BIN",
+    "phonemes": ["/b/", "/i/", "/n/"]
+  },
+  {
+    "type": "finger-word",
+    "word": "SOB",
+    "phonemes": ["/s/", "/o/", "/b/"],
+    "pre": {
+      "replace": [
+        {
+          "index": 1,
+          "value": "We're going to practice our new variation of Finger Words, called Imaginary Finger Words.  As a reminder, instead of using your fingers and hands physically, you'll perform all the movements entirely in your imagination."
+        },
+        {
+          "index": 2,
+          "value": "In your mind, assign each letter to an imaginary finger."
+        },
+        {
+          "index": 3,
+          "value": "Say the sound each letter makes."
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        "Are there any sticky sounds?",
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/b/",
+              "showQuotes": false
+            },
+            " sound is a sticky sound."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Does the ",
+            {
+              "type": "sound",
+              "phoneme": "/b/",
+              "showQuotes": false
+            },
+            " sound have a sound after it to stick to?"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "phonemes": ["/s/", "/o/", "/b/"],
+    "word": "SOB",
+    "pre": {
+      "value": [
+        "No, so we don't need to do anything special with this sound.",
+        "We have a gap between the sounds currently, just like there is a gap between our imaginary fingers.",
+        "We want to blend the sounds together, so there's no gap between the sounds, just like we do on our knuckles in Finger Words."
+      ]
+    },
+    "post": {
+      "value": [
+        "Say the sound that each finger or finger pair makes slowly and continuously, blending the sounds together without any gaps.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/s/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/o/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/b/",
+              "showQuotes": false
+            }
+          ]
+        },
+        "Do it again and again, slightly faster each time, until you hear the word.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/s/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/o/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/b/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "sound",
+              "phoneme": "/s/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/o/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/b/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "text",
+              "value": "SOB",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        },
+        "Did you hear the word? That's right, the word is ‘sob’ as in ‘He was so sad, he started to sob’."
+      ]
+    }
+  },
+  {
+    "type": "word-to-picture",
+    "word": "BAT",
+    "words": ["pan", "pumpkin"]
+  },
+  {
+    "type": "word-to-picture",
+    "word": "BIN",
+    "words": ["cat", "pig"]
+  },
+  {
+    "type": "meet-character",
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "It's time to officially meet another reading friend we were introduced to briefly earlier."
+        }
+      ]
+    },
+    "image": {
+      "src": "/l2r/characters/bob2.png",
+      "width": 250,
+      "height": 250
+    },
+    "pronoun": "his"
+  },
+  {
+    "type": "finger-word",
+    "word": "BOB",
+    "phonemes": ["/b/", "/o/", "/b/"],
+    "post": {
+      "append": "That's right, his name is Bob."
+    }
+  },
   {
     "type": "books",
-    "books": [52225],
+    "books": [],
     "pre": {
       "value": [
         "Great work reading all of these new words!",
@@ -107,6 +305,12 @@
       "value": "Great job {name}! You read that whole book on your own! That's a major accomplishment!"
     }
   },
-  { "type": "teach-tam", "value": "BAT" },
-  { "type": "conclusion", "confetti": true }
+  {
+    "type": "teach-tam",
+    "value": "BAT"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
 ]

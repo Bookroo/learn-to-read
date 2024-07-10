@@ -4,7 +4,7 @@
     "value": [
       {
         "type": "verbal",
-        "value": "In this lesson, we're going to learn one new letter and one new sound."
+        "value": "In this lesson, we're going to learn a new letter and a new sound."
       },
       {
         "type": "verbal",
@@ -14,7 +14,7 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "G",
+    "grapheme": "B",
     "graphemes": ["S", "P"],
     "total": 3,
     "unique": 3,
@@ -28,62 +28,72 @@
     "unique": 3,
     "correct": 1
   },
-  { "type": "identify-sound", "grapheme": "M", "phoneme": "/m/" },
-  { "type": "identify-sound", "grapheme": "A", "phoneme": "/a/" },
-  { "type": "identify-sound", "grapheme": "T", "phoneme": "/t/" },
-  { "type": "identify-sound", "grapheme": "P", "phoneme": "/p/" },
-  { "type": "sound-to-grapheme", "phoneme": "/o/", "grapheme": "O" },
-  { "type": "sound-to-grapheme", "grapheme": "D", "phoneme": "/d/" },
+  {
+    "type": "identify-sound",
+    "grapheme": "M",
+    "phoneme": "/m/"
+  },
+  {
+    "type": "identify-sound",
+    "grapheme": "A",
+    "phoneme": "/a/"
+  },
+  {
+    "type": "identify-sound",
+    "grapheme": "T",
+    "phoneme": "/t/"
+  },
+  {
+    "type": "identify-sound",
+    "grapheme": "P",
+    "phoneme": "/p/"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/o/",
+    "grapheme": "O"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "D",
+    "phoneme": "/d/"
+  },
   {
     "type": "grapheme-trace-air",
-    "grapheme": "B",
-    "pre": { "prepend": ["Now it's time to learn a new letter."] }
+    "grapheme": "G",
+    "pre": {
+      "prepend": ["Now it's time to learn a new letter."]
+    }
   },
-  { "type": "grapheme-trace-palm", "grapheme": "B" },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "G"
+  },
   {
     "type": "find-grapheme",
-    "grapheme": "B",
+    "grapheme": "G",
     "graphemes": ["I", "T"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
-  { "type": "introduce-sound", "grapheme": "B", "phoneme": "/b/" },
   {
-    "type": "phoneme-blending",
-    "phoneme": "/b/",
-    "words": ["bed", "lab", "bus"]
+    "type": "introduce-sound",
+    "grapheme": "G",
+    "phoneme": "/g/"
   },
   {
-    "type": "sound-in-word",
-    "grapheme": "B",
-    "phoneme": "/b/",
-    "words": [
-      { "text": "big" },
-      { "text": "baby" },
-      { "text": "sad", "correct": false },
-      { "text": "sob" },
-      { "text": "map", "correct": false },
-      { "text": "rabbit" },
-      { "text": "bad" }
-    ],
-    "post": {
-      "append": [
-        {
-          "type": "verbal",
-          "value": [
-            "Can you think of a word that has the ",
-            { "type": "sound", "phoneme": "/b/" },
-            " sound?"
-          ]
-        }
-      ]
-    }
+    "type": "phoneme-blending",
+    "phoneme": "/g/",
+    "words": ["gas", "log", "mug"]
   },
   {
     "type": "custom",
     "value": [
-      { "type": "verbal", "value": "Amazing! You know 11 letters now!" },
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 11 letters now!"
+      },
       {
         "type": "gif-video",
         "src": "/l2r/vods/letter-words-3-letters.mov",
@@ -106,12 +116,272 @@
       }
     ]
   },
-  { "type": "finger-word", "word": "BIG", "phonemes": ["/b/", "/i/", "/g/"] },
-  { "type": "finger-word", "word": "TAG", "phonemes": ["/t/", "/a/", "/g/"] },
-  { "type": "finger-word", "word": "DIG", "phonemes": ["/d/", "/i/", "/g/"] },
-  { "type": "word-to-picture", "word": "BAG", "words": ["pig", "dog"] },
-  { "type": "word-to-picture", "word": "PIG", "words": ["pan", "pumpkin"] },
-  { "type": "word-to-picture", "word": "DOG", "words": ["cat", "pig"] },
+  {
+    "type": "finger-word",
+    "word": "BIG",
+    "phonemes": ["/b/", "/i/", "/g/"]
+  },
+  {
+    "type": "finger-word",
+    "word": "GAS",
+    "phonemes": ["/g/", "/a/", "/s/"]
+  },
+  {
+    "type": "finger-word",
+    "word": "DIG",
+    "phonemes": ["/d/", "/i/", "/g/"],
+    "pre": {
+      "replace": [
+        {
+          "index": 1,
+          "value": "We're going to practice our new variation of Finger Words, called Imaginary Finger Words.  As a reminder, instead of using your fingers and hands physically, you'll perform all the movements entirely in your imagination."
+        },
+        {
+          "index": 2,
+          "value": "In your mind, assign each letter to an imaginary finger."
+        },
+        {
+          "index": 3,
+          "value": "Say the sound each letter makes."
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        "Are there any sticky sounds?",
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/d/",
+              "showQuotes": false
+            },
+            "and the ",
+            {
+              "type": "sound",
+              "phoneme": "/g/",
+              "showQuotes": false
+            },
+            " sound are sticky sounds."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Does the ",
+            {
+              "type": "sound",
+              "phoneme": "/d/",
+              "showQuotes": false
+            },
+            " sound have a sound after it to stick to?"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "phonemes": ["/d/", "/i/", "/g/"],
+    "word": "DIG",
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false
+            },
+            " sound is after the ",
+            {
+              "type": "sound",
+              "phoneme": "/d/",
+              "showQuotes": false
+            },
+            " sound which means that the ",
+            {
+              "type": "sound",
+              "phoneme": "/d/",
+              "showQuotes": false
+            },
+            " sound can stick to the ",
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false
+            },
+            " sound."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Imagine sticking your fingers together, so that they make their sounds together. Together they will say ",
+            {
+              "type": "sound",
+              "phoneme": "/d/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            }
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/d/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/g/",
+              "showQuotes": false
+            }
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Does the ",
+            {
+              "type": "sound",
+              "phoneme": "/g/",
+              "showQuotes": false
+            },
+            " sound have a sound after it to stick to?"
+          ]
+        },
+        "No, so we don't need to do anything special with this sound.",
+        "We have a gap between the sounds currently, just like there is a gap between our imaginary fingers."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "phonemes": ["/d/", "/i/", "/g/"],
+    "word": "DIG",
+    "pre": {
+      "value": [
+        "We want to blend the sounds together, so there's no gap between the sounds, just like we do on our knuckles in Finger Words.",
+        "Say the sound that each imaginary finger or finger pair makes slowly and continuously, blending the sounds together without any gaps.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/d/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/g/",
+              "showQuotes": false
+            }
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        "Do it again and again, slightly faster each time, until you hear the word.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/d/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/g/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "sound",
+              "phoneme": "/d/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/g/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "text",
+              "value": "DIG",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        },
+        "Did you hear the word? That's right, the word is ‘dig’."
+      ]
+    }
+  },
+  {
+    "type": "word-to-picture",
+    "word": "BAG",
+    "words": ["pig", "dog"]
+  },
+  {
+    "type": "word-to-picture",
+    "word": "PIG",
+    "words": ["pan", "pumpkin"]
+  },
+  {
+    "type": "word-to-picture",
+    "word": "DOG",
+    "words": ["cat", "pig"]
+  },
   {
     "type": "books",
     "books": [52224],
@@ -126,6 +396,12 @@
       ]
     }
   },
-  { "type": "teach-tam", "value": "BIG" },
-  { "type": "conclusion", "confetti": true }
+  {
+    "type": "teach-tam",
+    "value": "BIG"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
 ]
