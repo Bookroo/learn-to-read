@@ -2,180 +2,261 @@
   {
     "type": "custom",
     "value": [
-      "In this lesson, we're going to learn one new letter and one new sound.",
+      {
+        "type": "image",
+        "src": "/l2r/gifs/heart.gif?v=2",
+        "width": 200,
+        "height": 200
+      },
+      "In this lesson, we're going to learn about ‘heart words’.",
       "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
     ]
   },
   {
     "type": "find-grapheme",
-    "grapheme": "E",
-    "graphemes": ["D", "G"],
+    "grapheme": "H",
+    "graphemes": ["M", "T"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
   {
     "type": "find-grapheme",
-    "grapheme": "L",
-    "graphemes": ["I", "H"],
+    "grapheme": "E",
+    "graphemes": ["S", "A"],
     "total": 3,
     "unique": 3,
     "correct": 1
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/o/",
+    "grapheme": "O"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "E",
+    "phoneme": "/e/"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/d/",
+    "grapheme": "D",
+    "graphemes": ["S", "N"]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/b/",
+    "grapheme": "B",
+    "graphemes": ["E", "T"]
   },
   {
     "type": "sound-to-grapheme",
     "phoneme": "/h/",
-    "grapheme": "H"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "grapheme": "O",
-    "phoneme": "/o/"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/l/",
-    "grapheme": "L",
-    "graphemes": ["M", "N"]
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/s/",
-    "grapheme": "S",
-    "graphemes": ["M", "E"]
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/n/",
-    "grapheme": "N",
-    "graphemes": ["M", "A"]
+    "grapheme": "H",
+    "graphemes": ["B", "P"]
   },
   {
     "type": "card-stack",
-    "values": ["HIS", "A", "HAS", "I", "IS", "THE"],
+    "values": ["is", "has", "sits", "his"],
     "pre": {
       "value": [
-        "Let's practice some words that end with the letter S along with some heart words."
-      ]
-    }
-  },
-  {
-    "type": "grapheme-trace-air",
-    "grapheme": "C",
-    "pre": {
-      "prepend": ["Now it's time to learn a new letter."]
-    }
-  },
-  {
-    "type": "grapheme-trace-palm",
-    "grapheme": "C"
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "C",
-    "graphemes": ["S", "D"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "introduce-sound",
-    "grapheme": "C",
-    "phoneme": "/c/",
-    "soundPhoneme": "/k/"
-  },
-  {
-    "type": "sound-in-word",
-    "grapheme": "C",
-    "phoneme": "/c/",
-    "words": [
-      {
-        "text": "carrot"
-      },
-      {
-        "text": "candy"
-      },
-      {
-        "text": "balloon",
-        "correct": false
-      },
-      {
-        "text": "tac"
-      },
-      {
-        "text": "sit",
-        "correct": false
-      },
-      {
-        "text": "cat"
-      }
-    ]
-  },
-  {
-    "type": "custom",
-    "value": [
-      {
-        "type": "verbal",
-        "value": "Amazing! You know 15 letters now!"
-      },
-      {
-        "type": "gif-video",
-        "src": "/l2r/vods/letter-words-3-letters.mov",
-        "width": 200,
-        "height": 200
-      },
-      {
-        "type": "verbal",
-        "value": [
-          "Now it’s time to practice ",
-          {
-            "type": "text",
-            "value": "Finger Words",
-            "css": {
-              "fontWeight": "bold"
-            }
-          },
-          " again!"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "finger-word",
-    "word": "COT",
-    "phonemes": ["/c/", "/o/", "/t/"],
-    "post": {
-      "append": [
         {
           "type": "verbal",
-          "value": "A cot is a name for a camp bed."
+          "value": "Let's practice some words that end in S."
         }
       ]
     }
   },
   {
-    "type": "finger-word",
-    "word": "CAMP",
-    "phonemes": ["/c/", "/a/", "/m/", "/p/"]
+    "type": "custom",
+    "value": [
+      "Great job with your review! Now we're going to learn about ‘heart words’.",
+      "Can you make a heart with your hands?",
+      {
+        "type": "image",
+        "src": "/l2r/misc/heart-hands.jpg?v=2",
+        "width": 300,
+        "height": 171
+      },
+      "Good job! Now we're ready to learn about ‘heart words’."
+    ]
   },
   {
-    "type": "word-to-picture",
-    "word": "CLAP",
-    "words": ["smile", "wink"]
+    "type": "custom",
+    "value": [
+      "Heart words are words that don't follow the letter sound rules we've learned so far.",
+      "Because they don't follow the rules, we have to learn these words by heart (or sight). Another name for ‘heart words’ is ‘sight words’.",
+      "Let's look at our first heart word."
+    ]
   },
   {
-    "type": "word-to-picture",
-    "word": "CAP",
-    "words": ["bowl", "nest"]
+    "type": "touch-slide",
+    "word": "I",
+    "phonemes": ["/I/"],
+    "pre": {
+      "value": [
+        "Our first heart word is the word ‘I’.",
+        "Can you say the word ‘I’?",
+        "The word ‘I’ is spelled with just one letter, the letter I."
+      ]
+    },
+    "post": {
+      "value": [
+        "When you see the letter I all alone,\nyou know it's the word ‘I’ because ‘I’ is a heart word."
+      ]
+    }
   },
   {
-    "type": "picture-to-word",
-    "word": "CAN",
-    "words": ["DOG", "CAT"]
+    "type": "story-words",
+    "story": "I like you. I like me.",
+    "words": ["I"],
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "Let's practice finding our new heart word ‘I’ in these sentences. First, I'll read the sentences to you. Then, I'll ask you to find the word ‘I’ in the sentences."
+        }
+      ]
+    }
+  },
+  {
+    "type": "story-words",
+    "story": "I am hot.",
+    "words": ["I"],
+    "pre": {
+      "value": [
+        "Let's try another example. This time, you find the word `I` first, and then read me the sentence."
+      ]
+    },
+    "post": {
+      "value": ["Good job! Now can you read the sentence to me?"]
+    }
+  },
+  {
+    "type": "touch-slide",
+    "word": "A",
+    "phonemes": ["/A/"],
+    "pre": {
+      "value": [
+        {
+          "type": "instruction",
+          "value": [
+            "The word ‘a’ can be pronounced as ",
+            {
+              "type": "sound",
+              "phoneme": "/A/"
+            },
+            " or ",
+            {
+              "type": "sound",
+              "phoneme": "/u/"
+            },
+            ". Either is fine."
+          ]
+        },
+        "We're ready for another heart word! Our next heart word is the word ‘a’. Like in the sentence ‘I see a cat’.",
+        "Can you say the word ‘a’?",
+        "The word ‘a’ is spelled with just one letter, the letter A."
+      ]
+    },
+    "post": {
+      "value": [
+        "When you see the letter A all alone,\nyou know it's the word ‘a’ because ‘a’ is a heart word."
+      ]
+    }
+  },
+  {
+    "type": "story-words",
+    "story": "A peach, a pear, and a plum all go in my tum.",
+    "words": ["a"],
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "Let's practice finding our new heart word ‘a’ in this sentence. First, I'll read the sentence to you. Then, I'll ask you to find the word ‘a’ in the sentence."
+        }
+      ]
+    }
+  },
+  {
+    "type": "story-words",
+    "story": "Tam has a hen.",
+    "words": ["a"],
+    "pre": {
+      "value": [
+        "Let's try another example. This time, you find the word `a` first, and then read me the sentence."
+      ]
+    },
+    "post": {
+      "value": ["Good job! Now can you read the sentence to me?"]
+    }
+  },
+  {
+    "type": "touch-slide",
+    "word": "THE",
+    "phonemes": ["/i/"],
+    "pre": {
+      "value": [
+        "It's time for one final heart word! Our last heart word is the word ‘the’.",
+        "Can you say the word ‘the’?",
+        "The word ‘the’ is spelled with the letters T, H, and E."
+      ]
+    },
+    "post": {
+      "value": [
+        "When you see the letters T, H, and E together, you know it's the word ‘the’ because ‘the’ is a heart word."
+      ]
+    }
+  },
+  {
+    "type": "story-words",
+    "story": "THE CAT SAT ON THE MAT.",
+    "words": ["the"]
+  },
+  {
+    "type": "story-words",
+    "story": "THE DOG IS SAD.",
+    "words": ["the"],
+    "pre": {
+      "value": [
+        "Let's try another example. This time, you find the word `the` first, and then read me the sentence."
+      ]
+    },
+    "post": {
+      "value": ["Good job! Now can you read the sentence to me?"]
+    }
+  },
+  {
+    "type": "card-stack",
+    "values": ["A", "THE", "I"],
+    "pre": {
+      "value": [
+        "Let’s practice the three heart words we learned. Read the words on the cards one at a time."
+      ]
+    }
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "image",
+        "src": "/l2r/gifs/heart.gif?v=2",
+        "width": 200,
+        "height": 200
+      },
+      {
+        "type": "verbal",
+        "value": "Don’t worry if it feels hard to remember these heart words. You’ll get lots of practice in future lessons, and overtime it will be easy to recognize these words when you’re reading."
+      }
+    ]
   },
   {
     "type": "books",
-    "books": [52232]
+    "books": [52229, 52231],
+    "pre": {
+      "value": "Let’s read a book together. You can choose either book, or you can read both of them."
+    }
   },
   {
     "type": "conclusion",

@@ -8,7 +8,7 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "C",
+    "grapheme": "E",
     "graphemes": ["D", "G"],
     "total": 3,
     "unique": 3,
@@ -16,116 +16,85 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "U",
-    "graphemes": ["S", "H"],
+    "grapheme": "L",
+    "graphemes": ["I", "H"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
   {
     "type": "sound-to-grapheme",
+    "phoneme": "/h/",
+    "grapheme": "H"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "O",
+    "phoneme": "/o/"
+  },
+  {
+    "type": "sound-to-grapheme",
     "phoneme": "/l/",
-    "grapheme": "L"
+    "grapheme": "L",
+    "graphemes": ["M", "N"]
   },
   {
     "type": "sound-to-grapheme",
-    "grapheme": "H",
-    "phoneme": "/h/"
+    "phoneme": "/s/",
+    "grapheme": "S",
+    "graphemes": ["M", "E"]
   },
   {
     "type": "sound-to-grapheme",
-    "phoneme": "/c/",
-    "grapheme": "C",
-    "graphemes": ["R", "Y"]
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/u/",
-    "grapheme": "U",
-    "graphemes": ["O", "A"]
+    "phoneme": "/n/",
+    "grapheme": "N",
+    "graphemes": ["M", "A"]
   },
   {
     "type": "card-stack",
-    "values": ["I", "A", "THE"],
+    "values": ["HIS", "A", "HAS", "I", "IS", "THE"],
     "pre": {
-      "value": "Let’s practice three heart words. Read the words on the cards one at a time."
-    }
-  },
-  {
-    "type": "card-stack",
-    "values": ["HAS", "HIS", "IS"],
-    "pre": {
-      "value": "Let’s practice three words that end in the letter S. Read the words on the cards one at a time."
+      "value": [
+        "Let's practice some words that end with the letter S along with some heart words."
+      ]
     }
   },
   {
     "type": "grapheme-trace-air",
-    "grapheme": "R",
+    "grapheme": "C",
     "pre": {
       "prepend": ["Now it's time to learn a new letter."]
     }
   },
   {
     "type": "grapheme-trace-palm",
-    "grapheme": "R"
+    "grapheme": "C"
   },
   {
     "type": "find-grapheme",
-    "grapheme": "R",
-    "graphemes": ["P", "S"],
+    "grapheme": "C",
+    "graphemes": ["S", "D"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
   {
     "type": "introduce-sound",
-    "grapheme": "R",
-    "phoneme": "/r/"
+    "grapheme": "C",
+    "phoneme": "/c/",
+    "soundPhoneme": "/k/"
   },
   {
-    "type": "sound-in-word",
-    "grapheme": "R",
-    "phoneme": "/r/",
-    "words": [
-      {
-        "text": "red"
-      },
-      {
-        "text": "drum"
-      },
-      {
-        "text": "robot"
-      },
-      {
-        "text": "boat",
-        "correct": false
-      },
-      {
-        "text": "carrot"
-      },
-      {
-        "text": "rat"
-      }
-    ],
-    "post": {
-      "append": [
-        {
-          "type": "verbal",
-          "value": [
-            "Can you think of a word that has the ",
-            { "type": "sound", "phoneme": "/r/" },
-            " sound?"
-          ]
-        }
-      ]
-    }
+    "type": "phoneme-blending",
+    "phoneme": "/c/",
+    "words": ["cot", "arc", "act"]
   },
   {
     "type": "custom",
     "value": [
       {
         "type": "verbal",
-        "value": "Amazing! You know 17 letters now!"
+        "value": "Amazing! You know 15 letters now!"
       },
       {
         "type": "gif-video",
@@ -136,10 +105,10 @@
       {
         "type": "verbal",
         "value": [
-          "Now it’s time to practice ",
+          "Now it’s time to do ",
           {
             "type": "text",
-            "value": "Finger Words",
+            "value": "Imaginary Finger Words",
             "css": {
               "fontWeight": "bold"
             }
@@ -151,52 +120,107 @@
   },
   {
     "type": "finger-word",
-    "word": "RAN",
-    "phonemes": ["/r/", "/a/", "/n/"]
+    "word": "COT",
+    "phonemes": ["/c/", "/o/", "/t/"],
+    "pre": {
+      "replace": [
+        {
+          "index": 1,
+          "value": "Use Imaginary Finger Words to read this word."
+        },
+        {
+          "index": 2,
+          "value": "In your mind, assign each letter to an imaginary finger."
+        },
+        {
+          "index": 3,
+          "value": "Say the sound each letter makes."
+        }
+      ]
+    },
+    "post": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "If there are stickable sounds, stick them together in your mind, then say the sounds again."
+        },
+        {
+          "index": 1,
+          "value": "Blend the sounds together, like you would do on your knuckles."
+        }
+      ]
+    }
   },
   {
     "type": "finger-word",
-    "word": "RAMP",
-    "phonemes": ["/r/", "/a/", "/m/", "/p/"]
+    "word": "CAMP",
+    "phonemes": ["/c/", "/a/", "/m/", "/p/"],
+    "pre": {
+      "replace": [
+        {
+          "index": 1,
+          "value": "Use Imaginary Finger Words to read this word."
+        },
+        {
+          "index": 2,
+          "value": "In your mind, assign each letter to an imaginary finger."
+        },
+        {
+          "index": 3,
+          "value": "Say the sound each letter makes."
+        }
+      ]
+    },
+    "post": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "If there are stickable sounds, stick them together in your mind, then say the sounds again."
+        },
+        {
+          "index": 1,
+          "value": "Blend the sounds together, like you would do on your knuckles."
+        }
+      ]
+    }
+  },
+
+  {
+    "type": "word-to-picture",
+    "word": "CLAP",
+    "words": ["smile", "wink"]
   },
   {
-    "type": "finger-word",
-    "word": "PAST",
-    "phonemes": ["/p/", "/a/", "/s/", "/t/"]
-  },
-  {
-    "type": "finger-word",
-    "word": "RUB",
-    "phonemes": ["/r/", "/u/", "/b/"]
-  },
-  {
-    "type": "word-chain",
-    "words": ["RAN", "RAM", "RAMP", "CAMP"]
+    "type": "word-to-picture",
+    "word": "CAP",
+    "words": ["bowl", "nest"]
   },
   {
     "type": "picture-to-word",
-    "word": "RAT",
-    "words": ["BAT", "CAT"]
+    "word": "CAN",
+    "words": ["DOG", "CAT"]
   },
   {
-    "type": "word-to-picture",
-    "word": "RED",
-    "words": ["blue", "yellow"]
-  },
-  {
-    "type": "word-to-picture",
-    "word": "SLED",
-    "words": ["car", "helicopter"]
+    "type": "brain-words",
+    "phoneme": "/a/",
+    "words": [
+      "at",
+      "it",
+      "sit",
+      "in",
+      "did",
+      "an",
+      "on",
+      "not",
+      "top",
+      "big",
+      "dog",
+      "is"
+    ]
   },
   {
     "type": "books",
-    "books": [52234],
-    "pre": {
-      "value": [
-        "Great work! Now, let's read a book together. I will read the blue words and you will read the black words.",
-        "Remember, when it's your turn to read, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together."
-      ]
-    }
+    "books": [52232]
   },
   {
     "type": "conclusion",

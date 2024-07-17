@@ -8,116 +8,108 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "E",
-    "graphemes": ["D", "H"],
+    "grapheme": "H",
+    "graphemes": ["I", "T"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
   {
     "type": "find-grapheme",
-    "grapheme": "C",
-    "graphemes": ["G", "M"],
+    "grapheme": "E",
+    "graphemes": ["B", "P"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
   {
     "type": "sound-to-grapheme",
-    "phoneme": "/t/",
-    "grapheme": "T"
+    "phoneme": "/b/",
+    "grapheme": "B"
   },
   {
     "type": "sound-to-grapheme",
-    "grapheme": "M",
-    "phoneme": "/m/"
+    "grapheme": "G",
+    "phoneme": "/g/"
   },
   {
     "type": "sound-to-grapheme",
-    "phoneme": "/c/",
-    "grapheme": "C",
-    "graphemes": ["P", "N"]
+    "phoneme": "/h/",
+    "grapheme": "H",
+    "graphemes": ["S", "N"]
   },
   {
     "type": "sound-to-grapheme",
     "phoneme": "/s/",
     "grapheme": "S",
-    "graphemes": ["B", "E"]
+    "graphemes": ["E", "T"]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/e/",
+    "grapheme": "E",
+    "graphemes": ["B", "P"]
   },
   {
     "type": "card-stack",
-    "values": ["HAS", "HIS", "IS"],
+    "values": ["I", "IS", "THE", "HAS", "A", "HIS"],
     "pre": {
-      "value": "Let’s practice three words that end in the letter S. Read the words on the cards one at a time."
+      "value": [
+        "Last lesson, we learned about heart words. Let's practice reading some heart words along with some of our other recent words."
+      ]
     }
   },
   {
-    "type": "card-stack",
-    "values": ["I", "A", "THE"],
+    "type": "lost-sounds",
+    "graphemes": ["N", "M", "O", "S", "A"]
+  },
+  {
+    "type": "lost-sounds",
+    "graphemes": ["T", "P", "D", "B", "G"],
     "pre": {
-      "value": "Let’s practice three heart words. Read the words on the cards one at a time."
+      "replace": [
+        {
+          "index": 1,
+          "value": "Now we're going to play the same game again, but this time, all of the letters will be sticky sounds. When you say the sound by itself, make sure to say it nice and short."
+        }
+      ]
     }
   },
   {
     "type": "grapheme-trace-air",
-    "grapheme": "U",
+    "grapheme": "L",
     "pre": {
-      "prepend": ["Now it's time to learn a new letter."]
+      "prepend": ["Great job! Now it's time to learn a new letter."]
     }
   },
   {
     "type": "grapheme-trace-palm",
-    "grapheme": "U"
+    "grapheme": "L"
   },
   {
     "type": "find-grapheme",
-    "grapheme": "U",
-    "graphemes": ["C", "E"],
+    "grapheme": "L",
+    "graphemes": ["I", "T"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
   {
     "type": "introduce-sound",
-    "grapheme": "U",
-    "phoneme": "/u/"
+    "grapheme": "L",
+    "phoneme": "/l/"
   },
   {
-    "type": "sound-in-word",
-    "grapheme": "U",
-    "phoneme": "/u/",
-    "words": [
-      {
-        "text": "up"
-      },
-      {
-        "text": "under"
-      },
-      {
-        "text": "cub"
-      },
-      {
-        "text": "baby",
-        "correct": false
-      },
-      {
-        "text": "butter"
-      },
-      {
-        "text": "stop",
-        "correct": false
-      },
-      {
-        "text": "sun"
-      }
-    ]
+    "type": "phoneme-blending",
+    "phoneme": "/l/",
+    "words": ["ball", "lip", "loop"]
   },
   {
     "type": "custom",
     "value": [
       {
         "type": "verbal",
-        "value": "Amazing! You know 16 letters now!"
+        "value": "Amazing! You know 14 letters now!"
       },
       {
         "type": "gif-video",
@@ -127,84 +119,347 @@
       },
       {
         "type": "verbal",
-        "value": [
-          "Now it’s time to practice ",
-          {
-            "type": "text",
-            "value": "Finger Words",
-            "css": {
-              "fontWeight": "bold"
-            }
-          },
-          " again!"
-        ]
+        "value": "Now it’s time for some Touch & Slide! As a reminder, in this game, we tap our arm as we make the sound of each letter in order, and then slide them altogether."
       }
     ]
   },
   {
     "type": "finger-word",
-    "word": "LUG",
-    "phonemes": ["/l/", "/u/", "/g/"],
+    "word": "LAP",
+    "phonemes": ["/l/", "/a/", "/p/"]
+  },
+
+  {
+    "type": "finger-word",
+    "word": "LOT",
+    "phonemes": ["/l/", "/o/", "/t/"],
+    "pre": {
+      "replace": [
+        {
+          "index": 1,
+          "value": "Time for Imaginary Finger Words! As a reminder, instead of using your fingers and hands physically, you'll perform all the movements entirely in your imagination."
+        },
+        {
+          "index": 2,
+          "value": "In your mind, assign each letter to an imaginary finger."
+        },
+        {
+          "index": 3,
+          "value": "Say the sound each letter makes."
+        }
+      ]
+    },
     "post": {
-      "append": [
+      "value": [
+        "Are there any sticky sounds?",
         {
           "type": "verbal",
-          "value": "What does it mean to lug something? To lug something means to carry something big or heavy, and it takes a LOT of effort."
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound is a sticky sound."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Does the ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound have a sound after it to stick to?"
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "No, there isn't a sound after the  ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " sound, so we don't need to do anything special."
+          ]
         }
       ]
     }
   },
   {
     "type": "finger-word",
-    "word": "DUST",
-    "phonemes": ["/d/", "/u/", "/s/", "/t/"]
+    "phonemes": ["/l/", "/o/", "/t/"],
+    "word": "LOT",
+    "pre": {
+      "value": [
+        "We have a gap between the sounds currently, just like there is a gap between our imaginary fingers.",
+        "We want to blend the sounds together, so there's no gap between the sounds, just like we do on our knuckles in Finger Words."
+      ]
+    },
+    "post": {
+      "value": [
+        "Say the sound that each finger or finger pair makes slowly and continuously, blending the sounds together without any gaps.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/l/",
+              "showQuotes": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/o/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            }
+          ]
+        },
+        "Do it again and again, slightly faster each time, until you hear the word.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/l/",
+              "showQuotes": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/o/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "sound",
+              "phoneme": "/l/",
+              "showQuotes": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/o/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "text",
+              "value": "LOT",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        },
+        "Did you hear the word? That's right, the word is ‘lot’ as in 'I like you a lot'."
+      ]
+    }
+  },
+
+  {
+    "type": "finger-word",
+    "word": "BELT",
+    "phonemes": ["/b/", "/e/", "/l/", "/t/"]
   },
   {
     "type": "finger-word",
-    "word": "CUSP",
-    "phonemes": ["/c/", "/u/", "/s/", "/p/"],
+    "word": "LAND",
+    "phonemes": ["/l/", "/a/", "/n/", "/d/"],
+    "pre": {
+      "replace": [
+        {
+          "index": 1,
+          "value": "Time for Imaginary Finger Words! As a reminder, instead of using your fingers and hands physically, you'll perform all the movements entirely in your imagination."
+        },
+        {
+          "index": 2,
+          "value": "In your mind, assign each letter to an imaginary finger."
+        },
+        {
+          "index": 3,
+          "value": "Say the sound each letter makes."
+        }
+      ]
+    },
     "post": {
-      "append": [
+      "value": [
+        "Are there any sticky sounds?",
         {
           "type": "verbal",
-          "value": "Have you ever heard this word before? It might sound a little silly, but it can mean two different things. One is for example, if you’re ‘on the cusp of a new school year’, it means the school year is about to start, or if you are ‘at the cusp of the mountain’, it means you’re almost at the top or point."
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/d/",
+              "showQuotes": false
+            },
+            " sound is a sticky sound."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Does the ",
+            {
+              "type": "sound",
+              "phoneme": "/d/",
+              "showQuotes": false
+            },
+            " sound have a sound after it to stick to?"
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "No, there isn't a sound after the  ",
+            {
+              "type": "sound",
+              "phoneme": "/d/",
+              "showQuotes": false
+            },
+            " sound, so we don't need to do anything special."
+          ]
         }
       ]
     }
   },
   {
     "type": "finger-word",
-    "word": "MUST",
-    "phonemes": ["/m/", "/u/", "/s/", "/t/"]
-  },
-  {
-    "type": "word-chain",
-    "words": ["DUG", "BUG", "SLUG", "MUG"]
-  },
-  {
-    "type": "picture-to-word",
-    "word": "SUN",
-    "words": ["CAP", "BUS"]
+    "phonemes": ["/l/", "/a/", "/n/", "/d/"],
+    "word": "LAND",
+    "pre": {
+      "value": [
+        "We have a gap between the sounds currently, just like there is a gap between our imaginary fingers.",
+        "We want to blend the sounds together, so there's no gap between the sounds, just like we do on our knuckles in Finger Words."
+      ]
+    },
+    "post": {
+      "value": [
+        "Say the sound that each finger or finger pair makes slowly and continuously, blending the sounds together without any gaps.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/l/",
+              "showQuotes": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/d/",
+              "showQuotes": false
+            }
+          ]
+        },
+        "Do it again and again, slightly faster each time, until you hear the word.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/l/",
+              "showQuotes": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/d/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "sound",
+              "phoneme": "/l/",
+              "showQuotes": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/d/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "text",
+              "value": "LAND",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        },
+        "Did you hear the word? That's right, the word is ‘land’."
+      ]
+    }
   },
   {
     "type": "word-to-picture",
-    "word": "BUS",
-    "words": ["airplane", "car"]
+    "word": "LOG",
+    "words": ["nest", "dog"]
   },
   {
     "type": "word-to-picture",
-    "word": "STEP",
-    "words": ["slide", "swing"]
+    "word": "LAMP",
+    "words": ["bowl", "ladder"]
   },
   {
     "type": "books",
-    "books": [52233],
-    "pre": {
-      "value": [
-        "Great work! Now, let's read a book together.",
-        "This book only has two blue words. That means you get to read almost all of the words in this book!"
-      ]
-    }
+    "books": [52230]
   },
   {
     "type": "conclusion",

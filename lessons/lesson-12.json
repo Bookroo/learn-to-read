@@ -2,131 +2,125 @@
   {
     "type": "custom",
     "value": [
-      "In this lesson, we're going to learn one new letter and one new sound.",
-      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+      {
+        "type": "verbal",
+        "value": "In this lesson, we're going to learn one new letter and one new sound."
+      },
+      {
+        "type": "verbal",
+        "value": "But first, let's review some of the letters and sounds we learned in previous lessons."
+      }
     ]
   },
   {
     "type": "find-grapheme",
-    "grapheme": "H",
-    "graphemes": ["I", "T"],
+    "grapheme": "E",
+    "graphemes": ["T", "S"],
     "total": 3,
     "unique": 3,
     "correct": 1
   },
   {
     "type": "find-grapheme",
-    "grapheme": "E",
-    "graphemes": ["B", "P"],
+    "grapheme": "B",
+    "graphemes": ["P", "D"],
     "total": 3,
     "unique": 3,
     "correct": 1
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/b/",
-    "grapheme": "B"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "grapheme": "G",
-    "phoneme": "/g/"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/h/",
-    "grapheme": "H",
-    "graphemes": ["S", "N"]
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/s/",
-    "grapheme": "S",
-    "graphemes": ["E", "T"]
   },
   {
     "type": "sound-to-grapheme",
     "phoneme": "/e/",
-    "grapheme": "E",
-    "graphemes": ["B", "P"]
+    "grapheme": "E"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "M",
+    "phoneme": "/m/"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/t/",
+    "grapheme": "T",
+    "graphemes": ["S", "N"]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/d/",
+    "grapheme": "D",
+    "graphemes": ["M", "T"]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/b/",
+    "grapheme": "B",
+    "graphemes": ["V", "X"]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/i/",
+    "grapheme": "I",
+    "graphemes": ["L", "Z"]
   },
   {
     "type": "card-stack",
-    "values": ["I", "IS", "THE", "HAS", "A", "HIS"],
+    "values": ["PIGS", "IS", "PODS", "MOPS"],
     "pre": {
       "value": [
-        "Last lesson, we learned about heart words. Let's practice reading some heart words along with some of our other recent words."
-      ]
-    }
-  },
-  {
-    "type": "grapheme-trace-air",
-    "grapheme": "L",
-    "pre": {
-      "prepend": ["Great job! Now it's time to learn a new letter."]
-    }
-  },
-  {
-    "type": "grapheme-trace-palm",
-    "grapheme": "L"
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "L",
-    "graphemes": ["I", "T"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "introduce-sound",
-    "grapheme": "L",
-    "phoneme": "/l/"
-  },
-  {
-    "type": "sound-in-word",
-    "grapheme": "L",
-    "phoneme": "/l/",
-    "words": [
-      {
-        "text": "lamp"
-      },
-      {
-        "text": "bell"
-      },
-      {
-        "text": "kite",
-        "correct": false
-      },
-      {
-        "text": "hill"
-      },
-      {
-        "text": "alive"
-      },
-      {
-        "text": "lizard"
-      }
-    ],
-    "post": {
-      "append": [
         {
           "type": "verbal",
           "value": [
-            "Can you think of a word that has the ",
-            { "type": "sound", "phoneme": "/l/" },
-            " sound?"
+            "In lesson 8, we learned that some words that have an S at the end make the ",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            " sound instead of the ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound. Let's read a few words to practice this."
           ]
         }
       ]
     }
   },
   {
+    "type": "grapheme-trace-air",
+    "grapheme": "H",
+    "pre": {
+      "prepend": ["Now it's time to learn a new letter."]
+    }
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "H"
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "H",
+    "graphemes": ["P", "Y"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "H",
+    "phoneme": "/h/"
+  },
+  {
+    "type": "phoneme-blending",
+    "phoneme": "/h/",
+    "words": ["hop", "hat", "him"]
+  },
+  {
     "type": "custom",
     "value": [
       {
         "type": "verbal",
-        "value": "Amazing! You know 14 letters now!"
+        "value": "Amazing! You know 13 letters now!"
       },
       {
         "type": "gif-video",
@@ -152,53 +146,318 @@
   },
   {
     "type": "finger-word",
-    "word": "LAP",
-    "phonemes": ["/l/", "/a/", "/p/"],
+    "word": "HOT",
+    "phonemes": ["/h/", "/o/", "/t/"]
+  },
+  {
+    "type": "finger-word",
+    "word": "HAND",
+    "phonemes": ["/h/", "/a/", "/n/", "/d/"]
+  },
+  {
+    "type": "finger-word",
+    "word": "HEN",
+    "phonemes": ["/h/", "/e/", "/n/"],
+    "pre": {
+      "replace": [
+        {
+          "index": 1,
+          "value": "Time for Imaginary Finger Words! As a reminder, instead of using your fingers and hands physically, you'll perform all the movements entirely in your imagination."
+        },
+        {
+          "index": 2,
+          "value": "In your mind, assign each letter to an imaginary finger."
+        },
+        {
+          "index": 3,
+          "value": "Say the sound each letter makes."
+        }
+      ]
+    },
     "post": {
-      "append": [
+      "value": ["Are there any sticky sounds?", "No, there aren't."]
+    }
+  },
+  {
+    "type": "finger-word",
+    "phonemes": ["/h/", "/e/", "/n/"],
+    "word": "HEN",
+    "pre": {
+      "value": [
+        "We have a gap between the sounds currently, just like there is a gap between our imaginary fingers.",
+        "We want to blend the sounds together, so there's no gap between the sounds, just like we do on our knuckles in Finger Words."
+      ]
+    },
+    "post": {
+      "value": [
+        "Say the sound that each finger or finger pair makes slowly and continuously, blending the sounds together without any gaps.",
         {
           "type": "verbal",
-          "value": "The word ‘lap’ can refer to the top part of your thigh, like when you sit on someone's lap to read a story, or, it can mean one complete circuit, such as running around the house one time."
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/h/",
+              "showQuotes": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/e/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            }
+          ]
+        },
+        "Do it again and again, slightly faster each time, until you hear the word.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/h/",
+              "showQuotes": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/e/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "sound",
+              "phoneme": "/h/",
+              "showQuotes": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/e/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "text",
+              "value": "HEN",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        },
+        "Did you hear the word? That's right, the word is ‘hen’ as in 'a hen lays eggs'."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "HAS",
+    "phonemes": ["/h/", "/a/", "/z/"],
+    "pre": {
+      "value": [
+        "Notice that this word ends in the letter S. Listen as I read the word.",
+        {
+          "type": "instruction",
+          "value": "Read the word using Finger Words."
+        },
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/h/",
+              "showQuotes": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/a/",
+              "showQuotes": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/z/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "text",
+              "value": "HAS",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Does this letter S make the ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound or the ",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            "?"
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "That's right, it makes the ",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            " sound!"
+          ]
         }
       ]
     }
   },
   {
     "type": "finger-word",
-    "word": "LOT",
-    "phonemes": ["/l/", "/o/", "/t/"]
+    "word": "HAS",
+    "phonemes": ["/h/", "/a/", "/z/"],
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "Now it's your turn to read this word using Finger Words."
+        }
+      ]
+    }
   },
   {
     "type": "finger-word",
-    "word": "BELT",
-    "phonemes": ["/b/", "/e/", "/l/", "/t/"]
-  },
-  {
-    "type": "finger-word",
-    "word": "LAND",
-    "phonemes": ["/l/", "/a/", "/n/", "/d/"],
-    "post": {
-      "append": [
+    "word": "HAS",
+    "phonemes": ["/h/", "/a/", "/z/"],
+    "pre": {
+      "value": [
+        "This word also ends in the letter S. Listen as I read the word.",
+        {
+          "type": "instruction",
+          "value": "Read the word using Finger Words."
+        },
         {
           "type": "verbal",
-          "value": "The word ‘land’ can mean the part of the Earth that is not covered by water, as in the ground we stand on, or, it can refer to the act of coming down to touch the ground, like when an airplane lands."
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/h/",
+              "showQuotes": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/z/",
+              "showQuotes": false
+            },
+            " . . . ",
+            {
+              "type": "text",
+              "value": "HIS",
+              "css": {
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Does this letter S make the ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound or the ",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            "?"
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "That's right, it makes the ",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            " sound!"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "HIS",
+    "phonemes": ["/h/", "/i/", "/z/"],
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "Now it's your turn to read this word using Finger Words."
         }
       ]
     }
   },
   {
     "type": "word-to-picture",
-    "word": "LOG",
-    "words": ["nest", "dog"]
+    "word": "HOG",
+    "words": ["car", "dog"]
   },
   {
     "type": "word-to-picture",
-    "word": "LAMP",
-    "words": ["bowl", "ladder"]
+    "word": "HAT",
+    "words": ["jellyfish", "cat"]
   },
   {
     "type": "books",
-    "books": [52230]
+    "books": [52227],
+    "pre": {
+      "value": [
+        "Great work! Now, let's read a book together. I will read the blue words and you will read the black words.",
+        "Remember, when it's your turn to read, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together."
+      ]
+    }
   },
   {
     "type": "conclusion",
