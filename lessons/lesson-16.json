@@ -1,0 +1,297 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn one new letter and one new sound.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "E",
+    "graphemes": ["D", "H"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "C",
+    "graphemes": ["G", "M"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/t/",
+    "grapheme": "T"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "M",
+    "phoneme": "/m/"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/c/",
+    "grapheme": "C",
+    "graphemes": ["P", "N"]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/s/",
+    "grapheme": "S",
+    "graphemes": ["B", "E"]
+  },
+  {
+    "type": "card-stack",
+    "values": ["HAS", "HIS", "IS"],
+    "pre": {
+      "value": "Let’s practice three words that end in the letter S. Read the words on the cards one at a time."
+    }
+  },
+  {
+    "type": "card-stack",
+    "values": ["I", "A", "THE"],
+    "pre": {
+      "value": "Let’s practice three heart words. Read the words on the cards one at a time."
+    }
+  },
+  {
+    "type": "lost-sounds",
+    "graphemes": ["C", "L", "H", "G", "E"]
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "U",
+    "pre": {
+      "prepend": ["Now it's time to learn a new letter."]
+    }
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "U"
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "U",
+    "graphemes": ["C", "E"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "U",
+    "phoneme": "/u/"
+  },
+  {
+    "type": "phoneme-blending",
+    "phoneme": "/u/",
+    "words": ["bus", "cut", "fun"]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 16 letters now!"
+      },
+      {
+        "type": "gif-video",
+        "src": "/l2r/vods/letter-words-3-letters.mov",
+        "width": 200,
+        "height": 200
+      },
+      {
+        "type": "verbal",
+        "value": [
+          "Now it’s time to do ",
+          {
+            "type": "text",
+            "value": "Finger Words",
+            "css": {
+              "fontWeight": "bold"
+            }
+          },
+          " again! "
+        ]
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "LUG",
+    "phonemes": ["/l/", "/u/", "/g/"],
+    "post": {
+      "append": [
+        {
+          "type": "verbal",
+          "value": "What does it mean to lug something? To lug something means to carry something big or heavy, and it takes a LOT of effort."
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "DUST",
+    "phonemes": ["/d/", "/u/", "/s/", "/t/"]
+  },
+  {
+    "type": "finger-word",
+    "word": "CUSP",
+    "phonemes": ["/c/", "/u/", "/s/", "/p/"],
+    "pre": {
+      "replace": [
+        {
+          "index": 1,
+          "value": "Use Imaginary Finger Words to read this word."
+        },
+        {
+          "index": 2,
+          "value": "In your mind, assign each letter to an imaginary finger."
+        },
+        {
+          "index": 3,
+          "value": "Say the sound each letter makes."
+        }
+      ]
+    },
+    "post": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "If there are stickable sounds, stick them together in your mind, then say the sounds again."
+        },
+        {
+          "index": 1,
+          "value": "Blend the sounds together, like you would do on your knuckles."
+        }
+      ],
+      "append": [
+        {
+          "type": "verbal",
+          "value": "Have you ever heard this word before? It might sound a little silly, but it can mean two different things. One is for example, if you’re ‘on the cusp of a new school year’, it means the school year is about to start, or if you are ‘at the cusp of the mountain’, it means you’re almost at the top or point."
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "MUST",
+    "phonemes": ["/m/", "/u/", "/s/", "/t/"],
+    "pre": {
+      "replace": [
+        {
+          "index": 1,
+          "value": "Use Imaginary Finger Words to read this word."
+        },
+        {
+          "index": 2,
+          "value": "In your mind, assign each letter to an imaginary finger."
+        },
+        {
+          "index": 3,
+          "value": "Say the sound each letter makes."
+        }
+      ]
+    },
+    "post": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "If there are stickable sounds, stick them together in your mind, then say the sounds again."
+        },
+        {
+          "index": 1,
+          "value": "Blend the sounds together, like you would do on your knuckles."
+        }
+      ]
+    }
+  },
+  {
+    "type": "word-to-picture",
+    "word": "BUS",
+    "words": ["airplane", "car"]
+  },
+  {
+    "type": "word-to-picture",
+    "word": "STEP",
+    "words": ["slide", "swing"]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE SUN IS HOT.",
+    "pre": {
+      "replace": [
+        {
+          "index": 1,
+          "value": "Now we’re going to do an exercise called Narrative Ninja. This activity will help us read fluently, like we’re telling a story."
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        "First, you’ll read the sentence, one word at a time. You can use Finger Words if you would like.",
+        {
+          "type": "instruction",
+          "value": "Wait while {name} reads the sentence."
+        },
+        "Good job! Now read the sentence again, one word at a time. You can use Finger Words if you would like.",
+        {
+          "type": "instruction",
+          "value": "Wait while {name} reads the sentence."
+        }
+      ]
+    }
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE SUN IS HOT.",
+    "pre": {
+      "value": [
+        "Great job! Now it’s my turn to read the sentence. I’m going to read it more quickly and with expression. It will be your turn to read the sentence more quickly and with expression next, so listen closely to how I do it.",
+        {
+          "type": "instruction",
+          "value": "Read the sentence as you would if you were reading it aloud from a children’s book."
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        "Now it’s your turn to read the sentence more quickly, and with expression.",
+        {
+          "type": "instruction",
+          "value": "Wait while {name} reads the sentence. Help them if they need help."
+        },
+        "Good job!"
+      ]
+    }
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "at",
+      "it",
+      "sit",
+      "in",
+      "did",
+      "an",
+      "on",
+      "not",
+      "top",
+      "big",
+      "dog",
+      "is"
+    ]
+  },
+  {
+    "type": "books",
+    "books": [52233]
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

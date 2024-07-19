@@ -1,0 +1,173 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn one new letter and one new sound.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "C",
+    "graphemes": ["D", "G"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "U",
+    "graphemes": ["S", "H"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/l/",
+    "grapheme": "L"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "grapheme": "H",
+    "phoneme": "/h/"
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/c/",
+    "grapheme": "C",
+    "graphemes": ["R", "Y"]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "phoneme": "/u/",
+    "grapheme": "U",
+    "graphemes": ["O", "A"]
+  },
+  {
+    "type": "card-stack",
+    "values": ["I", "A", "THE"],
+    "pre": {
+      "value": "Let’s practice three heart words. Read the words on the cards one at a time."
+    }
+  },
+  {
+    "type": "card-stack",
+    "values": ["HAS", "HIS", "IS"],
+    "pre": {
+      "value": "Let’s practice three words that end in the letter S. Read the words on the cards one at a time."
+    }
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "R",
+    "pre": {
+      "prepend": ["Now it's time to learn a new letter."]
+    }
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "R"
+  },
+  {
+    "type": "find-grapheme",
+    "grapheme": "R",
+    "graphemes": ["P", "S"],
+    "total": 3,
+    "unique": 3,
+    "correct": 1
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "R",
+    "phoneme": "/r/"
+  },
+  {
+    "type": "phoneme-blending",
+    "phoneme": "/r/",
+    "words": ["run", "car", "arc"]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 17 letters now!"
+      },
+      {
+        "type": "gif-video",
+        "src": "/l2r/vods/letter-words-3-letters.mov",
+        "width": 200,
+        "height": 200
+      },
+      {
+        "type": "verbal",
+        "value": [
+          "Now it’s time to do ",
+          {
+            "type": "text",
+            "value": "Finger Words",
+            "css": {
+              "fontWeight": "bold"
+            }
+          },
+          " again!"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "PAST",
+    "phonemes": ["/p/", "/a/", "/s/", "/T/"]
+  },
+  {
+    "type": "word-chain",
+    "words": ["RAN", "RAM", "RAMP", "CAMP"]
+  },
+  {
+    "type": "picture-to-word",
+    "word": "RAT",
+    "words": ["BAT", "CAT"]
+  },
+  {
+    "type": "word-to-picture",
+    "word": "RED",
+    "words": ["blue", "yellow"]
+  },
+  {
+    "type": "word-to-picture",
+    "word": "SLED",
+    "words": ["car", "helicopter"]
+  },
+  {
+    "type": "brain-words",
+    "phoneme": "/a/",
+    "words": [
+      "it",
+      "sit",
+      "at",
+      "an",
+      "in",
+      "did",
+      "on",
+      "not",
+      "top",
+      "big",
+      "dog",
+      "is"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE CAT HAD A NAP."
+  },
+  {
+    "type": "books",
+    "books": [52234]
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]
