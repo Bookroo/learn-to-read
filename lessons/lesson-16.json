@@ -8,145 +8,238 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "E",
-    "graphemes": ["D", "H"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "C",
-    "graphemes": ["G", "M"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/t/",
-    "grapheme": "T"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "grapheme": "M",
-    "phoneme": "/m/"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/c/",
-    "grapheme": "C",
-    "graphemes": ["P", "N"]
+    "sets": [
+      {
+        "grapheme": "E",
+        "graphemes": [
+          "D",
+          "G"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "L",
+        "graphemes": [
+          "I",
+          "H"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
   },
   {
     "type": "sound-to-grapheme",
-    "phoneme": "/s/",
-    "grapheme": "S",
-    "graphemes": ["B", "E"]
+    "sets": [
+      {
+        "grapheme": "H",
+        "phoneme": "/h/",
+        "choices": [
+          "H",
+          "O",
+          "L"
+        ]
+      },
+      {
+        "grapheme": "O",
+        "phoneme": "/o/",
+        "choices": [
+          "O",
+          "H",
+          "L"
+        ]
+      },
+      {
+        "grapheme": "L",
+        "phoneme": "/l/",
+        "graphemes": [
+          "M",
+          "N"
+        ],
+        "choices": [
+          "L",
+          "M",
+          "N"
+        ]
+      },
+      {
+        "grapheme": "S",
+        "phoneme": "/s/",
+        "graphemes": [
+          "M",
+          "E"
+        ],
+        "choices": [
+          "S",
+          "M",
+          "E"
+        ]
+      },
+      {
+        "grapheme": "N",
+        "phoneme": "/n/",
+        "graphemes": [
+          "M",
+          "A"
+        ],
+        "choices": [
+          "N",
+          "M",
+          "A"
+        ]
+      }
+    ]
   },
   {
     "type": "card-stack",
-    "values": ["HAS", "HIS", "IS"],
+    "values": [
+      "HIS",
+      "A",
+      "HAS",
+      "I",
+      "IS",
+      "THE"
+    ],
     "pre": {
-      "value": "Let’s practice three words that end in the letter S. Read the words on the cards one at a time."
+      "value": [
+        "Let's practice some words that end with the letter S along with some heart words."
+      ]
     }
   },
   {
-    "type": "card-stack",
-    "values": ["I", "A", "THE"],
-    "pre": {
-      "value": "Let’s practice three heart words. Read the words on the cards one at a time."
-    }
-  },
-  {
-    "type": "lost-sounds",
-    "graphemes": ["C", "L", "H", "G", "E"]
+    "type": "grapheme-recall",
+    "grapheme": "C",
+    "variant": "new-letter"
   },
   {
     "type": "grapheme-trace-air",
-    "grapheme": "U",
-    "pre": {
-      "prepend": ["Now it's time to learn a new letter."]
-    }
+    "grapheme": "C",
+    "traceOnly": true
   },
   {
     "type": "grapheme-trace-palm",
-    "grapheme": "U"
+    "grapheme": "C"
   },
   {
     "type": "find-grapheme",
-    "grapheme": "U",
-    "graphemes": ["C", "E"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
+    "sets": [
+      {
+        "grapheme": "C",
+        "graphemes": [
+          "S",
+          "D"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
   },
   {
     "type": "introduce-sound",
-    "grapheme": "U",
-    "phoneme": "/u/"
+    "grapheme": "C",
+    "phoneme": "/c/",
+    "soundPhoneme": "/k/"
   },
   {
-    "type": "phoneme-blending",
-    "phoneme": "/u/",
-    "words": ["bus", "cut", "fun"]
+    "type": "sound-pick-word-stack",
+    "phoneme": "/c/",
+    "words": [
+      [
+        [
+          "c",
+          "/c/"
+        ],
+        [
+          "o",
+          "/o/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "b",
+          "/b/"
+        ],
+        [
+          "e",
+          "/e/"
+        ],
+        [
+          "d",
+          "/d/"
+        ]
+      ],
+      [
+        [
+          "c",
+          "/c/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "m",
+          "/m/"
+        ],
+        [
+          "p",
+          "/p/"
+        ]
+      ]
+    ]
   },
   {
     "type": "custom",
     "value": [
       {
         "type": "verbal",
-        "value": "Amazing! You know 16 letters now!"
+        "value": "Amazing! You know 15 letters now!"
       },
       {
-        "type": "gif-video",
-        "src": "/l2r/vods/letter-words-3-letters.mov",
-        "width": 200,
-        "height": 200
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
       },
       {
         "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy again!"
+      },
+      {
+        "type": "instruction",
         "value": [
-          "Now it’s time to do ",
+          "On the next slide, we'll practice ",
           {
-            "type": "text",
+            "type": "link",
             "value": "Finger Words",
-            "css": {
-              "fontWeight": "bold"
-            }
+            "href": "https://www.youtube.com/watch?v=OYU6RDoPgWo"
           },
-          " again! "
+          " step by step, but if you need a refresher, you can click on the link to watch the video again."
         ]
       }
     ]
   },
   {
     "type": "finger-word",
-    "word": "LUG",
-    "phonemes": ["/l/", "/u/", "/g/"],
-    "post": {
-      "append": [
-        {
-          "type": "verbal",
-          "value": "What does it mean to lug something? To lug something means to carry something big or heavy, and it takes a LOT of effort."
-        }
-      ]
-    }
-  },
-  {
-    "type": "finger-word",
-    "word": "DUST",
-    "phonemes": ["/d/", "/u/", "/s/", "/t/"]
-  },
-  {
-    "type": "finger-word",
-    "word": "CUSP",
-    "phonemes": ["/c/", "/u/", "/s/", "/p/"],
+    "word": "COT",
+    "phonemes": [
+      "/c/",
+      "/o/",
+      "/t/"
+    ],
     "pre": {
       "replace": [
         {
           "index": 1,
-          "value": "Use Imaginary Finger Words to read this word."
+          "value": "Use **Imaginary Finger Words** to read this word."
         },
         {
           "index": 2,
@@ -168,24 +261,23 @@
           "index": 1,
           "value": "Blend the sounds together, like you would do on your knuckles."
         }
-      ],
-      "append": [
-        {
-          "type": "verbal",
-          "value": "Have you ever heard this word before? It might sound a little silly, but it can mean two different things. One is for example, if you’re ‘on the cusp of a new school year’, it means the school year is about to start, or if you are ‘at the cusp of the mountain’, it means you’re almost at the top or point."
-        }
       ]
     }
   },
   {
     "type": "finger-word",
-    "word": "MUST",
-    "phonemes": ["/m/", "/u/", "/s/", "/t/"],
+    "word": "CAMP",
+    "phonemes": [
+      "/c/",
+      "/a/",
+      "/m/",
+      "/p/"
+    ],
     "pre": {
       "replace": [
         {
           "index": 1,
-          "value": "Use Imaginary Finger Words to read this word."
+          "value": "Use **Imaginary Finger Words** to read this word."
         },
         {
           "index": 2,
@@ -212,62 +304,30 @@
   },
   {
     "type": "word-to-picture",
-    "word": "BUS",
-    "words": ["airplane", "car"]
+    "sets": [
+      {
+        "word": "CLAP",
+        "words": [
+          "smile",
+          "wink"
+        ]
+      },
+      {
+        "word": "CAP",
+        "words": [
+          "bowl",
+          "nest"
+        ]
+      }
+    ]
   },
   {
-    "type": "word-to-picture",
-    "word": "STEP",
-    "words": ["slide", "swing"]
-  },
-  {
-    "type": "reading-fluency",
-    "text": "THE SUN IS HOT.",
-    "pre": {
-      "replace": [
-        {
-          "index": 1,
-          "value": "Now we’re going to do an exercise called Narrative Ninja. This activity will help us read fluently, like we’re telling a story."
-        }
-      ]
-    },
-    "post": {
-      "value": [
-        "First, you’ll read the sentence, one word at a time. You can use Finger Words if you would like.",
-        {
-          "type": "instruction",
-          "value": "Wait while {name} reads the sentence."
-        },
-        "Good job! Now read the sentence again, one word at a time. You can use Finger Words if you would like.",
-        {
-          "type": "instruction",
-          "value": "Wait while {name} reads the sentence."
-        }
-      ]
-    }
-  },
-  {
-    "type": "reading-fluency",
-    "text": "THE SUN IS HOT.",
-    "pre": {
-      "value": [
-        "Great job! Now it’s my turn to read the sentence. I’m going to read it more quickly and with expression. It will be your turn to read the sentence more quickly and with expression next, so listen closely to how I do it.",
-        {
-          "type": "instruction",
-          "value": "Read the sentence as you would if you were reading it aloud from a children’s book."
-        }
-      ]
-    },
-    "post": {
-      "value": [
-        "Now it’s your turn to read the sentence more quickly, and with expression.",
-        {
-          "type": "instruction",
-          "value": "Wait while {name} reads the sentence. Help them if they need help."
-        },
-        "Good job!"
-      ]
-    }
+    "type": "picture-to-word",
+    "word": "CAN",
+    "words": [
+      "DOG",
+      "CAT"
+    ]
   },
   {
     "type": "brain-words",
@@ -288,7 +348,9 @@
   },
   {
     "type": "books",
-    "books": [52233]
+    "books": [
+      52232
+    ]
   },
   {
     "type": "conclusion",

@@ -14,58 +14,131 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "S",
-    "graphemes": ["M", "A"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "I",
-    "graphemes": ["P", "T"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "sound-to-grapheme",
-    "grapheme": "A",
-    "phoneme": "/a/"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "grapheme": "I",
-    "phoneme": "/i/"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "grapheme": "M",
-    "phoneme": "/m/",
-    "graphemes": ["T", "P"]
+    "sets": [
+      {
+        "grapheme": "S",
+        "graphemes": [
+          "M",
+          "A"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "I",
+        "graphemes": [
+          "P",
+          "T"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
   },
   {
     "type": "sound-to-grapheme",
-    "grapheme": "T",
-    "phoneme": "/t/",
-    "graphemes": ["A", "C"]
-  },
-  {
-    "type": "sound-to-grapheme",
-    "grapheme": "P",
-    "phoneme": "/p/",
-    "graphemes": ["I", "K"]
+    "sets": [
+      {
+        "grapheme": "A",
+        "phoneme": "/a/",
+        "choices": [
+          "A",
+          "I",
+          "M"
+        ]
+      },
+      {
+        "grapheme": "I",
+        "phoneme": "/i/",
+        "choices": [
+          "I",
+          "A",
+          "M"
+        ]
+      },
+      {
+        "grapheme": "M",
+        "phoneme": "/m/",
+        "graphemes": [
+          "T",
+          "P"
+        ],
+        "choices": [
+          "M",
+          "T",
+          "P"
+        ]
+      },
+      {
+        "grapheme": "T",
+        "phoneme": "/t/",
+        "graphemes": [
+          "A",
+          "C"
+        ],
+        "choices": [
+          "T",
+          "A",
+          "C"
+        ]
+      },
+      {
+        "grapheme": "P",
+        "phoneme": "/p/",
+        "graphemes": [
+          "I",
+          "K"
+        ],
+        "choices": [
+          "P",
+          "I",
+          "K"
+        ]
+      }
+    ]
   },
   {
     "type": "lost-sounds",
-    "graphemes": ["P", "I", "T", "M", "A", "S"]
+    "graphemes": [
+      "P",
+      "I",
+      "T",
+      "M",
+      "A",
+      "S"
+    ]
+  },
+  {
+    "type": "sound-at-position",
+    "words": [
+      {
+        "word": "mat",
+        "phoneme": "/m/",
+        "position": "start"
+      },
+      {
+        "word": "sit",
+        "phoneme": "/i/",
+        "position": "middle"
+      },
+      {
+        "word": "pat",
+        "phoneme": "/t/",
+        "position": "end"
+      }
+    ]
+  },
+  {
+    "type": "grapheme-recall",
+    "grapheme": "N",
+    "variant": "new-letter"
   },
   {
     "type": "grapheme-trace-air",
     "grapheme": "N",
-    "pre": {
-      "prepend": "Now it's time to learn a new letter."
-    }
+    "traceOnly": true
   },
   {
     "type": "grapheme-trace-palm",
@@ -73,11 +146,18 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "N",
-    "graphemes": ["M", "A"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
+    "sets": [
+      {
+        "grapheme": "N",
+        "graphemes": [
+          "M",
+          "A"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
   },
   {
     "type": "introduce-sound",
@@ -85,35 +165,80 @@
     "phoneme": "/n/"
   },
   {
-    "type": "phoneme-blending",
+    "type": "sound-pick-word-stack",
     "phoneme": "/n/",
-    "words": ["sun", "nap", "and"]
+    "words": [
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "u",
+          "/u/"
+        ],
+        [
+          "n",
+          "/n/"
+        ]
+      ],
+      [
+        [
+          "m",
+          "/m/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "n",
+          "/n/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "p",
+          "/p/"
+        ]
+      ]
+    ]
   },
   {
     "type": "custom",
     "value": [
       {
         "type": "verbal",
-        "value": "Amazing! You know 6 letters now!"
+        "value": "Amazing! You know 7 letters now!"
       },
       {
-        "type": "gif-video",
-        "src": "/l2r/vods/letter-words-3-letters.mov",
-        "width": 200,
-        "height": 200
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
       },
       {
         "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy again!"
+      },
+      {
+        "type": "instruction",
         "value": [
-          "Now it’s time to practice ",
+          "On the next slide, we'll practice ",
           {
-            "type": "text",
+            "type": "link",
             "value": "Finger Words",
-            "css": {
-              "fontWeight": "bold"
-            }
+            "href": "https://www.youtube.com/watch?v=OYU6RDoPgWo"
           },
-          " again!"
+          " step by step, but if you need a refresher, you can click on the link to watch the video again."
         ]
       }
     ]
@@ -121,12 +246,19 @@
   {
     "type": "finger-word",
     "word": "IN",
-    "phonemes": ["/i/", "/n/"]
+    "phonemes": [
+      "/i/",
+      "/n/"
+    ]
   },
   {
     "type": "finger-word",
     "word": "PIN",
-    "phonemes": ["/p/", "/i/", "/n/"],
+    "phonemes": [
+      "/p/",
+      "/i/",
+      "/n/"
+    ],
     "post": {
       "value": [
         "Are there any sticky sounds?",
@@ -160,7 +292,11 @@
   {
     "type": "finger-word",
     "word": "PIN",
-    "phonemes": ["/p/", "/i/", "/n/"],
+    "phonemes": [
+      "/p/",
+      "/i/",
+      "/n/"
+    ],
     "pre": {
       "value": [
         {
@@ -248,12 +384,18 @@
   {
     "type": "finger-word",
     "word": "PIN",
-    "phonemes": ["/p/", "/i/", "/n/"],
+    "phonemes": [
+      "/p/",
+      "/i/",
+      "/n/"
+    ],
     "pre": {
       "value": [
         {
           "type": "verbal",
-          "value": ["Great job!"]
+          "value": [
+            "Great job!"
+          ]
         },
         {
           "type": "verbal",
@@ -294,7 +436,11 @@
   },
   {
     "type": "finger-word",
-    "phonemes": ["/p/", "/i/", "/n/"],
+    "phonemes": [
+      "/p/",
+      "/i/",
+      "/n/"
+    ],
     "word": "PIN",
     "pre": {
       "value": [
@@ -371,13 +517,7 @@
               "showQuotes": false
             },
             " . . . ",
-            {
-              "type": "text",
-              "value": "PIN",
-              "css": {
-                "fontWeight": "bold"
-              }
-            }
+            "**PIN**"
           ]
         },
         "Did you hear the word? That's right, the word is ‘pin’."
@@ -387,17 +527,25 @@
   {
     "type": "finger-word",
     "word": "ANT",
-    "phonemes": ["/a/", "/n/", "/t/"]
+    "phonemes": [
+      "/a/",
+      "/n/",
+      "/t/"
+    ]
   },
   {
     "type": "finger-word",
     "word": "NAP",
-    "phonemes": ["/n/", "/a/", "/p/"],
+    "phonemes": [
+      "/n/",
+      "/a/",
+      "/p/"
+    ],
     "pre": {
       "replace": [
         {
           "index": 1,
-          "value": "We're going to learn a new variation of Finger Words, called Imaginary Finger Words.  Instead of using your fingers and hands physically, you'll perform all the movements entirely in your imagination."
+          "value": "We're going to learn a new variation of **Finger Words**, called **Imaginary Finger Words**.  Instead of using your fingers and hands physically, you'll perform all the movements entirely in your imagination."
         },
         {
           "index": 2,
@@ -441,13 +589,17 @@
   },
   {
     "type": "finger-word",
-    "phonemes": ["/n/", "/a/", "/p/"],
+    "phonemes": [
+      "/n/",
+      "/a/",
+      "/p/"
+    ],
     "word": "NAP",
     "pre": {
       "value": [
         "No, so we don't need to do anything special with this sound.",
         "We have a gap between the sounds currently, just like there is a gap between our imaginary fingers.",
-        "We want to blend the sounds together, so there's no gap between the sounds, just like we do on our knuckles in Finger Words."
+        "We want to blend the sounds together, so there's no gap between the sounds, just like we do on our knuckles in **Finger Words**."
       ]
     },
     "post": {
@@ -515,13 +667,7 @@
               "showQuotes": false
             },
             " . . . ",
-            {
-              "type": "text",
-              "value": "NAP",
-              "css": {
-                "fontWeight": "bold"
-              }
-            }
+            "**NAP**"
           ]
         },
         "Did you hear the word? That's right, the word is ‘nap’."
@@ -530,8 +676,15 @@
   },
   {
     "type": "word-to-picture",
-    "word": "PAN",
-    "words": ["hat", "dog"]
+    "sets": [
+      {
+        "word": "PAN",
+        "words": [
+          "hat",
+          "dog"
+        ]
+      }
+    ]
   },
   {
     "type": "teach-tam",

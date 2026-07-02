@@ -49,13 +49,13 @@
       },
       {
         "type": "instruction",
-        "value": "Most lessons will be 15-20 minutes. This lesson will be a little longer as {name} learns all of the skills to read a word."
+        "value": "Most lessons will be 15-20 minutes. This lesson will be a little longer as {name} learns all of the skills needed to read their first book."
       },
       "Ready? Let’s get started!"
     ]
   },
   {
-    "type": "grapheme-trace-air",
+    "type": "grapheme-introduce",
     "grapheme": "M",
     "pre": {
       "prepend": [
@@ -78,6 +78,11 @@
     }
   },
   {
+    "type": "grapheme-trace-air",
+    "grapheme": "M",
+    "traceOnly": true
+  },
+  {
     "type": "grapheme-trace-palm",
     "grapheme": "M",
     "pre": {
@@ -95,14 +100,18 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "M",
-    "graphemes": ["L", "R"],
     "pre": {
       "append": {
         "type": "instruction",
-        "value": "If you want, you can tap on these cards to show the correct answer"
+        "value": "Tap on a box with a blue border to reveal the answer."
       }
-    }
+    },
+    "sets": [
+      {
+        "grapheme": "M",
+        "graphemes": ["L", "R"]
+      }
+    ]
   },
   {
     "type": "introduce-sound",
@@ -128,16 +137,71 @@
     }
   },
   {
-    "type": "phoneme-blending",
+    "type": "sound-pick-word-stack",
     "phoneme": "/m/",
-    "words": ["mat", "gem", "camp"]
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "We're going to play a game called ",
+            "**Elephant Ears**",
+            " with the ",
+            {
+              "type": "sound",
+              "phoneme": "/m/"
+            },
+            " sound."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "In this game I will say a word, and your job is to give me a thumbs up if the word has the ",
+            {
+              "type": "sound",
+              "phoneme": "/m/"
+            },
+            " sound in it or a thumbs down if it does not. Listen very closely with your ears."
+          ]
+        },
+        {
+          "type": "instruction",
+          "value": [
+            "Reveal each word by pressing on the **SHOW** button. Swipe or tap a card to advance to the next word."
+          ]
+        }
+      ]
+    },
+    "words": [
+      [
+        ["m", "/m/"],
+        ["a", "/a/"],
+        ["t", "/t/"]
+      ],
+      [
+        ["s", "/s/"],
+        ["u", "/u/"],
+        ["n", "/n/"]
+      ],
+      [
+        ["h", "/h/"],
+        ["a", "/a/"],
+        ["m", "/m/"]
+      ]
+    ]
   },
   {
-    "type": "grapheme-trace-air",
+    "type": "grapheme-introduce",
     "grapheme": "T",
     "pre": {
       "prepend": ["Good work! Now it’s time for another letter."]
     }
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "T",
+    "traceOnly": true
   },
   {
     "type": "grapheme-trace-palm",
@@ -145,8 +209,12 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "T",
-    "graphemes": ["M", "B"]
+    "sets": [
+      {
+        "grapheme": "T",
+        "graphemes": ["M", "B"]
+      }
+    ]
   },
   {
     "type": "introduce-sound",
@@ -160,21 +228,9 @@
             "type": "instruction",
             "value": [
               "If {name} says “",
-              {
-                "type": "text",
-                "value": "TUH",
-                "css": {
-                  "fontWeight": "bold"
-                }
-              },
+              "**TUH**",
               "” or “",
-              {
-                "type": "text",
-                "value": "TIH",
-                "css": {
-                  "fontWeight": "bold"
-                }
-              },
+              "**TIH**",
               "”, help them make a quick ",
               {
                 "type": "sound",
@@ -188,16 +244,37 @@
     }
   },
   {
-    "type": "phoneme-blending",
+    "type": "sound-pick-word-stack",
     "phoneme": "/t/",
-    "words": ["mat", "top", "hit"]
+    "words": [
+      [
+        ["m", "/m/"],
+        ["a", "/a/"],
+        ["t", "/t/"]
+      ],
+      [
+        ["s", "/s/"],
+        ["u", "/u/"],
+        ["n", "/n/"]
+      ],
+      [
+        ["h", "/h/"],
+        ["a", "/a/"],
+        ["t", "/t/"]
+      ]
+    ]
   },
   {
-    "type": "grapheme-trace-air",
+    "type": "grapheme-introduce",
     "grapheme": "A",
     "pre": {
       "prepend": ["Great job! Let’s try one more letter."]
     }
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "A",
+    "traceOnly": true
   },
   {
     "type": "grapheme-trace-palm",
@@ -205,8 +282,12 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "A",
-    "graphemes": ["T", "D"]
+    "sets": [
+      {
+        "grapheme": "A",
+        "graphemes": ["T", "D"]
+      }
+    ]
   },
   {
     "type": "introduce-sound",
@@ -225,9 +306,8 @@
             "—to help you know how to pronounce them. Don't say the extra letters, only the vowel sound. The B and G are only there to help you know that this is the short A sound like you hear in the word ",
             {
               "type": "text",
-              "value": "“bag”.",
+              "value": "**“bag”.**",
               "css": {
-                "fontWeight": "bold",
                 "fontStyle": "normal"
               }
             }
@@ -237,58 +317,70 @@
     }
   },
   {
-    "type": "phoneme-blending",
+    "type": "sound-pick-word-stack",
     "phoneme": "/a/",
-    "words": ["mat", "ask", "pan"]
-  },
-  {
-    "type": "custom",
-    "value": [
-      {
-        "type": "gif-video",
-        "src": "/l2r/vods/letter-words-3-letters.mov",
-        "width": 200,
-        "height": 200
-      },
-      {
-        "type": "verbal",
-        "value": [
-          "We’re going to play a game called ",
-          {
-            "type": "text",
-            "value": "Finger Words",
-            "css": {
-              "fontWeight": "bold"
-            }
-          },
-          "."
-        ]
-      },
-      "In this game, we use our fingers to help us read a word by separating the word into its individual sounds and then blending those sounds together.",
-      "Are you ready to read a word using your fingers?"
+    "words": [
+      [
+        ["m", "/m/"],
+        ["a", "/a/"],
+        ["t", "/t/"]
+      ],
+      [
+        ["s", "/s/"],
+        ["u", "/u/"],
+        ["n", "/n/"]
+      ],
+      [
+        ["h", "/h/"],
+        ["a", "/a/"],
+        ["m", "/m/"]
+      ]
     ]
   },
   {
     "type": "custom",
     "value": [
-      "First, let's watch this 60-second video to see an example of Finger Words.",
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": [
+          "We’re going to learn a strategy for reading called ",
+          "**Finger Words**",
+          "."
+        ]
+      },
+      "In this strategy, we use our fingers to help us read a word by separating the word into its individual sounds and then blending those sounds together.",
+      "Are you ready to read a word using your fingers?"
+    ]
+  },
+  {
+    "type": "custom",
+    "label": "Finger Words",
+    "value": [
+      "First, let's watch this 60-second video to see an example of **Finger Words**.",
       {
         "type": "video",
         "id": "OYU6RDoPgWo"
       },
       {
         "type": "instruction",
-        "value": "On the next slide, we’ll practice Finger Words step by step."
+        "value": "On the next slide, we’ll practice **Finger Words** step by step."
       }
     ]
   },
   {
     "type": "finger-word",
+    "label": "Finger Words",
     "phonemes": ["/a/", "/t/"],
     "word": "AT",
     "pre": {
       "value": [
-        "Now it's our turn to try Finger Words.",
+        "Now it's our turn to try **Finger Words**.",
         "Hold up your left hand, like me, with your fingers spread apart.",
         "Do you see the two letters A and T?",
         "Assign each letter to a finger."
@@ -309,27 +401,24 @@
             " sound should be crisp and short, as in the word ",
             {
               "type": "text",
-              "value": "“at.”",
+              "value": "**“at.”**",
               "css": {
-                "fontWeight": "bold",
                 "fontStyle": "normal"
               }
             },
             " Don’t say ",
             {
               "type": "text",
-              "value": "“TUH”",
+              "value": "**“TUH”**",
               "css": {
-                "fontWeight": "bold",
                 "fontStyle": "normal"
               }
             },
             " or ",
             {
               "type": "text",
-              "value": "“TIH”.",
+              "value": "**“TIH”.**",
               "css": {
-                "fontWeight": "bold",
                 "fontStyle": "normal"
               }
             }
@@ -413,13 +502,7 @@
               "showQuotes": false
             },
             " . . . ",
-            {
-              "type": "text",
-              "value": "AT",
-              "css": {
-                "fontWeight": "bold"
-              }
-            }
+            "**AT**"
           ]
         },
         "Did you hear the word? That's right, the letters A and T spell the word ‘at’."
@@ -452,27 +535,24 @@
             " sound should be crisp and short, as in the word ",
             {
               "type": "text",
-              "value": "“at.”",
+              "value": "**“at.”**",
               "css": {
-                "fontWeight": "bold",
                 "fontStyle": "normal"
               }
             },
             " Don’t say ",
             {
               "type": "text",
-              "value": "“TUH”",
+              "value": "**“TUH”**",
               "css": {
-                "fontWeight": "bold",
                 "fontStyle": "normal"
               }
             },
             " or ",
             {
               "type": "text",
-              "value": "“TIH”.",
+              "value": "**“TIH”.**",
               "css": {
-                "fontWeight": "bold",
                 "fontStyle": "normal"
               }
             }
@@ -580,13 +660,7 @@
               "showQuotes": false
             },
             " . . . ",
-            {
-              "type": "text",
-              "value": "MAT",
-              "css": {
-                "fontWeight": "bold"
-              }
-            }
+            "**MAT**"
           ]
         },
         "Did you hear the word? That's right, the word is ‘mat’."
@@ -613,25 +687,20 @@
   },
   {
     "type": "custom",
+    "label": "Sticky Sounds",
     "value": [
       {
         "type": "image",
-        "src": "/l2r/misc/sticky-sounds.jpg?v=2",
-        "width": 200,
-        "height": 200,
+        "src": "/l2r/misc/sticky-sounds.jpg?v=3",
+        "width": 140,
+        "height": 140,
         "alt": "Sticky sounds"
       },
       {
         "type": "verbal",
         "value": [
           "But first, we need to learn about ",
-          {
-            "type": "text",
-            "value": "Sticky Sounds",
-            "css": {
-              "fontWeight": "bold"
-            }
-          },
+          "**Sticky Sounds**",
           "."
         ]
       },
@@ -648,13 +717,14 @@
           " sound is a sticky sound."
         ]
       },
-      "When we play Finger Words, we need to do something special with sticky sounds."
+      "When we use **Finger Words**, we need to do something special with sticky sounds."
     ]
   },
   {
     "type": "custom",
+    "label": "Sticky Sounds",
     "value": [
-      "Let's watch another video to see how we handle Sticky Sounds when playing Finger Words.",
+      "Let's watch another video to see how we handle **Sticky Sounds** when using **Finger Words**.",
       "And, if you pay attention, you might just learn the name of our first reading friend.",
       {
         "type": "video",
@@ -664,11 +734,12 @@
   },
   {
     "type": "finger-word",
+    "label": "Finger Words TAM",
     "phonemes": ["/t/", "/a/", "/m/"],
     "word": "TAM",
     "pre": {
       "value": [
-        "Now it's your turn to try Finger Words with Sticky Sounds.",
+        "Now it's your turn to try **Finger Words** with **Sticky Sounds**.",
         "Hold up your left hand with your fingers spread apart.",
         "Assign each letter to a finger."
       ]
@@ -939,13 +1010,7 @@
               "showQuotes": false
             },
             " . . . ",
-            {
-              "type": "text",
-              "value": "TAM",
-              "css": {
-                "fontWeight": "bold"
-              }
-            }
+            "**TAM**"
           ]
         },
         "Did you hear the word? That's right, the name of our reading friend is ‘Tam’."
@@ -969,6 +1034,7 @@
   {
     "confetti": true,
     "type": "custom",
+    "label": "Lesson Recap",
     "value": [
       "Great job! You’ve learned 3 letters, 3 sounds, read 3 words, and met Tam. You’re on your way to becoming a super reader!",
       {
@@ -977,25 +1043,18 @@
           "{name} is not expected to master concepts during the first lesson they're introduced. These concepts will continue to be taught and reinforced in future lessons. ",
           "If you find {name} is too frustrated, you can always return and repeat a lesson."
         ]
-      },
-      "Next, we're going to read our first story together. It’s my job to read blue words, and it’s your job to read the black words. I’ll point to each word with my finger to help you keep track of where we are."
+      }
     ]
   },
   {
     "type": "books",
+    "label": "Read a Book",
     "books": [50030],
     "pre": {
-      "append": [
-        "Remember, when you read the black words, look at the word and say the sound each part makes. Then blend the sounds together to make the word. You can use Finger Words to help you.",
-        {
-          "type": "instruction",
-          "value": "Help {name} read each word using Finger Words. This is not a quiz, so guide them when they get stuck. This is just practice and should be fun."
-        },
-        {
-          "type": "instruction",
-          "value": "Also, you may find it natural to talk about the illustrations and the story as you read."
-        }
-      ]
+      "append": {
+        "type": "instruction",
+        "value": "Feel free to talk about the illustrations and the story as you read."
+      }
     }
   },
   {
@@ -1015,7 +1074,7 @@
         },
         "Can you teach Tam the name for each of these letters?",
         "Can you teach Tam the sound each letter makes?",
-        "Can you teach Tam how to read his name using Finger Words?"
+        "Can you teach Tam how to read his name using **Finger Words**?"
       ]
     }
   },

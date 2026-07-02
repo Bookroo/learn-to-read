@@ -14,64 +14,107 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "S",
-    "graphemes": ["M", "A"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "P",
-    "graphemes": ["M", "T"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "A",
-    "graphemes": ["T", "P"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "M",
-    "graphemes": ["S", "T"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "sound-to-grapheme",
-    "grapheme": "P",
-    "phoneme": "/p/"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/m/",
-    "grapheme": "M"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "phoneme": "/t/",
-    "grapheme": "T",
-    "graphemes": ["M", "S"]
+    "sets": [
+      {
+        "grapheme": "S",
+        "graphemes": [
+          "M",
+          "A"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "P",
+        "graphemes": [
+          "M",
+          "T"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "A",
+        "graphemes": [
+          "T",
+          "P"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "M",
+        "graphemes": [
+          "S",
+          "T"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
   },
   {
     "type": "sound-to-grapheme",
-    "grapheme": "S",
-    "phoneme": "/s/",
-    "graphemes": ["M", "N"]
+    "sets": [
+      {
+        "grapheme": "P",
+        "phoneme": "/p/",
+        "choices": [
+          "P",
+          "M",
+          "T"
+        ]
+      },
+      {
+        "grapheme": "M",
+        "phoneme": "/m/",
+        "choices": [
+          "M",
+          "P",
+          "T"
+        ]
+      },
+      {
+        "grapheme": "T",
+        "phoneme": "/t/",
+        "graphemes": [
+          "M",
+          "S"
+        ],
+        "choices": [
+          "T",
+          "M",
+          "S"
+        ]
+      },
+      {
+        "grapheme": "S",
+        "phoneme": "/s/",
+        "graphemes": [
+          "M",
+          "N"
+        ],
+        "choices": [
+          "S",
+          "M",
+          "N"
+        ]
+      }
+    ]
   },
   {
-    "pre": {
-      "prepend": ["Now it’s time to learn a new letter."]
-    },
+    "type": "grapheme-recall",
+    "grapheme": "I",
+    "variant": "new-letter"
+  },
+  {
     "type": "grapheme-trace-air",
-    "grapheme": "I"
+    "grapheme": "I",
+    "traceOnly": true
   },
   {
     "type": "grapheme-trace-palm",
@@ -79,11 +122,18 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "I",
-    "graphemes": ["M", "P"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
+    "sets": [
+      {
+        "grapheme": "I",
+        "graphemes": [
+          "M",
+          "P"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
   },
   {
     "type": "introduce-sound",
@@ -91,9 +141,52 @@
     "phoneme": "/i/"
   },
   {
-    "type": "phoneme-blending",
+    "type": "sound-pick-word-stack",
     "phoneme": "/i/",
-    "words": ["sit", "in", "pig"]
+    "words": [
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "p",
+          "/p/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ]
+    ]
   },
   {
     "type": "custom",
@@ -103,23 +196,25 @@
         "value": "Amazing, you know 6 letters now!"
       },
       {
-        "type": "gif-video",
-        "src": "/l2r/vods/letter-words-3-letters.mov",
-        "width": 200,
-        "height": 200
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
       },
       {
         "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy again!"
+      },
+      {
+        "type": "instruction",
         "value": [
-          "Now it’s time to practice ",
+          "On the next slide, we'll practice ",
           {
-            "type": "text",
+            "type": "link",
             "value": "Finger Words",
-            "css": {
-              "fontWeight": "bold"
-            }
+            "href": "https://www.youtube.com/watch?v=OYU6RDoPgWo"
           },
-          " again!"
+          " step by step, but if you need a refresher, you can click on the link to watch the video again."
         ]
       }
     ]
@@ -127,15 +222,24 @@
   {
     "type": "finger-word",
     "word": "IT",
-    "phonemes": ["/i/", "/t/"],
+    "phonemes": [
+      "/i/",
+      "/t/"
+    ],
     "post": {
-      "append": ["Did you hear the word? That's right, the word is ‘it’."]
+      "append": [
+        "Did you hear the word? That's right, the word is ‘it’."
+      ]
     }
   },
   {
     "type": "finger-word",
     "word": "TIP",
-    "phonemes": ["/t/", "/i/", "/p/"],
+    "phonemes": [
+      "/t/",
+      "/i/",
+      "/p/"
+    ],
     "post": {
       "value": [
         "Are there any sticky sounds?",
@@ -175,7 +279,11 @@
   {
     "type": "finger-word",
     "word": "TIP",
-    "phonemes": ["/t/", "/i/", "/p/"],
+    "phonemes": [
+      "/t/",
+      "/i/",
+      "/p/"
+    ],
     "pre": {
       "value": [
         {
@@ -263,7 +371,11 @@
   {
     "type": "finger-word",
     "word": "TIP",
-    "phonemes": ["/t/", "/i/", "/p/"],
+    "phonemes": [
+      "/t/",
+      "/i/",
+      "/p/"
+    ],
     "pre": {
       "value": [
         {
@@ -313,7 +425,11 @@
   },
   {
     "type": "finger-word",
-    "phonemes": ["/t/", "/i/", "/p/"],
+    "phonemes": [
+      "/t/",
+      "/i/",
+      "/p/"
+    ],
     "word": "TIP",
     "pre": {
       "value": [
@@ -390,13 +506,7 @@
               "showQuotes": false
             },
             " . . . ",
-            {
-              "type": "text",
-              "value": "TIP",
-              "css": {
-                "fontWeight": "bold"
-              }
-            }
+            "**TIP**"
           ]
         },
         "Did you hear the word? That's right, the word is ‘tip’ like the ‘tip of a pencil’."
@@ -406,58 +516,69 @@
   {
     "type": "finger-word",
     "word": "SIT",
-    "phonemes": ["/s/", "/i/", "/t/"]
+    "phonemes": [
+      "/s/",
+      "/i/",
+      "/t/"
+    ]
   },
   {
     "type": "finger-word",
     "word": "SAT",
-    "phonemes": ["/s/", "/a/", "/t/"]
+    "phonemes": [
+      "/s/",
+      "/a/",
+      "/t/"
+    ]
   },
   {
     "type": "finger-word",
     "word": "PIT",
-    "phonemes": ["/p/", "/i/", "/t/"]
+    "phonemes": [
+      "/p/",
+      "/i/",
+      "/t/"
+    ]
   },
   {
     "type": "word-to-picture",
-    "word": "MAP",
-    "words": ["hat", "dog"]
+    "sets": [
+      {
+        "word": "MAP",
+        "words": [
+          "hat",
+          "dog"
+        ]
+      },
+      {
+        "word": "PAM",
+        "words": [
+          "tam",
+          "sam"
+        ]
+      }
+    ]
   },
   {
-    "type": "word-to-picture",
-    "word": "PAM",
-    "words": ["tam", "sam"]
-  },
-  {
+    "confetti": true,
     "type": "custom",
+    "label": "Lesson Recap",
     "value": [
+      "Great job! You’ve learned 6 letters and 6 sounds, practiced reading words, and matched words to pictures. You’re becoming a super reader!",
       {
-        "type": "verbal",
-        "value": "You’re doing amazing!"
-      },
-      {
-        "type": "verbal",
-        "value": "Let’s read another story together. It’s my job to read the blue words, and it’s your job to read the black words."
-      },
-      {
-        "type": "verbal",
-        "value": "We’re not going to touch the screen, but I’m going to point to where we’re reading with my finger for now, to help you keep track of where we are."
+        "type": "instruction",
+        "value": [
+          "{name} is not expected to master concepts during the first lesson they're introduced. These concepts will continue to be taught and reinforced in future lessons. ",
+          "If you find {name} is too frustrated, you can always return and repeat a lesson."
+        ]
       }
     ]
   },
   {
     "type": "books",
-    "books": [52020],
-    "pre": {
-      "value": [
-        "Great work! Now, let's read a book together. I will read the blue words and you will read the black words.",
-        "Remember, when it's your turn to read, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together.",
-        {
-          "type": "instruction",
-          "value": "This is not a quiz, so coach {name} when they get stuck. This is just practice and should be fun."
-        }
-      ]
-    }
+    "books": [
+      52020
+    ]
   },
   {
     "type": "teach-tam",

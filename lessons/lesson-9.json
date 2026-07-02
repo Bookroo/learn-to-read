@@ -14,19 +14,28 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "B",
-    "graphemes": ["S", "P"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "D",
-    "graphemes": ["B", "O"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
+    "sets": [
+      {
+        "grapheme": "B",
+        "graphemes": [
+          "S",
+          "P"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "D",
+        "graphemes": [
+          "B",
+          "O"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
   },
   {
     "type": "identify-sound",
@@ -50,20 +59,36 @@
   },
   {
     "type": "sound-to-grapheme",
-    "phoneme": "/o/",
-    "grapheme": "O"
+    "sets": [
+      {
+        "grapheme": "O",
+        "phoneme": "/o/",
+        "choices": [
+          "O",
+          "D",
+          "B"
+        ]
+      },
+      {
+        "grapheme": "D",
+        "phoneme": "/d/",
+        "choices": [
+          "D",
+          "O",
+          "B"
+        ]
+      }
+    ]
   },
   {
-    "type": "sound-to-grapheme",
-    "grapheme": "D",
-    "phoneme": "/d/"
+    "type": "grapheme-recall",
+    "grapheme": "G",
+    "variant": "new-letter"
   },
   {
     "type": "grapheme-trace-air",
     "grapheme": "G",
-    "pre": {
-      "prepend": ["Now it's time to learn a new letter."]
-    }
+    "traceOnly": true
   },
   {
     "type": "grapheme-trace-palm",
@@ -71,11 +96,18 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "G",
-    "graphemes": ["I", "T"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
+    "sets": [
+      {
+        "grapheme": "G",
+        "graphemes": [
+          "I",
+          "T"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
   },
   {
     "type": "introduce-sound",
@@ -83,9 +115,52 @@
     "phoneme": "/g/"
   },
   {
-    "type": "phoneme-blending",
+    "type": "sound-pick-word-stack",
     "phoneme": "/g/",
-    "words": ["gas", "log", "mug"]
+    "words": [
+      [
+        [
+          "g",
+          "/g/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "s",
+          "/s/"
+        ]
+      ],
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "d",
+          "/d/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "g",
+          "/g/"
+        ]
+      ]
+    ]
   },
   {
     "type": "custom",
@@ -95,23 +170,25 @@
         "value": "Amazing! You know 11 letters now!"
       },
       {
-        "type": "gif-video",
-        "src": "/l2r/vods/letter-words-3-letters.mov",
-        "width": 200,
-        "height": 200
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
       },
       {
         "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy again!"
+      },
+      {
+        "type": "instruction",
         "value": [
-          "Now it’s time to practice ",
+          "On the next slide, we'll practice ",
           {
-            "type": "text",
+            "type": "link",
             "value": "Finger Words",
-            "css": {
-              "fontWeight": "bold"
-            }
+            "href": "https://www.youtube.com/watch?v=OYU6RDoPgWo"
           },
-          " again!"
+          " step by step, but if you need a refresher, you can click on the link to watch the video again."
         ]
       }
     ]
@@ -119,22 +196,34 @@
   {
     "type": "finger-word",
     "word": "BIG",
-    "phonemes": ["/b/", "/i/", "/g/"]
+    "phonemes": [
+      "/b/",
+      "/i/",
+      "/g/"
+    ]
   },
   {
     "type": "finger-word",
     "word": "GAS",
-    "phonemes": ["/g/", "/a/", "/s/"]
+    "phonemes": [
+      "/g/",
+      "/a/",
+      "/s/"
+    ]
   },
   {
     "type": "finger-word",
     "word": "DIG",
-    "phonemes": ["/d/", "/i/", "/g/"],
+    "phonemes": [
+      "/d/",
+      "/i/",
+      "/g/"
+    ],
     "pre": {
       "replace": [
         {
           "index": 1,
-          "value": "We're going to practice our new variation of Finger Words, called Imaginary Finger Words.  As a reminder, instead of using your fingers and hands physically, you'll perform all the movements entirely in your imagination."
+          "value": "We're going to practice our new variation of **Finger Words**, called **Imaginary Finger Words**.  As a reminder, instead of using your fingers and hands physically, you'll perform all the movements entirely in your imagination."
         },
         {
           "index": 2,
@@ -184,7 +273,11 @@
   },
   {
     "type": "finger-word",
-    "phonemes": ["/d/", "/i/", "/g/"],
+    "phonemes": [
+      "/d/",
+      "/i/",
+      "/g/"
+    ],
     "word": "DIG",
     "pre": {
       "value": [
@@ -282,11 +375,15 @@
   },
   {
     "type": "finger-word",
-    "phonemes": ["/d/", "/i/", "/g/"],
+    "phonemes": [
+      "/d/",
+      "/i/",
+      "/g/"
+    ],
     "word": "DIG",
     "pre": {
       "value": [
-        "We want to blend the sounds together, so there's no gap between the sounds, just like we do on our knuckles in Finger Words.",
+        "We want to blend the sounds together, so there's no gap between the sounds, just like we do on our knuckles in **Finger Words**.",
         "Say the sound that each imaginary finger or finger pair makes slowly and continuously, blending the sounds together without any gaps.",
         {
           "type": "verbal",
@@ -354,13 +451,7 @@
               "showQuotes": false
             },
             " . . . ",
-            {
-              "type": "text",
-              "value": "DIG",
-              "css": {
-                "fontWeight": "bold"
-              }
-            }
+            "**DIG**"
           ]
         },
         "Did you hear the word? That's right, the word is ‘dig’."
@@ -369,32 +460,35 @@
   },
   {
     "type": "word-to-picture",
-    "word": "BAG",
-    "words": ["pig", "dog"]
-  },
-  {
-    "type": "word-to-picture",
-    "word": "PIG",
-    "words": ["pan", "pumpkin"]
-  },
-  {
-    "type": "word-to-picture",
-    "word": "DOG",
-    "words": ["cat", "pig"]
+    "sets": [
+      {
+        "word": "BAG",
+        "words": [
+          "pig",
+          "dog"
+        ]
+      },
+      {
+        "word": "PIG",
+        "words": [
+          "pan",
+          "pumpkin"
+        ]
+      },
+      {
+        "word": "DOG",
+        "words": [
+          "cat",
+          "pig"
+        ]
+      }
+    ]
   },
   {
     "type": "books",
-    "books": [52224],
-    "pre": {
-      "value": [
-        "Great work! Now, let's read a book together. I will read the blue words and you will read the black words.",
-        "Remember, when it's your turn to read, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together.",
-        {
-          "type": "instruction",
-          "value": "Help {name} read each word using Finger Words. This is not a quiz, so guide them when they get stuck. This is just practice and should be fun."
-        }
-      ]
-    }
+    "books": [
+      52224
+    ]
   },
   {
     "type": "teach-tam",

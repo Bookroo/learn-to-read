@@ -7,18 +7,12 @@
     ]
   },
   {
+    "type": "grapheme-recall",
+    "grapheme": "M"
+  },
+  {
     "type": "grapheme-trace-palm",
-    "grapheme": "M",
-    "pre": {
-      "value": [
-        "What letter this is?",
-        {
-          "type": "instruction",
-          "value": "Wait—then provide feedback"
-        },
-        "This is the letter M"
-      ]
-    }
+    "grapheme": "M"
   },
   {
     "type": "introduce-sound",
@@ -35,8 +29,13 @@
     }
   },
   {
-    "type": "grapheme-trace-air",
+    "type": "grapheme-recall",
     "grapheme": "A"
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "A",
+    "traceOnly": true
   },
   {
     "type": "introduce-sound",
@@ -53,96 +52,161 @@
     }
   },
   {
+    "type": "grapheme-recall",
+    "grapheme": "T"
+  },
+  {
     "type": "grapheme-trace-palm",
-    "grapheme": "T",
-    "pre": {
-      "value": [
-        "What letter this is?",
-        {
-          "type": "instruction",
-          "value": "Wait—then provide feedback."
-        },
-        "This is the letter T"
-      ]
-    }
+    "grapheme": "T"
   },
   {
     "type": "introduce-sound",
     "grapheme": "T",
     "phoneme": "/t/",
     "pre": {
-      "prepend": ["What sound does the letter T make?"]
-    }
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "M",
-    "graphemes": ["A", "T"]
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "A",
-    "graphemes": ["M", "R"]
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "T",
-    "graphemes": ["M", "B"]
-  },
-  {
-    "type": "sound-to-grapheme",
-    "grapheme": "A",
-    "phoneme": "/a/"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "grapheme": "T",
-    "phoneme": "/t/"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "grapheme": "M",
-    "phoneme": "/m/"
-  },
-  {
-    "type": "grapheme-trace-air",
-    "grapheme": "S",
-    "pre": {
-      "prepend": "Now it’s time to learn a new letter."
-    }
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "S",
-    "graphemes": ["M", "T"]
-  },
-  {
-    "type": "introduce-sound",
-    "grapheme": "S",
-    "phoneme": "/s/",
-    "pre": {
-      "replace": [
-        {
-          "index": 0,
-          "value": {
-            "type": "verbal",
-            "value": [
-              "The letter S makes the ",
-              {
-                "type": "sound",
-                "phoneme": "/s/"
-              },
-              " sound. Just like a hissing snake!"
-            ]
-          }
-        }
+      "prepend": [
+        "What sound does the letter T make?"
       ]
     }
   },
   {
-    "type": "phoneme-blending",
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "M",
+        "graphemes": [
+          "A",
+          "T"
+        ]
+      },
+      {
+        "grapheme": "A",
+        "graphemes": [
+          "M",
+          "R"
+        ]
+      },
+      {
+        "grapheme": "T",
+        "graphemes": [
+          "M",
+          "B"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "pre": {
+      "append": {
+        "type": "instruction",
+        "value": "Before revealing the letters, have {name} try to say which letter makes the sound. After they answer, or if they get stuck, use **Reveal letters** to show the answer choices."
+      }
+    },
+    "sets": [
+      {
+        "grapheme": "A",
+        "phoneme": "/a/",
+        "choices": [
+          "A",
+          "T",
+          "M"
+        ]
+      },
+      {
+        "grapheme": "T",
+        "phoneme": "/t/",
+        "choices": [
+          "T",
+          "A",
+          "M"
+        ]
+      },
+      {
+        "grapheme": "M",
+        "phoneme": "/m/",
+        "choices": [
+          "M",
+          "A",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "grapheme-recall",
+    "grapheme": "S",
+    "variant": "new-letter"
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "S",
+    "traceOnly": true
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "S",
+        "graphemes": [
+          "M",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "S",
+    "phoneme": "/s/"
+  },
+  {
+    "type": "sound-pick-word-stack",
     "phoneme": "/s/",
-    "words": ["sun", "ask", "sit"]
+    "words": [
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "u",
+          "/u/"
+        ],
+        [
+          "n",
+          "/n/"
+        ]
+      ],
+      [
+        [
+          "m",
+          "/m/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ]
+    ]
   },
   {
     "confetti": true,
@@ -150,30 +214,35 @@
     "value": [
       "Amazing, you know 4 letters now!",
       {
-        "type": "gif-video",
-        "src": "/l2r/vods/letter-words-3-letters.mov",
-        "width": 200,
-        "height": 200
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
       },
       {
         "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy again!"
+      },
+      {
+        "type": "instruction",
         "value": [
-          "Now it’s time to practice ",
+          "On the next slide, we'll practice ",
           {
-            "type": "text",
+            "type": "link",
             "value": "Finger Words",
-            "css": {
-              "fontWeight": "bold"
-            }
+            "href": "https://www.youtube.com/watch?v=OYU6RDoPgWo"
           },
-          " again!"
+          " step by step, but if you need a refresher, you can click on the link to watch the video again."
         ]
       }
     ]
   },
   {
     "type": "finger-word",
-    "phonemes": ["/a/", "/t/"],
+    "phonemes": [
+      "/a/",
+      "/t/"
+    ],
     "word": "AT",
     "pre": {
       "value": [
@@ -197,27 +266,24 @@
             " sound should be crisp and short, as in the word ",
             {
               "type": "text",
-              "value": "“at.”",
+              "value": "**“at.”**",
               "css": {
-                "fontWeight": "bold",
                 "fontStyle": "normal"
               }
             },
             " Don’t say ",
             {
               "type": "text",
-              "value": "“TUH”",
+              "value": "**“TUH”**",
               "css": {
-                "fontWeight": "bold",
                 "fontStyle": "normal"
               }
             },
             " or ",
             {
               "type": "text",
-              "value": "“TIH”.",
+              "value": "**“TIH”.**",
               "css": {
-                "fontWeight": "bold",
                 "fontStyle": "normal"
               }
             }
@@ -244,7 +310,10 @@
   },
   {
     "type": "finger-word",
-    "phonemes": ["/a/", "/t/"],
+    "phonemes": [
+      "/a/",
+      "/t/"
+    ],
     "word": "AT",
     "pre": {
       "value": [
@@ -302,7 +371,10 @@
   },
   {
     "type": "finger-word",
-    "phonemes": ["/a/", "/t/"],
+    "phonemes": [
+      "/a/",
+      "/t/"
+    ],
     "word": "AT",
     "pre": {
       "value": [
@@ -358,13 +430,7 @@
               "showQuotes": false
             },
             " . . . ",
-            {
-              "type": "text",
-              "value": "AT",
-              "css": {
-                "fontWeight": "bold"
-              }
-            }
+            "**AT**"
           ]
         },
         "Did you hear the word? That's right, the letters A and T spell the word ‘at’."
@@ -374,7 +440,11 @@
   {
     "type": "finger-word",
     "word": "SAT",
-    "phonemes": ["/s/", "/a/", "/t/"],
+    "phonemes": [
+      "/s/",
+      "/a/",
+      "/t/"
+    ],
     "post": {
       "append": "Did you hear the word? That's right, the word is ‘sat’."
     }
@@ -392,9 +462,15 @@
   {
     "type": "finger-word",
     "word": "SAM",
-    "phonemes": ["/s/", "/a/", "/m/"],
+    "phonemes": [
+      "/s/",
+      "/a/",
+      "/m/"
+    ],
     "post": {
-      "append": ["Did you hear his name? That's right, it's Sam!"]
+      "append": [
+        "Did you hear his name? That's right, it's Sam!"
+      ]
     }
   },
   {
@@ -413,7 +489,11 @@
   {
     "type": "finger-word",
     "word": "TAM",
-    "phonemes": ["/t/", "/a/", "/m/"],
+    "phonemes": [
+      "/t/",
+      "/a/",
+      "/m/"
+    ],
     "post": {
       "value": [
         "Are there any sticky sounds?",
@@ -470,7 +550,11 @@
   },
   {
     "type": "finger-word",
-    "phonemes": ["/t/", "/a/", "/m/"],
+    "phonemes": [
+      "/t/",
+      "/a/",
+      "/m/"
+    ],
     "word": "TAM",
     "pre": {
       "value": [
@@ -581,7 +665,11 @@
   },
   {
     "type": "finger-word",
-    "phonemes": ["/t/", "/a/", "/m/"],
+    "phonemes": [
+      "/t/",
+      "/a/",
+      "/m/"
+    ],
     "word": "TAM",
     "pre": {
       "value": [
@@ -658,13 +746,7 @@
               "showQuotes": false
             },
             " . . . ",
-            {
-              "type": "text",
-              "value": "TAM",
-              "css": {
-                "fontWeight": "bold"
-              }
-            }
+            "**TAM**"
           ]
         },
         "Did you hear the word? That's right, ‘Tam’ is the name of our yak friend."
@@ -673,47 +755,45 @@
   },
   {
     "type": "word-to-picture",
-    "word": "MAT",
-    "words": ["cat", "bat"],
     "pre": {
-      "replace": [
+      "value": [
+        "Can you find the picture that goes with this word?",
         {
-          "index": 1,
-          "value": {
-            "type": "instruction",
-            "value": "Have {name} read the word before revealing the pictures. If needed, help them use Finger Words."
-          }
-        }
-      ],
-      "insert_after": [
-        {
-          "index": 0,
-          "value": "To read the word, look at the word and say the sound each part makes. Then blend the sounds together to make the word."
+          "type": "instruction",
+          "value": "First, read the word using **Finger Words**, then I'll reveal the pictures."
         }
       ]
-    }
+    },
+    "sets": [
+      {
+        "word": "MAT",
+        "words": [
+          "cat",
+          "bat"
+        ]
+      }
+    ]
   },
   {
     "confetti": true,
     "type": "custom",
+    "label": "Lesson Recap",
     "value": [
-      "You’re doing amazing!",
-      "On the next slide, we're going to read a story together. It’s my job to read the blue words, and it’s your job to read the black words.",
-      "I’ll point to each word with my finger to help you keep track of where we are."
+      "Great job! You’ve learned 4 letters, 4 sounds, read 5 words, and met Sam. You’re becoming a super reader!",
+      {
+        "type": "instruction",
+        "value": [
+          "{name} is not expected to master concepts during the first lesson they're introduced. These concepts will continue to be taught and reinforced in future lessons. ",
+          "If you find {name} is too frustrated, you can always return and repeat a lesson."
+        ]
+      }
     ]
   },
   {
     "type": "books",
-    "books": [50077],
-    "pre": {
-      "append": [
-        "Remember, when you read the black words, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together.",
-        {
-          "type": "instruction",
-          "value": "When needed, help {name} read each word using Finger Words. This is not a quiz, so guide them when they get stuck. This is just practice and should be fun."
-        }
-      ]
-    }
+    "books": [
+      50077
+    ]
   },
   {
     "type": "teach-tam",
@@ -726,7 +806,7 @@
         },
         "Can you teach Tam the name for the new letter you learned?",
         "Can you teach Tam the sound the letter S makes?",
-        "Can you show Tam how to read this word using Finger Words?"
+        "Can you show Tam how to read this word using **Finger Words**?"
       ]
     }
   },

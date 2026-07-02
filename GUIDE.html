@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learn to Read — Curriculum Guide</title>
+<link rel="stylesheet" href="curriculum-docs.css">
+</head>
+<body>
+<div class="layout">
+
+<nav class="toc" aria-label="Contents">
+  <p class="toc-eyebrow">Curriculum Guide</p>
+  <a href="#program">1 · The Program</a>
+  <a href="#grammar">2 · The Lesson Grammar</a>
+  <a href="#rules">3 · Hard Pedagogy Rules</a>
+  <a href="#protocols">4 · Special-Case Protocols</a>
+  <a href="#canon">5 · Canon Vocabulary</a>
+  <a href="#voice">6 · Voice &amp; Writing</a>
+  <a href="#words">7 · Words &amp; Books</a>
+  <a href="#platform">8 · Platform Notes</a>
+  <a href="#qa">9 · QA Checklist</a>
+  <a href="#threads">10 · Open Threads</a>
+</nav>
+
+<main>
+  <header class="masthead">
+    <span class="kicker">Source of truth</span>
+    <h1>Learn to Read — Curriculum Guide</h1>
+    <p class="lede">The reference for anyone — human or agent — writing or revising lessons.
+      <strong>Module 1 (lessons 1–10) is the canon: when in doubt, do what Module 1 does.</strong></p>
+
+    <div class="refs">
+      <p class="refs-label">Related references</p>
+      <ul>
+        <li>Lesson slide JSON: <code>lessons/lesson-N.json</code> &nbsp;(schema: <code>web/client/src/types/learn-to-read.ts</code>)</li>
+        <li>Full 9-module outline: <code>Learn to Read Module Order - Sheet1.csv</code> &nbsp;·&nbsp; coverage &amp; ordering review: <a href="MODULE_ORDER_REVIEW.html">MODULE_ORDER_REVIEW.html</a></li>
+        <li>Decodable word lists &amp; book pipeline: <code>phonics-tool/</code> (<code>lessons.json</code>, per-lesson <code>cumulative_words.csv</code>)</li>
+        <li>Book writing guide: <code>phonics-tool/META_ANALYSIS.md</code></li>
+      </ul>
+    </div>
+    <div class="doc-switch">Companion document: <a href="MODULE_ORDER_REVIEW.html">Module Order Review →</a></div>
+  </header>
+
+  <!-- 1 -->
+  <section id="program">
+    <div class="sec-head"><span class="sec-num">01</span><h2>The Program</h2></div>
+
+    <div class="callout">
+      <p class="callout-title">Mission</p>
+      <p>Take a child from zero to fluent reading, taught by a parent (the <em>"reading helper"</em>) with
+      <strong>no preparation, no pre-knowledge, and no jargon</strong>, in short 15–20 minute lessons,
+      following the Science of Reading.</p>
+    </div>
+
+    <h3>Guiding principles</h3>
+    <ol>
+      <li><strong>Parent + child, together.</strong> The helper prompts, waits, corrects, celebrates — the child does the work.</li>
+      <li><strong>No parent preparation.</strong> Every lesson is fully scripted; the helper just reads the screen.</li>
+      <li><strong>Parent-friendly language.</strong> Kid-facing and helper-facing text never uses jargon ("sound," not "phoneme"). Educator terms may appear once, defined, in helper-only instructions.</li>
+      <li><strong>Zero to fluent.</strong> Every module moves the child up this ladder — each activity trains exactly one rung; lessons review lower rungs and push the highest rung the child has reached:</li>
+    </ol>
+    <div class="ladder">
+      <span class="rung">hear sounds</span><span class="arrow">→</span>
+      <span class="rung">see letters</span><span class="arrow">→</span>
+      <span class="rung">map sounds ↔ letters</span><span class="arrow">→</span>
+      <span class="rung">blend words</span><span class="arrow">→</span>
+      <span class="rung">read for meaning</span><span class="arrow">→</span>
+      <span class="rung">recognize words automatically</span><span class="arrow">→</span>
+      <span class="rung">read sentences fluently</span>
+    </div>
+    <ol start="5">
+      <li><strong>First exposure ≠ mastery.</strong> Concepts spiral across lessons; lessons are never pass/fail. Anti-frustration language is built in ("you can always repeat a lesson").</li>
+      <li><strong>Practice leads to real reading.</strong> Isolated skill work pays off in an authentic decodable book in the same lesson.</li>
+    </ol>
+
+    <h3>Module shape</h3>
+    <ul>
+      <li>A module is <strong>8–10 lessons</strong>. Each lesson introduces exactly <strong>one new thing</strong>: one grapheme+sound, or one concept (heart words, ending in S). Lesson 1 is the only exception (M/A/T needed to make first words).</li>
+      <li>Every module ends with a <strong>review lesson</strong> — no new content, all games + rereading the module's books — that closes with an explicit <strong>readiness check</strong> for the helper ("If {name} read most words with only light prompting, they're ready for Module N+1").</li>
+      <li>One grapheme per lesson, ordered by <code>phonics-tool/lessons.json</code>. Ordering priorities: build readable words fast, high-frequency letters first, separate visually/aurally confusable letters.</li>
+    </ul>
+  </section>
+
+  <!-- 2 -->
+  <section id="grammar">
+    <div class="sec-head"><span class="sec-num">02</span><h2>The Lesson Grammar</h2></div>
+    <p>Every standard lesson follows this skeleton — roughly 18–25 slides, 15–20 minutes. Variations
+      <em>inside</em> a segment are fine (which review games, how many finger-words); <strong>don't drop segments</strong> without a reason.</p>
+
+    <div class="flow">
+      <div class="step">
+        <h4>Welcome</h4>
+        <div class="pills"><code>custom</code> <span class="note">×1–2</span></div>
+        <p class="rule">Say what today holds ("one new letter and one new sound"). Warm, brief.</p>
+      </div>
+      <div class="step">
+        <h4>Review</h4>
+        <div class="pills"><code>find-grapheme</code><code>sound-to-grapheme</code><code>lost-sounds</code><code>identify-sound</code><code>card-stack</code></div>
+        <p class="rule">Pick 2–4. Review <strong>before</strong> new learning — short, active, diagnostic. Only previously-taught material may appear. Once a special case exists (heart words, -s words, Letter Friends) it joins the mixed review rotation.</p>
+      </div>
+      <div class="step">
+        <h4>Teach the new thing</h4>
+        <div class="pills"><code>grapheme-recall</code><span class="flow-arrow">→</span><code>grapheme-trace-air</code><span class="flow-arrow">→</span><code>grapheme-trace-palm</code><span class="flow-arrow">→</span><code>find-grapheme</code><span class="flow-arrow">→</span><code>introduce-sound</code><span class="flow-arrow">→</span><code>sound-pick-word-stack</code></div>
+        <p class="rule">Order is load-bearing: letter <em>form</em> before letter <em>sound</em>; motor (trace) before visual search (find); sound in isolation before sound-in-words. <code>grapheme-recall</code> uses variant <code>new-letter</code>; <code>sound-pick-word-stack</code> is Elephant Ears.</p>
+      </div>
+      <div class="step">
+        <h4>Celebrate checkpoint</h4>
+        <div class="pills"><code>custom</code> <span class="token">confetti: true</span></div>
+        <p class="rule">"Amazing, you know N letters now!" Marks the pivot from learning to applying.</p>
+      </div>
+      <div class="step">
+        <h4>Apply: blend words</h4>
+        <div class="pills"><code>finger-word</code> <span class="note">×3–8</span></div>
+        <p class="rule">Finger Words with the new sound. Voice the sticky-sound reasoning out loud. From lesson 5 on, mix in Imaginary Finger Words (concrete → mental). End each word by saying it plainly ("That's right, the word is 'mat'").</p>
+      </div>
+      <div class="step">
+        <h4>Check</h4>
+        <div class="pills"><code>word-to-picture</code><code>picture-to-word</code></div>
+        <p class="rule">Meaning check — proves decoding produced comprehension, not just noise.</p>
+      </div>
+      <div class="step">
+        <h4>Real reading</h4>
+        <div class="pills"><code>books</code></div>
+        <p class="rule">The payoff. A decodable book using the cumulative set.</p>
+      </div>
+      <div class="step">
+        <h4>Teach Tam</h4>
+        <div class="pills"><code>teach-tam</code></div>
+        <p class="rule">The child explains today's letter / sound / strategy to Tam. Metacognitive transfer; 1–2 minutes, helper gets suggested prompts.</p>
+      </div>
+      <div class="step">
+        <h4>Conclusion</h4>
+        <div class="pills"><code>conclusion</code> <span class="token">confetti</span></div>
+        <p class="rule">Gems claimed here (2 per lesson) — this is what records completion.</p>
+      </div>
+    </div>
+
+    <div class="callout plain">
+      <p class="callout-title">Two tail segments from Module 2 onward</p>
+      <p>Slotting in between <strong>Check</strong> and <strong>Real reading</strong>:</p>
+      <p><span class="canon">Brain Words</span> (<code>brain-words</code>) — rapid reread of the growing list of already-decoded words to build automatic recognition. Decode first, recognize later — never the reverse.</p>
+      <p><span class="canon">Narrative Ninja</span> (<code>reading-fluency</code>) — one sentence, three reads: (1) word-by-word (Finger Words allowed), (2) helper models with expression, (3) child reads with expression.</p>
+      <p class="note" style="margin-top:8px">Known intentional variants: review lessons (Review + Real reading only); heart-word lessons (Teach-the-new-thing becomes the heart-word protocol, §4).</p>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section id="rules">
+    <div class="sec-head"><span class="sec-num">03</span><h2>Hard Pedagogy Rules</h2></div>
+    <p>These are never violated.</p>
+    <ol class="checklist">
+      <li><strong>Letter name ≠ sound.</strong> Always "the letter M" vs "the /m/ sound." A word is read only after blending.</li>
+      <li><strong>Clean sounds.</strong> Coach against added vowels ("TUH", "TIH"); stop sounds are crisp and short. Helper instructions carry the correction script.</li>
+      <li><strong>Vowel display convention.</strong> Vowel sounds show helper letters (e.g. /a/ as in "bag") — the extra letters indicate pronunciation and are never read aloud. Explain this the first time only.</li>
+      <li><strong>Concrete → mental.</strong> Physical fingers → finger pairs → knuckle blending → Imaginary Finger Words. Never start abstract.</li>
+      <li><strong>Decodability is absolute.</strong> Every word the child is asked to read must be fully decodable from the cumulative taught set (check the <code>phonics-tool</code> cumulative lists) — or be an explicitly-taught heart word. No exceptions: game distractors, book kid-lines, and example words all count.</li>
+      <li><strong>Games are practice wrappers, not decoration.</strong> Each named game tests one precise mapping (§5). Don't invent a new game when an existing one covers the mechanic.</li>
+      <li><strong>The child does the work.</strong> Helper prompts, waits ("Wait — then provide feedback"), then reveals. Answers are revealed, never just told.</li>
+      <li><strong>Decoding ≠ comprehension.</strong> Any word the child may not know gets a one-line kid-friendly gloss immediately after decoding it ("To lug something means to carry something big and heavy").</li>
+    </ol>
+  </section>
+
+  <!-- 4 -->
+  <section id="protocols">
+    <div class="sec-head"><span class="sec-num">04</span><h2>Special-Case Protocols</h2></div>
+    <p>Module 1 assumes one letter = one sound = decodable words. Each departure gets an explicit, named, kid-facing protocol.</p>
+
+    <div class="card">
+      <h4><span class="canon">Heart Words</span> — sight words (I, a, the, …)</h4>
+      <p>Label them honestly: "this word doesn't follow the rules, so we learn it by heart." Introduce a few at a time, then <em>immediately</em> read them inside sentences (<code>story-words</code>: helper reads sentence → child finds the word → child reads the sentence). They join Brain Words and mixed review forever after.</p>
+    </div>
+    <div class="card">
+      <h4><span class="canon">Letter Friends</span> — digraphs (sh, ch/tch, ck, qu)</h4>
+      <p>Two letters that hold hands and make one sound. When decoding, the child looks for Letter Friends <strong>first</strong>, then Sticky Sounds. Trace both letters at introduction. Sub-cases matter: <strong>ch</strong> is truly one new sound; <strong>ck</strong> is a second spelling of /k/ (one sound, two letters — not two /k/s); <strong>qu</strong> is an inseparable pair (Q never appears without U).</p>
+    </div>
+    <div class="card">
+      <h4>Flexible sounds — final S = /s/ or /z/, the word "a" = /A/ or /uh/</h4>
+      <p>Teach a <em>strategy</em>, not a rule: try the likely sound → listen — is it a real word? → if not, flip. The linguistic rule (voiced/unvoiced neighbors) goes in helper-only instructions, if anywhere.</p>
+    </div>
+    <div class="card">
+      <h4>Morphology — -s endings, later -ed, -ing</h4>
+      <p>Taught as a meaning pattern ("S at the end can mean more than one"), not as a new sound.</p>
+    </div>
+    <div class="card">
+      <h4><span class="canon">Word Chains</span> — <code>word-chain</code> (RAN → RAM → RAMP → CAMP)</h4>
+      <p>Change exactly one grapheme per link; the child reads every link. Builds orthographic mapping through minimal contrast.</p>
+    </div>
+    <div class="card">
+      <h4>Sentences before fluency</h4>
+      <p>Word accuracy → phrase reading → sentence reading with expression (Narrative Ninja). Sentences use only decodable + taught heart words.</p>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section id="canon">
+    <div class="sec-head"><span class="sec-num">05</span><h2>Canon Vocabulary</h2></div>
+    <p>Kid-facing names are part of the product. Use them exactly, bolded (<code>**Finger Words**</code>), and never rename an existing one.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Name</th><th>What it is</th></tr></thead>
+        <tbody>
+          <tr><td><span class="canon">Finger Words</span></td><td>The blending strategy: assign letters to fingers, say each sound, blend along the knuckles with no gaps, repeat faster until the word appears.</td></tr>
+          <tr><td><span class="canon">Imaginary Finger Words</span></td><td>The same strategy performed entirely mentally (from lesson 5).</td></tr>
+          <tr><td><span class="canon">Sticky Sounds</span></td><td>Stop consonants (t, p, d, b, g, c…) that can't be held alone; they stick to the sound after them. Finger pairs touch.</td></tr>
+          <tr><td><span class="canon">Letter Friends</span></td><td>Digraphs — two letters, one sound (plural: "Letter Friends", always).</td></tr>
+          <tr><td><span class="canon">Heart Words</span></td><td>Words learned by heart because they don't (yet) follow the rules.</td></tr>
+          <tr><td><span class="canon">Brain Words</span></td><td>Words the child has decoded enough times to recognize instantly.</td></tr>
+          <tr><td><span class="canon">Elephant Ears</span></td><td>Hear a spoken word, thumbs up/down if it contains the target sound (<code>sound-pick-word-stack</code>).</td></tr>
+          <tr><td><span class="canon">Eagle Eyes</span></td><td>Find the target letter among distractors (<code>find-grapheme</code>).</td></tr>
+          <tr><td><span class="canon">Lost Sounds</span></td><td>The letters lost their sounds — the child gives each one back (<code>lost-sounds</code>).</td></tr>
+          <tr><td><span class="canon">Narrative Ninja</span></td><td>Repeated-reading fluency routine (<code>reading-fluency</code>).</td></tr>
+          <tr><td><span class="canon">Teach Tam</span></td><td>The child teaches today's concept to Tam.</td></tr>
+          <tr><td>Reading friends</td><td>Tam (brown yak), Sam (creme chicken), Pam (purple rhino), Jim (blue rhino), Bob (gray bear), Lulu (red lobster). Character names double as decodable words.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section id="voice">
+    <div class="sec-head"><span class="sec-num">06</span><h2>Voice &amp; Writing</h2></div>
+    <p>Slides speak through two channels. Get the channel right before you get the wording right.</p>
+    <div class="channels">
+      <div class="channel verbal">
+        <span class="ch-tag">Verbal · blue</span>
+        <p>The helper reads it <strong>aloud, word for word</strong>. Write for the child's ear: short sentences, warm, playful, direct questions.</p>
+      </div>
+      <div class="channel instruction">
+        <span class="ch-tag">Instruction · brown</span>
+        <p>Helper-only. Technique, pacing, what to do if the child struggles, why this matters. Wait-time, articulation corrections, and any adult-level explanation live here.</p>
+      </div>
+    </div>
+    <ul>
+      <li><code>{name}</code> templating personalizes both channels.</li>
+      <li>Encouragement is frequent but specific ("You know 4 letters now!"), with confetti at real milestones only (checkpoint + conclusion).</li>
+      <li>Every new mechanic gets a one-time explanation slide (and a video if it's physical, like Finger Words); afterwards it's referenced by name with a one-line reminder ("As a reminder…").</li>
+      <li>Never pressure mastery: recap slides remind the helper the concept will spiral.</li>
+      <li>Books slides invite conversation ("Feel free to talk about the illustrations and the story").</li>
+    </ul>
+  </section>
+
+  <!-- 7 -->
+  <section id="words">
+    <div class="sec-head"><span class="sec-num">07</span><h2>Words &amp; Books</h2></div>
+    <ul>
+      <li><strong>Word selection:</strong> prefer high-frequency words from the CPB lexicon (<code>phonics-tool</code> generates <code>new_words.csv</code> / <code>cumulative_words.csv</code> per lesson). Never teach an obscure word just because it's decodable.</li>
+      <li><strong>Decodable books:</strong> kid-read text is all-caps, strictly limited to the cumulative set + taught heart words. Adult-read (blue) text carries narration and richer vocabulary. 9–12 spreads; a refrain that repeats ~3 times, then a twist; final spread is the punchline. Full craft guide: <code>phonics-tool/META_ANALYSIS.md</code>.</li>
+      <li><strong>Every grapheme lesson ships with its own decodable book</strong> that features the new sound. A lesson without a book is an unfinished lesson.</li>
+      <li>"Blue words" inside books (words beyond the child's set) are read by the helper — the lesson explains this convention when it first appears.</li>
+    </ul>
+  </section>
+
+  <!-- 8 -->
+  <section id="platform">
+    <div class="sec-head"><span class="sec-num">08</span><h2>Platform Notes</h2></div>
+    <p>What the software can actually do. Schema: <code>web/client/src/types/learn-to-read.ts</code>. All slides support <code>pre</code>/<code>post</code> text blocks (<code>value</code>/<code>prepend</code>/<code>append</code>/<code>replace</code>/<code>insert_after</code>), <code>confetti</code>, <code>label</code>, <code>randomize</code>.</p>
+    <div class="split">
+      <div class="col">
+        <h4>Autograded <span class="note">(tap-to-answer, client-side)</span></h4>
+        <ul>
+          <li><code>find-grapheme</code></li>
+          <li><code>sound-to-grapheme</code></li>
+          <li><code>sound-pick-word-stack</code></li>
+          <li><code>sound-in-word</code></li>
+          <li><code>sound-at-position</code> / <code>sound-train</code></li>
+          <li><code>word-to-picture</code>, <code>picture-to-word</code></li>
+          <li><code>word-grid</code>, <code>picture-grid</code></li>
+          <li><code>card-stack</code> <span class="note">(partial)</span></li>
+        </ul>
+        <p class="note">Where autograding is optional it defaults <strong>off</strong> — the helper can just accept the child's spoken answer; tapping each answer is slower.</p>
+      </div>
+      <div class="col">
+        <h4>Helper-graded <span class="note">(no way to grade speech)</span></h4>
+        <ul>
+          <li><code>finger-word</code></li>
+          <li><code>brain-words</code></li>
+          <li><code>reading-fluency</code></li>
+          <li><code>lost-sounds</code></li>
+          <li>card flashes</li>
+          <li>tracing</li>
+        </ul>
+      </div>
+    </div>
+    <ul>
+      <li><strong>Nothing per-slide is persisted.</strong> Completion is binary (gems claimed on the conclusion slide). Keep this in mind before designing anything adaptive (§10).</li>
+      <li>Autogradable mechanics can also ship as standalone games at <code>/reading-games</code> (Eagle Eyes, Letter Setter, Letter Boxes) for practice and future classroom use.</li>
+      <li>Authoring: live JSON editor + preview at <code>/courses/learn-to-read/editor</code>. Printables (tracing, flash cards, coloring) at <code>/courses/learn-to-read/printables</code>.</li>
+    </ul>
+  </section>
+
+  <!-- 9 -->
+  <section id="qa">
+    <div class="sec-head"><span class="sec-num">09</span><h2>QA Checklist</h2></div>
+    <p>Run on every lesson before shipping. Derived from real bugs found in drafts.</p>
+    <ol class="checklist">
+      <li><strong>Phonics-rule consistency.</strong> When a slide contrasts two sounds (final S /s/ vs /z/), the stated rule and the stated answer must agree. <span class="note">(Real bug: lesson 11 TOPS says "S makes /s/ after P, so start with /z/.")</span></li>
+      <li><strong>Right letters in explanations.</strong> <span class="note">(Real bug: lesson 21 CHIPS says "letter friends when <strong>S</strong> is right before H" — should be C.)</span></li>
+      <li><strong>Decodability audit.</strong> Every kid-read word (practice, distractors, sentences, book text) passes the cumulative-set check for that lesson number.</li>
+      <li><strong>Review only covers taught material.</strong> <span class="note">(Real bug: SH appears in lost-sounds reviews from lesson 21 on, but SH's lesson doesn't exist yet.)</span></li>
+      <li><strong>Terminology exact and consistent.</strong> "Letter Friends" (plural), bolded canon names, letter-vs-sound phrasing correct everywhere.</li>
+      <li><strong>Structure complete.</strong> Welcome, review, one new thing, checkpoint confetti, blending, check, book (real ID, not placeholder), Teach Tam (or module-appropriate equivalent), conclusion.</li>
+      <li><strong>Channel correctness.</strong> Nothing meant for the helper's eyes only is in a verbal block, and vice versa. Jargon only in instruction blocks, defined.</li>
+      <li><strong><code>{name}</code> templating</strong> present in personalized lines; no hardcoded child names.</li>
+      <li><strong>Distractor sanity.</strong> Choice sets use taught letters; visually confusable pairs (b/d, m/n) appear deliberately, not accidentally, and not in the same set the week a letter is introduced.</li>
+      <li><strong>Book present and correct</strong> for the lesson's cumulative set; blue-word convention respected.</li>
+    </ol>
+  </section>
+
+  <!-- 10 -->
+  <section id="threads">
+    <div class="sec-head"><span class="sec-num">10</span><h2>Open Threads</h2></div>
+    <p>Decided direction, not yet built.</p>
+    <div class="card">
+      <h4>Missing lessons 19 and 20</h4>
+      <p>19 is the Module 2 review lesson; 20 is SH (Module 3's first lesson; later reviews already reference SH). Must exist before lesson 21 ships. Full module map and ordering review: <a href="MODULE_ORDER_REVIEW.html">MODULE_ORDER_REVIEW.html</a>.</p>
+    </div>
+    <div class="card">
+      <h4>Module 0 (pre-reading)</h4>
+      <p>For kids who find lesson 1 hard — oral-only phonological awareness (rhyming, syllable clapping, first-sound games, Elephant Ears without letters). Recommend, don't require.</p>
+    </div>
+    <div class="card">
+      <h4>Encoding / spelling</h4>
+      <p>The program currently only decodes. A "build the word" slide (choose letters for a spoken word) is the natural next slide type; printables partially cover this today.</p>
+    </div>
+    <div class="card">
+      <h4>Lowercase letters</h4>
+      <p>Promised "starting in Lesson 30" (lesson 1). The plan for teaching them needs to exist before then.</p>
+    </div>
+    <div class="card">
+      <h4>Adaptivity</h4>
+      <p>Lessons are static and linear; nothing per-slide is tracked. The pragmatic path, in order:</p>
+      <ol>
+        <li><strong>Helper-choice branching (no new infra):</strong> instruction blocks that say "If {name} found this tricky, repeat X / if easy, skip ahead" — static slides, human router. Cheap, aligned with the parent+child principle.</li>
+        <li><strong>Persist per-slide results:</strong> autograded slides already compute correct/incorrect client-side; start posting them with lesson completion. No behavior change, just data.</li>
+        <li><strong>Dynamic review only:</strong> keep teaching slides hand-authored and static; generate the <em>review segments</em> (and review-day lessons) from the child's miss history. Review is where personalization pays off and where wrong generation does the least harm.</li>
+      </ol>
+      <p>Full adaptive lesson branching is not worth it until (2) has produced real data.</p>
+    </div>
+  </section>
+
+  <footer class="doc-foot">
+    Bookroo · Learn to Read curriculum guide · companion to <a href="MODULE_ORDER_REVIEW.html">MODULE_ORDER_REVIEW.html</a>
+  </footer>
+</main>
+</div>
+
+<script>
+  // Scroll-spy: highlight the active section in the sidebar.
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('nav.toc a'));
+    if (!links.length || !('IntersectionObserver' in window)) return;
+    var byId = {};
+    links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+    var visible = new Set();
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) visible.add(e.target.id); else visible.delete(e.target.id);
+      });
+      var order = Object.keys(byId);
+      var current = order.find(function (id) { return visible.has(id); });
+      links.forEach(function (a) { a.classList.remove('active'); });
+      if (current && byId[current]) byId[current].classList.add('active');
+    }, { rootMargin: '-10% 0px -70% 0px', threshold: 0 });
+    document.querySelectorAll('main section[id]').forEach(function (s) { obs.observe(s); });
+  })();
+</script>
+</body>
+</html>

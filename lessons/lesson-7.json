@@ -14,92 +14,268 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "N",
-    "graphemes": ["M", "T"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "D",
-    "graphemes": ["P", "I"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  { "type": "sound-to-grapheme", "grapheme": "I", "phoneme": "/i/" },
-  { "type": "sound-to-grapheme", "phoneme": "/d/", "grapheme": "D" },
-  { "type": "sound-to-grapheme", "phoneme": "/p/", "grapheme": "P" },
-  { "type": "sound-to-grapheme", "phoneme": "/a/", "grapheme": "A" },
-  { "type": "sound-to-grapheme", "phoneme": "/p/", "grapheme": "P" },
-  { "type": "sound-to-grapheme", "phoneme": "/t/", "grapheme": "T" },
-  { "type": "sound-to-grapheme", "grapheme": "S", "phoneme": "/s/" },
-  {
-    "type": "grapheme-trace-air",
-    "grapheme": "O",
-    "pre": { "prepend": ["Now it's time to learn a new letter."] }
-  },
-  { "type": "grapheme-trace-palm", "grapheme": "O" },
-  {
-    "type": "find-grapheme",
-    "grapheme": "O",
-    "graphemes": ["M", "A"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  { "type": "introduce-sound", "grapheme": "O", "phoneme": "/o/" },
-  {
-    "type": "phoneme-blending",
-    "phoneme": "/o/",
-    "words": ["log", "fox", "sob"]
-  },
-  {
-    "type": "custom",
-    "value": [
-      { "type": "verbal", "value": "Amazing! You know 9 letters now!" },
+    "sets": [
       {
-        "type": "gif-video",
-        "src": "/l2r/vods/letter-words-3-letters.mov",
-        "width": 200,
-        "height": 200
+        "grapheme": "N",
+        "graphemes": [
+          "M",
+          "T"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
       },
       {
-        "type": "verbal",
-        "value": [
-          "Now it’s time to practice ",
-          {
-            "type": "text",
-            "value": "Finger Words",
-            "css": {
-              "fontWeight": "bold"
-            }
-          },
-          " again!"
+        "grapheme": "D",
+        "graphemes": [
+          "P",
+          "I"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "I",
+        "phoneme": "/i/",
+        "choices": [
+          "I",
+          "D",
+          "P"
+        ]
+      },
+      {
+        "grapheme": "D",
+        "phoneme": "/d/",
+        "choices": [
+          "D",
+          "I",
+          "P"
+        ]
+      },
+      {
+        "grapheme": "P",
+        "phoneme": "/p/",
+        "choices": [
+          "P",
+          "I",
+          "D"
+        ]
+      },
+      {
+        "grapheme": "A",
+        "phoneme": "/a/",
+        "choices": [
+          "A",
+          "I",
+          "D"
+        ]
+      },
+      {
+        "grapheme": "P",
+        "phoneme": "/p/",
+        "choices": [
+          "P",
+          "I",
+          "D"
+        ]
+      },
+      {
+        "grapheme": "T",
+        "phoneme": "/t/",
+        "choices": [
+          "T",
+          "I",
+          "D"
+        ]
+      },
+      {
+        "grapheme": "S",
+        "phoneme": "/s/",
+        "choices": [
+          "S",
+          "I",
+          "D"
         ]
       }
     ]
   },
-  { "type": "finger-word", "word": "NOT", "phonemes": ["/n/", "/o/", "/t/"] },
-  { "type": "finger-word", "word": "TOP", "phonemes": ["/t/", "/o/", "/p/"] },
-  { "type": "finger-word", "word": "POT", "phonemes": ["/p/", "/o/", "/t/"] },
-  { "type": "word-to-picture", "word": "MOP", "words": ["dog", "bucket"] },
-  { "type": "word-to-picture", "word": "DOT", "words": ["hat", "cat"] },
+  {
+    "type": "grapheme-recall",
+    "grapheme": "O",
+    "variant": "new-letter"
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "O",
+    "traceOnly": true
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "O"
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "O",
+        "graphemes": [
+          "M",
+          "A"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "O",
+    "phoneme": "/o/"
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/o/",
+    "words": [
+      [
+        [
+          "l",
+          "/l/"
+        ],
+        [
+          "o",
+          "/o/"
+        ],
+        [
+          "g",
+          "/g/"
+        ]
+      ],
+      [
+        [
+          "m",
+          "/m/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "p",
+          "/p/"
+        ],
+        [
+          "o",
+          "/o/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 9 letters now!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy again!"
+      },
+      {
+        "type": "instruction",
+        "value": [
+          "On the next slide, we'll practice ",
+          {
+            "type": "link",
+            "value": "Finger Words",
+            "href": "https://www.youtube.com/watch?v=OYU6RDoPgWo"
+          },
+          " step by step, but if you need a refresher, you can click on the link to watch the video again."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "NOT",
+    "phonemes": [
+      "/n/",
+      "/o/",
+      "/t/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "TOP",
+    "phonemes": [
+      "/t/",
+      "/o/",
+      "/p/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "POT",
+    "phonemes": [
+      "/p/",
+      "/o/",
+      "/t/"
+    ]
+  },
+  {
+    "type": "word-to-picture",
+    "sets": [
+      {
+        "word": "MOP",
+        "words": [
+          "dog",
+          "bucket"
+        ]
+      },
+      {
+        "word": "DOT",
+        "words": [
+          "hat",
+          "cat"
+        ]
+      }
+    ]
+  },
   {
     "type": "books",
-    "books": [52223],
-    "pre": {
-      "value": [
-        "Great work! Now, let's read a book together. I will read the blue words and you will read the black words.",
-        "Remember, when it's your turn to read, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together.",
-        {
-          "type": "instruction",
-          "value": "Help {name} read each word using Finger Words. This is not a quiz, so guide them when they get stuck. This is just practice and should be fun."
-        }
-      ]
-    }
+    "books": [
+      52223
+    ]
   },
-  { "type": "teach-tam", "value": "TOP" },
-  { "type": "conclusion", "confetti": true }
+  {
+    "type": "teach-tam",
+    "value": "TOP"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
 ]

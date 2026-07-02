@@ -3,12 +3,12 @@
     "type": "custom",
     "value": [
       "In this lesson, we’re going to learn a new letter and a new sound.",
-      "But first... we’re going to start with a game called Noisy Letters."
+      "But first... we’re going to start with a game called Lost Sounds."
     ]
   },
   {
-    "type": "card-stack",
-    "values": ["M", "T", "A", "S"],
+    "type": "lost-sounds",
+    "graphemes": ["M", "T", "A", "S"],
     "pre": {
       "value": [
         "Shh . . . can you hear that?",
@@ -25,44 +25,44 @@
             }
           ]
         },
-        "All the letters have lost their sounds! It’s our job to help them.",
-        "What letter is this? . . . What sound does it make?",
-        {
-          "type": "instruction",
-          "value": "Tap or swipe to advance to the next card."
-        }
+        "All the letters have lost their sounds! It’s our job to help them."
       ]
     }
   },
   {
     "type": "sound-to-grapheme",
-    "grapheme": "S",
-    "phoneme": "/s/",
-    "pre": {
-      "prepend": "Good job helping those letters find their sounds! Let's play another game."
-    }
+    "sets": [
+      {
+        "grapheme": "S",
+        "phoneme": "/s/",
+        "choices": ["S", "A", "M"]
+      },
+      {
+        "grapheme": "A",
+        "phoneme": "/a/",
+        "choices": ["A", "S", "M"]
+      },
+      {
+        "grapheme": "M",
+        "phoneme": "/m/",
+        "choices": ["M", "S", "A"]
+      },
+      {
+        "grapheme": "T",
+        "phoneme": "/t/",
+        "choices": ["T", "S", "A"]
+      }
+    ]
   },
   {
-    "type": "sound-to-grapheme",
-    "grapheme": "A",
-    "phoneme": "/a/"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "grapheme": "M",
-    "phoneme": "/m/"
-  },
-  {
-    "type": "sound-to-grapheme",
-    "grapheme": "T",
-    "phoneme": "/t/"
+    "type": "grapheme-recall",
+    "grapheme": "P",
+    "variant": "new-letter"
   },
   {
     "type": "grapheme-trace-air",
     "grapheme": "P",
-    "pre": {
-      "prepend": "Now it’s time to learn a new letter."
-    }
+    "traceOnly": true
   },
   {
     "type": "grapheme-trace-palm",
@@ -70,8 +70,12 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "P",
-    "graphemes": ["S", "M", "T", "A"]
+    "sets": [
+      {
+        "grapheme": "P",
+        "graphemes": ["S", "M", "T", "A"]
+      }
+    ]
   },
   {
     "type": "introduce-sound",
@@ -79,9 +83,25 @@
     "phoneme": "/p/"
   },
   {
-    "type": "phoneme-blending",
+    "type": "sound-pick-word-stack",
     "phoneme": "/p/",
-    "words": ["nap", "pet", "cap"]
+    "words": [
+      [
+        ["n", "/n/"],
+        ["a", "/a/"],
+        ["p", "/p/"]
+      ],
+      [
+        ["m", "/m/"],
+        ["a", "/a/"],
+        ["t", "/t/"]
+      ],
+      [
+        ["p", "/p/"],
+        ["a", "/a/"],
+        ["t", "/t/"]
+      ]
+    ]
   },
   {
     "confetti": true,
@@ -89,23 +109,25 @@
     "value": [
       "Amazing, you've learned 5 letters and 5 sounds!",
       {
-        "type": "gif-video",
-        "src": "/l2r/vods/letter-words-3-letters.mov",
-        "width": 200,
-        "height": 200
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
       },
       {
         "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy again!"
+      },
+      {
+        "type": "instruction",
         "value": [
-          "Now it’s time to practice ",
+          "On the next slide, we'll practice ",
           {
-            "type": "text",
+            "type": "link",
             "value": "Finger Words",
-            "css": {
-              "fontWeight": "bold"
-            }
+            "href": "https://www.youtube.com/watch?v=OYU6RDoPgWo"
           },
-          " again!"
+          " step by step, but if you need a refresher, you can click on the link to watch the video again."
         ]
       }
     ]
@@ -345,13 +367,7 @@
               "showQuotes": false
             },
             " . . . ",
-            {
-              "type": "text",
-              "value": "PAT",
-              "css": {
-                "fontWeight": "bold"
-              }
-            }
+            "**PAT**"
           ]
         },
         "Did you hear the word? That's right, the word is ‘pat’."
@@ -414,12 +430,7 @@
   },
   {
     "type": "books",
-    "books": [50078],
-    "pre": {
-      "append": [
-        "Remember, when you read the black words, look at the word and say the sound each part makes. Then put the sounds together to make the word. You can use your arm to help you blend the sounds together."
-      ]
-    }
+    "books": [50078]
   },
   {
     "type": "teach-tam",

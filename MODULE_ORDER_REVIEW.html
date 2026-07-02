@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module Order Review — Coverage &amp; Sequencing</title>
+<link rel="stylesheet" href="curriculum-docs.css">
+</head>
+<body>
+<div class="layout">
+
+<nav class="toc" aria-label="Contents">
+  <p class="toc-eyebrow">Module Order Review</p>
+  <a href="#numbering">0 · Numbering map</a>
+  <a href="#coverage">1 · Coverage gaps</a>
+  <a href="#ordering">2 · Ordering issues</a>
+  <a href="#concept-track">3 · Concept track</a>
+  <a href="#scale">4 · Scale flags</a>
+  <a href="#decisions">5 · Decision list</a>
+</nav>
+
+<main>
+  <header class="masthead">
+    <span class="kicker">Curriculum review</span>
+    <h1>Module Order Review</h1>
+    <p class="lede">A read of <strong>Learn to Read Module Order — Sheet1.csv</strong> (the 90-lesson,
+      9-module outline) against the Module 1–3 drafts, the Science of Reading, and the program's own
+      principles. Recommendations are proposals with rationale.</p>
+    <div class="doc-switch">Companion document: <a href="GUIDE.html">← Curriculum Guide</a></div>
+  </header>
+
+  <div class="legend" aria-label="Priority legend">
+    <span class="legend-item"><span class="badge must"><span class="stars">★★★</span> Must fix</span> real gap or error</span>
+    <span class="legend-item"><span class="badge high"><span class="stars">★★</span> High value</span> strong improvement</span>
+    <span class="legend-item"><span class="badge polish"><span class="stars">★</span> Polish</span> tidy / nice-to-have</span>
+    <span class="legend-item"><span class="badge good">✓ Endorsed</span> keep as designed</span>
+  </div>
+
+  <!-- 0 -->
+  <section id="numbering">
+    <div class="sec-head"><span class="sec-num">00</span><h2>Numbering map <span class="badge good" style="vertical-align:middle">Resolved</span></h2></div>
+    <p>The sheet and the live site share one numbering; local <code>lessons/lesson-N.json</code> files differ by
+      the Module 1 review lesson you inserted, and the sheet's own skip of lesson 18 heals the offset.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Sheet / live</th><th>Local files</th></tr></thead>
+        <tbody>
+          <tr><td>1–9 <span class="note">Module 1: m,a,t,s,p,i,n,d,o,b,g</span></td><td>1–9, <strong>+10 = Module 1 Review</strong> (local addition — add it to the sheet)</td></tr>
+          <tr><td>10–17 <span class="note">Module 2: ending-s, e, h, heart words, l, c, u, r</span></td><td>11–18</td></tr>
+          <tr><td>18 <span class="note">(unused in sheet)</span></td><td>—</td></tr>
+          <tr><td>19 <span class="note">Module 2 Review</span></td><td><strong>19 — missing file, to be written</strong></td></tr>
+          <tr><td>20 <span class="note">SH, first Module 3 lesson</span></td><td><strong>20 — missing file, to be written</strong></td></tr>
+          <tr><td>21+</td><td>21+ <span class="note">(aligned from here on)</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>So: local 19 = Module 2 Review, local 20 = SH, and local 21–25 are Module 3 drafts. Module 3 still needs
+      <strong>26 (f), 27 (ss/ll/zz/ff), 28 (th voiced), 29 (Review)</strong>.</p>
+    <div class="callout plain">
+      <p class="callout-title">Sheet housekeeping</p>
+      <p>Columns C–F look like a stale parallel ordering (e.g. j and w are on swapped rows vs. column B) — delete or label them so they don't mislead future authors. "Sound Detective" (lesson 1 concepts column) doesn't exist in <code>lesson-1.json</code> — presumably renamed to Elephant Ears; update the sheet.</p>
+    </div>
+  </section>
+
+  <!-- 1 -->
+  <section id="coverage">
+    <div class="sec-head"><span class="sec-num">01</span><h2>Coverage gaps</h2></div>
+    <p>Sounds and patterns never taught anywhere in the 90 lessons.</p>
+
+    <div class="card">
+      <div class="card-head"><span class="badge must"><span class="stars">★★★</span> Must fix</span><h4>/aw/ spellings: aw, au (+ al/all)</h4></div>
+      <p>saw, draw, because, caught, ball, all, call, talk. Very high frequency; completely absent. Even with a cot-caught-merger accent, the <em>graphemes</em> aw/au/al must be taught ("another way to spell /o/"). <strong>Best home: Module 6</strong> (replace <code>ei</code>, see §2).</p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge must"><span class="stars">★★★</span> Must fix</span><h4>Soft c and soft g</h4></div>
+      <p>ice, face, nice, race, place; age, page, cage, huge. Needed almost immediately once a_e arrives (lesson 32), or those words misdecode. <strong>Best home: Module 4–5.</strong></p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge must"><span class="stars">★★★</span> Must fix</span><h4>Consonant-le</h4></div>
+      <p>little, apple, table, purple. The dominant second-syllable pattern; must land with two-syllable work in <strong>Module 5</strong>.</p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge high"><span class="stars">★★</span> High value</span><h4>-ed suffix (3 sounds) and -ing</h4></div>
+      <p>-ed: jumped→/t/, played→/d/, landed→/ed/. The outline teaches ending-s morphology in Module 2 and then no morphology ever again. <strong>-ed fits Module 4; -ing pairs naturally with ng (lesson 43).</strong></p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge high"><span class="stars">★★</span> High value</span><h4>Schwa</h4></div>
+      <p>Unavoidable once two-syllable words start (Module 5): about, banana, wagon. Teach as a strategy, not a rule ("in longer words some vowels get lazy and say /uh/ — if the word sounds almost right, try the lazy sound"), consistent with the flexible-sounds protocol.</p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge high"><span class="stars">★★</span> High value</span><h4>Contractions</h4></div>
+      <p>can't, it's, I'm, don't, let's. Books will want them; a single lesson + mixed-review coverage, <strong>Module 5–6</strong>.</p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge polish"><span class="stars">★</span> Polish</span><h4>Compound words</h4></div>
+      <p>sunset, hotdog, laptop. Cheap, delightful bridge into two-syllable reading ("two words you already know, stuck together"); first slide of Module 5's syllable work.</p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge polish"><span class="stars">★</span> Polish</span><h4>dge (bridge, badge)</h4></div>
+      <p>Sibling of tch; Module 7+.</p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge polish"><span class="stars">★</span> Polish</span><h4>Consciously deferred — list them as decisions, not oversights</h4></div>
+      <p>Silent letters kn/wr/mb, /zh/ (measure), air/ear/ore, tion/sion, prefixes/suffixes beyond the above. Candidates for a Module 10 / "advanced patterns" if zero-to-fluent needs them.</p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge high"><span class="stars">★★</span> High value</span><h4>Heart words — the schedule is far too thin</h4></div>
+      <p>The outline schedules was/what/want (31), hi/by/why (34), to/do (36), are (72), maybe you (22). That's far short of what decodable-ish books need: <strong>said, of, have, come, some, one, they, were, there, where, who, your, put, could/would/should…</strong> Recommend a standing heart-word track: 2–3 per review lesson + as needed per book, recorded in <code>phonics-tool/lessons.json</code> so the decodability checker stays truthful.</p>
+      <p class="note">Note: hi/by/why at 34 aren't really heart words — they're y-as-long-i, formally taught at 85. Either teach y=/ī/ at 34 or accept the temporary heart-word framing and reconcile at 85.</p>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section id="ordering">
+    <div class="sec-head"><span class="sec-num">02</span><h2>Ordering issues</h2></div>
+
+    <div class="card">
+      <div class="card-head"><span class="badge must"><span class="stars">★★★</span> Must fix</span><h4>Blends are taught 3 modules after kids already read them</h4></div>
+      <p>The Module 2–3 drafts use BEST, TENT, HAND, CAMP, MUST (final blends) and BLACK, SKIP, CLICK, SQUID (initial blends); Module 3's concept is literally "5 letter words." Yet bl/cl (46), fl/gl (48), br/dr (49), sm/st (56), pr/vr (58), gr/tr (61), sp/sn (63), pl/sl (65), cr/fr (67), sw/tw (69), str (71), spl (73), spr (75), thr (77) occupy <strong>14 lessons across Modules 5–8</strong>. Blends aren't new sounds — they're adjacent known sounds, and Finger Words already handles them (one finger per sound).</p>
+      <p><strong>Recommend:</strong> teach "blending neighbors" once as a skill inside Module 3 when 5-letter words begin, and repurpose the 14 slots for the §1 gaps plus fluency/volume lessons (§3). If you keep any blend lessons, keep them as light <em>practice</em> lessons, not new-concept lessons. <span class="note">(Also: "/vr/" at lesson 58 is almost certainly a typo — no common English words start with vr.)</span></p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge must"><span class="stars">★★★</span> Must fix</span><h4>Silent-e is five scattered lessons with no unifying concept</h4></div>
+      <p>a_e (32), i_e (34), o_e (36), u_e (38) in Module 4… then e_e (45) orphaned in Module 5. Give it a kid-facing name — the program's move for every pattern (Sticky Sounds, Letter Friends, Heart Words), e.g. <span class="canon">Magic E</span> / Bossy E, name TBD → add to Guide §5 canon — teach the concept once at 32, then each vowel becomes a quick variation. <strong>Pull e_e into Module 4 with its siblings.</strong></p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge high"><span class="stars">★★</span> High value</span><h4>ay is taught twice</h4></div>
+      <p>Lesson 32 ("ay and a_e") and lesson 81 ("ay (play)"). Recommend: 32 teaches a_e only (keeps the Magic E concept clean); ay moves to the vowel-team modules — and given day/play/say/way frequency, <strong>it belongs in Module 6, not Module 9</strong>.</p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge high"><span class="stars">★★</span> High value</span><h4>Lowercase at lessons 41–42 contradicts shipped copy and is late</h4></div>
+      <p>Lesson 1 promises "starting in Lesson 30, we'll also include lowercase letters"; the sheet says 41–42. Beyond the inconsistency: real books are ~95% lowercase, and two lessons for 26 new letterforms is thin. Recommend gradual exposure (show both forms from Module 3–4 in grapheme slides and Eagle Eyes variants; printables already support lowercase tracing) with 41–42 as consolidation — then fix the lesson-1 text either way.</p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge high"><span class="stars">★★</span> High value</span><h4>Modules 6–9 are phonics-only; the concepts column goes empty</h4></div>
+      <p>"Zero to fluent" means the back half must shift weight from new graphemes to connected-text volume: an end-of-lesson passage every lesson, Narrative Ninja continuing throughout, periodic "just read" lessons (the freed blend slots), and longer decodable books. Otherwise the program teaches 90 patterns but never builds mileage.</p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge polish"><span class="stars">★</span> Polish</span><h4>ei (ceiling) at 55 is a weak Module 6 slot</h4></div>
+      <p>Rare (ceiling/receive/either) — weak use of a slot next to missing aw/au. Defer ei to Module 9 with the other alternate spellings (it fits the 81–90 theme).</p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge polish"><span class="stars">★</span> Polish</span><h4>ough (89)</h4></div>
+      <p>The most multi-valued grapheme in English (though/through/tough/cough). If it stays, it should explicitly lean on the try-and-listen flexible-sounds strategy; teaching it as "ough says /ō/" will backfire.</p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge polish"><span class="stars">★</span> Polish</span><h4>Module 9 has no review / finale</h4></div>
+      <p>Add lesson 91: cumulative review + a celebratory "graduation" readiness check, mirroring every other module's close.</p>
+    </div>
+    <div class="card">
+      <div class="card-head"><span class="badge good">✓ Endorsed</span><h4>Fine as designed</h4></div>
+      <p>th voiced (28) before unvoiced (39) — the/this/that frequency justifies it; ie, oo, ow, and y each taught twice with different sounds — consistent with the flexible-sounds protocol; "you" as a heart word at 22 — phonics-tool already models it; one flagship spelling per long vowel in Module 4 before alternates in 6/9 — textbook-correct. <span class="note">Minor: lesson 36's example list "home, boat, no" mixes o_e with oa (54) and open syllables — tidy the sheet.</span></p>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section id="concept-track">
+    <div class="sec-head"><span class="sec-num">03</span><h2>What each module needs beyond phonics</h2></div>
+    <p>The concepts column currently stops at Module 5. Proposed continuation — one new <em>named</em> concept per module, matching the canon-vocabulary pattern. Each new name should be added to Guide §5 when christened.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Module</th><th>Existing concepts</th><th>Add</th></tr></thead>
+        <tbody>
+          <tr><td>3</td><td>5-letter words</td><td>"blending neighbors" (blends as skill, not sounds)</td></tr>
+          <tr><td>4</td><td>—</td><td><span class="canon">Magic E</span> (name TBD); -ed suffix; soft c</td></tr>
+          <tr><td>5</td><td>6-letter words, two syllables, clapping</td><td>compound words; consonant-le; schwa-as-strategy; soft g; -ing; lowercase consolidation</td></tr>
+          <tr><td>6</td><td>—</td><td><span class="canon">Vowel Teams</span> (name TBD); aw/au; ay; contractions</td></tr>
+          <tr><td>7</td><td>—</td><td>reading mileage: passages + "just read" lessons; dge</td></tr>
+          <tr><td>8</td><td>—</td><td><span class="canon">Bossy R</span> (name TBD) unifying ar/or/er/ir/ur (er = ir = ur is one sound, three spellings)</td></tr>
+          <tr><td>9</td><td>—</td><td>"one sound, many spellings" review lens; ei; graduation review (91)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section id="scale">
+    <div class="sec-head"><span class="sec-num">04</span><h2>Scale flags</h2></div>
+    <p>Not curriculum, but plan-breaking if ignored.</p>
+    <div class="card">
+      <h4>Books</h4>
+      <p>The Guide says every grapheme lesson ships with a decodable book → <strong>~75 books for 90 lessons</strong>. If that's not feasible, decide the fallback now (book every 2–3 lessons in Modules 6–9, or reread-with-new-eyes assignments) so lesson drafts don't stall on missing books.</p>
+    </div>
+    <div class="card">
+      <h4>Read-alone vs read-together</h4>
+      <p>The outline never marks when books shift from parent-supported to independent. Natural milestone: Module 4–5 (silent-e + 6-letter words). Worth a column in the sheet.</p>
+    </div>
+    <div class="card">
+      <h4>Module 0 (pre-reading)</h4>
+      <p>Oral-only phonological awareness remains an open thread in Guide §10 — nothing in this outline blocks it; lesson-1's Elephant Ears / rhyming mechanics are the seed.</p>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section id="decisions">
+    <div class="sec-head"><span class="sec-num">05</span><h2>Decision list</h2></div>
+    <p>The calls that unblock the rest of the plan.</p>
+    <ol class="decisions">
+      <li>Consolidate the 14 blend lessons → free slots for aw/au, soft c/g, -le, -ed/-ing, schwa, contractions, fluency mileage?<span class="rec">Recommendation: yes.</span></li>
+      <li>Lowercase: gradual from Module 3–4 with 41–42 as consolidation, or keep the hard cut at 41? <span class="note">(Either way, reconcile the "Lesson 30" promise in lesson-1.json.)</span></li>
+      <li>Kid-facing names for Magic E / Vowel Teams / Bossy R (canon additions).</li>
+      <li>Heart-word track: adopt the 2–3-per-review cadence and pick the early list (said, have, they, of, come, some, were, there…)?</li>
+      <li>Books cadence for Modules 6–9.</li>
+      <li>ay to Module 6 and ei to Module 9?</li>
+    </ol>
+  </section>
+
+  <footer class="doc-foot">
+    Bookroo · Learn to Read module order review · companion to <a href="GUIDE.html">GUIDE.html</a>
+  </footer>
+</main>
+</div>
+
+<script>
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('nav.toc a'));
+    if (!links.length || !('IntersectionObserver' in window)) return;
+    var byId = {};
+    links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+    var visible = new Set();
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) visible.add(e.target.id); else visible.delete(e.target.id);
+      });
+      var order = Object.keys(byId);
+      var current = order.find(function (id) { return visible.has(id); });
+      links.forEach(function (a) { a.classList.remove('active'); });
+      if (current && byId[current]) byId[current].classList.add('active');
+    }, { rootMargin: '-10% 0px -70% 0px', threshold: 0 });
+    document.querySelectorAll('main section[id]').forEach(function (s) { obs.observe(s); });
+  })();
+</script>
+</body>
+</html>

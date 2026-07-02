@@ -14,40 +14,74 @@
   },
   {
     "type": "lost-sounds",
-    "graphemes": ["A", "S", "P", "D", "O", "N", "M", "T"]
+    "graphemes": [
+      "A",
+      "S",
+      "P",
+      "D",
+      "O",
+      "N",
+      "M",
+      "T"
+    ]
   },
   {
     "type": "find-grapheme",
-    "grapheme": "O",
-    "graphemes": ["D", "A"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
-  },
-  {
-    "type": "find-grapheme",
-    "grapheme": "S",
-    "graphemes": ["I", "T"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
+    "sets": [
+      {
+        "grapheme": "O",
+        "graphemes": [
+          "D",
+          "A"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "S",
+        "graphemes": [
+          "I",
+          "T"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
   },
   {
     "type": "sound-to-grapheme",
-    "phoneme": "/o/",
-    "grapheme": "O"
+    "sets": [
+      {
+        "grapheme": "O",
+        "phoneme": "/o/",
+        "choices": [
+          "O",
+          "D",
+          "A"
+        ]
+      },
+      {
+        "grapheme": "D",
+        "phoneme": "/d/",
+        "choices": [
+          "D",
+          "O",
+          "A"
+        ]
+      }
+    ]
   },
   {
-    "type": "sound-to-grapheme",
-    "grapheme": "D",
-    "phoneme": "/d/"
+    "type": "grapheme-recall",
+    "grapheme": "B",
+    "variant": "new-letter"
   },
   {
     "type": "grapheme-trace-air",
     "grapheme": "B",
-    "pre": {
-      "prepend": ["Now it's time to learn a new letter."]
-    }
+    "traceOnly": true
   },
   {
     "type": "grapheme-trace-palm",
@@ -55,11 +89,18 @@
   },
   {
     "type": "find-grapheme",
-    "grapheme": "B",
-    "graphemes": ["P", "O"],
-    "total": 3,
-    "unique": 3,
-    "correct": 1
+    "sets": [
+      {
+        "grapheme": "B",
+        "graphemes": [
+          "P",
+          "O"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
   },
   {
     "type": "introduce-sound",
@@ -67,9 +108,52 @@
     "phoneme": "/b/"
   },
   {
-    "type": "phoneme-blending",
+    "type": "sound-pick-word-stack",
     "phoneme": "/b/",
-    "words": ["bat", "sob", "bed"]
+    "words": [
+      [
+        [
+          "b",
+          "/b/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "o",
+          "/o/"
+        ],
+        [
+          "b",
+          "/b/"
+        ]
+      ]
+    ]
   },
   {
     "type": "custom",
@@ -79,23 +163,25 @@
         "value": "Amazing! You know 10 letters now!"
       },
       {
-        "type": "gif-video",
-        "src": "/l2r/vods/letter-words-3-letters.mov",
-        "width": 200,
-        "height": 200
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
       },
       {
         "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy again!"
+      },
+      {
+        "type": "instruction",
         "value": [
-          "Now it’s time to practice ",
+          "On the next slide, we'll practice ",
           {
-            "type": "text",
+            "type": "link",
             "value": "Finger Words",
-            "css": {
-              "fontWeight": "bold"
-            }
+            "href": "https://www.youtube.com/watch?v=OYU6RDoPgWo"
           },
-          " again!"
+          " step by step, but if you need a refresher, you can click on the link to watch the video again."
         ]
       }
     ]
@@ -103,22 +189,34 @@
   {
     "type": "finger-word",
     "word": "BAD",
-    "phonemes": ["/b/", "/a/", "/d/"]
+    "phonemes": [
+      "/b/",
+      "/a/",
+      "/d/"
+    ]
   },
   {
     "type": "finger-word",
     "word": "BIN",
-    "phonemes": ["/b/", "/i/", "/n/"]
+    "phonemes": [
+      "/b/",
+      "/i/",
+      "/n/"
+    ]
   },
   {
     "type": "finger-word",
     "word": "SOB",
-    "phonemes": ["/s/", "/o/", "/b/"],
+    "phonemes": [
+      "/s/",
+      "/o/",
+      "/b/"
+    ],
     "pre": {
       "replace": [
         {
           "index": 1,
-          "value": "We're going to practice our new variation of Finger Words, called Imaginary Finger Words.  As a reminder, instead of using your fingers and hands physically, you'll perform all the movements entirely in your imagination."
+          "value": "We're going to practice our new variation of **Finger Words**, called **Imaginary Finger Words**.  As a reminder, instead of using your fingers and hands physically, you'll perform all the movements entirely in your imagination."
         },
         {
           "index": 2,
@@ -162,13 +260,17 @@
   },
   {
     "type": "finger-word",
-    "phonemes": ["/s/", "/o/", "/b/"],
+    "phonemes": [
+      "/s/",
+      "/o/",
+      "/b/"
+    ],
     "word": "SOB",
     "pre": {
       "value": [
         "No, so we don't need to do anything special with this sound.",
         "We have a gap between the sounds currently, just like there is a gap between our imaginary fingers.",
-        "We want to blend the sounds together, so there's no gap between the sounds, just like we do on our knuckles in Finger Words."
+        "We want to blend the sounds together, so there's no gap between the sounds, just like we do on our knuckles in **Finger Words**."
       ]
     },
     "post": {
@@ -236,13 +338,7 @@
               "showQuotes": false
             },
             " . . . ",
-            {
-              "type": "text",
-              "value": "SOB",
-              "css": {
-                "fontWeight": "bold"
-              }
-            }
+            "**SOB**"
           ]
         },
         "Did you hear the word? That's right, the word is ‘sob’ as in ‘He was so sad, he started to sob’."
@@ -251,13 +347,22 @@
   },
   {
     "type": "word-to-picture",
-    "word": "BAT",
-    "words": ["pan", "pumpkin"]
-  },
-  {
-    "type": "word-to-picture",
-    "word": "BIN",
-    "words": ["cat", "pig"]
+    "sets": [
+      {
+        "word": "BAT",
+        "words": [
+          "pan",
+          "pumpkin"
+        ]
+      },
+      {
+        "word": "BIN",
+        "words": [
+          "cat",
+          "pig"
+        ]
+      }
+    ]
   },
   {
     "type": "meet-character",
@@ -279,7 +384,11 @@
   {
     "type": "finger-word",
     "word": "BOB",
-    "phonemes": ["/b/", "/o/", "/b/"],
+    "phonemes": [
+      "/b/",
+      "/o/",
+      "/b/"
+    ],
     "post": {
       "append": "That's right, his name is Bob."
     }
