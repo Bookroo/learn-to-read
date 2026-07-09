@@ -1,0 +1,295 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn one new letter and one new sound.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "C",
+        "graphemes": [
+          "D",
+          "G"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "U",
+        "graphemes": [
+          "S",
+          "H"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "L",
+        "phoneme": "/l/",
+        "choices": [
+          "L",
+          "H",
+          "C"
+        ]
+      },
+      {
+        "grapheme": "H",
+        "phoneme": "/h/",
+        "choices": [
+          "H",
+          "L",
+          "C"
+        ]
+      },
+      {
+        "grapheme": "C",
+        "phoneme": "/c/",
+        "graphemes": [
+          "R",
+          "Y"
+        ],
+        "choices": [
+          "C",
+          "R",
+          "Y"
+        ]
+      },
+      {
+        "grapheme": "U",
+        "phoneme": "/u/",
+        "graphemes": [
+          "O",
+          "A"
+        ],
+        "choices": [
+          "U",
+          "O",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "I",
+      "A",
+      "THE"
+    ],
+    "pre": {
+      "value": "Let’s practice three heart words. Read the words on the cards one at a time."
+    }
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "HAS",
+      "HIS",
+      "IS"
+    ],
+    "pre": {
+      "value": "Let’s practice three words that end in the letter S. Read the words on the cards one at a time."
+    }
+  },
+  {
+    "type": "grapheme-recall",
+    "grapheme": "R",
+    "variant": "new-letter"
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "R",
+    "traceOnly": true
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "R"
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "R",
+        "graphemes": [
+          "P",
+          "S"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "R",
+    "phoneme": "/r/"
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/r/",
+    "words": [
+      [
+        [
+          "r",
+          "/r/"
+        ],
+        [
+          "u",
+          "/u/"
+        ],
+        [
+          "n",
+          "/n/"
+        ]
+      ],
+      [
+        [
+          "c",
+          "/c/"
+        ],
+        [
+          "o",
+          "/o/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "r",
+          "/r/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 17 letters now!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy again!"
+      },
+      {
+        "type": "instruction",
+        "value": [
+          "On the next slide, we'll practice ",
+          {
+            "type": "link",
+            "value": "Finger Words",
+            "href": "https://www.youtube.com/watch?v=OYU6RDoPgWo"
+          },
+          " step by step, but if you need a refresher, you can click on the link to watch the video again."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "PAST",
+    "phonemes": [
+      "/p/",
+      "/a/",
+      "/s/",
+      "/t/"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "RAN",
+      "RAM",
+      "RAMP",
+      "CAMP"
+    ]
+  },
+  {
+    "type": "picture-to-word",
+    "word": "RAT",
+    "words": [
+      "BAT",
+      "CAT"
+    ]
+  },
+  {
+    "type": "word-to-picture",
+    "sets": [
+      {
+        "word": "RED",
+        "words": [
+          "blue",
+          "yellow"
+        ]
+      },
+      {
+        "word": "SLED",
+        "words": [
+          "car",
+          "helicopter"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "it",
+      "sit",
+      "at",
+      "an",
+      "in",
+      "did",
+      "on",
+      "not",
+      "top",
+      "big",
+      "dog",
+      "is"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE CAT HAD A NAP."
+  },
+  {
+    "type": "books",
+    "books": [
+      52234
+    ]
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

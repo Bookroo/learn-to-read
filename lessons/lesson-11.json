@@ -226,8 +226,221 @@
         "height": 160
       },
       "So how do you know which sound the letter S will make at the end of a word?",
-      "The simple answer is that you’ll learn by practicing, but there are some basic rules that can help you. We’ll learn a few today.",
-      "Let's try another word."
+      "Do you just guess? Nope! Your body already knows the answer.",
+      "Everyone has a **Buzzer** in their throat. Let's find yours!"
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Lay your fingers flat against the front of your throat, nice and gentle.",
+      {
+        "type": "verbal",
+        "value": [
+          "Now make a long snake sound: ",
+          {
+            "type": "sound",
+            "phoneme": "/s/",
+            "showQuotes": false
+          },
+          " and hold it. Ssssssss."
+        ]
+      },
+      "Do you feel anything? No buzz! That sound is just air.",
+      {
+        "type": "verbal",
+        "value": [
+          "Now make a long bee sound: ",
+          {
+            "type": "sound",
+            "phoneme": "/z/",
+            "showQuotes": false
+          },
+          " and hold it. Zzzzzzzz."
+        ]
+      },
+      "There it is! Do you feel your throat buzzing? That's your **Buzzer** turning on!",
+      {
+        "type": "instruction",
+        "value": [
+          "Hold each sound for at least three seconds so {name} has time to feel it. ",
+          "Make the pure sound, not the letter name — and don't add ‘uh’ at the end. ",
+          "If {name} can't feel their own buzzer, let them put their fingers on your throat while you make the sounds — a grown-up's buzz is easier to feel."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Now for the coolest part. Keep your fingers on your throat.",
+      {
+        "type": "verbal",
+        "value": [
+          "Go back and forth between the two sounds without stopping: ",
+          {
+            "type": "sound",
+            "phoneme": "/s/",
+            "showQuotes": false
+          },
+          {
+            "type": "sound",
+            "phoneme": "/z/",
+            "showQuotes": false
+          },
+          {
+            "type": "sound",
+            "phoneme": "/s/",
+            "showQuotes": false
+          },
+          {
+            "type": "sound",
+            "phoneme": "/z/",
+            "showQuotes": false
+          },
+          " — ssszzzssszzz."
+        ]
+      },
+      "Notice how your mouth isn't moving at all? Your lips, teeth, and tongue stay exactly the same.",
+      "The only thing changing is your **Buzzer**, switching on and off like a light switch!",
+      {
+        "type": "verbal",
+        "value": [
+          "Sounds that turn the buzzer on, like ",
+          {
+            "type": "sound",
+            "phoneme": "/z/",
+            "showQuotes": false
+          },
+          ", are called **buzzy sounds**. Sounds that leave the buzzer off, like ",
+          {
+            "type": "sound",
+            "phoneme": "/s/",
+            "showQuotes": false
+          },
+          ", are **not-buzzy sounds**."
+        ]
+      },
+      {
+        "type": "instruction",
+        "value": "If {name} still can't feel the buzz, try this: have them press their palms flat over their ears and make both sounds. Buzzy sounds hum loudly inside your head — not-buzzy sounds stay quiet and hissy."
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Let's practice! Fingers on your throat — this is called a **Buzz Check**.",
+      "For each sound, shout ‘Buzzer on!’ if you feel the buzz, or ‘Buzzer off!’ if you don't.",
+      {
+        "type": "verbal",
+        "value": [
+          "Try ",
+          {
+            "type": "sound",
+            "phoneme": "/g/"
+          },
+          " . . . Buzzer on! ",
+          {
+            "type": "sound",
+            "phoneme": "/g/",
+            "showQuotes": false
+          },
+          " is a buzzy sound."
+        ]
+      },
+      {
+        "type": "verbal",
+        "value": [
+          "Try ",
+          {
+            "type": "sound",
+            "phoneme": "/t/"
+          },
+          " . . . Buzzer off! ",
+          {
+            "type": "sound",
+            "phoneme": "/t/",
+            "showQuotes": false
+          },
+          " is a not-buzzy sound."
+        ]
+      },
+      {
+        "type": "verbal",
+        "value": [
+          "Try ",
+          {
+            "type": "sound",
+            "phoneme": "/d/"
+          },
+          " . . . Buzzer on! Try ",
+          {
+            "type": "sound",
+            "phoneme": "/p/"
+          },
+          " . . . Buzzer off!"
+        ]
+      },
+      {
+        "type": "verbal",
+        "value": [
+          "Now try ",
+          {
+            "type": "sound",
+            "phoneme": "/o/"
+          },
+          " . . . Buzzer on! Here's a secret: every vowel sound is a buzzy sound. ",
+          "You can't say a vowel without your buzzer!"
+        ]
+      },
+      {
+        "type": "instruction",
+        "value": [
+          "Quick sounds like ",
+          {
+            "type": "sound",
+            "phoneme": "/g/",
+            "showQuotes": false
+          },
+          " and ",
+          {
+            "type": "sound",
+            "phoneme": "/t/",
+            "showQuotes": false
+          },
+          " can't be stretched out, so have {name} repeat them a few times in a row — g-g-g-g — to feel whether the buzzer flickers on."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Now you're ready for the trick. Here's the secret about the letter S at the end of a word:",
+      "**S is a copycat!**",
+      "It copies whatever the sound right before it is doing.",
+      {
+        "type": "verbal",
+        "value": [
+          "Do a **Buzz Check** on the sound just before the S. If your buzzer is ON, the S copies it and buzzes: ",
+          {
+            "type": "sound",
+            "phoneme": "/z/"
+          },
+          ". If your buzzer is OFF, the S stays not-buzzy: ",
+          {
+            "type": "sound",
+            "phoneme": "/s/"
+          },
+          "."
+        ]
+      },
+      "Your mouth has been following this rule your whole life without you even knowing. Now your fingers can catch it in the act!",
+      {
+        "type": "instruction",
+        "value": "If {name} ever forgets the Buzz Check, there's always a backup plan: try the word both ways and listen for a real word. But the Buzz Check works every time on words like these. Let's try it!"
+      }
     ]
   },
   {
@@ -246,31 +459,25 @@
         {
           "type": "verbal",
           "value": [
-            "When the letter S is at the end of a word, we don’t always know whether it will make the ",
+            "There's an S at the end, so it's copycat time! The sound just before the S is ",
             {
               "type": "sound",
-              "phoneme": "/s/",
+              "phoneme": "/g/",
               "showQuotes": false
             },
-            " sound or the ",
+            ". Do a **Buzz Check**: fingers on your throat . . . g-g-g . . . Buzzer on! ",
             {
               "type": "sound",
-              "phoneme": "/z/",
+              "phoneme": "/g/",
               "showQuotes": false
             },
-            " sound, and if you don’t know, you can always just try both ways, and listen for the word. However, the letter S makes the ",
-            {
-              "type": "sound",
-              "phoneme": "/z/",
-              "showQuotes": false
-            },
-            " sound if it’s right after the letter G, so we can just start with the ",
+            " is buzzy, so the S copies it and buzzes too. This S makes the ",
             {
               "type": "sound",
               "phoneme": "/z/",
               "showQuotes": false
             },
-            " sound for this word."
+            " sound."
           ]
         }
       ]
@@ -583,7 +790,8 @@
             "**DIGS**"
           ]
         },
-        "Did you hear the word? That's right, the word is ‘digs’ as in ‘the dog digs a hole’."
+        "Did you hear the word? That's right, the word is ‘digs’ as in ‘the dog digs a hole’.",
+        "And your **Buzz Check** told you the S would buzz before you even read it!"
       ]
     }
   },
@@ -603,31 +811,25 @@
         {
           "type": "verbal",
           "value": [
-            "Remember, when the letter S is at the end of a word, we don’t always know whether it will make the ",
+            "There's an S at the end, so it's copycat time! The sound just before the S is ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            ". Do a **Buzz Check**: fingers on your throat . . . t-t-t . . . Buzzer off! ",
+            {
+              "type": "sound",
+              "phoneme": "/t/",
+              "showQuotes": false
+            },
+            " is a not-buzzy sound, so the S stays not-buzzy too. This S makes the ",
             {
               "type": "sound",
               "phoneme": "/s/",
               "showQuotes": false
             },
-            " sound or the ",
-            {
-              "type": "sound",
-              "phoneme": "/z/",
-              "showQuotes": false
-            },
-            " sound, and if you don’t know, you can always just try both ways, and listen for the word. However, the letter S makes the ",
-            {
-              "type": "sound",
-              "phoneme": "/s/",
-              "showQuotes": false
-            },
-            " sound if it’s right after the letter T, so we can just start with the ",
-            {
-              "type": "sound",
-              "phoneme": "/s/",
-              "showQuotes": false
-            },
-            " sound for this word."
+            " sound."
           ]
         }
       ]
@@ -940,7 +1142,8 @@
             "**POTS**"
           ]
         },
-        "Did you hear the word? That's right, the word is ‘pots’ as in ‘they got out the pots and pans’."
+        "Did you hear the word? That's right, the word is ‘pots’ as in ‘they got out the pots and pans’.",
+        "The **Buzz Check** was right again — buzzer off, so the S stayed not-buzzy!"
       ]
     }
   },
@@ -961,19 +1164,19 @@
             {
               "type": "verbal",
               "value": [
-                "The letter S makes the ",
+                "Copycat time! The sound just before the S is ",
+                {
+                  "type": "sound",
+                  "phoneme": "/p/",
+                  "showQuotes": false
+                },
+                ". Do a **Buzz Check** . . . p-p-p . . . Buzzer off! So the S stays not-buzzy and makes the ",
                 {
                   "type": "sound",
                   "phoneme": "/s/",
                   "showQuotes": false
                 },
-                " sound if it’s right after the letter P, so we can just start with the ",
-                {
-                  "type": "sound",
-                  "phoneme": "/z/",
-                  "showQuotes": false
-                },
-                " sound for this word."
+                " sound."
               ]
             }
           ]
@@ -998,172 +1201,21 @@
             {
               "type": "verbal",
               "value": [
-                "The letter S makes the ",
+                "Copycat time! The sound just before the S is ",
+                {
+                  "type": "sound",
+                  "phoneme": "/d/",
+                  "showQuotes": false
+                },
+                ". Do a **Buzz Check** . . . d-d-d . . . Buzzer on! So the S copies the buzz and makes the ",
                 {
                   "type": "sound",
                   "phoneme": "/z/",
-                  "showQuotes": false
-                },
-                " sound if it’s right after the letter D, so we can just start with the ",
-                {
-                  "type": "sound",
-                  "phoneme": "/z/",
-                  "showQuotes": false
-                },
-                " sound for this word."
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "type": "finger-word",
-    "word": "GAS",
-    "phonemes": [
-      "/g/",
-      "/a/",
-      "/s/"
-    ],
-    "pre": {
-      "insert_after": [
-        {
-          "index": 3,
-          "value": [
-            {
-              "type": "verbal",
-              "value": [
-                "We don't know whether the letter S will make the ",
-                {
-                  "type": "sound",
-                  "phoneme": "/s/",
-                  "showQuotes": false
-                },
-                " sound or the ",
-                {
-                  "type": "sound",
-                  "phoneme": "/z/",
-                  "showQuotes": false
-                },
-                " sound with this word, so we'll try it both ways and listen for the word.",
-                " Let's start with the ",
-                {
-                  "type": "sound",
-                  "phoneme": "/s/",
                   "showQuotes": false
                 },
                 " sound."
               ]
             }
-          ]
-        }
-      ]
-    },
-    "post": {
-      "append": [
-        "Did you hear the  word? That’s right, the word is ‘gas’, like ‘gas station’."
-      ]
-    }
-  },
-  {
-    "type": "finger-word",
-    "word": "GAS",
-    "phonemes": [
-      "/g/",
-      "/a/",
-      "/z/"
-    ],
-    "pre": {
-      "replace": [
-        {
-          "index": 1,
-          "value": [
-            {
-              "type": "verbal",
-              "value": [
-                "For practice, let's try it again using the ",
-                {
-                  "type": "sound",
-                  "phoneme": "/z/",
-                  "showQuotes": false
-                },
-                " sound instead of the ",
-                {
-                  "type": "sound",
-                  "phoneme": "/s/",
-                  "showQuotes": false
-                },
-                " sound."
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "post": {
-      "replace": [
-        {
-          "index": 2,
-          "value": [
-            {
-              "type": "verbal",
-              "value": [
-                {
-                  "type": "sound",
-                  "phoneme": "/g/",
-                  "showQuotes": false,
-                  "showRightSoundIndicator": false
-                },
-                {
-                  "type": "sound",
-                  "phoneme": "/a/",
-                  "showQuotes": false,
-                  "showLeftSoundIndicator": false
-                },
-                " ",
-                {
-                  "type": "sound",
-                  "phoneme": "/z/",
-                  "showQuotes": false
-                },
-                " . . . ",
-                {
-                  "type": "sound",
-                  "phoneme": "/g/",
-                  "showQuotes": false,
-                  "showRightSoundIndicator": false
-                },
-                {
-                  "type": "sound",
-                  "phoneme": "/a/",
-                  "showQuotes": false,
-                  "showLeftSoundIndicator": false
-                },
-                " ",
-                {
-                  "type": "sound",
-                  "phoneme": "/z/",
-                  "showQuotes": false
-                },
-                " . . . ",
-                "**GAZ**"
-              ]
-            }
-          ]
-        }
-      ],
-      "append": [
-        {
-          "type": "verbal",
-          "value": [
-            "Did you hear the word? No, ‘gaz’ is not a word. So you know that this letter S makes the ",
-            {
-              "type": "sound",
-              "phoneme": "/s/",
-              "showQuotes": false
-            },
-            " sound."
           ]
         }
       ]
@@ -1178,16 +1230,29 @@
     ],
     "pre": {
       "value": [
-        "You get to try this word on your own. Use **Finger Words** and the strategies we’ve been practicing.",
+        "Remember this word from the beginning of the lesson? Now you can figure it out all by yourself!",
+        {
+          "type": "verbal",
+          "value": [
+            "The sound just before the S is ",
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false
+            },
+            " — a vowel. And what do we know about vowels? Every vowel is a buzzy sound!"
+          ]
+        },
+        "You get to try this word on your own. Use **Finger Words** and the **Buzz Check**.",
         {
           "type": "instruction",
           "value": [
-            "{name} should try **Finger Words** first with the ",
+            "{name} should do a Buzz Check on the ",
             {
               "type": "sound",
-              "phoneme": "/s/"
+              "phoneme": "/i/"
             },
-            " sound and second with the ",
+            " sound (buzzer on!), then read the word with the ",
             {
               "type": "sound",
               "phoneme": "/z/"
@@ -1198,7 +1263,10 @@
       ]
     },
     "post": {
-      "value": "Great job! (Or let's try it together)"
+      "value": [
+        "Great job! (Or let's try it together)",
+        "You solved the mystery from the beginning of the lesson. The S in ‘is’ buzzes because the vowel before it buzzes!"
+      ]
     }
   },
   {

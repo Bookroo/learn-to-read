@@ -6,7 +6,9 @@ Module 1 (lessons 1–10) is the canon: when in doubt, do what Module 1 does.
 Related references:
 
 - Lesson slide JSON: `lessons/lesson-N.json` (schema: `web/client/src/types/learn-to-read.ts`)
+- Exercise catalog (every exercise, when it enters the curriculum): `EXERCISES.md`
 - Full 9-module outline: `Learn to Read Module Order - Sheet1.csv`; coverage & ordering review: `MODULE_ORDER_REVIEW.md`
+- Common Core alignment (trust artifact for schools): `STANDARDS_ALIGNMENT.md` / `.html`
 - Decodable word lists & book pipeline: `phonics-tool/` (`lessons.json`, per-lesson `cumulative_words.csv`)
 - Book writing guide: `phonics-tool/META_ANALYSIS.md`
 
@@ -50,7 +52,7 @@ Every standard lesson follows this skeleton (~18–25 slides, 15–20 min):
 | 4   | **Celebrate checkpoint** | `custom` + `confetti: true`                                                                                                                                             | "Amazing, you know N letters now!" Marks the pivot from learning to applying.                                                                                                                                              |
 | 5   | **Apply: blend words**   | `finger-word` ×3–8                                                                                                                                                      | Finger Words with the new sound. Include the sticky-sound reasoning out loud. From lesson 5 on, mix in Imaginary Finger Words (concrete → mental). End each word by saying it plainly ("That's right, the word is 'mat'"). |
 | 6   | **Check**                | `word-to-picture` / `picture-to-word`                                                                                                                                   | Meaning check — proves decoding produced comprehension, not just noise.                                                                                                                                                    |
-| 7   | **Real reading**         | `books`                                                                                                                                                                 | The payoff. A decodable book using the cumulative set.                                                                                                                                                                     |
+| 7   | **Real reading**         | `books`                                                                                                                                                                 | The payoff. A decodable book using the cumulative set. The book reader ends with a built-in Comprehension Practice panel (2 questions per book).                                                                           |
 | 8   | **Teach Tam**            | `teach-tam`                                                                                                                                                             | The child explains today's letter/sound/strategy to Tam. Metacognitive transfer; 1–2 minutes, helper gets suggested prompts.                                                                                               |
 | 9   | **Conclusion**           | `conclusion` + confetti                                                                                                                                                 | Gems claimed here (2 per lesson) — this is what records completion.                                                                                                                                                        |
 
@@ -109,6 +111,14 @@ Kid-facing names are part of the product. Use them exactly, bolded (`**Finger Wo
 | **Narrative Ninja**        | Repeated-reading fluency routine (`reading-fluency`).                                                                                                       |
 | **Teach Tam**              | The child teaches today's concept to Tam.                                                                                                                   |
 | Reading friends            | Tam (brown yak), Sam (creme chicken), Pam (purple rhino), Jim (blue rhino), Bob (gray bear), Lulu (red lobster). Character names double as decodable words. |
+| **Rhyme Time**             | Hear a word, pick the picture that rhymes (`rhyme-match`).                                                                                                  |
+| **Switcheroo**             | Two pictures; tap the letter that must change to spell the new word (`letter-swap`).                                                                        |
+| **Word Builder**           | Build the word from a letter bank after seeing its picture (`word-builder`, mode `full`).                                                                   |
+| **Letter Boxes**           | Fill the one missing letter in the word (`word-builder`, mode `missing`).                                                                                   |
+| **Picture Quest**          | Read the word, find its picture — or the reverse (`word-to-picture` / `picture-to-word`).                                                                   |
+| **Sound Swap**             | Oral: change one sound in a word to make a new word (planned).                                                                                              |
+
+The full catalog — including when each exercise enters the curriculum — is `EXERCISES.md`. Public directory: `/courses/learn-to-read/exercises`.
 
 ---
 
@@ -153,7 +163,7 @@ Rules:
 
 Derived from real bugs found in drafts:
 
-1. **Phonics-rule consistency.** When a slide contrasts two sounds (final S /s/ vs /z/), the stated rule and the stated answer must agree. (Real bug: lesson 11 TOPS says "S makes /s/ after P, so start with /z/.")
+1. **Phonics-rule consistency.** When a slide contrasts two sounds (final S /s/ vs /z/), the stated rule and the stated answer must agree. (Real bug, since fixed: lesson 11 TOPS said "S makes /s/ after P, so start with /z/." Lesson 11 now teaches final S via the Buzz Check — buzzy vs. not-buzzy sounds — instead of per-letter cues.)
 2. **Right letters in explanations.** (Real bug: lesson 21 CHIPS says "letter friends when **S** is right before H" — should be C.)
 3. **Decodability audit.** Every kid-read word (practice, distractors, sentences, book text) passes the cumulative-set check for that lesson number.
 4. **Review only covers taught material.** (Real bug: SH appears in lost-sounds reviews from lesson 21 on, but SH's lesson doesn't exist yet.)
@@ -170,7 +180,9 @@ Derived from real bugs found in drafts:
 
 - **Missing lessons 19 and 20** — 19 is the Module 2 review lesson, 20 is SH (Module 3's first lesson; later reviews already reference SH). Must exist before lesson 21 ships. Full module map and ordering review: `MODULE_ORDER_REVIEW.md`.
 - **Module 0 (pre-reading)**: for kids who find lesson 1 hard — oral-only phonological awareness (rhyming, syllable clapping, first-sound games, Elephant Ears without letters). Recommend, don't require.
-- **Encoding/spelling**: the program currently only decodes. A "build the word" slide (choose letters for a spoken word) is the natural next slide type; printables partially cover this today.
+- **Encoding/spelling**: ✅ built July 2026 — the `word-builder` slide type ("Word Builder" full-build mode, "Letter Boxes" missing-letter mode) plus reading-game versions. Schedule into lessons per `EXERCISES.md` (Letter Boxes from L8, Word Builder from L12).
+- **Jump Ahead placement**: a short placement experience (built from module review lessons) that tells a parent which lesson to start at — for kids who already know some letters.
+- **Standards alignment doc**: ✅ shipped July 2026 — `STANDARDS_ALIGNMENT.md`/`.html` plus the public page `/courses/learn-to-read/common-core` (data: `client/src/data/learn-to-read-standards.ts`). Update coverage badges as modules ship; a PDF export for school buyers is the remaining nice-to-have.
 - **Lowercase letters**: promised "starting in Lesson 30" (lesson 1). The plan for teaching them needs to exist before then.
 - **Adaptivity**: lessons are static and linear; nothing per-slide is tracked. The pragmatic path, in order:
   1. **Helper-choice branching (no new infra):** instruction blocks that say "If {name} found this tricky, repeat X / if easy, skip ahead" — static slides, human router. Cheap, aligned with the parent+child principle.

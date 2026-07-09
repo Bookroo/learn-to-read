@@ -363,6 +363,8 @@ code, .token {
 .badge.high { color: var(--high); background: var(--high-soft); border: 1px solid #e8d3a6; }
 .badge.polish { color: var(--polish); background: var(--polish-soft); border: 1px solid #d6dad7; }
 .badge.good { color: var(--good); background: var(--good-soft); border: 1px solid var(--accent-line); }
+.badge.draft { color: var(--verbal); background: var(--verbal-soft); border: 1px solid #cbdcee; }
+.badge.none { color: var(--ink-faint); background: transparent; border: 1px dashed var(--line-strong); }
 
 .legend {
   display: flex;

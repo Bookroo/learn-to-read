@@ -34,7 +34,9 @@
       <p class="refs-label">Related references</p>
       <ul>
         <li>Lesson slide JSON: <code>lessons/lesson-N.json</code> &nbsp;(schema: <code>web/client/src/types/learn-to-read.ts</code>)</li>
+        <li>Exercise catalog (every exercise, when it enters the curriculum): <code>EXERCISES.md</code> &nbsp;·&nbsp; public directory: <code>/courses/learn-to-read/exercises</code></li>
         <li>Full 9-module outline: <code>Learn to Read Module Order - Sheet1.csv</code> &nbsp;·&nbsp; coverage &amp; ordering review: <a href="MODULE_ORDER_REVIEW.html">MODULE_ORDER_REVIEW.html</a></li>
+        <li>Common Core alignment (trust artifact for schools): <a href="STANDARDS_ALIGNMENT.html">STANDARDS_ALIGNMENT.html</a></li>
         <li>Decodable word lists &amp; book pipeline: <code>phonics-tool/</code> (<code>lessons.json</code>, per-lesson <code>cumulative_words.csv</code>)</li>
         <li>Book writing guide: <code>phonics-tool/META_ANALYSIS.md</code></li>
       </ul>
@@ -122,7 +124,7 @@
       <div class="step">
         <h4>Real reading</h4>
         <div class="pills"><code>books</code></div>
-        <p class="rule">The payoff. A decodable book using the cumulative set.</p>
+        <p class="rule">The payoff. A decodable book using the cumulative set. The book reader ends with a built-in Comprehension Practice panel (2 questions per book).</p>
       </div>
       <div class="step">
         <h4>Teach Tam</h4>
@@ -212,9 +214,16 @@
           <tr><td><span class="canon">Narrative Ninja</span></td><td>Repeated-reading fluency routine (<code>reading-fluency</code>).</td></tr>
           <tr><td><span class="canon">Teach Tam</span></td><td>The child teaches today's concept to Tam.</td></tr>
           <tr><td>Reading friends</td><td>Tam (brown yak), Sam (creme chicken), Pam (purple rhino), Jim (blue rhino), Bob (gray bear), Lulu (red lobster). Character names double as decodable words.</td></tr>
+          <tr><td><span class="canon">Rhyme Time</span></td><td>Hear a word, pick the picture that rhymes (<code>rhyme-match</code>).</td></tr>
+          <tr><td><span class="canon">Switcheroo</span></td><td>Two pictures; tap the letter that must change to spell the new word (<code>letter-swap</code>).</td></tr>
+          <tr><td><span class="canon">Word Builder</span></td><td>Build the word from a letter bank after seeing its picture (<code>word-builder</code>, mode <code>full</code>).</td></tr>
+          <tr><td><span class="canon">Letter Boxes</span></td><td>Fill the one missing letter in the word (<code>word-builder</code>, mode <code>missing</code>).</td></tr>
+          <tr><td><span class="canon">Picture Quest</span></td><td>Read the word, find its picture — or the reverse (<code>word-to-picture</code> / <code>picture-to-word</code>).</td></tr>
+          <tr><td><span class="canon">Sound Swap</span></td><td>Oral: change one sound in a word to make a new word (planned).</td></tr>
         </tbody>
       </table>
     </div>
+    <p>The full catalog — including when each exercise enters the curriculum — is <code>EXERCISES.md</code>. Public directory: <code>/courses/learn-to-read/exercises</code>.</p>
   </section>
 
   <!-- 6 -->
@@ -320,8 +329,16 @@
       <p>For kids who find lesson 1 hard — oral-only phonological awareness (rhyming, syllable clapping, first-sound games, Elephant Ears without letters). Recommend, don't require.</p>
     </div>
     <div class="card">
-      <h4>Encoding / spelling</h4>
-      <p>The program currently only decodes. A "build the word" slide (choose letters for a spoken word) is the natural next slide type; printables partially cover this today.</p>
+      <h4>Encoding / spelling — ✅ built July 2026</h4>
+      <p>The <code>word-builder</code> slide type ("Word Builder" full-build mode, "Letter Boxes" missing-letter mode) plus reading-game versions. Schedule into lessons per <code>EXERCISES.md</code> (Letter Boxes from L8, Word Builder from L12).</p>
+    </div>
+    <div class="card">
+      <h4>Jump Ahead placement</h4>
+      <p>A short placement experience (built from module review lessons) that tells a parent which lesson to start at — for kids who already know some letters.</p>
+    </div>
+    <div class="card">
+      <h4>Standards alignment doc — ✅ shipped July 2026</h4>
+      <p><a href="STANDARDS_ALIGNMENT.html">STANDARDS_ALIGNMENT.html</a> plus the public page <code>/courses/learn-to-read/common-core</code> (data: <code>client/src/data/learn-to-read-standards.ts</code>). Update coverage badges as modules ship; a PDF export for school buyers is the remaining nice-to-have.</p>
     </div>
     <div class="card">
       <h4>Lowercase letters</h4>
