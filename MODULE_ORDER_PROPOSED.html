@@ -1,0 +1,2684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learn to Read — Proposed Lesson Order, Modules 1–10</title>
+    <style>
+      :root {
+        --paper: #faf9f5;
+        --card: #ffffff;
+        --ink: #212622;
+        --ink-soft: #59635c;
+        --ink-faint: #8a938c;
+        --accent: #2e6f52;
+        --accent-deep: #22553f;
+        --accent-soft: #e8f1ea;
+        --accent-line: #cadfd1;
+        --line: #e6e2d8;
+        --line-strong: #d6d1c4;
+
+        --tag-letter: #2c6fb0;
+        --tag-letter-soft: #e8f0f8;
+        --tag-pattern: #2e6f52;
+        --tag-pattern-soft: #e8f1ea;
+        --tag-concept: #7c4fa8;
+        --tag-concept-soft: #f0e9f7;
+        --tag-strategy: #b3791f;
+        --tag-strategy-soft: #f7eeda;
+        --tag-morph: #94643a;
+        --tag-morph-soft: #f3ece2;
+        --tag-heart: #bb432b;
+        --tag-heart-soft: #f8e9e5;
+        --tag-fluency: #0f766e;
+        --tag-fluency-soft: #e2f1ef;
+        --tag-review: #6d7a73;
+        --tag-review-soft: #eceeeb;
+        --dolch: #cf3f7c;
+
+        --radius: 12px;
+        --radius-sm: 8px;
+        --shadow: 0 1px 2px rgba(30, 40, 34, 0.04),
+          0 6px 20px rgba(30, 40, 34, 0.05);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 15.5px;
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 48px 24px 96px;
+      }
+
+      header.doc h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin: 0 0 6px;
+        letter-spacing: -0.01em;
+      }
+      header.doc .sub {
+        color: var(--ink-soft);
+        font-size: 15px;
+        max-width: 720px;
+      }
+      header.doc .meta {
+        color: var(--ink-faint);
+        font-size: 13px;
+        margin-top: 10px;
+      }
+
+      .rules {
+        margin: 28px 0 8px;
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+      .rule {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 14px 16px;
+        box-shadow: var(--shadow);
+        font-size: 14px;
+      }
+      .rule b {
+        display: block;
+        margin-bottom: 2px;
+        color: var(--accent-deep);
+      }
+      .rule span {
+        color: var(--ink-soft);
+      }
+
+      section.module {
+        margin-top: 44px;
+      }
+      .module-head {
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 4px;
+      }
+      .module-head h2 {
+        font-size: 21px;
+        margin: 0;
+        letter-spacing: -0.01em;
+      }
+      .module-head .range {
+        color: var(--ink-faint);
+        font-size: 14px;
+        font-variant-numeric: tabular-nums;
+      }
+      .module-theme {
+        color: var(--ink-soft);
+        font-size: 14.5px;
+        max-width: 780px;
+        margin: 0 0 14px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        font-size: 14px;
+      }
+      th {
+        text-align: left;
+        font-size: 11.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--ink-faint);
+        font-weight: 600;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--line-strong);
+        background: #fcfbf8;
+      }
+      td {
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+      }
+      tr:last-child td {
+        border-bottom: none;
+      }
+      td.num {
+        color: var(--ink-faint);
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+        width: 34px;
+      }
+      td.what {
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      td.what .sub {
+        display: block;
+        font-weight: 400;
+        color: var(--ink-soft);
+        font-size: 12.5px;
+        white-space: normal;
+      }
+      td.detail {
+        color: var(--ink-soft);
+      }
+      td.examples {
+        color: var(--ink);
+        font-style: italic;
+        width: 28%;
+      }
+      td.examples .words {
+        display: block;
+      }
+      td.examples .words + .words {
+        margin-top: 4px;
+      }
+      td.examples .example-label {
+        font-style: normal;
+      }
+      .dolch-word {
+        color: var(--dolch);
+        font-weight: 600;
+      }
+      td.examples .none {
+        color: var(--ink-faint);
+        font-style: normal;
+      }
+      .detail-intros {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 7px;
+      }
+      .detail-intros:only-child {
+        margin-top: 0;
+      }
+      .detail-intro,
+      .reference-label {
+        display: inline-block;
+        border-radius: 999px;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 1.35;
+        padding: 3px 8px;
+      }
+      .intro-concept,
+      .reference-concept {
+        color: var(--tag-concept);
+        background: var(--tag-concept-soft);
+      }
+      .intro-exercise,
+      .reference-exercise {
+        color: var(--tag-fluency);
+        background: var(--tag-fluency-soft);
+      }
+
+      .tag {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        padding: 2px 8px;
+        border-radius: 999px;
+        white-space: nowrap;
+        vertical-align: middle;
+      }
+      .t-letter {
+        color: var(--tag-letter);
+        background: var(--tag-letter-soft);
+      }
+      .t-pattern {
+        color: var(--tag-pattern);
+        background: var(--tag-pattern-soft);
+      }
+      .t-concept {
+        color: var(--tag-concept);
+        background: var(--tag-concept-soft);
+      }
+      .t-strategy {
+        color: var(--tag-strategy);
+        background: var(--tag-strategy-soft);
+      }
+      .t-morph {
+        color: var(--tag-morph);
+        background: var(--tag-morph-soft);
+      }
+      .t-heart {
+        color: var(--tag-heart);
+        background: var(--tag-heart-soft);
+      }
+      .t-fluency {
+        color: var(--tag-fluency);
+        background: var(--tag-fluency-soft);
+      }
+      .t-review {
+        color: var(--tag-review);
+        background: var(--tag-review-soft);
+      }
+
+      .note {
+        background: var(--accent-soft);
+        border: 1px solid var(--accent-line);
+        border-radius: var(--radius-sm);
+        padding: 10px 14px;
+        font-size: 13.5px;
+        color: var(--accent-deep);
+        margin: 12px 0 0;
+      }
+
+      section.prose {
+        margin-top: 52px;
+        max-width: 820px;
+      }
+      section.prose h2 {
+        font-size: 21px;
+        margin: 0 0 12px;
+      }
+      section.prose h3 {
+        font-size: 16px;
+        margin: 22px 0 6px;
+      }
+      section.prose p,
+      section.prose li {
+        color: var(--ink-soft);
+        font-size: 14.5px;
+      }
+      section.prose li {
+        margin-bottom: 6px;
+      }
+      section.prose b,
+      section.prose strong {
+        color: var(--ink);
+      }
+      .reference-table td:first-child {
+        width: 210px;
+        color: var(--ink);
+        font-weight: 600;
+      }
+      .reference-table td:nth-child(2) {
+        width: 120px;
+        color: var(--ink-faint);
+        white-space: nowrap;
+      }
+      .reference-table td:last-child {
+        color: var(--ink-soft);
+      }
+
+      .legend {
+        margin: 20px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+        font-size: 12.5px;
+        color: var(--ink-faint);
+      }
+
+      footer {
+        margin-top: 64px;
+        color: var(--ink-faint);
+        font-size: 12.5px;
+        border-top: 1px solid var(--line);
+        padding-top: 16px;
+      }
+
+      @media (max-width: 720px) {
+        td.what {
+          white-space: normal;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="doc">
+        <h1>Proposed Lesson Order — Modules 1–10</h1>
+      </header>
+
+      <div class="rules">
+        <div class="rule">
+          <b>The target</b
+          ><span
+            >Fluent on grade-1 text: ~60 words correct per minute at 95%+
+            accuracy.</span
+          >
+        </div>
+        <div class="rule">
+          <b>Uppercase first</b
+          ><span
+            >All reading is intentionally uppercase through Lesson 42.
+            Lowercase forms are consolidated in Lesson 43 before lowercase
+            running text begins.</span
+          >
+        </div>
+        <div class="rule">
+          <b>Teach reading from print to sound</b
+          ><span
+            >Readers meet the letters on the page first and decode them into
+            sounds. Organize lessons around one spelling pattern and the sound
+            or sounds it can represent—not around one sound followed by a list
+            of all its possible spellings. Introduce alternative spellings in
+            separate lessons so the reader learns one new visual pattern at a
+            time.</span
+          >
+        </div>
+      </div>
+
+      <!-- ==================== MODULE 1 ==================== -->
+      <section class="module">
+        <div class="module-head">
+          <h2>Module 1 — First Letters, First Words</h2>
+        </div>
+        <p class="module-theme">
+          Introduces the first nine letters and builds the first decodable
+          words.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>New thing</th>
+              <th></th>
+              <th>Details</th>
+              <th>Example words</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">1</td>
+              <td class="what">
+                m, a, t<span class="sub">the only 3-letter lesson</span>
+              </td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail">
+                The first three letters are introduced together so reading can
+                begin immediately.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-exercise">Finger Words</span>
+                  <span class="detail-intro intro-exercise">Elephant Ears</span>
+                  <span class="detail-intro intro-exercise">Teach Tam</span>
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words">mat, am, at, Tam</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">2</td>
+              <td class="what">s</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail"></td>
+
+              <td class="examples">
+                <span class="words">sat, Sam, mats</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">3</td>
+              <td class="what">p</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail">
+                <div class="detail-intros">
+                  <span class="detail-intro intro-concept">Sticky Sounds</span>
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words">pat, tap, map, Pam</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">4</td>
+              <td class="what">i</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail"></td>
+
+              <td class="examples">
+                <span class="words"
+                  ><span class="dolch-word">it</span>, sit, pit, tip, sip</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">5</td>
+              <td class="what">n</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail">
+                <div class="detail-intros">
+                  <span class="detail-intro intro-exercise"
+                    >Imaginary Finger Words</span
+                  >
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  >nap, pin, tin, man, an,
+                  <span class="dolch-word">in</span></span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">6</td>
+              <td class="what">d</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail"></td>
+
+              <td class="examples">
+                <span class="words"
+                  >dad, did, sad, dip, <span class="dolch-word">and</span></span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">7</td>
+              <td class="what">o</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail"></td>
+
+              <td class="examples">
+                <span class="words"
+                  >on, top, pot, dot, mom,
+                  <span class="dolch-word">not</span></span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">8</td>
+              <td class="what">b</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail"></td>
+
+              <td class="examples">
+                <span class="words">bat, bit, tab, Bob</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">9</td>
+              <td class="what">g</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail"></td>
+
+              <td class="examples">
+                <span class="words"
+                  >got, <span class="dolch-word">big</span>, pig, gap, dog</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">10</td>
+              <td class="what">Module 1 Review</td>
+              <td><span class="tag t-review">Review</span></td>
+              <td class="detail"></td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ==================== MODULE 2 ==================== -->
+      <section class="module">
+        <div class="module-head">
+          <h2>Module 2 — Four-Letter Words &amp; the First Special Cases</h2>
+        </div>
+        <p class="module-theme">
+          Adds four-letter words, final s, the first heart words, and seven more
+          consonants.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>New thing</th>
+              <th></th>
+              <th>Details</th>
+              <th>Example words</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">11</td>
+              <td class="what">Ending in S</td>
+              <td><span class="tag t-morph">Word Parts</span></td>
+              <td class="detail">
+                Final s can spell /s/ or /z/ and can mark more than one.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-concept"
+                    >Flexible Sounds</span
+                  >
+                  <span class="detail-intro intro-exercise"
+                    >Buzz Check / Buzzer</span
+                  >
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  >mats /s/, pigs /z/,
+                  <span class="dolch-word">is</span> /z/, his /z/, as /z/, has
+                  /z/</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">12</td>
+              <td class="what">e</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail"></td>
+
+              <td class="examples">
+                <span class="words">bed, pet, ten, net, men, get</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">13</td>
+              <td class="what">h</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail"></td>
+
+              <td class="examples">
+                <span class="words">hat, hit, hop, hen, ham, had, him</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">14</td>
+              <td class="what">Heart Words</td>
+              <td><span class="tag t-heart">Heart Words</span></td>
+              <td class="detail">
+                Introduces high-frequency words with spellings not yet taught.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-concept">Heart Words</span>
+                  <span class="detail-intro intro-exercise">Story Words</span>
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  ><b class="example-label">heart words:</b>
+                  <span class="dolch-word">I</span>,
+                  <span class="dolch-word">a</span>,
+                  <span class="dolch-word">the</span></span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">15</td>
+              <td class="what">l</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail"></td>
+
+              <td class="examples">
+                <span class="words"
+                  >lap, lot, lid, lip,
+                  <span class="dolch-word">help</span></span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">16</td>
+              <td class="what">c</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail">
+                <div class="detail-intros">
+                  <span class="detail-intro intro-exercise">Brain Words</span>
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  >cat, cap, cot, <span class="dolch-word">can</span></span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">17</td>
+              <td class="what">u</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail">
+                Completes the five short-vowel letters.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-exercise"
+                    >Narrative Ninja</span
+                  >
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  ><span class="dolch-word">up</span>, cup, sun, but, bus</span
+                >
+                <span class="words"
+                  ><b class="example-label">heart words:</b> put</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">18</td>
+              <td class="what">r</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail">
+                <div class="detail-intros">
+                  <span class="detail-intro intro-exercise">Word Chains</span>
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  ><span class="dolch-word">run</span>, rat,
+                  <span class="dolch-word">red</span>, rip</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">19</td>
+              <td class="what">z</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail"></td>
+
+              <td class="examples">
+                <span class="words">zip, zap, zig, zag</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">20</td>
+              <td class="what">Module 2 Review</td>
+              <td><span class="tag t-review">Review</span></td>
+              <td class="detail"></td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ==================== MODULE 3 ==================== -->
+      <section class="module">
+        <div class="module-head">
+          <h2>Module 3 — Letter Friends &amp; Five-Letter Words</h2>
+        </div>
+        <p class="module-theme">
+          Introduces consonant digraphs, alternate consonant spellings,
+          five-letter words, and oral syllable counting.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>New thing</th>
+              <th></th>
+              <th>Details</th>
+              <th>Example words</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">21</td>
+              <td class="what">
+                sh<span class="sub">Letter Friends concept</span>
+              </td>
+              <td><span class="tag t-concept">Concept</span></td>
+              <td class="detail">
+                sh spells one sound; five-letter words begin.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-concept">Letter Friends</span>
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words">ship, shop, fish, dish, shut</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">22</td>
+              <td class="what">ch, tch</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                One sound, two spellings. tch commonly follows a short vowel.
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  >chip, chat, chin, much; catch, match, fetch, itch</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">23</td>
+              <td class="what">y</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail">Introduces y as a consonant.</td>
+
+              <td class="examples">
+                <span class="words">yes, yet, yam, yip</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b>
+                  <span class="dolch-word">you</span>, your</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">24</td>
+              <td class="what">k, ck</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                One /k/ sound, two spellings. ck commonly follows a short vowel
+                and never means two /k/s.
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  >kid, kit, Ken, skip; back, sock, click, neck</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">25</td>
+              <td class="what">
+                qu + Meet Syllables<span class="sub">count the beats</span>
+              </td>
+              <td>
+                <span class="tag t-pattern">Pattern</span>
+                <span class="tag t-concept">Concept</span>
+              </td>
+              <td class="detail">
+                q is paired with u. Oral syllable counting begins.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-concept">Meet Syllables</span>
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words">quit, quiz, quick</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">26</td>
+              <td class="what">f, ph</td>
+              <td>
+                <span class="tag t-letter">Letter</span>
+                <span class="tag t-pattern">Pattern</span>
+              </td>
+              <td class="detail">f and ph both spell /f/.</td>
+
+              <td class="examples">
+                <span class="words"
+                  >fan, fit, fun, fog, fast, if; phone, graph</span
+                >
+                <span class="words"
+                  ><b class="example-label">heart words:</b> from</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">27</td>
+              <td class="what">ff, ll, ss, zz</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">Doubled letters make one sound.</td>
+
+              <td class="examples">
+                <span class="words"
+                  >off, bell, miss, buzz, hill, will, well</span
+                >
+                <span class="words"
+                  ><b class="example-label">heart words:</b> full</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">28</td>
+              <td class="what">th — both sounds</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">th has voiced and unvoiced sounds.</td>
+
+              <td class="examples">
+                <span class="words">this, that, them, then</span>
+                <span class="words">thin, with, math, bath</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> they, there</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">29</td>
+              <td class="what">w, wh</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail">Introduces w and wh.</td>
+
+              <td class="examples">
+                <span class="words">wet, win, wag; when, whip, which</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> was, want, what,
+                  <span class="dolch-word">where</span>, who</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">30</td>
+              <td class="what">Module 3 Review</td>
+              <td><span class="tag t-review">Review</span></td>
+              <td class="detail"></td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ==================== MODULE 4 ==================== -->
+      <section class="module">
+        <div class="module-head">
+          <h2>Module 4 — Long Vowels &amp; Magic&nbsp;E</h2>
+        </div>
+        <p class="module-theme">
+          Introduces long vowels and the five Magic E spellings while completing
+          the alphabet.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>New thing</th>
+              <th></th>
+              <th>Details</th>
+              <th>Example words</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">31</td>
+              <td class="what">
+                Meet the Vowels<span class="sub"
+                  >+ the long-vowel discovery</span
+                >
+              </td>
+              <td><span class="tag t-concept">Concept</span></td>
+              <td class="detail">
+                Vowels can spell short sounds or their names.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-concept"
+                    >Meet the Vowels</span
+                  >
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  >he, she, <span class="dolch-word">we</span>,
+                  <span class="dolch-word">me</span>, be, hi, no, so,
+                  <span class="dolch-word">go</span></span
+                >
+                <span class="words">she/he/we</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> oh</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">32</td>
+              <td class="what">
+                Magic E → i_e<span class="sub">the concept lesson</span>
+              </td>
+              <td><span class="tag t-concept">Concept</span></td>
+              <td class="detail">
+                The final e is silent and makes the preceding vowel long.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-concept">Magic E</span>
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words">I</span>
+                <span class="words">hi</span>
+                <span class="words"
+                  >bit→bite, hid→hide, kit→kite, slid→slide, rip→ripe,
+                  spin→spine</span
+                >
+                <span class="words">bike, hike, like, five, time</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> give</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">33</td>
+              <td class="what">
+                j + dge<span class="sub">tch's sibling</span>
+              </td>
+              <td>
+                <span class="tag t-letter">Letter</span>
+                <span class="tag t-pattern">Pattern</span>
+              </td>
+              <td class="detail">
+                j and dge spell /j/; dge commonly follows a short vowel.
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  >jam, jet, jog, jab, just,
+                  <span class="dolch-word">jump</span>; badge, bridge, fudge,
+                  edge</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">34</td>
+              <td class="what">a_e</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">a_e spells /ā/.</td>
+
+              <td class="examples">
+                <span class="words"
+                  >cape, made, late, gave,
+                  <span class="dolch-word">make</span>, take, came</span
+                >
+                <span class="words">cap→cape, tap→tape, mad→made</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">35</td>
+              <td class="what">v</td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail">v spells /v/.</td>
+
+              <td class="examples">
+                <span class="words">van, vet, vast; gave, five</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> have, of</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">36</td>
+              <td class="what">o_e</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">o_e spells /ō/.</td>
+
+              <td class="examples">
+                <span class="words">home, bone, note, rope, woke</span>
+                <span class="words">no, go, so</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b>
+                  <span class="dolch-word">to</span>, do,
+                  <span class="dolch-word">come</span>, some,
+                  <span class="dolch-word">one</span>, love</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">37</td>
+              <td class="what">x<span class="sub">🎉 all 26 letters!</span></td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail">Completes all 26 letters.</td>
+
+              <td class="examples">
+                <span class="words">fox, box, six, mix, wax</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">38</td>
+              <td class="what">u_e</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">u_e spells long u.</td>
+
+              <td class="examples">
+                <span class="words">cute, mule, use, cube</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">39</td>
+              <td class="what">e_e<span class="sub">Magic E complete</span></td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">e_e is a rare spelling of /ē/.</td>
+
+              <td class="examples">
+                <span class="words">these, Pete</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b>
+                  <span class="dolch-word">here</span></span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">40</td>
+              <td class="what">
+                -old and -ost<span class="sub">small long-o families</span>
+              </td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                In these small word families, o spells /ō/ before two
+                consonants. Treat them as families, not a general rule.
+              </td>
+
+              <td class="examples">
+                <span class="words">old, told, cold, gold, hold</span>
+                <span class="words">most, post, host</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">41</td>
+              <td class="what">
+                -ind and -ild<span class="sub">small long-i families</span>
+              </td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                In these small word families, i spells /ī/ before two
+                consonants. Treat them as families, not a general rule.
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  ><span class="dolch-word">find</span>, kind, mind,
+                  behind</span
+                >
+                <span class="words">child, wild</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">42</td>
+              <td class="what">Module 4 Review</td>
+              <td><span class="tag t-review">Review</span></td>
+              <td class="detail"></td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ==================== MODULE 5 ==================== -->
+      <section class="module">
+        <div class="module-head">
+          <h2>Module 5 — Lowercase &amp; Big-Kid Words</h2>
+        </div>
+        <p class="module-theme">
+          Moves into lowercase text, soft c and g, two-syllable words, common
+          endings, open syllables, and vowel y.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>New thing</th>
+              <th></th>
+              <th>Details</th>
+              <th>Example words</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">43</td>
+              <td class="what">
+                Lowercase letters<span class="sub"
+                  >one consolidation lesson</span
+                >
+              </td>
+              <td><span class="tag t-letter">Letter</span></td>
+              <td class="detail">
+                Consolidates lowercase forms, especially letters whose shapes
+                differ from their capitals.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-concept"
+                    >Lowercase Telling-Apart</span
+                  >
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  >c/C, o/O, s/S, v, w, x, z, k, p, t, u…</span
+                >
+                <span class="words">a, e, g, q, r</span>
+                <span class="words">b/d</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">44</td>
+              <td class="what">Soft c<span class="sub">c + e</span></td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">c followed by e commonly spells /s/.</td>
+
+              <td class="examples">
+                <span class="words">face, race, ice, mice, nice, space</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> once</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">45</td>
+              <td class="what">Soft g<span class="sub">g + e</span></td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">g followed by e commonly spells /j/.</td>
+
+              <td class="examples">
+                <span class="words">age, page, cage, stage, huge</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">46</td>
+              <td class="what">
+                Reading Two-Syllable Words<span class="sub"
+                  >compounds → split</span
+                >
+              </td>
+              <td><span class="tag t-strategy">Strategy</span></td>
+              <td class="detail">
+                Introduces reading two-syllable words.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-concept"
+                    >Two-Syllable Splitting</span
+                  >
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words">sunset, hotdog, laptop, catnip</span>
+                <span class="words"
+                  >rabbit, napkin, muffin, picnic, into</span
+                >
+                <span class="words"
+                  ><b class="example-label">heart words:</b> people</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">47</td>
+              <td class="what">-es endings</td>
+              <td><span class="tag t-morph">Word Parts</span></td>
+              <td class="detail">
+                After s, x, sh, ch, or tch, plural -es spells /iz/ and adds a
+                syllable.
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  >dishes, boxes, foxes, catches, wishes, buses</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">48</td>
+              <td class="what">
+                ng and nk<span class="sub">nasal endings</span>
+              </td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                ng spells one nasal sound. In nk, n makes that same nasal sound
+                and k adds /k/.
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  >sung, long, hung, song, king, ring, sing</span
+                >
+                <span class="words">sink, pink, bank, think, trunk</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">49</td>
+              <td class="what">-ing</td>
+              <td><span class="tag t-morph">Word Parts</span></td>
+              <td class="detail">
+                -ing marks an action in progress and adds a syllable.
+              </td>
+
+              <td class="examples">
+                <span class="words">jumping, singing, fishing, camping</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">50</td>
+              <td class="what">Consonant-le</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                Final consonant-le forms a common unstressed syllable.
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  ><span class="dolch-word">little</span>, apple, bottle,
+                  middle, puddle</span
+                >
+                <span class="words">lit-tle</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">51</td>
+              <td class="what">-ed endings</td>
+              <td><span class="tag t-morph">Word Parts</span></td>
+              <td class="detail">
+                -ed marks past tense and can spell /t/, /d/, or /id/.
+              </td>
+
+              <td class="examples">
+                <span class="words">jumped /t/, smiled /d/, landed /id/</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">52</td>
+              <td class="what">
+                Open chunks<span class="sub"
+                  >open + closed &amp; the Lazy Vowel</span
+                >
+              </td>
+              <td><span class="tag t-strategy">Strategy</span></td>
+              <td class="detail">
+                Open syllables use long vowels; unstressed vowels may reduce to
+                /uh/.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-concept">Open Chunks</span>
+                  <span class="detail-intro intro-concept">Lazy Vowel</span>
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words">he, no, go</span>
+                <span class="words">o-pen, pi-lot, tu-lip, mu-sic, bo-nus</span>
+                <span class="words">wagon, lemon, seven, even</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">53</td>
+              <td class="what">
+                Vowel Y<span class="sub">y's two vowel sounds</span>
+              </td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                Final y commonly spells /ī/ in short words and /ē/ in longer
+                words.
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  ><span class="dolch-word">my</span>, try, why, fly, by,
+                  sky</span
+                >
+                <span class="words"
+                  >happy, <span class="dolch-word">funny</span>, silly,
+                  baby, only, really, quickly</span
+                >
+                <span class="words"
+                  ><b class="example-label">heart words:</b> many, any</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">54</td>
+              <td class="what">Module 5 Review</td>
+              <td><span class="tag t-review">Review</span></td>
+              <td class="detail"></td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ==================== MODULE 6 ==================== -->
+      <section class="module">
+        <div class="module-head">
+          <h2>Module 6 — Vowel Teams</h2>
+        </div>
+        <p class="module-theme">
+          Introduces common vowel teams and the aw sound family.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>New thing</th>
+              <th></th>
+              <th>Details</th>
+              <th>Example words</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">55</td>
+              <td class="what">
+                Vowel Teams → ee<span class="sub">the concept lesson</span>
+              </td>
+              <td><span class="tag t-concept">Concept</span></td>
+              <td class="detail">
+                Two vowels can work together to spell one sound.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-concept">Vowel Teams</span>
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  ><span class="dolch-word">see</span>, tree,
+                  <span class="dolch-word">three</span>, feet, keep, sleep</span
+                >
+                <span class="words"
+                  ><b class="example-label">heart words:</b> been</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">56</td>
+              <td class="what">ea</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">ea commonly spells /ē/ and sometimes /ĕ/.</td>
+
+              <td class="examples">
+                <span class="words">eat, read, team, beach</span>
+                <span class="words">bread, head</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> great</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">57</td>
+              <td class="what">ai</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">The /ā/ vowel team used inside words.</td>
+
+              <td class="examples">
+                <span class="words">rain, wait, mail, paint</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b>
+                  <span class="dolch-word">said</span>, again</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">58</td>
+              <td class="what">ay</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">ay commonly spells /ā/ at word ends.</td>
+
+              <td class="examples">
+                <span class="words"
+                  ><span class="dolch-word">play</span>, day, say, way,
+                  <span class="dolch-word">away</span></span
+                >
+                <span class="words"
+                  ><b class="example-label">heart words:</b> says</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">59</td>
+              <td class="what">oa</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">oa spells /ō/.</td>
+
+              <td class="examples">
+                <span class="words">boat, road, soap, coat, toast</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">60</td>
+              <td class="what">oo — both sounds</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">oo has two common sounds.</td>
+
+              <td class="examples">
+                <span class="words">moon, food, zoo, too, soon, room</span>
+                <span class="words"
+                  >book, <span class="dolch-word">look</span>, good</span
+                >
+                <span class="words"
+                  ><b class="example-label">heart words:</b>
+                  <span class="dolch-word">two</span>, school</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">61</td>
+              <td class="what">aw</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                The /aw/ sound at the ends and inside words.
+              </td>
+
+              <td class="examples">
+                <span class="words">saw, draw, yawn, claw</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">62</td>
+              <td class="what">au</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                A second spelling of /aw/, usually inside words.
+              </td>
+
+              <td class="examples">
+                <span class="words">haul, fault, August, because</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">63</td>
+              <td class="what">all and al</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                all is a dependable chunk. al can spell the sound in always or
+                the sound in calm; in walk and talk, l is silent.
+              </td>
+
+              <td class="examples">
+                <span class="words">ball, call, all, small</span>
+                <span class="words"
+                  ><span class="dolch-word">always</span>, also, almost,
+                  calm</span
+                >
+                <span class="words"
+                  ><b class="example-label">heart words:</b> walk, talk</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">64</td>
+              <td class="what">Module 6 Review</td>
+              <td><span class="tag t-review">Review</span></td>
+              <td class="detail"></td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ==================== MODULE 7 ==================== -->
+      <section class="module">
+        <div class="module-head">
+          <h2>Module 7 — More Vowel Teams &amp; Sound Adventures</h2>
+        </div>
+        <p class="module-theme">
+          Adds reading mileage, more vowel teams, flexible vowel spellings, and
+          contractions.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>New thing</th>
+              <th></th>
+              <th>Details</th>
+              <th>Example words</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">65</td>
+              <td class="what">Just-Read Day I</td>
+              <td><span class="tag t-fluency">Fluency</span></td>
+              <td class="detail">
+                Fluency practice; no new spelling.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-exercise"
+                    >Just-Read Days</span
+                  >
+                  <span class="detail-intro intro-exercise"
+                    >Repeated Reading</span
+                  >
+                </div>
+              </td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+            <tr>
+              <td class="num">66</td>
+              <td class="what">ie — both sounds</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                ie commonly spells /ī/ at word ends and /ē/ inside words.
+              </td>
+
+              <td class="examples">
+                <span class="words">pie, tie, lie</span>
+                <span class="words">field, shield, believe</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> friend</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">67</td>
+              <td class="what">ou — four sounds</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                ou can spell the vowel sounds in out, soup, young, or could.
+              </td>
+
+              <td class="examples">
+                <span class="words">house, out, loud, round, about</span>
+                <span class="words">soup, group</span>
+                <span class="words">young, touch</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> could, would,
+                  should, four, our</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">68</td>
+              <td class="what">ow — both sounds</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                ow spells the sound in cow or the /ō/ sound in snow.
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  >cow, how, now, <span class="dolch-word">down</span></span
+                >
+                <span class="words"
+                  >snow, grow, <span class="dolch-word">yellow</span>,
+                  window</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">69</td>
+              <td class="what">oi</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">The /oy/ sound inside words.</td>
+
+              <td class="examples">
+                <span class="words">boil, coin, join, soil</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">70</td>
+              <td class="what">oy</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">The same sound at word-ends.</td>
+
+              <td class="examples">
+                <span class="words">boy, toy, joy, enjoy</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">71</td>
+              <td class="what">ew</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">ew commonly spells long u or /oo/.</td>
+
+              <td class="examples">
+                <span class="words">new, flew, grew, chew</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">72</td>
+              <td class="what">ue</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                ue commonly spells long u or /oo/ at word ends.
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  ><span class="dolch-word">blue</span>, glue, true, clue</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">73</td>
+              <td class="what">Contractions</td>
+              <td><span class="tag t-morph">Word Parts</span></td>
+              <td class="detail">An apostrophe marks omitted letters.</td>
+
+              <td class="examples">
+                <span class="words"
+                  >it's, I'm, don't, that's, didn't, I'll, you're, let's,
+                  can't, he's, there's, wasn't, you'll, couldn't, I've, what's,
+                  they're, we're, won't, doesn't, she's, we'll, isn't, I'd</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">74</td>
+              <td class="what">Module 7 Review</td>
+              <td><span class="tag t-review">Review</span></td>
+              <td class="detail"></td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ==================== MODULE 8 ==================== -->
+      <section class="module">
+        <div class="module-head">
+          <h2>Module 8 — Reading Mileage &amp; Bossy R</h2>
+        </div>
+        <p class="module-theme">
+          Introduces Bossy R, its core spellings, unstressed endings, and common
+          r-controlled variants.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>New thing</th>
+              <th></th>
+              <th>Details</th>
+              <th>Example words</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">75</td>
+              <td class="what">
+                Just-Read Day II<span class="sub">+ Fluency Check I</span>
+              </td>
+              <td><span class="tag t-fluency">Fluency</span></td>
+              <td class="detail">
+                Fluency practice; no new spelling.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-exercise"
+                    >Fluency Checks I–III</span
+                  >
+                </div>
+              </td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+            <tr>
+              <td class="num">76</td>
+              <td class="what">
+                Bossy R → ar<span class="sub">the concept lesson</span>
+              </td>
+              <td><span class="tag t-concept">Concept</span></td>
+              <td class="detail">
+                r changes the sound of the vowel before it; ar spells /ar/.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-concept">Bossy R</span>
+                </div>
+              </td>
+
+              <td class="examples">
+                <span class="words">car, star, park, farm, hard</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> are, warm</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">77</td>
+              <td class="what">or</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">or spells /or/.</td>
+
+              <td class="examples">
+                <span class="words"
+                  >or, fork, corn, storm, sport,
+                  <span class="dolch-word">for</span></span
+                >
+                <span class="words"
+                  ><b class="example-label">heart words:</b> world, work, word,
+                  door, floor</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">78</td>
+              <td class="what">er</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                er commonly spells /er/, especially in final syllables.
+              </td>
+
+              <td class="examples">
+                <span class="words">her, fern, over, never, water</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> were, other,
+                  mother</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">79</td>
+              <td class="what">ir</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">A second spelling of the /er/ sound.</td>
+
+              <td class="examples">
+                <span class="words">bird, girl, first, shirt</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">80</td>
+              <td class="what">ur</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">er, ir, and ur spell the same /er/ sound.</td>
+
+              <td class="examples">
+                <span class="words">fur, turn, hurt, curl</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> sure</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">81</td>
+              <td class="what">
+                ar and or can say /er/<span class="sub"
+                  >in unstressed endings</span
+                >
+              </td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                In an unstressed final syllable, ar or or can spell /er/.
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  >dollar, collar, polar, solar; doctor, actor, motor,
+                  author</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">82</td>
+              <td class="what">are<span class="sub">an r-flavor</span></td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">are spells the r-controlled sound in care.</td>
+
+              <td class="examples">
+                <span class="words">care, share, dare, spare</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">83</td>
+              <td class="what">air<span class="sub">an r-flavor</span></td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                air spells the same r-controlled sound as are.
+              </td>
+
+              <td class="examples">
+                <span class="words">chair, hair, fair, pair</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">84</td>
+              <td class="what">
+                ear — four sounds<span class="sub">an r-flavor</span>
+              </td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                ear can spell the r-controlled sounds in bear, hear, heard, or
+                heart.
+              </td>
+
+              <td class="examples">
+                <span class="words">bear, wear</span>
+                <span class="words">hear, near</span>
+                <span class="words">heard, learn, earth, early</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> heart</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">85</td>
+              <td class="what">ore<span class="sub">an r-flavor</span></td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">A second spelling of the /or/ sound.</td>
+
+              <td class="examples">
+                <span class="words">more, store, before, shore</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">86</td>
+              <td class="what">-er &amp; -est</td>
+              <td><span class="tag t-morph">Word Parts</span></td>
+              <td class="detail">
+                -er compares two; -est compares three or more.
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  >bigger/biggest, faster/fastest, taller/tallest</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">87</td>
+              <td class="what">Module 8 Review</td>
+              <td><span class="tag t-review">Review</span></td>
+              <td class="detail"></td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ==================== MODULE 9 ==================== -->
+      <section class="module">
+        <div class="module-head">
+          <h2>Module 9 — Fluency &amp; Alternate Spellings</h2>
+        </div>
+        <p class="module-theme">
+          Builds fluency and introduces rare or alternate spellings.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>New thing</th>
+              <th></th>
+              <th>Details</th>
+              <th>Example words</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">88</td>
+              <td class="what">
+                Just-Read Day III<span class="sub">+ Fluency Check II</span>
+              </td>
+              <td><span class="tag t-fluency">Fluency</span></td>
+              <td class="detail">Fluency practice; no new spelling.</td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+            <tr>
+              <td class="num">89</td>
+              <td class="what">igh</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">igh spells /ī/.</td>
+
+              <td class="examples">
+                <span class="words">night, light, right, high, bright</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">90</td>
+              <td class="what">eigh</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">A rare but real spelling of /ā/.</td>
+
+              <td class="examples">
+                <span class="words">eight, weigh, neighbor, sleigh</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">91</td>
+              <td class="what">aught</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                A dependable /awt/ chunk in a small word family.
+              </td>
+
+              <td class="examples">
+                <span class="words">caught, taught, daughter, naughty</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> laugh</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">92</td>
+              <td class="what">
+                ough<span class="sub">extended Heart Words lesson</span>
+              </td>
+              <td><span class="tag t-heart">Heart Words</span></td>
+              <td class="detail">
+                A focused set of high-frequency words in which ough has several
+                pronunciations.
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  ><b class="example-label">heart words:</b> though, through,
+                  tough, rough, enough, cough, thought, bought, brought,
+                  dough</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">93</td>
+              <td class="what">oe</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                oe can spell /ō/; in heroes, poem, and poet, o and e cross an
+                ending or syllable boundary.
+              </td>
+
+              <td class="examples">
+                <span class="words">toe, doe</span>
+                <span class="words">heroes, poem, poet</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> shoe, does</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">94</td>
+              <td class="what">ey — both sounds</td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">
+                ey can spell /ē/ as in key or /ā/ as in they.
+                <i>Their</i> is introduced here as a related heart word after
+                <i>they</i> is secure, not as an ey example.
+              </td>
+
+              <td class="examples">
+                <span class="words">key, monkey, money, valley</span>
+                <span class="words">they, hey, grey, prey</span>
+                <span class="words"
+                  ><b class="example-label">heart words:</b> their, eyes</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">95</td>
+              <td class="what">Module 9 Review</td>
+              <td><span class="tag t-review">Review</span></td>
+              <td class="detail"></td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ==================== MODULE 10 ==================== -->
+      <section class="module">
+        <div class="module-head">
+          <h2>Module 10 — Advanced Spellings &amp; Graduation</h2>
+        </div>
+        <p class="module-theme">
+          Bridges to independent reading through expression, silent letters,
+          longer words, prefixes, review, and graduation.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>New thing</th>
+              <th></th>
+              <th>Details</th>
+              <th>Example words</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">96</td>
+              <td class="what">
+                Just-Read Day IV<span class="sub"
+                  >a real book + expression</span
+                >
+              </td>
+              <td><span class="tag t-fluency">Fluency</span></td>
+              <td class="detail">
+                Fluency and expression practice; no new spelling.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-concept"
+                    >Reading with Expression</span
+                  >
+                </div>
+              </td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+            <tr>
+              <td class="num">97</td>
+              <td class="what">kn<span class="sub">silent letters</span></td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">The k is silent.</td>
+
+              <td class="examples">
+                <span class="words">knee, know, knit</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">98</td>
+              <td class="what">wr<span class="sub">silent letters</span></td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">The w is silent.</td>
+
+              <td class="examples">
+                <span class="words">write, wrong, wrap</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">99</td>
+              <td class="what">mb<span class="sub">silent letters</span></td>
+              <td><span class="tag t-pattern">Pattern</span></td>
+              <td class="detail">The final b is silent.</td>
+
+              <td class="examples">
+                <span class="words">lamb, climb, comb</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">100</td>
+              <td class="what">Three-syllable words</td>
+              <td><span class="tag t-strategy">Strategy</span></td>
+              <td class="detail">
+                Extends syllable reading to three-syllable words.
+              </td>
+
+              <td class="examples">
+                <span class="words"
+                  >banana, beautiful, wonderful, finally, suddenly, yesterday,
+                  grandmother, butterfly, every</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="num">101</td>
+              <td class="what">un- &amp; re-</td>
+              <td><span class="tag t-morph">Word Parts</span></td>
+              <td class="detail">
+                un- means not or opposite; re- means again.
+              </td>
+
+              <td class="examples">
+                <span class="words">undo, redo, unlock, reread</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="num">102</td>
+              <td class="what">
+                Choose your own book<span class="sub">the library bridge</span>
+              </td>
+              <td><span class="tag t-fluency">Fluency</span></td>
+              <td class="detail">
+                Independent-book selection and reading practice.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-exercise"
+                    >Five-Finger Rule</span
+                  >
+                </div>
+              </td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+            <tr>
+              <td class="num">103</td>
+              <td class="what">Cumulative Review</td>
+              <td><span class="tag t-review">Review</span></td>
+              <td class="detail">
+                Cumulative review and Fluency Check III.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-exercise"
+                    >Cumulative Review</span
+                  >
+                </div>
+              </td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+            <tr>
+              <td class="num">104</td>
+              <td class="what">Graduation 🎓</td>
+              <td><span class="tag t-review">Review</span></td>
+              <td class="detail">
+                Independent final reading and graduation.
+                <div class="detail-intros">
+                  <span class="detail-intro intro-exercise">Graduation</span>
+                </div>
+              </td>
+
+              <td class="examples"><span class="none">—</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="prose">
+        <h2>Concepts &amp; Exercises</h2>
+        <p>
+          Lesson rows show what is taught. This reference explains the named
+          routines and strategies used to teach and practice it. Purple marks a
+          concept or strategy; teal marks an exercise or recurring routine.
+        </p>
+        <table class="reference-table">
+          <thead>
+            <tr>
+              <th>Concept or exercise</th>
+              <th>First introduced</th>
+              <th>How it works</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="reference-label reference-exercise"
+                  >Finger Words</span
+                >
+              </td>
+              <td>Lesson 1</td>
+              <td>
+                Give each sound a finger, touch and say the sounds, then slide
+                across the knuckles to blend the word.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-exercise"
+                  >Elephant Ears</span
+                >
+              </td>
+              <td>Lesson 1</td>
+              <td>
+                Say a word aloud. The reader gives a thumbs-up if it contains
+                the target sound and a thumbs-down if it does not.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-exercise"
+                  >Teach Tam</span
+                >
+              </td>
+              <td>Lesson 1</td>
+              <td>
+                At the end of the lesson, the reader teaches Tam the new idea in
+                their own words. Explaining it provides a quick understanding
+                check.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-concept"
+                  >Sticky Sounds</span
+                >
+              </td>
+              <td>Lesson 3</td>
+              <td>
+                Identify sounds that connect smoothly to the sound after them
+                and blend through the connection without adding an extra vowel.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-exercise"
+                  >Imaginary Finger Words</span
+                >
+              </td>
+              <td>Lesson 5</td>
+              <td>
+                Perform Finger Words mentally, without using a hand, as a bridge
+                toward automatic decoding.
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <span class="reference-label reference-exercise"
+                  >Buzz Check / Buzzer</span
+                >
+              </td>
+              <td>Lesson 11</td>
+              <td>
+                Notice whether the voice box buzzes to distinguish voiced and
+                unvoiced sounds, including the two sounds of s and th.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-concept"
+                  >Heart Words</span
+                >
+              </td>
+              <td>Lesson 14</td>
+              <td>
+                Map the sounds the reader already knows, identify the unexpected
+                spelling, and learn only that part by heart.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-exercise"
+                  >Story Words</span
+                >
+              </td>
+              <td>Lesson 14</td>
+              <td>
+                Find a newly learned heart word inside real sentences, then read
+                each complete sentence.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-exercise"
+                  >Brain Words</span
+                >
+              </td>
+              <td>Lesson 16</td>
+              <td>
+                Quickly reread previously decoded words so they become instantly
+                recognizable and free attention for meaning.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-exercise"
+                  >Narrative Ninja</span
+                >
+              </td>
+              <td>Lesson 17</td>
+              <td>
+                Reread a sentence carefully, hear an adult model it, then read
+                it smoothly with expression.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-exercise"
+                  >Word Chains</span
+                >
+              </td>
+              <td>Lesson 18</td>
+              <td>
+                Read a sequence in which one letter changes at a time, such as
+                ran → ram → ramp → camp.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-concept"
+                  >Letter Friends</span
+                >
+              </td>
+              <td>Lesson 21</td>
+              <td>
+                Treat two letters that spell one sound as a single unit, such as
+                sh or ch. Find the pair before blending the word.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-concept"
+                  >Meet Syllables</span
+                >
+              </td>
+              <td>Lesson 25</td>
+              <td>
+                Listen to spoken words and clap or count their beats. This is
+                oral practice only until syllable reading begins.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-concept"
+                  >Meet the Vowels</span
+                >
+              </td>
+              <td>Lesson 31</td>
+              <td>
+                Identify the five vowel letters and discover that each can spell
+                a short sound or its letter name.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-concept">Magic E</span>
+              </td>
+              <td>Lesson 32</td>
+              <td>
+                A silent final e changes the preceding vowel from its short
+                sound to its long sound.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-concept"
+                  >Lowercase Telling-Apart</span
+                >
+              </td>
+              <td>Lesson 43</td>
+              <td>
+                Match capitals with lowercase partners, then spend extra time
+                comparing shape-shifters and confusable forms such as b and d.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-concept"
+                  >Two-Syllable Splitting</span
+                >
+              </td>
+              <td>Lesson 46</td>
+              <td>
+                Begin with compounds, then find the vowels, split between
+                consonants, read each chunk, and join the chunks.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-concept"
+                  >Open Chunks</span
+                >
+              </td>
+              <td>Lesson 52</td>
+              <td>
+                When a syllable ends in a vowel, try the vowel's long sound
+                before joining the chunks.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-concept"
+                  >Lazy Vowel</span
+                >
+              </td>
+              <td>Lesson 52</td>
+              <td>
+                In an unstressed syllable, try the relaxed /uh/ sound when the
+                carefully decoded word sounds almost right.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-concept"
+                  >Flexible Sounds</span
+                >
+              </td>
+              <td>Lesson 11</td>
+              <td>
+                Try the spelling's first common sound; if it does not form a
+                real word, switch to the other taught sound.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-concept"
+                  >Vowel Teams</span
+                >
+              </td>
+              <td>Lesson 55</td>
+              <td>
+                Treat two neighboring vowel letters that spell one sound as a
+                single unit.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-exercise"
+                  >Just-Read Days</span
+                >
+              </td>
+              <td>Lesson 65</td>
+              <td>
+                Add no new spelling. Read a longer connected text for accuracy,
+                smoothness, stamina, and enjoyment.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-exercise"
+                  >Repeated Reading</span
+                >
+              </td>
+              <td>Lesson 65</td>
+              <td>
+                Read the same passage again, moving from accurate decoding
+                toward smooth, expressive reading.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-exercise"
+                  >Fluency Checks I–III</span
+                >
+              </td>
+              <td>Lesson 75</td>
+              <td>
+                Use an unpracticed timed passage to measure accurate words per
+                minute and chart growth. The final check uses two grade-1
+                passages and keeps the stronger score.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-concept">Bossy R</span>
+              </td>
+              <td>Lesson 76</td>
+              <td>
+                Notice that r changes the vowel sound before it, then connect
+                ar, or, er, ir, ur, and later r-controlled spellings.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-concept"
+                  >Reading with Expression</span
+                >
+              </td>
+              <td>Lesson 96</td>
+              <td>
+                Use punctuation as a performance guide: questions rise,
+                exclamations carry energy, and quotation marks signal dialogue.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-exercise"
+                  >Five-Finger Rule</span
+                >
+              </td>
+              <td>Lesson 102</td>
+              <td>
+                Read one page of a possible independent book and raise one
+                finger for each stuck word. Five fingers means save the book for
+                later.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-exercise"
+                  >Cumulative Review</span
+                >
+              </td>
+              <td>Lesson 103</td>
+              <td>
+                Revisit the major patterns, heart words, books, and games from
+                all ten modules before the final fluency check.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="reference-label reference-exercise"
+                  >Graduation</span
+                >
+              </td>
+              <td>Lesson 104</td>
+              <td>
+                The reader completes a final book independently, celebrates the
+                milestone, and receives guidance for continued daily reading.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="prose">
+        <h2>Dolch Pre-K Word Coverage</h2>
+        <p>
+          All 40 words are now introduced in the lesson sequence. Decodable
+          words appear in the example list for the lesson that makes them
+          readable; irregular words appear as heart words.
+        </p>
+        <h3>Naturally decoded in lesson examples</h3>
+        <p>
+          <i
+            >and, away, big, blue, can, down, for, funny, go, help, in, is, it,
+            find, jump, little, look, make, me, my, not, play, red, run, see,
+            three, up, we, yellow</i
+          >
+        </p>
+        <h3>Introduced as heart words</h3>
+        <p>
+          <i>a, come, here, I, one, said, the, to, two, where, you</i>
+        </p>
+      </section>
+
+      <section class="prose">
+        <h2>Rule Before the Contractions Lesson</h2>
+        <div class="note">
+          <strong
+            >Before Lesson 73, make sure every contraction's full phrase has
+            already been practiced in earlier lesson sentences or books.</strong
+          >
+          The reader should be able to read and understand the uncontracted
+          phrase before learning the shortened form with an apostrophe.
+        </div>
+        <p>
+          Practice <i>cannot</i>, <i>it is</i>, <i>I am</i>, <i>I am not</i>,
+          <i>do not</i>, <i>that is</i>, <i>did not</i>, <i>I will</i>,
+          <i>you are</i>, <i>let us</i>, <i>he is</i>, <i>there is</i>,
+          <i>was not</i>, <i>you will</i>, <i>could not</i>, <i>I have</i>,
+          <i>what is</i>, <i>they are</i>, <i>we are</i>, <i>will not</i>,
+          <i>does not</i>, <i>she is</i>, <i>we will</i>, <i>is not</i>, and
+          <i>I would</i> or <i>I had</i> before introducing their contracted
+          forms.
+        </p>
+      </section>
+
+      <section class="prose">
+        <h2>Leftover Top-500 Words</h2>
+        <p>
+          These frequent words are not yet explicitly taught or listed. The
+          table excludes ordinary inflections, words already decodable from the
+          taught code, and most proper names. Ranks use CPB Raw Freq in
+          <i>CPB(Lexicon).xlsx</i>.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>CPB rank</th>
+              <th>Suggested lesson</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><i>very</i></td>
+              <td>80</td>
+              <td>Lesson 53 — Vowel Y example</td>
+            </tr>
+            <tr>
+              <td><i>Christmas</i></td>
+              <td>151</td>
+              <td>New late <i>ch</i> revisit: /k/ and silent t</td>
+            </tr>
+            <tr>
+              <td><i>Mr.</i></td>
+              <td>157</td>
+              <td>Lesson 43 — Lowercase letters + abbreviations</td>
+            </tr>
+            <tr>
+              <td><i>children</i></td>
+              <td>221</td>
+              <td>Lesson 41 — after <i>child</i>, as an irregular plural</td>
+            </tr>
+            <tr>
+              <td><i>swallowed</i></td>
+              <td>239</td>
+              <td>Lesson 68 — ow, as a heart word</td>
+            </tr>
+            <tr>
+              <td><i>Mrs.</i></td>
+              <td>245</td>
+              <td>Lesson 43 — Lowercase letters + abbreviations</td>
+            </tr>
+            <tr>
+              <td><i>favorite</i></td>
+              <td>267</td>
+              <td>Lesson 100 — Three-syllable words</td>
+            </tr>
+            <tr>
+              <td><i>special</i></td>
+              <td>291</td>
+              <td>New Module 10 advanced-ending heart word</td>
+            </tr>
+            <tr>
+              <td><i>done</i></td>
+              <td>326</td>
+              <td>Lesson 36 — o_e heart word</td>
+            </tr>
+            <tr>
+              <td><i>father</i></td>
+              <td>354</td>
+              <td>Lesson 28 — th heart word</td>
+            </tr>
+            <tr>
+              <td><i>whole</i></td>
+              <td>361</td>
+              <td>Lesson 36 — o_e heart word</td>
+            </tr>
+            <tr>
+              <td><i>color</i></td>
+              <td>412</td>
+              <td>Lesson 78 — er heart word</td>
+            </tr>
+            <tr>
+              <td><i>gone</i></td>
+              <td>414</td>
+              <td>Lesson 36 — o_e heart word</td>
+            </tr>
+            <tr>
+              <td><i>live</i></td>
+              <td>422</td>
+              <td>Lesson 32 — i_e heart word</td>
+            </tr>
+            <tr>
+              <td><i>both</i></td>
+              <td>427</td>
+              <td>Lesson 28 — th heart word</td>
+            </tr>
+            <tr>
+              <td><i>front</i></td>
+              <td>439</td>
+              <td>Lesson 26 — beside <i>from</i></td>
+            </tr>
+            <tr>
+              <td><i>course</i></td>
+              <td>481</td>
+              <td>Lesson 67 — ou heart word</td>
+            </tr>
+            <tr>
+              <td><i>pretty</i></td>
+              <td>490</td>
+              <td>Lesson 53 — Vowel Y heart word</td>
+            </tr>
+            <tr>
+              <td><i>quiet</i></td>
+              <td>496</td>
+              <td>Lesson 46 — Two-Syllable Words</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer>Bookroo Learn to Read</footer>
+    </div>
+  </body>
+</html>
