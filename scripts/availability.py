@@ -14,6 +14,10 @@ already, which take priority anyway).
 Usage:
   python3 scripts/availability.py            # writes LESSON_AVAILABILITY.html
   python3 scripts/availability.py --check    # verify lesson examples decodable
+  python3 scripts/availability.py --cmu      # CMUdict pronunciation audit:
+                                             # flags words the spelling engine
+                                             # calls readable but whose real
+                                             # pronunciation never aligns
 
 Importable: load() -> Curriculum with .first_available(word).
 """
@@ -454,9 +458,178 @@ from <code>data/curriculum.json</code> — regenerate with
     print(f"top-3000 coverage by Lesson 107: {covered}/3000")
 
 
+# ---------------------------------------------------------------------------
+# CMUdict audit — a second, pronunciation-aware readability model. For each
+# word it asks: can some segmentation of the spelling into taught graphemes
+# spell out one of the word's real pronunciations? Correspondences are
+# GENERATED from curriculum.json (keyed by the grapheme's spelling + phoneme
+# note), so this table can never drift from the lesson order.
+# ---------------------------------------------------------------------------
+
+ARPA = {
+    ("m", "/m/"): [("M",)], ("a", "/ă/"): [("AE",)], ("t", "/t/"): [("T",)],
+    ("s", "/s/"): [("S",)], ("s", "/z/"): [("Z",)], ("p", "/p/"): [("P",)],
+    ("i", "/ĭ/"): [("IH",)], ("n", "/n/"): [("N",)], ("d", "/d/"): [("D",)],
+    ("o", "/ŏ/"): [("AA",), ("AO",)], ("b", "/b/"): [("B",)],
+    ("g", "/g/"): [("G",)], ("e", "/ĕ/"): [("EH",)], ("h", "/h/"): [("HH",)],
+    ("l", "/l/"): [("L",)], ("c", "/k/"): [("K",)], ("u", "/ŭ/"): [("AH",)],
+    ("r", "/r/"): [("R",)], ("z", "/z/"): [("Z",)],
+    ("sh", "/sh/"): [("SH",)], ("ch", "/ch/"): [("CH",)],
+    ("tch", "/ch/"): [("CH",)], ("y", "/y/"): [("Y",)],
+    ("k", "/k/"): [("K",)], ("ck", "/k/"): [("K",)],
+    ("qu", "/kw/"): [("K", "W")], ("f", "/f/"): [("F",)],
+    ("ff", "/f/"): [("F",)], ("ll", "/l/"): [("L",)],
+    ("ss", "/s/"): [("S",)], ("zz", "/z/"): [("Z",)],
+    ("th", "/th/ /t͟h/"): [("TH",), ("DH",)],
+    ("w", "/w/"): [("W",)], ("wh", "/w/"): [("W",)],
+    ("ung", "/ŭng/"): [("AH", "NG")],
+    ("ong", "/ŏng/"): [("AO", "NG"), ("AA", "NG")],
+    ("unk", "/ŭnk/"): [("AH", "NG", "K")],
+    ("onk", "/ŏnk/"): [("AA", "NG", "K"), ("AO", "NG", "K")],
+    ("ng", "/ng/"): [("NG",)], ("nk", "/nk/"): [("NG", "K")],
+    ("ing", "/ing/"): [("IH", "NG")],
+    ("e", "/ē/ open"): [("IY",)], ("o", "/ō/ open"): [("OW",)],
+    ("i", "/ī/ open"): [("AY",)],
+    ("i_e", "/ī/"): [("AY",)], ("a_e", "/ā/"): [("EY",)],
+    ("o_e", "/ō/"): [("OW",)], ("u_e", "/ū/ /o͞o/"): [("UW",), ("Y", "UW")],
+    ("e_e", "/ē/"): [("IY",)],
+    ("j", "/j/"): [("JH",)], ("dge", "/j/"): [("JH",)],
+    ("v", "/v/"): [("V",)], ("x", "/ks/"): [("K", "S")],
+    ("old", "/ōld/"): [("OW", "L", "D")], ("ost", "/ōst/"): [("OW", "S", "T")],
+    ("ind", "/īnd/"): [("AY", "N", "D")], ("ild", "/īld/"): [("AY", "L", "D")],
+    ("ink", "/ink/"): [("IH", "NG", "K")], ("ank", "/ank/"): [("AE", "NG", "K")],
+    ("ang", "/ang/"): [("AE", "NG")],
+    ("a", "/ā/ open"): [("EY",)], ("u", "/ū/ open"): [("UW",), ("Y", "UW")],
+    ("y", "/ī/ final"): [("AY",)], ("y", "/ē/ final"): [("IY",)],
+    ("ee", "/ē/"): [("IY",)], ("ea", "/ē/ /ĕ/"): [("IY",), ("EH",)],
+    ("ai", "/ā/"): [("EY",)], ("ay", "/ā/"): [("EY",)],
+    ("oa", "/ō/"): [("OW",)], ("oo", "/o͞o/ /o͝o/"): [("UW",), ("UH",)],
+    ("aw", "/aw/"): [("AO",)], ("au", "/aw/"): [("AO",)],
+    ("all", "/awl/"): [("AO", "L")], ("al", "/awl/ /ahl/"): [("AO", "L"), ("AA", "L")],
+    ("ie", "/ī/ /ē/"): [("AY",), ("IY",)], ("igh", "/ī/"): [("AY",)],
+    ("ou", "/ow/ /o͞o/ /ŭ/"): [("AW",), ("UW",), ("AH",)],
+    ("ow", "/ow/ /ō/"): [("AW",), ("OW",)],
+    ("oi", "/oy/"): [("OY",)], ("oy", "/oy/"): [("OY",)],
+    ("ew", "/o͞o/ /ū/"): [("UW",), ("Y", "UW")],
+    ("ue", "/o͞o/ /ū/"): [("UW",), ("Y", "UW")],
+    ("ar", "/ar/"): [("AA", "R")], ("or", "/or/"): [("AO", "R")],
+    ("er", "/er/"): [("ER",)], ("ir", "/er/"): [("ER",)], ("ur", "/er/"): [("ER",)],
+    ("ar", "/er/ unstressed"): [("ER",)], ("or", "/er/ unstressed"): [("ER",)],
+    ("are", "/air/"): [("EH", "R")], ("air", "/air/"): [("EH", "R")],
+    ("ear", "/air/ /eer/ /er/"): [("EH", "R"), ("IH", "R"), ("ER",)],
+    ("ore", "/or/"): [("AO", "R")], ("eigh", "/ā/"): [("EY",)],
+    ("ph", "/f/"): [("F",)], ("aught", "/awt/"): [("AO", "T")],
+    ("oe", "/ō/"): [("OW",)], ("ey", "/ē/ /ā/"): [("IY",), ("EY",)],
+    ("kn", "/n/"): [("N",)], ("wr", "/r/"): [("R",)], ("mb", "/m/"): [("M",)],
+}
+
+# Extra correspondences unlocked by gates rather than graphemes.
+GATE_ARPA = {
+    "magic-e": [("e", ())],                       # silent final e
+    "soft-c": [("c", ("S",))],
+    "soft-g": [("g", ("JH",))],
+    "consonant-le": [("le", ("AH", "L"))],
+    "schwa": [(v, ("AH",)) for v in "aeiou"],
+    "suffix-ed": [("ed", ("T",)), ("ed", ("D",)), ("ed", ("IH", "D")),
+                  ("ed", ("AH", "D"))],
+    "suffix-es": [("es", ("IH", "Z")), ("es", ("AH", "Z")), ("es", ("Z",))],
+    "suffix-er-est": [("est", ("AH", "S", "T")), ("est", ("IH", "S", "T"))],
+}
+
+
+def cmu_correspondences(cur):
+    corr = []  # (lesson, spelling, phones)
+    single = {}
+    for l in cur.lessons:
+        for g, p in l["graphemes"]:
+            key = (g, p)
+            if key not in ARPA:
+                raise SystemExit(f"no ARPA mapping for grapheme {key} (L{l['n']})")
+            spelling = g[0] if g.endswith("_e") else g
+            for phones in ARPA[key]:
+                corr.append((l["n"], spelling, phones))
+                if len(spelling) == 1 and spelling not in "aeiou":
+                    single.setdefault(spelling, (l["n"], phones))
+        for gate in l["gates"]:
+            for spelling, phones in GATE_ARPA.get(gate, []):
+                corr.append((l["n"], spelling, phones))
+            if gate == "two-syllable":
+                # doubled middle consonants read as one sound
+                for c, (n0, phones) in single.items():
+                    corr.append((max(l["n"], n0), c + c, phones))
+    return corr
+
+
+def cmu_readable(word, prons, corr, heart_lessons):
+    """Earliest lesson whose correspondences spell out a real pronunciation."""
+    INF = 10_000
+    best = heart_lessons.get(word, INF)
+    for pron in prons.get(word, []):
+        dp = [[INF] * (len(pron) + 1) for _ in range(len(word) + 1)]
+        dp[0][0] = 0
+        for i in range(len(word) + 1):
+            for j in range(len(pron) + 1):
+                if dp[i][j] == INF:
+                    continue
+                for lesson, g, phones in corr:
+                    i2, j2 = i + len(g), j + len(phones)
+                    if word[i:i2] == g and pron[j:j2] == tuple(phones):
+                        dp[i2][j2] = min(dp[i2][j2], max(dp[i][j], lesson))
+        best = min(best, dp[len(word)][len(pron)])
+    return best if best < INF else None
+
+
+def cmu_audit(cur):
+    path = os.path.join(ROOT, "..", "..", "phonics-tool", "cmudict-0.7b.txt")
+    words = [w for w in cur.ranks if w.isalpha()]
+    needed = set(words)
+    prons = {}
+    with open(path, encoding="latin-1") as f:
+        for line in f:
+            if line.startswith(";;;"):
+                continue
+            head, _, tail = line.partition("  ")
+            word = re.sub(r"\(\d+\)$", "", head).lower()
+            if word not in needed:
+                continue
+            phones = tuple(re.sub(r"\d", "", p) for p in tail.split())
+            prons.setdefault(word, []).append(phones)
+    corr = cmu_correspondences(cur)
+    heart_lessons = {}
+    for l in cur.lessons:
+        for w in l["heart"]:
+            heart_lessons.setdefault(w.lower(), l["n"])
+    agree = later = 0
+    never, gap = [], []
+    for w in words:
+        spell, _ = cur.first_available(w)
+        if spell is None:
+            continue
+        cmu = cmu_readable(w, prons, corr, heart_lessons)
+        if cmu is None:
+            never.append(w)
+        elif cmu > spell + 5:
+            gap.append((w, spell, cmu))
+            later += 1
+        else:
+            agree += 1
+    never.sort(key=lambda w: cur.ranks[w])
+    gap.sort(key=lambda t: cur.ranks[t[0]])
+    print(f"CMUdict audit over top-3000 (spelling-engine-readable words):")
+    print(f"  agree (within 5 lessons): {agree}")
+    print(f"  CMU much later: {later}")
+    print(f"  CMU never aligns: {len(never)} — candidates for NOT_DECODABLE "
+          f"or heart words")
+    print("  top by rank, never:", ", ".join(never[:40]))
+    print("  top by rank, much later:",
+          ", ".join(f"{w}({s}->{c})" for w, s, c in gap[:20]))
+
+
 if __name__ == "__main__":
     cur = load()
     if "--check" in sys.argv:
         check(cur)
+    elif "--cmu" in sys.argv:
+        cmu_audit(cur)
     else:
         build_html(cur)

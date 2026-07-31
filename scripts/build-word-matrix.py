@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
 """Build the word-practice matrix for Learn to Read lessons.
 
-Counts how many times each word is practiced in each lesson (rows = words,
-columns = lessons) and cross-references the CPB top-500 frequency ranks and
-the Dolch pre-K list. Book text is not counted yet — ebook text lives in the
-CMS, not in this repo.
+Counts how many times each word is practiced in each drafted lesson JSON
+(rows = words, columns = lesson files) and joins the curriculum availability
+engine: for every word, the curriculum lesson at which it first becomes
+readable (data/curriculum.json via scripts/availability.py). Practice that
+happens before a word is readable is flagged.
+
+Lesson files map to curriculum lessons through data/lesson-map.json (file
+number -> slug), so reordering the curriculum never silently misaligns the
+matrix. Book text is not counted yet — ebook text lives in the CMS.
 
 Usage:  python3 scripts/build-word-matrix.py
-Reads:  lessons/lesson-*.json, data/cpb-top-500.csv
+Reads:  lessons/lesson-*.json, data/curriculum.json, data/lesson-map.json,
+        data/cpb-top-500.csv
 Writes: WORD_MATRIX.csv, WORD_MATRIX.html
 """
 
@@ -16,96 +22,14 @@ import glob
 import json
 import os
 import re
+import sys
 from collections import Counter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-DOLCH_PRE_K = {
-    "a", "and", "away", "big", "blue", "can", "come", "down", "find", "for",
-    "funny", "go", "help", "here", "i", "in", "is", "it", "jump", "little",
-    "look", "make", "me", "my", "not", "one", "play", "red", "run", "said",
-    "see", "the", "three", "to", "two", "up", "we", "where", "yellow", "you",
-}
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from availability import load as load_curriculum  # noqa: E402
 
 WORD_RE = re.compile(r"[a-z]+(?:['’][a-z]+)*")
-
-# Grapheme→phoneme correspondences in the order lessons teach them.
-# (lesson, grapheme, phonemes, final_only) — a word is "readable" at the first
-# lesson where some segmentation of its spelling into taught graphemes spells
-# out one of its CMUdict pronunciations.
-CORRESPONDENCES = [
-    (1, "m", ("M",), False),
-    (1, "t", ("T",), False),
-    (1, "a", ("AE",), False),
-    (2, "s", ("S",), False),
-    (3, "p", ("P",), False),
-    (4, "i", ("IH",), False),
-    (5, "n", ("N",), False),
-    (6, "d", ("D",), False),
-    (7, "o", ("AA",), False),
-    (7, "o", ("AO",), False),
-    (8, "b", ("B",), False),
-    (9, "g", ("G",), False),
-    (11, "s", ("Z",), True),  # final S saying /z/
-    (12, "e", ("EH",), False),
-    (13, "h", ("HH",), False),
-    (15, "l", ("L",), False),
-    (16, "c", ("K",), False),
-    (17, "u", ("AH",), False),
-    (18, "r", ("R",), False),
-    (21, "ch", ("CH",), False),
-    (22, "y", ("Y",), False),
-    (23, "z", ("Z",), False),
-    (24, "k", ("K",), False),
-    (24, "ck", ("K",), False),
-    (25, "qu", ("K", "W"), False),
-    (25, "qu", ("KW",), False),  # phonics-tool cmudict merges K W → KW
-]
-
-HEART_WORDS = {"i": 14, "a": 14, "the": 14}
-
-UNREADABLE = 10_000
-
-
-def load_cmudict(needed):
-    """word → list of stress-stripped pronunciations, variants included."""
-    path = os.path.join(ROOT, "..", "..", "phonics-tool", "cmudict-0.7b.txt")
-    prons = {}
-    with open(path, encoding="latin-1") as f:
-        for line in f:
-            if line.startswith(";;;"):
-                continue
-            head, _, tail = line.partition("  ")
-            word = re.sub(r"\(\d+\)$", "", head).lower()
-            if word not in needed:
-                continue
-            phones = tuple(re.sub(r"\d", "", p) for p in tail.split())
-            prons.setdefault(word, []).append(phones)
-    return prons
-
-
-def readable_lesson(word, prons):
-    """Earliest lesson whose taught correspondences can decode the word.
-
-    DP over (spelling position, pronunciation position); cell value is the
-    smallest possible max-lesson over the graphemes used so far.
-    """
-    best = HEART_WORDS.get(word, UNREADABLE)
-    for pron in prons.get(word, []):
-        dp = [[UNREADABLE] * (len(pron) + 1) for _ in range(len(word) + 1)]
-        dp[0][0] = 0
-        for i in range(len(word) + 1):
-            for j in range(len(pron) + 1):
-                if dp[i][j] == UNREADABLE:
-                    continue
-                for lesson, g, phones, final_only in CORRESPONDENCES:
-                    i2, j2 = i + len(g), j + len(phones)
-                    if final_only and i2 != len(word):
-                        continue
-                    if word[i:i2] == g and pron[j:j2] == phones:
-                        dp[i2][j2] = min(dp[i2][j2], max(dp[i][j], lesson))
-        best = min(best, dp[len(word)][len(pron)])
-    return best if best < UNREADABLE else None
 
 
 def norm(word):
@@ -119,40 +43,52 @@ def tokenize(text):
 
 
 def words_in_slide(slide):
-    """Yield each practiced-word occurrence in a slide.
+    """Yield (word, is_reading) for each practiced-word occurrence.
 
-    Counted: words the child reads, blends, or listens for.
+    Counted: words the child reads, blends, or listens for; is_reading is
+    False for listening-only exercises (the word need not be decodable yet).
     Not counted: distractor picture labels, parent script, book ids.
     """
     t = slide.get("type")
     if t in ("finger-word", "touch-slide", "picture-to-word"):
-        yield norm(slide["word"])
+        yield norm(slide["word"]), True
     elif t == "word-to-picture":
         for s in slide.get("sets", []):
-            yield norm(s["word"])
+            yield norm(s["word"]), True
     elif t == "sound-pick-word-stack":
         for entry in slide.get("words", []):
-            yield norm("".join(g for g, _ in entry))
+            yield norm("".join(g for g, _ in entry)), True
     elif t in ("card-stack",):
         for w in slide.get("values", []):
-            yield norm(w)
+            yield norm(w), True
     elif t in ("brain-words", "word-chain"):
         for w in slide.get("words", []):
-            yield norm(w)
+            yield norm(w), True
     elif t == "sound-at-position":
+        # Elephant Ears — the child listens for the sound, no reading.
         for w in slide.get("words", []):
-            yield norm(w["word"])
+            yield norm(w["word"]), False
     elif t == "story-words":
         # The parent reads the story; the child only finds the target words.
         targets = {norm(w) for w in slide.get("words", [])}
         for tok in tokenize(slide.get("story", "")):
             if tok in targets:
-                yield tok
+                yield tok, True
     elif t == "reading-fluency":
-        yield from tokenize(slide.get("text", ""))
+        yield from ((tok, True) for tok in tokenize(slide.get("text", "")))
 
 
 def main():
+    cur = load_curriculum()
+    dolch = set(json.load(open(
+        os.path.join(ROOT, "data", "curriculum.json")))["dolch_pre_k"])
+    slug_to_n = {l["slug"]: l["n"] for l in cur.lessons}
+    lesson_map = {
+        int(k): v for k, v in json.load(open(
+            os.path.join(ROOT, "data", "lesson-map.json"))).items()
+        if not k.startswith("_")
+    }
+
     ranks = {}
     with open(os.path.join(ROOT, "data", "cpb-top-500.csv")) as f:
         for row in csv.DictReader(f):
@@ -162,97 +98,108 @@ def main():
         glob.glob(os.path.join(ROOT, "lessons", "lesson-*.json")),
         key=lambda p: int(re.search(r"(\d+)", os.path.basename(p)).group(1)),
     )
-    lessons = []  # (number, Counter)
+    lessons = []  # (file_number, curriculum_number, Counter)
     for path in lesson_files:
         number = int(re.search(r"(\d+)", os.path.basename(path)).group(1))
-        counts = Counter()
+        slug = lesson_map.get(number)
+        if slug is None:
+            print(f"WARNING: lesson-{number}.json has no entry in "
+                  f"data/lesson-map.json; assuming curriculum lesson {number}")
+        cur_n = slug_to_n[slug] if slug else number
+        counts, read_counts = Counter(), Counter()
         for slide in json.load(open(path)):
-            for w in words_in_slide(slide):
+            for w, is_reading in words_in_slide(slide):
                 if w:
                     counts[w] += 1
-        lessons.append((number, counts))
+                    if is_reading:
+                        read_counts[w] += 1
+        lessons.append((number, cur_n, counts, read_counts))
 
     practiced = Counter()
-    for _, counts in lessons:
+    for _, _, counts, _ in lessons:
         practiced.update(counts)
 
-    all_words = set(ranks) | DOLCH_PRE_K | set(practiced)
-    # Ranked words by rank, then unranked by total practice desc, then alpha.
+    all_words = set(ranks) | dolch | set(practiced)
     rows = sorted(
         all_words,
         key=lambda w: (ranks.get(w, 10_000), -practiced[w], w),
     )
-
-    prons = load_cmudict(all_words)
-    readable = {w: readable_lesson(w, prons) for w in all_words}
+    avail = {w: cur.first_available(w)[0] for w in all_words}
+    heart_all = {w.lower() for l in cur.lessons for w in l["heart"]}
     first_used = {
-        w: min((n for n, c in lessons if c[w]), default=None) for w in all_words
+        w: min((cn for _, cn, c, _ in lessons if c[w]), default=None)
+        for w in all_words
+    }
+    first_read = {
+        w: min((cn for _, cn, _, rc in lessons if rc[w]), default=None)
+        for w in all_words
     }
 
     csv_path = os.path.join(ROOT, "WORD_MATRIX.csv")
     with open(csv_path, "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(
-            ["word", "cpb_rank", "dolch_prek", "readable", "first_used", "total"]
-            + [f"lesson-{n}" for n, _ in lessons]
+            ["word", "cpb_rank", "dolch_prek", "available", "first_used", "total"]
+            + [f"lesson-{n}" for n, _, _, _ in lessons]
         )
         for word in rows:
             w.writerow(
                 [
                     word,
                     ranks.get(word, ""),
-                    "x" if word in DOLCH_PRE_K else "",
-                    readable[word] or "",
+                    "x" if word in dolch else "",
+                    avail[word] or "",
                     first_used[word] or "",
                     practiced[word] or "",
                 ]
-                + [(c[word] or "") for _, c in lessons]
+                + [(c[word] or "") for _, _, c, _ in lessons]
             )
 
-    write_html(
-        os.path.join(ROOT, "WORD_MATRIX.html"),
-        rows, ranks, practiced, lessons, readable, first_used,
-    )
+    write_html(os.path.join(ROOT, "WORD_MATRIX.html"), rows, ranks, practiced,
+               lessons, avail, first_used, first_read, heart_all, dolch)
 
-    n_ranked_practiced = sum(1 for w in ranks if practiced[w])
-    n_dolch_practiced = sum(1 for w in DOLCH_PRE_K if practiced[w])
+    early = [w for w in all_words
+             if first_read[w] and (avail[w] is None or first_read[w] < avail[w])]
     print(f"{len(lessons)} lessons, {len(rows)} words")
-    print(f"top-500 practiced so far: {n_ranked_practiced}/500")
-    print(f"Dolch pre-K practiced so far: {n_dolch_practiced}/40")
+    print(f"top-500 practiced so far: {sum(1 for w in ranks if practiced[w])}/500")
+    print(f"Dolch pre-K practiced so far: {sum(1 for w in dolch if practiced[w])}/40")
+    print(f"READ before available: {len(early)}"
+          + (f" — {', '.join(sorted(early))}" if early else ""))
     print(f"wrote {csv_path}")
     print(f"wrote {csv_path.replace('.csv', '.html')}")
 
 
-def write_html(path, rows, ranks, practiced, lessons, readable, first_used):
+def write_html(path, rows, ranks, practiced, lessons, avail, first_used,
+               first_read, heart_all, dolch):
     def cell_style(count):
         if not count:
             return ""
-        # 1 → lightest, 8+ → deepest
-        a = min(count, 8) / 8
+        a = min(count, 8) / 8  # 1 → lightest, 8+ → deepest
         return f"background:rgba(46,111,82,{0.12 + 0.55 * a});"
 
     body = []
     body.append(
         "<tr><th class='w'>word</th><th>rank</th><th>Dolch</th>"
-        "<th>read-<br/>able</th><th>1st<br/>use</th><th>total</th>"
+        "<th>avail</th><th>1st<br/>use</th><th>total</th>"
     )
-    for n, _ in lessons:
-        body.append(f"<th>{n}</th>")
+    for n, cn, _, _ in lessons:
+        note = f" title='curriculum lesson {cn}'" if cn != n else ""
+        body.append(f"<th{note}>{n}</th>")
     body.append("</tr>")
     for word in rows:
         total = practiced[word]
         rank = ranks.get(word, "")
-        dolch = "&#10003;" if word in DOLCH_PRE_K else ""
-        r, u = readable[word], first_used[word]
-        heart = " class='heart'" if word in HEART_WORDS else ""
-        early = " class='early'" if u and (not r or u < r) else ""
+        d = "&#10003;" if word in dolch else ""
+        a, u, r = avail[word], first_used[word], first_read[word]
+        heart = " class='heart'" if word in heart_all else ""
+        early = " class='early'" if r and (a is None or r < a) else ""
         cls = " class='zero'" if not total else ""
         body.append(
             f"<tr{cls}><td class='w'>{word}</td><td>{rank}</td>"
-            f"<td class='d'>{dolch}</td><td{heart}>{r or ''}</td>"
+            f"<td class='d'>{d}</td><td{heart}>{a or ''}</td>"
             f"<td{early}>{u or ''}</td><td class='t'>{total or ''}</td>"
         )
-        for _, counts in lessons:
+        for _, _, counts, _ in lessons:
             c = counts[word]
             body.append(f"<td style='{cell_style(c)}'>{c or ''}</td>")
         body.append("</tr>")
@@ -285,14 +232,16 @@ def write_html(path, rows, ranks, practiced, lessons, readable, first_used):
 </head>
 <body>
 <h1>Word Practice Matrix</h1>
-<p class="sub">How many times each word is practiced in each lesson (slides only;
-book text not yet counted). Rows ordered by CPB top-500 rank, then by practice
-count for words outside the top 500. Grayed rows are not yet practiced.
-<b>read&#8209;able</b> = first lesson the word is decodable from taught
-grapheme&#8211;phoneme correspondences (pink = taught as a heart word);
-<b>1st&nbsp;use</b> = first lesson the word appears in practice
-(<span style="color:#c2410c;font-weight:600">orange</span> = used before it is
-readable). Regenerate with <code>python3 scripts/build-word-matrix.py</code>.</p>
+<p class="sub">How many times each word is practiced in each drafted lesson
+(slides only; book text not yet counted). Rows ordered by CPB top-500 rank,
+then by practice count for words outside the top 500. Grayed rows are not yet
+practiced. <b>avail</b> = curriculum lesson at which the word first becomes
+readable (pink = via heart word); <b>1st&nbsp;use</b> = first curriculum
+lesson with practice (<span style="color:#c2410c;font-weight:600">orange</span>
+= the child <i>reads</i> it before it is readable — listening-only exercises
+don't count). Columns are lesson-file numbers; hover shows the
+curriculum lesson where they differ. Regenerate with
+<code>python3 scripts/build-word-matrix.py</code>.</p>
 <table>{''.join(body)}</table>
 </body>
 </html>"""

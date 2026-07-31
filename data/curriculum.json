@@ -2966,6 +2966,11 @@
    "how": "In an unstressed syllable, try the relaxed /uh/ sound when the carefully decoded word sounds almost right."
   },
   {
+   "kind": "exercise",
+   "name": "Fluency Checks I–IV",
+   "how": "Use an unpracticed timed passage to measure accurate words per minute and chart growth. The final check uses two grade-1 passages and keeps the stronger score."
+  },
+  {
    "kind": "concept",
    "name": "Vowel Teams",
    "how": "Treat two neighboring vowel letters that spell one sound as a single unit."
@@ -2979,11 +2984,6 @@
    "kind": "exercise",
    "name": "Repeated Reading",
    "how": "Read the same passage again, moving from accurate decoding toward smooth, expressive reading."
-  },
-  {
-   "kind": "exercise",
-   "name": "Fluency Checks I–IV",
-   "how": "Use an unpracticed timed passage to measure accurate words per minute and chart growth. The final check uses two grade-1 passages and keeps the stronger score."
   },
   {
    "kind": "concept",
