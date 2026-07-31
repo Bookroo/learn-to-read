@@ -397,21 +397,20 @@ def esc_js(s):
 
 
 def load_used(cur):
-    """Practice data from drafted Module 1 lesson files only (later modules
-    are not cleaned up yet). Returns ({curriculum_n: Counter}, issues) where
-    issues lists (curriculum_n, word, slide_types, avail) for words READ
-    before they are readable."""
-    from practice_counts import load_lesson_files, load_lesson_map
-    lesson_map = load_lesson_map(ROOT)
-    slug_to_lesson = {l["slug"]: l for l in cur.lessons}
+    """Practice data from cleaned-up lesson files (Modules 1-2; later
+    drafts are not vetted yet). Returns ({curriculum_n: Counter}, issues)
+    where issues lists (curriculum_n, word, slide_types, avail) for words
+    READ before they are readable."""
+    from practice_counts import load_lesson_files
     used = {}
     issues = []
     for number, counts, _read, reading_slides in load_lesson_files(ROOT):
-        slug = lesson_map.get(number)
-        lesson = slug_to_lesson.get(slug) if slug else None
-        if lesson is None or lesson["module"] != 1:
+        # lesson file numbers match curriculum lesson numbers 1:1; only
+        # cleaned-up modules count (Module 3+ drafts are not vetted yet)
+        lesson = cur.lessons[number - 1] if number <= len(cur.lessons) else None
+        if lesson is None or lesson["module"] > 2:
             continue
-        n = lesson["n"]
+        n = number
         used[n] = counts
         for w, types in reading_slides.items():
             avail, _ = cur.first_available(w)
@@ -543,8 +542,8 @@ gates it unlocks, its heart words, the CPB top-3,000 words that become readable
 at that lesson (first {INLINE} shown by rank; pink = via heart word;
 <b style="color:#2e6f52">✓</b> = used in a drafted lesson), and the words the
 drafted lesson actually practices (<span style="color:#b3382c">red</span> =
-practiced before readable). Used-word data covers Module 1 files only — later
-drafts aren't cleaned up yet. Click “all N available” for the full word bank
+practiced before readable). Used-word data covers Modules 1–2 — later
+drafts aren't vetted yet. Click “all N available” for the full word bank
 with ranks. Generated from <code>data/curriculum.json</code> — regenerate with
 <code>python3 scripts/availability.py</code>.</p>
 <table>
@@ -571,7 +570,7 @@ function openModal(n, label) {{
     label + ' — ' + items.length + ' words available';
   document.getElementById('dlg-body').innerHTML =
     '<div class="legend">Sorted by CPB rank. <b style="color:#2e6f52">✓</b> = ' +
-    'used in a drafted lesson (Module 1 files only). Number = CPB rank.</div>' +
+    'used in a drafted lesson (Modules 1–2). Number = CPB rank.</div>' +
     '<h3>New at this lesson (' + fresh.length + ')</h3>' +
     (fresh.map(chip).join(' ') || '<span class="none">—</span>') +
     '<h3>Previously available (' + old.length + ')</h3>' +
