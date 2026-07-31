@@ -12,7 +12,7 @@ not honestly decodable belong in NOT_DECODABLE below (most are heart words
 already, which take priority anyway).
 
 Usage:
-  python3 scripts/availability.py            # writes LESSON_AVAILABILITY.html
+  python3 scripts/availability.py            # writes WORD_BANK.html
   python3 scripts/availability.py --check    # verify lesson examples decodable
   python3 scripts/availability.py --cmu      # CMUdict pronunciation audit:
                                              # flags words the spelling engine
@@ -468,7 +468,7 @@ def build_html(cur):
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Learn to Read — Lesson Availability</title>
+<title>Learn to Read — Lesson Word Bank</title>
 <style>
   body {{ font-family: ui-sans-serif, -apple-system, sans-serif; font-size: 13.5px;
          color: #212622; background: #faf9f5; margin: 24px; }}
@@ -522,10 +522,10 @@ def build_html(cur):
 </style>
 </head>
 <body>
-<h1>Lesson Availability</h1>
-<p class="sub">For each lesson: the grapheme–phoneme code and strategy gates it
-unlocks, its heart words, the CPB top-3,000 words that become readable at that
-lesson (first {INLINE} shown by rank; pink = via heart word;
+<h1>Lesson Word Bank</h1>
+<p class="sub">What each lesson may use: the grapheme–phoneme code and strategy
+gates it unlocks, its heart words, the CPB top-3,000 words that become readable
+at that lesson (first {INLINE} shown by rank; pink = via heart word;
 <b style="color:#2e6f52">✓</b> = used in a drafted lesson), and the words the
 drafted lesson actually practices (<span style="color:#b3382c">red</span> =
 practiced before readable). Used-word data covers Module 1 files only — later
@@ -566,7 +566,7 @@ function openModal(n, label) {{
 </script>
 </body>
 </html>"""
-    out = os.path.join(ROOT, "LESSON_AVAILABILITY.html")
+    out = os.path.join(ROOT, "WORD_BANK.html")
     open(out, "w").write(html)
     covered = sum(len(v) for v in counts.values())
     print(f"wrote {out}")
