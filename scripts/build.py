@@ -7,6 +7,7 @@ Runs, in order:
      is not readable at its own lesson)
   3. availability.py        -> WORD_BANK.html
   4. build-word-matrix.py   -> WORD_MATRIX.csv / WORD_MATRIX.html
+  5. build-exercise-matrix.py -> EXERCISE_MATRIX.html
 
 Usage: python3 scripts/build.py
 """
@@ -22,6 +23,7 @@ STEPS = [
     ["availability.py", "--check"],
     ["availability.py"],
     ["build-word-matrix.py"],
+    ["build-exercise-matrix.py"],
 ]
 
 for step in STEPS:
