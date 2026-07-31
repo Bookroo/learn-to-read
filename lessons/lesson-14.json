@@ -334,6 +334,10 @@
     }
   },
   {
+    "type": "teach-tam",
+    "value": "THE"
+  },
+  {
     "type": "conclusion",
     "confetti": true
   }

@@ -125,7 +125,7 @@
         {
           "type": "verbal",
           "value": [
-            "In lesson 8, we learned that some words that have an S at the end make the ",
+            "Earlier, we learned how to use a **Buzz Check** to figure out whether an S at the end of a word makes the ",
             {
               "type": "sound",
               "phoneme": "/z/"
@@ -135,8 +135,12 @@
               "type": "sound",
               "phoneme": "/s/"
             },
-            " sound. Let's read a few words to practice this."
+            " sound. Let's read a few words and use a **Buzz Check** to practice this."
           ]
+        },
+        {
+          "type": "instruction",
+          "value": "Have {name} say the sound right before the S while touching their throat. For quick sounds, have them repeat the sound a few times in a row so they can feel whether their buzzer flickers on."
         }
       ]
     }
@@ -397,10 +401,17 @@
     ],
     "pre": {
       "value": [
-        "Notice that this word ends in the letter S. Listen as I read the word.",
+        "Notice that this word ends in the letter S. Let's use a **Buzz Check** to figure out which sound the S makes.",
         {
           "type": "instruction",
-          "value": "Read the word using **Finger Words**."
+          "value": [
+            "Have {name} touch their throat and make the ",
+            {
+              "type": "sound",
+              "phoneme": "/a/"
+            },
+            " sound. Their buzzer is on, so the S will copy the buzz. Then read the word using **Finger Words**."
+          ]
         },
         {
           "type": "verbal",
@@ -433,28 +444,17 @@
         {
           "type": "verbal",
           "value": [
-            "Does this letter S make the ",
+            "The ",
             {
               "type": "sound",
-              "phoneme": "/s/"
+              "phoneme": "/a/"
             },
-            " sound or the ",
-            {
-              "type": "sound",
-              "phoneme": "/z/"
-            },
-            "?"
-          ]
-        },
-        {
-          "type": "verbal",
-          "value": [
-            "That's right, it makes the ",
+            " sound is buzzy, so the S copies the buzz and makes the ",
             {
               "type": "sound",
               "phoneme": "/z/"
             },
-            " sound!"
+            " sound. The **Buzz Check** worked!"
           ]
         }
       ]
@@ -487,10 +487,17 @@
     ],
     "pre": {
       "value": [
-        "This word also ends in the letter S. Listen as I read the word.",
+        "This word also ends in the letter S. Let's use a **Buzz Check** to figure out which sound the S makes.",
         {
           "type": "instruction",
-          "value": "Read the word using **Finger Words**."
+          "value": [
+            "Have {name} touch their throat and make the ",
+            {
+              "type": "sound",
+              "phoneme": "/i/"
+            },
+            " sound. Their buzzer is on, so the S will copy the buzz. Then read the word using **Finger Words**."
+          ]
         },
         {
           "type": "verbal",
@@ -523,28 +530,17 @@
         {
           "type": "verbal",
           "value": [
-            "Does this letter S make the ",
+            "The ",
             {
               "type": "sound",
-              "phoneme": "/s/"
+              "phoneme": "/i/"
             },
-            " sound or the ",
-            {
-              "type": "sound",
-              "phoneme": "/z/"
-            },
-            "?"
-          ]
-        },
-        {
-          "type": "verbal",
-          "value": [
-            "That's right, it makes the ",
+            " sound is buzzy, so the S copies the buzz and makes the ",
             {
               "type": "sound",
               "phoneme": "/z/"
             },
-            " sound!"
+            " sound. The **Buzz Check** worked!"
           ]
         }
       ]
@@ -591,6 +587,10 @@
     "books": [
       52227
     ]
+  },
+  {
+    "type": "teach-tam",
+    "value": "HEN"
   },
   {
     "type": "conclusion",

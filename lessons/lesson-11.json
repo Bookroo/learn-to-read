@@ -17,20 +17,14 @@
     "sets": [
       {
         "grapheme": "B",
-        "graphemes": [
-          "A",
-          "N"
-        ],
+        "graphemes": ["A", "N"],
         "total": 3,
         "unique": 3,
         "correct": 1
       },
       {
         "grapheme": "G",
-        "graphemes": [
-          "P",
-          "N"
-        ],
+        "graphemes": ["P", "N"],
         "total": 3,
         "unique": 3,
         "correct": 1
@@ -43,46 +37,24 @@
       {
         "grapheme": "O",
         "phoneme": "/o/",
-        "graphemes": [
-          "M",
-          "T"
-        ],
-        "choices": [
-          "O",
-          "M",
-          "T"
-        ]
+        "graphemes": ["M", "T"],
+        "choices": ["O", "M", "T"]
       },
       {
         "grapheme": "G",
         "phoneme": "/g/",
-        "choices": [
-          "G",
-          "O",
-          "B"
-        ]
+        "choices": ["G", "O", "B"]
       },
       {
         "grapheme": "B",
         "phoneme": "/b/",
-        "choices": [
-          "B",
-          "O",
-          "G"
-        ]
+        "choices": ["B", "O", "G"]
       },
       {
         "grapheme": "D",
         "phoneme": "/d/",
-        "graphemes": [
-          "A",
-          "I"
-        ],
-        "choices": [
-          "D",
-          "A",
-          "I"
-        ]
+        "graphemes": ["A", "I"],
+        "choices": ["D", "A", "I"]
       }
     ]
   },
@@ -168,12 +140,8 @@
     ]
   },
   {
-    "type": "touch-slide",
-    "word": "IS",
-    "phonemes": [
-      "/i/",
-      "/s/"
-    ],
+    "type": "card-stack",
+    "values": ["IS"],
     "pre": {
       "value": [
         "This is the word ‘is’.",
@@ -235,6 +203,14 @@
     "value": [
       "Lay your fingers flat against the front of your throat, nice and gentle.",
       {
+        "type": "instruction",
+        "value": [
+          "Hold each sound for at least three seconds so {name} has time to feel it. ",
+          "Make the pure sound, not the letter name — and don't add ‘uh’ at the end. ",
+          "If {name} can't feel their own buzzer, let them put their fingers on your throat while you make the sounds — a grown-up's buzz is easier to feel."
+        ]
+      },
+      {
         "type": "verbal",
         "value": [
           "Now make a long snake sound: ",
@@ -259,15 +235,7 @@
           " and hold it. Zzzzzzzz."
         ]
       },
-      "There it is! Do you feel your throat buzzing? That's your **Buzzer** turning on!",
-      {
-        "type": "instruction",
-        "value": [
-          "Hold each sound for at least three seconds so {name} has time to feel it. ",
-          "Make the pure sound, not the letter name — and don't add ‘uh’ at the end. ",
-          "If {name} can't feel their own buzzer, let them put their fingers on your throat while you make the sounds — a grown-up's buzz is easier to feel."
-        ]
-      }
+      "There it is! Do you feel your throat buzzing? That's your **Buzzer** turning on!"
     ]
   },
   {
@@ -333,6 +301,24 @@
       "Let's practice! Fingers on your throat — this is called a **Buzz Check**.",
       "For each sound, shout ‘Buzzer on!’ if you feel the buzz, or ‘Buzzer off!’ if you don't.",
       {
+        "type": "instruction",
+        "value": [
+          "Quick sounds like ",
+          {
+            "type": "sound",
+            "phoneme": "/g/",
+            "showQuotes": false
+          },
+          " and ",
+          {
+            "type": "sound",
+            "phoneme": "/t/",
+            "showQuotes": false
+          },
+          " can't be stretched out, so have {name} repeat them a few times in a row — g-g-g-g — to feel whether the buzzer flickers on."
+        ]
+      },
+      {
         "type": "verbal",
         "value": [
           "Try ",
@@ -390,26 +376,12 @@
             "type": "sound",
             "phoneme": "/o/"
           },
-          " . . . Buzzer on! Here's a secret: every vowel sound is a buzzy sound. ",
-          "You can't say a vowel without your buzzer!"
-        ]
-      },
-      {
-        "type": "instruction",
-        "value": [
-          "Quick sounds like ",
+          " . . . Buzzer on! The ",
           {
             "type": "sound",
-            "phoneme": "/g/",
-            "showQuotes": false
+            "phoneme": "/o/"
           },
-          " and ",
-          {
-            "type": "sound",
-            "phoneme": "/t/",
-            "showQuotes": false
-          },
-          " can't be stretched out, so have {name} repeat them a few times in a row — g-g-g-g — to feel whether the buzzer flickers on."
+          " sound is buzzy!"
         ]
       }
     ]
@@ -439,19 +411,14 @@
       "Your mouth has been following this rule your whole life without you even knowing. Now your fingers can catch it in the act!",
       {
         "type": "instruction",
-        "value": "If {name} ever forgets the Buzz Check, there's always a backup plan: try the word both ways and listen for a real word. But the Buzz Check works every time on words like these. Let's try it!"
+        "value": "There are some words that don't follow the **Buzz Check** rule, but we'll learn about those later."
       }
     ]
   },
   {
     "type": "finger-word",
     "word": "DIGS",
-    "phonemes": [
-      "/d/",
-      "/i/",
-      "/g/",
-      "/z/"
-    ],
+    "phonemes": ["/d/", "/i/", "/g/", "/z/"],
     "pre": {
       "value": [
         "Use **Finger Words** to read this word.",
@@ -518,12 +485,7 @@
   },
   {
     "type": "finger-word",
-    "phonemes": [
-      "/d/",
-      "/i/",
-      "/g/",
-      "/z/"
-    ],
+    "phonemes": ["/d/", "/i/", "/g/", "/z/"],
     "word": "DIGS",
     "pre": {
       "value": [
@@ -634,12 +596,7 @@
   {
     "type": "finger-word",
     "word": "DIGS",
-    "phonemes": [
-      "/d/",
-      "/i/",
-      "/g/",
-      "/z/"
-    ],
+    "phonemes": ["/d/", "/i/", "/g/", "/z/"],
     "pre": {
       "value": [
         "Now, with your right hand, touch each finger (or finger pair) and say the sound each makes.",
@@ -688,12 +645,7 @@
   {
     "type": "finger-word",
     "word": "DIGS",
-    "phonemes": [
-      "/d/",
-      "/i/",
-      "/g/",
-      "/z/"
-    ],
+    "phonemes": ["/d/", "/i/", "/g/", "/z/"],
     "pre": {
       "value": [
         "Slide your pointer finger along your knuckles, saying the sound that each finger or finger pair makes slowly and continuously, blending the sounds together without any gaps.",
@@ -798,12 +750,7 @@
   {
     "type": "finger-word",
     "word": "POTS",
-    "phonemes": [
-      "/p/",
-      "/o/",
-      "/t/",
-      "/s/"
-    ],
+    "phonemes": ["/p/", "/o/", "/t/", "/s/"],
     "pre": {
       "value": [
         "Use **Finger Words** to read this word.",
@@ -870,12 +817,7 @@
   },
   {
     "type": "finger-word",
-    "phonemes": [
-      "/p/",
-      "/o/",
-      "/t/",
-      "/s/"
-    ],
+    "phonemes": ["/p/", "/o/", "/t/", "/s/"],
     "word": "POTS",
     "pre": {
       "value": [
@@ -986,12 +928,7 @@
   {
     "type": "finger-word",
     "word": "POTS",
-    "phonemes": [
-      "/p/",
-      "/o/",
-      "/t/",
-      "/s/"
-    ],
+    "phonemes": ["/p/", "/o/", "/t/", "/s/"],
     "pre": {
       "value": [
         "Now, with your right hand, touch each finger (or finger pair) and say the sound each makes.",
@@ -1040,12 +977,7 @@
   {
     "type": "finger-word",
     "word": "POTS",
-    "phonemes": [
-      "/p/",
-      "/o/",
-      "/t/",
-      "/s/"
-    ],
+    "phonemes": ["/p/", "/o/", "/t/", "/s/"],
     "pre": {
       "value": [
         "Slide your pointer finger along your knuckles, saying the sound that each finger or finger pair makes slowly and continuously, blending the sounds together without any gaps.",
@@ -1150,12 +1082,7 @@
   {
     "type": "finger-word",
     "word": "TOPS",
-    "phonemes": [
-      "/t/",
-      "/o/",
-      "/p/",
-      "/s/"
-    ],
+    "phonemes": ["/t/", "/o/", "/p/", "/s/"],
     "pre": {
       "insert_after": [
         {
@@ -1187,12 +1114,7 @@
   {
     "type": "finger-word",
     "word": "NODS",
-    "phonemes": [
-      "/n/",
-      "/o/",
-      "/d/",
-      "/z/"
-    ],
+    "phonemes": ["/n/", "/o/", "/d/", "/z/"],
     "pre": {
       "insert_after": [
         {
@@ -1224,10 +1146,7 @@
   {
     "type": "finger-word",
     "word": "IS",
-    "phonemes": [
-      "/i/",
-      "/z/"
-    ],
+    "phonemes": ["/i/", "/z/"],
     "pre": {
       "value": [
         "Remember this word from the beginning of the lesson? Now you can figure it out all by yourself!",
@@ -1240,7 +1159,13 @@
               "phoneme": "/i/",
               "showQuotes": false
             },
-            " — a vowel. And what do we know about vowels? Every vowel is a buzzy sound!"
+            ", and the ",
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false
+            },
+            " sound is buzzy."
           ]
         },
         "You get to try this word on your own. Use **Finger Words** and the **Buzz Check**.",
@@ -1265,7 +1190,7 @@
     "post": {
       "value": [
         "Great job! (Or let's try it together)",
-        "You solved the mystery from the beginning of the lesson. The S in ‘is’ buzzes because the vowel before it buzzes!"
+        "You solved the mystery from the beginning of the lesson. The S in ‘is’ buzzes because the sound before it buzzes!"
       ]
     }
   },
@@ -1274,25 +1199,17 @@
     "sets": [
       {
         "word": "BATS",
-        "words": [
-          "bat",
-          "cat"
-        ]
+        "words": ["bat", "cat"]
       },
       {
         "word": "DOTS",
-        "words": [
-          "dot",
-          "pan"
-        ]
+        "words": ["dot", "pan"]
       }
     ]
   },
   {
     "type": "books",
-    "books": [
-      52225
-    ],
+    "books": [52225],
     "pre": {
       "value": [
         "Great work reading all of these new words!",
@@ -1310,6 +1227,10 @@
     "post": {
       "value": "Great job {name}! You read that whole book on your own! That's a major accomplishment!"
     }
+  },
+  {
+    "type": "teach-tam",
+    "value": "DIGS"
   },
   {
     "type": "conclusion",

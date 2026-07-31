@@ -289,6 +289,10 @@
     ]
   },
   {
+    "type": "teach-tam",
+    "value": "RUN"
+  },
+  {
     "type": "conclusion",
     "confetti": true
   }

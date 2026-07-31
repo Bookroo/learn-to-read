@@ -353,6 +353,10 @@
     ]
   },
   {
+    "type": "teach-tam",
+    "value": "CAT"
+  },
+  {
     "type": "conclusion",
     "confetti": true
   }

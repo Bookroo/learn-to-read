@@ -104,7 +104,7 @@
     "grapheme": "S",
     "pre": {
       "value": [
-        "In the previous lesson, we learned that the letter S can make two different sounds when it is at the end of a word. What are those two sounds?"
+        "In the previous lesson, we learned how to use a **Buzz Check** to figure out which sound the letter S makes at the end of a word. What are the two sounds S can make?"
       ]
     },
     "post": {
@@ -112,7 +112,7 @@
         {
           "type": "verbal",
           "value": [
-            "That's right! The letter S when it's at the end of a word can make the ",
+            "That's right! The letter S at the end of a word can make the ",
             {
               "type": "sound",
               "phoneme": "/s/"
@@ -121,6 +121,16 @@
             {
               "type": "sound",
               "phoneme": "/z/"
+            },
+            " sound. Do a **Buzz Check** on the sound right before the S. If your buzzer is on, the S makes the buzzy ",
+            {
+              "type": "sound",
+              "phoneme": "/z/"
+            },
+            " sound. If your buzzer is off, the S makes the not-buzzy ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
             },
             " sound."
           ]
@@ -137,7 +147,11 @@
     ],
     "pre": {
       "value": [
-        "Let’s practice some words that end in the letter S. Read the words one at a time."
+        "Let’s practice some words that end in the letter S. Read the words one at a time and use a **Buzz Check** to decide which sound the S makes.",
+        {
+          "type": "instruction",
+          "value": "Have {name} say the sound right before the S while touching their throat. For quick sounds, have them repeat the sound a few times in a row so they can feel whether their buzzer flickers on."
+        }
       ]
     }
   },
@@ -553,6 +567,10 @@
     "books": [
       52226
     ]
+  },
+  {
+    "type": "teach-tam",
+    "value": "BED"
   },
   {
     "type": "conclusion",

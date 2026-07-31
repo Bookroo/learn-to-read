@@ -400,6 +400,10 @@
     ]
   },
   {
+    "type": "teach-tam",
+    "value": "ZIP"
+  },
+  {
     "type": "conclusion",
     "confetti": true
   }

@@ -360,6 +360,50 @@
     }
   },
   {
+    "type": "card-stack",
+    "values": ["BUS"],
+    "pre": {
+      "value": [
+        "Some words don't follow the **Buzz Check** rule. We have to learn these words by heart.",
+        "The word **BUS** is one of these words.",
+        {
+          "type": "verbal",
+          "value": [
+            "It looks like this word should make the sounds ",
+            {
+              "type": "sound",
+              "phoneme": "/b/",
+              "showQuotes": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/u/",
+              "showQuotes": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/z/",
+              "showQuotes": false
+            },
+            " . . . **BUZZ**. But this is actually the word **BUS**, and the S makes the ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound."
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        "We just have to learn the word **BUS** by heart."
+      ]
+    }
+  },
+  {
     "type": "word-to-picture",
     "sets": [
       {
@@ -380,7 +424,7 @@
   },
   {
     "type": "reading-fluency",
-    "text": "THE SUN IS HOT.",
+    "text": "THE BUS IS HOT.",
     "pre": {
       "replace": [
         {
@@ -406,7 +450,7 @@
   },
   {
     "type": "reading-fluency",
-    "text": "THE SUN IS HOT.",
+    "text": "THE BUS IS HOT.",
     "pre": {
       "value": [
         "Great job! Now it’s my turn to read the sentence. I’m going to read it more quickly and with expression. It will be your turn to read the sentence more quickly and with expression next, so listen closely to how I do it.",
@@ -441,7 +485,8 @@
       "top",
       "big",
       "dog",
-      "is"
+      "is",
+      "bus"
     ]
   },
   {
@@ -449,6 +494,10 @@
     "books": [
       52233
     ]
+  },
+  {
+    "type": "teach-tam",
+    "value": "BUS"
   },
   {
     "type": "conclusion",
