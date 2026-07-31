@@ -43,7 +43,7 @@ def exercise_name(slide):
         "sound-train": "Sound Train",
         "phoneme-blending": "Sound Detective",
         "finger-word": "Finger Words",
-        "touch-slide": "Touch & Slide",
+        "touch-slide": "Finger Words",  # Touch & Slide was replaced by Finger Words
         "word-to-picture": "Picture Quest" if multi else "Word to Picture",
         "picture-to-word": "Picture to Word",
         "word-chain": "Word Chains",

@@ -336,12 +336,12 @@
   },
   {
     "type": "finger-word",
-    "word": "GULP",
+    "word": "ZAGS",
     "phonemes": [
+      "/z/",
+      "/a/",
       "/g/",
-      "/u/",
-      "/l/",
-      "/p/"
+      "/z/"
     ],
     "pre": {
       "replace": [
