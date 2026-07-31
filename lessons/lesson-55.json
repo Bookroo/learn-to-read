@@ -110,7 +110,7 @@
       "hopping",
       "making",
       "people",
-      "the",
+      "across",
       "once",
       "they"
     ]
@@ -118,6 +118,10 @@
   {
     "type": "reading-fluency",
     "text": "The pilot has seven tulips."
+  },
+  {
+    "type": "reading-fluency",
+    "text": "Something is hopping along in the wagon."
   },
   {
     "type": "books",

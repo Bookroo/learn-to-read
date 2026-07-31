@@ -564,6 +564,17 @@
     }
   },
   {
+    "type": "word-chain",
+    "words": [
+      "SAT",
+      "MAT",
+      "HAT",
+      "HAM",
+      "HIM",
+      "HIS"
+    ]
+  },
+  {
     "type": "word-to-picture",
     "sets": [
       {

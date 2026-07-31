@@ -142,6 +142,15 @@
     }
   },
   {
+    "type": "word-chain",
+    "words": [
+      "WELL",
+      "FELL",
+      "FELT",
+      "MELT"
+    ]
+  },
+  {
     "type": "word-to-picture",
     "sets": [
       {
@@ -205,6 +214,35 @@
   {
     "type": "reading-fluency",
     "text": "THE QUICK CHICK IS IN THE SHED."
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "you",
+      "your",
+      "was",
+      "want",
+      "who",
+      "there",
+      "they",
+      "said"
+    ],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": "Heart-word round-up! Read each card the fast way — straight from your heart."
+        }
+      ]
+    }
+  },
+  {
+    "type": "reading-fluency",
+    "text": "IF THE KIDS ASK, LET THEM HELP."
+  },
+  {
+    "type": "reading-fluency",
+    "text": "MOM GOT HIM A BIG HUG AT LAST."
   },
   {
     "type": "books",

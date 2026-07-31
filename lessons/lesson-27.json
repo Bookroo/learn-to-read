@@ -201,7 +201,9 @@
       "BELL",
       "TELL",
       "TALL",
-      "BALL"
+      "BALL",
+      "FALL",
+      "FELL"
     ]
   },
   {
@@ -216,7 +218,7 @@
       "buzz",
       "hill",
       "less",
-      "mess",
+      "class",
       "the",
       "a"
     ]
@@ -224,6 +226,10 @@
   {
     "type": "reading-fluency",
     "text": "THE CUP IS FULL."
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE CLASS RAN UP THE HILL."
   },
   {
     "type": "books",

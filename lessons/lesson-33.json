@@ -163,6 +163,23 @@
     ]
   },
   {
+    "type": "word-chain",
+    "words": [
+      "SHIP",
+      "SHOP",
+      "CHOP",
+      "CHIP"
+    ],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": "First, warm up with a Word Chain of words you already know!"
+        }
+      ]
+    }
+  },
+  {
     "type": "finger-word",
     "word": "HE",
     "phonemes": [

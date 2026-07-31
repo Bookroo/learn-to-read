@@ -93,7 +93,7 @@
       "foxes",
       "people",
       "rabbit",
-      "the",
+      "table",
       "once",
       "some",
       "into"
@@ -102,6 +102,10 @@
   {
     "type": "reading-fluency",
     "text": "The little apple is in the middle."
+  },
+  {
+    "type": "reading-fluency",
+    "text": "A little table sits in the mud."
   },
   {
     "type": "books",

@@ -186,7 +186,7 @@
       "many",
       "any",
       "pretty",
-      "the",
+      "tiny",
       "people",
       "they"
     ]
@@ -194,6 +194,14 @@
   {
     "type": "reading-fluency",
     "text": "Why is the baby so happy?"
+  },
+  {
+    "type": "reading-fluency",
+    "text": "The fluffy bunny naps by the tiny lady."
+  },
+  {
+    "type": "reading-fluency",
+    "text": "Mommy and Daddy sing with the baby."
   },
   {
     "type": "books",

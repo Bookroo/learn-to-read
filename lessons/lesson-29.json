@@ -205,6 +205,17 @@
     ]
   },
   {
+    "type": "word-chain",
+    "words": [
+      "TENT",
+      "WENT",
+      "WET",
+      "WIT",
+      "WITH",
+      "WISH"
+    ]
+  },
+  {
     "type": "card-stack",
     "values": [
       "WAS",
@@ -239,7 +250,7 @@
       "who",
       "they",
       "there",
-      "wet",
+      "which",
       "win",
       "will",
       "when",

@@ -198,6 +198,10 @@
         {
           "kind": "exercise",
           "name": "Buzz Check / Buzzer"
+        },
+        {
+          "kind": "exercise",
+          "name": "Word Chains"
         }
       ],
       "examples": ["mats /s/, pigs /z/, is /z/, as /z/"],
@@ -323,12 +327,7 @@
       "module_title": "Four-Letter Words & the First Special Cases",
       "tags": ["letter"],
       "detail": "for and are appear constantly in real books, so they are learned early by heart; their spellings are explained with Bossy R in Module 8.",
-      "intros": [
-        {
-          "kind": "exercise",
-          "name": "Word Chains"
-        }
-      ],
+      "intros": [],
       "examples": ["run, rat, red, rip"],
       "heart": ["for", "are"],
       "graphemes": [["r", "/r/"]],

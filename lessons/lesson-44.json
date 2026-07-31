@@ -120,6 +120,24 @@
     }
   },
   {
+    "type": "word-chain",
+    "words": [
+      "NAME",
+      "GAME",
+      "SAME",
+      "CAME"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "SIDE",
+      "WIDE",
+      "RIDE",
+      "RODE"
+    ]
+  },
+  {
     "type": "word-to-picture",
     "sets": [
       {
@@ -183,6 +201,34 @@
   {
     "type": "reading-fluency",
     "text": "THE KIND KING RIDES A MULE."
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "oh",
+      "you",
+      "your",
+      "to",
+      "do",
+      "give",
+      "have",
+      "of",
+      "come",
+      "some",
+      "one"
+    ],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": "Heart-word round-up! Read each card the fast way — straight from your heart."
+        }
+      ]
+    }
+  },
+  {
+    "type": "reading-fluency",
+    "text": "JACK WOKE UP NEXT TO THE WHITE TENT."
   },
   {
     "type": "books",

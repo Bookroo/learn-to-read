@@ -544,6 +544,16 @@
     }
   },
   {
+    "type": "word-chain",
+    "words": [
+      "MAT",
+      "MET",
+      "NET",
+      "PET",
+      "PEN"
+    ]
+  },
+  {
     "type": "word-to-picture",
     "sets": [
       {

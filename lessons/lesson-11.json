@@ -1195,6 +1195,33 @@
     }
   },
   {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Time for a brand-new game called **Word Chains**!"
+      },
+      {
+        "type": "verbal",
+        "value": "In a Word Chain, we change just ONE thing to turn a word into a new word. Sometimes a letter changes, and sometimes an S hops on or off the end!"
+      },
+      {
+        "type": "instruction",
+        "value": "On the next slide, read each word in the chain together. After each word, ask your child what changed to make the new word."
+      }
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "MAT",
+      "MATS",
+      "MAPS",
+      "MAP",
+      "MOP"
+    ]
+  },
+  {
     "type": "word-to-picture",
     "sets": [
       {

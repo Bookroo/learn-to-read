@@ -149,6 +149,44 @@
     ]
   },
   {
+    "type": "word-chain",
+    "words": [
+      "BUT",
+      "BUS",
+      "US",
+      "UP"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "MAN",
+      "RAN",
+      "RUN",
+      "SUN"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "MOM AND DAD HELP US.",
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": "Now read some sentences all by yourself — every word uses letters you know!"
+        }
+      ]
+    }
+  },
+  {
+    "type": "reading-fluency",
+    "text": "PUT THE MUG UP FOR MOM."
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE CATS ARE ON THE RUG."
+  },
+  {
     "type": "books",
     "books": [52225, 52226, 52227, 52229, 52231, 52230, 52232, 52233, 52234],
     "pre": {

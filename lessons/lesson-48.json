@@ -204,7 +204,7 @@
       "drink",
       "king",
       "the",
-      "said",
+      "place",
       "they",
       "one"
     ]
@@ -212,6 +212,10 @@
   {
     "type": "reading-fluency",
     "text": "The mice race on the ice."
+  },
+  {
+    "type": "reading-fluency",
+    "text": "The race is at a nice place."
   },
   {
     "type": "books",
