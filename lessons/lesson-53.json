@@ -1,0 +1,124 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we learn how words talk about the past.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "d",
+        "phoneme": "/d/",
+        "graphemes": [
+          "b",
+          "t"
+        ],
+        "choices": [
+          "d",
+          "b",
+          "t"
+        ]
+      },
+      {
+        "grapheme": "t",
+        "phoneme": "/t/",
+        "graphemes": [
+          "d",
+          "f"
+        ],
+        "choices": [
+          "t",
+          "d",
+          "f"
+        ]
+      },
+      {
+        "grapheme": "le",
+        "phoneme": "/l/",
+        "graphemes": [
+          "l",
+          "e"
+        ],
+        "choices": [
+          "le",
+          "l",
+          "e"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "When something already happened, words put on an ‘-ed’ ending: jump becomes jumped.",
+      "Here's the sneaky part — ‘-ed’ can make three different sounds!",
+      "Sometimes /t/: ‘jumped’. Sometimes /d/: ‘filled’. And sometimes it adds a whole beat, /id/: ‘landed’.",
+      "Try one sound, and if the word sounds funny, try another. Your ears will tell you!"
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "jumped",
+      "kicked",
+      "filled",
+      "yelled",
+      "landed",
+      "handed"
+    ],
+    "pre": {
+      "value": [
+        "Read each word. Listen: does the -ed say /t/, /d/, or /id/?",
+        {
+          "type": "instruction",
+          "value": "jumped and kicked end in /t/; filled and yelled end in /d/; landed and handed add the /id/ beat."
+        }
+      ]
+    }
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "jump",
+      "jumped",
+      "bumped",
+      "bump"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "jumped",
+      "kicked",
+      "filled",
+      "landed",
+      "little",
+      "apple",
+      "people",
+      "boxes",
+      "the",
+      "once",
+      "was",
+      "they"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "The cat jumped and landed on the bed."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "jumped"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

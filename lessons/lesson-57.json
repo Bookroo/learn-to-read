@@ -1,0 +1,203 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "Today is a review day. That means today, we're going to play lots of reading games! Hooray, hooray!",
+      "We'll also do something brand new at the end: our very first **Fluency Check**!",
+      {
+        "type": "instruction",
+        "value": "Keep this playful. This review is a check-in to help you decide whether {name} is ready for Module 6 or if it would be more helpful to repeat Module 5."
+      }
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "pre": {
+      "value": {
+        "type": "verbal",
+        "value": "First up, let's play a round of **Eagle Eyes** — small letters only!"
+      }
+    },
+    "sets": [
+      {
+        "grapheme": "b",
+        "graphemes": [
+          "d",
+          "p"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "d",
+        "graphemes": [
+          "b",
+          "q"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "g",
+        "graphemes": [
+          "q",
+          "p"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "a",
+        "graphemes": [
+          "e",
+          "o"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "ink",
+        "graphemes": [
+          "ing",
+          "ank"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "ang",
+        "graphemes": [
+          "ank",
+          "ing"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "lost-sounds",
+    "graphemes": [
+      "ink",
+      "ing",
+      "ank",
+      "ang",
+      "ce",
+      "ge",
+      "y",
+      "b",
+      "d"
+    ],
+    "randomize": true
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "once",
+      "people",
+      "many",
+      "any",
+      "pretty"
+    ],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": "Let's practice the heart words from this module. Read the words on the cards one at a time."
+        }
+      ]
+    }
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "rabbit",
+      "little",
+      "foxes",
+      "jumped",
+      "running",
+      "open",
+      "happy"
+    ],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": "Now the big-word round! Read each big word one beat at a time."
+        }
+      ]
+    }
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "And now . . . drum roll . . . your very first **Fluency Check**!"
+      },
+      {
+        "type": "verbal",
+        "value": "I'm going to time you for one minute while you read a little story. Just do your best — this is how we watch ourselves grow!"
+      },
+      {
+        "type": "instruction",
+        "value": "Time {name} for one minute on the next passage. Count the words read correctly and write the number down — you'll compare it at the next Fluency Check. Mistakes are fine; this is a snapshot, not a test."
+      }
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "The king and the little dog sat on the hill. Come and sing with me, said the king. They sang a long song. The song was funny, and the dog was happy. Many people came to think and drink and sing."
+  },
+  {
+    "type": "books",
+    "books": [],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": "Here are all the books you read in Module 5."
+        },
+        {
+          "type": "verbal",
+          "value": "Would you like to reread any of them?"
+        },
+        {
+          "type": "instruction",
+          "value": "Rereading is great practice. Encourage {name} to choose at least one book."
+        }
+      ]
+    }
+  },
+  {
+    "type": "custom",
+    "confetti": true,
+    "value": [
+      {
+        "type": "verbal",
+        "value": "You finished the Module 5 review games AND your first Fluency Check. Great work!"
+      },
+      {
+        "type": "instruction",
+        "value": "If {name} read most words with only light prompting, they are probably ready for Module 6. If many items needed heavy support, we recommend repeating Module 5 before moving on."
+      }
+    ]
+  },
+  {
+    "type": "conclusion",
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "Great job {name}! You completed the review lesson!"
+        }
+      ]
+    }
+  }
+]

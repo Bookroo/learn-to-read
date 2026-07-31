@@ -1,0 +1,218 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, our gluing chunks come back — now with the letter i.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "b",
+        "phoneme": "/b/",
+        "graphemes": [
+          "d",
+          "p"
+        ],
+        "choices": [
+          "b",
+          "d",
+          "p"
+        ]
+      },
+      {
+        "grapheme": "d",
+        "phoneme": "/d/",
+        "graphemes": [
+          "b",
+          "q"
+        ],
+        "choices": [
+          "d",
+          "b",
+          "q"
+        ]
+      },
+      {
+        "grapheme": "ng",
+        "phoneme": "/ng/",
+        "graphemes": [
+          "n",
+          "g"
+        ],
+        "choices": [
+          "ng",
+          "n",
+          "g"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Remember the gluing trick? N-G and N-K glue themselves to the vowel before them.",
+      "Today the letter i gets glued! I-N-K makes the ‘-ink’ chunk, like in ‘pink’.",
+      "And our old friend ‘-ing’ is back from words like ‘king’ — now in small letters.",
+      "The i changes its sound inside these chunks, so always read the whole chunk together."
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/ink/",
+    "words": [
+      [
+        [
+          "p",
+          "/p/"
+        ],
+        [
+          "ink",
+          "/ink/"
+        ]
+      ],
+      [
+        [
+          "p",
+          "/p/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "n",
+          "/n/"
+        ]
+      ],
+      [
+        [
+          "th",
+          "/th/"
+        ],
+        [
+          "ink",
+          "/ink/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Now let's read some glued-chunk words in small letters."
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "pink",
+    "phonemes": [
+      "/p/",
+      "/ink/"
+    ],
+    "pre": {
+      "prepend": [
+        "The i, n, and k are glued into one chunk — give the whole ‘-ink’ chunk one finger."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "think",
+    "phonemes": [
+      "/th/",
+      "/ink/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "drink",
+    "phonemes": [
+      "/d/",
+      "/r/",
+      "/ink/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "sink",
+    "phonemes": [
+      "/s/",
+      "/ink/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "king",
+    "phonemes": [
+      "/c/",
+      "/ing/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "bring",
+    "phonemes": [
+      "/b/",
+      "/r/",
+      "/ing/"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "sink",
+      "wink",
+      "wing",
+      "king"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "pink",
+      "think",
+      "drink",
+      "king",
+      "sing",
+      "thing",
+      "the",
+      "was",
+      "they",
+      "come",
+      "said",
+      "one"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "The king can drink pink milk."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "think"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

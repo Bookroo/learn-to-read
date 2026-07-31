@@ -1,0 +1,144 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we solve a mystery: why does ‘hopping’ have two p's but ‘hoping’ has one?",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "i_e",
+        "phoneme": "/I/",
+        "graphemes": [
+          "i",
+          "e"
+        ],
+        "choices": [
+          "i_e",
+          "i",
+          "e"
+        ]
+      },
+      {
+        "grapheme": "o_e",
+        "phoneme": "/O/",
+        "graphemes": [
+          "o",
+          "e"
+        ],
+        "choices": [
+          "o_e",
+          "o",
+          "e"
+        ]
+      },
+      {
+        "grapheme": "ing",
+        "phoneme": "/ing/",
+        "graphemes": [
+          "ink",
+          "in"
+        ],
+        "choices": [
+          "ing",
+          "ink",
+          "in"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Before a word puts on an ‘-ing’ or ‘-ed’ ending, sometimes it changes a little first.",
+      "Change one: some words DOUBLE their last letter. ‘Hop’ becomes ‘hopping’.",
+      "Change two: Magic E words DROP their e. ‘Hope’ becomes ‘hoping’.",
+      "Here's the reading trick: a DOUBLED letter means the vowel stays short — ‘hopping’. A SINGLE letter is a clue there used to be a Magic E — so the vowel says its name: ‘hoping’!"
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "hopping",
+      "hoping"
+    ],
+    "pre": {
+      "value": [
+        "Look closely at these two words. Two p's: short o — hopping, like a bunny. One p: long o — hoping, like making a wish!"
+      ]
+    }
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "running",
+      "sitting",
+      "clapped",
+      "stopped"
+    ],
+    "pre": {
+      "value": [
+        "Doubled letters — so every vowel here stays short. Read each word one beat at a time."
+      ]
+    }
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "making",
+      "smiling",
+      "riding",
+      "smiled"
+    ],
+    "pre": {
+      "value": [
+        "Single letters before the ending — the Magic E dropped off, but its spell remains! The vowel says its name."
+      ]
+    }
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "hop",
+      "hopping",
+      "hoping",
+      "hope"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "hopping",
+      "hoping",
+      "running",
+      "making",
+      "smiled",
+      "jumped",
+      "little",
+      "people",
+      "the",
+      "once",
+      "was",
+      "they"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "The dog is running to the lake."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "running"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

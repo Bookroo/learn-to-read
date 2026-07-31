@@ -1,0 +1,216 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, the letter g goes soft too.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "ce",
+        "phoneme": "/s/",
+        "graphemes": [
+          "c",
+          "s"
+        ],
+        "choices": [
+          "ce",
+          "c",
+          "s"
+        ]
+      },
+      {
+        "grapheme": "g",
+        "phoneme": "/g/",
+        "graphemes": [
+          "j",
+          "q"
+        ],
+        "choices": [
+          "g",
+          "j",
+          "q"
+        ]
+      },
+      {
+        "grapheme": "dge",
+        "phoneme": "/j/",
+        "graphemes": [
+          "j",
+          "g"
+        ],
+        "choices": [
+          "dge",
+          "j",
+          "g"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Yesterday, c went soft before e. Today g does the very same trick!",
+      "When g is followed by e, it can make the /j/ sound, like in ‘age’ and ‘cage’.",
+      "Listen: ‘age’, ‘page’, ‘huge’. That's soft g."
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/j/",
+    "words": [
+      [
+        [
+          "a_e",
+          "/A/"
+        ],
+        [
+          "ge",
+          "/j/"
+        ]
+      ],
+      [
+        [
+          "g",
+          "/g/"
+        ],
+        [
+          "o",
+          "/o/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "h",
+          "/h/"
+        ],
+        [
+          "u_e",
+          "/U/"
+        ],
+        [
+          "ge",
+          "/j/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Now let's read some soft g words."
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "age",
+    "phonemes": [
+      "/A/",
+      "/j/"
+    ],
+    "pre": {
+      "prepend": [
+        "The e makes the a say its name AND softens the g to /j/."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "page",
+    "phonemes": [
+      "/p/",
+      "/A/",
+      "/j/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "cage",
+    "phonemes": [
+      "/c/",
+      "/A/",
+      "/j/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "stage",
+    "phonemes": [
+      "/s/",
+      "/t/",
+      "/A/",
+      "/j/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "huge",
+    "phonemes": [
+      "/h/",
+      "/U/",
+      "/j/"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "age",
+      "page",
+      "cage",
+      "wage"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "age",
+      "page",
+      "cage",
+      "huge",
+      "face",
+      "race",
+      "nice",
+      "once",
+      "the",
+      "said",
+      "some",
+      "they"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "The huge dog is on the stage."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "huge"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

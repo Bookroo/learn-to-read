@@ -1,0 +1,217 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, the letter a gets glued into chunks too.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "ink",
+        "phoneme": "/ink/",
+        "graphemes": [
+          "ing",
+          "in"
+        ],
+        "choices": [
+          "ink",
+          "ing",
+          "in"
+        ]
+      },
+      {
+        "grapheme": "ing",
+        "phoneme": "/ing/",
+        "graphemes": [
+          "ink",
+          "in"
+        ],
+        "choices": [
+          "ing",
+          "ink",
+          "in"
+        ]
+      },
+      {
+        "grapheme": "j",
+        "phoneme": "/j/",
+        "graphemes": [
+          "g",
+          "y"
+        ],
+        "choices": [
+          "j",
+          "g",
+          "y"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "One more gluing day! Today the letter a joins the chunk club.",
+      "A-N-K makes the ‘-ank’ chunk, like in ‘thank’.",
+      "A-N-G makes the ‘-ang’ chunk, like in ‘sang’.",
+      "Just like with i, the a changes its sound inside the chunk — so read the whole chunk together."
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/ank/",
+    "words": [
+      [
+        [
+          "th",
+          "/th/"
+        ],
+        [
+          "ank",
+          "/ank/"
+        ]
+      ],
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "dr",
+          "/d/"
+        ],
+        [
+          "ank",
+          "/ank/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Now let's read the -ank and -ang chunks."
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "thank",
+    "phonemes": [
+      "/th/",
+      "/ank/"
+    ],
+    "pre": {
+      "prepend": [
+        "The a, n, and k are glued into one chunk — give the whole ‘-ank’ chunk one finger."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "bank",
+    "phonemes": [
+      "/b/",
+      "/ank/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "drank",
+    "phonemes": [
+      "/d/",
+      "/r/",
+      "/ank/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "sang",
+    "phonemes": [
+      "/s/",
+      "/ang/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "hang",
+    "phonemes": [
+      "/h/",
+      "/ang/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "rang",
+    "phonemes": [
+      "/r/",
+      "/ang/"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "sang",
+      "rang",
+      "rank",
+      "sank"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "thank",
+      "bank",
+      "drank",
+      "sang",
+      "hang",
+      "pink",
+      "think",
+      "king",
+      "the",
+      "was",
+      "said",
+      "they"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "Hang on! The dog drank the milk."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "thank"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

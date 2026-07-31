@@ -1,0 +1,134 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we learn two new tricks for reading big words.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "a_e",
+        "phoneme": "/A/",
+        "graphemes": [
+          "a",
+          "e"
+        ],
+        "choices": [
+          "a_e",
+          "a",
+          "e"
+        ]
+      },
+      {
+        "grapheme": "u_e",
+        "phoneme": "/U/",
+        "graphemes": [
+          "u",
+          "e"
+        ],
+        "choices": [
+          "u_e",
+          "u",
+          "e"
+        ]
+      },
+      {
+        "grapheme": "e",
+        "phoneme": "/E/",
+        "graphemes": [
+          "a",
+          "i"
+        ],
+        "choices": [
+          "e",
+          "a",
+          "i"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Trick one: the **Open Chunk**.",
+      "You know that in little words like ‘he’ and ‘go’, the vowel at the end says its name.",
+      "That works INSIDE big words too! When a chunk ends in a vowel, the vowel is ‘open’ — try its name first.",
+      "‘Open’ splits into o-pen: the o is open, so it says its name — O-pen!",
+      "‘Pilot’ splits into pi-lot: pi . . . lot . . . pilot!"
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "open",
+      "pilot",
+      "tulip",
+      "music",
+      "bonus"
+    ],
+    "pre": {
+      "value": [
+        "Split each word after the first vowel, let that vowel say its name, then join the chunks."
+      ]
+    }
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Trick two: the **Lazy Vowel**.",
+      "Sometimes a vowel in a big word is just too sleepy to say its real sound. It mumbles ‘uh’ instead!",
+      "Say ‘wagon’. That o isn't saying /o/ OR its name — it's mumbling: wag-uhn.",
+      "If you sound out a word carefully and it sounds ALMOST right, try letting a vowel be lazy and mumble ‘uh’."
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "wagon",
+      "lemon",
+      "seven",
+      "even"
+    ],
+    "pre": {
+      "value": [
+        "Read each word. If it sounds almost right, let a vowel go lazy and mumble ‘uh’ — then you'll hear it!"
+      ]
+    }
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "open",
+      "pilot",
+      "music",
+      "wagon",
+      "lemon",
+      "seven",
+      "hopping",
+      "making",
+      "people",
+      "the",
+      "once",
+      "they"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "The pilot has seven tulips."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "open"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

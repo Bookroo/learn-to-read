@@ -1,0 +1,118 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we learn the secret ending hiding in ‘little’ and ‘apple’.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "ce",
+        "phoneme": "/s/",
+        "graphemes": [
+          "se",
+          "c"
+        ],
+        "choices": [
+          "ce",
+          "se",
+          "c"
+        ]
+      },
+      {
+        "grapheme": "l",
+        "phoneme": "/l/",
+        "graphemes": [
+          "i",
+          "t"
+        ],
+        "choices": [
+          "l",
+          "i",
+          "t"
+        ]
+      },
+      {
+        "grapheme": "b",
+        "phoneme": "/b/",
+        "graphemes": [
+          "d",
+          "p"
+        ],
+        "choices": [
+          "b",
+          "d",
+          "p"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Lots of big words end with a consonant plus the letters l-e, like ‘little’ and ‘apple’.",
+      "That ending is its own beat! The e is silent, and the chunk says /ul/: lit-tle, ap-ple.",
+      "When you see a word ending in consonant + l + e, split off that last chunk and read it as one beat."
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "little",
+      "apple",
+      "bottle",
+      "middle",
+      "puddle"
+    ],
+    "pre": {
+      "value": [
+        "Split off the -le chunk, read the first beat, then add the -le beat: lit-tle . . . little!"
+      ]
+    }
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "little",
+      "middle",
+      "muddle",
+      "puddle"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "little",
+      "apple",
+      "bottle",
+      "middle",
+      "puddle",
+      "foxes",
+      "people",
+      "rabbit",
+      "the",
+      "once",
+      "some",
+      "into"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "The little apple is in the middle."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "little"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

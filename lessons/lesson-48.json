@@ -1,0 +1,228 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, the letter c shows us its soft side.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "ank",
+        "phoneme": "/ank/",
+        "graphemes": [
+          "ang",
+          "an"
+        ],
+        "choices": [
+          "ank",
+          "ang",
+          "an"
+        ]
+      },
+      {
+        "grapheme": "c",
+        "phoneme": "/c/",
+        "graphemes": [
+          "k",
+          "s"
+        ],
+        "choices": [
+          "c",
+          "k",
+          "s"
+        ]
+      },
+      {
+        "grapheme": "i",
+        "phoneme": "/I/",
+        "graphemes": [
+          "e",
+          "a"
+        ],
+        "choices": [
+          "i",
+          "e",
+          "a"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "You know the letter c makes the /k/ sound, like in ‘cat’.",
+      "But c has a secret: when c is followed by e, it goes soft and makes the /s/ sound instead!",
+      "Listen: ‘face’, ‘race’, ‘ice’. That's soft c.",
+      "Magic E is often nearby — in ‘face’, the e does TWO jobs: it makes the a say its name AND softens the c."
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/s/",
+    "words": [
+      [
+        [
+          "f",
+          "/f/"
+        ],
+        [
+          "a_e",
+          "/A/"
+        ],
+        [
+          "ce",
+          "/s/"
+        ]
+      ],
+      [
+        [
+          "c",
+          "/c/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "i_e",
+          "/I/"
+        ],
+        [
+          "ce",
+          "/s/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Now let's read some soft c words."
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "face",
+    "phonemes": [
+      "/f/",
+      "/A/",
+      "/s/"
+    ],
+    "pre": {
+      "prepend": [
+        "The e makes the a say its name AND softens the c to /s/. What a busy little e!"
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "race",
+    "phonemes": [
+      "/r/",
+      "/A/",
+      "/s/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "ice",
+    "phonemes": [
+      "/I/",
+      "/s/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "mice",
+    "phonemes": [
+      "/m/",
+      "/I/",
+      "/s/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "nice",
+    "phonemes": [
+      "/n/",
+      "/I/",
+      "/s/"
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "once"
+    ],
+    "pre": {
+      "value": [
+        "One new heart word today: ‘once’ — like in ‘once upon a time’!",
+        "It has a soft c, but the rest of the word doesn't follow the rules, so we learn it by heart."
+      ]
+    }
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "ice",
+      "mice",
+      "nice",
+      "rice"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "face",
+      "race",
+      "ice",
+      "nice",
+      "once",
+      "thank",
+      "drink",
+      "king",
+      "the",
+      "said",
+      "they",
+      "one"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "The mice race on the ice."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "nice"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

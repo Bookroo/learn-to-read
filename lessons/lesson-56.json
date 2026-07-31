@@ -1,0 +1,210 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, the letter y reveals a secret: it moonlights as a vowel!",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "y",
+        "phoneme": "/y/",
+        "graphemes": [
+          "w",
+          "v"
+        ],
+        "choices": [
+          "y",
+          "w",
+          "v"
+        ]
+      },
+      {
+        "grapheme": "i",
+        "phoneme": "/I/",
+        "graphemes": [
+          "e",
+          "y"
+        ],
+        "choices": [
+          "i",
+          "e",
+          "y"
+        ]
+      },
+      {
+        "grapheme": "e",
+        "phoneme": "/E/",
+        "graphemes": [
+          "i",
+          "a"
+        ],
+        "choices": [
+          "e",
+          "i",
+          "a"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "You know y as the yo-yo letter that starts ‘yes’ and ‘yum’.",
+      "But at the END of a word, y turns into a vowel!",
+      "In little words, final y says /I/ — like ‘my’, ‘fly’, and ‘sky’.",
+      "In bigger words, final y says /E/ — like ‘happy’, ‘funny’, and ‘silly’.",
+      "Little word: y says I. Big word: y says E."
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/I/",
+    "words": [
+      [
+        [
+          "m",
+          "/m/"
+        ],
+        [
+          "y",
+          "/I/"
+        ]
+      ],
+      [
+        [
+          "y",
+          "/y/"
+        ],
+        [
+          "e",
+          "/e/"
+        ],
+        [
+          "s",
+          "/s/"
+        ]
+      ],
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "k",
+          "/c/"
+        ],
+        [
+          "y",
+          "/I/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "my",
+    "phonemes": [
+      "/m/",
+      "/I/"
+    ],
+    "pre": {
+      "prepend": [
+        "Little word — the y says /I/."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "fly",
+    "phonemes": [
+      "/f/",
+      "/l/",
+      "/I/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "sky",
+    "phonemes": [
+      "/s/",
+      "/k/",
+      "/I/"
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "happy",
+      "funny",
+      "silly",
+      "baby",
+      "only",
+      "quickly"
+    ],
+    "pre": {
+      "value": [
+        "Big words — the y at the end says /E/. Read each word one beat at a time."
+      ]
+    }
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "many",
+      "any",
+      "pretty"
+    ],
+    "pre": {
+      "value": [
+        "Three new heart words today: ‘many’, ‘any’, and ‘pretty’.",
+        "They all end in vowel y, but their middles break the rules — so we learn them by heart."
+      ]
+    }
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "my",
+      "by",
+      "try",
+      "cry"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "my",
+      "fly",
+      "sky",
+      "happy",
+      "funny",
+      "baby",
+      "many",
+      "any",
+      "pretty",
+      "the",
+      "people",
+      "they"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "Why is the baby so happy?"
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "happy"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

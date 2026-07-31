@@ -1,0 +1,182 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn how to read BIG words — words with two beats!",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "ge",
+        "phoneme": "/j/",
+        "graphemes": [
+          "g",
+          "j"
+        ],
+        "choices": [
+          "ge",
+          "g",
+          "j"
+        ]
+      },
+      {
+        "grapheme": "ing",
+        "phoneme": "/ing/",
+        "graphemes": [
+          "ink",
+          "in"
+        ],
+        "choices": [
+          "ing",
+          "ink",
+          "in"
+        ]
+      },
+      {
+        "grapheme": "o",
+        "phoneme": "/O/",
+        "graphemes": [
+          "u",
+          "a"
+        ],
+        "choices": [
+          "o",
+          "u",
+          "a"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Remember clapping word beats? ‘Camping’ has two beats: CAMP-ING.",
+      "Big words are just small chunks holding hands! Today we learn to read them one beat at a time.",
+      "We'll climb three rungs of a ladder, from easiest to trickiest."
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Rung one: some big words are just two little words stuck together!",
+      "‘Sun’ + ‘set’ = ‘sunset’. ‘Hot’ + ‘dog’ = ‘hotdog’.",
+      "Read the first little word, read the second little word, then say them together."
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "sunset",
+      "hotdog",
+      "laptop",
+      "catnip",
+      "into"
+    ],
+    "pre": {
+      "value": [
+        "Read each word one beat at a time, then say the whole word.",
+        {
+          "type": "instruction",
+          "value": "Have {name} cover the second half with a finger, read the first word, then reveal and read the rest."
+        }
+      ]
+    }
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Rung two: some big words start with a little chunk that has a meaning.",
+      "‘un-’ means NOT or the opposite: ‘undo’ means to do the opposite of do. ‘Unzip’!",
+      "‘re-’ means AGAIN: ‘redo’ means do it again. ‘Retell’ means tell it again!"
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "undo",
+      "redo",
+      "unzip",
+      "unpack",
+      "retell"
+    ],
+    "pre": {
+      "value": [
+        "Read the chunk, read the rest, then say the whole word."
+      ]
+    }
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Rung three: the trickiest! Some big words need to be split in the middle.",
+      "Find the vowels, split between the two consonants in the middle, read each chunk, then join them.",
+      "‘Rabbit’ splits into rab-bit. ‘Napkin’ splits into nap-kin.",
+      {
+        "type": "instruction",
+        "value": "Cover one half at a time to help {name} read each chunk before joining them."
+      }
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "rabbit",
+      "napkin",
+      "muffin",
+      "picnic"
+    ],
+    "pre": {
+      "value": [
+        "Split each word in the middle, read each chunk, then join the chunks."
+      ]
+    }
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "people"
+    ],
+    "pre": {
+      "value": [
+        "One new heart word today, and it's a big one: ‘people’.",
+        "You'll see it everywhere. It doesn't follow the rules at all, so we learn it by heart."
+      ]
+    }
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "sunset",
+      "hotdog",
+      "rabbit",
+      "napkin",
+      "picnic",
+      "undo",
+      "unzip",
+      "people",
+      "into",
+      "the",
+      "once",
+      "they"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "Some people like a picnic."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "sunset"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we learn what happens when there's more than one fox.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "x",
+        "phoneme": "/ks/",
+        "graphemes": [
+          "s",
+          "k"
+        ],
+        "choices": [
+          "x",
+          "s",
+          "k"
+        ]
+      },
+      {
+        "grapheme": "sh",
+        "phoneme": "/sh/",
+        "graphemes": [
+          "ch",
+          "s"
+        ],
+        "choices": [
+          "sh",
+          "ch",
+          "s"
+        ]
+      },
+      {
+        "grapheme": "ch",
+        "phoneme": "/ch/",
+        "graphemes": [
+          "sh",
+          "c"
+        ],
+        "choices": [
+          "ch",
+          "sh",
+          "c"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "You know that s at the end of a word can mean ‘more than one’: one cat, two cats.",
+      "But try saying ‘foxs’ or ‘dishs’ . . . you can't! Your mouth needs a helper vowel.",
+      "So after the sounds /s/, /x/, /sh/, and /ch/, we add ‘-es’ instead — and it adds a whole beat: fox-ES, dish-ES."
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "foxes",
+      "boxes",
+      "dishes",
+      "wishes",
+      "catches",
+      "buses"
+    ],
+    "pre": {
+      "value": [
+        "Read the first beat, then add the ‘-es’ beat.",
+        {
+          "type": "instruction",
+          "value": "Listen for the /iz/ sound at the end of each word — that's the -es beat."
+        }
+      ]
+    }
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "box",
+      "boxes",
+      "foxes",
+      "fox"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "foxes",
+      "boxes",
+      "dishes",
+      "wishes",
+      "buses",
+      "people",
+      "rabbit",
+      "picnic",
+      "the",
+      "once",
+      "some",
+      "they"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "The foxes sit in boxes."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "boxes"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

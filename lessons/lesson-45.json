@@ -1,0 +1,297 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "Today is a BIG day. You've been reading with capital letters — but open any book, and most of the letters are small!",
+      "Every capital letter has a small-letter partner. Today we meet all the partners at once.",
+      "Here's the good news: small letters make exactly the same sounds you already know. Same letters, same sounds — just new outfits!"
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Lots of small letters look just like their capitals, only smaller: c, o, s, v, w, x, z, k, p, u.",
+      "Let's find some of these look-alike partners."
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "c",
+        "graphemes": [
+          "e",
+          "o"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "s",
+        "graphemes": [
+          "z",
+          "x"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "w",
+        "graphemes": [
+          "v",
+          "m"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "k",
+        "graphemes": [
+          "x",
+          "h"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Some small letters are shape-shifters — they look quite different from their capitals!",
+      "A becomes a. E becomes e. G becomes g. Q becomes q. R becomes r.",
+      "Let's practice spotting these tricky partners."
+    ]
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "a",
+    "traceOnly": true
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "e",
+    "traceOnly": true
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "g",
+    "traceOnly": true
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "r",
+    "traceOnly": true
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "a",
+        "graphemes": [
+          "e",
+          "o"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "e",
+        "graphemes": [
+          "a",
+          "c"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "g",
+        "graphemes": [
+          "q",
+          "p"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "r",
+        "graphemes": [
+          "n",
+          "m"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Now for the two trickiest partners of all: b and d.",
+      "They're mirror twins! Here's a trick: make two fists with your thumbs up. Your left hand makes a ‘b’ . . . your right hand makes a ‘d’.",
+      "The word ‘bed’ even makes a little bed shape: b at the front, d at the back."
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "b",
+        "graphemes": [
+          "d",
+          "p"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "d",
+        "graphemes": [
+          "b",
+          "q"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "a",
+        "phoneme": "/a/",
+        "graphemes": [
+          "e",
+          "o"
+        ],
+        "choices": [
+          "a",
+          "e",
+          "o"
+        ]
+      },
+      {
+        "grapheme": "g",
+        "phoneme": "/g/",
+        "graphemes": [
+          "q",
+          "j"
+        ],
+        "choices": [
+          "g",
+          "q",
+          "j"
+        ]
+      },
+      {
+        "grapheme": "b",
+        "phoneme": "/b/",
+        "graphemes": [
+          "d",
+          "p"
+        ],
+        "choices": [
+          "b",
+          "d",
+          "p"
+        ]
+      },
+      {
+        "grapheme": "d",
+        "phoneme": "/d/",
+        "graphemes": [
+          "b",
+          "g"
+        ],
+        "choices": [
+          "d",
+          "b",
+          "g"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "From now on, we'll read words in small letters, just like real books!",
+      "Let's read our very first small-letter words — they should look familiar."
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "mat",
+    "phonemes": [
+      "/m/",
+      "/a/",
+      "/t/"
+    ],
+    "pre": {
+      "prepend": [
+        "Our very first word, now in small letters!"
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "bed",
+    "phonemes": [
+      "/b/",
+      "/e/",
+      "/d/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "dog",
+    "phonemes": [
+      "/d/",
+      "/o/",
+      "/g/"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "mat",
+      "bed",
+      "dog",
+      "the",
+      "was",
+      "come",
+      "here",
+      "have",
+      "they",
+      "one",
+      "said",
+      "of"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "The cat sat on the mat."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "bed"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]
