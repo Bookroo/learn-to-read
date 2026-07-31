@@ -38,8 +38,10 @@ def words_in_slide(slide):
         for s in slide.get("sets", []):
             yield norm(s["word"]), True
     elif t == "sound-pick-word-stack":
+        # Elephant Ears — the parent says the word aloud; the child listens
+        # for the target sound. The revealed card is for the parent to read.
         for entry in slide.get("words", []):
-            yield norm("".join(g for g, _ in entry)), True
+            yield norm("".join(g for g, _ in entry)), False
     elif t in ("card-stack",):
         for w in slide.get("values", []):
             yield norm(w), True
