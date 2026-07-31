@@ -1,0 +1,265 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn about two sounds that love to glue themselves to the vowel before them.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "W",
+        "phoneme": "/w/",
+        "graphemes": [
+          "WH",
+          "V"
+        ],
+        "choices": [
+          "W",
+          "WH",
+          "V"
+        ]
+      },
+      {
+        "grapheme": "TH",
+        "phoneme": "/th/",
+        "graphemes": [
+          "SH",
+          "CH"
+        ],
+        "choices": [
+          "TH",
+          "SH",
+          "CH"
+        ]
+      },
+      {
+        "grapheme": "CH",
+        "phoneme": "/ch/",
+        "graphemes": [
+          "SH",
+          "C"
+        ],
+        "choices": [
+          "CH",
+          "SH",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "N",
+        "graphemes": [
+          "M",
+          "H"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "G",
+        "graphemes": [
+          "C",
+          "O"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "K",
+        "graphemes": [
+          "X",
+          "H"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "When the letters N and G come at the end of a word, they make one new sound — the humming sound at the end of ‘song’.",
+      "And here's the special part: that sound GLUES itself to the vowel right before it. The vowel and the N-G stick together into one chunk, like ‘-ong’ in ‘song’ or ‘-ung’ in ‘sung’.",
+      "N and K do the same gluing trick — like ‘-onk’ in ‘honk’ and ‘-unk’ in ‘trunk’.",
+      "When you see these chunks, don't pull them apart. Read the whole chunk as one glued sound."
+    ]
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "NG",
+    "phoneme": "/ng/"
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/ng/",
+    "words": [
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "o",
+          "/o/"
+        ],
+        [
+          "ng",
+          "/ng/"
+        ]
+      ],
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "u",
+          "/u/"
+        ],
+        [
+          "n",
+          "/n/"
+        ]
+      ],
+      [
+        [
+          "h",
+          "/h/"
+        ],
+        [
+          "u",
+          "/u/"
+        ],
+        [
+          "ng",
+          "/ng/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 29 sounds now!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "SONG",
+    "phonemes": [
+      "/s/",
+      "/ong/"
+    ],
+    "pre": {
+      "prepend": [
+        "The O, N, and G are glued into one chunk — give the whole ‘-ong’ chunk one finger."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "LONG",
+    "phonemes": [
+      "/l/",
+      "/ong/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "SUNG",
+    "phonemes": [
+      "/s/",
+      "/ung/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "HONK",
+    "phonemes": [
+      "/h/",
+      "/onk/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "SUNK",
+    "phonemes": [
+      "/s/",
+      "/unk/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "TRUNK",
+    "phonemes": [
+      "/t/",
+      "/r/",
+      "/unk/"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "SUNG",
+      "HUNG",
+      "HONK",
+      "BONK"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "song",
+      "long",
+      "sung",
+      "chunk",
+      "was",
+      "what",
+      "where",
+      "want",
+      "who",
+      "they",
+      "there",
+      "the"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE SONG IS LONG."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "SONG"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

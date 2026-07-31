@@ -1,0 +1,254 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "Today is a review day. That means today, we're going to play lots of reading games! Hooray, hooray!",
+      "Instead of learning new letters and sounds, we will review the letters, sounds, and words you've already learned.",
+      {
+        "type": "instruction",
+        "value": "Keep this playful. This review is a check-in to help you decide whether {name} is ready for Module 4 or if it would be more helpful to repeat Module 3."
+      }
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "pre": {
+      "value": {
+        "type": "verbal",
+        "value": "First up, let's play a round of **Eagle Eyes**."
+      }
+    },
+    "sets": [
+      {
+        "grapheme": "SH",
+        "graphemes": [
+          "CH",
+          "TH"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "CH",
+        "graphemes": [
+          "SH",
+          "CK"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "TH",
+        "graphemes": [
+          "SH",
+          "WH"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "WH",
+        "graphemes": [
+          "TH",
+          "SH"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "Y",
+        "graphemes": [
+          "W",
+          "V"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "K",
+        "graphemes": [
+          "X",
+          "H"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "F",
+        "graphemes": [
+          "E",
+          "T"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "W",
+        "graphemes": [
+          "M",
+          "V"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "lost-sounds",
+    "graphemes": [
+      "SH",
+      "CH",
+      "TH",
+      "Y",
+      "K",
+      "QU",
+      "F",
+      "W",
+      "NG"
+    ],
+    "randomize": true
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "THEY",
+      "THERE",
+      "WAS",
+      "WHAT",
+      "WHERE",
+      "WANT",
+      "WHO",
+      "FROM",
+      "SAID",
+      "FULL",
+      "YOU",
+      "YOUR"
+    ],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": "Let's practice all the heart words from this module. Read the words on the cards one at a time."
+        }
+      ]
+    }
+  },
+  {
+    "type": "word-to-picture",
+    "sets": [
+      {
+        "word": "SHIP",
+        "words": [
+          "boat",
+          "car"
+        ]
+      },
+      {
+        "word": "FISH",
+        "words": [
+          "cat",
+          "dog"
+        ]
+      },
+      {
+        "word": "CHIN",
+        "words": [
+          "nose",
+          "hand"
+        ]
+      },
+      {
+        "word": "BELL",
+        "words": [
+          "drum",
+          "hat"
+        ]
+      },
+      {
+        "word": "KING",
+        "words": [
+          "dog",
+          "hat"
+        ]
+      },
+      {
+        "word": "RING",
+        "words": [
+          "hat",
+          "sock"
+        ]
+      },
+      {
+        "word": "BATH",
+        "words": [
+          "bed",
+          "sun"
+        ]
+      },
+      {
+        "word": "WHIP",
+        "words": [
+          "rope",
+          "fan"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE QUICK CHICK IS IN THE SHED."
+  },
+  {
+    "type": "books",
+    "books": [],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": "Here are all the books you read in Module 3."
+        },
+        {
+          "type": "verbal",
+          "value": "Would you like to reread any of them?"
+        },
+        {
+          "type": "instruction",
+          "value": "Rereading is great practice. Encourage {name} to choose at least one book."
+        }
+      ]
+    }
+  },
+  {
+    "type": "custom",
+    "confetti": true,
+    "value": [
+      {
+        "type": "verbal",
+        "value": "You finished the Module 3 review games. Great work!"
+      },
+      {
+        "type": "instruction",
+        "value": "If {name} read most words and matched most sounds with only light prompting, they are probably ready for Module 4. If many items needed heavy support, we recommend repeating Module 3 before moving on."
+      }
+    ]
+  },
+  {
+    "type": "conclusion",
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "Great job {name}! You completed the review lesson!"
+        }
+      ]
+    }
+  }
+]

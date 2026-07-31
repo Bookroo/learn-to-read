@@ -1,0 +1,240 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn about double letters.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "F",
+        "phoneme": "/f/",
+        "graphemes": [
+          "T",
+          "H"
+        ],
+        "choices": [
+          "F",
+          "T",
+          "H"
+        ]
+      },
+      {
+        "grapheme": "L",
+        "phoneme": "/l/",
+        "graphemes": [
+          "I",
+          "T"
+        ],
+        "choices": [
+          "L",
+          "I",
+          "T"
+        ]
+      },
+      {
+        "grapheme": "S",
+        "phoneme": "/s/",
+        "graphemes": [
+          "Z",
+          "C"
+        ],
+        "choices": [
+          "S",
+          "Z",
+          "C"
+        ]
+      },
+      {
+        "grapheme": "Z",
+        "phoneme": "/z/",
+        "graphemes": [
+          "S",
+          "N"
+        ],
+        "choices": [
+          "Z",
+          "S",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Sometimes at the end of a short word, a letter brings its twin!",
+      "The letters F, L, S, and Z often come doubled at the end of a word — like in ‘off’, ‘bell’, ‘miss’, and ‘buzz’.",
+      "Here's the trick: doubled letters make just ONE sound. Two letters, one sound — a bit like **Letter Friends**, but these friends are twins!"
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/l/",
+    "words": [
+      [
+        [
+          "b",
+          "/b/"
+        ],
+        [
+          "e",
+          "/e/"
+        ],
+        [
+          "ll",
+          "/l/"
+        ]
+      ],
+      [
+        [
+          "m",
+          "/m/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "ss",
+          "/s/"
+        ]
+      ],
+      [
+        [
+          "o",
+          "/o/"
+        ],
+        [
+          "ff",
+          "/f/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! Now let's read some words with double letters."
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "OFF",
+    "phonemes": [
+      "/o/",
+      "/f/"
+    ],
+    "pre": {
+      "prepend": [
+        "The two Fs share one finger and make one sound."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "BELL",
+    "phonemes": [
+      "/b/",
+      "/e/",
+      "/l/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "MISS",
+    "phonemes": [
+      "/m/",
+      "/i/",
+      "/s/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "BUZZ",
+    "phonemes": [
+      "/b/",
+      "/u/",
+      "/z/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "HILL",
+    "phonemes": [
+      "/h/",
+      "/i/",
+      "/l/"
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "FULL"
+    ],
+    "pre": {
+      "value": [
+        "We have one new heart word today: ‘full’.",
+        "It has the double-L twins, and we learn it by heart."
+      ]
+    }
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "BELL",
+      "TELL",
+      "TALL",
+      "BALL"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "full",
+      "from",
+      "said",
+      "off",
+      "bell",
+      "miss",
+      "buzz",
+      "hill",
+      "less",
+      "mess",
+      "the",
+      "a"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE CUP IS FULL."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "BELL"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

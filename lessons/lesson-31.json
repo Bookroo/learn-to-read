@@ -1,0 +1,263 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn about word beats called syllables, and a very useful glued chunk: ‘-ing’.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "NG",
+        "phoneme": "/ng/",
+        "graphemes": [
+          "N",
+          "G"
+        ],
+        "choices": [
+          "NG",
+          "N",
+          "G"
+        ]
+      },
+      {
+        "grapheme": "W",
+        "phoneme": "/w/",
+        "graphemes": [
+          "WH",
+          "M"
+        ],
+        "choices": [
+          "W",
+          "WH",
+          "M"
+        ]
+      },
+      {
+        "grapheme": "SH",
+        "phoneme": "/sh/",
+        "graphemes": [
+          "CH",
+          "TH"
+        ],
+        "choices": [
+          "SH",
+          "CH",
+          "TH"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Every word has beats, called syllables. Let's clap them!",
+      "Clap with me: ‘cat’ . . . CAT. One clap — one beat!",
+      "Now: ‘camping’ . . . CAMP-ING. Two claps — two beats!",
+      {
+        "type": "instruction",
+        "value": "Clap a few more spoken words together: ‘dog’ (1), ‘yel-low’ (2), ‘ba-na-na’ (3). This is listening only — no reading needed."
+      },
+      "When a word has more than one beat, we can read it one beat at a time, then put the beats together."
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Yesterday's gluing trick has one more chunk to show us — the most useful one of all: I-N-G.",
+      "The I glues onto N-G to make the ‘-ing’ chunk, like at the end of ‘king’ and ‘sing’.",
+      "And ‘-ing’ can be its own beat at the end of longer words, like ‘camp-ing’ and ‘help-ing’."
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/ng/",
+    "words": [
+      [
+        [
+          "k",
+          "/c/"
+        ],
+        [
+          "ing",
+          "/ing/"
+        ]
+      ],
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "c",
+          "/c/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "m",
+          "/m/"
+        ],
+        [
+          "p",
+          "/p/"
+        ],
+        [
+          "ing",
+          "/ing/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! Now let's read some ‘-ing’ words."
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "KING",
+    "phonemes": [
+      "/c/",
+      "/ing/"
+    ],
+    "pre": {
+      "prepend": [
+        "The I, N, and G are glued into one ‘-ing’ chunk — give the whole chunk one finger."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "RING",
+    "phonemes": [
+      "/r/",
+      "/ing/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "SING",
+    "phonemes": [
+      "/s/",
+      "/ing/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "THING",
+    "phonemes": [
+      "/th/",
+      "/ing/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "CAMPING",
+    "phonemes": [
+      "/c/",
+      "/a/",
+      "/m/",
+      "/p/",
+      "/ing/"
+    ],
+    "pre": {
+      "prepend": [
+        "This word has two beats: CAMP and ING. Read the first beat, then add the ‘-ing’ beat."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "HELPING",
+    "phonemes": [
+      "/h/",
+      "/e/",
+      "/l/",
+      "/p/",
+      "/ing/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "STANDING",
+    "phonemes": [
+      "/s/",
+      "/t/",
+      "/a/",
+      "/n/",
+      "/d/",
+      "/ing/"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "SING",
+      "KING",
+      "RING",
+      "WING"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "king",
+      "sing",
+      "thing",
+      "song",
+      "was",
+      "what",
+      "who",
+      "they",
+      "there",
+      "from",
+      "said",
+      "the"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE KING CAN SING A SONG."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "SING"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

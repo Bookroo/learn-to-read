@@ -1,0 +1,472 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn one new letter, one new set of **Letter Friends**, and one new sound.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "lost-sounds",
+    "graphemes": [
+      "T",
+      "SH",
+      "A",
+      "I",
+      "CH",
+      "O",
+      "P",
+      "S",
+      "Y",
+      "N",
+      "C",
+      "E",
+      "Z",
+      "G",
+      "B",
+      "C",
+      "L",
+      "H",
+      "R",
+      "U"
+    ],
+    "pre": {
+      "value": [
+        "Shh . . . can you hear that? All the letters (and **Letter Friends**!) have lost their sounds! Can you help them?",
+        {
+          "type": "instruction",
+          "value": "If you see **Letter Friends**, just say their sound!"
+        }
+      ]
+    }
+  },
+  {
+    "type": "grapheme-recall",
+    "grapheme": "K",
+    "variant": "new-letter"
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "K",
+    "traceOnly": true
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "K"
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "K",
+        "graphemes": [
+          "G",
+          "X"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "K",
+    "phoneme": "/k/"
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/k/",
+    "words": [
+      [
+        [
+          "k",
+          "/k/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "d",
+          "/d/"
+        ]
+      ],
+      [
+        [
+          "b",
+          "/b/"
+        ],
+        [
+          "e",
+          "/e/"
+        ],
+        [
+          "d",
+          "/d/"
+        ]
+      ],
+      [
+        [
+          "k",
+          "/k/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "We're going to learn another set of **Letter Friends** today.",
+      "As a reminder, **Letter Friends** are a little bit like sticky sounds. With sticky sounds, when two letters stick together, you say their sounds together, but both letters make their usual sounds.",
+      "When **Letter Friends** are next to each other they make a different sound than they do when they are by themselves.",
+      "When we do **Finger Words**, we’ll look for **Letter Friends**, and then we’ll look for **Sticky Sounds**."
+    ]
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "C",
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "The **Letter Friends** we are going to meet today are C and K."
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        "What sound does the letter C typically make by itself?",
+        {
+          "type": "instruction",
+          "value": [
+            "The letter C can make the ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound sometimes, like in the word circle, but it typically makes the ",
+            {
+              "type": "sound",
+              "phoneme": "/k/"
+            },
+            "sound."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "That’s right. It’s makes the ",
+            {
+              "type": "sound",
+              "phoneme": "/k/"
+            },
+            " sound."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "K",
+    "pre": {
+      "prepend": [
+        "What sound does the letter K make by itself?"
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "That's right! The letter K makes the ",
+            {
+              "type": "sound",
+              "phoneme": "/k/"
+            },
+            " sound. The letter C and the letter K each make the same sound by themselves."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "CK",
+    "phoneme": "/k/",
+    "pre": {
+      "prepend": [
+        "When the letter C is followed immediately by the letter K, these letters become **Letter Friends**. Note that you will not see these **Letter Friends** at the beginning of a word, only in the middle or at the end."
+      ]
+    },
+    "post": {
+      "prepend": [
+        "Even though the letter C, the letter K, and the **Letter Friends** CK all say the same sound, note that the **Letter Friends** do NOT say the sound twice."
+      ]
+    }
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/k/",
+    "words": [
+      [
+        [
+          "b",
+          "/b/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "ck",
+          "/k/"
+        ]
+      ],
+      [
+        [
+          "b",
+          "/b/"
+        ],
+        [
+          "e",
+          "/e/"
+        ],
+        [
+          "d",
+          "/d/"
+        ]
+      ],
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "ck",
+          "/k/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 20 letters now and 22 sounds!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy again!"
+      },
+      {
+        "type": "instruction",
+        "value": [
+          "On the next slide, we'll practice ",
+          {
+            "type": "link",
+            "value": "Finger Words",
+            "href": "https://www.youtube.com/watch?v=OYU6RDoPgWo"
+          },
+          " step by step, but if you need a refresher, you can click on the link to watch the video again."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "SKIP",
+    "phonemes": [
+      "/s/",
+      "/k/",
+      "/i/",
+      "/p/"
+    ],
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "Use **Imaginary Finger Words** to read this word."
+        },
+        {
+          "index": 1,
+          "value": "In your mind, assign each letter to an imaginary finger. Then look for **Letter Friends**, and if you find any, stick them together in your mind."
+        },
+        {
+          "index": 2,
+          "value": "Say the sound each letter (or group of **Letter Friends**) makes."
+        }
+      ]
+    },
+    "post": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "If there are stickable sounds, stick them together in your mind, then say the sounds again."
+        },
+        {
+          "index": 1,
+          "value": "Blend the sounds together, like you would do on your knuckles."
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "KICK",
+    "phonemes": [
+      "/k/",
+      "/i/",
+      "/k/"
+    ],
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "Use **Imaginary Finger Words** to read this word."
+        },
+        {
+          "index": 1,
+          "value": "In your mind, assign each letter to an imaginary finger. Then look for **Letter Friends**, and if you find any, stick them together in your mind."
+        },
+        {
+          "index": 2,
+          "value": "Say the sound each letter (or group of **Letter Friends**) makes."
+        }
+      ]
+    },
+    "post": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "If there are stickable sounds, stick them together in your mind, then say the sounds again."
+        },
+        {
+          "index": 1,
+          "value": "Blend the sounds together, like you would do on your knuckles."
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "BLACK",
+    "phonemes": [
+      "/b/",
+      "/l/",
+      "/a/",
+      "/k/"
+    ],
+    "pre": {
+      "replace": [
+        {
+          "index": 2,
+          "value": "If there are **Letter Friends**, stick them together, then say the sound each finger or finger pair makes."
+        }
+      ]
+    }
+  },
+  {
+    "type": "word-to-picture",
+    "sets": [
+      {
+        "word": "DUCK",
+        "words": [
+          "dog",
+          "pig"
+        ],
+        "total": 3,
+        "correct": 1
+      },
+      {
+        "word": "SOCK",
+        "words": [
+          "dog",
+          "pig"
+        ],
+        "total": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "LICK",
+      "CLICK",
+      "CHICK",
+      "CHECK"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "I",
+      "a",
+      "the",
+      "has",
+      "pets",
+      "his",
+      "in",
+      "did",
+      "on",
+      "not",
+      "top",
+      "is",
+      "it",
+      "sit",
+      "at",
+      "an",
+      "big",
+      "dog",
+      "digs",
+      "past",
+      "stop",
+      "bed",
+      "get",
+      "pet",
+      "send",
+      "hand",
+      "lip",
+      "leg"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE RED CHICK IS BACK."
+  },
+  {
+    "type": "books",
+    "books": [
+      52234
+    ]
+  },
+  {
+    "type": "teach-tam",
+    "value": "KICK"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn a brand-new idea called **Letter Friends**, and a new sound.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "Z",
+        "phoneme": "/z/",
+        "graphemes": [
+          "S",
+          "N"
+        ],
+        "choices": [
+          "Z",
+          "S",
+          "N"
+        ]
+      },
+      {
+        "grapheme": "H",
+        "phoneme": "/h/",
+        "graphemes": [
+          "N",
+          "M"
+        ],
+        "choices": [
+          "H",
+          "N",
+          "M"
+        ]
+      },
+      {
+        "grapheme": "E",
+        "phoneme": "/e/",
+        "graphemes": [
+          "A",
+          "I"
+        ],
+        "choices": [
+          "E",
+          "A",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "S",
+        "graphemes": [
+          "Z",
+          "C"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "H",
+        "graphemes": [
+          "N",
+          "M"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "So far, every letter we've met makes its own sound.",
+      "But some letters like to team up. When they do, we call them **Letter Friends**.",
+      "**Letter Friends** are two letters that work together to make one brand-new sound — a sound that neither letter makes on its own.",
+      "Our first **Letter Friends** are S and H."
+    ]
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "SH",
+    "phoneme": "/sh/",
+    "pre": {
+      "prepend": [
+        "When the letter S is followed immediately by the letter H, these **Letter Friends** work together to make one new sound — the quiet sound you make when you say ‘shhh’."
+      ]
+    }
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/sh/",
+    "words": [
+      [
+        [
+          "sh",
+          "/sh/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "p",
+          "/p/"
+        ]
+      ],
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "u",
+          "/u/"
+        ],
+        [
+          "n",
+          "/n/"
+        ]
+      ],
+      [
+        [
+          "d",
+          "/d/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "sh",
+          "/sh/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 20 sounds now!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "SHIP",
+    "phonemes": [
+      "/sh/",
+      "/i/",
+      "/p/"
+    ],
+    "pre": {
+      "replace": [
+        {
+          "index": 2,
+          "value": "Now look for any **Letter Friends**. Do you see two letters that make one sound together? That's right — S and H are **Letter Friends**, so they share one finger and make one sound."
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "SHOP",
+    "phonemes": [
+      "/sh/",
+      "/o/",
+      "/p/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "DISH",
+    "phonemes": [
+      "/d/",
+      "/i/",
+      "/sh/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "SHED",
+    "phonemes": [
+      "/sh/",
+      "/e/",
+      "/d/"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "SHIP",
+      "SHOP",
+      "SHUT",
+      "SHED"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "the",
+      "a",
+      "I",
+      "is",
+      "his",
+      "has",
+      "put",
+      "for",
+      "are",
+      "dish",
+      "shut",
+      "big",
+      "sun",
+      "hat"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE CAT IS IN THE SHED."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "SHIP"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

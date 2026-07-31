@@ -1,0 +1,961 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn one new sound.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "R",
+        "phoneme": "/r/",
+        "graphemes": [
+          "B",
+          "F"
+        ],
+        "choices": [
+          "R",
+          "B",
+          "F"
+        ]
+      },
+      {
+        "grapheme": "U",
+        "phoneme": "/u/",
+        "graphemes": [
+          "V",
+          "W"
+        ],
+        "choices": [
+          "U",
+          "V",
+          "W"
+        ]
+      },
+      {
+        "grapheme": "C",
+        "phoneme": "/k/",
+        "graphemes": [
+          "O",
+          "D"
+        ],
+        "choices": [
+          "C",
+          "O",
+          "D"
+        ]
+      },
+      {
+        "grapheme": "L",
+        "phoneme": "/l/",
+        "graphemes": [
+          "M",
+          "N"
+        ],
+        "choices": [
+          "L",
+          "M",
+          "N"
+        ]
+      },
+      {
+        "grapheme": "H",
+        "phoneme": "/h/",
+        "graphemes": [
+          "R",
+          "L"
+        ],
+        "choices": [
+          "H",
+          "R",
+          "L"
+        ]
+      },
+      {
+        "grapheme": "E",
+        "phoneme": "/e/",
+        "graphemes": [
+          "B",
+          "T"
+        ],
+        "choices": [
+          "E",
+          "B",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "B",
+        "graphemes": [
+          "W",
+          "Q"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "R",
+        "graphemes": [
+          "B",
+          "P"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "U",
+        "graphemes": [
+          "W",
+          "O"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "L",
+        "graphemes": [
+          "I",
+          "T"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "We're going to learn another set of **Letter Friends** today.",
+      "As a reminder, **Letter Friends** are a little bit like sticky sounds. With sticky sounds, when two letters stick together, you say their sounds together, but both letters make their usual sounds.",
+      "When **Letter Friends** are next to each other they make a different sound than they do when they are by themselves.",
+      "When we do **Finger Words**, we’ll look for **Letter Friends**, and then we’ll look for **Sticky Sounds**."
+    ]
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "C",
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "The **Letter Friends** we are going to meet today are C and H."
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        "What sound does the letter C typically make by itself?",
+        {
+          "type": "instruction",
+          "value": [
+            "The letter C can make the ",
+            {
+              "type": "sound",
+              "phoneme": "/s/"
+            },
+            " sound sometimes, like in the word circle, but it typically makes the ",
+            {
+              "type": "sound",
+              "phoneme": "/k/"
+            },
+            "sound."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "That’s right. It’s makes the ",
+            {
+              "type": "sound",
+              "phoneme": "/k/"
+            },
+            " sound."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "H",
+    "pre": {
+      "prepend": [
+        "What sound does the letter H make by itself?"
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "That's right! The letter H makes the ",
+            {
+              "type": "sound",
+              "phoneme": "/h/"
+            },
+            " sound."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "CH",
+    "phoneme": "/ch/",
+    "pre": {
+      "prepend": [
+        "When the letter C is followed immediately by the letter H, these letters become **Letter Friends**."
+      ]
+    }
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/ch/",
+    "words": [
+      [
+        [
+          "ch",
+          "/ch/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "p",
+          "/p/"
+        ]
+      ],
+      [
+        [
+          "b",
+          "/b/"
+        ],
+        [
+          "u",
+          "/u/"
+        ],
+        [
+          "s",
+          "/s/"
+        ]
+      ],
+      [
+        [
+          "l",
+          "/l/"
+        ],
+        [
+          "u",
+          "/u/"
+        ],
+        [
+          "n",
+          "/n/"
+        ],
+        [
+          "ch",
+          "/ch/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 18 letters now and 21 sounds!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy again!"
+      },
+      {
+        "type": "instruction",
+        "value": [
+          "On the next slide, we'll practice ",
+          {
+            "type": "link",
+            "value": "Finger Words",
+            "href": "https://www.youtube.com/watch?v=OYU6RDoPgWo"
+          },
+          " step by step, but if you need a refresher, you can click on the link to watch the video again."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "BUNCH",
+    "phonemes": [
+      "/b/",
+      "/u/",
+      "/n/",
+      "/c/",
+      "/h/"
+    ],
+    "pre": {
+      "replace": [
+        {
+          "index": 2,
+          "value": "Now look for any **Letter Friends**."
+        },
+        {
+          "index": 3,
+          "value": "Are there any **Letter Friends** in this word?"
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "That’s right. The letters C and H are letter friends when C is right before H. Together, they make the ",
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false
+            },
+            " sound. Stick your C and H finger together."
+          ]
+        },
+        "Now touch each of your fingers or finger pairs and say the sounds they make.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/b/",
+              "showQuotes": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/u/",
+              "showQuotes": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "BUNCH",
+    "phonemes": [
+      "/b/",
+      "/u/",
+      "/n/",
+      "/c/",
+      "/h/"
+    ],
+    "pre": {
+      "value": [
+        "Now let’s look for sticky sounds. Are there any sticky sounds?",
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/b/",
+              "showQuotes": false
+            },
+            " and the ",
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false
+            },
+            " sounds are sticky sounds."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Is there a sound after the ",
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false
+            },
+            " sound for the ",
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false
+            },
+            " to stick to?"
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "No, so there's nothing special we need to do with the ",
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false
+            },
+            " sound."
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Is there a sound after the ",
+            {
+              "type": "sound",
+              "phoneme": "/b/",
+              "showQuotes": false
+            },
+            " sound for the ",
+            {
+              "type": "sound",
+              "phoneme": "/b/",
+              "showQuotes": false
+            },
+            " to stick to?"
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/u/",
+              "showQuotes": false
+            },
+            " sound is after the ",
+            {
+              "type": "sound",
+              "phoneme": "/b/",
+              "showQuotes": false
+            },
+            " sound. Stick them together and say the sounds again."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/b/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/u/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "BUNCH",
+    "phonemes": [
+      "/b/",
+      "/u/",
+      "/n/",
+      "/ch/"
+    ],
+    "pre": {
+      "value": [
+        "There’s still a gap between the sounds, just like there’s a gap between your fingers."
+      ]
+    },
+    "post": {
+      "value": [
+        "Use your knuckles to blend the sounds and listen for the word.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/b/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/u/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false
+            },
+            " . . .",
+            {
+              "type": "sound",
+              "phoneme": "/b/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/u/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/n/",
+              "showQuotes": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false
+            },
+            " . . . ",
+            "**BUNCH**"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "CHIPS",
+    "phonemes": [
+      "/ch/",
+      "/i/",
+      "/p/",
+      "/s/"
+    ],
+    "pre": {
+      "replace": [
+        {
+          "index": 2,
+          "value": "Now look for any **Letter Friends**."
+        },
+        {
+          "index": 3,
+          "value": "Are there any **Letter Friends** in this word?"
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "That’s right. The letters C and H are letter friends when C is right before H. Together, they make the ",
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false
+            },
+            " sound. Stick your C and H finger together."
+          ]
+        },
+        "Now touch each of your fingers or finger pairs and say the sounds they make.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/s/",
+              "showQuotes": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "CHIPS",
+    "phonemes": [
+      "/ch/",
+      "/i/",
+      "/p/",
+      "/s/"
+    ],
+    "pre": {
+      "value": [
+        "Now let’s look for sticky sounds. Are there any sticky sounds?",
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false
+            },
+            " and the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " sounds are sticky sounds."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Is there a sound after the ",
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false
+            },
+            " sound for the ",
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false
+            },
+            " to stick to?"
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false
+            },
+            " sound is after the ",
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false
+            },
+            " sound."
+          ]
+        }
+      ]
+    },
+    "post": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": [
+            "Is there a sound after the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " sound for the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " to stick to?"
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            "Yes, the ",
+            {
+              "type": "sound",
+              "phoneme": "/s/",
+              "showQuotes": false
+            },
+            " sound is after the ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false
+            },
+            " sound. Stick them together and say the sounds again."
+          ]
+        },
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " - ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/s/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "CHIPS",
+    "phonemes": [
+      "/ch/",
+      "/i/",
+      "/p/",
+      "/s/"
+    ],
+    "pre": {
+      "value": [
+        "There’s still a gap between the sounds, just like there’s a gap between your fingers."
+      ]
+    },
+    "post": {
+      "value": [
+        "Use your knuckles to blend the sounds and listen for the word.",
+        {
+          "type": "verbal",
+          "value": [
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/s/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " . . .",
+            {
+              "type": "sound",
+              "phoneme": "/ch/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/i/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " ",
+            {
+              "type": "sound",
+              "phoneme": "/p/",
+              "showQuotes": false,
+              "showRightSoundIndicator": false
+            },
+            {
+              "type": "sound",
+              "phoneme": "/s/",
+              "showQuotes": false,
+              "showLeftSoundIndicator": false
+            },
+            " . . . ",
+            "**CHIPS**"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "CHEST",
+    "phonemes": [
+      "/ch/",
+      "/e/",
+      "/s/",
+      "/t/"
+    ],
+    "pre": {
+      "replace": [
+        {
+          "index": 2,
+          "value": "If there are **Letter Friends**, stick them together, then say the sound each finger or finger pair makes."
+        }
+      ]
+    }
+  },
+  {
+    "type": "custom",
+    "value": [
+      "One more thing about our new sound!",
+      "Sometimes, right after a short vowel, the sound is spelled with THREE letters: T-C-H, like in ‘catch’ and ‘match’.",
+      "The T is silent — T, C, and H all work together to make the same sound as C-H."
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "CATCH",
+    "phonemes": ["/c/", "/a/", "/ch/"],
+    "pre": {
+      "prepend": ["T, C, and H are a three-letter team here — they share one finger and make one sound."]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "MATCH",
+    "phonemes": ["/m/", "/a/", "/ch/"]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "SUCH",
+      "MUCH",
+      "MUNCH",
+      "LUNCH"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "get",
+      "is",
+      "as",
+      "his",
+      "has",
+      "the",
+      "pets",
+      "it",
+      "sit",
+      "at",
+      "an",
+      "in",
+      "did",
+      "on",
+      "not",
+      "top",
+      "big",
+      "dog",
+      "digs",
+      "past",
+      "stop",
+      "bed"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE LUNCH IS IN THE CHEST."
+  },
+  {
+    "type": "books",
+    "books": [
+      52234
+    ]
+  },
+  {
+    "type": "teach-tam",
+    "value": "CHIPS"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

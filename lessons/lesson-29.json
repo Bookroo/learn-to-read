@@ -1,0 +1,265 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn one new letter, one new set of **Letter Friends**, and some very important heart words.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "TH",
+        "phoneme": "/th/",
+        "graphemes": [
+          "SH",
+          "CH"
+        ],
+        "choices": [
+          "TH",
+          "SH",
+          "CH"
+        ]
+      },
+      {
+        "grapheme": "Y",
+        "phoneme": "/y/",
+        "graphemes": [
+          "W",
+          "V"
+        ],
+        "choices": [
+          "Y",
+          "W",
+          "V"
+        ]
+      },
+      {
+        "grapheme": "F",
+        "phoneme": "/f/",
+        "graphemes": [
+          "FF",
+          "V"
+        ],
+        "choices": [
+          "F",
+          "FF",
+          "V"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "grapheme-recall",
+    "grapheme": "W",
+    "variant": "new-letter"
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "W",
+    "traceOnly": true
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "W"
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "W",
+    "phoneme": "/w/"
+  },
+  {
+    "type": "custom",
+    "value": [
+      "The letter W has some **Letter Friends** too! When W is followed by H, the two letters together still make the ",
+      {
+        "type": "verbal",
+        "value": [
+          {
+            "type": "sound",
+            "phoneme": "/w/",
+            "showQuotes": false
+          },
+          " sound — the H stays silent and lets W do the talking."
+        ]
+      },
+      "You'll see W-H at the start of asking words, like ‘when’, ‘whip’, and ‘which’."
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/w/",
+    "words": [
+      [
+        [
+          "w",
+          "/w/"
+        ],
+        [
+          "e",
+          "/e/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "wh",
+          "/w/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "p",
+          "/p/"
+        ]
+      ],
+      [
+        [
+          "y",
+          "/y/"
+        ],
+        [
+          "e",
+          "/e/"
+        ],
+        [
+          "s",
+          "/s/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 23 letters and 27 sounds now!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "WET",
+    "phonemes": [
+      "/w/",
+      "/e/",
+      "/t/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "WIN",
+    "phonemes": [
+      "/w/",
+      "/i/",
+      "/n/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "WILL",
+    "phonemes": [
+      "/w/",
+      "/i/",
+      "/l/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "WHEN",
+    "phonemes": [
+      "/w/",
+      "/e/",
+      "/n/"
+    ],
+    "pre": {
+      "prepend": [
+        "W and H are **Letter Friends** — they share one finger, and together they just make the W sound."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "WHIP",
+    "phonemes": [
+      "/w/",
+      "/i/",
+      "/p/"
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "WAS",
+      "WHAT",
+      "WHERE",
+      "WANT",
+      "WHO"
+    ],
+    "pre": {
+      "value": [
+        "The letter W brings a whole family of heart words: ‘was’, ‘what’, ‘where’, ‘want’, and ‘who’.",
+        "These words appear all the time in books, and they don't follow the rules — we learn them by heart.",
+        "Read each card with me, then read it on your own. We'll practice these a lot in the coming lessons."
+      ]
+    }
+  },
+  {
+    "type": "story-words",
+    "story": "WHERE IS THE DOG? THE DOG WAS IN THE SHED.",
+    "words": [
+      "WHERE",
+      "WAS"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "was",
+      "what",
+      "where",
+      "want",
+      "who",
+      "they",
+      "there",
+      "wet",
+      "win",
+      "will",
+      "when",
+      "the"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "WHERE IS THE WET DOG?"
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "WHEN"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

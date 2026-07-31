@@ -1,0 +1,347 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn one new letter and one new sound.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "lost-sounds",
+    "graphemes": [
+      "A",
+      "SH",
+      "T",
+      "M",
+      "CH",
+      "I",
+      "P",
+      "S",
+      "O",
+      "N",
+      "C",
+      "E",
+      "G",
+      "B",
+      "C",
+      "L",
+      "H",
+      "R",
+      "U"
+    ],
+    "pre": {
+      "value": [
+        "Shh . . . can you hear that? All the letters (and **Letter Friends**!) have lost their sounds! Can you help them?",
+        {
+          "type": "instruction",
+          "value": "If you see **Letter Friends**, just say their sound!"
+        }
+      ]
+    }
+  },
+  {
+    "type": "grapheme-recall",
+    "grapheme": "Y",
+    "variant": "new-letter"
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "Y",
+    "traceOnly": true
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "Y"
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "Y",
+        "graphemes": [
+          "V",
+          "Z"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "Y",
+    "phoneme": "/y/"
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/y/",
+    "words": [
+      [
+        [
+          "t",
+          "/t/"
+        ],
+        [
+          "o",
+          "/o/"
+        ],
+        [
+          "y",
+          "/y/"
+        ]
+      ],
+      [
+        [
+          "ch",
+          "/ch/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "p",
+          "/p/"
+        ]
+      ],
+      [
+        [
+          "y",
+          "/y/"
+        ],
+        [
+          "e",
+          "/e/"
+        ],
+        [
+          "s",
+          "/s/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 19 letters now and 22 sounds!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy again!"
+      },
+      {
+        "type": "instruction",
+        "value": [
+          "On the next slide, we'll practice ",
+          {
+            "type": "link",
+            "value": "Finger Words",
+            "href": "https://www.youtube.com/watch?v=OYU6RDoPgWo"
+          },
+          " step by step, but if you need a refresher, you can click on the link to watch the video again."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "YES",
+    "phonemes": [
+      "/y/",
+      "/e/",
+      "/s/"
+    ],
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "Use **Imaginary Finger Words** to read this word."
+        },
+        {
+          "index": 1,
+          "value": "In your mind, assign each letter to an imaginary finger. Then look for **Letter Friends**, and if you find any, stick them together in your mind."
+        },
+        {
+          "index": 2,
+          "value": "Say the sound each letter (or group of **Letter Friends**) makes."
+        }
+      ]
+    },
+    "post": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "If there are stickable sounds, stick them together in your mind, then say the sounds again."
+        },
+        {
+          "index": 1,
+          "value": "Blend the sounds together, like you would do on your knuckles."
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "YELP",
+    "phonemes": [
+      "/y/",
+      "/e/",
+      "/l/",
+      "/p/"
+    ],
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "Use **Imaginary Finger Words** to read this word."
+        },
+        {
+          "index": 1,
+          "value": "In your mind, assign each letter to an imaginary finger. Then look for **Letter Friends**, and if you find any, stick them together in your mind."
+        },
+        {
+          "index": 2,
+          "value": "Say the sound each letter (or group of **Letter Friends**) makes."
+        }
+      ]
+    },
+    "post": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "If there are stickable sounds, stick them together in your mind, then say the sounds again."
+        },
+        {
+          "index": 1,
+          "value": "Blend the sounds together, like you would do on your knuckles."
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "YET",
+    "phonemes": [
+      "/y/",
+      "/e/",
+      "/t/"
+    ],
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "Use **Imaginary Finger Words** to read this word."
+        },
+        {
+          "index": 1,
+          "value": "In your mind, assign each letter to an imaginary finger. Then look for **Letter Friends**, and if you find any, stick them together in your mind."
+        },
+        {
+          "index": 2,
+          "value": "Say the sound each letter (or group of **Letter Friends**) makes."
+        }
+      ]
+    },
+    "post": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "If there are stickable sounds, stick them together in your mind, then say the sounds again."
+        },
+        {
+          "index": 1,
+          "value": "Blend the sounds together, like you would do on your knuckles."
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "LUNCH",
+    "phonemes": [
+      "/l/",
+      "/u/",
+      "/n/",
+      "/ch/"
+    ],
+    "pre": {
+      "replace": [
+        {
+          "index": 2,
+          "value": "If there are **Letter Friends**, stick them together, then say the sound each finger or finger pair makes."
+        }
+      ]
+    }
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "YUM",
+      "YAM",
+      "YAP",
+      "YEP",
+      "YELP"
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": ["YOU", "YOUR"],
+    "pre": {
+      "value": [
+        "Our new letter Y brings two new heart words: \u2018you\u2019 and \u2018your\u2019.",
+        "They don't follow the letter-sound rules, so we learn them by heart.",
+        "Read each card with me, then read it on your own."
+      ]
+    }
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "it",
+      "sit",
+      "at",
+      "an",
+      "in",
+      "did",
+      "on",
+      "not",
+      "top",
+      "big",
+      "dog",
+      "is",
+      "as",
+      "digs",
+      "past",
+      "stop",
+      "bed",
+      "get"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "LUNCH IS HOT DOGS AND YAMS."
+  },
+  {
+    "type": "books",
+    "books": [
+      52234
+    ]
+  },
+  {
+    "type": "teach-tam",
+    "value": "YES"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

@@ -1,0 +1,268 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to meet a new set of **Letter Friends** that can make two different sounds.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "SH",
+        "phoneme": "/sh/",
+        "graphemes": [
+          "CH",
+          "S"
+        ],
+        "choices": [
+          "SH",
+          "CH",
+          "S"
+        ]
+      },
+      {
+        "grapheme": "CH",
+        "phoneme": "/ch/",
+        "graphemes": [
+          "SH",
+          "C"
+        ],
+        "choices": [
+          "CH",
+          "SH",
+          "C"
+        ]
+      },
+      {
+        "grapheme": "F",
+        "phoneme": "/f/",
+        "graphemes": [
+          "FF",
+          "T"
+        ],
+        "choices": [
+          "F",
+          "FF",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "T",
+        "graphemes": [
+          "F",
+          "I"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "H",
+        "graphemes": [
+          "N",
+          "M"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Our new **Letter Friends** are T and H. Together they make the sound ‘th’.",
+      "But T and H have a secret: they can make TWO sounds — a buzzy one and a not-buzzy one!",
+      {
+        "type": "instruction",
+        "value": "Have {name} put their fingers on their throat for a **Buzz Check**."
+      },
+      "Say ‘thin’. Feel the ‘th’ — no buzz! Now say ‘this’. Feel the ‘th’ — Buzzer on!",
+      "Same **Letter Friends**, two sounds. When you read a word with T-H, try one sound, and if the word sounds funny, try the other."
+    ]
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "TH",
+    "phoneme": "/th/"
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/th/",
+    "words": [
+      [
+        [
+          "th",
+          "/th/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "n",
+          "/n/"
+        ]
+      ],
+      [
+        [
+          "b",
+          "/b/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "th",
+          "/th/"
+        ]
+      ],
+      [
+        [
+          "sh",
+          "/sh/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "p",
+          "/p/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 26 sounds now!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "THIS",
+    "phonemes": [
+      "/th/",
+      "/i/",
+      "/s/"
+    ],
+    "pre": {
+      "prepend": [
+        "T and H are **Letter Friends** — they share one finger. This is the buzzy ‘th’."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "THAT",
+    "phonemes": [
+      "/th/",
+      "/a/",
+      "/t/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "THIN",
+    "phonemes": [
+      "/th/",
+      "/i/",
+      "/n/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "MATH",
+    "phonemes": [
+      "/m/",
+      "/a/",
+      "/th/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "BATH",
+    "phonemes": [
+      "/b/",
+      "/a/",
+      "/th/"
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "THEY",
+      "THERE"
+    ],
+    "pre": {
+      "value": [
+        "We have two new heart words today: ‘they’ and ‘there’.",
+        "Both start with our new **Letter Friends** T and H — but the rest of each word doesn't follow the rules, so we learn them by heart."
+      ]
+    }
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "THIS",
+      "THAT",
+      "THAN",
+      "THEN"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "they",
+      "there",
+      "full",
+      "from",
+      "said",
+      "this",
+      "that",
+      "math",
+      "bath",
+      "then",
+      "the",
+      "a"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THIS IS THE BATH."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "THIS"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

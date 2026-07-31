@@ -1,0 +1,264 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn one new letter, one new sound, and two new heart words.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "SH",
+        "phoneme": "/sh/",
+        "graphemes": [
+          "CH",
+          "S"
+        ],
+        "choices": [
+          "SH",
+          "CH",
+          "S"
+        ]
+      },
+      {
+        "grapheme": "Y",
+        "phoneme": "/y/",
+        "graphemes": [
+          "W",
+          "V"
+        ],
+        "choices": [
+          "Y",
+          "W",
+          "V"
+        ]
+      },
+      {
+        "grapheme": "QU",
+        "phoneme": "/kw/",
+        "graphemes": [
+          "K",
+          "C"
+        ],
+        "choices": [
+          "QU",
+          "K",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "F",
+        "graphemes": [
+          "E",
+          "T"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "K",
+        "graphemes": [
+          "X",
+          "H"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "grapheme-recall",
+    "grapheme": "F",
+    "variant": "new-letter"
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "F",
+    "traceOnly": true
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "F"
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "F",
+    "phoneme": "/f/"
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/f/",
+    "words": [
+      [
+        [
+          "f",
+          "/f/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "n",
+          "/n/"
+        ]
+      ],
+      [
+        [
+          "v",
+          "/v/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "n",
+          "/n/"
+        ]
+      ],
+      [
+        [
+          "f",
+          "/f/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "sh",
+          "/sh/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 22 letters and 24 sounds now!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "FAN",
+    "phonemes": [
+      "/f/",
+      "/a/",
+      "/n/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "FIT",
+    "phonemes": [
+      "/f/",
+      "/i/",
+      "/t/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "FISH",
+    "phonemes": [
+      "/f/",
+      "/i/",
+      "/sh/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "FAST",
+    "phonemes": [
+      "/f/",
+      "/a/",
+      "/s/",
+      "/t/"
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "FROM",
+      "SAID"
+    ],
+    "pre": {
+      "value": [
+        "We have two new heart words today: ‘from’ and ‘said’.",
+        "Remember, heart words don't follow the letter-sound rules we've learned, so we learn them by heart.",
+        "Read each card with me, then read it on your own."
+      ]
+    }
+  },
+  {
+    "type": "story-words",
+    "story": "TAM SAID, I AM FIT AND FAST.",
+    "words": [
+      "SAID"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "FIT",
+      "FIN",
+      "FUN",
+      "FAN"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "from",
+      "said",
+      "the",
+      "a",
+      "I",
+      "fish",
+      "fast",
+      "shut",
+      "quiz",
+      "kick",
+      "yes",
+      "chin"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE FISH IS FAST."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "FISH"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]
