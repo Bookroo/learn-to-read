@@ -26,13 +26,9 @@
     }
    ],
    "examples": [
-    "mat",
-    "am",
-    "at",
-    "Tam"
+    "mat, am, at, Tam"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "m",
@@ -62,12 +58,9 @@
    "detail": "",
    "intros": [],
    "examples": [
-    "sat",
-    "Sam",
-    "mats"
+    "sat, Sam, mats"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "s",
@@ -94,13 +87,9 @@
     }
    ],
    "examples": [
-    "pat",
-    "tap",
-    "map",
-    "Pam"
+    "pat, tap, map, Pam"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "p",
@@ -122,16 +111,9 @@
    "detail": "",
    "intros": [],
    "examples": [
-    "it",
-    "sit",
-    "pit",
-    "tip",
-    "sip"
+    "it, sit, pit, tip, sip"
    ],
    "heart": [],
-   "dolch": [
-    "it"
-   ],
    "graphemes": [
     [
      "i",
@@ -158,17 +140,9 @@
     }
    ],
    "examples": [
-    "nap",
-    "pin",
-    "tin",
-    "man",
-    "an",
-    "in"
+    "nap, pin, tin, man, an, in"
    ],
    "heart": [],
-   "dolch": [
-    "in"
-   ],
    "graphemes": [
     [
      "n",
@@ -190,16 +164,9 @@
    "detail": "",
    "intros": [],
    "examples": [
-    "dad",
-    "did",
-    "sad",
-    "dip",
-    "and"
+    "dad, did, sad, dip, and"
    ],
    "heart": [],
-   "dolch": [
-    "and"
-   ],
    "graphemes": [
     [
      "d",
@@ -221,17 +188,9 @@
    "detail": "",
    "intros": [],
    "examples": [
-    "on",
-    "top",
-    "pot",
-    "dot",
-    "mom",
-    "not"
+    "on, top, pot, dot, mom, not"
    ],
    "heart": [],
-   "dolch": [
-    "not"
-   ],
    "graphemes": [
     [
      "o",
@@ -253,13 +212,9 @@
    "detail": "",
    "intros": [],
    "examples": [
-    "bat",
-    "bit",
-    "tab",
-    "Bob"
+    "bat, bit, tab, Bob"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "b",
@@ -281,16 +236,9 @@
    "detail": "",
    "intros": [],
    "examples": [
-    "got",
-    "big",
-    "pig",
-    "gap",
-    "dog"
+    "got, big, pig, gap, dog"
    ],
    "heart": [],
-   "dolch": [
-    "big"
-   ],
    "graphemes": [
     [
      "g",
@@ -313,7 +261,6 @@
    "intros": [],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -339,17 +286,9 @@
     }
    ],
    "examples": [
-    "mats /s/",
-    "pigs /z/",
-    "is /z/",
-    "his /z/",
-    "as /z/",
-    "has /z/"
+    "mats /s/, pigs /z/, is /z/, as /z/"
    ],
    "heart": [],
-   "dolch": [
-    "is"
-   ],
    "graphemes": [
     [
      "s",
@@ -373,15 +312,9 @@
    "detail": "",
    "intros": [],
    "examples": [
-    "bed",
-    "pet",
-    "ten",
-    "net",
-    "men",
-    "get"
+    "bed, pet, ten, net, men, get"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "e",
@@ -403,16 +336,9 @@
    "detail": "",
    "intros": [],
    "examples": [
-    "hat",
-    "hit",
-    "hop",
-    "hen",
-    "ham",
-    "had",
-    "him"
+    "hat, hit, hop, hen, ham, had, him, his, has"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "h",
@@ -448,11 +374,6 @@
     "a",
     "the"
    ],
-   "dolch": [
-    "I",
-    "a",
-    "the"
-   ],
    "graphemes": [],
    "gates": []
   },
@@ -469,16 +390,9 @@
    "detail": "",
    "intros": [],
    "examples": [
-    "lap",
-    "lot",
-    "lid",
-    "lip",
-    "help"
+    "lap, lot, lid, lip, help"
    ],
    "heart": [],
-   "dolch": [
-    "help"
-   ],
    "graphemes": [
     [
      "l",
@@ -505,15 +419,9 @@
     }
    ],
    "examples": [
-    "cat",
-    "cap",
-    "cot",
-    "can"
+    "cat, cap, cot, can"
    ],
    "heart": [],
-   "dolch": [
-    "can"
-   ],
    "graphemes": [
     [
      "c",
@@ -540,17 +448,10 @@
     }
    ],
    "examples": [
-    "up",
-    "cup",
-    "sun",
-    "but",
-    "bus"
+    "up, cup, sun, but, bus"
    ],
    "heart": [
     "put"
-   ],
-   "dolch": [
-    "up"
    ],
    "graphemes": [
     [
@@ -578,19 +479,11 @@
     }
    ],
    "examples": [
-    "run",
-    "rat",
-    "red",
-    "rip"
+    "run, rat, red, rip"
    ],
    "heart": [
     "for",
     "are"
-   ],
-   "dolch": [
-    "run",
-    "red",
-    "for"
    ],
    "graphemes": [
     [
@@ -613,13 +506,9 @@
    "detail": "",
    "intros": [],
    "examples": [
-    "zip",
-    "zap",
-    "zig",
-    "zag"
+    "zip, zap, zig, zag"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "z",
@@ -642,7 +531,6 @@
    "intros": [],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -664,14 +552,9 @@
     }
    ],
    "examples": [
-    "ship",
-    "shop",
-    "fish",
-    "dish",
-    "shut"
+    "ship, shop, dish, shut, shed"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "sh",
@@ -693,17 +576,9 @@
    "detail": "One sound, two spellings. tch commonly follows a short vowel.",
    "intros": [],
    "examples": [
-    "chip",
-    "chat",
-    "chin",
-    "much",
-    "catch",
-    "match",
-    "fetch",
-    "itch"
+    "chip, chat, chin, much; catch, match, itch"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "ch",
@@ -729,17 +604,11 @@
    "detail": "Introduces y as a consonant.",
    "intros": [],
    "examples": [
-    "yes",
-    "yet",
-    "yam",
-    "yip"
+    "yes, yet, yam, yip"
    ],
    "heart": [
     "you",
     "your"
-   ],
-   "dolch": [
-    "you"
    ],
    "graphemes": [
     [
@@ -762,17 +631,9 @@
    "detail": "One /k/ sound, two spellings. ck commonly follows a short vowel and never means two /k/s.",
    "intros": [],
    "examples": [
-    "kid",
-    "kit",
-    "Ken",
-    "skip",
-    "back",
-    "sock",
-    "click",
-    "neck"
+    "kid, kit, Ken, skip; back, sock, click, neck"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "k",
@@ -798,12 +659,9 @@
    "detail": "q is paired with u.",
    "intros": [],
    "examples": [
-    "quit",
-    "quiz",
-    "quick"
+    "quit, quiz, quick"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "qu",
@@ -825,18 +683,10 @@
    "detail": "f spells /f/.",
    "intros": [],
    "examples": [
-    "fan",
-    "fit",
-    "fun",
-    "fog",
-    "fast",
-    "if"
+    "fan, fit, fun, fog, fast, if, fish, fetch"
    ],
    "heart": [
     "from",
-    "said"
-   ],
-   "dolch": [
     "said"
    ],
    "graphemes": [
@@ -860,18 +710,11 @@
    "detail": "Doubled letters make one sound.",
    "intros": [],
    "examples": [
-    "off",
-    "bell",
-    "miss",
-    "buzz",
-    "hill",
-    "will",
-    "well"
+    "off, bell, miss, buzz, hill, less, mess"
    ],
    "heart": [
     "full"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "ff",
@@ -905,20 +748,13 @@
    "detail": "th has voiced and unvoiced sounds.",
    "intros": [],
    "examples": [
-    "this",
-    "that",
-    "them",
-    "then",
-    "thin",
-    "with",
-    "math",
-    "bath"
+    "this, that, them, then",
+    "thin, math, bath"
    ],
    "heart": [
     "they",
     "there"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "th",
@@ -940,12 +776,7 @@
    "detail": "Introduces w and wh.",
    "intros": [],
    "examples": [
-    "wet",
-    "win",
-    "wag",
-    "when",
-    "whip",
-    "which"
+    "wet, win, wag, will, well, with; when, whip, which"
    ],
    "heart": [
     "was",
@@ -953,9 +784,6 @@
     "where",
     "want",
     "who"
-   ],
-   "dolch": [
-    "where"
    ],
    "graphemes": [
     [
@@ -982,19 +810,10 @@
    "detail": "ng and nk are read as glued chunks. Only true short-vowel chunks appear here: a and i shift before ng and nk, so -ing comes next lesson and ink/ank come early in Module 5.",
    "intros": [],
    "examples": [
-    "sung",
-    "hung",
-    "song",
-    "long",
-    "honk",
-    "bonk",
-    "chunk",
-    "sunk",
-    "dunk",
-    "trunk"
+    "sung, hung, song, long",
+    "honk, bonk, chunk, sunk, dunk, trunk"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "ung",
@@ -1042,17 +861,10 @@
     }
    ],
    "examples": [
-    "king",
-    "ring",
-    "sing",
-    "thing",
-    "camping",
-    "dunking",
-    "helping",
-    "standing"
+    "king, ring, sing, thing",
+    "camping, dunking, helping, standing"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "ing",
@@ -1077,7 +889,6 @@
    "intros": [],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -1099,26 +910,12 @@
     }
    ],
    "examples": [
-    "he",
-    "she",
-    "we",
-    "me",
-    "be",
-    "hi",
-    "no",
-    "so",
-    "go"
+    "he, she, we, me, be, hi, no, so, go"
    ],
    "heart": [
     "oh",
     "to",
     "do"
-   ],
-   "dolch": [
-    "we",
-    "me",
-    "go",
-    "to"
    ],
    "graphemes": [
     [
@@ -1158,22 +955,12 @@
    "examples": [
     "I",
     "hi",
-    "bit→bite",
-    "hid→hide",
-    "kit→kite",
-    "slid→slide",
-    "rip→ripe",
-    "spin→spine",
-    "bike",
-    "hike",
-    "like",
-    "five",
-    "time"
+    "bit→bite, hid→hide, kit→kite, slid→slide, rip→ripe, spin→spine",
+    "bike, hike, like, time"
    ],
    "heart": [
     "give"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "i_e",
@@ -1198,21 +985,9 @@
    "detail": "j and dge spell /j/; dge commonly follows a short vowel.",
    "intros": [],
    "examples": [
-    "jam",
-    "jet",
-    "jog",
-    "jab",
-    "just",
-    "jump",
-    "badge",
-    "bridge",
-    "fudge",
-    "edge"
+    "jam, jet, jog, jab, just, jump; badge, bridge, fudge, edge"
    ],
    "heart": [],
-   "dolch": [
-    "jump"
-   ],
    "graphemes": [
     [
      "j",
@@ -1238,21 +1013,10 @@
    "detail": "a_e spells /ā/.",
    "intros": [],
    "examples": [
-    "cape",
-    "made",
-    "late",
-    "gave",
-    "make",
-    "take",
-    "came",
-    "cap→cape",
-    "tap→tape",
-    "mad→made"
+    "cape, made, late, make, take, came",
+    "cap→cape, tap→tape, mad→made"
    ],
    "heart": [],
-   "dolch": [
-    "make"
-   ],
    "graphemes": [
     [
      "a_e",
@@ -1274,18 +1038,13 @@
    "detail": "v spells /v/.",
    "intros": [],
    "examples": [
-    "van",
-    "vet",
-    "vast",
-    "gave",
-    "five"
+    "van, vet, vast; gave, five"
    ],
    "heart": [
     "have",
     "of",
     "love"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "v",
@@ -1307,22 +1066,12 @@
    "detail": "o_e spells /ō/.",
    "intros": [],
    "examples": [
-    "home",
-    "bone",
-    "note",
-    "rope",
-    "woke",
-    "no",
-    "go",
-    "so"
+    "home, bone, note, rope, woke",
+    "no, go, so"
    ],
    "heart": [
     "come",
     "some",
-    "one"
-   ],
-   "dolch": [
-    "come",
     "one"
    ],
    "graphemes": [
@@ -1346,14 +1095,9 @@
    "detail": "Completes all 26 letters.",
    "intros": [],
    "examples": [
-    "fox",
-    "box",
-    "six",
-    "mix",
-    "wax"
+    "fox, box, six, mix, wax"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "x",
@@ -1375,13 +1119,9 @@
    "detail": "u_e spells long u.",
    "intros": [],
    "examples": [
-    "cute",
-    "mule",
-    "use",
-    "cube"
+    "cute, mule, use, cube"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "u_e",
@@ -1403,13 +1143,9 @@
    "detail": "e_e is a rare spelling of /ē/.",
    "intros": [],
    "examples": [
-    "these",
-    "Pete"
+    "these, Pete"
    ],
    "heart": [
-    "here"
-   ],
-   "dolch": [
     "here"
    ],
    "graphemes": [
@@ -1433,17 +1169,10 @@
    "detail": "In these small word families, o spells /ō/ before two consonants. Treat them as families, not a general rule.",
    "intros": [],
    "examples": [
-    "old",
-    "told",
-    "cold",
-    "gold",
-    "hold",
-    "most",
-    "post",
-    "host"
+    "old, told, cold, gold, hold",
+    "most, post, host"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "old",
@@ -1469,16 +1198,10 @@
    "detail": "In these small word families, i spells /ī/ before two consonants. Treat them as families, not a general rule.",
    "intros": [],
    "examples": [
-    "find",
-    "kind",
-    "mind",
-    "child",
-    "wild"
+    "find, kind, mind",
+    "child, wild"
    ],
    "heart": [],
-   "dolch": [
-    "find"
-   ],
    "graphemes": [
     [
      "ind",
@@ -1505,7 +1228,6 @@
    "intros": [],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -1527,26 +1249,11 @@
     }
    ],
    "examples": [
-    "c/C",
-    "o/O",
-    "s/S",
-    "v",
-    "w",
-    "x",
-    "z",
-    "k",
-    "p",
-    "t",
-    "u…",
-    "a",
-    "e",
-    "g",
-    "q",
-    "r",
+    "c/C, o/O, s/S, v, w, x, z, k, p, t, u…",
+    "a, e, g, q, r",
     "b/d"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -1563,19 +1270,10 @@
    "detail": "i shifts its sound before nk and ng, so ink and ing are read as glued chunks. ing returns from Lesson 31, now in lowercase.",
    "intros": [],
    "examples": [
-    "think",
-    "pink",
-    "sink",
-    "drink",
-    "wink",
-    "stink",
-    "king",
-    "sing",
-    "thing",
-    "bring"
+    "think, pink, sink, drink, wink, stink",
+    "king, sing, thing, bring"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "ink",
@@ -1597,19 +1295,10 @@
    "detail": "a shifts its sound before nk and ng, so ank and ang are read as glued chunks.",
    "intros": [],
    "examples": [
-    "thank",
-    "bank",
-    "sank",
-    "tank",
-    "drank",
-    "blank",
-    "hang",
-    "sang",
-    "rang",
-    "bang"
+    "thank, bank, sank, tank, drank, blank",
+    "hang, sang, rang, bang"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "ank",
@@ -1635,17 +1324,11 @@
    "detail": "c followed by e commonly spells /s/.",
    "intros": [],
    "examples": [
-    "face",
-    "race",
-    "ice",
-    "mice",
-    "nice",
-    "space"
+    "face, race, ice, mice, nice, space"
    ],
    "heart": [
     "once"
    ],
-   "dolch": [],
    "graphemes": [],
    "gates": [
     "soft-c"
@@ -1664,14 +1347,9 @@
    "detail": "g followed by e commonly spells /j/.",
    "intros": [],
    "examples": [
-    "age",
-    "page",
-    "cage",
-    "stage",
-    "huge"
+    "age, page, cage, stage, huge"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": [
     "soft-g"
@@ -1695,25 +1373,13 @@
     }
    ],
    "examples": [
-    "sunset",
-    "hotdog",
-    "laptop",
-    "catnip",
-    "undo",
-    "redo",
-    "unpack",
-    "unzip",
-    "retell",
-    "rabbit",
-    "napkin",
-    "muffin",
-    "picnic",
-    "into"
+    "sunset, hotdog, laptop, catnip",
+    "undo, redo, unpack, unzip, retell",
+    "rabbit, napkin, muffin, picnic, into"
    ],
    "heart": [
     "people"
    ],
-   "dolch": [],
    "graphemes": [],
    "gates": [
     "two-syllable"
@@ -1732,15 +1398,9 @@
    "detail": "After s, x, sh, ch, or tch, plural -es spells /iz/ and adds a syllable.",
    "intros": [],
    "examples": [
-    "dishes",
-    "boxes",
-    "foxes",
-    "catches",
-    "wishes",
-    "buses"
+    "dishes, boxes, foxes, catches, wishes, buses"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": [
     "suffix-es"
@@ -1759,17 +1419,10 @@
    "detail": "Final consonant-le forms a common unstressed syllable.",
    "intros": [],
    "examples": [
-    "little",
-    "apple",
-    "bottle",
-    "middle",
-    "puddle",
+    "little, apple, bottle, middle, puddle",
     "lit-tle"
    ],
    "heart": [],
-   "dolch": [
-    "little"
-   ],
    "graphemes": [],
    "gates": [
     "consonant-le"
@@ -1788,12 +1441,9 @@
    "detail": "-ed marks past tense and can spell /t/, /d/, or /id/.",
    "intros": [],
    "examples": [
-    "jumped /t/",
-    "filled /d/",
-    "landed /id/"
+    "jumped /t/, filled /d/, landed /id/"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": [
     "suffix-ed"
@@ -1812,19 +1462,11 @@
    "detail": "Before -ing or -ed, a base can double its last consonant or drop its Magic E. A doubled consonant keeps the vowel short; a single consonant hints the vowel is long. Completes the -ing story from Lesson 31.",
    "intros": [],
    "examples": [
-    "hop→hopping",
-    "hope→hoping",
-    "running",
-    "sitting",
-    "clapped",
-    "stopped",
-    "making",
-    "smiling",
-    "riding",
-    "smiled"
+    "hop→hopping, hope→hoping",
+    "running, sitting, clapped, stopped",
+    "making, smiling, riding, smiled"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": [
     "doubling",
@@ -1853,21 +1495,11 @@
     }
    ],
    "examples": [
-    "he",
-    "no",
-    "go",
-    "o-pen",
-    "pi-lot",
-    "tu-lip",
-    "mu-sic",
-    "bo-nus",
-    "wagon",
-    "lemon",
-    "seven",
-    "even"
+    "he, no, go",
+    "o-pen, pi-lot, tu-lip, mu-sic, bo-nus",
+    "wagon, lemon, seven, even"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "a",
@@ -1896,27 +1528,13 @@
    "detail": "Final y commonly spells /ī/ in short words and /ē/ in longer words.",
    "intros": [],
    "examples": [
-    "my",
-    "try",
-    "why",
-    "fly",
-    "by",
-    "sky",
-    "happy",
-    "funny",
-    "silly",
-    "baby",
-    "only",
-    "quickly"
+    "my, try, why, fly, by, sky",
+    "happy, funny, silly, baby, only, quickly"
    ],
    "heart": [
     "many",
     "any",
     "pretty"
-   ],
-   "dolch": [
-    "my",
-    "funny"
    ],
    "graphemes": [
     [
@@ -1951,7 +1569,6 @@
    ],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -1973,19 +1590,10 @@
     }
    ],
    "examples": [
-    "see",
-    "tree",
-    "three",
-    "feet",
-    "keep",
-    "sleep"
+    "see, tree, three, feet, keep, sleep"
    ],
    "heart": [
     "been"
-   ],
-   "dolch": [
-    "see",
-    "three"
    ],
    "graphemes": [
     [
@@ -2008,18 +1616,12 @@
    "detail": "ea commonly spells /ē/ and sometimes /ĕ/.",
    "intros": [],
    "examples": [
-    "eat",
-    "read",
-    "team",
-    "beach",
-    "really",
-    "bread",
-    "head"
+    "eat, read, team, beach, really",
+    "bread, head"
    ],
    "heart": [
     "great"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "ea",
@@ -2041,15 +1643,11 @@
    "detail": "The /ā/ vowel team used inside words. Revisit said, learned by heart in Module 3.",
    "intros": [],
    "examples": [
-    "rain",
-    "wait",
-    "mail",
-    "paint"
+    "rain, wait, mail, paint"
    ],
    "heart": [
     "again"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "ai",
@@ -2071,18 +1669,10 @@
    "detail": "ay commonly spells /ā/ at word ends.",
    "intros": [],
    "examples": [
-    "play",
-    "day",
-    "say",
-    "way",
-    "away"
+    "play, day, say, way, away"
    ],
    "heart": [
     "says"
-   ],
-   "dolch": [
-    "play",
-    "away"
    ],
    "graphemes": [
     [
@@ -2105,14 +1695,9 @@
    "detail": "oa spells /ō/.",
    "intros": [],
    "examples": [
-    "boat",
-    "road",
-    "soap",
-    "coat",
-    "toast"
+    "boat, road, soap, coat, toast"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "oa",
@@ -2134,23 +1719,12 @@
    "detail": "oo has two common sounds.",
    "intros": [],
    "examples": [
-    "moon",
-    "food",
-    "zoo",
-    "too",
-    "soon",
-    "room",
-    "book",
-    "look",
-    "good"
+    "moon, food, zoo, too, soon, room",
+    "book, look, good"
    ],
    "heart": [
     "two",
     "school"
-   ],
-   "dolch": [
-    "look",
-    "two"
    ],
    "graphemes": [
     [
@@ -2173,13 +1747,9 @@
    "detail": "The /aw/ sound at the ends and inside words.",
    "intros": [],
    "examples": [
-    "saw",
-    "draw",
-    "yawn",
-    "claw"
+    "saw, draw, yawn, claw"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "aw",
@@ -2201,13 +1771,9 @@
    "detail": "A second spelling of /aw/, usually inside words.",
    "intros": [],
    "examples": [
-    "haul",
-    "fault",
-    "August",
-    "because"
+    "haul, fault, August, because"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "au",
@@ -2229,21 +1795,12 @@
    "detail": "all is a dependable chunk. al can spell the sound in always or the sound in calm; in walk and talk, l is silent.",
    "intros": [],
    "examples": [
-    "ball",
-    "call",
-    "all",
-    "small",
-    "always",
-    "also",
-    "almost",
-    "calm"
+    "ball, call, all, small",
+    "always, also, almost, calm"
    ],
    "heart": [
     "walk",
     "talk"
-   ],
-   "dolch": [
-    "always"
    ],
    "graphemes": [
     [
@@ -2271,7 +1828,6 @@
    "intros": [],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -2298,7 +1854,6 @@
    ],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -2315,17 +1870,12 @@
    "detail": "ie commonly spells /ī/ at word ends and /ē/ inside words.",
    "intros": [],
    "examples": [
-    "pie",
-    "tie",
-    "lie",
-    "field",
-    "shield",
-    "believe"
+    "pie, tie, lie",
+    "field, shield, believe"
    ],
    "heart": [
     "friend"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "ie",
@@ -2347,14 +1897,9 @@
    "detail": "igh spells /ī/.",
    "intros": [],
    "examples": [
-    "night",
-    "light",
-    "right",
-    "high",
-    "bright"
+    "night, light, right, high, bright"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "igh",
@@ -2376,15 +1921,9 @@
    "detail": "ou can spell the vowel sounds in out, soup, young, or could.",
    "intros": [],
    "examples": [
-    "house",
-    "out",
-    "loud",
-    "round",
-    "about",
-    "soup",
-    "group",
-    "young",
-    "touch"
+    "house, out, loud, round, about",
+    "soup, group",
+    "young, touch"
    ],
    "heart": [
     "could",
@@ -2392,7 +1931,6 @@
     "should",
     "our"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "ou",
@@ -2414,20 +1952,10 @@
    "detail": "ow spells the sound in cow or the /ō/ sound in snow.",
    "intros": [],
    "examples": [
-    "cow",
-    "how",
-    "now",
-    "down",
-    "snow",
-    "grow",
-    "yellow",
-    "window"
+    "cow, how, now, down",
+    "snow, grow, yellow, window"
    ],
    "heart": [],
-   "dolch": [
-    "down",
-    "yellow"
-   ],
    "graphemes": [
     [
      "ow",
@@ -2449,13 +1977,9 @@
    "detail": "The /oy/ sound inside words.",
    "intros": [],
    "examples": [
-    "boil",
-    "coin",
-    "join",
-    "soil"
+    "boil, coin, join, soil"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "oi",
@@ -2477,13 +2001,9 @@
    "detail": "The same sound at word-ends.",
    "intros": [],
    "examples": [
-    "boy",
-    "toy",
-    "joy",
-    "enjoy"
+    "boy, toy, joy, enjoy"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "oy",
@@ -2505,13 +2025,9 @@
    "detail": "ew commonly spells long u or /oo/.",
    "intros": [],
    "examples": [
-    "new",
-    "flew",
-    "grew",
-    "chew"
+    "new, flew, grew, chew"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "ew",
@@ -2533,15 +2049,9 @@
    "detail": "ue commonly spells long u or /oo/ at word ends.",
    "intros": [],
    "examples": [
-    "blue",
-    "glue",
-    "true",
-    "clue"
+    "blue, glue, true, clue"
    ],
    "heart": [],
-   "dolch": [
-    "blue"
-   ],
    "graphemes": [
     [
      "ue",
@@ -2563,33 +2073,9 @@
    "detail": "An apostrophe marks omitted letters.",
    "intros": [],
    "examples": [
-    "it's",
-    "I'm",
-    "don't",
-    "that's",
-    "didn't",
-    "I'll",
-    "you're",
-    "let's",
-    "can't",
-    "he's",
-    "there's",
-    "wasn't",
-    "you'll",
-    "couldn't",
-    "I've",
-    "what's",
-    "they're",
-    "we're",
-    "won't",
-    "doesn't",
-    "she's",
-    "we'll",
-    "isn't",
-    "I'd"
+    "it's, I'm, don't, that's, didn't, I'll, you're, let's, can't, he's, there's, wasn't, you'll, couldn't, I've, what's, they're, we're, won't, doesn't, she's, we'll, isn't, I'd"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": [
     "contractions"
@@ -2609,7 +2095,6 @@
    "intros": [],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -2627,7 +2112,6 @@
    "intros": [],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -2649,16 +2133,11 @@
     }
    ],
    "examples": [
-    "car",
-    "star",
-    "park",
-    "farm",
-    "hard"
+    "car, star, park, farm, hard"
    ],
    "heart": [
     "warm"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "ar",
@@ -2680,20 +2159,12 @@
    "detail": "or spells /or/. Revisit for, learned by heart in Module 2 and now fully decodable.",
    "intros": [],
    "examples": [
-    "or",
-    "fork",
-    "corn",
-    "storm",
-    "sport",
-    "for"
+    "or, fork, corn, storm, sport, for"
    ],
    "heart": [
     "world",
     "work",
     "word"
-   ],
-   "dolch": [
-    "for"
    ],
    "graphemes": [
     [
@@ -2716,19 +2187,13 @@
    "detail": "er commonly spells /er/, especially in final syllables.",
    "intros": [],
    "examples": [
-    "her",
-    "fern",
-    "over",
-    "never",
-    "water",
-    "very"
+    "her, fern, over, never, water, very"
    ],
    "heart": [
     "were",
     "other",
     "mother"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "er",
@@ -2750,13 +2215,9 @@
    "detail": "A second spelling of the /er/ sound.",
    "intros": [],
    "examples": [
-    "bird",
-    "girl",
-    "first",
-    "shirt"
+    "bird, girl, first, shirt"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "ir",
@@ -2778,15 +2239,11 @@
    "detail": "er, ir, and ur spell the same /er/ sound.",
    "intros": [],
    "examples": [
-    "fur",
-    "turn",
-    "hurt",
-    "curl"
+    "fur, turn, hurt, curl"
    ],
    "heart": [
     "sure"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "ur",
@@ -2808,17 +2265,9 @@
    "detail": "In an unstressed final syllable, ar or or can spell /er/.",
    "intros": [],
    "examples": [
-    "dollar",
-    "collar",
-    "polar",
-    "solar",
-    "doctor",
-    "actor",
-    "motor",
-    "author"
+    "dollar, collar, polar, solar; doctor, actor, motor, author"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "ar",
@@ -2844,13 +2293,9 @@
    "detail": "are spells the r-controlled sound in care.",
    "intros": [],
    "examples": [
-    "care",
-    "share",
-    "dare",
-    "spare"
+    "care, share, dare, spare"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "are",
@@ -2872,13 +2317,9 @@
    "detail": "air spells the same r-controlled sound as are.",
    "intros": [],
    "examples": [
-    "chair",
-    "hair",
-    "fair",
-    "pair"
+    "chair, hair, fair, pair"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "air",
@@ -2900,19 +2341,13 @@
    "detail": "ear can spell the r-controlled sounds in bear, hear, heard, or heart.",
    "intros": [],
    "examples": [
-    "bear",
-    "wear",
-    "hear",
-    "near",
-    "heard",
-    "learn",
-    "earth",
-    "early"
+    "bear, wear",
+    "hear, near",
+    "heard, learn, earth, early"
    ],
    "heart": [
     "heart"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "ear",
@@ -2934,17 +2369,13 @@
    "detail": "A second spelling of the /or/ sound.",
    "intros": [],
    "examples": [
-    "more",
-    "store",
-    "before",
-    "shore"
+    "more, store, before, shore"
    ],
    "heart": [
     "four",
     "door",
     "floor"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "ore",
@@ -2966,12 +2397,9 @@
    "detail": "-er compares two; -est compares three or more.",
    "intros": [],
    "examples": [
-    "bigger/biggest",
-    "faster/fastest",
-    "taller/tallest"
+    "bigger/biggest, faster/fastest, taller/tallest"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": [
     "suffix-er-est"
@@ -2991,7 +2419,6 @@
    "intros": [],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -3009,7 +2436,6 @@
    "intros": [],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -3026,13 +2452,9 @@
    "detail": "A rare but real spelling of /ā/.",
    "intros": [],
    "examples": [
-    "eight",
-    "weigh",
-    "neighbor",
-    "sleigh"
+    "eight, weigh, neighbor, sleigh"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "eigh",
@@ -3054,13 +2476,9 @@
    "detail": "A rare second spelling of /f/, mostly in Greek-origin words.",
    "intros": [],
    "examples": [
-    "phone",
-    "graph",
-    "elephant",
-    "dolphin"
+    "phone, graph, dolphin"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "ph",
@@ -3082,15 +2500,11 @@
    "detail": "A dependable /awt/ chunk in a small word family.",
    "intros": [],
    "examples": [
-    "caught",
-    "taught",
-    "daughter",
-    "naughty"
+    "caught, taught, daughter, naughty"
    ],
    "heart": [
     "laugh"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "aught",
@@ -3124,7 +2538,6 @@
     "brought",
     "dough"
    ],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -3141,17 +2554,13 @@
    "detail": "oe can spell /ō/; in heroes, poem, and poet, o and e cross an ending or syllable boundary.",
    "intros": [],
    "examples": [
-    "toe",
-    "doe",
-    "heroes",
-    "poem",
-    "poet"
+    "toe, doe",
+    "heroes, poem, poet"
    ],
    "heart": [
     "shoe",
     "does"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "oe",
@@ -3173,20 +2582,13 @@
    "detail": "ey can spell /ē/ as in key or /ā/ as in they. Their is introduced here as a related heart word after they is secure, not as an ey example.",
    "intros": [],
    "examples": [
-    "key",
-    "monkey",
-    "money",
-    "valley",
-    "they",
-    "hey",
-    "grey",
-    "prey"
+    "key, monkey, money, valley",
+    "they, hey, grey, prey"
    ],
    "heart": [
     "their",
     "eyes"
    ],
-   "dolch": [],
    "graphemes": [
     [
      "ey",
@@ -3209,7 +2611,6 @@
    "intros": [],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -3232,7 +2633,6 @@
    ],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -3249,12 +2649,9 @@
    "detail": "The k is silent.",
    "intros": [],
    "examples": [
-    "knee",
-    "know",
-    "knit"
+    "knee, know, knit"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "kn",
@@ -3276,12 +2673,9 @@
    "detail": "The w is silent.",
    "intros": [],
    "examples": [
-    "write",
-    "wrong",
-    "wrap"
+    "write, wrong, wrap"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "wr",
@@ -3303,12 +2697,9 @@
    "detail": "The final b is silent.",
    "intros": [],
    "examples": [
-    "lamb",
-    "climb",
-    "comb"
+    "lamb, climb, comb"
    ],
    "heart": [],
-   "dolch": [],
    "graphemes": [
     [
      "mb",
@@ -3330,19 +2721,11 @@
    "detail": "Extends syllable reading to three-syllable words.",
    "intros": [],
    "examples": [
-    "banana",
-    "wonderful",
-    "finally",
-    "suddenly",
-    "yesterday",
-    "grandmother",
-    "butterfly",
-    "every"
+    "banana, elephant, wonderful, finally, suddenly, yesterday, grandmother, butterfly, every"
    ],
    "heart": [
     "beautiful"
    ],
-   "dolch": [],
    "graphemes": [],
    "gates": [
     "three-syllable"
@@ -3367,7 +2750,6 @@
    ],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -3390,7 +2772,6 @@
    ],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   },
@@ -3413,9 +2794,370 @@
    ],
    "examples": [],
    "heart": [],
-   "dolch": [],
    "graphemes": [],
    "gates": []
   }
+ ],
+ "rules": [
+  {
+   "title": "The target",
+   "text": "Fluent on grade-1 text: ~60 words correct per minute at 95%+ accuracy."
+  },
+  {
+   "title": "Uppercase first",
+   "text": "All reading is intentionally uppercase through Lesson 44. Lowercase forms are consolidated in Lesson 45 before lowercase running text begins."
+  },
+  {
+   "title": "Teach reading from print to sound",
+   "text": "Readers meet the letters on the page first and decode them into sounds. Organize lessons around one spelling pattern and the sound or sounds it can represent—not around one sound followed by a list of all its possible spellings. Introduce alternative spellings in separate lessons so the reader learns one new visual pattern at a time."
+  }
+ ],
+ "modules": [
+  {
+   "n": 1,
+   "title": "First Letters, First Words",
+   "theme": "Introduces the first nine letters and builds the first decodable words."
+  },
+  {
+   "n": 2,
+   "title": "Four-Letter Words & the First Special Cases",
+   "theme": "Adds four-letter words, final s, the first heart words, and seven more consonants."
+  },
+  {
+   "n": 3,
+   "title": "Letter Friends & Five-Letter Words",
+   "theme": "Introduces consonant digraphs, alternate consonant spellings, five-letter words, glued ng/nk chunks, oral syllable counting, and the -ing ending."
+  },
+  {
+   "n": 4,
+   "title": "Long Vowels & Magic E",
+   "theme": "Introduces long vowels and the five Magic E spellings while completing the alphabet."
+  },
+  {
+   "n": 5,
+   "title": "Lowercase & Big-Kid Words",
+   "theme": "Moves into lowercase text, the ink/ing and ank/ang chunks, soft c and g, two-syllable words, common endings, open syllables, and vowel y."
+  },
+  {
+   "n": 6,
+   "title": "Vowel Teams",
+   "theme": "Introduces common vowel teams and the aw sound family."
+  },
+  {
+   "n": 7,
+   "title": "More Vowel Teams & Sound Adventures",
+   "theme": "Adds reading mileage, more vowel teams, flexible vowel spellings, and contractions."
+  },
+  {
+   "n": 8,
+   "title": "Reading Mileage & Bossy R",
+   "theme": "Introduces Bossy R, its core spellings, unstressed endings, and common r-controlled variants."
+  },
+  {
+   "n": 9,
+   "title": "Fluency & Alternate Spellings",
+   "theme": "Builds fluency and introduces rare or alternate spellings."
+  },
+  {
+   "n": 10,
+   "title": "Advanced Spellings & Graduation",
+   "theme": "Bridges to independent reading through expression, silent letters, longer words, review, and graduation."
+  }
+ ],
+ "reference": [
+  {
+   "kind": "exercise",
+   "name": "Finger Words",
+   "how": "Give each sound a finger, touch and say the sounds, then slide across the knuckles to blend the word."
+  },
+  {
+   "kind": "exercise",
+   "name": "Elephant Ears",
+   "how": "Say a word aloud. The reader gives a thumbs-up if it contains the target sound and a thumbs-down if it does not."
+  },
+  {
+   "kind": "exercise",
+   "name": "Teach Tam",
+   "how": "At the end of the lesson, the reader teaches Tam the new idea in their own words. Explaining it provides a quick understanding check."
+  },
+  {
+   "kind": "concept",
+   "name": "Sticky Sounds",
+   "how": "Identify sounds that connect smoothly to the sound after them and blend through the connection without adding an extra vowel."
+  },
+  {
+   "kind": "exercise",
+   "name": "Imaginary Finger Words",
+   "how": "Perform Finger Words mentally, without using a hand, as a bridge toward automatic decoding."
+  },
+  {
+   "kind": "exercise",
+   "name": "Buzz Check / Buzzer",
+   "how": "Notice whether the voice box buzzes to distinguish voiced and unvoiced sounds, including the two sounds of s and th."
+  },
+  {
+   "kind": "concept",
+   "name": "Flexible Sounds",
+   "how": "Try the spelling's first common sound; if it does not form a real word, switch to the other taught sound."
+  },
+  {
+   "kind": "concept",
+   "name": "Heart Words",
+   "how": "Map the sounds the reader already knows, identify the unexpected spelling, and learn only that part by heart."
+  },
+  {
+   "kind": "exercise",
+   "name": "Story Words",
+   "how": "Find a newly learned heart word inside real sentences, then read each complete sentence."
+  },
+  {
+   "kind": "exercise",
+   "name": "Brain Words",
+   "how": "Quickly reread previously decoded words so they become instantly recognizable and free attention for meaning."
+  },
+  {
+   "kind": "exercise",
+   "name": "Narrative Ninja",
+   "how": "Reread a sentence carefully, hear an adult model it, then read it smoothly with expression."
+  },
+  {
+   "kind": "exercise",
+   "name": "Word Chains",
+   "how": "Read a sequence in which one letter changes at a time, such as ran → ram → ramp → camp."
+  },
+  {
+   "kind": "concept",
+   "name": "Letter Friends",
+   "how": "Treat two letters that spell one sound as a single unit, such as sh or ch. Find the pair before blending the word."
+  },
+  {
+   "kind": "concept",
+   "name": "Meet Syllables",
+   "how": "Listen to spoken words and clap or count their beats, then connect the -ing beat to the ends of written words."
+  },
+  {
+   "kind": "concept",
+   "name": "Meet the Vowels",
+   "how": "Identify the five vowel letters and discover that each can spell a short sound or its letter name."
+  },
+  {
+   "kind": "concept",
+   "name": "Magic E",
+   "how": "A silent final e changes the preceding vowel from its short sound to its long sound."
+  },
+  {
+   "kind": "concept",
+   "name": "Lowercase Telling-Apart",
+   "how": "Match capitals with lowercase partners, then spend extra time comparing shape-shifters and confusable forms such as b and d."
+  },
+  {
+   "kind": "concept",
+   "name": "Two-Syllable Splitting",
+   "how": "Begin with compounds, then prefixed words, then find the vowels, split between consonants, read each chunk, and join the chunks."
+  },
+  {
+   "kind": "concept",
+   "name": "Open Chunks",
+   "how": "When a syllable ends in a vowel, try the vowel's long sound before joining the chunks."
+  },
+  {
+   "kind": "concept",
+   "name": "Lazy Vowel",
+   "how": "In an unstressed syllable, try the relaxed /uh/ sound when the carefully decoded word sounds almost right."
+  },
+  {
+   "kind": "concept",
+   "name": "Vowel Teams",
+   "how": "Treat two neighboring vowel letters that spell one sound as a single unit."
+  },
+  {
+   "kind": "exercise",
+   "name": "Just-Read Days",
+   "how": "Add no new spelling. Read a longer connected text for accuracy, smoothness, stamina, and enjoyment."
+  },
+  {
+   "kind": "exercise",
+   "name": "Repeated Reading",
+   "how": "Read the same passage again, moving from accurate decoding toward smooth, expressive reading."
+  },
+  {
+   "kind": "exercise",
+   "name": "Fluency Checks I–IV",
+   "how": "Use an unpracticed timed passage to measure accurate words per minute and chart growth. The final check uses two grade-1 passages and keeps the stronger score."
+  },
+  {
+   "kind": "concept",
+   "name": "Bossy R",
+   "how": "Notice that r changes the vowel sound before it, then connect ar, or, er, ir, ur, and later r-controlled spellings."
+  },
+  {
+   "kind": "concept",
+   "name": "Reading with Expression",
+   "how": "Use punctuation as a performance guide: questions rise, exclamations carry energy, and quotation marks signal dialogue."
+  },
+  {
+   "kind": "exercise",
+   "name": "Five-Finger Rule",
+   "how": "Read one page of a possible independent book and raise one finger for each stuck word. Five fingers means save the book for later."
+  },
+  {
+   "kind": "exercise",
+   "name": "Cumulative Review",
+   "how": "Revisit the major patterns, heart words, books, and games from all ten modules before the final fluency check."
+  },
+  {
+   "kind": "exercise",
+   "name": "Graduation",
+   "how": "The reader completes a final book independently, celebrates the milestone, and receives guidance for continued daily reading."
+  }
+ ],
+ "contractions": {
+  "rule_strong": "Before Lesson {n}, make sure every contraction's full phrase has already been practiced in earlier lesson sentences or books.",
+  "rule_text": "The reader should be able to read and understand the uncontracted phrase before learning the shortened form with an apostrophe.",
+  "phrases_html": "Practice <i>cannot</i>, <i>it is</i>, <i>I am</i>, <i>I am not</i>, <i>do not</i>, <i>that is</i>, <i>did not</i>, <i>I will</i>, <i>you are</i>, <i>let us</i>, <i>he is</i>, <i>there is</i>, <i>was not</i>, <i>you will</i>, <i>could not</i>, <i>I have</i>, <i>what is</i>, <i>they are</i>, <i>we are</i>, <i>will not</i>, <i>does not</i>, <i>she is</i>, <i>we will</i>, <i>is not</i>, and <i>I would</i> or <i>I had</i> before introducing their contracted forms."
+ },
+ "leftover": [
+  {
+   "word": "Christmas",
+   "rank": 151,
+   "note": "New late ch revisit: /k/ and silent t"
+  },
+  {
+   "word": "Mr.",
+   "rank": 157,
+   "slug": "lowercase-letters",
+   "note": "Lowercase letters + abbreviations"
+  },
+  {
+   "word": "children",
+   "rank": 221,
+   "slug": "ind-and-ild",
+   "note": "after child, as an irregular plural"
+  },
+  {
+   "word": "swallowed",
+   "rank": 239,
+   "slug": "ow-both-sounds",
+   "note": "ow, as a heart word"
+  },
+  {
+   "word": "Mrs.",
+   "rank": 245,
+   "slug": "lowercase-letters",
+   "note": "Lowercase letters + abbreviations"
+  },
+  {
+   "word": "favorite",
+   "rank": 267,
+   "slug": "three-syllable-words",
+   "note": "Three-syllable words"
+  },
+  {
+   "word": "special",
+   "rank": 291,
+   "note": "New Module 10 advanced-ending heart word"
+  },
+  {
+   "word": "done",
+   "rank": 326,
+   "slug": "o-e",
+   "note": "o_e heart word"
+  },
+  {
+   "word": "father",
+   "rank": 354,
+   "slug": "th-both-sounds",
+   "note": "th heart word"
+  },
+  {
+   "word": "whole",
+   "rank": 361,
+   "slug": "o-e",
+   "note": "o_e heart word"
+  },
+  {
+   "word": "color",
+   "rank": 412,
+   "slug": "er",
+   "note": "er heart word"
+  },
+  {
+   "word": "gone",
+   "rank": 414,
+   "slug": "o-e",
+   "note": "o_e heart word"
+  },
+  {
+   "word": "live",
+   "rank": 422,
+   "slug": "magic-e-i-e",
+   "note": "i_e heart word"
+  },
+  {
+   "word": "both",
+   "rank": 427,
+   "slug": "th-both-sounds",
+   "note": "th heart word"
+  },
+  {
+   "word": "front",
+   "rank": 439,
+   "slug": "f",
+   "note": "beside from"
+  },
+  {
+   "word": "course",
+   "rank": 481,
+   "slug": "ou-four-sounds",
+   "note": "ou heart word"
+  },
+  {
+   "word": "quiet",
+   "rank": 496,
+   "slug": "reading-two-syllable-words",
+   "note": "Two-Syllable Words"
+  }
+ ],
+ "dolch_pre_k": [
+  "a",
+  "and",
+  "away",
+  "big",
+  "blue",
+  "can",
+  "come",
+  "down",
+  "find",
+  "for",
+  "funny",
+  "go",
+  "help",
+  "here",
+  "i",
+  "in",
+  "is",
+  "it",
+  "jump",
+  "little",
+  "look",
+  "make",
+  "me",
+  "my",
+  "not",
+  "one",
+  "play",
+  "red",
+  "run",
+  "said",
+  "see",
+  "the",
+  "three",
+  "to",
+  "two",
+  "up",
+  "we",
+  "where",
+  "yellow",
+  "you"
  ]
 }

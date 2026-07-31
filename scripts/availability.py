@@ -100,11 +100,8 @@ class Curriculum:
         for l in lessons:
             for w in l["heart"]:
                 self.known.add(w.lower())
-            for raw in l["examples"]:
-                for part in raw.split("→"):
-                    part = re.sub(r"\s*/.*$", "", part).strip().lower()
-                    if re.fullmatch(r"[a-z]+", part):
-                        self.known.add(part)
+            for w in example_words(l):
+                self.known.add(w)
         self.states = []                # states[i] = code after lesson i+1
         state = State()
         for l in lessons:
@@ -340,22 +337,30 @@ def load():
 # ---------------------------------------------------------------------------
 
 
+def example_words(lesson):
+    """Tokenize a lesson's example group strings into plain words."""
+    if lesson["slug"] == "lowercase-letters":  # examples are letter lists
+        return []
+    out = []
+    for group in lesson["examples"]:
+        for chunk in re.split(r"[;,]", group):
+            for part in chunk.split("→"):
+                part = re.sub(r"\s*/.*$", "", part).strip().lower()
+                part = part.replace("’", "'")
+                if re.fullmatch(r"[a-z]+(?:'[a-z]+)*", part):
+                    out.append(part)
+    return out
+
+
 def check(cur):
     """Every lesson example should be available at its own lesson."""
     bad = []
     for l in cur.lessons:
-        if l["slug"] == "lowercase-letters":  # examples are letter lists
-            continue
         state = cur.states[l["n"] - 1]
-        for raw in l["examples"]:
-            for word in raw.split("→"):
-                word = word.strip().lower()
-                word = re.sub(r"\s*/.*$", "", word)  # strip "/s/" pron notes
-                if not re.fullmatch(r"[a-z]+(?:['’][a-z]+)*", word):
-                    continue
-                ok, _ = cur._available(word.replace("’", "'"), state)
-                if not ok:
-                    bad.append((l["n"], l["slug"], word))
+        for word in example_words(l):
+            ok, _ = cur._available(word, state)
+            if not ok:
+                bad.append((l["n"], l["slug"], word))
     if bad:
         print(f"{len(bad)} example words NOT available at their lesson:")
         for n, slug, w in bad:

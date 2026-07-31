@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
 """Extract the machine-readable curriculum from MODULE_ORDER_PROPOSED.html.
 
-Parses every lesson row (number, title, tags, detail, examples, heart words)
-and merges in the authored CODE table below, which records the graphemes and
-phonemes each lesson unlocks plus any strategy gates. Writes
-data/curriculum.json — the single source consumed by availability.py,
-build-word-matrix.py, and future doc generators.
-
-The CODE table is keyed by slug, not lesson number, so lessons can be
-reordered in the HTML and re-extracted without touching this table.
+DEPRECATED as the normal workflow: data/curriculum.json is now the source of
+truth — edit it directly and regenerate the doc with
+scripts/build-module-order.py. Keep this script only as a recovery tool in
+case the HTML is ever hand-edited again (re-run it to pull the edits back
+into curriculum.json; authored graphemes/gates merge in from CODE below).
 
 Usage: python3 scripts/extract-curriculum.py
 """
@@ -158,17 +155,18 @@ def parse():
         detail = clean(re.sub(r'<div class="detail-intros">.*?</div>', '',
                               detail_html, flags=re.S))
         ex_html = m.group(7)
-        dolch = [clean(w) for w in re.findall(
-            r'<span class="dolch-word"\s*>(.*?)</span\s*>', ex_html, re.S)]
-        # Flatten nested dolch spans so the outer .words spans match cleanly.
+        # Flatten nested dolch spans so the outer .words spans match cleanly
+        # (dolch marking is re-derived from the dolch_pre_k list on render).
         ex_flat = re.sub(r'<span class="dolch-word"\s*>(.*?)</span\s*>', r'\1',
                          ex_html, flags=re.S)
         examples, heart = [], []
         for span in re.findall(r'<span class="words"\s*>(.*?)</span\s*>', ex_flat, re.S):
             is_heart = 'heart words:' in span
             text = clean(re.sub(r'<b class="example-label"\s*>.*?</b\s*>', '', span, flags=re.S))
-            words = [w.strip() for w in re.split(r'[;,]', text) if w.strip()]
-            (heart if is_heart else examples).extend(words)
+            if is_heart:
+                heart.extend(w.strip() for w in re.split(r'[;,]', text) if w.strip())
+            elif text:
+                examples.append(text)  # group string, commas/semicolons kept
         lessons.append({
             "n": num,
             "slug": slugify(title),
@@ -181,7 +179,6 @@ def parse():
             "intros": [{"kind": k, "name": clean(v)} for k, v in intros],
             "examples": examples,
             "heart": heart,
-            "dolch": dolch,
         })
     return lessons
 
@@ -190,6 +187,63 @@ def clean(s):
     s = re.sub(r'<[^>]+>', '', s)
     s = s.replace('&amp;', '&').replace('&nbsp;', ' ')
     return re.sub(r'\s+', ' ', s).strip()
+
+
+DOLCH_PRE_K = [
+    "a", "and", "away", "big", "blue", "can", "come", "down", "find", "for",
+    "funny", "go", "help", "here", "i", "in", "is", "it", "jump", "little",
+    "look", "make", "me", "my", "not", "one", "play", "red", "run", "said",
+    "see", "the", "three", "to", "two", "up", "we", "where", "yellow", "you",
+]
+
+
+def parse_extras(html, lessons):
+    slug_by_num = {l["n"]: l["slug"] for l in lessons}
+    extras = {}
+    extras["rules"] = [
+        {"title": clean(t), "text": clean(s)}
+        for t, s in re.findall(
+            r'<div class="rule">\s*<b>(.*?)</b\s*>\s*<span\s*>(.*?)</span',
+            html, re.S)
+    ]
+    extras["modules"] = [
+        {"n": int(n), "title": clean(t), "theme": clean(theme)}
+        for n, t, theme in re.findall(
+            r'<h2>Module (\d+) — (.*?)</h2>\s*</div>\s*'
+            r'<p class="module-theme">\s*(.*?)</p>', html, re.S)
+    ]
+    reference = []
+    for kind, name, num, how in re.findall(
+            r'<span class="reference-label reference-(concept|exercise)"\s*'
+            r'>(.*?)</span\s*>\s*</td>\s*<td>Lesson (\d+)</td>\s*<td>\s*(.*?)\s*</td>',
+            html, re.S):
+        reference.append({"kind": kind, "name": clean(name), "how": clean(how)})
+    extras["reference"] = reference
+    m = re.search(
+        r'<div class="note">\s*<strong\s*>(.*?)</strong\s*>(.*?)</div>\s*'
+        r'<p>\s*(.*?)\s*</p>', html, re.S)
+    extras["contractions"] = {
+        "rule_strong": re.sub(r'Before Lesson \d+', 'Before Lesson {n}',
+                              clean(m.group(1))),
+        "rule_text": clean(m.group(2)),
+        "phrases_html": re.sub(r'\s+', ' ', m.group(3)).strip(),
+    }
+    leftover = []
+    sect = html[html.index("Leftover Top-500 Words"):]
+    sect = sect[:sect.index("</table>")]
+    for word, rank, sug in re.findall(
+            r'<td><i>(.*?)</i></td>\s*<td>(\d+)</td>\s*<td>(.*?)</td>', sect, re.S):
+        sug = clean(sug)
+        lm = re.match(r'Lesson (\d+) — (.*)$', sug)
+        if lm:
+            entry = {"word": clean(word), "rank": int(rank),
+                     "slug": slug_by_num[int(lm.group(1))], "note": lm.group(2)}
+        else:
+            entry = {"word": clean(word), "rank": int(rank), "note": sug}
+        leftover.append(entry)
+    extras["leftover"] = leftover
+    extras["dolch_pre_k"] = DOLCH_PRE_K
+    return extras
 
 
 def main():
@@ -202,11 +256,15 @@ def main():
         code = CODE.get(l["slug"], {})
         l["graphemes"] = code.get("g", [])
         l["gates"] = code.get("gates", [])
+    data = {"lessons": lessons}
+    data.update(parse_extras(open(DOC).read(), lessons))
     out = os.path.join(ROOT, "data", "curriculum.json")
     with open(out, "w") as f:
-        json.dump({"lessons": lessons}, f, ensure_ascii=False, indent=1)
+        json.dump(data, f, ensure_ascii=False, indent=1)
     n_code = sum(1 for l in lessons if l["graphemes"] or l["gates"])
-    print(f"{len(lessons)} lessons ({n_code} with code) -> {out}")
+    print(f"{len(lessons)} lessons ({n_code} with code), "
+          f"{len(data['reference'])} reference rows, "
+          f"{len(data['leftover'])} leftover rows -> {out}")
 
 
 if __name__ == "__main__":
