@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Learn to Read — Lesson Availability</title>
+<style>
+  body { font-family: ui-sans-serif, -apple-system, sans-serif; font-size: 13.5px;
+         color: #212622; background: #faf9f5; margin: 24px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  p.sub { color: #59635c; margin: 0 0 16px; max-width: 760px; }
+  table { border-collapse: collapse; background: #fff; width: 100%; }
+  th, td { border: 1px solid #e6e2d8; padding: 6px 9px; text-align: left;
+            vertical-align: top; }
+  th { position: sticky; top: 0; background: #fcfbf8; font-size: 11.5px;
+        color: #8a938c; }
+  td.n { font-weight: 700; color: #8a938c; text-align: right; }
+  td.t { font-weight: 650; white-space: nowrap; }
+  td.t .sub { font-weight: 400; color: #8a938c; font-size: 11.5px; }
+  .g { display: inline-block; background: #eef4f0; color: #2e6f52;
+        border-radius: 6px; padding: 1px 7px; margin: 1px; font-weight: 650;
+        white-space: nowrap; }
+  .g i { color: #7fa290; font-style: normal; font-weight: 500; font-size: 11.5px; }
+  .gate { display: inline-block; background: #f3eefa; color: #6a4fa3;
+           border-radius: 6px; padding: 1px 7px; margin: 1px; font-size: 11.5px;
+           font-weight: 600; }
+  td.heart { color: #cf3f7c; font-weight: 600; max-width: 130px; }
+  td.new { line-height: 1.9; }
+  .count { display: inline-block; min-width: 26px; margin-right: 8px;
+            color: #8a938c; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .w { background: #f4f2ec; border-radius: 5px; padding: 1px 6px; margin: 1px; }
+  .w.h { background: #fbeef4; color: #cf3f7c; }
+  .more { color: #8a938c; font-size: 12px; }
+  td.cum { color: #8a938c; text-align: right; font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+<h1>Lesson Availability</h1>
+<p class="sub">For each lesson: the grapheme–phoneme code and strategy gates it
+unlocks, its heart words, and the CPB top-3,000 words that become readable at
+that lesson (max 50 shown, ordered by rank; pink = via heart word). Generated
+from <code>data/curriculum.json</code> — regenerate with
+<code>python3 scripts/availability.py</code>.</p>
+<table>
+<tr><th>#</th><th>Lesson</th><th>New code</th><th>Heart words</th>
+<th>Newly available words</th><th>Cum.</th></tr>
+
+<tr>
+  <td class="n">1</td>
+  <td class="t">m, a, t<div class="sub">the only 3-letter lesson</div></td>
+  <td class="code"><span class='g'>m <i>/m/</i></span> <span class='g'>a <i>/ă/</i></span> <span class='g'>t <i>/t/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">4</span><span class='w' title='rank 28 · decode'>at</span> <span class='w' title='rank 165 · decode'>am</span> <span class='w' title='rank 1408 · decode'>t</span> <span class='w' title='rank 2102 · decode'>m</span></td>
+  <td class="cum">4</td>
+</tr>
+<tr>
+  <td class="n">2</td>
+  <td class="t">s<div class="sub"></div></td>
+  <td class="code"><span class='g'>s <i>/s/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">5</span><span class='w' title='rank 31 · decode'>as</span> <span class='w' title='rank 383 · decode'>sat</span> <span class='w' title='rank 751 · decode'>sam</span> <span class='w' title='rank 1155 · decode'>st</span> <span class='w' title='rank 1936 · decode'>s</span></td>
+  <td class="cum">9</td>
+</tr>
+<tr>
+  <td class="n">3</td>
+  <td class="t">p<div class="sub"></div></td>
+  <td class="code"><span class='g'>p <i>/p/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">5</span><span class='w' title='rank 558 · decode'>past</span> <span class='w' title='rank 1461 · decode'>p</span> <span class='w' title='rank 1701 · decode'>map</span> <span class='w' title='rank 1770 · decode'>pat</span> <span class='w' title='rank 1874 · decode'>tap</span></td>
+  <td class="cum">14</td>
+</tr>
+<tr>
+  <td class="n">4</td>
+  <td class="t">i<div class="sub"></div></td>
+  <td class="code"><span class='g'>i <i>/ĭ/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">9</span><span class='w' title='rank 11 · decode'>it</span> <span class='w' title='rank 12 · decode'>is</span> <span class='w' title='rank 344 · decode'>sit</span> <span class='w' title='rank 350 · decode'>its</span> <span class='w' title='rank 1320 · decode'>tim</span> <span class='w' title='rank 1927 · decode'>sits</span> <span class='w' title='rank 2068 · decode'>pip</span> <span class='w' title='rank 2242 · decode'>tip</span> <span class='w' title='rank 2603 · decode'>spit</span></td>
+  <td class="cum">23</td>
+</tr>
+<tr>
+  <td class="n">5</td>
+  <td class="t">n<div class="sub"></div></td>
+  <td class="code"><span class='g'>n <i>/n/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">9</span><span class='w' title='rank 9 · decode'>in</span> <span class='w' title='rank 83 · decode'>an</span> <span class='w' title='rank 179 · decode'>man</span> <span class='w' title='rank 1047 · decode'>pants</span> <span class='w' title='rank 1568 · decode'>nap</span> <span class='w' title='rank 1731 · decode'>spin</span> <span class='w' title='rank 1961 · decode'>snap</span> <span class='w' title='rank 2139 · decode'>n</span> <span class='w' title='rank 2640 · decode'>pan</span></td>
+  <td class="cum">32</td>
+</tr>
+<tr>
+  <td class="n">6</td>
+  <td class="t">d<div class="sub"></div></td>
+  <td class="code"><span class='g'>d <i>/d/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">11</span><span class='w' title='rank 2 · decode'>and</span> <span class='w' title='rank 90 · decode'>did</span> <span class='w' title='rank 127 · decode'>dad</span> <span class='w' title='rank 335 · decode'>sad</span> <span class='w' title='rank 495 · decode'>mind</span> <span class='w' title='rank 583 · decode'>stand</span> <span class='w' title='rank 874 · decode'>mad</span> <span class='w' title='rank 1057 · decode'>sand</span> <span class='w' title='rank 1549 · decode'>dan</span> <span class='w' title='rank 1644 · decode'>d</span> <span class='w' title='rank 1712 · decode'>stands</span></td>
+  <td class="cum">43</td>
+</tr>
+<tr>
+  <td class="n">7</td>
+  <td class="t">o<div class="sub"></div></td>
+  <td class="code"><span class='g'>o <i>/ŏ/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">17</span><span class='w' title='rank 17 · decode'>on</span> <span class='w' title='rank 41 · decode'>not</span> <span class='w' title='rank 128 · decode'>mom</span> <span class='w' title='rank 241 · decode'>stop</span> <span class='w' title='rank 249 · decode'>most</span> <span class='w' title='rank 301 · decode'>top</span> <span class='w' title='rank 488 · decode'>pot</span> <span class='w' title='rank 772 · decode'>spot</span> <span class='w' title='rank 816 · decode'>son</span> <span class='w' title='rank 884 · decode'>tom</span> <span class='w' title='rank 974 · decode'>pond</span> <span class='w' title='rank 1118 · decode'>pop</span> <span class='w' title='rank 1448 · decode'>spots</span> <span class='w' title='rank 2129 · decode'>dot</span> <span class='w' title='rank 2213 · decode'>stops</span> <span class='w' title='rank 2690 · decode'>moms</span> <span class='w' title='rank 2759 · decode'>post</span></td>
+  <td class="cum">60</td>
+</tr>
+<tr>
+  <td class="n">8</td>
+  <td class="t">b<div class="sub"></div></td>
+  <td class="code"><span class='g'>b <i>/b/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">9</span><span class='w' title='rank 246 · decode'>bad</span> <span class='w' title='rank 406 · decode'>bit</span> <span class='w' title='rank 983 · decode'>bat</span> <span class='w' title='rank 1080 · decode'>b</span> <span class='w' title='rank 1310 · decode'>band</span> <span class='w' title='rank 1376 · decode'>bob</span> <span class='w' title='rank 1907 · decode'>bats</span> <span class='w' title='rank 2513 · decode'>bits</span> <span class='w' title='rank 2891 · decode'>bands</span></td>
+  <td class="cum">69</td>
+</tr>
+<tr>
+  <td class="n">9</td>
+  <td class="t">g<div class="sub"></div></td>
+  <td class="code"><span class='g'>g <i>/g/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">14</span><span class='w' title='rank 68 · decode'>big</span> <span class='w' title='rank 101 · decode'>got</span> <span class='w' title='rank 227 · decode'>dog</span> <span class='w' title='rank 351 · decode'>pig</span> <span class='w' title='rank 709 · decode'>bag</span> <span class='w' title='rank 799 · decode'>sign</span> <span class='w' title='rank 851 · decode'>pigs</span> <span class='w' title='rank 858 · decode'>dogs</span> <span class='w' title='rank 1016 · decode'>god</span> <span class='w' title='rank 1503 · decode'>dig</span> <span class='w' title='rank 1699 · decode'>g</span> <span class='w' title='rank 1833 · decode'>bags</span> <span class='w' title='rank 2263 · decode'>tag</span> <span class='w' title='rank 2416 · decode'>signs</span></td>
+  <td class="cum">83</td>
+</tr>
+<tr>
+  <td class="n">10</td>
+  <td class="t">Module 1 Review<div class="sub"></div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">83</td>
+</tr>
+<tr>
+  <td class="n">11</td>
+  <td class="t">Ending in S<div class="sub"></div></td>
+  <td class="code"><span class='g'>s <i>/z/</i></span> <span class='gate'>suffix-s</span></td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">1</span><span class='w' title='rank 2347 · decode+s'>ass</span></td>
+  <td class="cum">84</td>
+</tr>
+<tr>
+  <td class="n">12</td>
+  <td class="t">e<div class="sub"></div></td>
+  <td class="code"><span class='g'>e <i>/ĕ/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">30</span><span class='w' title='rank 65 · decode'>get</span> <span class='w' title='rank 167 · decode'>best</span> <span class='w' title='rank 177 · decode'>bed</span> <span class='w' title='rank 312 · decode'>end</span> <span class='w' title='rank 342 · decode'>set</span> <span class='w' title='rank 471 · decode'>gets</span> <span class='w' title='rank 566 · decode'>pet</span> <span class='w' title='rank 624 · decode'>met</span> <span class='w' title='rank 787 · decode'>nest</span> <span class='w' title='rank 809 · decode'>step</span> <span class='w' title='rank 876 · decode'>ten</span> <span class='w' title='rank 916 · decode'>men</span> <span class='w' title='rank 993 · decode'>sent</span> <span class='w' title='rank 1158 · decode'>bet</span> <span class='w' title='rank 1369 · decode'>pets</span> <span class='w' title='rank 1370 · decode'>spent</span> <span class='w' title='rank 1428 · decode'>den</span> <span class='w' title='rank 1535 · decode'>send</span> <span class='w' title='rank 1540 · decode'>steps</span> <span class='w' title='rank 1560 · decode'>test</span> <span class='w' title='rank 1596 · decode'>spend</span> <span class='w' title='rank 1675 · decode'>ben</span> <span class='w' title='rank 1793 · decode'>tent</span> <span class='w' title='rank 1857 · decode'>beds</span> <span class='w' title='rank 1912 · decode'>ends</span> <span class='w' title='rank 1921 · decode'>pen</span> <span class='w' title='rank 2104 · decode'>meg</span> <span class='w' title='rank 2113 · decode'>sets</span> <span class='w' title='rank 2445 · decode'>net</span> <span class='w' title='rank 2459 · decode'>ted</span></td>
+  <td class="cum">114</td>
+</tr>
+<tr>
+  <td class="n">13</td>
+  <td class="t">h<div class="sub"></div></td>
+  <td class="code"><span class='g'>h <i>/h/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">19</span><span class='w' title='rank 14 · decode'>his</span> <span class='w' title='rank 46 · decode'>had</span> <span class='w' title='rank 55 · decode'>him</span> <span class='w' title='rank 62 · decode'>oh</span> <span class='w' title='rank 118 · decode'>has</span> <span class='w' title='rank 282 · decode'>hat</span> <span class='w' title='rank 353 · decode'>hand</span> <span class='w' title='rank 364 · decode'>hands</span> <span class='w' title='rank 398 · decode'>hot</span> <span class='w' title='rank 685 · decode'>ah</span> <span class='w' title='rank 806 · decode'>hit</span> <span class='w' title='rank 1088 · decode'>hop</span> <span class='w' title='rank 1116 · decode'>hen</span> <span class='w' title='rank 1218 · decode'>hid</span> <span class='w' title='rank 1525 · decode'>hats</span> <span class='w' title='rank 2095 · decode'>h</span> <span class='w' title='rank 2096 · decode'>hens</span> <span class='w' title='rank 2528 · decode'>hip</span> <span class='w' title='rank 2856 · decode'>ham</span></td>
+  <td class="cum">133</td>
+</tr>
+<tr>
+  <td class="n">14</td>
+  <td class="t">Heart Words<div class="sub"></div></td>
+  <td class="code"> </td>
+  <td class="heart">I, a, the</td>
+  <td class="new"><span class="count">3</span><span class='w h' title='rank 1 · heart'>the</span> <span class='w h' title='rank 3 · heart'>a</span> <span class='w h' title='rank 5 · heart'>i</span></td>
+  <td class="cum">136</td>
+</tr>
+<tr>
+  <td class="n">15</td>
+  <td class="t">l<div class="sub"></div></td>
+  <td class="code"><span class='g'>l <i>/l/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">41</span><span class='w' title='rank 104 · decode'>help</span> <span class='w' title='rank 110 · decode'>old</span> <span class='w' title='rank 195 · decode'>last</span> <span class='w' title='rank 201 · decode'>told</span> <span class='w' title='rank 202 · decode'>let</span> <span class='w' title='rank 359 · decode'>lots</span> <span class='w' title='rank 372 · decode'>gold</span> <span class='w' title='rank 396 · decode'>lot</span> <span class='w' title='rank 450 · decode'>lost</span> <span class='w' title='rank 461 · decode'>hold</span> <span class='w' title='rank 601 · decode'>legs</span> <span class='w' title='rank 679 · decode'>plan</span> <span class='w' title='rank 689 · decode'>land</span> <span class='w' title='rank 711 · decode'>held</span> <span class='w' title='rank 822 · decode'>glad</span> <span class='w' title='rank 840 · decode'>helps</span> <span class='w' title='rank 881 · decode'>list</span> <span class='w' title='rank 897 · decode'>plant</span> <span class='w' title='rank 947 · decode'>led</span> <span class='w' title='rank 950 · decode'>splat</span> <span class='w' title='rank 1139 · decode'>plants</span> <span class='w' title='rank 1496 · decode'>slept</span> <span class='w' title='rank 1589 · decode'>leg</span> <span class='w' title='rank 1777 · decode'>bold</span> <span class='w' title='rank 1784 · decode'>lit</span> <span class='w' title='rank 2042 · decode'>slid</span> <span class='w' title='rank 2067 · decode'>pal</span> <span class='w' title='rank 2101 · decode'>lips</span> <span class='w' title='rank 2202 · decode'>plans</span> <span class='w' title='rank 2217 · decode'>l</span> <span class='w' title='rank 2255 · decode'>holds</span> <span class='w' title='rank 2272 · decode'>al</span> <span class='w' title='rank 2289 · decode'>lets</span> <span class='w' title='rank 2290 · decode'>log</span> <span class='w' title='rank 2376 · decode'>plop</span> <span class='w' title='rank 2562 · decode'>blast</span> <span class='w' title='rank 2657 · decode'>lap</span> <span class='w' title='rank 2764 · decode'>salt</span> <span class='w' title='rank 2803 · decode'>lamp</span> <span class='w' title='rank 2806 · decode'>lid</span> <span class='w' title='rank 2823 · decode'>sold</span></td>
+  <td class="cum">177</td>
+</tr>
+<tr>
+  <td class="n">16</td>
+  <td class="t">c<div class="sub"></div></td>
+  <td class="code"><span class='g'>c <i>/k/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">11</span><span class='w' title='rank 45 · decode'>can</span> <span class='w' title='rank 208 · decode'>cat</span> <span class='w' title='rank 325 · decode'>cold</span> <span class='w' title='rank 982 · decode'>cats</span> <span class='w' title='rank 1211 · decode'>calm</span> <span class='w' title='rank 1409 · decode'>act</span> <span class='w' title='rank 1440 · decode'>c</span> <span class='w' title='rank 2473 · decode'>clap</span> <span class='w' title='rank 2616 · decode'>cans</span> <span class='w' title='rank 2842 · decode'>cap</span> <span class='w' title='rank 2959 · decode'>doc</span></td>
+  <td class="cum">188</td>
+</tr>
+<tr>
+  <td class="n">17</td>
+  <td class="t">u<div class="sub"></div></td>
+  <td class="code"><span class='g'>u <i>/ŭ/</i></span> </td>
+  <td class="heart">put</td>
+  <td class="new"><span class="count">37</span><span class='w' title='rank 21 · decode'>but</span> <span class='w' title='rank 29 · decode'>up</span> <span class='w' title='rank 112 · decode'>us</span> <span class='w h' title='rank 170 · heart'>put</span> <span class='w' title='rank 226 · decode'>must</span> <span class='w' title='rank 265 · decode'>sun</span> <span class='w' title='rank 465 · decode'>hug</span> <span class='w' title='rank 631 · decode'>bus</span> <span class='w' title='rank 870 · decode'>uh</span> <span class='w' title='rank 895 · decode'>um</span> <span class='w' title='rank 925 · decode'>cut</span> <span class='w' title='rank 1011 · decode'>cup</span> <span class='w' title='rank 1021 · decode'>bump</span> <span class='w' title='rank 1033 · decode'>bug</span> <span class='w' title='rank 1045 · decode'>hugs</span> <span class='w' title='rank 1246 · decode'>mud</span> <span class='w' title='rank 1456 · decode'>dust</span> <span class='w' title='rank 1460 · decode'>nuts</span> <span class='w' title='rank 1570 · decode'>puts</span> <span class='w' title='rank 1588 · decode'>gum</span> <span class='w' title='rank 1633 · decode'>mum</span> <span class='w' title='rank 1654 · decode'>snug</span> <span class='w' title='rank 1758 · decode'>dug</span> <span class='w' title='rank 1782 · decode'>huh</span> <span class='w' title='rank 1783 · decode'>hunt</span> <span class='w' title='rank 1916 · decode'>gus</span> <span class='w' title='rank 1924 · decode'>plus</span> <span class='w' title='rank 2021 · decode'>bugs</span> <span class='w' title='rank 2430 · decode'>cubs</span> <span class='w' title='rank 2516 · decode'>club</span> <span class='w' title='rank 2538 · decode'>nut</span> <span class='w' title='rank 2604 · decode'>spun</span> <span class='w' title='rank 2641 · decode'>plump</span> <span class='w' title='rank 2652 · decode'>tub</span> <span class='w' title='rank 2697 · decode'>pups</span> <span class='w' title='rank 2739 · decode'>dump</span> <span class='w' title='rank 2816 · decode'>pup</span></td>
+  <td class="cum">225</td>
+</tr>
+<tr>
+  <td class="n">18</td>
+  <td class="t">r<div class="sub"></div></td>
+  <td class="code"><span class='g'>r <i>/r/</i></span> </td>
+  <td class="heart">for, are</td>
+  <td class="new"><span class="count">28</span><span class='w h' title='rank 15 · heart'>for</span> <span class='w h' title='rank 32 · heart'>are</span> <span class='w' title='rank 157 · decode'>mr</span> <span class='w' title='rank 160 · decode'>red</span> <span class='w' title='rank 209 · decode'>ran</span> <span class='w' title='rank 245 · decode'>mrs</span> <span class='w' title='rank 278 · decode'>run</span> <span class='w' title='rank 502 · decode'>rest</span> <span class='w' title='rank 924 · decode'>trip</span> <span class='w' title='rank 987 · decode'>rat</span> <span class='w' title='rank 1058 · decode'>trap</span> <span class='w' title='rank 1101 · decode'>dr</span> <span class='w' title='rank 1364 · decode'>grab</span> <span class='w' title='rank 1420 · decode'>runs</span> <span class='w' title='rank 1430 · decode'>grand</span> <span class='w' title='rank 1455 · decode'>drop</span> <span class='w' title='rank 1619 · decode'>drum</span> <span class='w' title='rank 1631 · decode'>grin</span> <span class='w' title='rank 1681 · decode'>crept</span> <span class='w' title='rank 1779 · decode'>crab</span> <span class='w' title='rank 1858 · decode'>brand</span> <span class='w' title='rank 1884 · decode'>drops</span> <span class='w' title='rank 2080 · decode'>trust</span> <span class='w' title='rank 2203 · decode'>r</span> <span class='w' title='rank 2238 · decode'>rid</span> <span class='w' title='rank 2359 · decode'>drip</span> <span class='w' title='rank 2853 · decode+s'>gross</span> <span class='w' title='rank 2870 · decode'>rub</span></td>
+  <td class="cum">253</td>
+</tr>
+<tr>
+  <td class="n">19</td>
+  <td class="t">z<div class="sub"></div></td>
+  <td class="code"><span class='g'>z <i>/z/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">1</span><span class='w' title='rank 1577 · decode'>z</span></td>
+  <td class="cum">254</td>
+</tr>
+<tr>
+  <td class="n">20</td>
+  <td class="t">Module 2 Review<div class="sub"></div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">254</td>
+</tr>
+<tr>
+  <td class="n">21</td>
+  <td class="t">sh<div class="sub">Letter Friends concept</div></td>
+  <td class="code"><span class='g'>sh <i>/sh/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">16</span><span class='w' title='rank 937 · decode'>ship</span> <span class='w' title='rank 1069 · decode'>splash</span> <span class='w' title='rank 1104 · decode'>shop</span> <span class='w' title='rank 1179 · decode'>brush</span> <span class='w' title='rank 1353 · decode'>push</span> <span class='w' title='rank 1402 · decode'>shed</span> <span class='w' title='rank 1403 · decode'>shut</span> <span class='w' title='rank 1453 · decode'>crash</span> <span class='w' title='rank 1651 · decode'>shot</span> <span class='w' title='rank 1750 · decode'>trash</span> <span class='w' title='rank 1807 · decode'>dash</span> <span class='w' title='rank 1992 · decode'>bush</span> <span class='w' title='rank 2525 · decode'>gosh</span> <span class='w' title='rank 2531 · decode'>hush</span> <span class='w' title='rank 2598 · decode'>rush</span> <span class='w' title='rank 2849 · decode'>dish</span></td>
+  <td class="cum">270</td>
+</tr>
+<tr>
+  <td class="n">22</td>
+  <td class="t">ch, tch<div class="sub"></div></td>
+  <td class="code"><span class='g'>ch <i>/ch/</i></span> <span class='g'>tch <i>/ch/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">22</span><span class='w' title='rank 152 · decode'>much</span> <span class='w' title='rank 358 · decode'>such</span> <span class='w' title='rank 390 · decode'>catch</span> <span class='w' title='rank 478 · decode'>lunch</span> <span class='w' title='rank 637 · decode'>child</span> <span class='w' title='rank 1300 · decode'>chest</span> <span class='w' title='rank 1359 · decode'>branch</span> <span class='w' title='rank 1502 · decode'>crunch</span> <span class='w' title='rank 1677 · decode'>chip</span> <span class='w' title='rank 1739 · decode'>grinch</span> <span class='w' title='rank 1822 · decode'>rich</span> <span class='w' title='rank 1950 · decode'>munch</span> <span class='w' title='rank 2035 · decode'>patch</span> <span class='w' title='rank 2051 · decode'>bunch</span> <span class='w' title='rank 2053 · decode'>chin</span> <span class='w' title='rank 2276 · decode'>chris</span> <span class='w' title='rank 2404 · decode'>hatch</span> <span class='w' title='rank 2498 · decode'>punch</span> <span class='w' title='rank 2500 · decode'>scratch</span> <span class='w' title='rank 2503 · decode'>stretch</span> <span class='w' title='rank 2535 · decode'>match</span> <span class='w' title='rank 2845 · decode'>chop</span></td>
+  <td class="cum">292</td>
+</tr>
+<tr>
+  <td class="n">23</td>
+  <td class="t">y<div class="sub"></div></td>
+  <td class="code"><span class='g'>y <i>/y/</i></span> </td>
+  <td class="heart">you, your</td>
+  <td class="new"><span class="count">13</span><span class='w h' title='rank 6 · heart'>you</span> <span class='w h' title='rank 38 · heart'>your</span> <span class='w' title='rank 99 · decode'>says</span> <span class='w' title='rank 231 · decode'>yes</span> <span class='w' title='rank 320 · decode'>days</span> <span class='w' title='rank 522 · decode'>yet</span> <span class='w' title='rank 561 · decode'>toys</span> <span class='w' title='rank 666 · decode'>boys</span> <span class='w' title='rank 784 · decode'>guys</span> <span class='w h' title='rank 1345 · heart+s'>yours</span> <span class='w' title='rank 1730 · decode'>plays</span> <span class='w' title='rank 1877 · decode'>yum</span> <span class='w' title='rank 2018 · decode'>yep</span></td>
+  <td class="cum">305</td>
+</tr>
+<tr>
+  <td class="n">24</td>
+  <td class="t">k, ck<div class="sub"></div></td>
+  <td class="code"><span class='g'>k <i>/k/</i></span> <span class='g'>ck <i>/k/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">57</span><span class='w' title='rank 73 · decode'>back</span> <span class='w' title='rank 271 · decode'>kind</span> <span class='w' title='rank 289 · decode'>ask</span> <span class='w' title='rank 290 · decode'>black</span> <span class='w' title='rank 333 · decode'>kids</span> <span class='w' title='rank 438 · decode'>duck</span> <span class='w' title='rank 482 · decode'>kept</span> <span class='w' title='rank 529 · decode'>pick</span> <span class='w' title='rank 539 · decode'>stick</span> <span class='w' title='rank 542 · decode'>talk</span> <span class='w' title='rank 559 · decode'>rock</span> <span class='w' title='rank 593 · decode'>stuck</span> <span class='w' title='rank 650 · decode'>luck</span> <span class='w' title='rank 745 · decode'>milk</span> <span class='w' title='rank 794 · decode'>sick</span> <span class='w' title='rank 843 · decode'>truck</span> <span class='w' title='rank 853 · decode'>trick</span> <span class='w' title='rank 880 · decode'>kid</span> <span class='w' title='rank 913 · decode'>asks</span> <span class='w' title='rank 988 · decode'>skin</span> <span class='w' title='rank 1036 · decode'>check</span> <span class='w' title='rank 1124 · decode'>snack</span> <span class='w' title='rank 1125 · decode'>socks</span> <span class='w' title='rank 1131 · decode'>rocks</span> <span class='w' title='rank 1259 · decode'>sticks</span> <span class='w' title='rank 1343 · decode'>tricks</span> <span class='w' title='rank 1363 · decode'>crack</span> <span class='w' title='rank 1390 · decode'>neck</span> <span class='w' title='rank 1427 · decode'>chicks</span> <span class='w' title='rank 1441 · decode'>chick</span> <span class='w' title='rank 1476 · decode'>kinds</span> <span class='w' title='rank 1569 · decode'>nick</span> <span class='w' title='rank 1639 · decode'>block</span> <span class='w' title='rank 1661 · decode'>click</span> <span class='w' title='rank 1672 · decode'>clock</span> <span class='w' title='rank 1682 · decode'>desk</span> <span class='w' title='rank 1710 · decode'>sock</span> <span class='w' title='rank 1829 · decode'>track</span> <span class='w' title='rank 1918 · decode'>mask</span> <span class='w' title='rank 1945 · decode'>ducks</span> <span class='w' title='rank 1952 · decode'>pack</span> <span class='w' title='rank 2017 · decode'>tracks</span> <span class='w' title='rank 2072 · decode'>sack</span> <span class='w' title='rank 2097 · decode'>k</span> <span class='w' title='rank 2149 · decode'>snacks</span> <span class='w' title='rank 2288 · decode'>kick</span> <span class='w' title='rank 2304 · decode'>yuck</span> <span class='w' title='rank 2310 · decode'>buck</span> <span class='w' title='rank 2425 · decode'>blocks</span> <span class='w' title='rank 2646 · decode'>skip</span> <span class='more'>+7 more</span></td>
+  <td class="cum">362</td>
+</tr>
+<tr>
+  <td class="n">25</td>
+  <td class="t">qu<div class="sub"></div></td>
+  <td class="code"><span class='g'>qu <i>/kw/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">3</span><span class='w' title='rank 675 · decode'>quick</span> <span class='w' title='rank 1226 · decode'>quack</span> <span class='w' title='rank 2331 · decode'>quit</span></td>
+  <td class="cum">365</td>
+</tr>
+<tr>
+  <td class="n">26</td>
+  <td class="t">f<div class="sub"></div></td>
+  <td class="code"><span class='g'>f <i>/f/</i></span> </td>
+  <td class="heart">from, said</td>
+  <td class="new"><span class="count">41</span><span class='w' title='rank 8 · decode'>of</span> <span class='w h' title='rank 18 · heart'>said</span> <span class='w h' title='rank 53 · heart'>from</span> <span class='w' title='rank 61 · decode'>if</span> <span class='w' title='rank 144 · decode'>find</span> <span class='w' title='rank 158 · decode'>fun</span> <span class='w' title='rank 236 · decode'>left</span> <span class='w' title='rank 275 · decode'>felt</span> <span class='w' title='rank 316 · decode'>fast</span> <span class='w' title='rank 349 · decode'>fish</span> <span class='w' title='rank 498 · decode'>frog</span> <span class='w' title='rank 602 · decode'>myself</span> <span class='w' title='rank 694 · decode'>fact</span> <span class='w' title='rank 697 · decode'>soft</span> <span class='w' title='rank 706 · decode'>gift</span> <span class='w' title='rank 960 · decode'>half</span> <span class='w' title='rank 1006 · decode'>fit</span> <span class='w' title='rank 1156 · decode'>gifts</span> <span class='w' title='rank 1222 · decode'>fresh</span> <span class='w' title='rank 1264 · decode'>fat</span> <span class='w' title='rank 1303 · decode'>fred</span> <span class='w' title='rank 1412 · decode'>elf</span> <span class='w' title='rank 1505 · decode'>frogs</span> <span class='w' title='rank 1584 · decode'>flag</span> <span class='w' title='rank 1685 · decode'>finds</span> <span class='w' title='rank 1697 · decode'>flash</span> <span class='w' title='rank 1727 · decode'>lift</span> <span class='w' title='rank 1759 · decode'>f</span> <span class='w' title='rank 1810 · decode'>flip</span> <span class='w' title='rank 1913 · decode'>flop</span> <span class='w' title='rank 1946 · decode'>flat</span> <span class='w' title='rank 2027 · decode'>folks</span> <span class='w' title='rank 2057 · decode'>fog</span> <span class='w' title='rank 2091 · decode'>fan</span> <span class='w' title='rank 2092 · decode'>flap</span> <span class='w' title='rank 2218 · decode'>shelf</span> <span class='w' title='rank 2283 · decode'>french</span> <span class='w' title='rank 2433 · decode'>fed</span> <span class='w' title='rank 2624 · decode'>flags</span> <span class='w' title='rank 2675 · decode'>fetch</span> <span class='w' title='rank 2963 · decode'>fib</span></td>
+  <td class="cum">406</td>
+</tr>
+<tr>
+  <td class="n">27</td>
+  <td class="t">ff, ll, ss, zz<div class="sub"></div></td>
+  <td class="code"><span class='g'>ff <i>/f/</i></span> <span class='g'>ll <i>/l/</i></span> <span class='g'>ss <i>/s/</i></span> <span class='g'>zz <i>/z/</i></span> </td>
+  <td class="heart">full</td>
+  <td class="new"><span class="count">59</span><span class='w' title='rank 23 · decode'>all</span> <span class='w' title='rank 105 · decode'>off</span> <span class='w' title='rank 159 · decode'>still</span> <span class='w' title='rank 184 · decode'>tell</span> <span class='w' title='rank 212 · decode'>miss</span> <span class='w' title='rank 219 · decode'>small</span> <span class='w h' title='rank 329 · heart'>full</span> <span class='w' title='rank 425 · decode'>fell</span> <span class='w' title='rank 437 · decode'>call</span> <span class='w' title='rank 448 · decode'>fall</span> <span class='w' title='rank 479 · decode'>tall</span> <span class='w' title='rank 491 · decode'>class</span> <span class='w' title='rank 504 · decode'>ball</span> <span class='w' title='rank 641 · decode'>smell</span> <span class='w' title='rank 674 · decode'>grass</span> <span class='w' title='rank 723 · decode'>hill</span> <span class='w' title='rank 762 · decode'>till</span> <span class='w' title='rank 785 · decode'>kiss</span> <span class='w' title='rank 838 · decode'>roll</span> <span class='w' title='rank 847 · decode'>bell</span> <span class='w' title='rank 862 · decode'>stuff</span> <span class='w' title='rank 864 · decode'>mess</span> <span class='w' title='rank 896 · decode'>fill</span> <span class='w' title='rank 903 · decode'>buzz</span> <span class='w' title='rank 945 · decode'>fluff</span> <span class='w' title='rank 1027 · decode'>tells</span> <span class='w' title='rank 1068 · decode'>shall</span> <span class='w' title='rank 1081 · decode'>pull</span> <span class='w' title='rank 1127 · decode'>calls</span> <span class='w' title='rank 1191 · decode'>pass</span> <span class='w' title='rank 1192 · decode'>shell</span> <span class='w' title='rank 1200 · decode'>hall</span> <span class='w' title='rank 1244 · decode'>less</span> <span class='w' title='rank 1269 · decode'>troll</span> <span class='w' title='rank 1290 · decode'>falls</span> <span class='w' title='rank 1394 · decode'>cross</span> <span class='w' title='rank 1472 · decode'>dress</span> <span class='w' title='rank 1506 · decode'>glass</span> <span class='w' title='rank 1559 · decode'>smells</span> <span class='w' title='rank 1571 · decode'>rolls</span> <span class='w' title='rank 1752 · decode'>yell</span> <span class='w' title='rank 1929 · decode'>sniff</span> <span class='w' title='rank 2085 · decode'>boss</span> <span class='w' title='rank 2184 · decode'>trolls</span> <span class='w' title='rank 2188 · decode'>balls</span> <span class='w' title='rank 2220 · decode'>bill</span> <span class='w' title='rank 2249 · decode'>fills</span> <span class='w' title='rank 2285 · decode'>hills</span> <span class='w' title='rank 2349 · decode'>bells</span> <span class='w' title='rank 2378 · decode'>puff</span> <span class='more'>+9 more</span></td>
+  <td class="cum">465</td>
+</tr>
+<tr>
+  <td class="n">28</td>
+  <td class="t">th — both sounds<div class="sub"></div></td>
+  <td class="code"><span class='g'>th <i>/th/ /t͟h/</i></span> </td>
+  <td class="heart">they, there</td>
+  <td class="new"><span class="count">16</span><span class='w' title='rank 13 · decode'>that</span> <span class='w h' title='rank 22 · heart'>they</span> <span class='w' title='rank 33 · decode'>this</span> <span class='w' title='rank 44 · decode'>then</span> <span class='w h' title='rank 47 · heart'>there</span> <span class='w' title='rank 59 · decode'>them</span> <span class='w' title='rank 185 · decode'>than</span> <span class='w' title='rank 908 · decode'>path</span> <span class='w' title='rank 1002 · decode'>bath</span> <span class='w' title='rank 1219 · decode'>thump</span> <span class='w' title='rank 1356 · decode'>truth</span> <span class='w' title='rank 1433 · decode'>months</span> <span class='w' title='rank 1875 · decode'>thin</span> <span class='w' title='rank 2016 · decode'>thick</span> <span class='w' title='rank 2103 · decode'>math</span> <span class='w' title='rank 2444 · decode'>month</span></td>
+  <td class="cum">481</td>
+</tr>
+<tr>
+  <td class="n">29</td>
+  <td class="t">w, wh<div class="sub"></div></td>
+  <td class="code"><span class='g'>w <i>/w/</i></span> <span class='g'>wh <i>/w/</i></span> </td>
+  <td class="heart">was, what, where, want, who</td>
+  <td class="new"><span class="count">37</span><span class='w h' title='rank 10 · heart'>was</span> <span class='w' title='rank 20 · decode'>with</span> <span class='w' title='rank 35 · decode'>when</span> <span class='w h' title='rank 36 · heart'>what</span> <span class='w' title='rank 58 · decode'>will</span> <span class='w h' title='rank 79 · heart'>who</span> <span class='w h' title='rank 106 · heart'>want</span> <span class='w h' title='rank 109 · heart'>where</span> <span class='w' title='rank 111 · decode'>went</span> <span class='w' title='rank 123 · decode'>well</span> <span class='w' title='rank 281 · decode'>which</span> <span class='w' title='rank 363 · decode'>walk</span> <span class='w' title='rank 375 · decode'>wish</span> <span class='w' title='rank 459 · decode'>wind</span> <span class='w' title='rank 549 · decode'>wants</span> <span class='w' title='rank 635 · decode'>wolf</span> <span class='w' title='rank 654 · decode'>witch</span> <span class='w' title='rank 692 · decode'>win</span> <span class='w' title='rank 741 · decode'>won</span> <span class='w' title='rank 789 · decode'>wall</span> <span class='w' title='rank 811 · decode'>wet</span> <span class='w' title='rank 877 · decode'>wild</span> <span class='w' title='rank 922 · decode'>dw</span> <span class='w' title='rank 995 · decode'>swim</span> <span class='w' title='rank 1020 · decode'>ways</span> <span class='w' title='rank 1751 · decode'>walks</span> <span class='w' title='rank 1773 · decode'>swam</span> <span class='w' title='rank 1830 · decode'>twins</span> <span class='w' title='rank 1989 · decode'>walls</span> <span class='w' title='rank 2301 · decode'>web</span> <span class='w' title='rank 2342 · decode'>w</span> <span class='w' title='rank 2393 · decode'>wins</span> <span class='w' title='rank 2557 · decode'>west</span> <span class='w' title='rank 2877 · decode'>swept</span> <span class='w' title='rank 2882 · decode'>wand</span> <span class='w' title='rank 2941 · decode'>twist</span> <span class='w' title='rank 2999 · decode'>twas</span></td>
+  <td class="cum">518</td>
+</tr>
+<tr>
+  <td class="n">30</td>
+  <td class="t">ng and nk<div class="sub">glued chunks</div></td>
+  <td class="code"><span class='g'>ung <i>/ŭng/</i></span> <span class='g'>ong <i>/ŏng/</i></span> <span class='g'>unk <i>/ŭnk/</i></span> <span class='g'>onk <i>/ŏnk/</i></span> <span class='g'>ng <i>/ng/</i></span> <span class='g'>nk <i>/nk/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">8</span><span class='w' title='rank 150 · decode'>long</span> <span class='w' title='rank 463 · decode'>strong</span> <span class='w' title='rank 698 · decode'>song</span> <span class='w' title='rank 1060 · decode'>hung</span> <span class='w' title='rank 1573 · decode'>songs</span> <span class='w' title='rank 1988 · decode'>skunk</span> <span class='w' title='rank 2045 · decode'>trunk</span> <span class='w' title='rank 2152 · decode'>swung</span></td>
+  <td class="cum">526</td>
+</tr>
+<tr>
+  <td class="n">31</td>
+  <td class="t">-ing<div class="sub">+ Meet Syllables</div></td>
+  <td class="code"><span class='g'>ing <i>/ing/</i></span> <span class='gate'>suffix-ing</span></td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">48</span><span class='w' title='rank 131 · decode'>things</span> <span class='w' title='rank 217 · decode'>thing</span> <span class='w' title='rank 512 · decode'>king</span> <span class='w' title='rank 519 · decode'>bring</span> <span class='w' title='rank 538 · decode'>sing</span> <span class='w' title='rank 571 · decode'>spring</span> <span class='w' title='rank 597 · decode'>trying</span> <span class='w' title='rank 632 · decode'>wings</span> <span class='w' title='rank 648 · decode'>flying</span> <span class='w' title='rank 713 · decode+ing'>singing</span> <span class='w' title='rank 855 · decode+ing'>watching</span> <span class='w' title='rank 863 · decode+ing'>talking</span> <span class='w' title='rank 926 · decode+ing'>holding</span> <span class='w' title='rank 953 · decode+ing'>walking</span> <span class='w' title='rank 1030 · decode+ing'>standing</span> <span class='w' title='rank 1031 · decode+ing'>helping</span> <span class='w' title='rank 1074 · decode+ing'>hiding</span> <span class='w' title='rank 1090 · decode+ing'>riding</span> <span class='w' title='rank 1175 · decode+ing'>using</span> <span class='w' title='rank 1187 · decode+ing'>falling</span> <span class='w' title='rank 1205 · decode+ing'>telling</span> <span class='w' title='rank 1326 · decode+ing'>missing</span> <span class='w' title='rank 1340 · decode+ing'>shining</span> <span class='w' title='rank 1360 · decode'>brings</span> <span class='w' title='rank 1371 · decode'>string</span> <span class='w' title='rank 1378 · decode+ing'>calling</span> <span class='w' title='rank 1486 · decode'>crying</span> <span class='w' title='rank 1498 · decode'>swing</span> <span class='w' title='rank 1515 · decode+ing'>picking</span> <span class='w' title='rank 1622 · decode'>ring</span> <span class='w' title='rank 1897 · decode'>rings</span> <span class='w' title='rank 1977 · decode+ing'>hoping</span> <span class='w' title='rank 2036 · decode+ing'>rolling</span> <span class='w' title='rank 2084 · decode+ing'>yelling</span> <span class='w' title='rank 2136 · decode'>lying</span> <span class='w' title='rank 2156 · decode'>wing</span> <span class='w' title='rank 2209 · decode'>sings</span> <span class='w' title='rank 2251 · decode+ing'>fishing</span> <span class='w' title='rank 2307 · decode+ing'>asking</span> <span class='w' title='rank 2458 · decode'>swings</span> <span class='w' title='rank 2481 · decode+ing'>finding</span> <span class='w' title='rank 2590 · decode+ing'>passing</span> <span class='w' title='rank 2606 · decode+ing'>swinging</span> <span class='w' title='rank 2742 · decode+ing'>filling</span> <span class='w' title='rank 2883 · decode+ing'>wishing</span> <span class='w' title='rank 2897 · decode+ing'>catching</span> <span class='w' title='rank 2906 · decode+ing'>hunting</span> <span class='w' title='rank 2950 · decode+ing'>buzzing</span></td>
+  <td class="cum">574</td>
+</tr>
+<tr>
+  <td class="n">32</td>
+  <td class="t">Module 3 Review<div class="sub"></div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">574</td>
+</tr>
+<tr>
+  <td class="n">33</td>
+  <td class="t">Meet the Vowels<div class="sub">+ the long-vowel discovery</div></td>
+  <td class="code"><span class='g'>e <i>/ē/ open</i></span> <span class='g'>o <i>/ō/ open</i></span> <span class='g'>i <i>/ī/ open</i></span> <span class='gate'>open-final</span></td>
+  <td class="heart">oh, to, do</td>
+  <td class="new"><span class="count">26</span><span class='w h' title='rank 4 · heart'>to</span> <span class='w' title='rank 7 · decode'>he</span> <span class='w' title='rank 16 · decode'>she</span> <span class='w' title='rank 25 · decode'>so</span> <span class='w' title='rank 26 · decode'>be</span> <span class='w' title='rank 27 · decode'>we</span> <span class='w' title='rank 30 · decode'>me</span> <span class='w h' title='rank 43 · heart'>do</span> <span class='w' title='rank 48 · decode'>no</span> <span class='w' title='rank 69 · decode'>go</span> <span class='w' title='rank 115 · decode'>two</span> <span class='w' title='rank 143 · decode+ing'>going</span> <span class='w' title='rank 244 · decode+ing'>being</span> <span class='w h' title='rank 441 · heart+ing'>doing</span> <span class='w' title='rank 744 · decode'>hi</span> <span class='w' title='rank 1026 · decode'>ho</span> <span class='w' title='rank 1247 · decode'>o</span> <span class='w' title='rank 1470 · decode'>bye</span> <span class='w' title='rank 1522 · decode'>de</span> <span class='w' title='rank 1683 · decode'>e</span> <span class='w' title='rank 2065 · decode'>myra</span> <span class='w' title='rank 2259 · decode'>mo</span> <span class='w' title='rank 2365 · decode'>ha</span> <span class='w' title='rank 2408 · decode'>ma</span> <span class='w' title='rank 2879 · decode'>u</span> <span class='w' title='rank 2949 · decode'>bryla</span></td>
+  <td class="cum">600</td>
+</tr>
+<tr>
+  <td class="n">34</td>
+  <td class="t">Magic E → i_e<div class="sub">the concept lesson</div></td>
+  <td class="code"><span class='g'>i_e <i>/ī/</i></span> <span class='gate'>magic-e</span></td>
+  <td class="heart">give</td>
+  <td class="new"><span class="count">89</span><span class='w' title='rank 37 · decode'>like</span> <span class='w' title='rank 60 · decode'>time</span> <span class='w' title='rank 182 · decode'>while</span> <span class='w h' title='rank 187 · heart'>give</span> <span class='w' title='rank 229 · decode'>place</span> <span class='w' title='rank 235 · decode'>these</span> <span class='w' title='rank 237 · decode'>white</span> <span class='w' title='rank 242 · decode'>those</span> <span class='w' title='rank 259 · decode'>once</span> <span class='w' title='rank 273 · decode'>nice</span> <span class='w' title='rank 292 · decode'>face</span> <span class='w' title='rank 293 · decode'>life</span> <span class='w' title='rank 348 · decode'>use</span> <span class='w' title='rank 373 · decode'>nose</span> <span class='w' title='rank 382 · decode'>quite</span> <span class='w' title='rank 388 · decode'>smile</span> <span class='w' title='rank 394 · decode'>side</span> <span class='w' title='rank 449 · decode'>ice</span> <span class='w' title='rank 510 · decode'>close</span> <span class='w' title='rank 533 · decode'>else</span> <span class='w' title='rank 544 · decode'>dance</span> <span class='w' title='rank 576 · decode'>hide</span> <span class='w' title='rank 594 · decode'>wide</span> <span class='w' title='rank 595 · decode'>ride</span> <span class='w' title='rank 617 · decode'>fine</span> <span class='w' title='rank 630 · decode'>mine</span> <span class='w' title='rank 640 · decode+s'>likes</span> <span class='w' title='rank 642 · decode+s'>times</span> <span class='w' title='rank 651 · decode'>race</span> <span class='w' title='rank 652 · decode'>space</span> <span class='w' title='rank 664 · decode'>fire</span> <span class='w' title='rank 717 · decode'>page</span> <span class='w h' title='rank 782 · heart+s'>gives</span> <span class='w' title='rank 786 · decode'>line</span> <span class='w' title='rank 807 · decode'>huge</span> <span class='w' title='rank 833 · decode'>since</span> <span class='w' title='rank 837 · decode+s'>places</span> <span class='w' title='rank 868 · decode'>rose</span> <span class='w' title='rank 914 · decode'>chance</span> <span class='w' title='rank 973 · decode'>nine</span> <span class='w' title='rank 1004 · decode'>chase</span> <span class='w' title='rank 1050 · decode'>wife</span> <span class='w' title='rank 1075 · decode'>mice</span> <span class='w' title='rank 1098 · decode'>size</span> <span class='w' title='rank 1113 · decode'>bite</span> <span class='w' title='rank 1114 · decode'>bridge</span> <span class='w' title='rank 1138 · decode'>pile</span> <span class='w' title='rank 1152 · decode'>lose</span> <span class='w' title='rank 1224 · decode'>edge</span> <span class='w' title='rank 1229 · decode'>wise</span> <span class='more'>+39 more</span></td>
+  <td class="cum">689</td>
+</tr>
+<tr>
+  <td class="n">35</td>
+  <td class="t">j + dge<div class="sub">tch's sibling</div></td>
+  <td class="code"><span class='g'>j <i>/j/</i></span> <span class='g'>dge <i>/j/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">12</span><span class='w' title='rank 50 · decode'>just</span> <span class='w' title='rank 389 · decode'>job</span> <span class='w' title='rank 409 · decode'>jack</span> <span class='w' title='rank 614 · decode'>jump</span> <span class='w' title='rank 1203 · decode'>jim</span> <span class='w' title='rank 1253 · decode+ing'>jumping</span> <span class='w' title='rank 1917 · decode'>jumps</span> <span class='w' title='rank 2225 · decode'>j</span> <span class='w' title='rank 2325 · decode'>jr</span> <span class='w' title='rank 2406 · decode'>josh</span> <span class='w' title='rank 2532 · decode'>jam</span> <span class='w' title='rank 2751 · decode'>john</span></td>
+  <td class="cum">701</td>
+</tr>
+<tr>
+  <td class="n">36</td>
+  <td class="t">a_e<div class="sub"></div></td>
+  <td class="code"><span class='g'>a_e <i>/ā/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">51</span><span class='w' title='rank 88 · decode'>make</span> <span class='w' title='rank 96 · decode'>made</span> <span class='w' title='rank 136 · decode'>came</span> <span class='w' title='rank 137 · decode'>take</span> <span class='w' title='rank 247 · decode'>name</span> <span class='w' title='rank 315 · decode+s'>makes</span> <span class='w' title='rank 356 · decode'>same</span> <span class='w' title='rank 362 · decode'>care</span> <span class='w' title='rank 464 · decode'>game</span> <span class='w' title='rank 474 · decode'>share</span> <span class='w' title='rank 503 · decode'>ate</span> <span class='w' title='rank 541 · decode'>safe</span> <span class='w' title='rank 568 · decode'>cake</span> <span class='w' title='rank 621 · decode+s'>takes</span> <span class='w' title='rank 649 · decode'>late</span> <span class='w' title='rank 756 · decode+s'>games</span> <span class='w' title='rank 777 · decode'>wake</span> <span class='w' title='rank 1228 · decode'>square</span> <span class='w' title='rank 1285 · decode'>plate</span> <span class='w' title='rank 1328 · decode'>snake</span> <span class='w' title='rank 1357 · decode'>whale</span> <span class='w' title='rank 1422 · decode+s'>states</span> <span class='w' title='rank 1465 · decode'>scare</span> <span class='w' title='rank 1536 · decode'>shake</span> <span class='w' title='rank 1591 · decode+s'>names</span> <span class='w' title='rank 1646 · decode'>hate</span> <span class='w' title='rank 1707 · decode'>plane</span> <span class='w' title='rank 1717 · decode'>bake</span> <span class='w' title='rank 1774 · decode'>tale</span> <span class='w' title='rank 1790 · decode+s'>shapes</span> <span class='w' title='rank 1861 · decode'>dare</span> <span class='w' title='rank 1889 · decode'>gabe</span> <span class='w' title='rank 1980 · decode'>lake</span> <span class='w' title='rank 2032 · decode'>jake</span> <span class='w' title='rank 2058 · decode'>gate</span> <span class='w' title='rank 2150 · decode'>stare</span> <span class='w' title='rank 2226 · decode'>jane</span> <span class='w' title='rank 2241 · decode'>state</span> <span class='w' title='rank 2261 · decode'>shade</span> <span class='w' title='rank 2381 · decode'>shape</span> <span class='w' title='rank 2426 · decode'>cape</span> <span class='w' title='rank 2437 · decode'>grade</span> <span class='w' title='rank 2471 · decode+s'>cakes</span> <span class='w' title='rank 2510 · decode'>bare</span> <span class='w' title='rank 2709 · decode+s'>snakes</span> <span class='w' title='rank 2756 · decode'>pale</span> <span class='w' title='rank 2834 · decode+s'>whales</span> <span class='w' title='rank 2859 · decode'>kate</span> <span class='w' title='rank 2881 · decode+s'>wakes</span> <span class='w' title='rank 2925 · decode'>shame</span> <span class='more'>+1 more</span></td>
+  <td class="cum">752</td>
+</tr>
+<tr>
+  <td class="n">37</td>
+  <td class="t">v<div class="sub"></div></td>
+  <td class="code"><span class='g'>v <i>/v/</i></span> </td>
+  <td class="heart">have, of, love</td>
+  <td class="new"><span class="count">23</span><span class='w h' title='rank 39 · heart'>have</span> <span class='w h' title='rank 86 · heart'>love</span> <span class='w' title='rank 216 · decode'>gave</span> <span class='w' title='rank 403 · decode'>five</span> <span class='w' title='rank 422 · decode'>live</span> <span class='w h' title='rank 477 · heart+s'>loves</span> <span class='w' title='rank 554 · decode'>brave</span> <span class='w' title='rank 656 · decode'>move</span> <span class='w' title='rank 779 · decode'>save</span> <span class='w' title='rank 871 · decode'>eve</span> <span class='w' title='rank 873 · decode+s'>lives</span> <span class='w' title='rank 1220 · decode'>tv</span> <span class='w' title='rank 1277 · decode'>wave</span> <span class='w' title='rank 1373 · decode'>cave</span> <span class='w' title='rank 1425 · decode+s'>waves</span> <span class='w' title='rank 1524 · decode'>drove</span> <span class='w' title='rank 1655 · decode'>v</span> <span class='w' title='rank 1809 · decode'>drive</span> <span class='w' title='rank 2229 · decode+s'>moves</span> <span class='w' title='rank 2357 · decode'>dive</span> <span class='w' title='rank 2518 · decode'>dove</span> <span class='w' title='rank 2576 · decode+s'>gloves</span> <span class='w' title='rank 2723 · decode+s'>wolves</span></td>
+  <td class="cum">775</td>
+</tr>
+<tr>
+  <td class="n">38</td>
+  <td class="t">o_e<div class="sub"></div></td>
+  <td class="code"><span class='g'>o_e <i>/ō/</i></span> </td>
+  <td class="heart">come, some, one</td>
+  <td class="new"><span class="count">40</span><span class='w h' title='rank 34 · heart'>one</span> <span class='w h' title='rank 78 · heart'>some</span> <span class='w' title='rank 87 · decode'>more</span> <span class='w h' title='rank 98 · heart'>come</span> <span class='w' title='rank 100 · decode'>home</span> <span class='w' title='rank 326 · decode'>done</span> <span class='w' title='rank 361 · decode'>whole</span> <span class='w' title='rank 414 · decode'>gone</span> <span class='w h' title='rank 419 · heart+s'>comes</span> <span class='w' title='rank 452 · decode'>hope</span> <span class='w' title='rank 718 · decode'>woke</span> <span class='w' title='rank 739 · decode'>hole</span> <span class='w' title='rank 752 · decode'>store</span> <span class='w h' title='rank 793 · heart+s'>ones</span> <span class='w' title='rank 941 · decode'>note</span> <span class='w' title='rank 1196 · decode+s'>bones</span> <span class='w' title='rank 1214 · decode'>stone</span> <span class='w' title='rank 1361 · decode'>broke</span> <span class='w' title='rank 1383 · decode'>pole</span> <span class='w' title='rank 1401 · decode'>rope</span> <span class='w' title='rank 1446 · decode'>none</span> <span class='w' title='rank 1539 · decode'>spoke</span> <span class='w' title='rank 1817 · decode'>mole</span> <span class='w' title='rank 1834 · decode'>bone</span> <span class='w' title='rank 1928 · decode'>smoke</span> <span class='w' title='rank 1935 · decode'>wore</span> <span class='w' title='rank 2111 · decode'>rode</span> <span class='w' title='rank 2134 · decode'>joke</span> <span class='w' title='rank 2323 · decode+s'>holes</span> <span class='w' title='rank 2341 · decode'>vote</span> <span class='w' title='rank 2550 · decode'>shone</span> <span class='w' title='rank 2605 · decode'>stole</span> <span class='w' title='rank 2630 · decode+s'>jokes</span> <span class='w' title='rank 2637 · decode'>nope</span> <span class='w' title='rank 2666 · decode+s'>chores</span> <span class='w' title='rank 2691 · decode+s'>notes</span> <span class='w' title='rank 2706 · decode'>shore</span> <span class='w' title='rank 2711 · decode'>sore</span> <span class='w' title='rank 2800 · decode+s'>homes</span> <span class='w' title='rank 2801 · decode+s'>hopes</span></td>
+  <td class="cum">815</td>
+</tr>
+<tr>
+  <td class="n">39</td>
+  <td class="t">x<div class="sub">🎉 all 26 letters!</div></td>
+  <td class="code"><span class='g'>x <i>/ks/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">10</span><span class='w' title='rank 120 · decode'>next</span> <span class='w' title='rank 385 · decode'>box</span> <span class='w' title='rank 501 · decode'>max</span> <span class='w' title='rank 527 · decode'>six</span> <span class='w' title='rank 585 · decode'>fox</span> <span class='w' title='rank 1198 · decode'>fix</span> <span class='w' title='rank 1627 · decode'>x</span> <span class='w' title='rank 2143 · decode'>rex</span> <span class='w' title='rank 2588 · decode'>mix</span> <span class='w' title='rank 2890 · decode'>axe</span></td>
+  <td class="cum">825</td>
+</tr>
+<tr>
+  <td class="n">40</td>
+  <td class="t">u_e<div class="sub"></div></td>
+  <td class="code"><span class='g'>u_e <i>/ū/ /o͞o/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">7</span><span class='w' title='rank 198 · decode'>sure</span> <span class='w' title='rank 805 · decode'>cute</span> <span class='w' title='rank 1067 · decode'>rule</span> <span class='w' title='rank 1140 · decode+s'>rules</span> <span class='w' title='rank 1845 · decode'>rude</span> <span class='w' title='rank 2720 · decode'>tune</span> <span class='w' title='rank 2787 · decode'>duke</span></td>
+  <td class="cum">832</td>
+</tr>
+<tr>
+  <td class="n">41</td>
+  <td class="t">e_e<div class="sub">Magic E complete</div></td>
+  <td class="code"><span class='g'>e_e <i>/ē/</i></span> </td>
+  <td class="heart">here</td>
+  <td class="new"><span class="count">6</span><span class='w' title='rank 54 · decode'>were</span> <span class='w h' title='rank 93 · heart'>here</span> <span class='w' title='rank 169 · decode+s'>eyes</span> <span class='w' title='rank 391 · decode'>pete</span> <span class='w' title='rank 765 · decode'>eye</span> <span class='w' title='rank 2989 · decode'>scene</span></td>
+  <td class="cum">838</td>
+</tr>
+<tr>
+  <td class="n">42</td>
+  <td class="t">-old and -ost<div class="sub">small long-o families</div></td>
+  <td class="code"><span class='g'>old <i>/ōld/</i></span> <span class='g'>ost <i>/ōst/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">838</td>
+</tr>
+<tr>
+  <td class="n">43</td>
+  <td class="t">-ind and -ild<div class="sub">small long-i families</div></td>
+  <td class="code"><span class='g'>ind <i>/īnd/</i></span> <span class='g'>ild <i>/īld/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">838</td>
+</tr>
+<tr>
+  <td class="n">44</td>
+  <td class="t">Module 4 Review<div class="sub"></div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">838</td>
+</tr>
+<tr>
+  <td class="n">45</td>
+  <td class="t">Lowercase letters<div class="sub">one consolidation lesson</div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">838</td>
+</tr>
+<tr>
+  <td class="n">46</td>
+  <td class="t">ink and ing<div class="sub">glued chunks</div></td>
+  <td class="code"><span class='g'>ink <i>/ink/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">9</span><span class='w' title='rank 107 · decode'>think</span> <span class='w' title='rank 508 · decode'>pink</span> <span class='w' title='rank 763 · decode+ing'>thinking</span> <span class='w' title='rank 1087 · decode'>drink</span> <span class='w' title='rank 1206 · decode'>thinks</span> <span class='w' title='rank 2303 · decode'>wink</span> <span class='w' title='rank 2455 · decode'>sink</span> <span class='w' title='rank 2622 · decode+ing'>drinking</span> <span class='w' title='rank 2681 · decode'>links</span></td>
+  <td class="cum">847</td>
+</tr>
+<tr>
+  <td class="n">47</td>
+  <td class="t">ank and ang<div class="sub">glued chunks</div></td>
+  <td class="code"><span class='g'>ank <i>/ank/</i></span> <span class='g'>ang <i>/ang/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">13</span><span class='w' title='rank 270 · decode'>thank</span> <span class='w' title='rank 565 · decode'>thanks</span> <span class='w' title='rank 661 · decode'>change</span> <span class='w' title='rank 699 · decode'>strange</span> <span class='w' title='rank 869 · decode'>sang</span> <span class='w' title='rank 1123 · decode'>hang</span> <span class='w' title='rank 1457 · decode+ing'>hanging</span> <span class='w' title='rank 1687 · decode'>frank</span> <span class='w' title='rank 1957 · decode'>rang</span> <span class='w' title='rank 2049 · decode'>bang</span> <span class='w' title='rank 2254 · decode'>hank</span> <span class='w' title='rank 2335 · decode'>sprang</span> <span class='w' title='rank 2669 · decode'>clang</span></td>
+  <td class="cum">860</td>
+</tr>
+<tr>
+  <td class="n">48</td>
+  <td class="t">Soft c<div class="sub">c + e</div></td>
+  <td class="code"> <span class='gate'>soft-c</span></td>
+  <td class="heart">once</td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">860</td>
+</tr>
+<tr>
+  <td class="n">49</td>
+  <td class="t">Soft g<div class="sub">g + e</div></td>
+  <td class="code"> <span class='gate'>soft-g</span></td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">860</td>
+</tr>
+<tr>
+  <td class="n">50</td>
+  <td class="t">Reading Two-Syllable Words<div class="sub">compounds → prefixes → split</div></td>
+  <td class="code"> <span class='gate'>two-syllable</span></td>
+  <td class="heart">people</td>
+  <td class="new"><span class="count">386</span><span class='w' title='rank 75 · decode'>into</span> <span class='w' title='rank 97 · decode'>even</span> <span class='w h' title='rank 116 · heart'>people</span> <span class='w' title='rank 138 · compound'>something</span> <span class='w' title='rank 140 · decode'>before</span> <span class='w' title='rank 147 · decode'>always</span> <span class='w' title='rank 151 · decode'>christmas</span> <span class='w' title='rank 180 · compound'>called</span> <span class='w' title='rank 183 · compound'>soon</span> <span class='w' title='rank 194 · decode'>inside</span> <span class='w' title='rank 205 · compound'>wanted</span> <span class='w' title='rank 221 · decode'>children</span> <span class='w' title='rank 223 · decode'>eggs</span> <span class='w' title='rank 230 · decode'>until</span> <span class='w' title='rank 257 · decode'>mama</span> <span class='w' title='rank 261 · decode'>began</span> <span class='w' title='rank 268 · compound'>sometimes</span> <span class='w' title='rank 284 · decode'>rabbit</span> <span class='w' title='rank 288 · decode'>santa</span> <span class='w' title='rank 300 · compound'>someone</span> <span class='w' title='rank 304 · decode'>also</span> <span class='w' title='rank 307 · decode'>along</span> <span class='w' title='rank 321 · compound'>nothing</span> <span class='w' title='rank 339 · decode'>grandma</span> <span class='w' title='rank 357 · decode'>across</span> <span class='w' title='rank 368 · compound'>getting</span> <span class='w' title='rank 370 · decode'>egg</span> <span class='w' title='rank 374 · decode'>behind</span> <span class='w' title='rank 376 · decode'>himself</span> <span class='w' title='rank 379 · decode'>open</span> <span class='w' title='rank 400 · decode'>hello</span> <span class='w' title='rank 421 · decode'>alone</span> <span class='w' title='rank 455 · compound'>mean</span> <span class='w' title='rank 462 · decode'>papa</span> <span class='w' title='rank 467 · compound'>stopped</span> <span class='w' title='rank 468 · decode'>almost</span> <span class='w' title='rank 484 · decode'>llama</span> <span class='w' title='rank 485 · compound'>pulled</span> <span class='w' title='rank 497 · decode'>became</span> <span class='w' title='rank 511 · decode'>grandpa</span> <span class='w' title='rank 557 · decode'>music</span> <span class='w' title='rank 563 · decode'>magic</span> <span class='w' title='rank 603 · compound'>picked</span> <span class='w' title='rank 606 · decode'>pumpkin</span> <span class='w' title='rank 612 · decode'>listen</span> <span class='w' title='rank 622 · decode'>woman</span> <span class='w' title='rank 647 · decode'>anyone</span> <span class='w' title='rank 657 · decode'>dragon</span> <span class='w' title='rank 663 · decode'>onto</span> <span class='w' title='rank 669 · decode'>seven</span> <span class='more'>+336 more</span></td>
+  <td class="cum">1246</td>
+</tr>
+<tr>
+  <td class="n">51</td>
+  <td class="t">-es endings<div class="sub"></div></td>
+  <td class="code"> <span class='gate'>suffix-es</span></td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">19</span><span class='w h' title='rank 250 · heart+es'>does</span> <span class='w' title='rank 500 · decode+es'>goes</span> <span class='w' title='rank 608 · decode+es'>shoes</span> <span class='w' title='rank 780 · decode+es'>clothes</span> <span class='w h' title='rank 800 · heart+es'>toes</span> <span class='w' title='rank 980 · decode+es'>sees</span> <span class='w' title='rank 1249 · decode+es'>bees</span> <span class='w' title='rank 1377 · decode+es'>branches</span> <span class='w' title='rank 1587 · decode+es'>glasses</span> <span class='w' title='rank 1635 · decode+es'>tries</span> <span class='w' title='rank 1762 · decode+es'>kisses</span> <span class='w' title='rank 1800 · decode+es'>wishes</span> <span class='w' title='rank 1879 · decode+es'>boxes</span> <span class='w' title='rank 1941 · decode+es'>bushes</span> <span class='w' title='rank 1948 · decode+es'>james</span> <span class='w' title='rank 2157 · decode+es'>witches</span> <span class='w' title='rank 2615 · decode+es'>buses</span> <span class='w' title='rank 2654 · decode+es'>watches</span> <span class='w' title='rank 2782 · decode+es'>catches</span></td>
+  <td class="cum">1265</td>
+</tr>
+<tr>
+  <td class="n">52</td>
+  <td class="t">Consonant-le<div class="sub"></div></td>
+  <td class="code"> <span class='gate'>consonant-le</span></td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">40</span><span class='w' title='rank 42 · decode'>little</span> <span class='w' title='rank 499 · decode'>table</span> <span class='w' title='rank 670 · decode'>uncle</span> <span class='w' title='rank 790 · decode'>able</span> <span class='w' title='rank 803 · decode'>apple</span> <span class='w' title='rank 860 · decode'>middle</span> <span class='w' title='rank 912 · decode+s'>apples</span> <span class='w' title='rank 1035 · decode'>castle</span> <span class='w' title='rank 1144 · decode'>single</span> <span class='w' title='rank 1159 · decode'>bottle</span> <span class='w' title='rank 1223 · decode+s'>bubbles</span> <span class='w' title='rank 1553 · decode'>jungle</span> <span class='w' title='rank 1638 · decode'>battle</span> <span class='w' title='rank 1641 · decode'>bubble</span> <span class='w' title='rank 1676 · decode+s'>candles</span> <span class='w' title='rank 1722 · decode'>gobble</span> <span class='w' title='rank 1868 · decode'>puddle</span> <span class='w' title='rank 1890 · decode'>gentle</span> <span class='w' title='rank 1932 · decode'>twinkle</span> <span class='w' title='rank 2041 · decode'>simple</span> <span class='w' title='rank 2164 · decode'>candle</span> <span class='w' title='rank 2237 · decode+s'>puddles</span> <span class='w' title='rank 2260 · decode'>scribble</span> <span class='w' title='rank 2336 · decode+s'>sprinkles</span> <span class='w' title='rank 2343 · decode'>wiggle</span> <span class='w' title='rank 2418 · decode'>style</span> <span class='w' title='rank 2436 · decode'>giggle</span> <span class='w' title='rank 2450 · decode+s'>pickles</span> <span class='w' title='rank 2470 · decode'>buckle</span> <span class='w' title='rank 2542 · decode'>rattle</span> <span class='w' title='rank 2551 · decode'>snuggle</span> <span class='w' title='rank 2553 · decode'>stable</span> <span class='w' title='rank 2610 · decode'>whistle</span> <span class='w' title='rank 2613 · decode'>bicycle</span> <span class='w' title='rank 2715 · decode'>thistle</span> <span class='w' title='rank 2841 · decode+s'>bottles</span> <span class='w' title='rank 2871 · decode'>settle</span> <span class='w' title='rank 2936 · decode'>tickle</span> <span class='w' title='rank 2966 · decode+s'>freckles</span> <span class='w' title='rank 2988 · decode'>rubble</span></td>
+  <td class="cum">1305</td>
+</tr>
+<tr>
+  <td class="n">53</td>
+  <td class="t">-ed endings<div class="sub"></div></td>
+  <td class="code"> <span class='gate'>suffix-ed</span></td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">59</span><span class='w' title='rank 149 · decode+ed'>asked</span> <span class='w' title='rank 171 · decode+ed'>need</span> <span class='w' title='rank 272 · decode+ed'>tried</span> <span class='w' title='rank 408 · decode+ed'>walked</span> <span class='w' title='rank 442 · decode+ed'>opened</span> <span class='w' title='rank 444 · decode+ed'>jumped</span> <span class='w' title='rank 447 · decode+ed'>filled</span> <span class='w' title='rank 454 · decode+ed'>used</span> <span class='w' title='rank 505 · decode+ed'>helped</span> <span class='w' title='rank 525 · decode+ed'>yelled</span> <span class='w' title='rank 556 · decode+ed'>happened</span> <span class='w' title='rank 691 · decode+ed'>seed</span> <span class='w' title='rank 700 · decode+ed'>watched</span> <span class='w' title='rank 730 · decode+ed'>named</span> <span class='w' title='rank 890 · decode+ed'>finished</span> <span class='w' title='rank 891 · decode+ed'>passed</span> <span class='w' title='rank 900 · decode+ed'>rolled</span> <span class='w' title='rank 963 · decode+ed'>missed</span> <span class='w' title='rank 979 · decode+ed'>landed</span> <span class='w' title='rank 1100 · decode+ed'>changed</span> <span class='w' title='rank 1145 · decode+ed'>added</span> <span class='w' title='rank 1181 · decode+ed'>dressed</span> <span class='w' title='rank 1317 · decode+ed'>listened</span> <span class='w' title='rank 1318 · decode+ed'>pushed</span> <span class='w' title='rank 1319 · decode+ed'>rushed</span> <span class='w' title='rank 1405 · decode+ed'>tied</span> <span class='w' title='rank 1424 · decode+ed'>united</span> <span class='w' title='rank 1431 · decode+ed'>lifted</span> <span class='w' title='rank 1439 · decode+ed'>wished</span> <span class='w' title='rank 1488 · decode+ed'>feed</span> <span class='w' title='rank 1541 · decode+ed'>tucked</span> <span class='w' title='rank 1604 · decode+ed'>handed</span> <span class='w' title='rank 1694 · decode+ed'>stuffed</span> <span class='w' title='rank 1738 · decode+ed'>died</span> <span class='w' title='rank 1792 · decode+ed'>stretched</span> <span class='w' title='rank 1847 · decode+ed'>smelled</span> <span class='w' title='rank 1885 · decode+ed'>ended</span> <span class='w' title='rank 1908 · decode+ed'>brushed</span> <span class='w' title='rank 1965 · decode+ed'>tossed</span> <span class='w' title='rank 1976 · decode+ed'>hoped</span> <span class='w' title='rank 2070 · decode+ed'>puffed</span> <span class='w' title='rank 2077 · decode+ed'>stomped</span> <span class='w' title='rank 2099 · decode+ed'>kicked</span> <span class='w' title='rank 2115 · decode+ed'>sniffed</span> <span class='w' title='rank 2243 · decode+ed'>twisted</span> <span class='w' title='rank 2258 · decode+ed'>locked</span> <span class='w' title='rank 2262 · decode+ed'>suggested</span> <span class='w' title='rank 2291 · decode+ed'>mixed</span> <span class='w' title='rank 2312 · decode+ed'>checked</span> <span class='w' title='rank 2315 · decode+ed'>dashed</span> <span class='more'>+9 more</span></td>
+  <td class="cum">1364</td>
+</tr>
+<tr>
+  <td class="n">54</td>
+  <td class="t">Endings that change the base<div class="sub">doubling & drop-e</div></td>
+  <td class="code"> <span class='gate'>doubling</span> <span class='gate'>drop-e</span></td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">67</span><span class='w h' title='rank 330 · heart+ed'>loved</span> <span class='w' title='rank 369 · decode+ing'>making</span> <span class='w' title='rank 410 · decode+ed'>smiled</span> <span class='w h' title='rank 411 · heart+ing'>coming</span> <span class='w' title='rank 487 · decode+ed'>scared</span> <span class='w' title='rank 513 · decode+ed'>decided</span> <span class='w' title='rank 514 · decode+ed'>lived</span> <span class='w' title='rank 534 · decode+ing'>running</span> <span class='w' title='rank 582 · decode+s'>stars</span> <span class='w h' title='rank 584 · heart+ing'>having</span> <span class='w' title='rank 613 · decode+ed'>tired</span> <span class='w' title='rank 616 · decode+ed'>excited</span> <span class='w' title='rank 634 · decode+ed'>liked</span> <span class='w' title='rank 678 · decode+ing'>taking</span> <span class='w' title='rank 781 · decode+ing'>dancing</span> <span class='w' title='rank 802 · decode+ing'>amazing</span> <span class='w' title='rank 808 · decode+ed'>noticed</span> <span class='w h' title='rank 827 · heart+ing'>giving</span> <span class='w' title='rank 835 · decode+ing'>during</span> <span class='w' title='rank 911 · decode+ing'>living</span> <span class='w' title='rank 957 · decode+ed'>closed</span> <span class='w' title='rank 978 · decode+ed'>danced</span> <span class='w' title='rank 1019 · decode+ed'>moved</span> <span class='w' title='rank 1082 · decode+ed'>stared</span> <span class='w' title='rank 1160 · decode+s'>cars</span> <span class='w' title='rank 1174 · decode+ed'>raced</span> <span class='w' title='rank 1227 · decode+ed'>saved</span> <span class='w' title='rank 1298 · decode+ing'>smiling</span> <span class='w' title='rank 1312 · decode+ed'>chased</span> <span class='w' title='rank 1374 · decode+ing'>moving</span> <span class='w' title='rank 1387 · decode+ed'>supposed</span> <span class='w' title='rank 1388 · decode+ed'>waved</span> <span class='w' title='rank 1396 · decode+ed'>invited</span> <span class='w' title='rank 1436 · decode+ed'>promised</span> <span class='w' title='rank 1484 · decode+ed'>bored</span> <span class='w' title='rank 1520 · decode+ing'>boring</span> <span class='w' title='rank 1531 · decode+ed'>placed</span> <span class='w' title='rank 1566 · decode+ing'>exciting</span> <span class='w' title='rank 1592 · decode+ed'>nodded</span> <span class='w' title='rank 1660 · decode+ing'>beginning</span> <span class='w' title='rank 1723 · decode+ed'>grinned</span> <span class='w' title='rank 1836 · decode+ed'>confused</span> <span class='w' title='rank 1954 · decode+ed'>planned</span> <span class='w' title='rank 2013 · decode+ing'>staring</span> <span class='w' title='rank 2117 · decode+ing'>spinning</span> <span class='w' title='rank 2160 · decode+ed'>baked</span> <span class='w' title='rank 2169 · decode+ed'>giggled</span> <span class='w' title='rank 2224 · decode+ing'>driving</span> <span class='w' title='rank 2287 · decode+ing'>including</span> <span class='w' title='rank 2293 · decode+ed'>prepared</span> <span class='more'>+17 more</span></td>
+  <td class="cum">1431</td>
+</tr>
+<tr>
+  <td class="n">55</td>
+  <td class="t">Open chunks<div class="sub">open + closed & the Lazy Vowel</div></td>
+  <td class="code"><span class='g'>a <i>/ā/ open</i></span> <span class='g'>u <i>/ū/ open</i></span> <span class='gate'>open-internal</span> <span class='gate'>schwa</span></td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">1431</td>
+</tr>
+<tr>
+  <td class="n">56</td>
+  <td class="t">Vowel Y<div class="sub">y's two vowel sounds</div></td>
+  <td class="code"><span class='g'>y <i>/ī/ final</i></span> <span class='g'>y <i>/ē/ final</i></span> <span class='gate'>vowel-y</span></td>
+  <td class="heart">many, any, pretty</td>
+  <td class="new"><span class="count">137</span><span class='w' title='rank 19 · decode'>my</span> <span class='w' title='rank 49 · decode'>day</span> <span class='w' title='rank 72 · decode'>by</span> <span class='w' title='rank 92 · decode'>way</span> <span class='w' title='rank 129 · decode'>play</span> <span class='w' title='rank 135 · decode'>say</span> <span class='w' title='rank 145 · decode'>why</span> <span class='w' title='rank 154 · decode'>happy</span> <span class='w' title='rank 168 · decode'>only</span> <span class='w h' title='rank 190 · heart'>many</span> <span class='w' title='rank 204 · decode'>boy</span> <span class='w' title='rank 210 · decode'>baby</span> <span class='w' title='rank 214 · compound'>today</span> <span class='w' title='rank 253 · decode'>fly</span> <span class='w h' title='rank 255 · heart'>any</span> <span class='w' title='rank 262 · decode'>sky</span> <span class='w' title='rank 264 · decode'>try</span> <span class='w' title='rank 297 · decode'>stay</span> <span class='w' title='rank 308 · decode'>bunny</span> <span class='w' title='rank 338 · decode'>mommy</span> <span class='w' title='rank 343 · decode'>hey</span> <span class='w' title='rank 345 · decode'>may</span> <span class='w' title='rank 347 · decode'>daddy</span> <span class='w' title='rank 360 · decode'>fluffy</span> <span class='w' title='rank 392 · compound'>anything</span> <span class='w' title='rank 416 · decode'>tiny</span> <span class='w' title='rank 451 · decode+ing'>playing</span> <span class='w' title='rank 453 · decode'>lady</span> <span class='w h' title='rank 490 · heart'>pretty</span> <span class='w' title='rank 494 · decode'>hungry</span> <span class='w' title='rank 528 · decode'>candy</span> <span class='w' title='rank 532 · decode'>henry</span> <span class='w' title='rank 546 · decode+ed'>played</span> <span class='w' title='rank 567 · decode'>quickly</span> <span class='w' title='rank 574 · decode'>busy</span> <span class='w' title='rank 615 · decode'>silly</span> <span class='w' title='rank 623 · decode'>funny</span> <span class='w' title='rank 625 · decode'>ruby</span> <span class='w' title='rank 626 · decode'>angry</span> <span class='w' title='rank 646 · decode'>city</span> <span class='w' title='rank 655 · decode'>toy</span> <span class='w' title='rank 688 · decode'>cry</span> <span class='w' title='rank 720 · decode+ing'>saying</span> <span class='w' title='rank 729 · decode'>lucky</span> <span class='w' title='rank 753 · decode'>guy</span> <span class='w' title='rank 775 · decode'>joy</span> <span class='w' title='rank 796 · decode'>body</span> <span class='w' title='rank 866 · decode'>lay</span> <span class='w' title='rank 887 · decode'>grumpy</span> <span class='w' title='rank 898 · decode'>puppy</span> <span class='more'>+87 more</span></td>
+  <td class="cum">1568</td>
+</tr>
+<tr>
+  <td class="n">57</td>
+  <td class="t">Module 5 Review<div class="sub">+ Fluency Check I</div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">1568</td>
+</tr>
+<tr>
+  <td class="n">58</td>
+  <td class="t">Vowel Teams → ee<div class="sub">the concept lesson</div></td>
+  <td class="code"><span class='g'>ee <i>/ē/</i></span> </td>
+  <td class="heart">been</td>
+  <td class="new"><span class="count">69</span><span class='w' title='rank 57 · decode'>see</span> <span class='w' title='rank 121 · decode'>tree</span> <span class='w' title='rank 163 · decode'>three</span> <span class='w' title='rank 172 · decode'>feel</span> <span class='w h' title='rank 188 · heart'>been</span> <span class='w' title='rank 192 · decode'>green</span> <span class='w' title='rank 258 · decode'>sleep</span> <span class='w' title='rank 266 · decode'>keep</span> <span class='w' title='rank 322 · decode'>feet</span> <span class='w' title='rank 323 · decode'>sweet</span> <span class='w' title='rank 331 · decode'>trees</span> <span class='w' title='rank 381 · decode'>deep</span> <span class='w' title='rank 417 · decode'>seen</span> <span class='w' title='rank 436 · decode'>teeth</span> <span class='w' title='rank 443 · decode+ing'>feeling</span> <span class='w' title='rank 536 · decode'>asleep</span> <span class='w' title='rank 587 · decode'>free</span> <span class='w' title='rank 627 · decode'>meet</span> <span class='w' title='rank 677 · decode'>street</span> <span class='w' title='rank 693 · decode'>feels</span> <span class='w' title='rank 734 · decode'>sheep</span> <span class='w' title='rank 740 · decode+ed'>needed</span> <span class='w' title='rank 767 · decode'>needs</span> <span class='w' title='rank 819 · decode'>week</span> <span class='w' title='rank 829 · decode+ed'>seemed</span> <span class='w' title='rank 948 · decode'>seeds</span> <span class='w' title='rank 949 · decode'>sleepy</span> <span class='w' title='rank 965 · decode'>between</span> <span class='w' title='rank 1001 · decode+ing'>sleeping</span> <span class='w' title='rank 1042 · decode'>cheese</span> <span class='w' title='rank 1103 · decode'>seems</span> <span class='w' title='rank 1157 · decode+ed'>agreed</span> <span class='w' title='rank 1166 · compound'>cheered</span> <span class='w' title='rank 1207 · decode'>feelings</span> <span class='w' title='rank 1289 · decode'>bee</span> <span class='w' title='rank 1295 · decode'>queen</span> <span class='w' title='rank 1313 · decode'>creepy</span> <span class='w' title='rank 1381 · decode'>keeps</span> <span class='w' title='rank 1389 · decode'>weeks</span> <span class='w' title='rank 1415 · compound'>indeed</span> <span class='w' title='rank 1443 · decode'>freedom</span> <span class='w' title='rank 1466 · decode'>seem</span> <span class='w' title='rank 1510 · decode'>lee</span> <span class='w' title='rank 1516 · decode'>sneeze</span> <span class='w' title='rank 1558 · decode+ing'>seeing</span> <span class='w' title='rank 1598 · decode'>breeze</span> <span class='w' title='rank 1838 · decode'>creek</span> <span class='w' title='rank 1900 · decode'>squeeze</span> <span class='w' title='rank 1937 · decode'>agree</span> <span class='w' title='rank 1959 · decode'>seek</span> <span class='more'>+19 more</span></td>
+  <td class="cum">1637</td>
+</tr>
+<tr>
+  <td class="n">59</td>
+  <td class="t">ea<div class="sub"></div></td>
+  <td class="code"><span class='g'>ea <i>/ē/ /ĕ/</i></span> </td>
+  <td class="heart">great</td>
+  <td class="new"><span class="count">98</span><span class='w' title='rank 155 · decode'>really</span> <span class='w' title='rank 164 · decode'>eat</span> <span class='w' title='rank 166 · decode'>head</span> <span class='w h' title='rank 174 · heart'>great</span> <span class='w' title='rank 181 · decode'>each</span> <span class='w' title='rank 199 · decode'>please</span> <span class='w' title='rank 243 · decode'>ready</span> <span class='w' title='rank 305 · decode'>read</span> <span class='w' title='rank 327 · decode'>idea</span> <span class='w' title='rank 423 · decode+es'>leaves</span> <span class='w' title='rank 428 · decode'>leave</span> <span class='w' title='rank 430 · decode'>instead</span> <span class='w' title='rank 531 · decode'>sea</span> <span class='w' title='rank 547 · decode'>real</span> <span class='w' title='rank 550 · decode'>dream</span> <span class='w' title='rank 552 · decode'>team</span> <span class='w' title='rank 590 · decode'>clean</span> <span class='w' title='rank 605 · decode+ing'>eating</span> <span class='w' title='rank 620 · decode+ed'>reached</span> <span class='w' title='rank 643 · decode'>dreams</span> <span class='w' title='rank 667 · decode'>means</span> <span class='w' title='rank 671 · decode'>breakfast</span> <span class='w' title='rank 676 · decode+ing'>reading</span> <span class='w' title='rank 680 · decode'>breath</span> <span class='w' title='rank 712 · decode'>cream</span> <span class='w' title='rank 721 · decode'>tea</span> <span class='w' title='rank 725 · decode'>ocean</span> <span class='w' title='rank 733 · decode'>yeah</span> <span class='w' title='rank 813 · decode'>reach</span> <span class='w' title='rank 814 · decode'>easy</span> <span class='w' title='rank 883 · decode'>spread</span> <span class='w' title='rank 889 · decode'>treat</span> <span class='w' title='rank 899 · decode+ed'>realized</span> <span class='w' title='rank 921 · decode'>beans</span> <span class='w' title='rank 955 · decode'>ahead</span> <span class='w' title='rank 1000 · decode'>seat</span> <span class='w' title='rank 1049 · decode'>treasure</span> <span class='w' title='rank 1078 · decode'>speak</span> <span class='w' title='rank 1089 · decode'>least</span> <span class='w' title='rank 1121 · decode+ing'>leaving</span> <span class='w' title='rank 1165 · decode'>break</span> <span class='w' title='rank 1178 · decode'>bread</span> <span class='w' title='rank 1183 · decode'>teach</span> <span class='w' title='rank 1252 · decode+ed'>headed</span> <span class='w' title='rank 1265 · decode'>heavy</span> <span class='w' title='rank 1272 · decode'>creature</span> <span class='w' title='rank 1273 · decode+es'>creatures</span> <span class='w' title='rank 1288 · decode'>treats</span> <span class='w' title='rank 1315 · decode'>feast</span> <span class='w' title='rank 1316 · decode'>lead</span> <span class='more'>+48 more</span></td>
+  <td class="cum">1735</td>
+</tr>
+<tr>
+  <td class="n">60</td>
+  <td class="t">ai<div class="sub"></div></td>
+  <td class="code"><span class='g'>ai <i>/ā/</i></span> </td>
+  <td class="heart">again</td>
+  <td class="new"><span class="count">33</span><span class='w h' title='rank 142 · heart'>again</span> <span class='w' title='rank 256 · decode'>wait</span> <span class='w' title='rank 415 · decode'>tail</span> <span class='w' title='rank 457 · decode'>rain</span> <span class='w' title='rank 524 · decode+ing'>waiting</span> <span class='w' title='rank 598 · decode'>afraid</span> <span class='w' title='rank 832 · decode'>paint</span> <span class='w' title='rank 907 · decode+ed'>explained</span> <span class='w' title='rank 920 · decode'>against</span> <span class='w' title='rank 997 · decode'>daisy</span> <span class='w' title='rank 1003 · decode'>captain</span> <span class='w' title='rank 1083 · decode+ed'>waited</span> <span class='w' title='rank 1094 · decode+ed'>exclaimed</span> <span class='w' title='rank 1572 · decode'>saint</span> <span class='w' title='rank 1609 · decode+ed'>raised</span> <span class='w' title='rank 1613 · decode'>snail</span> <span class='w' title='rank 1714 · decode'>trail</span> <span class='w' title='rank 1728 · decode'>mail</span> <span class='w' title='rank 1769 · decode+ed'>painted</span> <span class='w' title='rank 1815 · decode'>laid</span> <span class='w' title='rank 1853 · decode'>explain</span> <span class='w' title='rank 1904 · decode+ing'>painting</span> <span class='w' title='rank 1923 · decode'>plain</span> <span class='w' title='rank 2009 · decode'>sail</span> <span class='w' title='rank 2264 · decode'>tails</span> <span class='w' title='rank 2464 · decode'>waits</span> <span class='w' title='rank 2491 · decode'>mailbox</span> <span class='w' title='rank 2496 · decode'>paid</span> <span class='w' title='rank 2541 · decode+ing'>raining</span> <span class='w' title='rank 2589 · decode'>pain</span> <span class='w' title='rank 2663 · decode'>braid</span> <span class='w' title='rank 2818 · decode+ed'>sailed</span> <span class='w' title='rank 2939 · decode+ing'>training</span></td>
+  <td class="cum">1768</td>
+</tr>
+<tr>
+  <td class="n">61</td>
+  <td class="t">ay<div class="sub"></div></td>
+  <td class="code"><span class='g'>ay <i>/ā/</i></span> </td>
+  <td class="heart">says</td>
+  <td class="new"><span class="count">6</span><span class='w' title='rank 103 · decode'>away</span> <span class='w' title='rank 213 · compound'>maybe</span> <span class='w' title='rank 240 · decode'>okay</span> <span class='w' title='rank 1787 · decode'>monday</span> <span class='w' title='rank 1828 · decode'>sunday</span> <span class='w' title='rank 2167 · decode'>friday</span></td>
+  <td class="cum">1774</td>
+</tr>
+<tr>
+  <td class="n">62</td>
+  <td class="t">oa<div class="sub"></div></td>
+  <td class="code"><span class='g'>oa <i>/ō/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">20</span><span class='w' title='rank 791 · decode'>road</span> <span class='w' title='rank 931 · decode'>boat</span> <span class='w' title='rank 1442 · decode'>coat</span> <span class='w' title='rank 1656 · decode'>whoa</span> <span class='w' title='rank 1664 · decode+ing'>floating</span> <span class='w' title='rank 1679 · decode'>coach</span> <span class='w' title='rank 1811 · decode'>goats</span> <span class='w' title='rank 1814 · decode'>koala</span> <span class='w' title='rank 1841 · decode'>moana</span> <span class='w' title='rank 1999 · decode'>float</span> <span class='w' title='rank 2298 · decode'>toad</span> <span class='w' title='rank 2314 · decode'>coal</span> <span class='w' title='rank 2363 · decode+ed'>floated</span> <span class='w' title='rank 2383 · decode'>soap</span> <span class='w' title='rank 2484 · decode'>goal</span> <span class='w' title='rank 2495 · decode'>oak</span> <span class='w' title='rank 2618 · decode'>cocoa</span> <span class='w' title='rank 2634 · decode'>load</span> <span class='w' title='rank 2728 · decode+ed'>approached</span> <span class='w' title='rank 2968 · decode+ed'>groaned</span></td>
+  <td class="cum">1794</td>
+</tr>
+<tr>
+  <td class="n">63</td>
+  <td class="t">oo — both sounds<div class="sub"></div></td>
+  <td class="code"><span class='g'>oo <i>/o͞o/ /o͝o/</i></span> </td>
+  <td class="heart">two, school</td>
+  <td class="new"><span class="count">64</span><span class='w' title='rank 63 · decode'>too</span> <span class='w' title='rank 82 · decode'>good</span> <span class='w' title='rank 84 · decode'>look</span> <span class='w' title='rank 134 · decode+ed'>looked</span> <span class='w h' title='rank 153 · heart'>school</span> <span class='w' title='rank 178 · decode'>took</span> <span class='w' title='rank 225 · decode'>room</span> <span class='w' title='rank 228 · decode'>book</span> <span class='w' title='rank 285 · decode'>looks</span> <span class='w' title='rank 314 · decode+ing'>looking</span> <span class='w' title='rank 332 · decode'>food</span> <span class='w' title='rank 334 · decode'>moon</span> <span class='w' title='rank 470 · decode'>books</span> <span class='w' title='rank 492 · decode'>cool</span> <span class='w' title='rank 537 · decode'>stood</span> <span class='w' title='rank 560 · decode'>tooth</span> <span class='w' title='rank 702 · compound'>goodbye</span> <span class='w' title='rank 856 · decode'>woods</span> <span class='w' title='rank 861 · decode'>shook</span> <span class='w' title='rank 946 · decode'>foot</span> <span class='w' title='rank 966 · decode'>boom</span> <span class='w' title='rank 1012 · decode'>goodness</span> <span class='w' title='rank 1146 · decode'>boots</span> <span class='w' title='rank 1184 · decode'>zoo</span> <span class='w' title='rank 1245 · decode'>moose</span> <span class='w' title='rank 1270 · decode'>wood</span> <span class='w' title='rank 1279 · decode'>classroom</span> <span class='w' title='rank 1309 · decode'>balloon</span> <span class='w' title='rank 1323 · decode'>boo</span> <span class='w' title='rank 1339 · decode'>roof</span> <span class='w' title='rank 1411 · decode'>cook</span> <span class='w' title='rank 1444 · decode'>hood</span> <span class='w' title='rank 1450 · decode'>bedroom</span> <span class='w' title='rank 1671 · decode'>woof</span> <span class='w' title='rank 1686 · decode'>football</span> <span class='w' title='rank 1705 · decode'>mood</span> <span class='w' title='rank 1706 · decode'>oops</span> <span class='w' title='rank 1742 · decode'>loose</span> <span class='w' title='rank 1745 · decode'>pool</span> <span class='w' title='rank 1771 · decode'>pooh</span> <span class='w' title='rank 1873 · decode'>spooky</span> <span class='w' title='rank 1938 · decode'>balloons</span> <span class='w' title='rank 1939 · decode'>bathroom</span> <span class='w' title='rank 2029 · decode'>goofy</span> <span class='w' title='rank 2046 · decode'>woody</span> <span class='w' title='rank 2158 · decode'>wooden</span> <span class='w' title='rank 2163 · decode'>broom</span> <span class='w' title='rank 2185 · decode'>zoom</span> <span class='w' title='rank 2400 · decode+ed'>cooked</span> <span class='w' title='rank 2506 · decode'>tools</span> <span class='more'>+14 more</span></td>
+  <td class="cum">1858</td>
+</tr>
+<tr>
+  <td class="n">64</td>
+  <td class="t">aw<div class="sub"></div></td>
+  <td class="code"><span class='g'>aw <i>/aw/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">15</span><span class='w' title='rank 156 · decode'>saw</span> <span class='w' title='rank 1093 · decode'>draw</span> <span class='w' title='rank 1106 · decode'>straw</span> <span class='w' title='rank 1305 · decode'>paws</span> <span class='w' title='rank 1546 · decode'>claws</span> <span class='w' title='rank 1744 · decode'>paw</span> <span class='w' title='rank 1862 · decode+ing'>drawing</span> <span class='w' title='rank 1972 · decode'>dawn</span> <span class='w' title='rank 2086 · decode+ed'>crawled</span> <span class='w' title='rank 2171 · decode'>lawn</span> <span class='w' title='rank 2308 · decode'>awful</span> <span class='w' title='rank 2327 · decode'>law</span> <span class='w' title='rank 2632 · decode'>laws</span> <span class='w' title='rank 2724 · decode'>yawn</span> <span class='w' title='rank 2725 · decode+ed'>yawned</span></td>
+  <td class="cum">1873</td>
+</tr>
+<tr>
+  <td class="n">65</td>
+  <td class="t">au<div class="sub"></div></td>
+  <td class="code"><span class='g'>au <i>/aw/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">9</span><span class='w' title='rank 141 · decode'>because</span> <span class='w' title='rank 1167 · decode'>claus</span> <span class='w' title='rank 1195 · decode'>aunt</span> <span class='w' title='rank 1628 · decode'>autumn</span> <span class='w' title='rank 1835 · decode'>cause</span> <span class='w' title='rank 1843 · decode'>pauline</span> <span class='w' title='rank 2449 · decode'>paul</span> <span class='w' title='rank 2796 · decode+ed'>haunted</span> <span class='w' title='rank 2982 · decode'>pause</span></td>
+  <td class="cum">1882</td>
+</tr>
+<tr>
+  <td class="n">66</td>
+  <td class="t">all and al<div class="sub"></div></td>
+  <td class="code"><span class='g'>all <i>/awl/</i></span> <span class='g'>al <i>/awl/ /ahl/</i></span> </td>
+  <td class="heart">walk, talk</td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">1882</td>
+</tr>
+<tr>
+  <td class="n">67</td>
+  <td class="t">Module 6 Review<div class="sub"></div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">1882</td>
+</tr>
+<tr>
+  <td class="n">68</td>
+  <td class="t">Just-Read Day I<div class="sub"></div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">1882</td>
+</tr>
+<tr>
+  <td class="n">69</td>
+  <td class="t">ie — both sounds<div class="sub"></div></td>
+  <td class="code"><span class='g'>ie <i>/ī/ /ē/</i></span> </td>
+  <td class="heart">friend</td>
+  <td class="new"><span class="count">47</span><span class='w' title='rank 114 · decode'>friends</span> <span class='w h' title='rank 175 · heart'>friend</span> <span class='w' title='rank 220 · decode'>cried</span> <span class='w' title='rank 469 · decode'>believe</span> <span class='w' title='rank 496 · decode'>quiet</span> <span class='w' title='rank 543 · compound'>replied</span> <span class='w' title='rank 580 · decode'>pie</span> <span class='w' title='rank 728 · decode'>field</span> <span class='w' title='rank 882 · decode'>piece</span> <span class='w' title='rank 910 · decode+es'>cookies</span> <span class='w' title='rank 1052 · decode'>flies</span> <span class='w' title='rank 1188 · decode'>friendly</span> <span class='w' title='rank 1333 · decode'>daniel</span> <span class='w' title='rank 1416 · decode'>katie</span> <span class='w' title='rank 1447 · decode+es'>pieces</span> <span class='w' title='rank 1491 · decode'>minnie</span> <span class='w' title='rank 1528 · decode'>maddie</span> <span class='w' title='rank 1532 · decode'>quietly</span> <span class='w' title='rank 1565 · decode'>cookie</span> <span class='w' title='rank 1610 · decode'>rosie</span> <span class='w' title='rank 1618 · decode'>cries</span> <span class='w' title='rank 1640 · decode'>bonnie</span> <span class='w' title='rank 1689 · decode'>millie</span> <span class='w' title='rank 1726 · decode'>lie</span> <span class='w' title='rank 1794 · decode'>tie</span> <span class='w' title='rank 1832 · decode'>auntie</span> <span class='w' title='rank 1866 · decode'>patient</span> <span class='w' title='rank 1872 · compound'>sophie</span> <span class='w' title='rank 1887 · decode'>fields</span> <span class='w' title='rank 1891 · decode'>jamie</span> <span class='w' title='rank 2010 · decode'>science</span> <span class='w' title='rank 2061 · decode'>jackie</span> <span class='w' title='rank 2168 · decode'>friendship</span> <span class='w' title='rank 2274 · decode+ed'>believed</span> <span class='w' title='rank 2275 · decode'>callie</span> <span class='w' title='rank 2281 · decode'>ellie</span> <span class='w' title='rank 2427 · decode'>chief</span> <span class='w' title='rank 2639 · decode'>ollie</span> <span class='w' title='rank 2650 · compound'>supplies</span> <span class='w' title='rank 2658 · decode'>movie</span> <span class='w' title='rank 2744 · decode'>goldie</span> <span class='w' title='rank 2753 · decode'>mischief</span> <span class='w' title='rank 2769 · decode'>spied</span> <span class='w' title='rank 2820 · decode'>scientists</span> <span class='w' title='rank 2943 · decode'>alien</span> <span class='w' title='rank 2964 · compound'>fireflies</span> <span class='w' title='rank 2981 · decode'>patience</span></td>
+  <td class="cum">1929</td>
+</tr>
+<tr>
+  <td class="n">70</td>
+  <td class="t">igh<div class="sub"></div></td>
+  <td class="code"><span class='g'>igh <i>/ī/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">27</span><span class='w' title='rank 85 · decode'>right</span> <span class='w' title='rank 95 · decode'>night</span> <span class='w' title='rank 276 · decode'>might</span> <span class='w' title='rank 287 · decode'>light</span> <span class='w' title='rank 294 · decode'>high</span> <span class='w' title='rank 365 · decode'>bright</span> <span class='w' title='rank 682 · decode'>lights</span> <span class='w' title='rank 748 · decode'>tight</span> <span class='w' title='rank 818 · decode'>sight</span> <span class='w' title='rank 825 · decode'>fight</span> <span class='w' title='rank 1079 · decode'>tonight</span> <span class='w' title='rank 1241 · decode'>goodnight</span> <span class='w' title='rank 1721 · decode+ing'>fighting</span> <span class='w' title='rank 1766 · decode'>mighty</span> <span class='w' title='rank 1871 · decode+ed'>sighed</span> <span class='w' title='rank 2034 · decode'>midnight</span> <span class='w' title='rank 2089 · decode'>delight</span> <span class='w' title='rank 2133 · decode+ed'>frightened</span> <span class='w' title='rank 2174 · decode'>nights</span> <span class='w' title='rank 2204 · decode'>rights</span> <span class='w' title='rank 2382 · decode'>sigh</span> <span class='w' title='rank 2389 · decode'>tightly</span> <span class='w' title='rank 2434 · decode'>fright</span> <span class='w' title='rank 2504 · decode'>sunlight</span> <span class='w' title='rank 2515 · decode'>brightly</span> <span class='w' title='rank 2737 · decode+ed'>delighted</span> <span class='w' title='rank 2965 · decode'>flight</span></td>
+  <td class="cum">1956</td>
+</tr>
+<tr>
+  <td class="n">71</td>
+  <td class="t">ou — four sounds<div class="sub"></div></td>
+  <td class="code"><span class='g'>ou <i>/ow/ /o͞o/ /ŭ/</i></span> </td>
+  <td class="heart">could, would, should, our</td>
+  <td class="new"><span class="count">57</span><span class='w' title='rank 40 · decode'>out</span> <span class='w h' title='rank 66 · heart'>could</span> <span class='w h' title='rank 76 · heart'>would</span> <span class='w' title='rank 77 · decode'>about</span> <span class='w h' title='rank 89 · heart'>our</span> <span class='w' title='rank 132 · decode'>house</span> <span class='w' title='rank 173 · decode'>found</span> <span class='w h' title='rank 215 · heart'>should</span> <span class='w' title='rank 296 · decode'>outside</span> <span class='w' title='rank 310 · decode'>mouse</span> <span class='w' title='rank 355 · decode'>without</span> <span class='w' title='rank 377 · decode'>sound</span> <span class='w' title='rank 384 · decode+ed'>shouted</span> <span class='w' title='rank 424 · decode'>ground</span> <span class='w' title='rank 458 · decode'>round</span> <span class='w' title='rank 489 · decode'>loud</span> <span class='w' title='rank 600 · decode'>young</span> <span class='w' title='rank 611 · decode'>groundhog</span> <span class='w' title='rank 628 · decode'>mouth</span> <span class='w' title='rank 681 · decode'>clouds</span> <span class='w' title='rank 683 · decode'>proud</span> <span class='w' title='rank 788 · decode'>trouble</span> <span class='w' title='rank 830 · decode'>shout</span> <span class='w' title='rank 842 · decode'>sounds</span> <span class='w' title='rank 905 · decode'>touch</span> <span class='w' title='rank 928 · decode'>mountain</span> <span class='w' title='rank 934 · decode'>count</span> <span class='w' title='rank 1110 · decode'>cloud</span> <span class='w' title='rank 1115 · decode'>country</span> <span class='w' title='rank 1242 · decode'>group</span> <span class='w' title='rank 1254 · decode'>mountains</span> <span class='w' title='rank 1263 · decode'>famous</span> <span class='w' title='rank 1463 · decode'>playground</span> <span class='w' title='rank 1507 · decode'>grouchy</span> <span class='w' title='rank 1614 · decode'>south</span> <span class='w' title='rank 1616 · decode+ed'>announced</span> <span class='w' title='rank 1680 · decode+ed'>counted</span> <span class='w' title='rank 1716 · decode'>couch</span> <span class='w' title='rank 1816 · decode'>loudly</span> <span class='w' title='rank 1850 · decode'>thousand</span> <span class='w' title='rank 1860 · decode'>couple</span> <span class='w' title='rank 1867 · decode'>proudly</span> <span class='w' title='rank 1898 · decode'>shouts</span> <span class='w' title='rank 2007 · decode'>ouch</span> <span class='w' title='rank 2019 · decode+ing'>counting</span> <span class='w' title='rank 2122 · decode'>bounce</span> <span class='w' title='rank 2127 · decode'>cousin</span> <span class='w' title='rank 2256 · decode+es'>houses</span> <span class='w' title='rank 2329 · decode'>lou</span> <span class='w' title='rank 2334 · decode+ed'>sounded</span> <span class='more'>+7 more</span></td>
+  <td class="cum">2013</td>
+</tr>
+<tr>
+  <td class="n">72</td>
+  <td class="t">ow — both sounds<div class="sub"></div></td>
+  <td class="code"><span class='g'>ow <i>/ow/ /ō/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">57</span><span class='w' title='rank 51 · decode'>now</span> <span class='w' title='rank 67 · decode'>down</span> <span class='w' title='rank 74 · decode'>how</span> <span class='w' title='rank 176 · decode'>snow</span> <span class='w' title='rank 283 · decode'>own</span> <span class='w' title='rank 317 · decode'>brown</span> <span class='w' title='rank 340 · decode'>show</span> <span class='w' title='rank 386 · decode'>grow</span> <span class='w' title='rank 429 · decode'>yellow</span> <span class='w' title='rank 440 · decode'>town</span> <span class='w' title='rank 480 · decode'>window</span> <span class='w' title='rank 562 · decode'>follow</span> <span class='w' title='rank 591 · decode'>wow</span> <span class='w' title='rank 604 · decode'>slowly</span> <span class='w' title='rank 746 · decode'>owl</span> <span class='w' title='rank 797 · decode'>cow</span> <span class='w' title='rank 820 · decode'>below</span> <span class='w' title='rank 841 · decode'>snowman</span> <span class='w' title='rank 845 · decode'>rainbow</span> <span class='w' title='rank 859 · decode+ed'>followed</span> <span class='w' title='rank 936 · decode'>shadow</span> <span class='w' title='rank 938 · decode'>throw</span> <span class='w' title='rank 940 · decode'>crowd</span> <span class='w' title='rank 985 · decode'>bowl</span> <span class='w' title='rank 1063 · decode'>slow</span> <span class='w' title='rank 1073 · decode+ing'>growing</span> <span class='w' title='rank 1235 · decode'>glow</span> <span class='w' title='rank 1240 · decode'>bow</span> <span class='w' title='rank 1268 · decode'>shows</span> <span class='w' title='rank 1292 · decode'>grown</span> <span class='w' title='rank 1311 · decode'>blow</span> <span class='w' title='rank 1417 · decode'>low</span> <span class='w' title='rank 1544 · decode'>windows</span> <span class='w' title='rank 1550 · decode+ed'>growled</span> <span class='w' title='rank 1603 · decode+ing'>following</span> <span class='w' title='rank 1785 · decode'>meadow</span> <span class='w' title='rank 1812 · decode'>grows</span> <span class='w' title='rank 1837 · decode'>cows</span> <span class='w' title='rank 1878 · decode+ed'>allowed</span> <span class='w' title='rank 1899 · decode+es'>snowflakes</span> <span class='w' title='rank 1998 · decode'>fellow</span> <span class='w' title='rank 2087 · decode'>crow</span> <span class='w' title='rank 2109 · decode'>pillow</span> <span class='w' title='rank 2112 · decode'>row</span> <span class='w' title='rank 2116 · decode'>snowball</span> <span class='w' title='rank 2206 · decode'>shadows</span> <span class='w' title='rank 2210 · decode'>snowmen</span> <span class='w' title='rank 2246 · decode'>crown</span> <span class='w' title='rank 2252 · decode'>frown</span> <span class='w' title='rank 2403 · decode+ing'>glowing</span> <span class='more'>+7 more</span></td>
+  <td class="cum">2070</td>
+</tr>
+<tr>
+  <td class="n">73</td>
+  <td class="t">oi<div class="sub"></div></td>
+  <td class="code"><span class='g'>oi <i>/oy/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">15</span><span class='w' title='rank 405 · decode'>voice</span> <span class='w' title='rank 715 · decode'>noise</span> <span class='w' title='rank 927 · decode'>join</span> <span class='w' title='rank 1257 · decode+ed'>pointed</span> <span class='w' title='rank 1397 · decode+ed'>joined</span> <span class='w' title='rank 1418 · decode'>point</span> <span class='w' title='rank 1668 · decode'>oil</span> <span class='w' title='rank 2175 · decode+es'>noises</span> <span class='w' title='rank 2231 · decode'>noisy</span> <span class='w' title='rank 2292 · decode+ing'>pointing</span> <span class='w' title='rank 2340 · decode+es'>voices</span> <span class='w' title='rank 2384 · decode'>soil</span> <span class='w' title='rank 2564 · decode'>coins</span> <span class='w' title='rank 2642 · decode'>pointy</span> <span class='w' title='rank 2916 · decode'>points</span></td>
+  <td class="cum">2085</td>
+</tr>
+<tr>
+  <td class="n">74</td>
+  <td class="t">oy<div class="sub"></div></td>
+  <td class="code"><span class='g'>oy <i>/oy/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">4</span><span class='w' title='rank 944 · decode'>enjoy</span> <span class='w' title='rank 1473 · decode+ed'>enjoyed</span> <span class='w' title='rank 2788 · decode+ing'>enjoying</span> <span class='w' title='rank 2847 · decode'>cowboy</span></td>
+  <td class="cum">2089</td>
+</tr>
+<tr>
+  <td class="n">75</td>
+  <td class="t">ew<div class="sub"></div></td>
+  <td class="code"><span class='g'>ew <i>/o͞o/ /ū/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">10</span><span class='w' title='rank 91 · decode'>new</span> <span class='w' title='rank 367 · decode'>flew</span> <span class='w' title='rank 431 · decode'>few</span> <span class='w' title='rank 507 · decode'>grew</span> <span class='w' title='rank 906 · decode'>blew</span> <span class='w' title='rank 951 · decode'>threw</span> <span class='w' title='rank 1190 · decode'>news</span> <span class='w' title='rank 1282 · decode'>drew</span> <span class='w' title='rank 1548 · decode'>crew</span> <span class='w' title='rank 1859 · decode'>chew</span></td>
+  <td class="cum">2099</td>
+</tr>
+<tr>
+  <td class="n">76</td>
+  <td class="t">ue<div class="sub"></div></td>
+  <td class="code"><span class='g'>ue <i>/o͞o/ /ū/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">12</span><span class='w' title='rank 238 · decode'>blue</span> <span class='w' title='rank 401 · decode'>true</span> <span class='w' title='rank 569 · decode'>guess</span> <span class='w' title='rank 991 · decode'>glue</span> <span class='w' title='rank 1669 · decode'>rescue</span> <span class='w' title='rank 1713 · decode'>tongue</span> <span class='w' title='rank 1806 · decode'>clue</span> <span class='w' title='rank 2043 · decode'>statue</span> <span class='w' title='rank 2118 · decode'>sue</span> <span class='w' title='rank 2299 · decode'>tuesday</span> <span class='w' title='rank 2485 · decode'>guests</span> <span class='w' title='rank 2854 · decode'>guest</span></td>
+  <td class="cum">2111</td>
+</tr>
+<tr>
+  <td class="n">77</td>
+  <td class="t">Contractions<div class="sub"></div></td>
+  <td class="code"> <span class='gate'>contractions</span></td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">58</span><span class='w' title='rank 52 · contraction'>it's</span> <span class='w' title='rank 56 · contraction'>i'm</span> <span class='w' title='rank 71 · contraction'>don't</span> <span class='w' title='rank 108 · contraction'>that's</span> <span class='w' title='rank 113 · contraction'>didn't</span> <span class='w' title='rank 133 · contraction'>i'll</span> <span class='w' title='rank 139 · contraction'>you're</span> <span class='w' title='rank 148 · contraction'>let's</span> <span class='w' title='rank 161 · contraction'>can't</span> <span class='w' title='rank 197 · contraction'>he's</span> <span class='w' title='rank 200 · contraction'>there's</span> <span class='w' title='rank 234 · contraction'>wasn't</span> <span class='w' title='rank 254 · contraction'>you'll</span> <span class='w' title='rank 263 · contraction'>couldn't</span> <span class='w' title='rank 269 · contraction'>i've</span> <span class='w' title='rank 298 · contraction'>what's</span> <span class='w' title='rank 303 · contraction'>they're</span> <span class='w' title='rank 318 · contraction'>we're</span> <span class='w' title='rank 328 · contraction'>won't</span> <span class='w' title='rank 366 · contraction'>doesn't</span> <span class='w' title='rank 402 · contraction'>she's</span> <span class='w' title='rank 418 · contraction'>we'll</span> <span class='w' title='rank 445 · contraction'>isn't</span> <span class='w' title='rank 472 · contraction'>i'd</span> <span class='w' title='rank 572 · contraction'>wouldn't</span> <span class='w' title='rank 578 · contraction'>you've</span> <span class='w' title='rank 662 · contraction'>he'd</span> <span class='w' title='rank 716 · contraction'>who's</span> <span class='w' title='rank 754 · contraction'>he'll</span> <span class='w' title='rank 828 · contraction'>here's</span> <span class='w' title='rank 844 · contraction'>we've</span> <span class='w' title='rank 932 · contraction'>aren't</span> <span class='w' title='rank 1044 · contraction'>haven't</span> <span class='w' title='rank 1117 · contraction'>patrick's</span> <span class='w' title='rank 1176 · contraction'>weren't</span> <span class='w' title='rank 1238 · contraction'>you'd</span> <span class='w' title='rank 1258 · contraction'>she'll</span> <span class='w' title='rank 1287 · contraction'>they'll</span> <span class='w' title='rank 1296 · contraction'>santa's</span> <span class='w' title='rank 1349 · contraction'>hadn't</span> <span class='w' title='rank 1438 · contraction'>she'd</span> <span class='w' title='rank 1478 · contraction'>mom's</span> <span class='w' title='rank 1561 · contraction'>they'd</span> <span class='w' title='rank 1624 · contraction'>shouldn't</span> <span class='w' title='rank 1791 · contraction'>someone's</span> <span class='w' title='rank 1797 · contraction'>where's</span> <span class='w' title='rank 1911 · contraction'>dad's</span> <span class='w' title='rank 1967 · contraction'>we'd</span> <span class='w' title='rank 2321 · contraction'>grandma's</span> <span class='w' title='rank 2399 · contraction'>children's</span> <span class='more'>+8 more</span></td>
+  <td class="cum">2169</td>
+</tr>
+<tr>
+  <td class="n">78</td>
+  <td class="t">Module 7 Review<div class="sub"></div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">2169</td>
+</tr>
+<tr>
+  <td class="n">79</td>
+  <td class="t">Just-Read Day II<div class="sub">+ Fluency Check II</div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">2169</td>
+</tr>
+<tr>
+  <td class="n">80</td>
+  <td class="t">Bossy R → ar<div class="sub">the concept lesson</div></td>
+  <td class="code"><span class='g'>ar <i>/ar/</i></span> </td>
+  <td class="heart">warm</td>
+  <td class="new"><span class="count">83</span><span class='w' title='rank 102 · decode'>around</span> <span class='w' title='rank 203 · decode+ed'>started</span> <span class='w' title='rank 211 · compound'>heart</span> <span class='w' title='rank 233 · decode'>hard</span> <span class='w' title='rank 319 · decode'>dark</span> <span class='w' title='rank 336 · decode'>far</span> <span class='w h' title='rank 352 · heart'>warm</span> <span class='w' title='rank 371 · decode'>start</span> <span class='w' title='rank 435 · decode'>party</span> <span class='w' title='rank 456 · decode'>parents</span> <span class='w' title='rank 476 · decode'>car</span> <span class='w' title='rank 515 · decode'>garden</span> <span class='w' title='rank 516 · decode'>part</span> <span class='w' title='rank 535 · decode'>charlie</span> <span class='w' title='rank 570 · decode'>arms</span> <span class='w' title='rank 577 · decode'>star</span> <span class='w' title='rank 592 · decode'>park</span> <span class='w' title='rank 731 · decode'>scary</span> <span class='w' title='rank 755 · decode'>large</span> <span class='w' title='rank 758 · decode'>parade</span> <span class='w' title='rank 766 · decode'>farm</span> <span class='w' title='rank 834 · decode'>starts</span> <span class='w' title='rank 846 · decode'>toward</span> <span class='w' title='rank 848 · decode'>cards</span> <span class='w' title='rank 904 · decode'>smart</span> <span class='w' title='rank 1022 · decode'>card</span> <span class='w' title='rank 1061 · decode'>march</span> <span class='w' title='rank 1070 · decode'>towards</span> <span class='w' title='rank 1108 · decode'>art</span> <span class='w' title='rank 1130 · decode'>mary</span> <span class='w' title='rank 1134 · decode'>yard</span> <span class='w' title='rank 1142 · decode'>sugar</span> <span class='w' title='rank 1230 · decode'>barn</span> <span class='w' title='rank 1299 · decode'>war</span> <span class='w' title='rank 1354 · decode'>sharp</span> <span class='w' title='rank 1362 · compound'>carrot</span> <span class='w' title='rank 1413 · compound'>forward</span> <span class='w' title='rank 1432 · decode'>martin</span> <span class='w' title='rank 1469 · decode'>arm</span> <span class='w' title='rank 1482 · decode+ing'>starting</span> <span class='w' title='rank 1508 · decode'>jar</span> <span class='w' title='rank 1611 · decode'>shark</span> <span class='w' title='rank 1666 · decode'>hardly</span> <span class='w' title='rank 1702 · decode'>martha</span> <span class='w' title='rank 1736 · decode'>bark</span> <span class='w' title='rank 1870 · decode'>sharks</span> <span class='w' title='rank 1882 · decode'>clark</span> <span class='w' title='rank 1905 · decode'>backyard</span> <span class='w' title='rank 1925 · decode'>sarah</span> <span class='w' title='rank 1982 · decode+ed'>marched</span> <span class='more'>+33 more</span></td>
+  <td class="cum">2252</td>
+</tr>
+<tr>
+  <td class="n">81</td>
+  <td class="t">or<div class="sub"></div></td>
+  <td class="code"><span class='g'>or <i>/or/</i></span> </td>
+  <td class="heart">world, work, word</td>
+  <td class="new"><span class="count">59</span><span class='w' title='rank 70 · decode'>or</span> <span class='w' title='rank 189 · decode+ing'>morning</span> <span class='w' title='rank 196 · compound'>door</span> <span class='w h' title='rank 207 · heart'>world</span> <span class='w h' title='rank 222 · heart'>work</span> <span class='w' title='rank 277 · decode'>story</span> <span class='w' title='rank 412 · decode'>color</span> <span class='w' title='rank 483 · decode'>words</span> <span class='w' title='rank 551 · decode'>forest</span> <span class='w' title='rank 609 · decode'>born</span> <span class='w' title='rank 629 · decode'>colors</span> <span class='w h' title='rank 636 · heart+ed'>worked</span> <span class='w h' title='rank 742 · heart'>word</span> <span class='w h' title='rank 768 · heart+ing'>working</span> <span class='w' title='rank 821 · decode'>orange</span> <span class='w' title='rank 958 · decode'>corn</span> <span class='w' title='rank 972 · decode'>horse</span> <span class='w' title='rank 1097 · decode'>short</span> <span class='w' title='rank 1120 · decode'>storm</span> <span class='w' title='rank 1153 · decode'>north</span> <span class='w' title='rank 1217 · decode'>doctor</span> <span class='w' title='rank 1260 · decode'>works</span> <span class='w' title='rank 1281 · decode'>clifford</span> <span class='w' title='rank 1426 · decode'>worse</span> <span class='w' title='rank 1529 · decode'>norman</span> <span class='w' title='rank 1538 · decode'>sort</span> <span class='w' title='rank 1547 · decode+ed'>colored</span> <span class='w' title='rank 1735 · decode'>york</span> <span class='w' title='rank 1743 · decode'>mayor</span> <span class='w' title='rank 1910 · decode+ing'>coloring</span> <span class='w' title='rank 1969 · decode'>worst</span> <span class='w' title='rank 1975 · compound'>homework</span> <span class='w' title='rank 2025 · decode'>connor</span> <span class='w' title='rank 2069 · decode'>porch</span> <span class='w' title='rank 2078 · decode'>support</span> <span class='w' title='rank 2105 · decode'>normal</span> <span class='w' title='rank 2120 · decode'>worm</span> <span class='w' title='rank 2197 · decode+es'>horses</span> <span class='w' title='rank 2212 · decode'>sports</span> <span class='w' title='rank 2215 · decode'>tortoise</span> <span class='w' title='rank 2234 · decode'>popcorn</span> <span class='w' title='rank 2269 · decode'>worth</span> <span class='w' title='rank 2318 · decode'>form</span> <span class='w' title='rank 2319 · decode'>forth</span> <span class='w' title='rank 2344 · decode'>worms</span> <span class='w' title='rank 2358 · decode'>doctors</span> <span class='w' title='rank 2362 · compound'>fireworks</span> <span class='w' title='rank 2366 · decode'>horn</span> <span class='w' title='rank 2368 · decode'>jordan</span> <span class='w' title='rank 2468 · decode'>author</span> <span class='more'>+9 more</span></td>
+  <td class="cum">2311</td>
+</tr>
+<tr>
+  <td class="n">82</td>
+  <td class="t">er<div class="sub"></div></td>
+  <td class="code"><span class='g'>er <i>/er/</i></span> </td>
+  <td class="heart">were, other, mother</td>
+  <td class="new"><span class="count">147</span><span class='w' title='rank 24 · decode'>her</span> <span class='w' title='rank 80 · decode'>very</span> <span class='w' title='rank 94 · decode'>over</span> <span class='w' title='rank 122 · decode'>never</span> <span class='w h' title='rank 125 · heart'>other</span> <span class='w' title='rank 126 · decode'>after</span> <span class='w' title='rank 186 · compound'>together</span> <span class='w h' title='rank 191 · heart'>mother</span> <span class='w' title='rank 193 · decode'>ever</span> <span class='w' title='rank 206 · decode'>water</span> <span class='w' title='rank 232 · decode'>better</span> <span class='w' title='rank 248 · compound'>another</span> <span class='w' title='rank 260 · decode'>easter</span> <span class='w' title='rank 286 · decode'>under</span> <span class='w' title='rank 354 · decode'>father</span> <span class='w' title='rank 404 · decode'>perfect</span> <span class='w' title='rank 407 · decode'>monster</span> <span class='w' title='rank 413 · decode'>others</span> <span class='w' title='rank 420 · decode'>later</span> <span class='w' title='rank 432 · decode'>sister</span> <span class='w' title='rank 433 · decode'>super</span> <span class='w' title='rank 434 · decode'>teacher</span> <span class='w' title='rank 446 · decode'>winter</span> <span class='w' title='rank 473 · decode'>paper</span> <span class='w' title='rank 493 · decode'>dinner</span> <span class='w' title='rank 523 · decode'>flowers</span> <span class='w' title='rank 564 · decode'>number</span> <span class='w' title='rank 573 · decode'>brother</span> <span class='w' title='rank 599 · decode'>matter</span> <span class='w' title='rank 607 · decode'>river</span> <span class='w' title='rank 665 · decode'>wonder</span> <span class='w' title='rank 672 · decode'>farmer</span> <span class='w' title='rank 696 · decode'>bigger</span> <span class='w' title='rank 703 · decode'>peter</span> <span class='w' title='rank 732 · decode+ed'>whispered</span> <span class='w' title='rank 738 · decode'>herself</span> <span class='w' title='rank 747 · decode'>summer</span> <span class='w' title='rank 773 · decode'>answer</span> <span class='w' title='rank 810 · decode'>longer</span> <span class='w' title='rank 815 · decode'>person</span> <span class='w' title='rank 831 · decode+ed'>wondered</span> <span class='w' title='rank 839 · decode'>power</span> <span class='w' title='rank 875 · decode'>perhaps</span> <span class='w' title='rank 879 · decode'>faster</span> <span class='w' title='rank 923 · decode'>fingers</span> <span class='w' title='rank 959 · decode'>flower</span> <span class='w' title='rank 977 · decode+ed'>answered</span> <span class='w' title='rank 1017 · decode'>letter</span> <span class='w' title='rank 1018 · decode'>monsters</span> <span class='w' title='rank 1053 · compound'>forever</span> <span class='more'>+97 more</span></td>
+  <td class="cum">2458</td>
+</tr>
+<tr>
+  <td class="n">83</td>
+  <td class="t">ir<div class="sub"></div></td>
+  <td class="code"><span class='g'>ir <i>/er/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">20</span><span class='w' title='rank 119 · decode'>first</span> <span class='w' title='rank 279 · decode'>girl</span> <span class='w' title='rank 378 · decode'>bird</span> <span class='w' title='rank 475 · decode'>birds</span> <span class='w' title='rank 509 · decode'>birthday</span> <span class='w' title='rank 701 · decode'>girls</span> <span class='w' title='rank 1014 · decode'>third</span> <span class='w' title='rank 1105 · decode'>sir</span> <span class='w' title='rank 1186 · decode'>dirt</span> <span class='w' title='rank 1352 · decode'>pirate</span> <span class='w' title='rank 1393 · decode'>circle</span> <span class='w' title='rank 1820 · decode+es'>pirates</span> <span class='w' title='rank 1848 · decode'>spirit</span> <span class='w' title='rank 2040 · decode'>shirt</span> <span class='w' title='rank 2054 · decode'>dirty</span> <span class='w' title='rank 2257 · decode'>irish</span> <span class='w' title='rank 2266 · decode'>virus</span> <span class='w' title='rank 2668 · decode'>circus</span> <span class='w' title='rank 2992 · decode+ed'>stirred</span> <span class='w' title='rank 3000 · decode+ed'>twirled</span></td>
+  <td class="cum">2478</td>
+</tr>
+<tr>
+  <td class="n">84</td>
+  <td class="t">ur<div class="sub"></div></td>
+  <td class="code"><span class='g'>ur <i>/er/</i></span> </td>
+  <td class="heart">sure</td>
+  <td class="new"><span class="count">31</span><span class='w' title='rank 302 · decode'>turn</span> <span class='w' title='rank 313 · decode+ed'>turned</span> <span class='w' title='rank 397 · decode'>arthur</span> <span class='w' title='rank 579 · decode'>surprise</span> <span class='w' title='rank 823 · decode'>turtle</span> <span class='w' title='rank 852 · decode'>purple</span> <span class='w' title='rank 952 · decode'>turns</span> <span class='w' title='rank 961 · decode'>hurt</span> <span class='w' title='rank 1099 · decode+ed'>surprised</span> <span class='w' title='rank 1168 · decode'>fur</span> <span class='w' title='rank 1338 · decode+ed'>returned</span> <span class='w' title='rank 1386 · decode'>return</span> <span class='w' title='rank 1497 · decode'>smurf</span> <span class='w' title='rank 1599 · decode'>curly</span> <span class='w' title='rank 1881 · decode'>church</span> <span class='w' title='rank 1930 · decode'>turkeys</span> <span class='w' title='rank 1931 · decode+ing'>turning</span> <span class='w' title='rank 1971 · decode+ed'>buried</span> <span class='w' title='rank 2022 · decode'>burst</span> <span class='w' title='rank 2214 · decode'>thursday</span> <span class='w' title='rank 2351 · decode'>burn</span> <span class='w' title='rank 2355 · decode'>curls</span> <span class='w' title='rank 2417 · decode'>smurfs</span> <span class='w' title='rank 2494 · decode'>nurse</span> <span class='w' title='rank 2578 · decode'>hurts</span> <span class='w' title='rank 2644 · decode'>purpose</span> <span class='w' title='rank 2717 · decode'>thurman</span> <span class='w' title='rank 2743 · decode'>further</span> <span class='w' title='rank 2828 · decode'>turnip</span> <span class='w' title='rank 2876 · decode'>surface</span> <span class='w' title='rank 2955 · decode+ed'>curled</span></td>
+  <td class="cum">2509</td>
+</tr>
+<tr>
+  <td class="n">85</td>
+  <td class="t">ar and or can say /er/<div class="sub">in unstressed endings</div></td>
+  <td class="code"><span class='g'>ar <i>/er/ unstressed</i></span> <span class='g'>or <i>/er/ unstressed</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">2509</td>
+</tr>
+<tr>
+  <td class="n">86</td>
+  <td class="t">are<div class="sub">an r-flavor</div></td>
+  <td class="code"><span class='g'>are <i>/air/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">3</span><span class='w' title='rank 1379 · decode'>careful</span> <span class='w' title='rank 2137 · decode'>margaret</span> <span class='w' title='rank 2511 · decode'>barely</span></td>
+  <td class="cum">2512</td>
+</tr>
+<tr>
+  <td class="n">87</td>
+  <td class="t">air<div class="sub">an r-flavor</div></td>
+  <td class="code"><span class='g'>air <i>/air/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">10</span><span class='w' title='rank 280 · decode'>hair</span> <span class='w' title='rank 337 · decode'>air</span> <span class='w' title='rank 644 · decode'>fairy</span> <span class='w' title='rank 668 · decode'>chair</span> <span class='w' title='rank 1111 · decode'>fair</span> <span class='w' title='rank 1182 · decode'>stairs</span> <span class='w' title='rank 1236 · decode'>pair</span> <span class='w' title='rank 1757 · decode'>downstairs</span> <span class='w' title='rank 2124 · decode'>chairs</span> <span class='w' title='rank 2422 · decode'>upstairs</span></td>
+  <td class="cum">2522</td>
+</tr>
+<tr>
+  <td class="n">88</td>
+  <td class="t">ear — four sounds<div class="sub">an r-flavor</div></td>
+  <td class="code"><span class='g'>ear <i>/air/ /eer/ /er/</i></span> </td>
+  <td class="heart">heart</td>
+  <td class="new"><span class="count">37</span><span class='w' title='rank 130 · decode'>bear</span> <span class='w' title='rank 251 · decode'>heard</span> <span class='w' title='rank 252 · decode'>year</span> <span class='w' title='rank 295 · decode'>hear</span> <span class='w' title='rank 299 · decode'>dear</span> <span class='w' title='rank 426 · decode'>years</span> <span class='w' title='rank 518 · decode'>wear</span> <span class='w' title='rank 526 · decode'>earth</span> <span class='w' title='rank 588 · decode'>learn</span> <span class='w' title='rank 618 · decode'>early</span> <span class='w' title='rank 658 · decode'>ears</span> <span class='w' title='rank 714 · decode'>near</span> <span class='w' title='rank 722 · decode'>hearts</span> <span class='w' title='rank 724 · decode+ed'>learned</span> <span class='w' title='rank 783 · decode'>bears</span> <span class='w' title='rank 817 · decode'>fear</span> <span class='w' title='rank 893 · decode'>ear</span> <span class='w' title='rank 929 · decode'>tears</span> <span class='w' title='rank 930 · decode+ing'>wearing</span> <span class='w' title='rank 975 · decode'>clear</span> <span class='w' title='rank 1085 · decode+ed'>appeared</span> <span class='w' title='rank 1458 · decode'>nearby</span> <span class='w' title='rank 1492 · decode'>nearly</span> <span class='w' title='rank 1534 · decode'>search</span> <span class='w' title='rank 1673 · decode+ing'>learning</span> <span class='w' title='rank 1693 · decode+ed'>searched</span> <span class='w' title='rank 1802 · contraction'>bear's</span> <span class='w' title='rank 1851 · decode'>wears</span> <span class='w' title='rank 1856 · decode'>appear</span> <span class='w' title='rank 1940 · decode'>beard</span> <span class='w' title='rank 1984 · decode'>pearl</span> <span class='w' title='rank 2333 · decode+ing'>searching</span> <span class='w' title='rank 2345 · contraction'>year's</span> <span class='w' title='rank 2421 · decode'>tear</span> <span class='w' title='rank 2679 · decode+ing'>hearing</span> <span class='w' title='rank 2693 · decode'>pear</span> <span class='w' title='rank 2971 · decode'>hears</span></td>
+  <td class="cum">2559</td>
+</tr>
+<tr>
+  <td class="n">89</td>
+  <td class="t">ore<div class="sub">an r-flavor</div></td>
+  <td class="code"><span class='g'>ore <i>/or/</i></span> </td>
+  <td class="heart">four, door, floor</td>
+  <td class="new"><span class="count">3</span><span class='w h' title='rank 341 · heart'>four</span> <span class='w h' title='rank 486 · heart'>floor</span> <span class='w h' title='rank 2128 · heart+s'>doors</span></td>
+  <td class="cum">2562</td>
+</tr>
+<tr>
+  <td class="n">90</td>
+  <td class="t">-er & -est<div class="sub"></div></td>
+  <td class="code"> <span class='gate'>suffix-er-est</span></td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">5</span><span class='w' title='rank 1092 · decode+er'>cheer</span> <span class='w' title='rank 1251 · decode+er'>deer</span> <span class='w' title='rank 1399 · decode+er'>officer</span> <span class='w' title='rank 2619 · decode+er'>computer</span> <span class='w' title='rank 2840 · decode+er'>beer</span></td>
+  <td class="cum">2567</td>
+</tr>
+<tr>
+  <td class="n">91</td>
+  <td class="t">Module 8 Review<div class="sub"></div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">2567</td>
+</tr>
+<tr>
+  <td class="n">92</td>
+  <td class="t">Just-Read Day III<div class="sub">+ Fluency Check III</div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">2567</td>
+</tr>
+<tr>
+  <td class="n">93</td>
+  <td class="t">eigh<div class="sub"></div></td>
+  <td class="code"><span class='g'>eigh <i>/ā/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">5</span><span class='w' title='rank 686 · decode'>eight</span> <span class='w' title='rank 1141 · decode'>sleigh</span> <span class='w' title='rank 1818 · decode'>neighbor</span> <span class='w' title='rank 2201 · decode'>neighbors</span> <span class='w' title='rank 2798 · decode'>height</span></td>
+  <td class="cum">2572</td>
+</tr>
+<tr>
+  <td class="n">94</td>
+  <td class="t">ph<div class="sub"></div></td>
+  <td class="code"><span class='g'>ph <i>/f/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">3</span><span class='w' title='rank 1266 · decode'>phil</span> <span class='w' title='rank 1434 · decode'>phone</span> <span class='w' title='rank 1556 · decode'>phyllis</span></td>
+  <td class="cum">2575</td>
+</tr>
+<tr>
+  <td class="n">95</td>
+  <td class="t">aught<div class="sub"></div></td>
+  <td class="code"><span class='g'>aught <i>/awt/</i></span> </td>
+  <td class="heart">laugh</td>
+  <td class="new"><span class="count">9</span><span class='w h' title='rank 517 · heart+ed'>laughed</span> <span class='w h' title='rank 690 · heart'>laugh</span> <span class='w' title='rank 743 · decode'>caught</span> <span class='w h' title='rank 1032 · heart+ing'>laughing</span> <span class='w' title='rank 1112 · decode'>taught</span> <span class='w' title='rank 1893 · decode'>naughty</span> <span class='w' title='rank 2003 · decode'>laughter</span> <span class='w' title='rank 2088 · decode'>daughter</span> <span class='w h' title='rank 2369 · heart+s'>laughs</span></td>
+  <td class="cum">2584</td>
+</tr>
+<tr>
+  <td class="n">96</td>
+  <td class="t">ough<div class="sub">extended Heart Words lesson</div></td>
+  <td class="code"> </td>
+  <td class="heart">though, through, tough, rough, enough, cough, thought, bought, brought, dough</td>
+  <td class="new"><span class="count">10</span><span class='w h' title='rank 117 · heart'>through</span> <span class='w h' title='rank 124 · heart'>thought</span> <span class='w h' title='rank 309 · heart'>enough</span> <span class='w h' title='rank 521 · heart'>though</span> <span class='w h' title='rank 555 · heart'>brought</span> <span class='w h' title='rank 1278 · heart+s'>thoughts</span> <span class='w h' title='rank 1423 · heart'>tough</span> <span class='w h' title='rank 1501 · heart'>bought</span> <span class='w h' title='rank 2621 · heart'>dough</span> <span class='w h' title='rank 2817 · heart'>rough</span></td>
+  <td class="cum">2594</td>
+</tr>
+<tr>
+  <td class="n">97</td>
+  <td class="t">oe<div class="sub"></div></td>
+  <td class="code"><span class='g'>oe <i>/ō/</i></span> </td>
+  <td class="heart">shoe, does</td>
+  <td class="new"><span class="count">6</span><span class='w' title='rank 1007 · decode'>joe</span> <span class='w h' title='rank 1480 · heart'>shoe</span> <span class='w' title='rank 1615 · decode'>toe</span> <span class='w' title='rank 1658 · decode'>zoe</span> <span class='w' title='rank 2141 · decode'>poem</span> <span class='w' title='rank 2651 · decode+ed'>tiptoed</span></td>
+  <td class="cum">2600</td>
+</tr>
+<tr>
+  <td class="n">98</td>
+  <td class="t">ey — both sounds<div class="sub"></div></td>
+  <td class="code"><span class='g'>ey <i>/ē/ /ā/</i></span> </td>
+  <td class="heart">their, eyes</td>
+  <td class="new"><span class="count">7</span><span class='w h' title='rank 64 · heart'>their</span> <span class='w' title='rank 460 · decode'>turkey</span> <span class='w' title='rank 589 · decode'>monkey</span> <span class='w' title='rank 638 · decode'>honey</span> <span class='w' title='rank 917 · decode'>money</span> <span class='w' title='rank 1294 · decode'>mickey</span> <span class='w' title='rank 1563 · decode'>chimney</span></td>
+  <td class="cum">2607</td>
+</tr>
+<tr>
+  <td class="n">99</td>
+  <td class="t">Module 9 Review<div class="sub"></div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">2607</td>
+</tr>
+<tr>
+  <td class="n">100</td>
+  <td class="t">Just-Read Day IV<div class="sub">a real book + expression</div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">2607</td>
+</tr>
+<tr>
+  <td class="n">101</td>
+  <td class="t">kn<div class="sub">silent letters</div></td>
+  <td class="code"><span class='g'>kn <i>/n/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">11</span><span class='w' title='rank 81 · decode'>know</span> <span class='w' title='rank 224 · decode'>knew</span> <span class='w' title='rank 596 · decode'>knows</span> <span class='w' title='rank 1008 · decode'>knock</span> <span class='w' title='rank 1204 · decode'>known</span> <span class='w' title='rank 1243 · decode'>knees</span> <span class='w' title='rank 1509 · decode+ed'>knocked</span> <span class='w' title='rank 2268 · decode'>knit</span> <span class='w' title='rank 2407 · decode'>knits</span> <span class='w' title='rank 2489 · decode+ing'>knowing</span> <span class='w' title='rank 2802 · decode'>knee</span></td>
+  <td class="cum">2618</td>
+</tr>
+<tr>
+  <td class="n">102</td>
+  <td class="t">wr<div class="sub">silent letters</div></td>
+  <td class="code"><span class='g'>wr <i>/r/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">7</span><span class='w' title='rank 545 · decode'>wrong</span> <span class='w' title='rank 892 · decode'>wrote</span> <span class='w' title='rank 1029 · decode'>write</span> <span class='w' title='rank 1499 · decode+ed'>wrapped</span> <span class='w' title='rank 1626 · decode+ing'>writing</span> <span class='w' title='rank 1852 · decode'>written</span> <span class='w' title='rank 2467 · decode'>wrap</span></td>
+  <td class="cum">2625</td>
+</tr>
+<tr>
+  <td class="n">103</td>
+  <td class="t">mb<div class="sub">silent letters</div></td>
+  <td class="code"><span class='g'>mb <i>/m/</i></span> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">5</span><span class='w' title='rank 769 · decode+ed'>climbed</span> <span class='w' title='rank 804 · decode'>climb</span> <span class='w' title='rank 1581 · decode+ing'>climbing</span> <span class='w' title='rank 2786 · decode'>comb</span> <span class='w' title='rank 2909 · decode'>lamb</span></td>
+  <td class="cum">2630</td>
+</tr>
+<tr>
+  <td class="n">104</td>
+  <td class="t">Three-syllable words<div class="sub"></div></td>
+  <td class="code"> <span class='gate'>three-syllable</span></td>
+  <td class="heart">beautiful</td>
+  <td class="new"><span class="count">188</span><span class='w' title='rank 146 · decode'>everyone</span> <span class='w' title='rank 162 · decode'>every</span> <span class='w' title='rank 218 · decode'>family</span> <span class='w' title='rank 267 · decode'>favorite</span> <span class='w h' title='rank 274 · heart'>beautiful</span> <span class='w' title='rank 306 · compound'>everything</span> <span class='w' title='rank 311 · decode'>different</span> <span class='w' title='rank 324 · decode'>finally</span> <span class='w' title='rank 380 · decode'>remember</span> <span class='w' title='rank 387 · decode'>suddenly</span> <span class='w' title='rank 395 · decode'>animals</span> <span class='w' title='rank 399 · decode'>leprechaun</span> <span class='w' title='rank 466 · decode'>wonderful</span> <span class='w' title='rank 548 · compound'>thanksgiving</span> <span class='w' title='rank 553 · decode'>important</span> <span class='w' title='rank 575 · decode'>gingerbread</span> <span class='w' title='rank 586 · contraction'>valentine's</span> <span class='w' title='rank 619 · decode'>halloween</span> <span class='w' title='rank 639 · decode'>everybody</span> <span class='w' title='rank 645 · decode'>valentine</span> <span class='w' title='rank 659 · decode'>everywhere</span> <span class='w' title='rank 705 · decode'>already</span> <span class='w' title='rank 737 · decode'>chocolate</span> <span class='w' title='rank 761 · decode'>nobody</span> <span class='w' title='rank 824 · decode'>lovely</span> <span class='w' title='rank 836 · decode'>elephant</span> <span class='w' title='rank 849 · decode'>excellent</span> <span class='w' title='rank 854 · decode'>understand</span> <span class='w' title='rank 867 · decode'>president</span> <span class='w' title='rank 885 · decode'>afternoon</span> <span class='w' title='rank 894 · decode'>grandfather</span> <span class='w' title='rank 901 · decode'>unicorn</span> <span class='w' title='rank 935 · decode'>magical</span> <span class='w' title='rank 943 · decode'>imagine</span> <span class='w' title='rank 964 · decode'>underwear</span> <span class='w' title='rank 967 · decode'>celebrate</span> <span class='w' title='rank 1010 · decode'>wherever</span> <span class='w' title='rank 1023 · decode'>carefully</span> <span class='w' title='rank 1037 · decode'>enormous</span> <span class='w' title='rank 1059 · decode'>exactly</span> <span class='w' title='rank 1062 · decode'>potato</span> <span class='w' title='rank 1071 · decode'>animal</span> <span class='w' title='rank 1086 · decode+ed'>continued</span> <span class='w' title='rank 1096 · decode'>probably</span> <span class='w' title='rank 1102 · decode+ed'>remembered</span> <span class='w' title='rank 1126 · compound'>actually</span> <span class='w' title='rank 1133 · decode+es'>valentines</span> <span class='w' title='rank 1136 · decode'>butterfly</span> <span class='w' title='rank 1161 · decode'>holiday</span> <span class='w' title='rank 1164 · decode'>adventure</span> <span class='more'>+138 more</span></td>
+  <td class="cum">2818</td>
+</tr>
+<tr>
+  <td class="n">105</td>
+  <td class="t">Choose your own book<div class="sub">the library bridge</div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">2818</td>
+</tr>
+<tr>
+  <td class="n">106</td>
+  <td class="t">Cumulative Review<div class="sub"></div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">2818</td>
+</tr>
+<tr>
+  <td class="n">107</td>
+  <td class="t">Graduation 🎓<div class="sub"></div></td>
+  <td class="code"> </td>
+  <td class="heart"></td>
+  <td class="new"><span class="count">0</span></td>
+  <td class="cum">2818</td>
+</tr>
+</table>
+</body>
+</html>
