@@ -1,0 +1,196 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "Today is a review day. That means today, we're going to play lots of reading games! Hooray, hooray!",
+      "Instead of learning new letters and sounds, we will review the letters, sounds, and words you've already learned.",
+      {
+        "type": "instruction",
+        "value": "Keep this playful. This review is a check-in to help you decide whether {name} is ready for Module 3 or if it would be more helpful to repeat Module 2."
+      }
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "pre": {
+      "value": {
+        "type": "verbal",
+        "value": "First up, let's play a round of **Eagle Eyes**."
+      }
+    },
+    "sets": [
+      {
+        "grapheme": "E",
+        "graphemes": ["F", "L"],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "H",
+        "graphemes": ["N", "M"],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "L",
+        "graphemes": ["I", "T"],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "C",
+        "graphemes": ["O", "G"],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "U",
+        "graphemes": ["O", "C"],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "R",
+        "graphemes": ["P", "B"],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "Z",
+        "graphemes": ["N", "S"],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "lost-sounds",
+    "graphemes": ["E", "H", "L", "C", "U", "R", "Z", "S", "A", "G"],
+    "randomize": true
+  },
+  {
+    "type": "card-stack",
+    "values": ["I", "A", "THE"],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": "Let's practice our three heart words. Read the words on the cards one at a time."
+        }
+      ]
+    }
+  },
+  {
+    "type": "card-stack",
+    "values": ["HATS", "DIGS", "CUPS", "BEDS"],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": "These words all end in the letter S. Read each word, and use a **Buzz Check** to decide which sound the S makes."
+        },
+        {
+          "type": "instruction",
+          "value": "Have {name} say the sound right before the S while touching their throat. Buzzer on means the S buzzes too."
+        }
+      ]
+    }
+  },
+  {
+    "type": "word-to-picture",
+    "sets": [
+      {
+        "word": "BED",
+        "words": ["hat", "car"]
+      },
+      {
+        "word": "HOG",
+        "words": ["car", "dog"]
+      },
+      {
+        "word": "LOG",
+        "words": ["nest", "dog"]
+      },
+      {
+        "word": "LAMP",
+        "words": ["bowl", "ladder"]
+      },
+      {
+        "word": "CAP",
+        "words": ["bowl", "nest"]
+      },
+      {
+        "word": "BUS",
+        "words": ["airplane", "car"]
+      },
+      {
+        "word": "RED",
+        "words": ["blue", "yellow"]
+      },
+      {
+        "word": "SLED",
+        "words": ["car", "helicopter"]
+      },
+      {
+        "word": "NEST",
+        "words": ["barn", "bed"]
+      },
+      {
+        "word": "DOTS",
+        "words": ["dot", "pan"]
+      }
+    ]
+  },
+  {
+    "type": "books",
+    "books": [52225, 52226, 52227, 52229, 52231, 52230, 52232, 52233, 52234],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": "Here are all the books you read in Module 2."
+        },
+        {
+          "type": "verbal",
+          "value": "Would you like to reread any of them?"
+        },
+        {
+          "type": "instruction",
+          "value": "Rereading is great practice. Encourage {name} to choose at least one book."
+        }
+      ]
+    }
+  },
+  {
+    "type": "custom",
+    "confetti": true,
+    "value": [
+      {
+        "type": "verbal",
+        "value": "You finished the Module 2 review games. Great work!"
+      },
+      {
+        "type": "instruction",
+        "value": "If {name} read most words and matched most sounds with only light prompting, they are probably ready for Module 3. If many items needed heavy support, we recommend repeating Module 2 before moving on."
+      }
+    ]
+  },
+  {
+    "type": "conclusion",
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "Great job {name}! You completed the review lesson!"
+        }
+      ]
+    }
+  }
+]

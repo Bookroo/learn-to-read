@@ -1,0 +1,406 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn one new letter and one new sound.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "Y",
+        "phoneme": "/y/",
+        "graphemes": [
+          "V",
+          "T"
+        ],
+        "choices": [
+          "Y",
+          "V",
+          "T"
+        ]
+      },
+      {
+        "grapheme": "U",
+        "phoneme": "/u/",
+        "graphemes": [
+          "E",
+          "O"
+        ],
+        "choices": [
+          "U",
+          "E",
+          "O"
+        ]
+      },
+      {
+        "grapheme": "C",
+        "phoneme": "/k/",
+        "graphemes": [
+          "S",
+          "P"
+        ],
+        "choices": [
+          "C",
+          "S",
+          "P"
+        ]
+      },
+      {
+        "grapheme": "A",
+        "phoneme": "/a/",
+        "graphemes": [
+          "E",
+          "I"
+        ],
+        "choices": [
+          "A",
+          "E",
+          "I"
+        ]
+      },
+      {
+        "grapheme": "H",
+        "phoneme": "/h/",
+        "graphemes": [
+          "F",
+          "G"
+        ],
+        "choices": [
+          "H",
+          "F",
+          "G"
+        ]
+      },
+      {
+        "grapheme": "E",
+        "phoneme": "/e/",
+        "graphemes": [
+          "A",
+          "U"
+        ],
+        "choices": [
+          "E",
+          "A",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "M",
+        "graphemes": [
+          "N",
+          "R"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "R",
+        "graphemes": [
+          "M",
+          "Q"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "U",
+        "graphemes": [
+          "A",
+          "O"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "R",
+        "graphemes": [
+          "V",
+          "P"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "grapheme-recall",
+    "grapheme": "Z",
+    "variant": "new-letter"
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "Z",
+    "traceOnly": true
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "Z"
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "Z",
+        "graphemes": [
+          "V",
+          "N"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "Z",
+    "phoneme": "/z/"
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/z/",
+    "words": [
+      [
+        [
+          "z",
+          "/z/"
+        ],
+        [
+          "e",
+          "/e/"
+        ],
+        [
+          "b",
+          "/b/"
+        ],
+        [
+          "r",
+          "/r/"
+        ],
+        [
+          "a",
+          "/a/"
+        ]
+      ],
+      [
+        [
+          "ch",
+          "/ch/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "p",
+          "/p/"
+        ]
+      ],
+      [
+        [
+          "z",
+          "/z/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "p",
+          "/p/"
+        ],
+        [
+          "s",
+          "/s/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 18 letters now and 19 sounds!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy again!"
+      },
+      {
+        "type": "instruction",
+        "value": [
+          "On the next slide, we'll practice ",
+          {
+            "type": "link",
+            "value": "Finger Words",
+            "href": "https://www.youtube.com/watch?v=OYU6RDoPgWo"
+          },
+          " step by step, but if you need a refresher, you can click on the link to watch the video again."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "ZIPS",
+    "phonemes": [
+      "/z/",
+      "/i/",
+      "/p/",
+      "/s/"
+    ],
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "Use **Imaginary Finger Words** to read this word."
+        },
+        {
+          "index": 1,
+          "value": "In your mind, assign each letter to an imaginary finger. Then check for any sticky sounds, and if you find any, stick those fingers together in your mind."
+        },
+        {
+          "index": 2,
+          "value": "Say the sound each letter (or finger pair) makes."
+        }
+      ]
+    },
+    "post": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "If there are stickable sounds, stick them together in your mind, then say the sounds again."
+        },
+        {
+          "index": 1,
+          "value": "Blend the sounds together, like you would do on your knuckles."
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "ZAP",
+    "phonemes": [
+      "/z/",
+      "/a/",
+      "/p/"
+    ],
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "Use **Imaginary Finger Words** to read this word."
+        },
+        {
+          "index": 1,
+          "value": "In your mind, assign each letter to an imaginary finger. Then check for any sticky sounds, and if you find any, stick those fingers together in your mind."
+        },
+        {
+          "index": 2,
+          "value": "Say the sound each letter (or finger pair) makes."
+        }
+      ]
+    },
+    "post": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "If there are stickable sounds, stick them together in your mind, then say the sounds again."
+        },
+        {
+          "index": 1,
+          "value": "Blend the sounds together, like you would do on your knuckles."
+        }
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "GULP",
+    "phonemes": [
+      "/g/",
+      "/u/",
+      "/l/",
+      "/p/"
+    ],
+    "pre": {
+      "replace": [
+        {
+          "index": 2,
+          "value": "If there are sticky sounds, stick them together, then say the sound each finger or finger pair makes."
+        }
+      ]
+    }
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "ZAP",
+      "ZIP",
+      "ZIG",
+      "ZAG"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "I",
+      "a",
+      "the",
+      "has",
+      "pets",
+      "his",
+      "in",
+      "did",
+      "on",
+      "not",
+      "top",
+      "is",
+      "it",
+      "sit",
+      "at",
+      "an",
+      "big",
+      "dog",
+      "digs",
+      "past",
+      "stop",
+      "bed",
+      "get"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "I CAN ZIG AND ZAG!"
+  },
+  {
+    "type": "books",
+    "books": [
+      52234
+    ]
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]
