@@ -93,7 +93,7 @@
         },
         {
           "type": "instruction",
-          "value": "Starting in Lesson 30, we'll also include lowercase letters."
+          "value": "Later in the course, we'll also include lowercase letters."
         }
       ]
     }
@@ -145,7 +145,7 @@
           "type": "verbal",
           "value": [
             "We're going to play a game called ",
-            "**Elephant Ears**",
+            "**Letter Setter**",
             " with the ",
             {
               "type": "sound",

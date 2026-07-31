@@ -32,7 +32,7 @@ def slugify(title):
 # Reviews / fluency / graduation lessons unlock nothing and may be omitted.
 # ---------------------------------------------------------------------------
 CODE = {
-    "m-a-t": {"g": [["m", "/m/"], ["a", "/ă/"], ["t", "/t/"]]},
+    "m-t-a": {"g": [["m", "/m/"], ["t", "/t/"], ["a", "/ă/"]]},
     "s": {"g": [["s", "/s/"]]},
     "p": {"g": [["p", "/p/"]]},
     "i": {"g": [["i", "/ĭ/"]]},

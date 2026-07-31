@@ -2,8 +2,8 @@
   "lessons": [
     {
       "n": 1,
-      "slug": "m-a-t",
-      "title": "m, a, t",
+      "slug": "m-t-a",
+      "title": "m, t, a",
       "module": 1,
       "module_title": "First Letters, First Words",
       "tags": ["letter"],
@@ -15,7 +15,7 @@
         },
         {
           "kind": "exercise",
-          "name": "Elephant Ears"
+          "name": "Letter Setter"
         },
         {
           "kind": "exercise",
@@ -26,8 +26,8 @@
       "heart": [],
       "graphemes": [
         ["m", "/m/"],
-        ["a", "/ă/"],
-        ["t", "/t/"]
+        ["t", "/t/"],
+        ["a", "/ă/"]
       ],
       "gates": []
     },
@@ -1932,7 +1932,7 @@
     },
     {
       "kind": "exercise",
-      "name": "Elephant Ears",
+      "name": "Letter Setter",
       "how": "Say a word aloud. The reader gives a thumbs-up if it contains the target sound and a thumbs-down if it does not."
     },
     {

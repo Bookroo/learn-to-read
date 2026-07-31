@@ -687,6 +687,10 @@
     ]
   },
   {
+    "type": "books",
+    "books": []
+  },
+  {
     "type": "teach-tam",
     "value": "PAN"
   },
