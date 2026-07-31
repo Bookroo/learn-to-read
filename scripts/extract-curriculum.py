@@ -201,10 +201,9 @@ def parse_extras(html, lessons):
     slug_by_num = {l["n"]: l["slug"] for l in lessons}
     extras = {}
     extras["rules"] = [
-        {"title": clean(t), "text": clean(s)}
+        {"title": clean(t).rstrip("."), "text": clean(s)}
         for t, s in re.findall(
-            r'<div class="rule">\s*<b>(.*?)</b\s*>\s*<span\s*>(.*?)</span',
-            html, re.S)
+            r'<li><b>(.*?)</b\s*>\s*(.*?)</li>', html, re.S)
     ]
     extras["modules"] = [
         {"n": int(n), "title": clean(t), "theme": clean(theme)}

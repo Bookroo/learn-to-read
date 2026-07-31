@@ -329,9 +329,8 @@ def main():
                 f'<span class="w">{esc(row["word"])}</span>'
                 f'<span class="f">{int(row["raw_freq"]):,}</span></span>')
 
-    rules_html = "".join(
-        f'        <div class="rule">\n          <b>{esc(r["title"])}</b>'
-        f'<span>{esc(r["text"])}</span>\n        </div>\n'
+    notes_html = "\n".join(
+        f'          <li><b>{esc(r["title"])}.</b> {esc(r["text"])}</li>'
         for r in data["rules"])
 
     max_mod = max(m["n"] for m in data["modules"])
@@ -350,9 +349,6 @@ def main():
         <p class="meta">Generated from data/curriculum.json — edit that file
         and run scripts/build-module-order.py; do not edit this HTML.</p>
       </header>
-
-      <div class="rules">
-{rules_html}      </div>
 
 {chr(10).join(modules_html)}
 
@@ -411,6 +407,13 @@ def main():
 {chr(10).join(left_rows)}
           </tbody>
         </table>
+      </section>
+
+      <section class="prose">
+        <h2>Notes</h2>
+        <ul>
+{notes_html}
+        </ul>
       </section>
 
       <section class="prose" style="max-width: none">

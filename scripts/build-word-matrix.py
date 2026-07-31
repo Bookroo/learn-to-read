@@ -18,64 +18,15 @@ Writes: WORD_MATRIX.csv, WORD_MATRIX.html
 """
 
 import csv
-import glob
 import json
 import os
-import re
 import sys
 from collections import Counter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from availability import load as load_curriculum  # noqa: E402
-
-WORD_RE = re.compile(r"[a-z]+(?:['’][a-z]+)*")
-
-
-def norm(word):
-    """Lowercase and keep only letters/internal apostrophes."""
-    m = WORD_RE.search(str(word).lower().replace("’", "'"))
-    return m.group(0) if m else None
-
-
-def tokenize(text):
-    return WORD_RE.findall(str(text).lower().replace("’", "'"))
-
-
-def words_in_slide(slide):
-    """Yield (word, is_reading) for each practiced-word occurrence.
-
-    Counted: words the child reads, blends, or listens for; is_reading is
-    False for listening-only exercises (the word need not be decodable yet).
-    Not counted: distractor picture labels, parent script, book ids.
-    """
-    t = slide.get("type")
-    if t in ("finger-word", "touch-slide", "picture-to-word"):
-        yield norm(slide["word"]), True
-    elif t == "word-to-picture":
-        for s in slide.get("sets", []):
-            yield norm(s["word"]), True
-    elif t == "sound-pick-word-stack":
-        for entry in slide.get("words", []):
-            yield norm("".join(g for g, _ in entry)), True
-    elif t in ("card-stack",):
-        for w in slide.get("values", []):
-            yield norm(w), True
-    elif t in ("brain-words", "word-chain"):
-        for w in slide.get("words", []):
-            yield norm(w), True
-    elif t == "sound-at-position":
-        # Elephant Ears — the child listens for the sound, no reading.
-        for w in slide.get("words", []):
-            yield norm(w["word"]), False
-    elif t == "story-words":
-        # The parent reads the story; the child only finds the target words.
-        targets = {norm(w) for w in slide.get("words", [])}
-        for tok in tokenize(slide.get("story", "")):
-            if tok in targets:
-                yield tok, True
-    elif t == "reading-fluency":
-        yield from ((tok, True) for tok in tokenize(slide.get("text", "")))
+from practice_counts import load_lesson_files, load_lesson_map  # noqa: E402
 
 
 def main():
@@ -83,36 +34,20 @@ def main():
     dolch = set(json.load(open(
         os.path.join(ROOT, "data", "curriculum.json")))["dolch_pre_k"])
     slug_to_n = {l["slug"]: l["n"] for l in cur.lessons}
-    lesson_map = {
-        int(k): v for k, v in json.load(open(
-            os.path.join(ROOT, "data", "lesson-map.json"))).items()
-        if not k.startswith("_")
-    }
+    lesson_map = load_lesson_map(ROOT)
 
     ranks = {}
     with open(os.path.join(ROOT, "data", "cpb-top-500.csv")) as f:
         for row in csv.DictReader(f):
             ranks[row["word"].lower()] = int(row["rank"])
 
-    lesson_files = sorted(
-        glob.glob(os.path.join(ROOT, "lessons", "lesson-*.json")),
-        key=lambda p: int(re.search(r"(\d+)", os.path.basename(p)).group(1)),
-    )
-    lessons = []  # (file_number, curriculum_number, Counter)
-    for path in lesson_files:
-        number = int(re.search(r"(\d+)", os.path.basename(path)).group(1))
+    lessons = []  # (file_number, curriculum_number, counts, read_counts)
+    for number, counts, read_counts, _ in load_lesson_files(ROOT):
         slug = lesson_map.get(number)
         if slug is None:
             print(f"WARNING: lesson-{number}.json has no entry in "
                   f"data/lesson-map.json; assuming curriculum lesson {number}")
         cur_n = slug_to_n[slug] if slug else number
-        counts, read_counts = Counter(), Counter()
-        for slide in json.load(open(path)):
-            for w, is_reading in words_in_slide(slide):
-                if w:
-                    counts[w] += 1
-                    if is_reading:
-                        read_counts[w] += 1
         lessons.append((number, cur_n, counts, read_counts))
 
     practiced = Counter()

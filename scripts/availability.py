@@ -374,10 +374,52 @@ def check(cur):
     return bad
 
 
+def esc_js(s):
+    return str(s).replace("\\", "\\\\").replace("'", "\\'").replace('"', "&quot;")
+
+
+def load_used(cur):
+    """Practice data from drafted Module 1 lesson files only (later modules
+    are not cleaned up yet). Returns ({curriculum_n: Counter}, issues) where
+    issues lists (curriculum_n, word, slide_types, avail) for words READ
+    before they are readable."""
+    from practice_counts import load_lesson_files, load_lesson_map
+    lesson_map = load_lesson_map(ROOT)
+    slug_to_lesson = {l["slug"]: l for l in cur.lessons}
+    used = {}
+    issues = []
+    for number, counts, _read, reading_slides in load_lesson_files(ROOT):
+        slug = lesson_map.get(number)
+        lesson = slug_to_lesson.get(slug) if slug else None
+        if lesson is None or lesson["module"] != 1:
+            continue
+        n = lesson["n"]
+        used[n] = counts
+        for w, types in reading_slides.items():
+            avail, _ = cur.first_available(w)
+            if avail is None or avail > n:
+                issues.append((n, w, sorted(set(types)), avail))
+    return used, issues
+
+
 def build_html(cur):
     counts = cur.availability_by_lesson(list(cur.ranks))
+    used, issues = load_used(cur)
+    used_any = set()
+    for c in used.values():
+        used_any.update(c)
+
+    # word data for the modal: [word, rank, first-available lesson, used]
+    word_data = sorted(
+        ((w, cur.ranks.get(w), n) for n, lst in counts.items() for w, _, _ in lst),
+        key=lambda t: (t[1] is None, t[1], t[0]))
+    words_json = json.dumps(
+        [[w, r, n, 1 if w in used_any else 0] for w, r, n in word_data],
+        ensure_ascii=False, separators=(",", ":"))
+
     total = 0
     body = []
+    INLINE = 18
     for l in cur.lessons:
         new = counts[l["n"]]
         total += len(new)
@@ -385,13 +427,30 @@ def build_html(cur):
             f"<span class='g'>{g} <i>{p}</i></span>" for g, p in l["graphemes"])
         gates = " ".join(f"<span class='gate'>{x}</span>" for x in l["gates"])
         heart = ", ".join(l["heart"])
-        shown = new[:50]
         words = " ".join(
-            f"<span class='w{' h' if how.startswith('heart') else ''}'"
+            f"<span class='w{' h' if how.startswith('heart') else ''}"
+            f"{' u' if w in used_any else ''}'"
             f" title='{'rank ' + str(rank) if rank else 'unranked'} · {how}'>"
-            f"{w}</span>"
-            for w, rank, how in shown)
-        more = f" <span class='more'>+{len(new) - 50} more</span>" if len(new) > 50 else ""
+            f"{w}{'<b>✓</b>' if w in used_any else ''}</span>"
+            for w, rank, how in new[:INLINE])
+        more = (f" <button class='more' onclick=\"openModal({l['n']}, "
+                f"'Lesson {l['n']} — {esc_js(l['title'])}')\">all {total} available →</button>")
+        lesson_used = used.get(l["n"])
+        if lesson_used is not None:
+            used_words = []
+            for w, c in sorted(lesson_used.items(),
+                               key=lambda t: (cur.ranks.get(t[0]) is None,
+                                              cur.ranks.get(t[0]), t[0])):
+                avail, _ = cur.first_available(w)
+                early = avail is None or avail > l["n"]
+                sup = f"<i>×{c}</i>" if c > 1 else ""
+                used_words.append(
+                    f"<span class='w{' bad' if early else ''}'"
+                    f" title='{'rank ' + str(cur.ranks[w]) if w in cur.ranks else 'unranked'}"
+                    f" · available L{avail if avail else '—'}'>{w}{sup}</span>")
+            used_html = f"<span class='count'>{len(lesson_used)}</span>" + " ".join(used_words)
+        else:
+            used_html = "<span class='none'>—</span>"
         body.append(f"""
 <tr>
   <td class="n">{l['n']}</td>
@@ -399,7 +458,7 @@ def build_html(cur):
   <td class="code">{chips} {gates}</td>
   <td class="heart">{heart}</td>
   <td class="new"><span class="count">{len(new)}</span>{words}{more}</td>
-  <td class="cum">{total}</td>
+  <td class="used">{used_html}</td>
 </tr>""")
 
     html = f"""<!DOCTYPE html>
@@ -431,24 +490,67 @@ def build_html(cur):
   td.new {{ line-height: 1.9; }}
   .count {{ display: inline-block; min-width: 26px; margin-right: 8px;
             color: #8a938c; font-weight: 700; font-variant-numeric: tabular-nums; }}
-  .w {{ background: #f4f2ec; border-radius: 5px; padding: 1px 6px; margin: 1px; }}
+  .w {{ background: #f4f2ec; border-radius: 5px; padding: 1px 6px; margin: 1px;
+        white-space: nowrap; display: inline-block; }}
   .w.h {{ background: #fbeef4; color: #cf3f7c; }}
-  .more {{ color: #8a938c; font-size: 12px; }}
-  td.cum {{ color: #8a938c; text-align: right; font-variant-numeric: tabular-nums; }}
+  .w.u b {{ color: #2e6f52; font-weight: 700; margin-left: 2px; }}
+  .w.bad {{ background: #fdecec; color: #b3382c; font-weight: 600; }}
+  .w i {{ color: #8a938c; font-style: normal; font-size: 11px; }}
+  .more {{ color: #2e6f52; font-size: 12px; background: none; border: none;
+           cursor: pointer; text-decoration: underline; padding: 0; }}
+  td.used {{ line-height: 1.9; min-width: 180px; }}
+  dialog {{ border: 1px solid #d6d1c4; border-radius: 12px; padding: 0;
+            max-width: 860px; width: 90vw; max-height: 80vh; }}
+  dialog::backdrop {{ background: rgba(30, 40, 34, 0.35); }}
+  .dlg-head {{ display: flex; justify-content: space-between; align-items: center;
+               padding: 14px 18px; border-bottom: 1px solid #e6e2d8;
+               position: sticky; top: 0; background: #fff; }}
+  .dlg-head h2 {{ font-size: 16px; margin: 0; }}
+  .dlg-head button {{ background: none; border: none; font-size: 20px;
+                      cursor: pointer; color: #8a938c; }}
+  .dlg-body {{ padding: 14px 18px 18px; overflow: auto; line-height: 2.1;
+               max-height: calc(80vh - 60px); }}
+  .dlg-body .legend {{ color: #8a938c; font-size: 12px; margin-bottom: 10px;
+                       line-height: 1.5; }}
 </style>
 </head>
 <body>
 <h1>Lesson Availability</h1>
 <p class="sub">For each lesson: the grapheme–phoneme code and strategy gates it
-unlocks, its heart words, and the CPB top-3,000 words that become readable at
-that lesson (max 50 shown, ordered by rank; pink = via heart word). Generated
-from <code>data/curriculum.json</code> — regenerate with
+unlocks, its heart words, the CPB top-3,000 words that become readable at that
+lesson (first {INLINE} shown by rank; pink = via heart word;
+<b style="color:#2e6f52">✓</b> = used in a drafted lesson), and the words the
+drafted lesson actually practices (<span style="color:#b3382c">red</span> =
+practiced before readable). Used-word data covers Module 1 files only — later
+drafts aren't cleaned up yet. Click “all N available” for the full word bank
+with ranks. Generated from <code>data/curriculum.json</code> — regenerate with
 <code>python3 scripts/availability.py</code>.</p>
 <table>
 <tr><th>#</th><th>Lesson</th><th>New code</th><th>Heart words</th>
-<th>Newly available words</th><th>Cum.</th></tr>
+<th>Available words</th><th>Used words</th></tr>
 {''.join(body)}
 </table>
+<dialog id="dlg">
+  <div class="dlg-head"><h2 id="dlg-title"></h2>
+    <button onclick="document.getElementById('dlg').close()">✕</button></div>
+  <div class="dlg-body" id="dlg-body"></div>
+</dialog>
+<script>
+const WORDS = {words_json};
+function openModal(n, label) {{
+  const items = WORDS.filter(w => w[2] <= n);
+  document.getElementById('dlg-title').textContent =
+    label + ' — ' + items.length + ' words available';
+  document.getElementById('dlg-body').innerHTML =
+    '<div class="legend">Sorted by CPB rank. <b style="color:#2e6f52">✓</b> = ' +
+    'used in a drafted lesson (Module 1 files only). Number = CPB rank.</div>' +
+    items.map(([w, r, a, u]) =>
+      '<span class="w' + (u ? ' u' : '') + '" title="available at L' + a + '">' +
+      '<i>' + (r ?? '·') + '</i> ' + w + (u ? '<b>✓</b>' : '') + '</span>'
+    ).join(' ');
+  document.getElementById('dlg').showModal();
+}}
+</script>
 </body>
 </html>"""
     out = os.path.join(ROOT, "LESSON_AVAILABILITY.html")
