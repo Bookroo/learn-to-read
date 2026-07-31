@@ -55,10 +55,11 @@
     ]
   },
   {
-    "type": "grapheme-introduce",
+    "type": "grapheme-recall",
     "grapheme": "M",
+    "variant": "new-letter",
     "pre": {
-      "prepend": [
+      "value": [
         {
           "type": "instruction",
           "value": "Point to the large letter M."
@@ -73,7 +74,8 @@
             },
             " sound."
           ]
-        }
+        },
+        "This is the letter M."
       ]
     }
   },
@@ -192,10 +194,11 @@
     ]
   },
   {
-    "type": "grapheme-introduce",
+    "type": "grapheme-recall",
     "grapheme": "T",
+    "variant": "new-letter",
     "pre": {
-      "prepend": ["Good work! Now it’s time for another letter."]
+      "value": ["Good work! Now it’s time for another letter.", "This is the letter T."]
     }
   },
   {
@@ -265,10 +268,11 @@
     ]
   },
   {
-    "type": "grapheme-introduce",
+    "type": "grapheme-recall",
     "grapheme": "A",
+    "variant": "new-letter",
     "pre": {
-      "prepend": ["Great job! Let’s try one more letter."]
+      "value": ["Great job! Let’s try one more letter.", "This is the letter A."]
     }
   },
   {

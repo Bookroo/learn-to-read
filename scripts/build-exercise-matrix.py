@@ -31,7 +31,6 @@ def exercise_name(slide):
         return ("Introduce Letter" if slide.get("variant") == "new-letter"
                 else "Letter Recall")
     named = {
-        "grapheme-introduce": "Introduce Letter",
         "grapheme-trace-air": "Letter Formation",
         "grapheme-trace-palm": "Letter Formation",
         "grapheme-hand-shape": "Hand Shapes",
