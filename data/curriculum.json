@@ -15,7 +15,7 @@
         },
         {
           "kind": "exercise",
-          "name": "Letter Setter"
+          "name": "Elephant Ears"
         },
         {
           "kind": "exercise",
@@ -40,7 +40,9 @@
       "module_title": "First Letters, First Words",
       "tags": ["letter"],
       "detail": "",
-      "intros": [],
+      "intros": [
+        { "kind": "exercise", "name": "Letter Setter" }
+      ],
       "examples": ["sat, Sam, mats"],
       "heart": [],
       "graphemes": [["s", "/s/"]],
@@ -1932,8 +1934,13 @@
     },
     {
       "kind": "exercise",
-      "name": "Letter Setter",
+      "name": "Elephant Ears",
       "how": "Say a word aloud. The reader gives a thumbs-up if it contains the target sound and a thumbs-down if it does not."
+    },
+    {
+      "kind": "exercise",
+      "name": "Letter Setter",
+      "how": "Hear a sound and say which letter makes it, then reveal the letter choices and point to the answer."
     },
     {
       "kind": "exercise",
