@@ -139,11 +139,8 @@
     ]
   },
   {
-    "type": "touch-slide",
-    "word": "I",
-    "phonemes": [
-      "/I/"
-    ],
+    "type": "card-stack",
+    "values": ["I"],
     "pre": {
       "value": [
         "Our first heart word is the word ‘I’.",
@@ -190,11 +187,8 @@
     }
   },
   {
-    "type": "touch-slide",
-    "word": "A",
-    "phonemes": [
-      "/A/"
-    ],
+    "type": "card-stack",
+    "values": ["A"],
     "pre": {
       "value": [
         {
@@ -257,11 +251,8 @@
     }
   },
   {
-    "type": "touch-slide",
-    "word": "THE",
-    "phonemes": [
-      "/i/"
-    ],
+    "type": "card-stack",
+    "values": ["THE"],
     "pre": {
       "value": [
         "It's time for one final heart word! Our last heart word is the word ‘the’.",

@@ -32,7 +32,7 @@ def words_in_slide(slide):
     Not counted: distractor picture labels, parent script, book ids.
     """
     t = slide.get("type")
-    if t in ("finger-word", "touch-slide", "picture-to-word"):
+    if t in ("finger-word", "picture-to-word"):
         yield norm(slide["word"]), True
     elif t == "word-to-picture":
         for s in slide.get("sets", []):

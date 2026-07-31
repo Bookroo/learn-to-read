@@ -9,7 +9,7 @@ use; a red ring means curriculum.json introduces the exercise (intro chip)
 at a different lesson than its actual first use.
 
 Usage:  python3 scripts/build-exercise-matrix.py
-Reads:  lessons/lesson-*.json, data/curriculum.json, data/lesson-map.json
+Reads:  lessons/lesson-*.json, data/curriculum.json
 Writes: EXERCISE_MATRIX.html
 """
 
@@ -43,7 +43,6 @@ def exercise_name(slide):
         "sound-train": "Sound Train",
         "phoneme-blending": "Sound Detective",
         "finger-word": "Finger Words",
-        "touch-slide": "Finger Words",  # Touch & Slide was replaced by Finger Words
         "word-to-picture": "Picture Quest" if multi else "Word to Picture",
         "picture-to-word": "Picture to Word",
         "word-chain": "Word Chains",
