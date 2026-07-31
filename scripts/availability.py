@@ -320,8 +320,23 @@ class Curriculum:
         return out
 
 
+LESSON_DEFAULTS = {"sub": "", "detail": "", "tags": [], "intros": [],
+                   "examples": [], "heart": [], "graphemes": [], "gates": []}
+
+
+def normalize_lessons(lessons):
+    """Fill optional lesson fields so hand-edited curriculum.json entries
+    may omit them."""
+    for i, l in enumerate(lessons):
+        l["n"] = i + 1  # numbers always derive from order
+        for k, v in LESSON_DEFAULTS.items():
+            l.setdefault(k, list(v) if isinstance(v, list) else v)
+    return lessons
+
+
 def load():
-    lessons = json.load(open(os.path.join(ROOT, "data", "curriculum.json")))["lessons"]
+    lessons = normalize_lessons(
+        json.load(open(os.path.join(ROOT, "data", "curriculum.json")))["lessons"])
     ranks = {}
     with open(os.path.join(ROOT, "data", "cpb-top-3000.csv")) as f:
         for row in csv.DictReader(f):

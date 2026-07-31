@@ -24,7 +24,7 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from availability import example_words  # noqa: E402
+from availability import example_words, normalize_lessons  # noqa: E402
 
 TAG_LABELS = {
     "letter": "Letter", "pattern": "Pattern", "concept": "Concept",
@@ -212,9 +212,7 @@ def esc(s):
 
 def main():
     data = json.load(open(os.path.join(ROOT, "data", "curriculum.json")))
-    lessons = data["lessons"]
-    for i, l in enumerate(lessons):
-        l["n"] = i + 1  # numbers always derive from order
+    lessons = normalize_lessons(data["lessons"])
     slug_to_n = {l["slug"]: l["n"] for l in lessons}
     dolch = set(data["dolch_pre_k"])
 
