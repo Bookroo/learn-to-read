@@ -82,7 +82,7 @@ status: Modules 1–2 are live, Module 3 is in draft, Modules 4–9 are scoped. 
 | RF.1.3.C | Know final -e and common vowel team conventions for representing long vowel sounds. | ○ | Silent-e concept, Module 4; vowel teams, Modules 6 and 9 |
 | RF.1.3.D | Use knowledge that every syllable must have a vowel sound to determine the number of syllables. | ○ | Module 5 (two-syllable work with Syllable Clap) |
 | RF.1.3.E | Decode two-syllable words following basic patterns by breaking the words into syllables. | ○ | Module 5 (compound words → two-syllable patterns → consonant-le) |
-| RF.1.3.F | Read words with inflectional endings. | ✓ | Ending in S taught as a meaning pattern (Lesson 11, live); -ed and -ing planned, Modules 4–5 |
+| RF.1.3.F | Read words with inflectional endings. | ✓ | Ending in S taught as a meaning pattern (Lesson 11, live); -ing in Module 3, -ed and doubling/drop-e bases in Module 5 |
 | RF.1.3.G | Recognize and read grade-appropriate irregularly spelled words. | ✓✓ | Heart Words protocol with a growing word track; mixed review keeps them warm |
 | RF.1.4.A | Read grade-level text with purpose and understanding. | ✓✓ | Decodable books with Comprehension Practice, every lesson |
 | RF.1.4.B | Read text orally with accuracy, appropriate rate, and expression on successive readings. | ✓✓ | Narrative Ninja: three reads — accurate → modeled → with expression (Lesson 17 on) |
@@ -114,7 +114,7 @@ status: Modules 1–2 are live, Module 3 is in draft, Modules 4–9 are scoped. 
 | RF.2.3.A | Distinguish long and short vowels when reading regularly spelled one-syllable words. | ○ | Module 4 (silent-e vs. short-vowel contrast) |
 | RF.2.3.B | Know spelling-sound correspondences for additional common vowel teams. | ○ | Modules 6 and 9 (ai, ea, oa, ou, oo… then alternate spellings) |
 | RF.2.3.C | Decode regularly spelled two-syllable words with long vowels. | ○ | Modules 5–6 |
-| RF.2.3.D | Decode words with common prefixes and suffixes. | ○ | Suffixes -s (live), -ed and -ing (Modules 4–5); prefixes un- and re- taught with two-syllable reading in Module 5 |
+| RF.2.3.D | Decode words with common prefixes and suffixes. | ○ | Suffixes -s (live), -ing (Module 3), -ed and doubling/drop-e bases (Module 5); prefixes un- and re- taught with two-syllable reading in Module 5 |
 | RF.2.3.E | Identify words with inconsistent but common spelling-sound correspondences. | ○ | Module 9 (ough and friends), built on the flexible-sounds strategy taught from Lesson 11 |
 | RF.2.3.F | Recognize and read grade-appropriate irregularly spelled words. | ✓ | The Heart Words track grows through every module |
 | RF.2.4.A–C | Read grade-level text with purpose, accuracy, rate, and expression; self-correct from context. | ○ | The routines (books + Comprehension Practice + Narrative Ninja + flexible sounds) are live today; grade-2-level texts arrive with Modules 6–9 |
