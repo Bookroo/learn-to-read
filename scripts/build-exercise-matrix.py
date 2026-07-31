@@ -26,9 +26,12 @@ def exercise_name(slide):
     """App-facing exercise label for a slide, or None for plumbing slides."""
     t = slide.get("type")
     multi = len(slide.get("sets", []) or []) > 1
+    if t == "grapheme-recall":
+        # the new-letter variant is the modern Introduce Letter
+        return ("Introduce Letter" if slide.get("variant") == "new-letter"
+                else "Letter Recall")
     named = {
         "grapheme-introduce": "Introduce Letter",
-        "grapheme-recall": "Letter Recall",
         "grapheme-trace-air": "Letter Formation",
         "grapheme-trace-palm": "Letter Formation",
         "grapheme-hand-shape": "Hand Shapes",
