@@ -20,7 +20,9 @@
         {
           "kind": "exercise",
           "name": "Teach Tam"
-        }
+        },
+        { "kind": "exercise", "name": "Letter Formation" },
+        { "kind": "concept", "name": "Sticky Sounds" }
       ],
       "examples": ["mat, am, at, Tam"],
       "heart": [],
@@ -41,7 +43,8 @@
       "tags": ["letter"],
       "detail": "",
       "intros": [
-        { "kind": "exercise", "name": "Letter Setter" }
+        { "kind": "exercise", "name": "Letter Setter" },
+        { "kind": "exercise", "name": "Eagle Eyes" }
       ],
       "examples": ["sat, Sam, mats"],
       "heart": [],
@@ -58,10 +61,7 @@
       "tags": ["letter"],
       "detail": "",
       "intros": [
-        {
-          "kind": "concept",
-          "name": "Sticky Sounds"
-        }
+        { "kind": "exercise", "name": "Lost Sounds" }
       ],
       "examples": ["pat, tap, map, Pam"],
       "heart": [],
@@ -77,7 +77,9 @@
       "module_title": "First Letters, First Words",
       "tags": ["letter"],
       "detail": "",
-      "intros": [],
+      "intros": [
+        { "kind": "exercise", "name": "Picture Quest" }
+      ],
       "examples": ["it, sit, pit, tip, sip"],
       "heart": [],
       "graphemes": [["i", "/ĭ/"]],
@@ -96,7 +98,8 @@
         {
           "kind": "exercise",
           "name": "Imaginary Finger Words"
-        }
+        },
+        { "kind": "exercise", "name": "Sound Train" }
       ],
       "examples": ["nap, pin, tin, man, an, in"],
       "heart": [],
@@ -1941,6 +1944,31 @@
       "kind": "exercise",
       "name": "Letter Setter",
       "how": "Hear a sound and say which letter makes it, then reveal the letter choices and point to the answer."
+    },
+    {
+      "kind": "exercise",
+      "name": "Letter Formation",
+      "how": "Watch each letter draw itself stroke by stroke, then trace it in the air and on a palm."
+    },
+    {
+      "kind": "exercise",
+      "name": "Eagle Eyes",
+      "how": "Find the target letter hiding among lookalike letters, again and again, faster and faster."
+    },
+    {
+      "kind": "exercise",
+      "name": "Lost Sounds",
+      "how": "The letters have lost their sounds! The reader gives each letter its sound back, rapid-fire."
+    },
+    {
+      "kind": "exercise",
+      "name": "Picture Quest",
+      "how": "Read the word, then find its picture — or see a picture and find its word."
+    },
+    {
+      "kind": "exercise",
+      "name": "Sound Train",
+      "how": "Is the sound at the start, middle, or end? The reader places the sound in its spot on the word."
     },
     {
       "kind": "exercise",
