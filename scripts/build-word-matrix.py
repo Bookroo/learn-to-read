@@ -26,16 +26,13 @@ from collections import Counter
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from availability import load as load_curriculum  # noqa: E402
-from practice_counts import load_lesson_files, load_lesson_map  # noqa: E402
+from practice_counts import load_lesson_files  # noqa: E402
 
 
 def main():
     cur = load_curriculum()
     dolch = set(json.load(open(
         os.path.join(ROOT, "data", "curriculum.json")))["dolch_pre_k"])
-    slug_to_n = {l["slug"]: l["n"] for l in cur.lessons}
-    lesson_map = load_lesson_map(ROOT)
-
     ranks = {}
     with open(os.path.join(ROOT, "data", "cpb-top-500.csv")) as f:
         for row in csv.DictReader(f):
@@ -44,14 +41,9 @@ def main():
                 continue  # corpus noise: bare letters aren't words
             ranks[w] = int(row["rank"])
 
-    lessons = []  # (file_number, curriculum_number, counts, read_counts)
-    for number, counts, read_counts, _ in load_lesson_files(ROOT):
-        slug = lesson_map.get(number)
-        if slug is None:
-            print(f"WARNING: lesson-{number}.json has no entry in "
-                  f"data/lesson-map.json; assuming curriculum lesson {number}")
-        cur_n = slug_to_n[slug] if slug else number
-        lessons.append((number, cur_n, counts, read_counts))
+    # lesson file numbers match curriculum lesson numbers 1:1
+    lessons = [(number, number, counts, read_counts)
+               for number, counts, read_counts, _ in load_lesson_files(ROOT)]
 
     practiced = Counter()
     for _, _, counts, _ in lessons:

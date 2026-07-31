@@ -20,7 +20,6 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from availability import load as load_curriculum  # noqa: E402
-from practice_counts import load_lesson_map  # noqa: E402
 
 
 def exercise_name(slide):
@@ -60,8 +59,6 @@ def exercise_name(slide):
 
 def main():
     cur = load_curriculum()
-    lesson_map = load_lesson_map(ROOT)
-    slug_to_lesson = {l["slug"]: l for l in cur.lessons}
 
     rows = []  # (file_n, cur_n, title, Counter-like dict)
     first_use = {}
@@ -72,10 +69,9 @@ def main():
     for path in sorted(glob.glob(os.path.join(ROOT, "lessons", "lesson-*.json")),
                        key=lambda p: int(re.search(r"(\d+)", os.path.basename(p)).group(1))):
         n = int(re.search(r"(\d+)", os.path.basename(path)).group(1))
-        slug = lesson_map.get(n)
-        lesson = slug_to_lesson.get(slug) if slug else (
-            cur.lessons[n - 1] if n <= len(cur.lessons) else None)
-        cur_n = lesson["n"] if lesson else n
+        # lesson file numbers match curriculum lesson numbers 1:1
+        lesson = cur.lessons[n - 1] if n <= len(cur.lessons) else None
+        cur_n = n
         title = lesson["title"] if lesson else "?"
         counts = Counter()
         for slide in json.load(open(path)):

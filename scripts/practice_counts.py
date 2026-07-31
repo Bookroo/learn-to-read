@@ -84,15 +84,6 @@ def load_lesson_files(root):
     return out
 
 
-def load_lesson_map(root):
-    """file number -> curriculum slug; identity fallback if the map is gone."""
-    path = os.path.join(root, "data", "lesson-map.json")
-    if not os.path.exists(path):
-        print("WARNING: data/lesson-map.json missing — assuming lesson file "
-              "numbers match curriculum lesson numbers (draft files 21-25 "
-              "will be misaligned)")
-        return {}
-    return {
-        int(k): v for k, v in json.load(open(path)).items()
-        if not k.startswith("_")
-    }
+# Lesson file numbers match curriculum lesson numbers 1:1 (files were
+# renamed to the curriculum order on 2026-07-30; the old lesson-map.json
+# sidecar is gone).
