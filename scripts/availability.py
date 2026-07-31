@@ -325,7 +325,10 @@ def load():
     ranks = {}
     with open(os.path.join(ROOT, "data", "cpb-top-3000.csv")) as f:
         for row in csv.DictReader(f):
-            ranks[row["word"]] = int(row["rank"])
+            w = row["word"]
+            if len(w) == 1 and w not in ("a", "i"):
+                continue  # corpus noise: bare letters aren't words
+            ranks[w] = int(row["rank"])
     cur = Curriculum(lessons, ranks)
     # System dictionary widens the known-word set for suffix bases and
     # compound parts (lowercase entries only — skips proper nouns).
@@ -512,6 +515,10 @@ def build_html(cur):
                max-height: calc(80vh - 60px); }}
   .dlg-body .legend {{ color: #8a938c; font-size: 12px; margin-bottom: 10px;
                        line-height: 1.5; }}
+  .dlg-body h3 {{ font-size: 12px; text-transform: uppercase;
+                  letter-spacing: 0.05em; color: #8a938c; margin: 14px 0 4px;
+                  border-bottom: 1px solid #e6e2d8; padding-bottom: 3px; }}
+  .dlg-body .none {{ color: #b6bdb8; }}
 </style>
 </head>
 <body>
@@ -537,17 +544,23 @@ with ranks. Generated from <code>data/curriculum.json</code> — regenerate with
 </dialog>
 <script>
 const WORDS = {words_json};
+function chip([w, r, a, u]) {{
+  return '<span class="w' + (u ? ' u' : '') + '" title="available at L' + a +
+    '"><i>' + (r ?? '·') + '</i> ' + w + (u ? '<b>✓</b>' : '') + '</span>';
+}}
 function openModal(n, label) {{
   const items = WORDS.filter(w => w[2] <= n);
+  const fresh = items.filter(w => w[2] === n);
+  const old = items.filter(w => w[2] < n);
   document.getElementById('dlg-title').textContent =
     label + ' — ' + items.length + ' words available';
   document.getElementById('dlg-body').innerHTML =
     '<div class="legend">Sorted by CPB rank. <b style="color:#2e6f52">✓</b> = ' +
     'used in a drafted lesson (Module 1 files only). Number = CPB rank.</div>' +
-    items.map(([w, r, a, u]) =>
-      '<span class="w' + (u ? ' u' : '') + '" title="available at L' + a + '">' +
-      '<i>' + (r ?? '·') + '</i> ' + w + (u ? '<b>✓</b>' : '') + '</span>'
-    ).join(' ');
+    '<h3>New at this lesson (' + fresh.length + ')</h3>' +
+    (fresh.map(chip).join(' ') || '<span class="none">—</span>') +
+    '<h3>Previously available (' + old.length + ')</h3>' +
+    (old.map(chip).join(' ') || '<span class="none">—</span>');
   document.getElementById('dlg').showModal();
 }}
 </script>

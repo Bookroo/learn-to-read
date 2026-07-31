@@ -39,7 +39,10 @@ def main():
     ranks = {}
     with open(os.path.join(ROOT, "data", "cpb-top-500.csv")) as f:
         for row in csv.DictReader(f):
-            ranks[row["word"].lower()] = int(row["rank"])
+            w = row["word"].lower()
+            if len(w) == 1 and w not in ("a", "i"):
+                continue  # corpus noise: bare letters aren't words
+            ranks[w] = int(row["rank"])
 
     lessons = []  # (file_number, curriculum_number, counts, read_counts)
     for number, counts, read_counts, _ in load_lesson_files(ROOT):
