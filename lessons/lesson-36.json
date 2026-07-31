@@ -1,0 +1,230 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, **Magic E** casts its spell on a new vowel.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "I",
+        "phoneme": "/I/",
+        "graphemes": [
+          "A",
+          "E"
+        ],
+        "choices": [
+          "I",
+          "A",
+          "E"
+        ]
+      },
+      {
+        "grapheme": "J",
+        "phoneme": "/j/",
+        "graphemes": [
+          "G",
+          "Y"
+        ],
+        "choices": [
+          "J",
+          "G",
+          "Y"
+        ]
+      },
+      {
+        "grapheme": "DGE",
+        "phoneme": "/j/",
+        "graphemes": [
+          "J",
+          "CH"
+        ],
+        "choices": [
+          "DGE",
+          "J",
+          "CH"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "**Magic E** is back! Last time, it made the letter I say its name.",
+      "Today it casts the same spell on the letter A.",
+      "Watch: ‘cap’ . . . add a Magic E . . . ‘CAPE’! The A says its name — A!",
+      "‘tap’ becomes ‘TAPE’. ‘mad’ becomes ‘MADE’."
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/A/",
+    "words": [
+      [
+        [
+          "c",
+          "/c/"
+        ],
+        [
+          "a_e",
+          "/A/"
+        ],
+        [
+          "k",
+          "/c/"
+        ]
+      ],
+      [
+        [
+          "c",
+          "/c/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "p",
+          "/p/"
+        ]
+      ],
+      [
+        [
+          "l",
+          "/l/"
+        ],
+        [
+          "a_e",
+          "/A/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! Now let's read some Magic E words with A."
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "CAPE",
+    "phonemes": [
+      "/c/",
+      "/A/",
+      "/p/"
+    ],
+    "pre": {
+      "prepend": [
+        "The Magic E is silent — its magic makes the A say its name."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "MADE",
+    "phonemes": [
+      "/m/",
+      "/A/",
+      "/d/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "LATE",
+    "phonemes": [
+      "/l/",
+      "/A/",
+      "/t/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "MAKE",
+    "phonemes": [
+      "/m/",
+      "/A/",
+      "/k/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "TAKE",
+    "phonemes": [
+      "/t/",
+      "/A/",
+      "/k/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "CAME",
+    "phonemes": [
+      "/c/",
+      "/A/",
+      "/m/"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "CAP",
+      "CAPE",
+      "TAPE",
+      "TAP"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "make",
+      "take",
+      "came",
+      "late",
+      "made",
+      "bike",
+      "like",
+      "time",
+      "give",
+      "to",
+      "the",
+      "said"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE SNAKE CAME TO THE LAKE."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "CAKE"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

@@ -1,0 +1,241 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn one new letter and a three-letter team.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "I",
+        "phoneme": "/I/",
+        "graphemes": [
+          "E",
+          "A"
+        ],
+        "choices": [
+          "I",
+          "E",
+          "A"
+        ]
+      },
+      {
+        "grapheme": "CH",
+        "phoneme": "/ch/",
+        "graphemes": [
+          "SH",
+          "TH"
+        ],
+        "choices": [
+          "CH",
+          "SH",
+          "TH"
+        ]
+      },
+      {
+        "grapheme": "W",
+        "phoneme": "/w/",
+        "graphemes": [
+          "WH",
+          "V"
+        ],
+        "choices": [
+          "W",
+          "WH",
+          "V"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "grapheme-recall",
+    "grapheme": "J",
+    "variant": "new-letter"
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "J",
+    "traceOnly": true
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "J"
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "J",
+    "phoneme": "/j/"
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Remember how T, C, and H team up to spell the ‘ch’ sound after a short vowel, like in ‘catch’?",
+      "The ‘j’ sound has a three-letter team just like that: D, G, and E, like in ‘badge’ and ‘bridge’.",
+      "After a short vowel, D-G-E works together to make the ‘j’ sound."
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/j/",
+    "words": [
+      [
+        [
+          "j",
+          "/j/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "m",
+          "/m/"
+        ]
+      ],
+      [
+        [
+          "y",
+          "/y/"
+        ],
+        [
+          "e",
+          "/e/"
+        ],
+        [
+          "s",
+          "/s/"
+        ]
+      ],
+      [
+        [
+          "b",
+          "/b/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "dge",
+          "/j/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 24 letters now!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "JAM",
+    "phonemes": [
+      "/j/",
+      "/a/",
+      "/m/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "JET",
+    "phonemes": [
+      "/j/",
+      "/e/",
+      "/t/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "JUMP",
+    "phonemes": [
+      "/j/",
+      "/u/",
+      "/m/",
+      "/p/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "BADGE",
+    "phonemes": [
+      "/b/",
+      "/a/",
+      "/j/"
+    ],
+    "pre": {
+      "prepend": [
+        "D, G, and E are a three-letter team — they share one finger and make one sound."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "BRIDGE",
+    "phonemes": [
+      "/b/",
+      "/r/",
+      "/i/",
+      "/j/"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "JET",
+      "JOG",
+      "JAB",
+      "JAM"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "jam",
+      "jet",
+      "jump",
+      "badge",
+      "bridge",
+      "bike",
+      "like",
+      "give",
+      "to",
+      "do",
+      "the",
+      "they"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE DOG IS ON THE BRIDGE."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "JAM"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

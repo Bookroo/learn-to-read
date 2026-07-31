@@ -1,0 +1,274 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn a big secret about five very special letters.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "NG",
+        "phoneme": "/ng/",
+        "graphemes": [
+          "N",
+          "G"
+        ],
+        "choices": [
+          "NG",
+          "N",
+          "G"
+        ]
+      },
+      {
+        "grapheme": "TH",
+        "phoneme": "/th/",
+        "graphemes": [
+          "SH",
+          "WH"
+        ],
+        "choices": [
+          "TH",
+          "SH",
+          "WH"
+        ]
+      },
+      {
+        "grapheme": "F",
+        "phoneme": "/f/",
+        "graphemes": [
+          "FF",
+          "V"
+        ],
+        "choices": [
+          "F",
+          "FF",
+          "V"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "sets": [
+      {
+        "grapheme": "A",
+        "graphemes": [
+          "E",
+          "O"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "I",
+        "graphemes": [
+          "E",
+          "U"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "U",
+        "graphemes": [
+          "O",
+          "A"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "The letters A, E, I, O, and U are called **vowels**. Every word has at least one vowel in it!",
+      "You already know the short sound each vowel makes.",
+      "But here's the secret: a vowel can also say its own NAME!",
+      "Listen: in the word ‘hat’, A says its short sound. But in the word ‘hate’... A says its name — A!",
+      "When a vowel says its name, we call it a **long vowel** sound."
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Here's one place vowels love to say their names: at the END of a little word.",
+      "In ‘he’, ‘she’, and ‘we’, the E says its name — E!",
+      "In ‘no’, ‘so’, and ‘go’, the O says its name — O!"
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/E/",
+    "words": [
+      [
+        [
+          "h",
+          "/h/"
+        ],
+        [
+          "e",
+          "/E/"
+        ]
+      ],
+      [
+        [
+          "b",
+          "/b/"
+        ],
+        [
+          "e",
+          "/e/"
+        ],
+        [
+          "d",
+          "/d/"
+        ]
+      ],
+      [
+        [
+          "sh",
+          "/sh/"
+        ],
+        [
+          "e",
+          "/E/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! Now let's read some words where the vowel says its name."
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "HE",
+    "phonemes": [
+      "/h/",
+      "/E/"
+    ],
+    "pre": {
+      "prepend": [
+        "The E is at the end, so it says its name."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "SHE",
+    "phonemes": [
+      "/sh/",
+      "/E/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "WE",
+    "phonemes": [
+      "/w/",
+      "/E/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "NO",
+    "phonemes": [
+      "/n/",
+      "/O/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "GO",
+    "phonemes": [
+      "/g/",
+      "/O/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "HI",
+    "phonemes": [
+      "/h/",
+      "/I/"
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "OH",
+      "TO",
+      "DO"
+    ],
+    "pre": {
+      "value": [
+        "We have three new heart words today: ‘oh’, ‘to’, and ‘do’.",
+        "In ‘to’ and ‘do’, the O doesn't say its short sound OR its name — these words break the rules, so we learn them by heart."
+      ]
+    }
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "HE",
+      "WE",
+      "ME",
+      "BE"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "he",
+      "she",
+      "we",
+      "no",
+      "go",
+      "so",
+      "oh",
+      "to",
+      "do",
+      "the",
+      "was",
+      "they"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "WE GO TO THE SHED."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "GO"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

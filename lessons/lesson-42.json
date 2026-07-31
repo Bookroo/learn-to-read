@@ -1,0 +1,215 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to meet two little word families where O says its name — with no Magic E in sight!",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "E",
+        "phoneme": "/E/",
+        "graphemes": [
+          "A",
+          "I"
+        ],
+        "choices": [
+          "E",
+          "A",
+          "I"
+        ]
+      },
+      {
+        "grapheme": "U",
+        "phoneme": "/U/",
+        "graphemes": [
+          "O",
+          "A"
+        ],
+        "choices": [
+          "U",
+          "O",
+          "A"
+        ]
+      },
+      {
+        "grapheme": "NG",
+        "phoneme": "/ng/",
+        "graphemes": [
+          "N",
+          "K"
+        ],
+        "choices": [
+          "NG",
+          "N",
+          "K"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Usually a vowel needs a Magic E to say its name. But a few small word families break that rule!",
+      "In the ‘-old’ family — ‘old’, ‘cold’, ‘gold’ — the O says its name all by itself.",
+      "The ‘-ost’ family does it too: ‘most’, ‘post’, ‘host’.",
+      "These are small families, not a big rule. When you see ‘-old’ or ‘-ost’, read the O as its name."
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/O/",
+    "words": [
+      [
+        [
+          "g",
+          "/g/"
+        ],
+        [
+          "old",
+          "/old/"
+        ]
+      ],
+      [
+        [
+          "d",
+          "/d/"
+        ],
+        [
+          "o",
+          "/o/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "m",
+          "/m/"
+        ],
+        [
+          "ost",
+          "/ost/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! Now let's read the -old and -ost families."
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "OLD",
+    "phonemes": [
+      "/old/"
+    ],
+    "pre": {
+      "prepend": [
+        "Read the whole ‘-old’ chunk together — the O says its name."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "TOLD",
+    "phonemes": [
+      "/t/",
+      "/old/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "COLD",
+    "phonemes": [
+      "/c/",
+      "/old/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "GOLD",
+    "phonemes": [
+      "/g/",
+      "/old/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "MOST",
+    "phonemes": [
+      "/m/",
+      "/ost/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "POST",
+    "phonemes": [
+      "/p/",
+      "/ost/"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "OLD",
+      "COLD",
+      "GOLD",
+      "HOLD"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "old",
+      "cold",
+      "gold",
+      "told",
+      "most",
+      "these",
+      "here",
+      "come",
+      "one",
+      "have",
+      "the",
+      "said"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE OLD CAT IS COLD."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "GOLD"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

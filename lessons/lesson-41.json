@@ -1,0 +1,198 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, **Magic E** casts its spell one last time — on another E!",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "U",
+        "phoneme": "/U/",
+        "graphemes": [
+          "O",
+          "A"
+        ],
+        "choices": [
+          "U",
+          "O",
+          "A"
+        ]
+      },
+      {
+        "grapheme": "A",
+        "phoneme": "/A/",
+        "graphemes": [
+          "E",
+          "I"
+        ],
+        "choices": [
+          "A",
+          "E",
+          "I"
+        ]
+      },
+      {
+        "grapheme": "TH",
+        "phoneme": "/th/",
+        "graphemes": [
+          "SH",
+          "WH"
+        ],
+        "choices": [
+          "TH",
+          "SH",
+          "WH"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "**Magic E** has visited I, A, O, and U. There's only one vowel left . . . E itself!",
+      "When Magic E casts its spell on another E, the first E says its name — E!",
+      "It's a rare spell. You'll see it in words like ‘these’ and in names like ‘Pete’.",
+      "Now Magic E has worked its spell on every vowel. You know the whole trick!"
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/E/",
+    "words": [
+      [
+        [
+          "th",
+          "/th/"
+        ],
+        [
+          "e_e",
+          "/E/"
+        ],
+        [
+          "s",
+          "/z/"
+        ]
+      ],
+      [
+        [
+          "t",
+          "/t/"
+        ],
+        [
+          "e",
+          "/e/"
+        ],
+        [
+          "n",
+          "/n/"
+        ]
+      ],
+      [
+        [
+          "h",
+          "/h/"
+        ],
+        [
+          "e",
+          "/E/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! Now let's read some rare Magic E words."
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "THESE",
+    "phonemes": [
+      "/th/",
+      "/E/",
+      "/z/"
+    ],
+    "pre": {
+      "prepend": [
+        "The Magic E at the end is silent, and the first E says its name."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "PETE",
+    "phonemes": [
+      "/p/",
+      "/E/",
+      "/t/"
+    ],
+    "pre": {
+      "prepend": [
+        "Pete is a name — that's why it starts with a capital letter . . . though for now, all our letters are capitals!"
+      ]
+    }
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "HERE"
+    ],
+    "pre": {
+      "value": [
+        "One new heart word today: ‘here’.",
+        "It looks like a Magic E word, but the E makes a different sound — so we learn ‘here’ by heart."
+      ]
+    }
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "these",
+      "here",
+      "cute",
+      "mule",
+      "use",
+      "come",
+      "some",
+      "one",
+      "have",
+      "of",
+      "love",
+      "the"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "PETE IS HERE."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "HERE"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

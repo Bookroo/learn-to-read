@@ -1,0 +1,235 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn about a letter with magic powers.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "E",
+        "phoneme": "/E/",
+        "graphemes": [
+          "A",
+          "I"
+        ],
+        "choices": [
+          "E",
+          "A",
+          "I"
+        ]
+      },
+      {
+        "grapheme": "O",
+        "phoneme": "/O/",
+        "graphemes": [
+          "U",
+          "A"
+        ],
+        "choices": [
+          "O",
+          "U",
+          "A"
+        ]
+      },
+      {
+        "grapheme": "I",
+        "phoneme": "/i/",
+        "graphemes": [
+          "E",
+          "Y"
+        ],
+        "choices": [
+          "I",
+          "E",
+          "Y"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Meet **Magic E**!",
+      "When the letter E sits at the end of a word, it can cast a spell on the vowel before it.",
+      "The spell makes that vowel say its NAME — and the E itself stays completely silent.",
+      "Watch: ‘bit’ . . . add a Magic E . . . ‘BITE’! The I now says its name.",
+      "‘kit’ becomes ‘KITE’. ‘rip’ becomes ‘RIPE’.",
+      "The E does all this magic without making a single sound of its own."
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/I/",
+    "words": [
+      [
+        [
+          "b",
+          "/b/"
+        ],
+        [
+          "i_e",
+          "/I/"
+        ],
+        [
+          "k",
+          "/c/"
+        ]
+      ],
+      [
+        [
+          "b",
+          "/b/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "f",
+          "/f/"
+        ],
+        [
+          "i_e",
+          "/I/"
+        ],
+        [
+          "v",
+          "/v/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! Now let's read some Magic E words."
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "BITE",
+    "phonemes": [
+      "/b/",
+      "/I/",
+      "/t/"
+    ],
+    "pre": {
+      "prepend": [
+        "The Magic E at the end is silent — it doesn't get its own finger. Its magic makes the I say its name."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "HIDE",
+    "phonemes": [
+      "/h/",
+      "/I/",
+      "/d/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "KITE",
+    "phonemes": [
+      "/c/",
+      "/I/",
+      "/t/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "BIKE",
+    "phonemes": [
+      "/b/",
+      "/I/",
+      "/k/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "TIME",
+    "phonemes": [
+      "/t/",
+      "/I/",
+      "/m/"
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "GIVE"
+    ],
+    "pre": {
+      "value": [
+        "We have one new heart word today: ‘give’.",
+        "It LOOKS like a Magic E word, but the I keeps its short sound — ‘give’ breaks the rule, so we learn it by heart."
+      ]
+    }
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "BIT",
+      "BITE",
+      "KITE",
+      "KIT"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "bite",
+      "bike",
+      "like",
+      "time",
+      "hide",
+      "give",
+      "he",
+      "she",
+      "go",
+      "to",
+      "do",
+      "the"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "I LIKE THE KITE."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "BIKE"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

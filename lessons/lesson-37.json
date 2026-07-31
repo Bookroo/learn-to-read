@@ -1,0 +1,245 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to learn one new letter, one new sound, and three heart words you'll see everywhere.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "A",
+        "phoneme": "/A/",
+        "graphemes": [
+          "E",
+          "I"
+        ],
+        "choices": [
+          "A",
+          "E",
+          "I"
+        ]
+      },
+      {
+        "grapheme": "J",
+        "phoneme": "/j/",
+        "graphemes": [
+          "W",
+          "Y"
+        ],
+        "choices": [
+          "J",
+          "W",
+          "Y"
+        ]
+      },
+      {
+        "grapheme": "K",
+        "phoneme": "/c/",
+        "graphemes": [
+          "X",
+          "H"
+        ],
+        "choices": [
+          "K",
+          "X",
+          "H"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "grapheme-recall",
+    "grapheme": "V",
+    "variant": "new-letter"
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "V",
+    "traceOnly": true
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "V"
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "V",
+    "phoneme": "/v/",
+    "pre": {
+      "append": [
+        {
+          "type": "instruction",
+          "value": "The /v/ sound is buzzy — a good chance for a quick **Buzz Check**! It feels like /f/ with the buzzer turned on."
+        }
+      ]
+    }
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/v/",
+    "words": [
+      [
+        [
+          "v",
+          "/v/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "n",
+          "/n/"
+        ]
+      ],
+      [
+        [
+          "f",
+          "/f/"
+        ],
+        [
+          "a",
+          "/a/"
+        ],
+        [
+          "n",
+          "/n/"
+        ]
+      ],
+      [
+        [
+          "v",
+          "/v/"
+        ],
+        [
+          "e",
+          "/e/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! You know 25 letters now — only one to go!"
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "VAN",
+    "phonemes": [
+      "/v/",
+      "/a/",
+      "/n/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "VET",
+    "phonemes": [
+      "/v/",
+      "/e/",
+      "/t/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "GAVE",
+    "phonemes": [
+      "/g/",
+      "/A/",
+      "/v/"
+    ],
+    "pre": {
+      "prepend": [
+        "Magic E again! The E is silent and the A says its name."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "FIVE",
+    "phonemes": [
+      "/f/",
+      "/I/",
+      "/v/"
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "HAVE",
+      "OF",
+      "LOVE"
+    ],
+    "pre": {
+      "value": [
+        "The letter V brings three heart words: ‘have’, ‘of’, and ‘love’.",
+        "‘Have’ and ‘love’ LOOK like Magic E words, but the vowel keeps its short sound — and ‘of’ doesn't follow any rules at all!",
+        "We learn all three by heart."
+      ]
+    }
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "VAN",
+      "VAT",
+      "VET",
+      "JET"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "van",
+      "vet",
+      "gave",
+      "five",
+      "have",
+      "of",
+      "love",
+      "make",
+      "came",
+      "to",
+      "the",
+      "they"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "I LOVE THE VAN."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "VAN"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

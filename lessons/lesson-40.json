@@ -1,0 +1,210 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, **Magic E** visits the letter U.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "X",
+        "phoneme": "/ks/",
+        "graphemes": [
+          "S",
+          "K"
+        ],
+        "choices": [
+          "X",
+          "S",
+          "K"
+        ]
+      },
+      {
+        "grapheme": "O",
+        "phoneme": "/O/",
+        "graphemes": [
+          "U",
+          "A"
+        ],
+        "choices": [
+          "O",
+          "U",
+          "A"
+        ]
+      },
+      {
+        "grapheme": "I",
+        "phoneme": "/I/",
+        "graphemes": [
+          "E",
+          "A"
+        ],
+        "choices": [
+          "I",
+          "E",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "**Magic E** has a new vowel to visit: the letter U.",
+      "Watch: ‘cub’ . . . add a Magic E . . . ‘CUBE’! The U says its name — U!",
+      "‘cut’ becomes ‘CUTE’. ‘us’ becomes ‘USE’."
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/U/",
+    "words": [
+      [
+        [
+          "c",
+          "/c/"
+        ],
+        [
+          "u_e",
+          "/U/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "c",
+          "/c/"
+        ],
+        [
+          "u",
+          "/u/"
+        ],
+        [
+          "p",
+          "/p/"
+        ]
+      ],
+      [
+        [
+          "m",
+          "/m/"
+        ],
+        [
+          "u_e",
+          "/U/"
+        ],
+        [
+          "l",
+          "/l/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! Now let's read some Magic E words with U."
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "CUTE",
+    "phonemes": [
+      "/c/",
+      "/U/",
+      "/t/"
+    ],
+    "pre": {
+      "prepend": [
+        "The Magic E is silent — its magic makes the U say its name."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "CUBE",
+    "phonemes": [
+      "/c/",
+      "/U/",
+      "/b/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "MULE",
+    "phonemes": [
+      "/m/",
+      "/U/",
+      "/l/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "USE",
+    "phonemes": [
+      "/U/",
+      "/s/"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "CUB",
+      "CUBE",
+      "CUTE",
+      "CUT"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "cute",
+      "cube",
+      "mule",
+      "use",
+      "fox",
+      "box",
+      "come",
+      "some",
+      "one",
+      "home",
+      "the",
+      "they"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE MULE IS CUTE."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "CUBE"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

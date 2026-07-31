@@ -1,0 +1,234 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, **Magic E** works its spell on the letter O.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "V",
+        "phoneme": "/v/",
+        "graphemes": [
+          "F",
+          "W"
+        ],
+        "choices": [
+          "V",
+          "F",
+          "W"
+        ]
+      },
+      {
+        "grapheme": "A",
+        "phoneme": "/A/",
+        "graphemes": [
+          "O",
+          "E"
+        ],
+        "choices": [
+          "A",
+          "O",
+          "E"
+        ]
+      },
+      {
+        "grapheme": "O",
+        "phoneme": "/o/",
+        "graphemes": [
+          "U",
+          "A"
+        ],
+        "choices": [
+          "O",
+          "U",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "**Magic E** has one more vowel to visit today: the letter O.",
+      "Watch: ‘hop’ . . . add a Magic E . . . ‘HOPE’! The O says its name — O!",
+      "‘not’ becomes ‘NOTE’. ‘rob’ becomes ‘ROBE’."
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/O/",
+    "words": [
+      [
+        [
+          "h",
+          "/h/"
+        ],
+        [
+          "o_e",
+          "/O/"
+        ],
+        [
+          "m",
+          "/m/"
+        ]
+      ],
+      [
+        [
+          "h",
+          "/h/"
+        ],
+        [
+          "o",
+          "/o/"
+        ],
+        [
+          "t",
+          "/t/"
+        ]
+      ],
+      [
+        [
+          "b",
+          "/b/"
+        ],
+        [
+          "o_e",
+          "/O/"
+        ],
+        [
+          "n",
+          "/n/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! Now let's read some Magic E words with O."
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "HOME",
+    "phonemes": [
+      "/h/",
+      "/O/",
+      "/m/"
+    ],
+    "pre": {
+      "prepend": [
+        "The Magic E is silent — its magic makes the O say its name."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "BONE",
+    "phonemes": [
+      "/b/",
+      "/O/",
+      "/n/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "NOTE",
+    "phonemes": [
+      "/n/",
+      "/O/",
+      "/t/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "ROPE",
+    "phonemes": [
+      "/r/",
+      "/O/",
+      "/p/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "WOKE",
+    "phonemes": [
+      "/w/",
+      "/O/",
+      "/k/"
+    ]
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "COME",
+      "SOME",
+      "ONE"
+    ],
+    "pre": {
+      "value": [
+        "Three new heart words today: ‘come’, ‘some’, and ‘one’.",
+        "They LOOK like Magic E words, but they don't follow the spell — so we learn them by heart."
+      ]
+    }
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "HOP",
+      "HOPE",
+      "ROPE",
+      "ROBE"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "home",
+      "bone",
+      "note",
+      "rope",
+      "come",
+      "some",
+      "one",
+      "have",
+      "of",
+      "love",
+      "the",
+      "said"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "COME HOME WITH ME."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "HOME"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

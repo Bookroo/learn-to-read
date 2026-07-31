@@ -1,0 +1,209 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to meet two more word families — this time, the letter I says its name.",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "OLD",
+        "phoneme": "/old/",
+        "graphemes": [
+          "OST",
+          "O"
+        ],
+        "choices": [
+          "OLD",
+          "OST",
+          "O"
+        ]
+      },
+      {
+        "grapheme": "I",
+        "phoneme": "/I/",
+        "graphemes": [
+          "E",
+          "A"
+        ],
+        "choices": [
+          "I",
+          "E",
+          "A"
+        ]
+      },
+      {
+        "grapheme": "V",
+        "phoneme": "/v/",
+        "graphemes": [
+          "F",
+          "W"
+        ],
+        "choices": [
+          "V",
+          "F",
+          "W"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      "Yesterday, O said its name in the ‘-old’ and ‘-ost’ families.",
+      "Today the letter I gets its own families!",
+      "In the ‘-ind’ family — ‘find’, ‘kind’, ‘mind’ — the I says its name.",
+      "And in the tiny ‘-ild’ family — ‘child’, ‘wild’ — it does too.",
+      "Small families, not a big rule. When you see ‘-ind’ or ‘-ild’, read the I as its name."
+    ]
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/I/",
+    "words": [
+      [
+        [
+          "f",
+          "/f/"
+        ],
+        [
+          "ind",
+          "/ind/"
+        ]
+      ],
+      [
+        [
+          "f",
+          "/f/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "n",
+          "/n/"
+        ]
+      ],
+      [
+        [
+          "ch",
+          "/ch/"
+        ],
+        [
+          "ild",
+          "/ild/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Amazing! Now let's read the -ind and -ild families."
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "FIND",
+    "phonemes": [
+      "/f/",
+      "/ind/"
+    ],
+    "pre": {
+      "prepend": [
+        "Read the whole ‘-ind’ chunk together — the I says its name."
+      ]
+    }
+  },
+  {
+    "type": "finger-word",
+    "word": "KIND",
+    "phonemes": [
+      "/c/",
+      "/ind/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "MIND",
+    "phonemes": [
+      "/m/",
+      "/ind/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "CHILD",
+    "phonemes": [
+      "/ch/",
+      "/ild/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "WILD",
+    "phonemes": [
+      "/w/",
+      "/ild/"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "FIND",
+      "MIND",
+      "KIND",
+      "KID"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "find",
+      "kind",
+      "mind",
+      "child",
+      "wild",
+      "old",
+      "cold",
+      "gold",
+      "most",
+      "here",
+      "the",
+      "to"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "BE KIND TO THE WILD CHILD."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "KIND"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]

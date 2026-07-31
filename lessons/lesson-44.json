@@ -1,0 +1,232 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "Today is a review day. That means today, we're going to play lots of reading games! Hooray, hooray!",
+      "Instead of learning new letters and sounds, we will review the letters, sounds, and words you've already learned.",
+      {
+        "type": "instruction",
+        "value": "Keep this playful. This review is a check-in to help you decide whether {name} is ready for Module 5 or if it would be more helpful to repeat Module 4."
+      }
+    ]
+  },
+  {
+    "type": "find-grapheme",
+    "pre": {
+      "value": {
+        "type": "verbal",
+        "value": "First up, let's play a round of **Eagle Eyes**."
+      }
+    },
+    "sets": [
+      {
+        "grapheme": "J",
+        "graphemes": [
+          "G",
+          "Y"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "V",
+        "graphemes": [
+          "W",
+          "U"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "X",
+        "graphemes": [
+          "K",
+          "Y"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "A",
+        "graphemes": [
+          "E",
+          "O"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "E",
+        "graphemes": [
+          "I",
+          "A"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      },
+      {
+        "grapheme": "U",
+        "graphemes": [
+          "O",
+          "V"
+        ],
+        "total": 3,
+        "unique": 3,
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "type": "lost-sounds",
+    "graphemes": [
+      "J",
+      "V",
+      "X",
+      "A",
+      "E",
+      "I",
+      "O",
+      "U"
+    ],
+    "randomize": true
+  },
+  {
+    "type": "card-stack",
+    "values": [
+      "OH",
+      "TO",
+      "DO",
+      "GIVE",
+      "HAVE",
+      "OF",
+      "LOVE",
+      "COME",
+      "SOME",
+      "ONE",
+      "HERE"
+    ],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": "Let's practice all the heart words from this module. Read the words on the cards one at a time."
+        }
+      ]
+    }
+  },
+  {
+    "type": "word-to-picture",
+    "sets": [
+      {
+        "word": "BIKE",
+        "words": [
+          "car",
+          "boat"
+        ]
+      },
+      {
+        "word": "KITE",
+        "words": [
+          "hat",
+          "bell"
+        ]
+      },
+      {
+        "word": "CAPE",
+        "words": [
+          "cap",
+          "sock"
+        ]
+      },
+      {
+        "word": "BONE",
+        "words": [
+          "dog",
+          "ball"
+        ]
+      },
+      {
+        "word": "ROPE",
+        "words": [
+          "snake",
+          "stick"
+        ]
+      },
+      {
+        "word": "FOX",
+        "words": [
+          "dog",
+          "cat"
+        ]
+      },
+      {
+        "word": "CUBE",
+        "words": [
+          "ball",
+          "ring"
+        ]
+      },
+      {
+        "word": "MULE",
+        "words": [
+          "dog",
+          "pig"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE KIND KING RIDES A MULE."
+  },
+  {
+    "type": "books",
+    "books": [],
+    "pre": {
+      "value": [
+        {
+          "type": "verbal",
+          "value": "Here are all the books you read in Module 4."
+        },
+        {
+          "type": "verbal",
+          "value": "Would you like to reread any of them?"
+        },
+        {
+          "type": "instruction",
+          "value": "Rereading is great practice. Encourage {name} to choose at least one book."
+        }
+      ]
+    }
+  },
+  {
+    "type": "custom",
+    "confetti": true,
+    "value": [
+      {
+        "type": "verbal",
+        "value": "You finished the Module 4 review games. Great work!"
+      },
+      {
+        "type": "instruction",
+        "value": "If {name} read most words and matched most sounds with only light prompting, they are probably ready for Module 5. If many items needed heavy support, we recommend repeating Module 4 before moving on."
+      }
+    ]
+  },
+  {
+    "type": "conclusion",
+    "pre": {
+      "replace": [
+        {
+          "index": 0,
+          "value": "Great job {name}! You completed the review lesson!"
+        }
+      ]
+    }
+  }
+]

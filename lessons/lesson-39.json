@@ -1,0 +1,243 @@
+[
+  {
+    "type": "custom",
+    "value": [
+      "In this lesson, we're going to meet the very last letter of the alphabet family!",
+      "But first, let's review some of the letters, sounds, and words we learned in previous lessons."
+    ]
+  },
+  {
+    "type": "sound-to-grapheme",
+    "sets": [
+      {
+        "grapheme": "O",
+        "phoneme": "/O/",
+        "graphemes": [
+          "A",
+          "U"
+        ],
+        "choices": [
+          "O",
+          "A",
+          "U"
+        ]
+      },
+      {
+        "grapheme": "V",
+        "phoneme": "/v/",
+        "graphemes": [
+          "F",
+          "W"
+        ],
+        "choices": [
+          "V",
+          "F",
+          "W"
+        ]
+      },
+      {
+        "grapheme": "QU",
+        "phoneme": "/kw/",
+        "graphemes": [
+          "K",
+          "C"
+        ],
+        "choices": [
+          "QU",
+          "K",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "grapheme-recall",
+    "grapheme": "X",
+    "variant": "new-letter"
+  },
+  {
+    "type": "grapheme-trace-air",
+    "grapheme": "X",
+    "traceOnly": true
+  },
+  {
+    "type": "grapheme-trace-palm",
+    "grapheme": "X"
+  },
+  {
+    "type": "introduce-sound",
+    "grapheme": "X",
+    "phoneme": "/ks/",
+    "pre": {
+      "append": [
+        {
+          "type": "instruction",
+          "value": "X is a two-sound letter: /k/ and /s/ squished together, like at the end of ‘fox’."
+        }
+      ]
+    }
+  },
+  {
+    "type": "sound-pick-word-stack",
+    "phoneme": "/ks/",
+    "words": [
+      [
+        [
+          "f",
+          "/f/"
+        ],
+        [
+          "o",
+          "/o/"
+        ],
+        [
+          "x",
+          "/ks/"
+        ]
+      ],
+      [
+        [
+          "f",
+          "/f/"
+        ],
+        [
+          "o",
+          "/o/"
+        ],
+        [
+          "g",
+          "/g/"
+        ]
+      ],
+      [
+        [
+          "s",
+          "/s/"
+        ],
+        [
+          "i",
+          "/i/"
+        ],
+        [
+          "x",
+          "/ks/"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "custom",
+    "confetti": true,
+    "value": [
+      {
+        "type": "verbal",
+        "value": "STOP THE PRESSES! Do you know what you just did?"
+      },
+      {
+        "type": "verbal",
+        "value": "You have now learned ALL 26 LETTERS of the alphabet! Every single one!"
+      },
+      {
+        "type": "verbal",
+        "value": "Give yourself a huge high five. You are officially a friend of every letter there is."
+      }
+    ]
+  },
+  {
+    "type": "custom",
+    "value": [
+      {
+        "type": "verbal",
+        "value": "Now let's read some words with X."
+      },
+      {
+        "type": "image",
+        "src": "/l2r/misc/finger-words.jpg?v=2",
+        "width": 475,
+        "height": 280
+      },
+      {
+        "type": "verbal",
+        "value": "Now it’s time to practice reading using the **Finger Words** strategy!"
+      }
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "FOX",
+    "phonemes": [
+      "/f/",
+      "/o/",
+      "/ks/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "BOX",
+    "phonemes": [
+      "/b/",
+      "/o/",
+      "/ks/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "SIX",
+    "phonemes": [
+      "/s/",
+      "/i/",
+      "/ks/"
+    ]
+  },
+  {
+    "type": "finger-word",
+    "word": "MIX",
+    "phonemes": [
+      "/m/",
+      "/i/",
+      "/ks/"
+    ]
+  },
+  {
+    "type": "word-chain",
+    "words": [
+      "BOX",
+      "FOX",
+      "FIX",
+      "SIX"
+    ]
+  },
+  {
+    "type": "brain-words",
+    "words": [
+      "fox",
+      "box",
+      "six",
+      "mix",
+      "home",
+      "bone",
+      "come",
+      "some",
+      "one",
+      "have",
+      "love",
+      "the"
+    ]
+  },
+  {
+    "type": "reading-fluency",
+    "text": "THE FOX IS IN THE BOX."
+  },
+  {
+    "type": "books",
+    "books": []
+  },
+  {
+    "type": "teach-tam",
+    "value": "FOX"
+  },
+  {
+    "type": "conclusion",
+    "confetti": true
+  }
+]
