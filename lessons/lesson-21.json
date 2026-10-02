@@ -76,6 +76,22 @@
     ]
   },
   {
+    "type": "lost-sounds",
+    "graphemes": [
+      "Z",
+      "R",
+      "U",
+      "C",
+      "L",
+      "H",
+      "E",
+      "G",
+      "D",
+      "B"
+    ],
+    "randomize": true
+  },
+  {
     "type": "custom",
     "value": [
       "So far, every letter we've met makes its own sound.",
@@ -212,6 +228,25 @@
       "SHOP",
       "SHUT",
       "SHED"
+    ]
+  },
+  {
+    "type": "word-to-picture",
+    "sets": [
+      {
+        "word": "SHIP",
+        "words": [
+          "sock",
+          "bus"
+        ]
+      },
+      {
+        "word": "DISH",
+        "words": [
+          "duck",
+          "sled"
+        ]
+      }
     ]
   },
   {

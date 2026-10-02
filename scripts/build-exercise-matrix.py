@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """Build the exercise matrix: rows = drafted lessons, columns = exercises.
 
-Cells count the slides of each exercise in each lesson JSON. Exercise names
+Cells count each lesson's practice items for an exercise: distinct words
+where a slide names one (a word's multi-slide walkthrough counts once),
+otherwise slides. Exercise names
 follow the app's labeling (LearnToReadViewer): multi-set variants get the
 kid-facing game name (Eagle Eyes, Letter Setter, Picture Quest); single-set
-variants use the generic technique label. Green ring = the exercise's first
-use; a red ring means curriculum.json introduces the exercise (intro chip)
-at a different lesson than its actual first use.
+variants use the generic technique label. A red ring means curriculum.json
+introduces the exercise (intro chip) at a different lesson than its actual
+first use.
 
 Usage:  python3 scripts/build-exercise-matrix.py
 Reads:  lessons/lesson-*.json, data/curriculum.json
@@ -38,7 +40,6 @@ def exercise_name(slide):
         "identify-sound": "Identify Sound",
         "introduce-sound": "Sound Isolation",
         "sound-to-grapheme": "Letter Setter" if multi else "Sound to Letter",
-        "sound-in-word": "Sound Sleuth",
         "lost-sounds": "Lost Sounds",
         "sound-pick-word-stack": "Elephant Ears",
         "sound-at-position": "Sound Train",
@@ -58,6 +59,16 @@ def exercise_name(slide):
     return named.get(t)
 
 
+def word_key(slide):
+    """The word a slide practices, or None if it isn't a single-word slide.
+
+    Finger Words walks one word across several slides (assign, stick, blend);
+    those share a key so the lesson gets credit for the word, not the reps.
+    """
+    word = slide.get("word")
+    return word.strip().upper() if isinstance(word, str) else None
+
+
 def main():
     cur = load_curriculum()
 
@@ -75,10 +86,17 @@ def main():
         cur_n = n
         title = lesson["title"] if lesson else "?"
         counts = Counter()
-        for slide in json.load(open(path)):
+        seen = set()
+        for i, slide in enumerate(json.load(open(path))):
             name = exercise_name(slide)
-            if name:
-                counts[name] += 1
+            if not name:
+                continue
+            # keyless slides fall back to their index, so each counts once
+            key = (name, word_key(slide) or i)
+            if key in seen:
+                continue
+            seen.add(key)
+            counts[name] += 1
         for name in counts:
             if name not in first_use:
                 first_use[name] = cur_n
@@ -106,8 +124,8 @@ def main():
         for name in order:
             c = counts.get(name, 0)
             classes = []
-            if c and first_use[name] == cur_n:
-                classes.append("bad" if any(m[0] == name for m in mismatches) else "first")
+            if c and first_use[name] == cur_n and any(m[0] == name for m in mismatches):
+                classes.append("bad")
             a = min(c, 6) / 6 if c else 0
             style = f"background:rgba(46,111,82,{0.12 + 0.5 * a});" if c else ""
             cls = f" class='{' '.join(classes)}'" if classes else ""
@@ -141,15 +159,15 @@ def main():
                 position: sticky; left: 0; background: #fff; }}
   td.w i {{ color: #8a938c; font-weight: 400; font-size: 11px; }}
   th.w {{ background: #fcfbf8; height: auto; }}
-  td.first {{ outline: 2px solid #2e6f52; outline-offset: -2px; }}
   td.bad {{ outline: 2px solid #cf3f3f; outline-offset: -2px; }}
 </style>
 </head>
 <body>
 <h1>Exercise Matrix</h1>
-<p class="sub">How many slides of each exercise appear in each drafted lesson.
-Columns ordered by first appearance; a green ring marks an exercise's debut
-lesson (red if curriculum.json's intro chip disagrees). Multi-set slides use
+<p class="sub">How much of each exercise appears in each drafted lesson — distinct
+words where a slide names one (a word's multi-slide walkthrough counts once),
+otherwise slides. Columns ordered by first appearance; a red ring marks an exercise's debut
+lesson when curriculum.json's intro chip disagrees. Multi-set slides use
 the kid-facing game name (Eagle Eyes, Letter Setter, Picture Quest);
 single-set slides use the generic label. Regenerate with
 <code>python3 scripts/build-exercise-matrix.py</code>.</p>
